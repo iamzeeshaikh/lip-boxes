@@ -60,6 +60,17 @@ export const site = {
 
   /** Maximum accepted artwork upload size, in megabytes. */
   uploadLimitMb: 10,
+
+  /*
+   * Search engine ownership tokens. These are public by design — they appear in
+   * the page source and prove control of the domain, they grant no access. Set
+   * a value to null to stop emitting that tag.
+   */
+  verification: {
+    google: 'GKasEn6o4HMbsbR7UMuE8uQj8mT-uJDtxMxH6uUvZlc',
+    bing: null as string | null,
+    pinterest: null as string | null,
+  },
 } as const;
 
 export const sameAs = Object.values(site.social).filter(

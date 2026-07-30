@@ -82,6 +82,16 @@ const socialImage = ogImage ? abs(ogImage) : abs('/social/lip-boxes-default.png'
 <meta name="theme-color" content="#5c1f3c" />
 <meta name="format-detection" content="telephone=no" />
 
+{site.verification.google && (
+  <meta name="google-site-verification" content={site.verification.google} />
+)}
+{site.verification.bing && (
+  <meta name="msvalidate.01" content={site.verification.bing} />
+)}
+{site.verification.pinterest && (
+  <meta name="p:domain_verify" content={site.verification.pinterest} />
+)}
+
 <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
 <link rel="icon" href="/favicon.ico" sizes="32x32" />
 <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
