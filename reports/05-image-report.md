@@ -12,10 +12,10 @@
 
 | Format | Files | Total size |
 | --- | --- | --- |
-| AVIF | 152 | 1.65 MB |
-| WebP | 372 | 4.46 MB |
-| PNG (social and schema images) | 74 | 65.87 MB |
-| **Normalised sources in `src/assets`** | 53 | 48.71 MB |
+| AVIF | 176 | 1.91 MB |
+| WebP | 431 | 5.16 MB |
+| PNG (social and schema images) | 83 | 77.05 MB |
+| **Normalised sources in `src/assets`** | 58 | 54.12 MB |
 
 ## Practices applied
 
@@ -60,18 +60,22 @@ promotional text overlay before use. Originals remain untouched on disk.
 | `lip-balm-packaging` | `lip-balm-packaging-blush-pink-cartons.png` | `Lip Balm packaging/Lip Balm packaging-1.png` | 1200×1200 |
 | `lip-balm-packaging` | `lip-balm-packaging-floral-print-carton.png` | `Lip Balm packaging/Lip Balm packaging-3.png` | 1200×1200 |
 | `paper-lip-balm-tubes` | `paper-lip-balm-tube-printed-kraft.png` | `paper lip balm tubes/paper lip balm tubes-3.png` | 1080×1080 |
-| `paper-lip-balm-tubes` | `paper-lip-balm-tube-natural-kraft-open.png` | `paper lip balm tubes/paper lip balm tubes-6.png` | 1080×1080 |
 | `paper-lip-balm-tubes` | `paper-lip-balm-tube-teal-printed.png` | `paper lip balm tubes/paper lip balm tubes-5.png` | 1080×1080 |
 | `paper-lip-balm-tubes` | `paper-lip-balm-tube-full-colour-print.png` | `paper lip balm tubes/paper lip balm tubes-2.png` | 1080×1080 |
-| `paper-lip-balm-tubes` | `cardboard-lip-balm-tube-wrap-labels.png` | `cardboard lip balm tubes/cardboard lip balm tubes-2.png` | 1080×1080 |
-| `paper-lip-balm-tubes` | `cardboard-lip-balm-tube-push-up-base.png` | `cardboard lip balm tubes/cardboard lip balm tubes-1.png` | 1080×1080 |
 | `paper-lip-balm-tubes` | `paper-lip-balm-tube-larger-format-stick.png` | `paper lip balm tubes/paper lip balm tubes-8.png` | 1080×1080 |
-| `paper-lip-balm-tubes` | `cardboard-lip-balm-tube-illustrated.png` | `cardboard lip balm tubes/cardboard lip balm tubes-5.png` | 1080×1080 |
-| `custom-lip-balm-labels` | `custom-lip-balm-label-die-cut-wraps.png` | `lip balm labels/lip balm labels​-TPB-3.png` | 1080×1080 |
+| `paper-lip-balm-tubes` | `paper-lip-balm-tube-magenta-print.png` | `paper lip balm tubes/paper lip balm tubes-9.png` | 1080×1080 |
+| `paper-lip-balm-tubes` | `paper-lip-balm-tube-natural-kraft-open.png` | `paper lip balm tubes/paper lip balm tubes-6.png` | 1080×1080 |
+| `cardboard-lip-balm-tubes` | `cardboard-lip-balm-tube-wrap-labels.png` | `cardboard lip balm tubes/cardboard lip balm tubes-2.png` | 1080×1080 |
+| `cardboard-lip-balm-tubes` | `cardboard-lip-balm-tube-push-up-base.png` | `cardboard lip balm tubes/cardboard lip balm tubes-1.png` | 1080×1080 |
+| `cardboard-lip-balm-tubes` | `cardboard-lip-balm-tube-kraft-range.png` | `cardboard lip balm tubes/cardboard lip balm tubes-4.png` | 1080×1080 |
+| `cardboard-lip-balm-tubes` | `cardboard-lip-balm-tube-illustrated-kraft.png` | `cardboard lip balm tubes/cardboard lip balm tubes-3.png` | 1080×1080 |
+| `cardboard-lip-balm-tubes` | `cardboard-lip-balm-tube-floral-print.png` | `cardboard lip balm tubes/cardboard lip balm tubes-5.png` | 1080×1080 |
 | `custom-lip-balm-labels` | `custom-lip-balm-label-minimal-two-colour.png` | `custom lip balm labels/custom lip balm labels-2.png` | 1080×1080 |
-| `custom-lip-balm-labels` | `custom-lip-balm-label-kraft-uncoated.png` | `lip balm labels/lip balm labels​-TPB-4.png` | 1080×1080 |
-| `custom-lip-balm-labels` | `custom-lip-balm-label-roll-format.png` | `custom lip balm labels/custom lip balm labels-3.png` | 1080×1080 |
 | `custom-lip-balm-labels` | `custom-lip-balm-label-watercolour-print.png` | `lip balm labels/lip balm labels​-TPB-1.png` | 1080×1080 |
+| `custom-lip-balm-labels` | `custom-lip-balm-label-roll-format.png` | `custom lip balm labels/custom lip balm labels-3.png` | 1080×1080 |
+| `lip-balm-labels` | `lip-balm-label-die-cut-wraps.png` | `lip balm labels/lip balm labels​-TPB-3.png` | 1080×1080 |
+| `lip-balm-labels` | `lip-balm-label-kraft-uncoated.png` | `lip balm labels/lip balm labels​-TPB-4.png` | 1080×1080 |
+| `lip-balm-labels` | `lip-balm-label-roll-and-jar-set.png` | `lip balm labels/lip balm labels​-TPB-5.png` | 1080×1080 |
 | `hang-tab-lip-balm-boxes` | `hang-tab-lip-balm-box-window-kraft.png` | `Hang Tab Lip Balm Box/Hang Tab Lip Balm Box-2.png` | 1080×1080 |
 | `hang-tab-lip-balm-boxes` | `hang-tab-lip-balm-boxes-on-pegboard.png` | `Hang Tab Lip Balm Box/Hang Tab Lip Balm Box-1.png` | 1080×1080 |
 | `hang-tab-lip-balm-boxes` | `hang-tab-lip-balm-box-euro-slot.png` | `Hang Tab Lip Balm Box/Hang Tab Lip Balm Box-3.png` | 1080×1080 |
@@ -80,9 +84,10 @@ promotional text overlay before use. Originals remain untouched on disk.
 | `custom-lipstick-boxes` | `custom-lipstick-box-reverse-tuck-end.png` | `Custom Lipstick Boxes/Custom Lipstick Boxes-1.png` | 1080×1080 |
 | `custom-lipstick-boxes` | `custom-lipstick-box-floral-print.png` | `Custom Lipstick Boxes/Custom Lipstick Boxes-3.png` | 1080×1080 |
 | `custom-lipstick-boxes` | `custom-lipstick-box-metallic-foil.png` | `Custom Lipstick Boxes/Custom Lipstick Boxes-2.png` | 1080×1080 |
-| `custom-lipstick-boxes` | `custom-lipstick-box-slim-carton.png` | `Lipstick Boxes/Hang Tab Lipstick Box-3.png` | 900×900 |
-| `custom-lipstick-boxes` | `custom-lipstick-boxes-matte-dark-range.png` | `Lipstick Boxes/Hang Tab Lipstick Box-5.png` | 1080×1080 |
-| `custom-lipstick-boxes` | `custom-lipstick-boxes-nude-collection.png` | `Lipstick Boxes/Hang Tab Lipstick Box-1.png` | 1080×1080 |
+| `lipstick-boxes` | `lipstick-box-slim-printed-carton.png` | `Lipstick Boxes/Hang Tab Lipstick Box-3.png` | 900×900 |
+| `lipstick-boxes` | `lipstick-box-single-shade-carton.png` | `Lipstick Boxes/Hang Tab Lipstick Box-4.png` | 1080×1080 |
+| `lipstick-boxes` | `lipstick-boxes-matte-dark-range.png` | `Lipstick Boxes/Hang Tab Lipstick Box-5.png` | 1080×1080 |
+| `lipstick-boxes` | `lipstick-boxes-nude-collection.png` | `Lipstick Boxes/Hang Tab Lipstick Box-1.png` | 1080×1080 |
 | `rigid-lipstick-boxes` | `rigid-lipstick-box-magnetic-closure.png` | `Rigid Lipstic Boxes/Rigid Lipstic Boxes-1.png` | 1080×1080 |
 | `rigid-lipstick-boxes` | `rigid-lipstick-box-sleeve-and-tray.png` | `Rigid Lipstic Boxes/Rigid Lipstic Boxes-2.png` | 1080×1080 |
 | `rigid-lipstick-boxes` | `rigid-lipstick-box-two-piece-lid.png` | `Rigid Lipstic Boxes/Rigid Lipstic Boxes-4.png` | 1080×1080 |

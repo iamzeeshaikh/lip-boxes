@@ -167,9 +167,6 @@ function images(html) {
 const productSlugs = JSON.parse(
   fs.readFileSync(path.join(REPORTS, 'image-manifest.json'), 'utf8'),
 ).reduce((set, entry) => set.add(entry.slug), new Set());
-// The hub is not a product page.
-productSlugs.delete('lip-balm-packaging');
-
 for (const slug of productSlugs) {
   const route = `/${slug}/`;
   if (!routeSet.has(route)) fail(`Missing product page: ${route}`);
@@ -358,7 +355,7 @@ for (const page of pages) {
   const sections = [...body.matchAll(/<section\b[\s\S]*?<\/section>/gi)].map((m) => m[0]);
   for (const section of sections) {
     if (
-      /class="[^"]*(grid--products|info-cards|channels|ref-list|nf__list|post-list|archive|kv|footer-col|spec-grid)/.test(
+      /class="[^"]*(grid--products|info-cards|channels|ref-list|nf__list|ty__links|ty__cards|ty__steps|post-list|archive|kv|footer-col|spec-grid)/.test(
         section,
       )
     ) {
@@ -640,7 +637,8 @@ for (const page of pages) {
     if (lower.includes(phrase)) fail(`${page.route} — placeholder or debug text: "${phrase}"`);
   }
   const words = text.split(/\s+/).filter(Boolean).length;
-  if (words < 300 && page.route !== '/404/') {
+  const skipThin = (meta(page.html, 'name', 'robots') ?? '').includes('noindex');
+  if (words < 300 && !skipThin) {
     warn(`${page.route} — thin page: ${words} words`);
   }
   if (/(Conclusion|Final Thoughts)\s*<\/h[23]>/i.test(page.html)) {

@@ -30,8 +30,8 @@ const featured = featuredSlugs
   .filter((p): p is NonNullable<typeof p> => Boolean(p));
 
 const heroSource = productImage(
-  'custom-lipstick-boxes',
-  'custom-lipstick-boxes-nude-collection.png',
+  'lipstick-boxes',
+  'lipstick-boxes-nude-collection.png',
 );
 /* Preload the exact AVIF candidate set the <Picture> above will offer. */
 const heroAsset = await getImage({

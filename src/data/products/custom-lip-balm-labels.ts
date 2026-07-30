@@ -28,29 +28,19 @@ export const product: Product = {
   ],
   images: [
     {
-      file: 'custom-lip-balm-label-die-cut-wraps.png',
-      alt: 'Three die-cut lip balm wrap labels with a lipstick print and a blank white lip balm tube beside them',
-      caption: 'Die-cut wrap labels with a rounded finger tab at one edge.',
-    },
-    {
       file: 'custom-lip-balm-label-minimal-two-colour.png',
       alt: 'Two lip balm tubes in white and black next to a printed vanilla lip balm label showing an ingredient panel',
       caption: 'Two-colour label with a full ingredient declaration panel.',
     },
     {
-      file: 'custom-lip-balm-label-kraft-uncoated.png',
-      alt: 'Kraft paper lip balm label printed in black beside a matching kraft-wrapped lip balm tube on marble',
-      caption: 'Uncoated kraft paper stock printed in a single colour.',
+      file: 'custom-lip-balm-label-watercolour-print.png',
+      alt: 'Pink watercolour lip balm label next to a matching wrapped lip balm tube on a bright background',
+      caption: 'Full-colour print on a gloss synthetic stock.',
     },
     {
       file: 'custom-lip-balm-label-roll-format.png',
       alt: 'Roll of printed lip balm labels unwinding beside a labelled blue lip balm tube and a lip scrub jar',
       caption: 'Roll format supplied for automatic label applicators.',
-    },
-    {
-      file: 'custom-lip-balm-label-watercolour-print.png',
-      alt: 'Pink watercolour lip balm label next to a matching wrapped lip balm tube on a bright background',
-      caption: 'Full-colour print on a gloss synthetic stock.',
     },
   ],
   blocks: [
@@ -123,8 +113,8 @@ export const product: Product = {
       heading: 'Getting the label size right',
       navLabel: 'Sizing',
       image: {
-        file: 'custom-lip-balm-label-die-cut-wraps.png',
-        alt: 'Die-cut lip balm wrap labels laid flat beside a blank white lip balm tube',
+        file: 'custom-lip-balm-label-watercolour-print.png',
+        alt: 'Printed watercolour lip balm label laid flat beside the matching wrapped tube',
       },
       imageSide: 'right',
       body: [
@@ -283,6 +273,6 @@ export const product: Product = {
     },
   ],
   related: ['paper-lip-balm-tubes', 'custom-lip-balm-boxes', 'custom-lip-care-packaging', 'hang-tab-lip-balm-boxes'],
-  order: 4,
+  order: 6,
   group: 'Lip Balm',
 };

@@ -274,8 +274,8 @@ const posts: BlogPost[] = [
       'Which press suits your quantity, your colour count and your substrate.',
     readingMinutes: 9,
     heroFrom: {
-      slug: 'custom-lipstick-boxes',
-      file: 'custom-lipstick-boxes-nude-collection.png',
+      slug: 'lipstick-boxes',
+      file: 'lipstick-boxes-nude-collection.png',
       alt: 'A collection of nude and terracotta lipstick boxes with matching lipstick cases',
     },
     related: ['custom-lipstick-boxes', 'lip-gloss-boxes', 'custom-lip-care-packaging'],

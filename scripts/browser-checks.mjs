@@ -294,8 +294,12 @@ console.log('\nJavaScript disabled');
     cards: document.querySelectorAll('.p-card').length,
     links: [...document.querySelectorAll('.p-card__title a')].map((a) => a.getAttribute('href')),
   }));
+  const expectedProducts = fs
+    .readdirSync(path.join(process.cwd(), 'src/data/products'))
+    .filter((f) => f.endsWith('.ts')).length;
   check('product directory lists every product without JavaScript',
-    directory.cards === 11, `${directory.cards} cards`);
+    directory.cards === expectedProducts,
+    `${directory.cards} cards, expected ${expectedProducts}`);
   check('directory links point at root-level product URLs',
     directory.links.every((href) => /^\/[a-z0-9-]+\/$/.test(href)),
     directory.links.filter((h) => !/^\/[a-z0-9-]+\/$/.test(h)).join(', '));

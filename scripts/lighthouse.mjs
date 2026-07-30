@@ -154,5 +154,5 @@ for (const [id, info] of seen) {
   console.log(`      ${info.where.slice(0, 4).join(', ')}${info.where.length > 4 ? ` +${info.where.length - 4} more` : ''}`);
 }
 
-await chrome.kill();
+chrome.kill();
 server.close();

@@ -53,90 +53,21 @@ ${extraFiles.map((f) => `- ${SITE}${f}`).join('\n')}
  * 2. Product inventory and merge decisions                            *
  * ------------------------------------------------------------------ */
 const inventory = [
-  {
-    folders: ['Custom Lip Balm Boxes'],
-    name: 'Custom Lip Balm Boxes',
-    slug: 'custom-lip-balm-boxes',
-    keyword: 'custom lip balm boxes',
-    merged: 'No',
-  },
-  {
-    folders: ['Hang Tab Lip Balm Box'],
-    name: 'Hang Tab Lip Balm Boxes',
-    slug: 'hang-tab-lip-balm-boxes',
-    keyword: 'hang tab lip balm boxes',
-    merged: 'No',
-  },
-  {
-    folders: ['paper lip balm tubes', 'cardboard lip balm tubes'],
-    name: 'Paper Lip Balm Tubes',
-    slug: 'paper-lip-balm-tubes',
-    keyword: 'paper lip balm tubes',
-    merged: 'Yes — "cardboard lip balm tubes" merged in',
-  },
-  {
-    folders: ['custom lip balm labels', 'lip balm labels'],
-    name: 'Custom Lip Balm Labels',
-    slug: 'custom-lip-balm-labels',
-    keyword: 'custom lip balm labels',
-    merged: 'Yes — "lip balm labels" merged in',
-  },
-  {
-    folders: ['Custom Lipstick Boxes', 'Lipstick Boxes'],
-    name: 'Custom Lipstick Boxes',
-    slug: 'custom-lipstick-boxes',
-    keyword: 'custom lipstick boxes',
-    merged: 'Yes — "Lipstick Boxes" merged in',
-  },
-  {
-    folders: ['Rigid Lipstic Boxes'],
-    name: 'Rigid Lipstick Boxes',
-    slug: 'rigid-lipstick-boxes',
-    keyword: 'rigid lipstick boxes',
-    merged: 'No (source folder name misspelled; slug corrected)',
-  },
-  {
-    folders: ['Hang Tab Lipstick Box'],
-    name: 'Hang Tab Lipstick Boxes',
-    slug: 'hang-tab-lipstick-boxes',
-    keyword: 'hang tab lipstick boxes',
-    merged: 'No',
-  },
-  {
-    folders: ['Lip Gloss Boxes'],
-    name: 'Lip Gloss Boxes',
-    slug: 'lip-gloss-boxes',
-    keyword: 'lip gloss boxes',
-    merged: 'No',
-  },
-  {
-    folders: ['Holographic Lip Gloss Boxes'],
-    name: 'Holographic Lip Gloss Boxes',
-    slug: 'holographic-lip-gloss-boxes',
-    keyword: 'holographic lip gloss boxes',
-    merged: 'No',
-  },
-  {
-    folders: ['custom lip mask boxes'],
-    name: 'Custom Lip Mask Boxes',
-    slug: 'custom-lip-mask-boxes',
-    keyword: 'custom lip mask boxes',
-    merged: 'No',
-  },
-  {
-    folders: ['custom lip care packaging bulk-PBEE-BLG'],
-    name: 'Custom Lip Care Packaging',
-    slug: 'custom-lip-care-packaging',
-    keyword: 'custom lip care packaging',
-    merged: 'No (slug shortened; source suffix dropped)',
-  },
-  {
-    folders: ['Lip Balm packaging'],
-    name: 'Lip Balm Packaging (format guide)',
-    slug: 'lip-balm-packaging',
-    keyword: 'lip balm packaging',
-    merged: 'Repurposed as a comparison hub, not a product page',
-  },
+  { folders: ['Custom Lip Balm Boxes'], name: 'Custom Lip Balm Boxes', slug: 'custom-lip-balm-boxes', keyword: 'custom lip balm boxes', merged: 'No' },
+  { folders: ['Lip Balm packaging'], name: 'Lip Balm Packaging', slug: 'lip-balm-packaging', keyword: 'lip balm packaging', merged: 'No' },
+  { folders: ['Hang Tab Lip Balm Box'], name: 'Hang Tab Lip Balm Boxes', slug: 'hang-tab-lip-balm-boxes', keyword: 'hang tab lip balm boxes', merged: 'No' },
+  { folders: ['paper lip balm tubes'], name: 'Paper Lip Balm Tubes', slug: 'paper-lip-balm-tubes', keyword: 'paper lip balm tubes', merged: 'No' },
+  { folders: ['cardboard lip balm tubes'], name: 'Cardboard Lip Balm Tubes', slug: 'cardboard-lip-balm-tubes', keyword: 'cardboard lip balm tubes', merged: 'No' },
+  { folders: ['custom lip balm labels'], name: 'Custom Lip Balm Labels', slug: 'custom-lip-balm-labels', keyword: 'custom lip balm labels', merged: 'No' },
+  { folders: ['lip balm labels'], name: 'Lip Balm Labels', slug: 'lip-balm-labels', keyword: 'lip balm labels', merged: 'No' },
+  { folders: ['Lipstick Boxes'], name: 'Lipstick Boxes', slug: 'lipstick-boxes', keyword: 'lipstick boxes', merged: 'No' },
+  { folders: ['Custom Lipstick Boxes'], name: 'Custom Lipstick Boxes', slug: 'custom-lipstick-boxes', keyword: 'custom lipstick boxes', merged: 'No' },
+  { folders: ['Rigid Lipstic Boxes'], name: 'Rigid Lipstick Boxes', slug: 'rigid-lipstick-boxes', keyword: 'rigid lipstick boxes', merged: 'No (folder name misspelled; slug corrected)' },
+  { folders: ['Hang Tab Lipstick Box'], name: 'Hang Tab Lipstick Boxes', slug: 'hang-tab-lipstick-boxes', keyword: 'hang tab lipstick boxes', merged: 'No' },
+  { folders: ['Lip Gloss Boxes'], name: 'Lip Gloss Boxes', slug: 'lip-gloss-boxes', keyword: 'lip gloss boxes', merged: 'No' },
+  { folders: ['Holographic Lip Gloss Boxes'], name: 'Holographic Lip Gloss Boxes', slug: 'holographic-lip-gloss-boxes', keyword: 'holographic lip gloss boxes', merged: 'No' },
+  { folders: ['custom lip mask boxes'], name: 'Custom Lip Mask Boxes', slug: 'custom-lip-mask-boxes', keyword: 'custom lip mask boxes', merged: 'No' },
+  { folders: ['custom lip care packaging bulk-PBEE-BLG'], name: 'Custom Lip Care Packaging', slug: 'custom-lip-care-packaging', keyword: 'custom lip care packaging', merged: 'No (supplier code dropped from slug)' },
 ];
 
 fs.writeFileSync(
@@ -154,7 +85,7 @@ ${inventory
   )
   .join('\n')}
 
-**11 product pages + 1 comparison hub** from 15 source folders.
+**15 product pages from 15 source folders — one page per folder, no merges.**\n\nEach page draws its photography only from its own source folder.
 
 ## Images used per product
 

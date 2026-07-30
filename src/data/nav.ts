@@ -13,9 +13,13 @@ export const primaryNav: { label: string; href?: string; children?: NavLink[] }[
     href: '/products/',
     children: [
       { href: '/custom-lip-balm-boxes/', label: 'Custom Lip Balm Boxes', note: 'Cartons for stick and tin formats' },
+      { href: '/lip-balm-packaging/', label: 'Lip Balm Packaging', note: 'Coordinated container, carton and label sets' },
       { href: '/hang-tab-lip-balm-boxes/', label: 'Hang Tab Lip Balm Boxes', note: 'Peg hook retail packs' },
-      { href: '/paper-lip-balm-tubes/', label: 'Paper Lip Balm Tubes', note: 'Plastic-free push-up tubes' },
-      { href: '/custom-lip-balm-labels/', label: 'Custom Lip Balm Labels', note: 'Waterproof wrap labels' },
+      { href: '/paper-lip-balm-tubes/', label: 'Paper Lip Balm Tubes', note: 'Printed plastic-free push-up tubes' },
+      { href: '/cardboard-lip-balm-tubes/', label: 'Cardboard Lip Balm Tubes', note: 'Unbleached kraft push-up tubes' },
+      { href: '/custom-lip-balm-labels/', label: 'Custom Lip Balm Labels', note: 'Printed to your artwork' },
+      { href: '/lip-balm-labels/', label: 'Lip Balm Labels', note: 'Formats, sizes and stocks' },
+      { href: '/lipstick-boxes/', label: 'Lipstick Boxes', note: 'Compare every construction' },
       { href: '/custom-lipstick-boxes/', label: 'Custom Lipstick Boxes', note: 'Printed bullet cartons' },
       { href: '/rigid-lipstick-boxes/', label: 'Rigid Lipstick Boxes', note: 'Magnetic and drawer gift boxes' },
       { href: '/hang-tab-lipstick-boxes/', label: 'Hang Tab Lipstick Boxes', note: 'Window peg display cartons' },
@@ -23,7 +27,6 @@ export const primaryNav: { label: string; href?: string; children?: NavLink[] }[
       { href: '/holographic-lip-gloss-boxes/', label: 'Holographic Lip Gloss Boxes', note: 'Iridescent metallised board' },
       { href: '/custom-lip-mask-boxes/', label: 'Custom Lip Mask Boxes', note: 'Hydrogel patch packaging' },
       { href: '/custom-lip-care-packaging/', label: 'Custom Lip Care Packaging', note: 'Bulk and private label programmes' },
-      { href: '/lip-balm-packaging/', label: 'Lip Balm Packaging Guide', note: 'Compare every balm format' },
     ],
   },
   {
@@ -57,15 +60,18 @@ export const footerNav: { heading: string; links: NavLink[] }[] = [
     heading: 'Lip Balm',
     links: [
       { href: '/custom-lip-balm-boxes/', label: 'Custom Lip Balm Boxes' },
+      { href: '/lip-balm-packaging/', label: 'Lip Balm Packaging' },
       { href: '/hang-tab-lip-balm-boxes/', label: 'Hang Tab Lip Balm Boxes' },
       { href: '/paper-lip-balm-tubes/', label: 'Paper Lip Balm Tubes' },
+      { href: '/cardboard-lip-balm-tubes/', label: 'Cardboard Lip Balm Tubes' },
       { href: '/custom-lip-balm-labels/', label: 'Custom Lip Balm Labels' },
-      { href: '/lip-balm-packaging/', label: 'Lip Balm Packaging Guide' },
+      { href: '/lip-balm-labels/', label: 'Lip Balm Labels' },
     ],
   },
   {
     heading: 'Lipstick & Gloss',
     links: [
+      { href: '/lipstick-boxes/', label: 'Lipstick Boxes' },
       { href: '/custom-lipstick-boxes/', label: 'Custom Lipstick Boxes' },
       { href: '/rigid-lipstick-boxes/', label: 'Rigid Lipstick Boxes' },
       { href: '/hang-tab-lipstick-boxes/', label: 'Hang Tab Lipstick Boxes' },

@@ -81,6 +81,21 @@
       "text": "wrapped rigid box page"
     },
     {
+      "from": "/cardboard-lip-balm-tubes/",
+      "href": "/paper-lip-balm-tubes/",
+      "text": "printed paperboard tube page"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "href": "/lip-balm-labels/",
+      "text": "lip balm label formats page"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "href": "/shipping-information/",
+      "text": "delivery page"
+    },
+    {
       "from": "/contact/",
       "href": "/privacy-policy/",
       "text": "privacy policy"
@@ -271,9 +286,29 @@
       "text": "ordering page"
     },
     {
+      "from": "/lip-balm-labels/",
+      "href": "/custom-lip-balm-labels/",
+      "text": "custom label printing page"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "href": "/materials/",
+      "text": "stock reference"
+    },
+    {
       "from": "/lip-balm-packaging/",
-      "href": "/blog/how-packaging-quantity-affects-unit-pricing/",
-      "text": "quantity and unit pricing"
+      "href": "/custom-lip-balm-boxes/",
+      "text": "carton built around your filled tube"
+    },
+    {
+      "from": "/lip-balm-packaging/",
+      "href": "/artwork-guidelines/",
+      "text": "artwork page"
+    },
+    {
+      "from": "/lip-balm-packaging/",
+      "href": "/shipping-information/",
+      "text": "delivery page"
     },
     {
       "from": "/lip-gloss-boxes/",
@@ -296,6 +331,21 @@
       "text": "turnaround page"
     },
     {
+      "from": "/lipstick-boxes/",
+      "href": "/custom-lipstick-boxes/",
+      "text": "printed folding cartons built to your bullet case"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "href": "/box-styles/",
+      "text": "structural reference"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "href": "/finishes/",
+      "text": "coatings page"
+    },
+    {
       "from": "/materials/",
       "href": "/hang-tab-lipstick-boxes/",
       "text": "window carton for peg display"
@@ -312,8 +362,8 @@
     },
     {
       "from": "/paper-lip-balm-tubes/",
-      "href": "/custom-lip-balm-labels/",
-      "text": "printed wrap labels for lip balm tubes"
+      "href": "/cardboard-lip-balm-tubes/",
+      "text": "natural kraft tube page"
     },
     {
       "from": "/paper-lip-balm-tubes/",
@@ -439,18 +489,38 @@
     },
     {
       "from": "/404/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/404/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/404/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/404/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/404/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/404/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/404/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/404/",
@@ -486,11 +556,6 @@
       "from": "/404/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/404/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/404/",
@@ -589,6 +654,11 @@
     },
     {
       "from": "/404/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/404/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -599,18 +669,13 @@
     },
     {
       "from": "/404/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/404/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
-    },
-    {
-      "from": "/404/",
-      "to": "/custom-lipstick-boxes/",
-      "anchor": "Custom Lipstick Boxes"
-    },
-    {
-      "from": "/404/",
-      "to": "/rigid-lipstick-boxes/",
-      "anchor": "Rigid Lipstick Boxes"
     },
     {
       "from": "/404/",
@@ -664,6 +729,11 @@
     },
     {
       "from": "/404/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/404/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -674,13 +744,23 @@
     },
     {
       "from": "/404/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/404/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/404/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/404/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/404/",
@@ -814,18 +894,38 @@
     },
     {
       "from": "/about/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/about/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/about/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/about/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/about/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/about/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/about/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/about/",
@@ -861,11 +961,6 @@
       "from": "/about/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/about/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/about/",
@@ -984,6 +1079,11 @@
     },
     {
       "from": "/about/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/about/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -994,13 +1094,23 @@
     },
     {
       "from": "/about/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/about/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/about/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/about/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/about/",
@@ -1129,18 +1239,38 @@
     },
     {
       "from": "/artwork-guidelines/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/artwork-guidelines/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/artwork-guidelines/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/artwork-guidelines/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/artwork-guidelines/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/artwork-guidelines/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/artwork-guidelines/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/artwork-guidelines/",
@@ -1176,11 +1306,6 @@
       "from": "/artwork-guidelines/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/artwork-guidelines/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/artwork-guidelines/",
@@ -1304,6 +1429,11 @@
     },
     {
       "from": "/artwork-guidelines/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/artwork-guidelines/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -1314,13 +1444,23 @@
     },
     {
       "from": "/artwork-guidelines/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/artwork-guidelines/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/artwork-guidelines/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/artwork-guidelines/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/artwork-guidelines/",
@@ -1449,18 +1589,38 @@
     },
     {
       "from": "/blog/how-packaging-quantity-affects-unit-pricing/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/blog/how-packaging-quantity-affects-unit-pricing/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/blog/how-packaging-quantity-affects-unit-pricing/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/blog/how-packaging-quantity-affects-unit-pricing/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/blog/how-packaging-quantity-affects-unit-pricing/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/blog/how-packaging-quantity-affects-unit-pricing/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/blog/how-packaging-quantity-affects-unit-pricing/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/blog/how-packaging-quantity-affects-unit-pricing/",
@@ -1496,11 +1656,6 @@
       "from": "/blog/how-packaging-quantity-affects-unit-pricing/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/blog/how-packaging-quantity-affects-unit-pricing/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/blog/how-packaging-quantity-affects-unit-pricing/",
@@ -1659,6 +1814,11 @@
     },
     {
       "from": "/blog/how-packaging-quantity-affects-unit-pricing/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/blog/how-packaging-quantity-affects-unit-pricing/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -1669,13 +1829,23 @@
     },
     {
       "from": "/blog/how-packaging-quantity-affects-unit-pricing/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/blog/how-packaging-quantity-affects-unit-pricing/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/blog/how-packaging-quantity-affects-unit-pricing/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/blog/how-packaging-quantity-affects-unit-pricing/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/blog/how-packaging-quantity-affects-unit-pricing/",
@@ -1809,18 +1979,38 @@
     },
     {
       "from": "/blog/how-to-choose-packaging-for-a-lip-gloss-line/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/blog/how-to-choose-packaging-for-a-lip-gloss-line/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/blog/how-to-choose-packaging-for-a-lip-gloss-line/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/blog/how-to-choose-packaging-for-a-lip-gloss-line/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/blog/how-to-choose-packaging-for-a-lip-gloss-line/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/blog/how-to-choose-packaging-for-a-lip-gloss-line/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/blog/how-to-choose-packaging-for-a-lip-gloss-line/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/blog/how-to-choose-packaging-for-a-lip-gloss-line/",
@@ -1856,11 +2046,6 @@
       "from": "/blog/how-to-choose-packaging-for-a-lip-gloss-line/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/blog/how-to-choose-packaging-for-a-lip-gloss-line/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/blog/how-to-choose-packaging-for-a-lip-gloss-line/",
@@ -2024,6 +2209,11 @@
     },
     {
       "from": "/blog/how-to-choose-packaging-for-a-lip-gloss-line/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/blog/how-to-choose-packaging-for-a-lip-gloss-line/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -2034,13 +2224,23 @@
     },
     {
       "from": "/blog/how-to-choose-packaging-for-a-lip-gloss-line/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/blog/how-to-choose-packaging-for-a-lip-gloss-line/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/blog/how-to-choose-packaging-for-a-lip-gloss-line/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/blog/how-to-choose-packaging-for-a-lip-gloss-line/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/blog/how-to-choose-packaging-for-a-lip-gloss-line/",
@@ -2174,18 +2374,38 @@
     },
     {
       "from": "/blog/how-to-prepare-artwork-for-custom-lip-boxes/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/blog/how-to-prepare-artwork-for-custom-lip-boxes/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/blog/how-to-prepare-artwork-for-custom-lip-boxes/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/blog/how-to-prepare-artwork-for-custom-lip-boxes/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/blog/how-to-prepare-artwork-for-custom-lip-boxes/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/blog/how-to-prepare-artwork-for-custom-lip-boxes/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/blog/how-to-prepare-artwork-for-custom-lip-boxes/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/blog/how-to-prepare-artwork-for-custom-lip-boxes/",
@@ -2221,11 +2441,6 @@
       "from": "/blog/how-to-prepare-artwork-for-custom-lip-boxes/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/blog/how-to-prepare-artwork-for-custom-lip-boxes/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/blog/how-to-prepare-artwork-for-custom-lip-boxes/",
@@ -2384,6 +2599,11 @@
     },
     {
       "from": "/blog/how-to-prepare-artwork-for-custom-lip-boxes/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/blog/how-to-prepare-artwork-for-custom-lip-boxes/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -2394,13 +2614,23 @@
     },
     {
       "from": "/blog/how-to-prepare-artwork-for-custom-lip-boxes/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/blog/how-to-prepare-artwork-for-custom-lip-boxes/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/blog/how-to-prepare-artwork-for-custom-lip-boxes/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/blog/how-to-prepare-artwork-for-custom-lip-boxes/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/blog/how-to-prepare-artwork-for-custom-lip-boxes/",
@@ -2534,18 +2764,38 @@
     },
     {
       "from": "/blog/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/blog/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/blog/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/blog/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/blog/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/blog/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/blog/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/blog/",
@@ -2581,11 +2831,6 @@
       "from": "/blog/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/blog/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/blog/",
@@ -2779,6 +3024,11 @@
     },
     {
       "from": "/blog/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/blog/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -2789,13 +3039,23 @@
     },
     {
       "from": "/blog/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/blog/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/blog/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/blog/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/blog/",
@@ -2924,18 +3184,38 @@
     },
     {
       "from": "/blog/lip-balm-box-materials-compared/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/blog/lip-balm-box-materials-compared/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/blog/lip-balm-box-materials-compared/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/blog/lip-balm-box-materials-compared/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/blog/lip-balm-box-materials-compared/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/blog/lip-balm-box-materials-compared/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/blog/lip-balm-box-materials-compared/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/blog/lip-balm-box-materials-compared/",
@@ -2971,11 +3251,6 @@
       "from": "/blog/lip-balm-box-materials-compared/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/blog/lip-balm-box-materials-compared/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/blog/lip-balm-box-materials-compared/",
@@ -3134,6 +3409,11 @@
     },
     {
       "from": "/blog/lip-balm-box-materials-compared/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/blog/lip-balm-box-materials-compared/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -3144,13 +3424,23 @@
     },
     {
       "from": "/blog/lip-balm-box-materials-compared/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/blog/lip-balm-box-materials-compared/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/blog/lip-balm-box-materials-compared/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/blog/lip-balm-box-materials-compared/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/blog/lip-balm-box-materials-compared/",
@@ -3284,18 +3574,38 @@
     },
     {
       "from": "/blog/lipstick-packaging-sizes-and-structural-options/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/blog/lipstick-packaging-sizes-and-structural-options/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/blog/lipstick-packaging-sizes-and-structural-options/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/blog/lipstick-packaging-sizes-and-structural-options/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/blog/lipstick-packaging-sizes-and-structural-options/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/blog/lipstick-packaging-sizes-and-structural-options/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/blog/lipstick-packaging-sizes-and-structural-options/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/blog/lipstick-packaging-sizes-and-structural-options/",
@@ -3331,11 +3641,6 @@
       "from": "/blog/lipstick-packaging-sizes-and-structural-options/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/blog/lipstick-packaging-sizes-and-structural-options/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/blog/lipstick-packaging-sizes-and-structural-options/",
@@ -3494,6 +3799,11 @@
     },
     {
       "from": "/blog/lipstick-packaging-sizes-and-structural-options/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/blog/lipstick-packaging-sizes-and-structural-options/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -3504,13 +3814,23 @@
     },
     {
       "from": "/blog/lipstick-packaging-sizes-and-structural-options/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/blog/lipstick-packaging-sizes-and-structural-options/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/blog/lipstick-packaging-sizes-and-structural-options/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/blog/lipstick-packaging-sizes-and-structural-options/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/blog/lipstick-packaging-sizes-and-structural-options/",
@@ -3644,18 +3964,38 @@
     },
     {
       "from": "/blog/packaging-inserts-for-lipstick-and-lip-gloss-products/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/blog/packaging-inserts-for-lipstick-and-lip-gloss-products/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/blog/packaging-inserts-for-lipstick-and-lip-gloss-products/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/blog/packaging-inserts-for-lipstick-and-lip-gloss-products/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/blog/packaging-inserts-for-lipstick-and-lip-gloss-products/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/blog/packaging-inserts-for-lipstick-and-lip-gloss-products/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/blog/packaging-inserts-for-lipstick-and-lip-gloss-products/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/blog/packaging-inserts-for-lipstick-and-lip-gloss-products/",
@@ -3691,11 +4031,6 @@
       "from": "/blog/packaging-inserts-for-lipstick-and-lip-gloss-products/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/blog/packaging-inserts-for-lipstick-and-lip-gloss-products/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/blog/packaging-inserts-for-lipstick-and-lip-gloss-products/",
@@ -3854,6 +4189,11 @@
     },
     {
       "from": "/blog/packaging-inserts-for-lipstick-and-lip-gloss-products/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/blog/packaging-inserts-for-lipstick-and-lip-gloss-products/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -3864,13 +4204,23 @@
     },
     {
       "from": "/blog/packaging-inserts-for-lipstick-and-lip-gloss-products/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/blog/packaging-inserts-for-lipstick-and-lip-gloss-products/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/blog/packaging-inserts-for-lipstick-and-lip-gloss-products/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/blog/packaging-inserts-for-lipstick-and-lip-gloss-products/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/blog/packaging-inserts-for-lipstick-and-lip-gloss-products/",
@@ -4004,18 +4354,38 @@
     },
     {
       "from": "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
@@ -4051,11 +4421,6 @@
       "from": "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
@@ -4214,6 +4579,11 @@
     },
     {
       "from": "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -4224,13 +4594,23 @@
     },
     {
       "from": "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
@@ -4364,18 +4744,38 @@
     },
     {
       "from": "/blog/printing-methods-for-cosmetic-packaging/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/blog/printing-methods-for-cosmetic-packaging/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/blog/printing-methods-for-cosmetic-packaging/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/blog/printing-methods-for-cosmetic-packaging/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/blog/printing-methods-for-cosmetic-packaging/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/blog/printing-methods-for-cosmetic-packaging/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/blog/printing-methods-for-cosmetic-packaging/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/blog/printing-methods-for-cosmetic-packaging/",
@@ -4411,11 +4811,6 @@
       "from": "/blog/printing-methods-for-cosmetic-packaging/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/blog/printing-methods-for-cosmetic-packaging/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/blog/printing-methods-for-cosmetic-packaging/",
@@ -4574,6 +4969,11 @@
     },
     {
       "from": "/blog/printing-methods-for-cosmetic-packaging/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/blog/printing-methods-for-cosmetic-packaging/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -4584,13 +4984,23 @@
     },
     {
       "from": "/blog/printing-methods-for-cosmetic-packaging/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/blog/printing-methods-for-cosmetic-packaging/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/blog/printing-methods-for-cosmetic-packaging/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/blog/printing-methods-for-cosmetic-packaging/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/blog/printing-methods-for-cosmetic-packaging/",
@@ -4724,18 +5134,38 @@
     },
     {
       "from": "/box-styles/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/box-styles/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/box-styles/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/box-styles/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/box-styles/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/box-styles/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/box-styles/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/box-styles/",
@@ -4771,11 +5201,6 @@
       "from": "/box-styles/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/box-styles/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/box-styles/",
@@ -4894,6 +5319,11 @@
     },
     {
       "from": "/box-styles/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/box-styles/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -4904,13 +5334,23 @@
     },
     {
       "from": "/box-styles/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/box-styles/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/box-styles/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/box-styles/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/box-styles/",
@@ -5028,6 +5468,416 @@
       "anchor": "Sitemap"
     },
     {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/",
+      "anchor": "Lip Boxes"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": "Custom Lip Balm Boxes Cartons for stick and tin formats"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/hang-tab-lip-balm-boxes/",
+      "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/paper-lip-balm-tubes/",
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/custom-lip-balm-labels/",
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/custom-lipstick-boxes/",
+      "anchor": "Custom Lipstick Boxes Printed bullet cartons"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/rigid-lipstick-boxes/",
+      "anchor": "Rigid Lipstick Boxes Magnetic and drawer gift boxes"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/hang-tab-lipstick-boxes/",
+      "anchor": "Hang Tab Lipstick Boxes Window peg display cartons"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/lip-gloss-boxes/",
+      "anchor": "Lip Gloss Boxes Tall cartons for wand tubes"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/holographic-lip-gloss-boxes/",
+      "anchor": "Holographic Lip Gloss Boxes Iridescent metallised board"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/custom-lip-mask-boxes/",
+      "anchor": "Custom Lip Mask Boxes Hydrogel patch packaging"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/custom-lip-care-packaging/",
+      "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/products/",
+      "anchor": "See the full product directory"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/materials/",
+      "anchor": "Materials"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/printing-options/",
+      "anchor": "Printing Options"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/finishes/",
+      "anchor": "Finishes"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/box-styles/",
+      "anchor": "Box Styles"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/artwork-guidelines/",
+      "anchor": "Artwork Guidelines"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/custom-packaging/",
+      "anchor": "Custom Packaging"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/how-to-order/",
+      "anchor": "How to Order"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/turnaround-time/",
+      "anchor": "Turnaround Time"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/shipping-information/",
+      "anchor": "Shipping Information"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/sample-kit/",
+      "anchor": "Sample Kit"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/faqs/",
+      "anchor": "FAQs"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/blog/",
+      "anchor": "Blog"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/about/",
+      "anchor": "About"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/contact/",
+      "anchor": "Contact"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/request-a-quote/",
+      "anchor": "Request a Quote"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/",
+      "anchor": "Home"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/products/",
+      "anchor": "Products"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/sample-kit/",
+      "anchor": "Request a sample"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/privacy-policy/",
+      "anchor": "privacy policy"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/request-a-quote/",
+      "anchor": "full quote request form"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/paper-lip-balm-tubes/",
+      "anchor": "printed paperboard tube page"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/lip-balm-labels/",
+      "anchor": "lip balm label formats page"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/shipping-information/",
+      "anchor": "delivery page"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/paper-lip-balm-tubes/",
+      "anchor": ""
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/paper-lip-balm-tubes/",
+      "anchor": "Paper Lip Balm Tubes"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/lip-balm-labels/",
+      "anchor": ""
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": "Custom Lip Balm Boxes"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/lip-balm-packaging/",
+      "anchor": ""
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/request-a-quote/",
+      "anchor": "Request a Quote"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/sample-kit/",
+      "anchor": "See sample options"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/",
+      "anchor": "Lip Boxes"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/request-a-quote/",
+      "anchor": "Request a Quote"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": "Custom Lip Balm Boxes"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/hang-tab-lip-balm-boxes/",
+      "anchor": "Hang Tab Lip Balm Boxes"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/paper-lip-balm-tubes/",
+      "anchor": "Paper Lip Balm Tubes"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/custom-lip-balm-labels/",
+      "anchor": "Custom Lip Balm Labels"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/custom-lipstick-boxes/",
+      "anchor": "Custom Lipstick Boxes"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/rigid-lipstick-boxes/",
+      "anchor": "Rigid Lipstick Boxes"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/hang-tab-lipstick-boxes/",
+      "anchor": "Hang Tab Lipstick Boxes"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/lip-gloss-boxes/",
+      "anchor": "Lip Gloss Boxes"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/holographic-lip-gloss-boxes/",
+      "anchor": "Holographic Lip Gloss Boxes"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/materials/",
+      "anchor": "Materials"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/printing-options/",
+      "anchor": "Printing Options"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/finishes/",
+      "anchor": "Finishes"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/box-styles/",
+      "anchor": "Box Styles"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/artwork-guidelines/",
+      "anchor": "Artwork Guidelines"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/request-a-quote/",
+      "anchor": "Request a Quote"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/how-to-order/",
+      "anchor": "How to Order"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/turnaround-time/",
+      "anchor": "Turnaround Time"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/shipping-information/",
+      "anchor": "Shipping Information"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/sample-kit/",
+      "anchor": "Sample Kit"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/about/",
+      "anchor": "About Lip Boxes"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/custom-lip-care-packaging/",
+      "anchor": "Bulk & Private Label"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/custom-lip-mask-boxes/",
+      "anchor": "Custom Lip Mask Boxes"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/blog/",
+      "anchor": "Blog"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/contact/",
+      "anchor": "Contact"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/faqs/",
+      "anchor": "FAQs"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/privacy-policy/",
+      "anchor": "Privacy Policy"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/terms-and-conditions/",
+      "anchor": "Terms and Conditions"
+    },
+    {
+      "from": "/cardboard-lip-balm-tubes/",
+      "to": "/sitemap.xml",
+      "anchor": "Sitemap"
+    },
+    {
       "from": "/contact/",
       "to": "/",
       "anchor": "Lip Boxes"
@@ -5039,18 +5889,38 @@
     },
     {
       "from": "/contact/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/contact/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/contact/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/contact/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/contact/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/contact/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/contact/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/contact/",
@@ -5086,11 +5956,6 @@
       "from": "/contact/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/contact/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/contact/",
@@ -5224,6 +6089,11 @@
     },
     {
       "from": "/contact/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/contact/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -5234,13 +6104,23 @@
     },
     {
       "from": "/contact/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/contact/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/contact/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/contact/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/contact/",
@@ -5364,18 +6244,38 @@
     },
     {
       "from": "/custom-lip-balm-boxes/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/custom-lip-balm-boxes/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/custom-lip-balm-boxes/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/custom-lip-balm-boxes/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/custom-lip-balm-boxes/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/custom-lip-balm-boxes/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/custom-lip-balm-boxes/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/custom-lip-balm-boxes/",
@@ -5411,11 +6311,6 @@
       "from": "/custom-lip-balm-boxes/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/custom-lip-balm-boxes/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/custom-lip-balm-boxes/",
@@ -5609,6 +6504,11 @@
     },
     {
       "from": "/custom-lip-balm-boxes/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/custom-lip-balm-boxes/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -5619,13 +6519,23 @@
     },
     {
       "from": "/custom-lip-balm-boxes/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/custom-lip-balm-boxes/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/custom-lip-balm-boxes/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/custom-lip-balm-boxes/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/custom-lip-balm-boxes/",
@@ -5759,13 +6669,33 @@
     },
     {
       "from": "/custom-lip-balm-labels/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/custom-lip-balm-labels/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/custom-lip-balm-labels/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/custom-lip-balm-labels/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
+    },
+    {
+      "from": "/custom-lip-balm-labels/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/custom-lip-balm-labels/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/custom-lip-balm-labels/",
@@ -5801,11 +6731,6 @@
       "from": "/custom-lip-balm-labels/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/custom-lip-balm-labels/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/custom-lip-balm-labels/",
@@ -5989,6 +6914,11 @@
     },
     {
       "from": "/custom-lip-balm-labels/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/custom-lip-balm-labels/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -5999,8 +6929,18 @@
     },
     {
       "from": "/custom-lip-balm-labels/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/custom-lip-balm-labels/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/custom-lip-balm-labels/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/custom-lip-balm-labels/",
@@ -6134,18 +7074,38 @@
     },
     {
       "from": "/custom-lip-care-packaging/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/custom-lip-care-packaging/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/custom-lip-care-packaging/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/custom-lip-care-packaging/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/custom-lip-care-packaging/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/custom-lip-care-packaging/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/custom-lip-care-packaging/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/custom-lip-care-packaging/",
@@ -6176,11 +7136,6 @@
       "from": "/custom-lip-care-packaging/",
       "to": "/custom-lip-mask-boxes/",
       "anchor": "Custom Lip Mask Boxes Hydrogel patch packaging"
-    },
-    {
-      "from": "/custom-lip-care-packaging/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/custom-lip-care-packaging/",
@@ -6374,6 +7329,11 @@
     },
     {
       "from": "/custom-lip-care-packaging/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/custom-lip-care-packaging/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -6384,13 +7344,23 @@
     },
     {
       "from": "/custom-lip-care-packaging/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/custom-lip-care-packaging/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/custom-lip-care-packaging/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/custom-lip-care-packaging/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/custom-lip-care-packaging/",
@@ -6519,18 +7489,38 @@
     },
     {
       "from": "/custom-lip-mask-boxes/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/custom-lip-mask-boxes/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/custom-lip-mask-boxes/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/custom-lip-mask-boxes/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/custom-lip-mask-boxes/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/custom-lip-mask-boxes/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/custom-lip-mask-boxes/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/custom-lip-mask-boxes/",
@@ -6561,11 +7551,6 @@
       "from": "/custom-lip-mask-boxes/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/custom-lip-mask-boxes/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/custom-lip-mask-boxes/",
@@ -6759,6 +7744,11 @@
     },
     {
       "from": "/custom-lip-mask-boxes/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/custom-lip-mask-boxes/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -6769,13 +7759,23 @@
     },
     {
       "from": "/custom-lip-mask-boxes/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/custom-lip-mask-boxes/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/custom-lip-mask-boxes/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/custom-lip-mask-boxes/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/custom-lip-mask-boxes/",
@@ -6904,18 +7904,38 @@
     },
     {
       "from": "/custom-lipstick-boxes/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/custom-lipstick-boxes/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/custom-lipstick-boxes/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/custom-lipstick-boxes/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/custom-lipstick-boxes/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/custom-lipstick-boxes/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/custom-lipstick-boxes/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/custom-lipstick-boxes/",
@@ -6946,11 +7966,6 @@
       "from": "/custom-lipstick-boxes/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/custom-lipstick-boxes/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/custom-lipstick-boxes/",
@@ -7144,6 +8159,11 @@
     },
     {
       "from": "/custom-lipstick-boxes/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/custom-lipstick-boxes/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -7154,13 +8174,23 @@
     },
     {
       "from": "/custom-lipstick-boxes/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/custom-lipstick-boxes/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/custom-lipstick-boxes/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/custom-lipstick-boxes/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/custom-lipstick-boxes/",
@@ -7289,18 +8319,38 @@
     },
     {
       "from": "/custom-packaging/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/custom-packaging/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/custom-packaging/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/custom-packaging/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/custom-packaging/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/custom-packaging/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/custom-packaging/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/custom-packaging/",
@@ -7336,11 +8386,6 @@
       "from": "/custom-packaging/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/custom-packaging/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/custom-packaging/",
@@ -7464,6 +8509,11 @@
     },
     {
       "from": "/custom-packaging/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/custom-packaging/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -7474,13 +8524,23 @@
     },
     {
       "from": "/custom-packaging/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/custom-packaging/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/custom-packaging/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/custom-packaging/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/custom-packaging/",
@@ -7614,18 +8674,38 @@
     },
     {
       "from": "/faqs/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/faqs/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/faqs/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/faqs/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/faqs/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/faqs/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/faqs/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/faqs/",
@@ -7661,11 +8741,6 @@
       "from": "/faqs/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/faqs/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/faqs/",
@@ -7779,6 +8854,11 @@
     },
     {
       "from": "/faqs/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/faqs/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -7789,13 +8869,23 @@
     },
     {
       "from": "/faqs/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/faqs/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/faqs/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/faqs/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/faqs/",
@@ -7924,18 +9014,38 @@
     },
     {
       "from": "/finishes/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/finishes/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/finishes/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/finishes/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/finishes/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/finishes/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/finishes/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/finishes/",
@@ -7971,11 +9081,6 @@
       "from": "/finishes/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/finishes/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/finishes/",
@@ -8099,6 +9204,11 @@
     },
     {
       "from": "/finishes/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/finishes/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -8109,13 +9219,23 @@
     },
     {
       "from": "/finishes/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/finishes/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/finishes/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/finishes/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/finishes/",
@@ -8244,13 +9364,33 @@
     },
     {
       "from": "/hang-tab-lip-balm-boxes/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/hang-tab-lip-balm-boxes/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/hang-tab-lip-balm-boxes/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/hang-tab-lip-balm-boxes/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/hang-tab-lip-balm-boxes/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/hang-tab-lip-balm-boxes/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/hang-tab-lip-balm-boxes/",
@@ -8286,11 +9426,6 @@
       "from": "/hang-tab-lip-balm-boxes/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/hang-tab-lip-balm-boxes/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/hang-tab-lip-balm-boxes/",
@@ -8484,8 +9619,18 @@
     },
     {
       "from": "/hang-tab-lip-balm-boxes/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/hang-tab-lip-balm-boxes/",
       "to": "/paper-lip-balm-tubes/",
       "anchor": "Paper Lip Balm Tubes"
+    },
+    {
+      "from": "/hang-tab-lip-balm-boxes/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
     },
     {
       "from": "/hang-tab-lip-balm-boxes/",
@@ -8494,8 +9639,13 @@
     },
     {
       "from": "/hang-tab-lip-balm-boxes/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/hang-tab-lip-balm-boxes/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/hang-tab-lip-balm-boxes/",
@@ -8629,18 +9779,38 @@
     },
     {
       "from": "/hang-tab-lipstick-boxes/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/hang-tab-lipstick-boxes/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/hang-tab-lipstick-boxes/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/hang-tab-lipstick-boxes/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/hang-tab-lipstick-boxes/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/hang-tab-lipstick-boxes/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/hang-tab-lipstick-boxes/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/hang-tab-lipstick-boxes/",
@@ -8671,11 +9841,6 @@
       "from": "/hang-tab-lipstick-boxes/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/hang-tab-lipstick-boxes/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/hang-tab-lipstick-boxes/",
@@ -8864,6 +10029,11 @@
     },
     {
       "from": "/hang-tab-lipstick-boxes/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/hang-tab-lipstick-boxes/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -8874,13 +10044,23 @@
     },
     {
       "from": "/hang-tab-lipstick-boxes/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/hang-tab-lipstick-boxes/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/hang-tab-lipstick-boxes/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/hang-tab-lipstick-boxes/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/hang-tab-lipstick-boxes/",
@@ -9009,18 +10189,38 @@
     },
     {
       "from": "/holographic-lip-gloss-boxes/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/holographic-lip-gloss-boxes/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/holographic-lip-gloss-boxes/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/holographic-lip-gloss-boxes/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/holographic-lip-gloss-boxes/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/holographic-lip-gloss-boxes/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/holographic-lip-gloss-boxes/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/holographic-lip-gloss-boxes/",
@@ -9051,11 +10251,6 @@
       "from": "/holographic-lip-gloss-boxes/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/holographic-lip-gloss-boxes/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/holographic-lip-gloss-boxes/",
@@ -9244,6 +10439,11 @@
     },
     {
       "from": "/holographic-lip-gloss-boxes/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/holographic-lip-gloss-boxes/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -9254,13 +10454,23 @@
     },
     {
       "from": "/holographic-lip-gloss-boxes/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/holographic-lip-gloss-boxes/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/holographic-lip-gloss-boxes/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/holographic-lip-gloss-boxes/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/holographic-lip-gloss-boxes/",
@@ -9389,18 +10599,38 @@
     },
     {
       "from": "/how-to-order/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/how-to-order/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/how-to-order/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/how-to-order/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/how-to-order/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/how-to-order/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/how-to-order/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/how-to-order/",
@@ -9436,11 +10666,6 @@
       "from": "/how-to-order/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/how-to-order/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/how-to-order/",
@@ -9559,6 +10784,11 @@
     },
     {
       "from": "/how-to-order/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/how-to-order/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -9569,13 +10799,23 @@
     },
     {
       "from": "/how-to-order/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/how-to-order/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/how-to-order/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/how-to-order/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/how-to-order/",
@@ -9699,18 +10939,38 @@
     },
     {
       "from": "/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/",
@@ -9746,11 +11006,6 @@
       "from": "/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/",
@@ -9994,6 +11249,11 @@
     },
     {
       "from": "/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -10004,13 +11264,23 @@
     },
     {
       "from": "/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/",
@@ -10133,6 +11403,411 @@
       "anchor": "Sitemap"
     },
     {
+      "from": "/lip-balm-labels/",
+      "to": "/",
+      "anchor": "Lip Boxes"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": "Custom Lip Balm Boxes Cartons for stick and tin formats"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/hang-tab-lip-balm-boxes/",
+      "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/paper-lip-balm-tubes/",
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/custom-lip-balm-labels/",
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/custom-lipstick-boxes/",
+      "anchor": "Custom Lipstick Boxes Printed bullet cartons"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/rigid-lipstick-boxes/",
+      "anchor": "Rigid Lipstick Boxes Magnetic and drawer gift boxes"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/hang-tab-lipstick-boxes/",
+      "anchor": "Hang Tab Lipstick Boxes Window peg display cartons"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/lip-gloss-boxes/",
+      "anchor": "Lip Gloss Boxes Tall cartons for wand tubes"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/holographic-lip-gloss-boxes/",
+      "anchor": "Holographic Lip Gloss Boxes Iridescent metallised board"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/custom-lip-mask-boxes/",
+      "anchor": "Custom Lip Mask Boxes Hydrogel patch packaging"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/custom-lip-care-packaging/",
+      "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/products/",
+      "anchor": "See the full product directory"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/materials/",
+      "anchor": "Materials"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/printing-options/",
+      "anchor": "Printing Options"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/finishes/",
+      "anchor": "Finishes"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/box-styles/",
+      "anchor": "Box Styles"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/artwork-guidelines/",
+      "anchor": "Artwork Guidelines"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/custom-packaging/",
+      "anchor": "Custom Packaging"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/how-to-order/",
+      "anchor": "How to Order"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/turnaround-time/",
+      "anchor": "Turnaround Time"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/shipping-information/",
+      "anchor": "Shipping Information"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/sample-kit/",
+      "anchor": "Sample Kit"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/faqs/",
+      "anchor": "FAQs"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/blog/",
+      "anchor": "Blog"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/about/",
+      "anchor": "About"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/contact/",
+      "anchor": "Contact"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/request-a-quote/",
+      "anchor": "Request a Quote"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/",
+      "anchor": "Home"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/products/",
+      "anchor": "Products"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/sample-kit/",
+      "anchor": "Request a sample"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/privacy-policy/",
+      "anchor": "privacy policy"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/request-a-quote/",
+      "anchor": "full quote request form"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/custom-lip-balm-labels/",
+      "anchor": "custom label printing page"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/materials/",
+      "anchor": "stock reference"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/custom-lip-balm-labels/",
+      "anchor": ""
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/custom-lip-balm-labels/",
+      "anchor": "Custom Lip Balm Labels"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": ""
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/paper-lip-balm-tubes/",
+      "anchor": ""
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/paper-lip-balm-tubes/",
+      "anchor": "Paper Lip Balm Tubes"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/lip-balm-packaging/",
+      "anchor": ""
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/request-a-quote/",
+      "anchor": "Request a Quote"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/sample-kit/",
+      "anchor": "See sample options"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/",
+      "anchor": "Lip Boxes"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/request-a-quote/",
+      "anchor": "Request a Quote"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": "Custom Lip Balm Boxes"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/hang-tab-lip-balm-boxes/",
+      "anchor": "Hang Tab Lip Balm Boxes"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/paper-lip-balm-tubes/",
+      "anchor": "Paper Lip Balm Tubes"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/custom-lip-balm-labels/",
+      "anchor": "Custom Lip Balm Labels"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/custom-lipstick-boxes/",
+      "anchor": "Custom Lipstick Boxes"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/rigid-lipstick-boxes/",
+      "anchor": "Rigid Lipstick Boxes"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/hang-tab-lipstick-boxes/",
+      "anchor": "Hang Tab Lipstick Boxes"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/lip-gloss-boxes/",
+      "anchor": "Lip Gloss Boxes"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/holographic-lip-gloss-boxes/",
+      "anchor": "Holographic Lip Gloss Boxes"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/materials/",
+      "anchor": "Materials"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/printing-options/",
+      "anchor": "Printing Options"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/finishes/",
+      "anchor": "Finishes"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/box-styles/",
+      "anchor": "Box Styles"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/artwork-guidelines/",
+      "anchor": "Artwork Guidelines"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/request-a-quote/",
+      "anchor": "Request a Quote"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/how-to-order/",
+      "anchor": "How to Order"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/turnaround-time/",
+      "anchor": "Turnaround Time"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/shipping-information/",
+      "anchor": "Shipping Information"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/sample-kit/",
+      "anchor": "Sample Kit"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/about/",
+      "anchor": "About Lip Boxes"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/custom-lip-care-packaging/",
+      "anchor": "Bulk & Private Label"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/custom-lip-mask-boxes/",
+      "anchor": "Custom Lip Mask Boxes"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/blog/",
+      "anchor": "Blog"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/contact/",
+      "anchor": "Contact"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/faqs/",
+      "anchor": "FAQs"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/privacy-policy/",
+      "anchor": "Privacy Policy"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/terms-and-conditions/",
+      "anchor": "Terms and Conditions"
+    },
+    {
+      "from": "/lip-balm-labels/",
+      "to": "/sitemap.xml",
+      "anchor": "Sitemap"
+    },
+    {
       "from": "/lip-balm-packaging/",
       "to": "/",
       "anchor": "Lip Boxes"
@@ -10150,12 +11825,27 @@
     {
       "from": "/lip-balm-packaging/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/lip-balm-packaging/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/lip-balm-packaging/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/lip-balm-packaging/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/lip-balm-packaging/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/lip-balm-packaging/",
@@ -10279,6 +11969,41 @@
     },
     {
       "from": "/lip-balm-packaging/",
+      "to": "/products/",
+      "anchor": "Products"
+    },
+    {
+      "from": "/lip-balm-packaging/",
+      "to": "/sample-kit/",
+      "anchor": "Request a sample"
+    },
+    {
+      "from": "/lip-balm-packaging/",
+      "to": "/privacy-policy/",
+      "anchor": "privacy policy"
+    },
+    {
+      "from": "/lip-balm-packaging/",
+      "to": "/request-a-quote/",
+      "anchor": "full quote request form"
+    },
+    {
+      "from": "/lip-balm-packaging/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": "carton built around your filled tube"
+    },
+    {
+      "from": "/lip-balm-packaging/",
+      "to": "/artwork-guidelines/",
+      "anchor": "artwork page"
+    },
+    {
+      "from": "/lip-balm-packaging/",
+      "to": "/shipping-information/",
+      "anchor": "delivery page"
+    },
+    {
+      "from": "/lip-balm-packaging/",
       "to": "/custom-lip-balm-boxes/",
       "anchor": ""
     },
@@ -10286,16 +12011,6 @@
       "from": "/lip-balm-packaging/",
       "to": "/custom-lip-balm-boxes/",
       "anchor": "Custom Lip Balm Boxes"
-    },
-    {
-      "from": "/lip-balm-packaging/",
-      "to": "/hang-tab-lip-balm-boxes/",
-      "anchor": ""
-    },
-    {
-      "from": "/lip-balm-packaging/",
-      "to": "/hang-tab-lip-balm-boxes/",
-      "anchor": "Hang Tab Lip Balm Boxes"
     },
     {
       "from": "/lip-balm-packaging/",
@@ -10309,18 +12024,23 @@
     },
     {
       "from": "/lip-balm-packaging/",
-      "to": "/custom-lip-balm-labels/",
+      "to": "/lip-balm-labels/",
       "anchor": ""
     },
     {
       "from": "/lip-balm-packaging/",
-      "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
     },
     {
       "from": "/lip-balm-packaging/",
-      "to": "/blog/how-packaging-quantity-affects-unit-pricing/",
-      "anchor": "quantity and unit pricing"
+      "to": "/hang-tab-lip-balm-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/lip-balm-packaging/",
+      "to": "/hang-tab-lip-balm-boxes/",
+      "anchor": "Hang Tab Lip Balm Boxes"
     },
     {
       "from": "/lip-balm-packaging/",
@@ -10359,8 +12079,23 @@
     },
     {
       "from": "/lip-balm-packaging/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/lip-balm-packaging/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
+    },
+    {
+      "from": "/lip-balm-packaging/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/lip-balm-packaging/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/lip-balm-packaging/",
@@ -10494,18 +12229,38 @@
     },
     {
       "from": "/lip-gloss-boxes/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/lip-gloss-boxes/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/lip-gloss-boxes/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/lip-gloss-boxes/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/lip-gloss-boxes/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/lip-gloss-boxes/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/lip-gloss-boxes/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/lip-gloss-boxes/",
@@ -10536,11 +12291,6 @@
       "from": "/lip-gloss-boxes/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/lip-gloss-boxes/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/lip-gloss-boxes/",
@@ -10734,6 +12484,11 @@
     },
     {
       "from": "/lip-gloss-boxes/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/lip-gloss-boxes/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -10744,13 +12499,23 @@
     },
     {
       "from": "/lip-gloss-boxes/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/lip-gloss-boxes/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/lip-gloss-boxes/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/lip-gloss-boxes/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/lip-gloss-boxes/",
@@ -10868,6 +12633,416 @@
       "anchor": "Sitemap"
     },
     {
+      "from": "/lipstick-boxes/",
+      "to": "/",
+      "anchor": "Lip Boxes"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": "Custom Lip Balm Boxes Cartons for stick and tin formats"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/hang-tab-lip-balm-boxes/",
+      "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/paper-lip-balm-tubes/",
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/custom-lip-balm-labels/",
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/custom-lipstick-boxes/",
+      "anchor": "Custom Lipstick Boxes Printed bullet cartons"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/rigid-lipstick-boxes/",
+      "anchor": "Rigid Lipstick Boxes Magnetic and drawer gift boxes"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/hang-tab-lipstick-boxes/",
+      "anchor": "Hang Tab Lipstick Boxes Window peg display cartons"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/lip-gloss-boxes/",
+      "anchor": "Lip Gloss Boxes Tall cartons for wand tubes"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/holographic-lip-gloss-boxes/",
+      "anchor": "Holographic Lip Gloss Boxes Iridescent metallised board"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/custom-lip-mask-boxes/",
+      "anchor": "Custom Lip Mask Boxes Hydrogel patch packaging"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/custom-lip-care-packaging/",
+      "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/products/",
+      "anchor": "See the full product directory"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/materials/",
+      "anchor": "Materials"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/printing-options/",
+      "anchor": "Printing Options"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/finishes/",
+      "anchor": "Finishes"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/box-styles/",
+      "anchor": "Box Styles"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/artwork-guidelines/",
+      "anchor": "Artwork Guidelines"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/custom-packaging/",
+      "anchor": "Custom Packaging"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/how-to-order/",
+      "anchor": "How to Order"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/turnaround-time/",
+      "anchor": "Turnaround Time"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/shipping-information/",
+      "anchor": "Shipping Information"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/sample-kit/",
+      "anchor": "Sample Kit"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/faqs/",
+      "anchor": "FAQs"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/blog/",
+      "anchor": "Blog"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/about/",
+      "anchor": "About"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/contact/",
+      "anchor": "Contact"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/request-a-quote/",
+      "anchor": "Request a Quote"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/",
+      "anchor": "Home"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/products/",
+      "anchor": "Products"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/sample-kit/",
+      "anchor": "Request a sample"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/privacy-policy/",
+      "anchor": "privacy policy"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/request-a-quote/",
+      "anchor": "full quote request form"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/custom-lipstick-boxes/",
+      "anchor": "printed folding cartons built to your bullet case"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/box-styles/",
+      "anchor": "structural reference"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/finishes/",
+      "anchor": "coatings page"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/custom-lipstick-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/custom-lipstick-boxes/",
+      "anchor": "Custom Lipstick Boxes"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/rigid-lipstick-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/rigid-lipstick-boxes/",
+      "anchor": "Rigid Lipstick Boxes"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/hang-tab-lipstick-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/hang-tab-lipstick-boxes/",
+      "anchor": "Hang Tab Lipstick Boxes"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/lip-gloss-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/lip-gloss-boxes/",
+      "anchor": "Lip Gloss Boxes"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/request-a-quote/",
+      "anchor": "Request a Quote"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/sample-kit/",
+      "anchor": "See sample options"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/",
+      "anchor": "Lip Boxes"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/request-a-quote/",
+      "anchor": "Request a Quote"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": "Custom Lip Balm Boxes"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/hang-tab-lip-balm-boxes/",
+      "anchor": "Hang Tab Lip Balm Boxes"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/paper-lip-balm-tubes/",
+      "anchor": "Paper Lip Balm Tubes"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/custom-lip-balm-labels/",
+      "anchor": "Custom Lip Balm Labels"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/custom-lipstick-boxes/",
+      "anchor": "Custom Lipstick Boxes"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/rigid-lipstick-boxes/",
+      "anchor": "Rigid Lipstick Boxes"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/hang-tab-lipstick-boxes/",
+      "anchor": "Hang Tab Lipstick Boxes"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/lip-gloss-boxes/",
+      "anchor": "Lip Gloss Boxes"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/holographic-lip-gloss-boxes/",
+      "anchor": "Holographic Lip Gloss Boxes"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/materials/",
+      "anchor": "Materials"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/printing-options/",
+      "anchor": "Printing Options"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/finishes/",
+      "anchor": "Finishes"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/box-styles/",
+      "anchor": "Box Styles"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/artwork-guidelines/",
+      "anchor": "Artwork Guidelines"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/request-a-quote/",
+      "anchor": "Request a Quote"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/how-to-order/",
+      "anchor": "How to Order"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/turnaround-time/",
+      "anchor": "Turnaround Time"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/shipping-information/",
+      "anchor": "Shipping Information"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/sample-kit/",
+      "anchor": "Sample Kit"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/about/",
+      "anchor": "About Lip Boxes"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/custom-lip-care-packaging/",
+      "anchor": "Bulk & Private Label"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/custom-lip-mask-boxes/",
+      "anchor": "Custom Lip Mask Boxes"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/blog/",
+      "anchor": "Blog"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/contact/",
+      "anchor": "Contact"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/faqs/",
+      "anchor": "FAQs"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/privacy-policy/",
+      "anchor": "Privacy Policy"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/terms-and-conditions/",
+      "anchor": "Terms and Conditions"
+    },
+    {
+      "from": "/lipstick-boxes/",
+      "to": "/sitemap.xml",
+      "anchor": "Sitemap"
+    },
+    {
       "from": "/materials/",
       "to": "/",
       "anchor": "Lip Boxes"
@@ -10879,18 +13054,38 @@
     },
     {
       "from": "/materials/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/materials/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/materials/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/materials/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/materials/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/materials/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/materials/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/materials/",
@@ -10926,11 +13121,6 @@
       "from": "/materials/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/materials/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/materials/",
@@ -11054,6 +13244,11 @@
     },
     {
       "from": "/materials/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/materials/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -11064,13 +13259,23 @@
     },
     {
       "from": "/materials/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/materials/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/materials/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/materials/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/materials/",
@@ -11199,13 +13404,33 @@
     },
     {
       "from": "/paper-lip-balm-tubes/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/paper-lip-balm-tubes/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/paper-lip-balm-tubes/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
+    },
+    {
+      "from": "/paper-lip-balm-tubes/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/paper-lip-balm-tubes/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/paper-lip-balm-tubes/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/paper-lip-balm-tubes/",
@@ -11241,11 +13466,6 @@
       "from": "/paper-lip-balm-tubes/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/paper-lip-balm-tubes/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/paper-lip-balm-tubes/",
@@ -11354,8 +13574,8 @@
     },
     {
       "from": "/paper-lip-balm-tubes/",
-      "to": "/custom-lip-balm-labels/",
-      "anchor": "printed wrap labels for lip balm tubes"
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "natural kraft tube page"
     },
     {
       "from": "/paper-lip-balm-tubes/",
@@ -11434,8 +13654,18 @@
     },
     {
       "from": "/paper-lip-balm-tubes/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/paper-lip-balm-tubes/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
+    },
+    {
+      "from": "/paper-lip-balm-tubes/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
     },
     {
       "from": "/paper-lip-balm-tubes/",
@@ -11444,8 +13674,13 @@
     },
     {
       "from": "/paper-lip-balm-tubes/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/paper-lip-balm-tubes/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/paper-lip-balm-tubes/",
@@ -11579,18 +13814,38 @@
     },
     {
       "from": "/printing-options/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/printing-options/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/printing-options/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/printing-options/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/printing-options/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/printing-options/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/printing-options/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/printing-options/",
@@ -11626,11 +13881,6 @@
       "from": "/printing-options/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/printing-options/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/printing-options/",
@@ -11764,6 +14014,11 @@
     },
     {
       "from": "/printing-options/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/printing-options/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -11774,13 +14029,23 @@
     },
     {
       "from": "/printing-options/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/printing-options/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/printing-options/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/printing-options/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/printing-options/",
@@ -11909,18 +14174,38 @@
     },
     {
       "from": "/privacy-policy/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/privacy-policy/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/privacy-policy/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/privacy-policy/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/privacy-policy/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/privacy-policy/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/privacy-policy/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/privacy-policy/",
@@ -11956,11 +14241,6 @@
       "from": "/privacy-policy/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/privacy-policy/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/privacy-policy/",
@@ -12074,6 +14354,11 @@
     },
     {
       "from": "/privacy-policy/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/privacy-policy/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -12084,13 +14369,23 @@
     },
     {
       "from": "/privacy-policy/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/privacy-policy/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/privacy-policy/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/privacy-policy/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/privacy-policy/",
@@ -12219,18 +14514,38 @@
     },
     {
       "from": "/products/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/products/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/products/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/products/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/products/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/products/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/products/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/products/",
@@ -12266,11 +14581,6 @@
       "from": "/products/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/products/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/products/",
@@ -12364,6 +14674,16 @@
     },
     {
       "from": "/products/",
+      "to": "/lip-balm-packaging/",
+      "anchor": ""
+    },
+    {
+      "from": "/products/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/products/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": ""
     },
@@ -12384,6 +14704,16 @@
     },
     {
       "from": "/products/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": ""
+    },
+    {
+      "from": "/products/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/products/",
       "to": "/custom-lip-balm-labels/",
       "anchor": ""
     },
@@ -12391,6 +14721,26 @@
       "from": "/products/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
+    },
+    {
+      "from": "/products/",
+      "to": "/lip-balm-labels/",
+      "anchor": ""
+    },
+    {
+      "from": "/products/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/products/",
+      "to": "/lipstick-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/products/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/products/",
@@ -12519,6 +14869,11 @@
     },
     {
       "from": "/products/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/products/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -12529,13 +14884,23 @@
     },
     {
       "from": "/products/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/products/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/products/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/products/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/products/",
@@ -12669,18 +15034,38 @@
     },
     {
       "from": "/request-a-quote/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/request-a-quote/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/request-a-quote/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/request-a-quote/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/request-a-quote/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/request-a-quote/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/request-a-quote/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/request-a-quote/",
@@ -12716,11 +15101,6 @@
       "from": "/request-a-quote/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/request-a-quote/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/request-a-quote/",
@@ -12839,6 +15219,11 @@
     },
     {
       "from": "/request-a-quote/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/request-a-quote/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -12849,13 +15234,23 @@
     },
     {
       "from": "/request-a-quote/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/request-a-quote/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/request-a-quote/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/request-a-quote/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/request-a-quote/",
@@ -12984,18 +15379,38 @@
     },
     {
       "from": "/rigid-lipstick-boxes/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/rigid-lipstick-boxes/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/rigid-lipstick-boxes/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/rigid-lipstick-boxes/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/rigid-lipstick-boxes/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/rigid-lipstick-boxes/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/rigid-lipstick-boxes/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/rigid-lipstick-boxes/",
@@ -13026,11 +15441,6 @@
       "from": "/rigid-lipstick-boxes/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/rigid-lipstick-boxes/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/rigid-lipstick-boxes/",
@@ -13219,6 +15629,11 @@
     },
     {
       "from": "/rigid-lipstick-boxes/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/rigid-lipstick-boxes/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -13229,13 +15644,23 @@
     },
     {
       "from": "/rigid-lipstick-boxes/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/rigid-lipstick-boxes/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/rigid-lipstick-boxes/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/rigid-lipstick-boxes/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/rigid-lipstick-boxes/",
@@ -13364,18 +15789,38 @@
     },
     {
       "from": "/sample-kit/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/sample-kit/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/sample-kit/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/sample-kit/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/sample-kit/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/sample-kit/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/sample-kit/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/sample-kit/",
@@ -13411,11 +15856,6 @@
       "from": "/sample-kit/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/sample-kit/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/sample-kit/",
@@ -13544,6 +15984,11 @@
     },
     {
       "from": "/sample-kit/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/sample-kit/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -13554,13 +15999,23 @@
     },
     {
       "from": "/sample-kit/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/sample-kit/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/sample-kit/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/sample-kit/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/sample-kit/",
@@ -13689,18 +16144,38 @@
     },
     {
       "from": "/shipping-information/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/shipping-information/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/shipping-information/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/shipping-information/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/shipping-information/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/shipping-information/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/shipping-information/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/shipping-information/",
@@ -13736,11 +16211,6 @@
       "from": "/shipping-information/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/shipping-information/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/shipping-information/",
@@ -13864,6 +16334,11 @@
     },
     {
       "from": "/shipping-information/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/shipping-information/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -13874,13 +16349,23 @@
     },
     {
       "from": "/shipping-information/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/shipping-information/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/shipping-information/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/shipping-information/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/shipping-information/",
@@ -14009,18 +16494,38 @@
     },
     {
       "from": "/terms-and-conditions/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/terms-and-conditions/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/terms-and-conditions/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/terms-and-conditions/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/terms-and-conditions/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/terms-and-conditions/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/terms-and-conditions/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/terms-and-conditions/",
@@ -14056,11 +16561,6 @@
       "from": "/terms-and-conditions/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/terms-and-conditions/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/terms-and-conditions/",
@@ -14189,6 +16689,11 @@
     },
     {
       "from": "/terms-and-conditions/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/terms-and-conditions/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -14199,13 +16704,23 @@
     },
     {
       "from": "/terms-and-conditions/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/terms-and-conditions/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/terms-and-conditions/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/terms-and-conditions/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/terms-and-conditions/",
@@ -14334,18 +16849,38 @@
     },
     {
       "from": "/thank-you/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/thank-you/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/thank-you/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/thank-you/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/thank-you/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/thank-you/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/thank-you/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/thank-you/",
@@ -14381,11 +16916,6 @@
       "from": "/thank-you/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/thank-you/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/thank-you/",
@@ -14534,6 +17064,11 @@
     },
     {
       "from": "/thank-you/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/thank-you/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -14544,13 +17079,23 @@
     },
     {
       "from": "/thank-you/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/thank-you/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/thank-you/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/thank-you/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/thank-you/",
@@ -14684,18 +17229,38 @@
     },
     {
       "from": "/turnaround-time/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging Coordinated container, carton and label sets"
+    },
+    {
+      "from": "/turnaround-time/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes Peg hook retail packs"
     },
     {
       "from": "/turnaround-time/",
       "to": "/paper-lip-balm-tubes/",
-      "anchor": "Paper Lip Balm Tubes Plastic-free push-up tubes"
+      "anchor": "Paper Lip Balm Tubes Printed plastic-free push-up tubes"
+    },
+    {
+      "from": "/turnaround-time/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes Unbleached kraft push-up tubes"
     },
     {
       "from": "/turnaround-time/",
       "to": "/custom-lip-balm-labels/",
-      "anchor": "Custom Lip Balm Labels Waterproof wrap labels"
+      "anchor": "Custom Lip Balm Labels Printed to your artwork"
+    },
+    {
+      "from": "/turnaround-time/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels Formats, sizes and stocks"
+    },
+    {
+      "from": "/turnaround-time/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes Compare every construction"
     },
     {
       "from": "/turnaround-time/",
@@ -14731,11 +17296,6 @@
       "from": "/turnaround-time/",
       "to": "/custom-lip-care-packaging/",
       "anchor": "Custom Lip Care Packaging Bulk and private label programmes"
-    },
-    {
-      "from": "/turnaround-time/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide Compare every balm format"
     },
     {
       "from": "/turnaround-time/",
@@ -14854,6 +17414,11 @@
     },
     {
       "from": "/turnaround-time/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/turnaround-time/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "Hang Tab Lip Balm Boxes"
     },
@@ -14864,13 +17429,23 @@
     },
     {
       "from": "/turnaround-time/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/turnaround-time/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "Custom Lip Balm Labels"
     },
     {
       "from": "/turnaround-time/",
-      "to": "/lip-balm-packaging/",
-      "anchor": "Lip Balm Packaging Guide"
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/turnaround-time/",
+      "to": "/lipstick-boxes/",
+      "anchor": "Lipstick Boxes"
     },
     {
       "from": "/turnaround-time/",
@@ -15004,6 +17579,7 @@
       "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "/blog/printing-methods-for-cosmetic-packaging/",
       "/box-styles/",
+      "/cardboard-lip-balm-tubes/",
       "/contact/",
       "/custom-lip-balm-boxes/",
       "/custom-lip-balm-labels/",
@@ -15017,8 +17593,10 @@
       "/hang-tab-lipstick-boxes/",
       "/holographic-lip-gloss-boxes/",
       "/how-to-order/",
+      "/lip-balm-labels/",
       "/lip-balm-packaging/",
       "/lip-gloss-boxes/",
+      "/lipstick-boxes/",
       "/materials/",
       "/paper-lip-balm-tubes/",
       "/printing-options/",
@@ -15046,6 +17624,7 @@
       "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "/blog/printing-methods-for-cosmetic-packaging/",
       "/box-styles/",
+      "/cardboard-lip-balm-tubes/",
       "/contact/",
       "/custom-lip-balm-boxes/",
       "/custom-lip-balm-labels/",
@@ -15059,8 +17638,10 @@
       "/hang-tab-lipstick-boxes/",
       "/holographic-lip-gloss-boxes/",
       "/how-to-order/",
+      "/lip-balm-labels/",
       "/lip-balm-packaging/",
       "/lip-gloss-boxes/",
+      "/lipstick-boxes/",
       "/materials/",
       "/paper-lip-balm-tubes/",
       "/printing-options/",
@@ -15077,7 +17658,6 @@
     "/blog/how-packaging-quantity-affects-unit-pricing/": [
       "/",
       "/blog/",
-      "/lip-balm-packaging/",
       "/printing-options/",
       "/thank-you/"
     ],
@@ -15101,6 +17681,7 @@
       "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "/blog/printing-methods-for-cosmetic-packaging/",
       "/box-styles/",
+      "/cardboard-lip-balm-tubes/",
       "/contact/",
       "/custom-lip-balm-boxes/",
       "/custom-lip-balm-labels/",
@@ -15114,8 +17695,10 @@
       "/hang-tab-lipstick-boxes/",
       "/holographic-lip-gloss-boxes/",
       "/how-to-order/",
+      "/lip-balm-labels/",
       "/lip-balm-packaging/",
       "/lip-gloss-boxes/",
+      "/lipstick-boxes/",
       "/materials/",
       "/paper-lip-balm-tubes/",
       "/printing-options/",
@@ -15161,6 +17744,7 @@
       "/blog/packaging-inserts-for-lipstick-and-lip-gloss-products/",
       "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "/blog/printing-methods-for-cosmetic-packaging/",
+      "/cardboard-lip-balm-tubes/",
       "/contact/",
       "/custom-lip-balm-boxes/",
       "/custom-lip-balm-labels/",
@@ -15174,8 +17758,55 @@
       "/hang-tab-lipstick-boxes/",
       "/holographic-lip-gloss-boxes/",
       "/how-to-order/",
+      "/lip-balm-labels/",
       "/lip-balm-packaging/",
       "/lip-gloss-boxes/",
+      "/lipstick-boxes/",
+      "/materials/",
+      "/paper-lip-balm-tubes/",
+      "/printing-options/",
+      "/privacy-policy/",
+      "/products/",
+      "/request-a-quote/",
+      "/rigid-lipstick-boxes/",
+      "/sample-kit/",
+      "/shipping-information/",
+      "/terms-and-conditions/",
+      "/thank-you/",
+      "/turnaround-time/"
+    ],
+    "/cardboard-lip-balm-tubes/": [
+      "/",
+      "/404/",
+      "/about/",
+      "/artwork-guidelines/",
+      "/blog/",
+      "/blog/how-packaging-quantity-affects-unit-pricing/",
+      "/blog/how-to-choose-packaging-for-a-lip-gloss-line/",
+      "/blog/how-to-prepare-artwork-for-custom-lip-boxes/",
+      "/blog/lip-balm-box-materials-compared/",
+      "/blog/lipstick-packaging-sizes-and-structural-options/",
+      "/blog/packaging-inserts-for-lipstick-and-lip-gloss-products/",
+      "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
+      "/blog/printing-methods-for-cosmetic-packaging/",
+      "/box-styles/",
+      "/contact/",
+      "/custom-lip-balm-boxes/",
+      "/custom-lip-balm-labels/",
+      "/custom-lip-care-packaging/",
+      "/custom-lip-mask-boxes/",
+      "/custom-lipstick-boxes/",
+      "/custom-packaging/",
+      "/faqs/",
+      "/finishes/",
+      "/hang-tab-lip-balm-boxes/",
+      "/hang-tab-lipstick-boxes/",
+      "/holographic-lip-gloss-boxes/",
+      "/how-to-order/",
+      "/lip-balm-labels/",
+      "/lip-balm-packaging/",
+      "/lip-gloss-boxes/",
+      "/lipstick-boxes/",
       "/materials/",
       "/paper-lip-balm-tubes/",
       "/printing-options/",
@@ -15204,6 +17835,7 @@
       "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "/blog/printing-methods-for-cosmetic-packaging/",
       "/box-styles/",
+      "/cardboard-lip-balm-tubes/",
       "/custom-lip-balm-boxes/",
       "/custom-lip-balm-labels/",
       "/custom-lip-care-packaging/",
@@ -15216,8 +17848,10 @@
       "/hang-tab-lipstick-boxes/",
       "/holographic-lip-gloss-boxes/",
       "/how-to-order/",
+      "/lip-balm-labels/",
       "/lip-balm-packaging/",
       "/lip-gloss-boxes/",
+      "/lipstick-boxes/",
       "/materials/",
       "/paper-lip-balm-tubes/",
       "/printing-options/",
@@ -15246,6 +17880,7 @@
       "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "/blog/printing-methods-for-cosmetic-packaging/",
       "/box-styles/",
+      "/cardboard-lip-balm-tubes/",
       "/contact/",
       "/custom-lip-balm-labels/",
       "/custom-lip-care-packaging/",
@@ -15258,8 +17893,10 @@
       "/hang-tab-lipstick-boxes/",
       "/holographic-lip-gloss-boxes/",
       "/how-to-order/",
+      "/lip-balm-labels/",
       "/lip-balm-packaging/",
       "/lip-gloss-boxes/",
+      "/lipstick-boxes/",
       "/materials/",
       "/paper-lip-balm-tubes/",
       "/printing-options/",
@@ -15288,6 +17925,7 @@
       "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "/blog/printing-methods-for-cosmetic-packaging/",
       "/box-styles/",
+      "/cardboard-lip-balm-tubes/",
       "/contact/",
       "/custom-lip-balm-boxes/",
       "/custom-lip-care-packaging/",
@@ -15300,8 +17938,10 @@
       "/hang-tab-lipstick-boxes/",
       "/holographic-lip-gloss-boxes/",
       "/how-to-order/",
+      "/lip-balm-labels/",
       "/lip-balm-packaging/",
       "/lip-gloss-boxes/",
+      "/lipstick-boxes/",
       "/materials/",
       "/paper-lip-balm-tubes/",
       "/printing-options/",
@@ -15330,6 +17970,7 @@
       "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "/blog/printing-methods-for-cosmetic-packaging/",
       "/box-styles/",
+      "/cardboard-lip-balm-tubes/",
       "/contact/",
       "/custom-lip-balm-boxes/",
       "/custom-lip-balm-labels/",
@@ -15342,8 +17983,10 @@
       "/hang-tab-lipstick-boxes/",
       "/holographic-lip-gloss-boxes/",
       "/how-to-order/",
+      "/lip-balm-labels/",
       "/lip-balm-packaging/",
       "/lip-gloss-boxes/",
+      "/lipstick-boxes/",
       "/materials/",
       "/paper-lip-balm-tubes/",
       "/printing-options/",
@@ -15372,6 +18015,7 @@
       "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "/blog/printing-methods-for-cosmetic-packaging/",
       "/box-styles/",
+      "/cardboard-lip-balm-tubes/",
       "/contact/",
       "/custom-lip-balm-boxes/",
       "/custom-lip-balm-labels/",
@@ -15384,8 +18028,10 @@
       "/hang-tab-lipstick-boxes/",
       "/holographic-lip-gloss-boxes/",
       "/how-to-order/",
+      "/lip-balm-labels/",
       "/lip-balm-packaging/",
       "/lip-gloss-boxes/",
+      "/lipstick-boxes/",
       "/materials/",
       "/paper-lip-balm-tubes/",
       "/printing-options/",
@@ -15414,6 +18060,7 @@
       "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "/blog/printing-methods-for-cosmetic-packaging/",
       "/box-styles/",
+      "/cardboard-lip-balm-tubes/",
       "/contact/",
       "/custom-lip-balm-boxes/",
       "/custom-lip-balm-labels/",
@@ -15426,8 +18073,10 @@
       "/hang-tab-lipstick-boxes/",
       "/holographic-lip-gloss-boxes/",
       "/how-to-order/",
+      "/lip-balm-labels/",
       "/lip-balm-packaging/",
       "/lip-gloss-boxes/",
+      "/lipstick-boxes/",
       "/materials/",
       "/paper-lip-balm-tubes/",
       "/printing-options/",
@@ -15456,6 +18105,7 @@
       "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "/blog/printing-methods-for-cosmetic-packaging/",
       "/box-styles/",
+      "/cardboard-lip-balm-tubes/",
       "/contact/",
       "/custom-lip-balm-boxes/",
       "/custom-lip-balm-labels/",
@@ -15468,8 +18118,10 @@
       "/hang-tab-lipstick-boxes/",
       "/holographic-lip-gloss-boxes/",
       "/how-to-order/",
+      "/lip-balm-labels/",
       "/lip-balm-packaging/",
       "/lip-gloss-boxes/",
+      "/lipstick-boxes/",
       "/materials/",
       "/paper-lip-balm-tubes/",
       "/printing-options/",
@@ -15498,6 +18150,7 @@
       "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "/blog/printing-methods-for-cosmetic-packaging/",
       "/box-styles/",
+      "/cardboard-lip-balm-tubes/",
       "/contact/",
       "/custom-lip-balm-boxes/",
       "/custom-lip-balm-labels/",
@@ -15510,8 +18163,10 @@
       "/hang-tab-lipstick-boxes/",
       "/holographic-lip-gloss-boxes/",
       "/how-to-order/",
+      "/lip-balm-labels/",
       "/lip-balm-packaging/",
       "/lip-gloss-boxes/",
+      "/lipstick-boxes/",
       "/materials/",
       "/paper-lip-balm-tubes/",
       "/printing-options/",
@@ -15540,6 +18195,7 @@
       "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "/blog/printing-methods-for-cosmetic-packaging/",
       "/box-styles/",
+      "/cardboard-lip-balm-tubes/",
       "/contact/",
       "/custom-lip-balm-boxes/",
       "/custom-lip-balm-labels/",
@@ -15552,8 +18208,10 @@
       "/hang-tab-lipstick-boxes/",
       "/holographic-lip-gloss-boxes/",
       "/how-to-order/",
+      "/lip-balm-labels/",
       "/lip-balm-packaging/",
       "/lip-gloss-boxes/",
+      "/lipstick-boxes/",
       "/materials/",
       "/paper-lip-balm-tubes/",
       "/printing-options/",
@@ -15582,6 +18240,7 @@
       "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "/blog/printing-methods-for-cosmetic-packaging/",
       "/box-styles/",
+      "/cardboard-lip-balm-tubes/",
       "/contact/",
       "/custom-lip-balm-boxes/",
       "/custom-lip-balm-labels/",
@@ -15594,8 +18253,10 @@
       "/hang-tab-lipstick-boxes/",
       "/holographic-lip-gloss-boxes/",
       "/how-to-order/",
+      "/lip-balm-labels/",
       "/lip-balm-packaging/",
       "/lip-gloss-boxes/",
+      "/lipstick-boxes/",
       "/materials/",
       "/paper-lip-balm-tubes/",
       "/printing-options/",
@@ -15624,6 +18285,7 @@
       "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "/blog/printing-methods-for-cosmetic-packaging/",
       "/box-styles/",
+      "/cardboard-lip-balm-tubes/",
       "/contact/",
       "/custom-lip-balm-boxes/",
       "/custom-lip-balm-labels/",
@@ -15636,8 +18298,10 @@
       "/hang-tab-lip-balm-boxes/",
       "/holographic-lip-gloss-boxes/",
       "/how-to-order/",
+      "/lip-balm-labels/",
       "/lip-balm-packaging/",
       "/lip-gloss-boxes/",
+      "/lipstick-boxes/",
       "/materials/",
       "/paper-lip-balm-tubes/",
       "/printing-options/",
@@ -15666,6 +18330,7 @@
       "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "/blog/printing-methods-for-cosmetic-packaging/",
       "/box-styles/",
+      "/cardboard-lip-balm-tubes/",
       "/contact/",
       "/custom-lip-balm-boxes/",
       "/custom-lip-balm-labels/",
@@ -15678,8 +18343,10 @@
       "/hang-tab-lip-balm-boxes/",
       "/hang-tab-lipstick-boxes/",
       "/how-to-order/",
+      "/lip-balm-labels/",
       "/lip-balm-packaging/",
       "/lip-gloss-boxes/",
+      "/lipstick-boxes/",
       "/materials/",
       "/paper-lip-balm-tubes/",
       "/printing-options/",
@@ -15708,6 +18375,7 @@
       "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "/blog/printing-methods-for-cosmetic-packaging/",
       "/box-styles/",
+      "/cardboard-lip-balm-tubes/",
       "/contact/",
       "/custom-lip-balm-boxes/",
       "/custom-lip-balm-labels/",
@@ -15720,8 +18388,10 @@
       "/hang-tab-lip-balm-boxes/",
       "/hang-tab-lipstick-boxes/",
       "/holographic-lip-gloss-boxes/",
+      "/lip-balm-labels/",
       "/lip-balm-packaging/",
       "/lip-gloss-boxes/",
+      "/lipstick-boxes/",
       "/materials/",
       "/paper-lip-balm-tubes/",
       "/printing-options/",
@@ -15749,6 +18419,53 @@
       "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "/blog/printing-methods-for-cosmetic-packaging/",
       "/box-styles/",
+      "/cardboard-lip-balm-tubes/",
+      "/contact/",
+      "/custom-lip-balm-boxes/",
+      "/custom-lip-balm-labels/",
+      "/custom-lip-care-packaging/",
+      "/custom-lip-mask-boxes/",
+      "/custom-lipstick-boxes/",
+      "/custom-packaging/",
+      "/faqs/",
+      "/finishes/",
+      "/hang-tab-lip-balm-boxes/",
+      "/hang-tab-lipstick-boxes/",
+      "/holographic-lip-gloss-boxes/",
+      "/how-to-order/",
+      "/lip-balm-labels/",
+      "/lip-balm-packaging/",
+      "/lip-gloss-boxes/",
+      "/lipstick-boxes/",
+      "/materials/",
+      "/paper-lip-balm-tubes/",
+      "/printing-options/",
+      "/privacy-policy/",
+      "/products/",
+      "/request-a-quote/",
+      "/rigid-lipstick-boxes/",
+      "/sample-kit/",
+      "/shipping-information/",
+      "/terms-and-conditions/",
+      "/thank-you/",
+      "/turnaround-time/"
+    ],
+    "/lip-balm-labels/": [
+      "/",
+      "/404/",
+      "/about/",
+      "/artwork-guidelines/",
+      "/blog/",
+      "/blog/how-packaging-quantity-affects-unit-pricing/",
+      "/blog/how-to-choose-packaging-for-a-lip-gloss-line/",
+      "/blog/how-to-prepare-artwork-for-custom-lip-boxes/",
+      "/blog/lip-balm-box-materials-compared/",
+      "/blog/lipstick-packaging-sizes-and-structural-options/",
+      "/blog/packaging-inserts-for-lipstick-and-lip-gloss-products/",
+      "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
+      "/blog/printing-methods-for-cosmetic-packaging/",
+      "/box-styles/",
+      "/cardboard-lip-balm-tubes/",
       "/contact/",
       "/custom-lip-balm-boxes/",
       "/custom-lip-balm-labels/",
@@ -15764,6 +18481,7 @@
       "/how-to-order/",
       "/lip-balm-packaging/",
       "/lip-gloss-boxes/",
+      "/lipstick-boxes/",
       "/materials/",
       "/paper-lip-balm-tubes/",
       "/printing-options/",
@@ -15792,6 +18510,7 @@
       "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "/blog/printing-methods-for-cosmetic-packaging/",
       "/box-styles/",
+      "/cardboard-lip-balm-tubes/",
       "/contact/",
       "/custom-lip-balm-boxes/",
       "/custom-lip-balm-labels/",
@@ -15805,7 +18524,9 @@
       "/hang-tab-lipstick-boxes/",
       "/holographic-lip-gloss-boxes/",
       "/how-to-order/",
+      "/lip-balm-labels/",
       "/lip-gloss-boxes/",
+      "/lipstick-boxes/",
       "/materials/",
       "/paper-lip-balm-tubes/",
       "/printing-options/",
@@ -15834,6 +18555,7 @@
       "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "/blog/printing-methods-for-cosmetic-packaging/",
       "/box-styles/",
+      "/cardboard-lip-balm-tubes/",
       "/contact/",
       "/custom-lip-balm-boxes/",
       "/custom-lip-balm-labels/",
@@ -15847,7 +18569,54 @@
       "/hang-tab-lipstick-boxes/",
       "/holographic-lip-gloss-boxes/",
       "/how-to-order/",
+      "/lip-balm-labels/",
       "/lip-balm-packaging/",
+      "/lipstick-boxes/",
+      "/materials/",
+      "/paper-lip-balm-tubes/",
+      "/printing-options/",
+      "/privacy-policy/",
+      "/products/",
+      "/request-a-quote/",
+      "/rigid-lipstick-boxes/",
+      "/sample-kit/",
+      "/shipping-information/",
+      "/terms-and-conditions/",
+      "/thank-you/",
+      "/turnaround-time/"
+    ],
+    "/lipstick-boxes/": [
+      "/",
+      "/404/",
+      "/about/",
+      "/artwork-guidelines/",
+      "/blog/",
+      "/blog/how-packaging-quantity-affects-unit-pricing/",
+      "/blog/how-to-choose-packaging-for-a-lip-gloss-line/",
+      "/blog/how-to-prepare-artwork-for-custom-lip-boxes/",
+      "/blog/lip-balm-box-materials-compared/",
+      "/blog/lipstick-packaging-sizes-and-structural-options/",
+      "/blog/packaging-inserts-for-lipstick-and-lip-gloss-products/",
+      "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
+      "/blog/printing-methods-for-cosmetic-packaging/",
+      "/box-styles/",
+      "/cardboard-lip-balm-tubes/",
+      "/contact/",
+      "/custom-lip-balm-boxes/",
+      "/custom-lip-balm-labels/",
+      "/custom-lip-care-packaging/",
+      "/custom-lip-mask-boxes/",
+      "/custom-lipstick-boxes/",
+      "/custom-packaging/",
+      "/faqs/",
+      "/finishes/",
+      "/hang-tab-lip-balm-boxes/",
+      "/hang-tab-lipstick-boxes/",
+      "/holographic-lip-gloss-boxes/",
+      "/how-to-order/",
+      "/lip-balm-labels/",
+      "/lip-balm-packaging/",
+      "/lip-gloss-boxes/",
       "/materials/",
       "/paper-lip-balm-tubes/",
       "/printing-options/",
@@ -15876,6 +18645,7 @@
       "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "/blog/printing-methods-for-cosmetic-packaging/",
       "/box-styles/",
+      "/cardboard-lip-balm-tubes/",
       "/contact/",
       "/custom-lip-balm-boxes/",
       "/custom-lip-balm-labels/",
@@ -15889,8 +18659,10 @@
       "/hang-tab-lipstick-boxes/",
       "/holographic-lip-gloss-boxes/",
       "/how-to-order/",
+      "/lip-balm-labels/",
       "/lip-balm-packaging/",
       "/lip-gloss-boxes/",
+      "/lipstick-boxes/",
       "/paper-lip-balm-tubes/",
       "/printing-options/",
       "/privacy-policy/",
@@ -15918,6 +18690,7 @@
       "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "/blog/printing-methods-for-cosmetic-packaging/",
       "/box-styles/",
+      "/cardboard-lip-balm-tubes/",
       "/contact/",
       "/custom-lip-balm-boxes/",
       "/custom-lip-balm-labels/",
@@ -15931,8 +18704,10 @@
       "/hang-tab-lipstick-boxes/",
       "/holographic-lip-gloss-boxes/",
       "/how-to-order/",
+      "/lip-balm-labels/",
       "/lip-balm-packaging/",
       "/lip-gloss-boxes/",
+      "/lipstick-boxes/",
       "/materials/",
       "/printing-options/",
       "/privacy-policy/",
@@ -15960,6 +18735,7 @@
       "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "/blog/printing-methods-for-cosmetic-packaging/",
       "/box-styles/",
+      "/cardboard-lip-balm-tubes/",
       "/contact/",
       "/custom-lip-balm-boxes/",
       "/custom-lip-balm-labels/",
@@ -15973,8 +18749,10 @@
       "/hang-tab-lipstick-boxes/",
       "/holographic-lip-gloss-boxes/",
       "/how-to-order/",
+      "/lip-balm-labels/",
       "/lip-balm-packaging/",
       "/lip-gloss-boxes/",
+      "/lipstick-boxes/",
       "/materials/",
       "/paper-lip-balm-tubes/",
       "/privacy-policy/",
@@ -16002,6 +18780,7 @@
       "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "/blog/printing-methods-for-cosmetic-packaging/",
       "/box-styles/",
+      "/cardboard-lip-balm-tubes/",
       "/contact/",
       "/custom-lip-balm-boxes/",
       "/custom-lip-balm-labels/",
@@ -16015,8 +18794,10 @@
       "/hang-tab-lipstick-boxes/",
       "/holographic-lip-gloss-boxes/",
       "/how-to-order/",
+      "/lip-balm-labels/",
       "/lip-balm-packaging/",
       "/lip-gloss-boxes/",
+      "/lipstick-boxes/",
       "/materials/",
       "/paper-lip-balm-tubes/",
       "/printing-options/",
@@ -16044,6 +18825,7 @@
       "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "/blog/printing-methods-for-cosmetic-packaging/",
       "/box-styles/",
+      "/cardboard-lip-balm-tubes/",
       "/contact/",
       "/custom-lip-balm-boxes/",
       "/custom-lip-balm-labels/",
@@ -16057,8 +18839,10 @@
       "/hang-tab-lipstick-boxes/",
       "/holographic-lip-gloss-boxes/",
       "/how-to-order/",
+      "/lip-balm-labels/",
       "/lip-balm-packaging/",
       "/lip-gloss-boxes/",
+      "/lipstick-boxes/",
       "/materials/",
       "/paper-lip-balm-tubes/",
       "/printing-options/",
@@ -16086,6 +18870,7 @@
       "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "/blog/printing-methods-for-cosmetic-packaging/",
       "/box-styles/",
+      "/cardboard-lip-balm-tubes/",
       "/contact/",
       "/custom-lip-balm-boxes/",
       "/custom-lip-balm-labels/",
@@ -16099,8 +18884,10 @@
       "/hang-tab-lipstick-boxes/",
       "/holographic-lip-gloss-boxes/",
       "/how-to-order/",
+      "/lip-balm-labels/",
       "/lip-balm-packaging/",
       "/lip-gloss-boxes/",
+      "/lipstick-boxes/",
       "/materials/",
       "/paper-lip-balm-tubes/",
       "/printing-options/",
@@ -16128,6 +18915,7 @@
       "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "/blog/printing-methods-for-cosmetic-packaging/",
       "/box-styles/",
+      "/cardboard-lip-balm-tubes/",
       "/contact/",
       "/custom-lip-balm-boxes/",
       "/custom-lip-balm-labels/",
@@ -16141,8 +18929,10 @@
       "/hang-tab-lipstick-boxes/",
       "/holographic-lip-gloss-boxes/",
       "/how-to-order/",
+      "/lip-balm-labels/",
       "/lip-balm-packaging/",
       "/lip-gloss-boxes/",
+      "/lipstick-boxes/",
       "/materials/",
       "/paper-lip-balm-tubes/",
       "/printing-options/",
@@ -16170,6 +18960,7 @@
       "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "/blog/printing-methods-for-cosmetic-packaging/",
       "/box-styles/",
+      "/cardboard-lip-balm-tubes/",
       "/contact/",
       "/custom-lip-balm-boxes/",
       "/custom-lip-balm-labels/",
@@ -16183,8 +18974,10 @@
       "/hang-tab-lipstick-boxes/",
       "/holographic-lip-gloss-boxes/",
       "/how-to-order/",
+      "/lip-balm-labels/",
       "/lip-balm-packaging/",
       "/lip-gloss-boxes/",
+      "/lipstick-boxes/",
       "/materials/",
       "/paper-lip-balm-tubes/",
       "/printing-options/",
@@ -16212,6 +19005,7 @@
       "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "/blog/printing-methods-for-cosmetic-packaging/",
       "/box-styles/",
+      "/cardboard-lip-balm-tubes/",
       "/contact/",
       "/custom-lip-balm-boxes/",
       "/custom-lip-balm-labels/",
@@ -16225,8 +19019,10 @@
       "/hang-tab-lipstick-boxes/",
       "/holographic-lip-gloss-boxes/",
       "/how-to-order/",
+      "/lip-balm-labels/",
       "/lip-balm-packaging/",
       "/lip-gloss-boxes/",
+      "/lipstick-boxes/",
       "/materials/",
       "/paper-lip-balm-tubes/",
       "/printing-options/",
@@ -16254,6 +19050,7 @@
       "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "/blog/printing-methods-for-cosmetic-packaging/",
       "/box-styles/",
+      "/cardboard-lip-balm-tubes/",
       "/contact/",
       "/custom-lip-balm-boxes/",
       "/custom-lip-balm-labels/",
@@ -16267,8 +19064,10 @@
       "/hang-tab-lipstick-boxes/",
       "/holographic-lip-gloss-boxes/",
       "/how-to-order/",
+      "/lip-balm-labels/",
       "/lip-balm-packaging/",
       "/lip-gloss-boxes/",
+      "/lipstick-boxes/",
       "/materials/",
       "/paper-lip-balm-tubes/",
       "/printing-options/",
@@ -16297,6 +19096,7 @@
       "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
       "/blog/printing-methods-for-cosmetic-packaging/",
       "/box-styles/",
+      "/cardboard-lip-balm-tubes/",
       "/contact/",
       "/custom-lip-balm-boxes/",
       "/custom-lip-balm-labels/",
@@ -16310,8 +19110,10 @@
       "/hang-tab-lipstick-boxes/",
       "/holographic-lip-gloss-boxes/",
       "/how-to-order/",
+      "/lip-balm-labels/",
       "/lip-balm-packaging/",
       "/lip-gloss-boxes/",
+      "/lipstick-boxes/",
       "/materials/",
       "/paper-lip-balm-tubes/",
       "/printing-options/",

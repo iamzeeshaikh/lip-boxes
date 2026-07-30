@@ -50,7 +50,7 @@ export interface FeatureBlock extends BlockBase {
   intro?: string;
   items: { title: string; text: string }[];
   /** Icon set applied to the grid. */
-  icon?: 'check' | 'layers' | 'sparkle' | 'shield' | 'leaf' | 'ruler';
+  icon?: 'check' | 'layers' | 'sparkle' | 'shield' | 'leaf' | 'ruler' | 'palette';
 }
 
 /** Heading, optional intro, and a two-column checklist. */

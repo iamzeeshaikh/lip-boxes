@@ -1,6 +1,6 @@
 # Generated URLs
 
-41 HTML pages, plus 3 generated files.
+44 HTML pages, plus 3 generated files.
 
 ## Pages
 
@@ -18,6 +18,7 @@
 - https://lipboxes.com/blog/paper-lip-balm-tubes-and-their-packaging-requirements/
 - https://lipboxes.com/blog/printing-methods-for-cosmetic-packaging/
 - https://lipboxes.com/box-styles/
+- https://lipboxes.com/cardboard-lip-balm-tubes/
 - https://lipboxes.com/contact/
 - https://lipboxes.com/custom-lip-balm-boxes/
 - https://lipboxes.com/custom-lip-balm-labels/
@@ -31,8 +32,10 @@
 - https://lipboxes.com/hang-tab-lipstick-boxes/
 - https://lipboxes.com/holographic-lip-gloss-boxes/
 - https://lipboxes.com/how-to-order/
+- https://lipboxes.com/lip-balm-labels/
 - https://lipboxes.com/lip-balm-packaging/
 - https://lipboxes.com/lip-gloss-boxes/
+- https://lipboxes.com/lipstick-boxes/
 - https://lipboxes.com/materials/
 - https://lipboxes.com/paper-lip-balm-tubes/
 - https://lipboxes.com/printing-options/

@@ -1,137 +1,115 @@
 # Duplicate intent and cannibalisation report
 
-The 15 source folders contained several pairs targeting the same or heavily
-overlapping search intent. Every folder was inspected image by image before any
-page was generated. This is what was decided and why.
+**Current structure: 15 product pages from 15 source folders, one page per folder.**
 
-## Merges made
+An earlier build merged three duplicate-intent pairs into single canonical pages.
+That was reversed at the client's instruction so every source folder has its own
+page. This report records what was done to keep the split defensible, and the
+risk that remains.
 
-### 1. `Custom Lipstick Boxes` + `Lipstick Boxes` → `/custom-lipstick-boxes/`
+## The three pairs that were previously merged
 
-**Merged.** The `Lipstick Boxes` folder's files were named
-`Hang Tab Lipstick Box-*.png`, which suggested a third product, but the
-photographs show plain tuck-end lipstick cartons and lipstick range shots with no
-hanging tab anywhere. They are the same product and the same commercial intent as
-`Custom Lipstick Boxes`.
+Each pair now has two pages. They were given genuinely different jobs rather
+than the same content with a swapped keyword.
 
-- Canonical page: `/custom-lipstick-boxes/`
-- Six images drawn from both folders
-- `/lipstick-boxes/` is **not** published. A 301 redirect to
-  `/custom-lipstick-boxes/` is configured in `vercel.json`.
+### 1. `/lipstick-boxes/` and `/custom-lipstick-boxes/`
 
-### 2. `custom lip balm labels` + `lip balm labels` → `/custom-lip-balm-labels/`
-
-**Merged.** Both folders contain printed wrap labels for lip balm tubes, and two
-designs appear in both folders. There is no product difference, only a keyword
-variant.
-
-- Canonical page: `/custom-lip-balm-labels/`
-- Five images selected across both folders, avoiding the duplicated designs
-- `/lip-balm-labels/` 301-redirects to `/custom-lip-balm-labels/`
-
-### 3. `paper lip balm tubes` + `cardboard lip balm tubes` → `/paper-lip-balm-tubes/`
-
-**Merged.** Both folders show the identical format: a rolled multi-ply paperboard
-tube with a push-up base disc. "Paper" and "cardboard" are two names buyers use
-for the same thing, and one brand's photography appears in both folders.
-
-- Canonical page: `/paper-lip-balm-tubes/`
-- Eight images across both folders
-- "cardboard lip balm tubes" is carried as a secondary keyword, used naturally in
-  the page copy where it belongs, and stated explicitly in the overview so the
-  synonym is covered without a second page
-- `/cardboard-lip-balm-tubes/` 301-redirects to `/paper-lip-balm-tubes/`
-
-## Differentiated rather than merged
-
-### 4. `Custom Lip Balm Boxes` vs `Lip Balm packaging`
-
-**Not published as two competing product pages.** The `Lip Balm packaging` images
-are slim tuck-end balm cartons — the same product as `Custom Lip Balm Boxes`.
-Publishing both as product pages would have been direct cannibalisation.
-
-Instead, `/lip-balm-packaging/` was built as a **format comparison hub** with a
-different job and a different search intent:
-
-| | `/custom-lip-balm-boxes/` | `/lip-balm-packaging/` |
+| | `/lipstick-boxes/` | `/custom-lipstick-boxes/` |
 | --- | --- | --- |
-| Intent | Transactional — buy this carton | Commercial investigation — which format do I need |
-| H1 | Custom Lip Balm Boxes | Lip Balm Packaging |
-| Content | Sizing, board, printing, inserts, FAQs for one product | Compares four formats against each other and routes to each |
-| Schema | `Product` + `Offer` | `CollectionPage` + `ItemList` (no Product, no Offer) |
-| CTA | Short quote form on the page | Routes to the four product pages |
+| Job | Category entry point: which construction do I need | Specification page for the printed folding carton |
+| Intent | Commercial investigation | Transactional |
+| Content | Compares folding, rigid, hang tab and multi-shade side by side | Sizing method, board grades, inserts, artwork, production |
+| Routes to | The three construction pages | The quote form |
+| Photography | `Lipstick Boxes` folder (4 images) | `Custom Lipstick Boxes` folder (3 images) |
 
-Only the hub carries the broad "lip balm packaging" term as its primary keyword;
-the product page targets "custom lip balm boxes". No `Offer` markup exists on the
-hub, so the two do not compete for product listings either.
+### 2. `/lip-balm-labels/` and `/custom-lip-balm-labels/`
 
-### 5. `Hang Tab Lip Balm Box` vs `Custom Lip Balm Boxes`
+| | `/lip-balm-labels/` | `/custom-lip-balm-labels/` |
+| --- | --- | --- |
+| Job | Formats and stocks reference | The custom printing service |
+| Content | Six label formats, stock comparison table, sizing method, adhesive selection | Artwork to a cutting template, proofing, variable data, multi-variant runs |
+| Photography | `lip balm labels` folder (3 images) | `custom lip balm labels` folder (3 images) |
 
-**Kept separate.** The photographs show a genuinely different structure: a
-die-cut euro slot in the top panel, pegboard merchandising and window cut-outs.
-Distinct buyer, distinct retail channel, distinct engineering discussion (tab load
-against packed weight). No overlap in the FAQ sets.
+### 3. `/paper-lip-balm-tubes/` and `/cardboard-lip-balm-tubes/`
 
-### 6. `Hang Tab Lipstick Box` vs `Custom Lipstick Boxes`
+| | `/paper-lip-balm-tubes/` | `/cardboard-lip-balm-tubes/` |
+| --- | --- | --- |
+| Job | The decorated format for retail runs | The unbleached kraft format for small batches |
+| Content | Full-colour printing on a curved surface, artwork seams, retail volumes | Plain and label-applied tubes, small-batch economics, plastic-free claim wording |
+| Photography | `paper lip balm tubes` folder (6 images) | `cardboard lip balm tubes` folder (5 images) |
 
-**Kept separate**, for the same reason. The hang-tab folder genuinely shows window
-cartons with peg slots, unlike the `Lipstick Boxes` folder which did not despite
-its filenames.
+`/lip-balm-packaging/` was also converted from a comparison hub into a full
+product page covering coordinated sets — the container, carton and label
+specified and produced together.
 
-### 7. `Lip Gloss Boxes` vs `Holographic Lip Gloss Boxes`
+## What was done to reduce the risk
 
-**Kept separate.** Different substrate, different production process (metallised
-board and opaque white underprint versus standard coated board), different price
-bracket and different buyer question set.
+- **No shared photography.** Every page draws images only from its own source
+  folder. Verified by the image manifest.
+- **Distinct primary keywords.** No two pages target the same primary term, and
+  each states its own in the H1 and again in at least one H2.
+- **Distinct FAQ sets.** No question text is repeated between sibling pages.
+- **Explicit cross-links.** Each page in a pair links to its sibling in body copy
+  with an anchor explaining the difference, so a visitor who lands on the wrong
+  one moves across in a click, and search engines see the relationship.
+- **Different content structures.** Sibling pages use different block types and
+  section orders, so they do not read as one template with words swapped.
+- **Redirects removed.** The three 301s that previously pointed the merged slugs
+  at their canonical page have been deleted from `vercel.json`, since those URLs
+  now resolve to real pages.
 
-### 8. `Rigid Lipstic Boxes` → `/rigid-lipstick-boxes/`
+## The risk that remains
 
-**Kept separate**, and the misspelling in the folder name was corrected in the
-slug. Rigid construction is a different manufacturing category from folding
-cartons, not a variant of one. `/rigid-lipstic-boxes/` 301-redirects to the
-correct spelling.
+This is stated plainly because it is a real trade-off, not a solved problem.
 
-### 9. `custom lip care packaging bulk-PBEE-BLG` → `/custom-lip-care-packaging/`
+Three pairs of pages describe overlapping products. Search engines may:
 
-**Kept separate**, with the internal supplier code dropped from the slug. This
-page targets multi-SKU and private label programmes rather than a single product,
-so it does not compete with any individual product page.
+- pick the "wrong" page of a pair for a query, or
+- split ranking signals between the two, so neither ranks as well as one
+  consolidated page would have, or
+- treat one as a near-duplicate and filter it from results.
 
-## Rules applied throughout
+The differentiation above is the mitigation, not a guarantee. The outcome
+depends on how Google reads the pages once they are indexed.
 
-- No two pages were created that differ only by the word "custom".
-- No page targets a keyword that another page already targets as its primary.
-- Each product page states its own primary keyword in the H1 and again naturally
-  in at least one H2.
-- Secondary keywords are used inside the canonical page rather than being spun
-  into extra URLs.
-- No source images were deleted or overwritten.
+## What to monitor after launch
 
-## Redirects configured for the merged and corrected URLs
+In Search Console, watch the Performance report filtered by page and query.
+For each pair, check whether both URLs receive impressions for the same query:
 
-All are single-hop 301s in `vercel.json` — no chains:
+| Query to watch | Page that should win it |
+| --- | --- |
+| lipstick boxes | `/lipstick-boxes/` |
+| custom lipstick boxes | `/custom-lipstick-boxes/` |
+| lip balm labels | `/lip-balm-labels/` |
+| custom lip balm labels | `/custom-lip-balm-labels/` |
+| paper lip balm tubes | `/paper-lip-balm-tubes/` |
+| cardboard lip balm tubes | `/cardboard-lip-balm-tubes/` |
+| lip balm packaging | `/lip-balm-packaging/` |
+| custom lip balm boxes | `/custom-lip-balm-boxes/` |
+
+**If both URLs of a pair appear for the same query**, that is signal splitting.
+The fix is to sharpen the weaker page's angle further, or to consolidate with a
+301 from the weaker URL to the stronger one. Both remain available.
+
+**If one page of a pair gets no impressions at all after three months**, it is
+likely being filtered as a near-duplicate. Consolidating at that point recovers
+its links and signals rather than leaving them stranded.
+
+## Redirects still in place
+
+These handle URL variants and legacy paths, not merges. All single-hop 301s:
 
 | From | To |
 | --- | --- |
-| `/lipstick-boxes` | `/custom-lipstick-boxes/` |
-| `/lip-balm-labels` | `/custom-lip-balm-labels/` |
-| `/cardboard-lip-balm-tubes` | `/paper-lip-balm-tubes/` |
 | `/rigid-lipstic-boxes` | `/rigid-lipstick-boxes/` |
 | `/hang-tab-lipstick-box` | `/hang-tab-lipstick-boxes/` |
 | `/hang-tab-lip-balm-box` | `/hang-tab-lip-balm-boxes/` |
 | `/custom-lip-care-packaging-bulk` | `/custom-lip-care-packaging/` |
 | `/products/:slug` | `/:slug/` |
 | `/product/:slug` | `/:slug/` |
-
-## Monitoring recommendation
-
-After launch, check Search Console for any query where two Lip Boxes URLs both
-receive impressions. The pairs worth watching are:
-
-- "lip balm packaging" — the hub should win it; the product page should win
-  "custom lip balm boxes"
-- "lipstick boxes" — `/custom-lipstick-boxes/` should be the only ranking URL
-- "cardboard lip balm tubes" — `/paper-lip-balm-tubes/` should be the only one
-
-If the wrong URL ranks for a term, adjust the on-page keyword emphasis rather
-than adding a page.
+| `/sitemap-index.xml` | `/sitemap.xml` |
+| `/feed` | `/rss.xml` |
+| `/quote` | `/request-a-quote/` |
+| `/faq` | `/faqs/` |
+| `www.lipboxes.com/*` | `lipboxes.com/*` |

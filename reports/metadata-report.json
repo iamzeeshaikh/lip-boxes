@@ -228,6 +228,24 @@
     ]
   },
   {
+    "url": "https://lipboxes.com/cardboard-lip-balm-tubes/",
+    "title": "Cardboard Lip Balm Tubes | Kraft Push-Up Tubes",
+    "titleLength": 46,
+    "description": "Unbleached kraft cardboard lip balm tubes with a push-up base. Plastic-free construction for small-batch and low-waste lines.",
+    "descriptionLength": 125,
+    "h1": "Cardboard Lip Balm Tubes",
+    "canonical": "https://lipboxes.com/cardboard-lip-balm-tubes/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Product",
+      "FAQPage"
+    ]
+  },
+  {
     "url": "https://lipboxes.com/contact/",
     "title": "Contact Lip Boxes | Custom Packaging Enquiries",
     "titleLength": 46,
@@ -453,21 +471,39 @@
     ]
   },
   {
+    "url": "https://lipboxes.com/lip-balm-labels/",
+    "title": "Lip Balm Labels | Formats, Sizes and Stocks",
+    "titleLength": 43,
+    "description": "Every lip balm label format and stock compared: tube wraps, cap seals, tin tops and tamper bands, with sizing guidance.",
+    "descriptionLength": 119,
+    "h1": "Lip Balm Labels",
+    "canonical": "https://lipboxes.com/lip-balm-labels/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Product",
+      "FAQPage"
+    ]
+  },
+  {
     "url": "https://lipboxes.com/lip-balm-packaging/",
-    "title": "Lip Balm Packaging | Formats and Options Compared",
-    "titleLength": 49,
-    "description": "Compare every lip balm packaging format: printed cartons, hang tab packs, paper push-up tubes and wrap labels.",
-    "descriptionLength": 110,
+    "title": "Lip Balm Packaging | Complete Coordinated Sets",
+    "titleLength": 46,
+    "description": "Container, carton and label specified together as one lip balm packaging set, on one board family and one schedule.",
+    "descriptionLength": 115,
     "h1": "Lip Balm Packaging",
     "canonical": "https://lipboxes.com/lip-balm-packaging/",
     "indexable": true,
     "schemaTypes": [
       "Organization",
       "WebSite",
-      "CollectionPage",
+      "WebPage",
       "BreadcrumbList",
-      "FAQPage",
-      "ItemList"
+      "Product",
+      "FAQPage"
     ]
   },
   {
@@ -478,6 +514,24 @@
     "descriptionLength": 112,
     "h1": "Lip Gloss Boxes",
     "canonical": "https://lipboxes.com/lip-gloss-boxes/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Product",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/lipstick-boxes/",
+    "title": "Lipstick Boxes | Types, Sizes and Constructions",
+    "titleLength": 47,
+    "description": "Every lipstick box construction compared: folding cartons, rigid gift boxes, hang tab packs and shade-range sets.",
+    "descriptionLength": 113,
+    "h1": "Lipstick Boxes",
+    "canonical": "https://lipboxes.com/lipstick-boxes/",
     "indexable": true,
     "schemaTypes": [
       "Organization",

@@ -50,13 +50,6 @@
   },
   {
     "slug": "paper-lip-balm-tubes",
-    "source": "paper lip balm tubes/paper lip balm tubes-6.png",
-    "output": "src/assets/products/paper-lip-balm-tubes/paper-lip-balm-tube-natural-kraft-open.png",
-    "w": 1080,
-    "h": 1080
-  },
-  {
-    "slug": "paper-lip-balm-tubes",
     "source": "paper lip balm tubes/paper lip balm tubes-5.png",
     "output": "src/assets/products/paper-lip-balm-tubes/paper-lip-balm-tube-teal-printed.png",
     "w": 1080,
@@ -71,20 +64,6 @@
   },
   {
     "slug": "paper-lip-balm-tubes",
-    "source": "cardboard lip balm tubes/cardboard lip balm tubes-2.png",
-    "output": "src/assets/products/paper-lip-balm-tubes/cardboard-lip-balm-tube-wrap-labels.png",
-    "w": 1080,
-    "h": 1080
-  },
-  {
-    "slug": "paper-lip-balm-tubes",
-    "source": "cardboard lip balm tubes/cardboard lip balm tubes-1.png",
-    "output": "src/assets/products/paper-lip-balm-tubes/cardboard-lip-balm-tube-push-up-base.png",
-    "w": 1080,
-    "h": 1080
-  },
-  {
-    "slug": "paper-lip-balm-tubes",
     "source": "paper lip balm tubes/paper lip balm tubes-8.png",
     "output": "src/assets/products/paper-lip-balm-tubes/paper-lip-balm-tube-larger-format-stick.png",
     "w": 1080,
@@ -92,15 +71,50 @@
   },
   {
     "slug": "paper-lip-balm-tubes",
-    "source": "cardboard lip balm tubes/cardboard lip balm tubes-5.png",
-    "output": "src/assets/products/paper-lip-balm-tubes/cardboard-lip-balm-tube-illustrated.png",
+    "source": "paper lip balm tubes/paper lip balm tubes-9.png",
+    "output": "src/assets/products/paper-lip-balm-tubes/paper-lip-balm-tube-magenta-print.png",
     "w": 1080,
     "h": 1080
   },
   {
-    "slug": "custom-lip-balm-labels",
-    "source": "lip balm labels/lip balm labels​-TPB-3.png",
-    "output": "src/assets/products/custom-lip-balm-labels/custom-lip-balm-label-die-cut-wraps.png",
+    "slug": "paper-lip-balm-tubes",
+    "source": "paper lip balm tubes/paper lip balm tubes-6.png",
+    "output": "src/assets/products/paper-lip-balm-tubes/paper-lip-balm-tube-natural-kraft-open.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "cardboard-lip-balm-tubes",
+    "source": "cardboard lip balm tubes/cardboard lip balm tubes-2.png",
+    "output": "src/assets/products/cardboard-lip-balm-tubes/cardboard-lip-balm-tube-wrap-labels.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "cardboard-lip-balm-tubes",
+    "source": "cardboard lip balm tubes/cardboard lip balm tubes-1.png",
+    "output": "src/assets/products/cardboard-lip-balm-tubes/cardboard-lip-balm-tube-push-up-base.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "cardboard-lip-balm-tubes",
+    "source": "cardboard lip balm tubes/cardboard lip balm tubes-4.png",
+    "output": "src/assets/products/cardboard-lip-balm-tubes/cardboard-lip-balm-tube-kraft-range.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "cardboard-lip-balm-tubes",
+    "source": "cardboard lip balm tubes/cardboard lip balm tubes-3.png",
+    "output": "src/assets/products/cardboard-lip-balm-tubes/cardboard-lip-balm-tube-illustrated-kraft.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "cardboard-lip-balm-tubes",
+    "source": "cardboard lip balm tubes/cardboard lip balm tubes-5.png",
+    "output": "src/assets/products/cardboard-lip-balm-tubes/cardboard-lip-balm-tube-floral-print.png",
     "w": 1080,
     "h": 1080
   },
@@ -113,8 +127,8 @@
   },
   {
     "slug": "custom-lip-balm-labels",
-    "source": "lip balm labels/lip balm labels​-TPB-4.png",
-    "output": "src/assets/products/custom-lip-balm-labels/custom-lip-balm-label-kraft-uncoated.png",
+    "source": "lip balm labels/lip balm labels​-TPB-1.png",
+    "output": "src/assets/products/custom-lip-balm-labels/custom-lip-balm-label-watercolour-print.png",
     "w": 1080,
     "h": 1080
   },
@@ -126,9 +140,23 @@
     "h": 1080
   },
   {
-    "slug": "custom-lip-balm-labels",
-    "source": "lip balm labels/lip balm labels​-TPB-1.png",
-    "output": "src/assets/products/custom-lip-balm-labels/custom-lip-balm-label-watercolour-print.png",
+    "slug": "lip-balm-labels",
+    "source": "lip balm labels/lip balm labels​-TPB-3.png",
+    "output": "src/assets/products/lip-balm-labels/lip-balm-label-die-cut-wraps.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "lip-balm-labels",
+    "source": "lip balm labels/lip balm labels​-TPB-4.png",
+    "output": "src/assets/products/lip-balm-labels/lip-balm-label-kraft-uncoated.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "lip-balm-labels",
+    "source": "lip balm labels/lip balm labels​-TPB-5.png",
+    "output": "src/assets/products/lip-balm-labels/lip-balm-label-roll-and-jar-set.png",
     "w": 1080,
     "h": 1080
   },
@@ -189,23 +217,30 @@
     "h": 1080
   },
   {
-    "slug": "custom-lipstick-boxes",
+    "slug": "lipstick-boxes",
     "source": "Lipstick Boxes/Hang Tab Lipstick Box-3.png",
-    "output": "src/assets/products/custom-lipstick-boxes/custom-lipstick-box-slim-carton.png",
+    "output": "src/assets/products/lipstick-boxes/lipstick-box-slim-printed-carton.png",
     "w": 900,
     "h": 900
   },
   {
-    "slug": "custom-lipstick-boxes",
-    "source": "Lipstick Boxes/Hang Tab Lipstick Box-5.png",
-    "output": "src/assets/products/custom-lipstick-boxes/custom-lipstick-boxes-matte-dark-range.png",
+    "slug": "lipstick-boxes",
+    "source": "Lipstick Boxes/Hang Tab Lipstick Box-4.png",
+    "output": "src/assets/products/lipstick-boxes/lipstick-box-single-shade-carton.png",
     "w": 1080,
     "h": 1080
   },
   {
-    "slug": "custom-lipstick-boxes",
+    "slug": "lipstick-boxes",
+    "source": "Lipstick Boxes/Hang Tab Lipstick Box-5.png",
+    "output": "src/assets/products/lipstick-boxes/lipstick-boxes-matte-dark-range.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "lipstick-boxes",
     "source": "Lipstick Boxes/Hang Tab Lipstick Box-1.png",
-    "output": "src/assets/products/custom-lipstick-boxes/custom-lipstick-boxes-nude-collection.png",
+    "output": "src/assets/products/lipstick-boxes/lipstick-boxes-nude-collection.png",
     "w": 1080,
     "h": 1080
   },

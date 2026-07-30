@@ -268,6 +268,6 @@ export const product: Product = {
     },
   ],
   related: ['lip-gloss-boxes', 'rigid-lipstick-boxes', 'custom-lipstick-boxes', 'custom-lip-mask-boxes'],
-  order: 9,
+  order: 13,
   group: 'Lip Gloss',
 };

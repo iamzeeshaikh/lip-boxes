@@ -279,6 +279,6 @@ export const product: Product = {
     },
   ],
   related: ['custom-lipstick-boxes', 'hang-tab-lip-balm-boxes', 'rigid-lipstick-boxes', 'lip-gloss-boxes'],
-  order: 7,
+  order: 11,
   group: 'Lipstick',
 };

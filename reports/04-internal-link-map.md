@@ -1,7 +1,7 @@
 # Internal link map
 
-2912 internal links across 41 pages, of which
-85 are contextual editorial links written into
+3417 internal links across 44 pages, of which
+95 are contextual editorial links written into
 body copy. Header, footer, breadcrumbs and product grids are excluded from the
 editorial count.
 
@@ -12,12 +12,12 @@ distinct linking pages. Verified by `npm run audit:site`.
 
 | Page | Inbound pages | Linking from |
 | --- | --- | --- |
-| / | 40 | /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/, /blog/lip-balm-box-materials-compared/ +32 |
+| / | 43 | /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/, /blog/lip-balm-box-materials-compared/ +35 |
 | /404/ | 0 |  |
-| /about/ | 40 | /, /404/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/, /blog/lip-balm-box-materials-compared/ +32 |
-| /artwork-guidelines/ | 40 | /, /404/, /about/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/, /blog/lip-balm-box-materials-compared/ +32 |
-| /blog/ | 40 | /, /404/, /about/, /artwork-guidelines/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/, /blog/lip-balm-box-materials-compared/ +32 |
-| /blog/how-packaging-quantity-affects-unit-pricing/ | 5 | /, /blog/, /lip-balm-packaging/, /printing-options/, /thank-you/ |
+| /about/ | 43 | /, /404/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/, /blog/lip-balm-box-materials-compared/ +35 |
+| /artwork-guidelines/ | 43 | /, /404/, /about/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/, /blog/lip-balm-box-materials-compared/ +35 |
+| /blog/ | 43 | /, /404/, /about/, /artwork-guidelines/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/, /blog/lip-balm-box-materials-compared/ +35 |
+| /blog/how-packaging-quantity-affects-unit-pricing/ | 4 | /, /blog/, /printing-options/, /thank-you/ |
 | /blog/how-to-choose-packaging-for-a-lip-gloss-line/ | 1 | /blog/ |
 | /blog/how-to-prepare-artwork-for-custom-lip-boxes/ | 1 | /blog/ |
 | /blog/lip-balm-box-materials-compared/ | 1 | /blog/ |
@@ -25,34 +25,37 @@ distinct linking pages. Verified by `npm run audit:site`.
 | /blog/packaging-inserts-for-lipstick-and-lip-gloss-products/ | 3 | /, /blog/, /thank-you/ |
 | /blog/paper-lip-balm-tubes-and-their-packaging-requirements/ | 2 | /, /blog/ |
 | /blog/printing-methods-for-cosmetic-packaging/ | 1 | /blog/ |
-| /box-styles/ | 40 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +32 |
-| /contact/ | 40 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +32 |
-| /custom-lip-balm-boxes/ | 40 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +32 |
-| /custom-lip-balm-labels/ | 40 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +32 |
-| /custom-lip-care-packaging/ | 40 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +32 |
-| /custom-lip-mask-boxes/ | 40 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +32 |
-| /custom-lipstick-boxes/ | 40 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +32 |
-| /custom-packaging/ | 40 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +32 |
-| /faqs/ | 40 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +32 |
-| /finishes/ | 40 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +32 |
-| /hang-tab-lip-balm-boxes/ | 40 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +32 |
-| /hang-tab-lipstick-boxes/ | 40 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +32 |
-| /holographic-lip-gloss-boxes/ | 40 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +32 |
-| /how-to-order/ | 40 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +32 |
-| /lip-balm-packaging/ | 40 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +32 |
-| /lip-gloss-boxes/ | 40 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +32 |
-| /materials/ | 40 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +32 |
-| /paper-lip-balm-tubes/ | 40 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +32 |
-| /printing-options/ | 40 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +32 |
-| /privacy-policy/ | 40 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +32 |
-| /products/ | 40 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +32 |
-| /request-a-quote/ | 40 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +32 |
-| /rigid-lipstick-boxes/ | 40 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +32 |
-| /sample-kit/ | 40 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +32 |
-| /shipping-information/ | 40 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +32 |
-| /terms-and-conditions/ | 40 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +32 |
+| /box-styles/ | 43 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +35 |
+| /cardboard-lip-balm-tubes/ | 43 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +35 |
+| /contact/ | 43 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +35 |
+| /custom-lip-balm-boxes/ | 43 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +35 |
+| /custom-lip-balm-labels/ | 43 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +35 |
+| /custom-lip-care-packaging/ | 43 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +35 |
+| /custom-lip-mask-boxes/ | 43 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +35 |
+| /custom-lipstick-boxes/ | 43 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +35 |
+| /custom-packaging/ | 43 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +35 |
+| /faqs/ | 43 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +35 |
+| /finishes/ | 43 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +35 |
+| /hang-tab-lip-balm-boxes/ | 43 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +35 |
+| /hang-tab-lipstick-boxes/ | 43 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +35 |
+| /holographic-lip-gloss-boxes/ | 43 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +35 |
+| /how-to-order/ | 43 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +35 |
+| /lip-balm-labels/ | 43 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +35 |
+| /lip-balm-packaging/ | 43 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +35 |
+| /lip-gloss-boxes/ | 43 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +35 |
+| /lipstick-boxes/ | 43 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +35 |
+| /materials/ | 43 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +35 |
+| /paper-lip-balm-tubes/ | 43 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +35 |
+| /printing-options/ | 43 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +35 |
+| /privacy-policy/ | 43 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +35 |
+| /products/ | 43 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +35 |
+| /request-a-quote/ | 43 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +35 |
+| /rigid-lipstick-boxes/ | 43 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +35 |
+| /sample-kit/ | 43 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +35 |
+| /shipping-information/ | 43 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +35 |
+| /terms-and-conditions/ | 43 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +35 |
 | /thank-you/ | 0 |  |
-| /turnaround-time/ | 40 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +32 |
+| /turnaround-time/ | 43 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +35 |
 
 ## Contextual editorial links
 
@@ -77,6 +80,9 @@ Written inside body prose, one per content section, with varied anchor text.
 | /blog/printing-methods-for-cosmetic-packaging/ | press options page | /printing-options/ |
 | /box-styles/ | peg display carton page | /hang-tab-lipstick-boxes/ |
 | /box-styles/ | wrapped rigid box page | /rigid-lipstick-boxes/ |
+| /cardboard-lip-balm-tubes/ | lip balm label formats page | /lip-balm-labels/ |
+| /cardboard-lip-balm-tubes/ | printed paperboard tube page | /paper-lip-balm-tubes/ |
+| /cardboard-lip-balm-tubes/ | delivery page | /shipping-information/ |
 | /contact/ | privacy policy | /privacy-policy/ |
 | /custom-lip-balm-boxes/ | artwork preparation notes for folding cartons | /artwork-guidelines/ |
 | /custom-lip-balm-boxes/ | guide to carton closures and base styles | /box-styles/ |
@@ -114,16 +120,23 @@ Written inside body prose, one per content section, with varied anchor text.
 | /holographic-lip-gloss-boxes/ | rigid box page | /rigid-lipstick-boxes/ |
 | /how-to-order/ | artwork guidelines | /artwork-guidelines/ |
 | /how-to-order/ | full quote request form | /request-a-quote/ |
-| /lip-balm-packaging/ | quantity and unit pricing | /blog/how-packaging-quantity-affects-unit-pricing/ |
+| /lip-balm-labels/ | custom label printing page | /custom-lip-balm-labels/ |
+| /lip-balm-labels/ | stock reference | /materials/ |
+| /lip-balm-packaging/ | artwork page | /artwork-guidelines/ |
+| /lip-balm-packaging/ | carton built around your filled tube | /custom-lip-balm-boxes/ |
+| /lip-balm-packaging/ | delivery page | /shipping-information/ |
 | /lip-gloss-boxes/ | file preparation page | /artwork-guidelines/ |
 | /lip-gloss-boxes/ | holographic gloss cartons on metallised board | /holographic-lip-gloss-boxes/ |
 | /lip-gloss-boxes/ | printing and press options page | /printing-options/ |
 | /lip-gloss-boxes/ | turnaround page | /turnaround-time/ |
+| /lipstick-boxes/ | structural reference | /box-styles/ |
+| /lipstick-boxes/ | printed folding cartons built to your bullet case | /custom-lipstick-boxes/ |
+| /lipstick-boxes/ | coatings page | /finishes/ |
 | /materials/ | window carton for peg display | /hang-tab-lipstick-boxes/ |
 | /materials/ | rolled paperboard tube page | /paper-lip-balm-tubes/ |
 | /materials/ | printing options page | /printing-options/ |
 | /paper-lip-balm-tubes/ | file setup requirements for print | /artwork-guidelines/ |
-| /paper-lip-balm-tubes/ | printed wrap labels for lip balm tubes | /custom-lip-balm-labels/ |
+| /paper-lip-balm-tubes/ | natural kraft tube page | /cardboard-lip-balm-tubes/ |
 | /paper-lip-balm-tubes/ | delivery and freight page | /shipping-information/ |
 | /printing-options/ | artwork guidelines | /artwork-guidelines/ |
 | /printing-options/ | how quantity affects unit pricing | /blog/how-packaging-quantity-affects-unit-pricing/ |

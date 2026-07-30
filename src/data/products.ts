@@ -1,6 +1,10 @@
 import type { Product, ReviewData } from './types';
 
 import { product as customLipBalmBoxes } from './products/custom-lip-balm-boxes';
+import { product as lipBalmPackaging } from './products/lip-balm-packaging';
+import { product as cardboardLipBalmTubes } from './products/cardboard-lip-balm-tubes';
+import { product as lipBalmLabels } from './products/lip-balm-labels';
+import { product as lipstickBoxes } from './products/lipstick-boxes';
 import { product as hangTabLipBalmBoxes } from './products/hang-tab-lip-balm-boxes';
 import { product as paperLipBalmTubes } from './products/paper-lip-balm-tubes';
 import { product as customLipBalmLabels } from './products/custom-lip-balm-labels';
@@ -14,6 +18,10 @@ import { product as customLipCarePackaging } from './products/custom-lip-care-pa
 
 export const products: Product[] = [
   customLipBalmBoxes,
+  lipBalmPackaging,
+  cardboardLipBalmTubes,
+  lipBalmLabels,
+  lipstickBoxes,
   hangTabLipBalmBoxes,
   paperLipBalmTubes,
   customLipBalmLabels,

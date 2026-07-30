@@ -42,21 +42,6 @@ export const product: Product = {
       alt: 'Deep blue lipstick box with a faceted pattern and a silver foil oval detail on the front panel',
       caption: 'Silver foil stamp over a printed faceted background.',
     },
-    {
-      file: 'custom-lipstick-box-slim-carton.png',
-      alt: 'White lipstick carton with a green and red printed border beside a black lipstick and its cap',
-      caption: 'Slim carton with net weight and shade panel on the front.',
-    },
-    {
-      file: 'custom-lipstick-boxes-matte-dark-range.png',
-      alt: 'Dark plum lipstick cartons arranged on white display blocks with matching lipstick cases',
-      caption: 'A single-shade range in matte laminated dark board.',
-    },
-    {
-      file: 'custom-lipstick-boxes-nude-collection.png',
-      alt: 'A collection of nude and terracotta lipstick boxes and matching lipstick cases on a pink background',
-      caption: 'A nude shade family with per-shade artwork on one die line.',
-    },
   ],
   blocks: [
     {
@@ -309,6 +294,6 @@ export const product: Product = {
     },
   ],
   related: ['rigid-lipstick-boxes', 'hang-tab-lipstick-boxes', 'lip-gloss-boxes', 'custom-lip-care-packaging'],
-  order: 5,
+  order: 9,
   group: 'Lipstick',
 };

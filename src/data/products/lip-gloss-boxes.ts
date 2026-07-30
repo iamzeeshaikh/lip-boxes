@@ -274,6 +274,6 @@ export const product: Product = {
     },
   ],
   related: ['holographic-lip-gloss-boxes', 'custom-lipstick-boxes', 'custom-lip-care-packaging', 'hang-tab-lipstick-boxes'],
-  order: 8,
+  order: 12,
   group: 'Lip Gloss',
 };

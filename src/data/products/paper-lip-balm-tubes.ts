@@ -28,11 +28,6 @@ export const product: Product = {
   ],
   images: [
     {
-      file: 'paper-lip-balm-tube-natural-kraft-open.png',
-      alt: 'Three natural kraft paper lip balm tubes, one open showing the white inner liner and push-up base',
-      caption: 'Uncoated kraft body with the inner liner and push-up base visible.',
-    },
-    {
       file: 'paper-lip-balm-tube-printed-kraft.png',
       alt: 'Two printed kraft paper lip balm tubes in terracotta and cream standing upright with their caps removed',
       caption: 'Two-colour print applied directly to the kraft board.',
@@ -43,19 +38,14 @@ export const product: Product = {
       caption: 'Full-colour print with a matte varnish over the body.',
     },
     {
-      file: 'cardboard-lip-balm-tube-wrap-labels.png',
-      alt: 'Three cardboard lip balm tubes with pink, blue and cream wrap labels and printed safety seals',
-      caption: 'Wrap labels applied over a plain kraft tube, with a tamper seal.',
-    },
-    {
       file: 'paper-lip-balm-tube-full-colour-print.png',
       alt: 'Pink illustrated paper lip balm tube lying on its side with its cap off, next to a mint green cap',
       caption: 'Full-bleed illustration wrapped around the tube body.',
     },
     {
-      file: 'cardboard-lip-balm-tube-push-up-base.png',
-      alt: 'Open kraft cardboard lip balm tube on its side beside its separate lid, showing the white push-up chamber',
-      caption: 'The two-part construction: body with liner, and a friction-fit cap.',
+      file: 'paper-lip-balm-tube-natural-kraft-open.png',
+      alt: 'Three natural kraft paper lip balm tubes, one open showing the white inner liner and push-up base',
+      caption: 'The inner liner and push-up base, visible on an open tube.',
     },
     {
       file: 'paper-lip-balm-tube-larger-format-stick.png',
@@ -63,9 +53,9 @@ export const product: Product = {
       caption: 'Larger capacity format used for body and lip balm sticks.',
     },
     {
-      file: 'cardboard-lip-balm-tube-illustrated.png',
-      alt: 'Two illustrated cardboard lip balm tubes with floral artwork lying on a grey surface',
-      caption: 'Illustrated artwork printed edge to edge around the tube.',
+      file: 'paper-lip-balm-tube-magenta-print.png',
+      alt: 'Two magenta printed paper lip balm tubes lying on a grey surface, one with its cap removed',
+      caption: 'Saturated single-colour coverage across the whole body.',
     },
   ],
   blocks: [
@@ -77,7 +67,7 @@ export const product: Product = {
       body: [
         'A paper lip balm tube is a rolled paperboard cylinder with a friction-fit cap and a disc in the base that pushes the balm upward as it is turned or pressed. There is no plastic mechanism inside, which is the whole point of the format for brands moving away from petroleum-based packaging. The trade-off is that a paper tube behaves differently from a plastic twist-up, and both you and your customers need to know that before launch.',
         'The body is usually a three-layer construction: an outer printed or kraft ply, a structural middle ply, and an inner liner that sits against the balm. The liner is what stops oil migrating into the board and darkening it. Ask about liner specification early, because a balm high in liquid oils needs more barrier than a firm beeswax formula does.',
-        'Buyers search for this product under two names. Some ask for paper lip balm tubes, others for cardboard lip balm tubes, and both describe the same rolled paperboard format covered on this page.',
+        'This page covers the format decorated: printed in full colour or in spot colours for retail lines. The same construction supplied plain or in unbleached kraft for small-batch work is covered separately, because the buying decision and the order size are different.',
       ],
     },
     {
@@ -97,7 +87,7 @@ export const product: Product = {
         ['Feel', 'Warm, matte, textured', 'Smooth, uniform, glossy'],
       ],
       outro:
-        'If a plastic barrel with a printed wrap is closer to what you need, the same artwork can be applied as <a href="/custom-lip-balm-labels/">printed wrap labels for lip balm tubes</a> instead.',
+        'If you want the same construction left unbleached and undecorated for a low-waste line, that is covered on our <a href="/cardboard-lip-balm-tubes/">natural kraft tube page</a>.',
     },
     {
       type: 'list',
@@ -123,8 +113,8 @@ export const product: Product = {
       heading: 'Board and liner materials',
       navLabel: 'Materials',
       image: {
-        file: 'cardboard-lip-balm-tube-push-up-base.png',
-        alt: 'Cross-section view of an open kraft cardboard lip balm tube showing the inner white chamber',
+        file: 'paper-lip-balm-tube-natural-kraft-open.png',
+        alt: 'Open paper lip balm tube showing the white inner liner and the push-up base',
       },
       imageSide: 'left',
       body: [
@@ -316,6 +306,6 @@ export const product: Product = {
     },
   ],
   related: ['custom-lip-balm-boxes', 'custom-lip-balm-labels', 'hang-tab-lip-balm-boxes', 'custom-lip-care-packaging'],
-  order: 3,
+  order: 4,
   group: 'Lip Balm',
 };

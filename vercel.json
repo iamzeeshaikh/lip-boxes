@@ -23,21 +23,6 @@
       "permanent": true
     },
     {
-      "source": "/lipstick-boxes",
-      "destination": "/custom-lipstick-boxes/",
-      "permanent": true
-    },
-    {
-      "source": "/lip-balm-labels",
-      "destination": "/custom-lip-balm-labels/",
-      "permanent": true
-    },
-    {
-      "source": "/cardboard-lip-balm-tubes",
-      "destination": "/paper-lip-balm-tubes/",
-      "permanent": true
-    },
-    {
       "source": "/rigid-lipstic-boxes",
       "destination": "/rigid-lipstick-boxes/",
       "permanent": true
