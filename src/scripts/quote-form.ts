@@ -16,6 +16,9 @@ const ALLOWED_EXTENSIONS = [
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[a-z]{2,}$/i;
 
+/** Where a successful submission lands. Matches the server-side redirect. */
+const SUCCESS_PAGE = '/thank-you/';
+
 function labelFor(field: HTMLElement): string {
   const id = field.getAttribute('id');
   if (id) {
@@ -183,14 +186,15 @@ export function initQuoteForms() {
           | null;
 
         if (response.ok && payload?.ok) {
+          // Reset before navigating so a back-button return shows an empty
+          // form rather than a filled one that looks unsent.
           form.reset();
-          if (pageUrlField) pageUrlField.value = window.location.href;
           showStatus(
             form,
             'success',
-            payload.message ??
-              'Thanks — your enquiry has been sent. We reply to quote requests in the order they arrive.',
+            payload.message ?? 'Thanks — your enquiry has been sent.',
           );
+          window.location.assign(SUCCESS_PAGE);
           return;
         }
 

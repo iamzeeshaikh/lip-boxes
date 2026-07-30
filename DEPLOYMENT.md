@@ -171,10 +171,11 @@ Then confirm by hand:
 2. `https://lipboxes.com/robots.txt` returns the expected policy.
 3. A nonsense URL returns a real **404 status**, not a 200.
 4. `https://www.lipboxes.com/` 301s to the apex domain.
-5. Submit the short form on a product page and confirm the email arrives at
-   `SMTP_TO` with the product name, page URL and a working Reply-To.
-6. Submit with JavaScript disabled and confirm the server-rendered confirmation
-   page appears.
+5. Submit the short form on a product page and confirm the browser lands on
+   `/thank-you/` and the email arrives at `SMTP_TO` with the product name, page
+   URL and a working Reply-To.
+6. Submit with JavaScript disabled and confirm the response is a 303 redirect to
+   `/thank-you/`, so refreshing that page cannot resubmit the enquiry.
 7. Run the live URLs through Google's Rich Results Test.
 8. Submit the sitemap in Google Search Console.
 

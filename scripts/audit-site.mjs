@@ -337,8 +337,11 @@ for (const page of pages) {
   }
 }
 
+// The 404 and thank-you pages are reached by a redirect or an error, never by
+// a link, so the orphan rule does not apply to them.
+const UNLINKED_BY_DESIGN = new Set(['/', '/404/', '/thank-you/']);
 for (const [route, sources] of inbound) {
-  if (route === '/' || route === '/404/') continue;
+  if (UNLINKED_BY_DESIGN.has(route)) continue;
   if (sources.size === 0) fail(`Orphan page (no internal links in): ${route}`);
   if (productSlugs.has(route.replace(/\//g, '')) && sources.size < 2) {
     fail(`Product page has fewer than 2 inbound pages: ${route}`);
@@ -456,7 +459,9 @@ for (const page of pages) {
 for (const page of pages) {
   const graphs = jsonLd(page.html);
   const nodes = graphs.flatMap((g) => g['@graph'] ?? [g]);
-  if (page.route !== '/404/' && nodes.length === 0) {
+  const isNoindex = (meta(page.html, 'name', 'robots') ?? '').includes('noindex');
+  // Schema has no purpose on a page that is excluded from search.
+  if (!isNoindex && nodes.length === 0) {
     fail(`${page.route} — no JSON-LD`);
   }
   for (const graph of graphs) {

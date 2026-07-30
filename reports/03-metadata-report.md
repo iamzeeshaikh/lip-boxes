@@ -1,6 +1,6 @@
 # Metadata report
 
-All 40 pages. Titles and descriptions are verified unique by
+All 41 pages. Titles and descriptions are verified unique by
 `npm run audit:site`; every canonical is self-referencing and trailing-slashed.
 
 | URL | Title (len) | Meta description (len) | H1 | Indexable | Schema types |
@@ -44,4 +44,5 @@ All 40 pages. Titles and descriptions are verified unique by
 | https://lipboxes.com/sample-kit/ | Sample Kit \| Material Swatches and Test Boxes (45) | Request material swatches, a plain structural sample or a printed proof, and see which of the three answers your question. (122) | Sample Kit | Yes | Organization, WebSite, WebPage, BreadcrumbList |
 | https://lipboxes.com/shipping-information/ | Shipping Information \| Delivery and Freight (43) | How packaging orders are packed, cased and palletised for delivery across the United States, and what actually drives your freight cost. (136) | Shipping Information | Yes | Organization, WebSite, WebPage, BreadcrumbList |
 | https://lipboxes.com/terms-and-conditions/ | Terms and Conditions \| Lip Boxes (32) | Terms covering quotes, die line and proof approvals, manufacturing tolerances, payment, delivery, returns on custom goods and liability. (136) | Terms and Conditions | Yes | Organization, WebSite, WebPage, BreadcrumbList |
+| https://lipboxes.com/thank-you/ | Thank You \| Your Enquiry Has Been Sent \| Lip Boxes (50) | Your packaging enquiry has reached Lip Boxes. Here is what happens next and what to have ready. (95) | Thank you — your enquiry has been sent | No (noindex) |  |
 | https://lipboxes.com/turnaround-time/ | Turnaround Time \| Packaging Production Lead Times (49) | What affects packaging lead times, which stages you control, and how we confirm a production window in writing. (111) | Turnaround Time | Yes | Organization, WebSite, WebPage, BreadcrumbList |

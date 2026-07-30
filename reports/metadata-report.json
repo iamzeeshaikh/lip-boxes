@@ -654,6 +654,17 @@
     ]
   },
   {
+    "url": "https://lipboxes.com/thank-you/",
+    "title": "Thank You | Your Enquiry Has Been Sent | Lip Boxes",
+    "titleLength": 50,
+    "description": "Your packaging enquiry has reached Lip Boxes. Here is what happens next and what to have ready.",
+    "descriptionLength": 95,
+    "h1": "Thank you — your enquiry has been sent",
+    "canonical": "https://lipboxes.com/thank-you/",
+    "indexable": false,
+    "schemaTypes": []
+  },
+  {
     "url": "https://lipboxes.com/turnaround-time/",
     "title": "Turnaround Time | Packaging Production Lead Times",
     "titleLength": 49,

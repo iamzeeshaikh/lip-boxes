@@ -7,19 +7,19 @@ than these.
 
 | Page | Mode | Performance | Accessibility | Best practices | SEO | LCP | CLS | TBT |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| / | mobile | 98 | 100 | 100 | 100 | 2.4 s | 0 | 0 ms |
+| / | mobile | 96 | 100 | 100 | 100 | 2.7 s | 0 | 0 ms |
 | / | desktop | 100 | 100 | 100 | 100 | 0.5 s | 0 | 0 ms |
 | /products/ | mobile | 97 | 100 | 100 | 100 | 2.5 s | 0 | 0 ms |
 | /products/ | desktop | 100 | 100 | 100 | 100 | 0.6 s | 0 | 0 ms |
-| /custom-lip-balm-boxes/ | mobile | 96 | 100 | 100 | 100 | 2.6 s | 0 | 0 ms |
+| /custom-lip-balm-boxes/ | mobile | 95 | 100 | 100 | 100 | 2.7 s | 0 | 0 ms |
 | /custom-lip-balm-boxes/ | desktop | 100 | 100 | 100 | 100 | 0.6 s | 0 | 0 ms |
 | /holographic-lip-gloss-boxes/ | mobile | 96 | 100 | 100 | 100 | 2.7 s | 0 | 0 ms |
 | /holographic-lip-gloss-boxes/ | desktop | 100 | 100 | 100 | 100 | 0.6 s | 0 | 0 ms |
-| /lip-balm-packaging/ | mobile | 98 | 100 | 100 | 100 | 2.3 s | 0 | 0 ms |
+| /lip-balm-packaging/ | mobile | 97 | 100 | 100 | 100 | 2.5 s | 0 | 0 ms |
 | /lip-balm-packaging/ | desktop | 100 | 100 | 100 | 100 | 0.5 s | 0 | 0 ms |
 | /request-a-quote/ | mobile | 99 | 100 | 100 | 100 | 2.2 s | 0 | 0 ms |
 | /request-a-quote/ | desktop | 100 | 100 | 100 | 100 | 0.5 s | 0 | 0 ms |
-| /blog/how-packaging-quantity-affects-unit-pricing/ | mobile | 97 | 100 | 100 | 100 | 2.6 s | 0 | 0 ms |
+| /blog/how-packaging-quantity-affects-unit-pricing/ | mobile | 98 | 100 | 100 | 100 | 2.4 s | 0 | 0 ms |
 | /blog/how-packaging-quantity-affects-unit-pricing/ | desktop | 100 | 100 | 100 | 100 | 0.5 s | 0 | 0 ms |
 | /materials/ | mobile | 99 | 100 | 100 | 100 | 2.1 s | 0 | 0 ms |
 | /materials/ | desktop | 100 | 100 | 100 | 100 | 0.5 s | 0 | 0 ms |

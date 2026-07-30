@@ -91,6 +91,9 @@ a.btn:hover{background:#431529}
   );
 }
 
+/** Where a successful submission lands. Matches the client-side redirect. */
+const SUCCESS_PAGE = '/thank-you/';
+
 function respond(
   request: Request,
   ok: boolean,
@@ -101,6 +104,15 @@ function respond(
 ) {
   const wantsJson = (request.headers.get('accept') ?? '').includes('application/json');
   if (wantsJson) return json({ ok, message, fieldErrors }, status, headers);
+  // Without JavaScript, follow POST/redirect/GET so a refresh cannot resubmit
+  // the enquiry. Failures still render inline, because there is nowhere useful
+  // to redirect an error to.
+  if (ok) {
+    return new Response(null, {
+      status: 303,
+      headers: { location: SUCCESS_PAGE, 'cache-control': 'no-store', ...headers },
+    });
+  }
   return htmlResult(ok, message, status);
 }
 

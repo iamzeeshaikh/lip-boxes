@@ -1,0 +1,276 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Icon from '../components/Icon.astro';
+import { getProduct } from '../data/products';
+import { blogPosts } from '../data/blog';
+import { site } from '../data/site';
+
+/*
+ * Conversion confirmation page. Reached only after a successful form
+ * submission, from both the JavaScript path and the plain POST redirect.
+ *
+ * It is noindex and is kept out of the sitemap: a thank-you page has no search
+ * value and, if indexed, would let people land here without ever submitting.
+ */
+const suggested = ['materials', 'printing-options', 'finishes']
+  .map((slug) => slug);
+
+const nextReads = [
+  {
+    href: '/how-to-order/',
+    title: 'What happens next',
+    text: 'The five stages of an order, and the two approvals you will be asked for.',
+  },
+  {
+    href: '/artwork-guidelines/',
+    title: 'Get your artwork ready',
+    text: 'File formats, bleed, safe areas and the finishing layers we need supplied separately.',
+  },
+  {
+    href: '/materials/',
+    title: 'Compare board grades',
+    text: 'What each stock does to your print, your strength and your disposal route.',
+  },
+];
+
+const latest = blogPosts.slice(0, 2);
+const popular = ['custom-lip-balm-boxes', 'custom-lipstick-boxes', 'lip-gloss-boxes']
+  .map((slug) => getProduct(slug))
+  .filter((p): p is NonNullable<typeof p> => Boolean(p));
+---
+
+<BaseLayout
+  title="Thank You | Your Enquiry Has Been Sent | Lip Boxes"
+  description="Your packaging enquiry has reached Lip Boxes. Here is what happens next and what to have ready."
+  path="/thank-you/"
+  noindex
+>
+  <section class="ty" aria-labelledby="ty-heading">
+    <div class="wrap wrap--narrow">
+      <span class="ty__mark" aria-hidden="true">
+        <Icon name="check" size={30} />
+      </span>
+
+      <h1 id="ty-heading">Thank you — your enquiry has been sent</h1>
+
+      <p class="lead ty__lead">
+        It has reached our inbox and we reply to quote requests in the order they
+        arrive. There is nothing else you need to do right now.
+      </p>
+
+      <div class="ty__panel">
+        <h2 class="ty__panel-heading">What happens next</h2>
+        <ol class="ty__steps">
+          <li>
+            <strong>We read the specification.</strong> If anything is missing we
+            will ask about it rather than assume a value that would make the quote
+            misleading.
+          </li>
+          <li>
+            <strong>You get a written price</strong> at your quantity and at the
+            next volume break, with one-time setup costs listed separately.
+          </li>
+          <li>
+            <strong>If you go ahead</strong>, a die line is drawn around your
+            container and a structural sample can be made before anything prints.
+          </li>
+        </ol>
+        <p class="ty__note">
+          {site.startingPriceStatement}
+        </p>
+      </div>
+
+      <div class="ty__contact">
+        <p>
+          Need to add something to your enquiry, or send a file that was too large
+          for the form? Reply to our email once it arrives, or write to
+          <a href={`mailto:${site.email}`}>{site.email}</a>.
+          {site.phone && (
+            <> You can also call <a href={`tel:${site.phone}`}>{site.phoneDisplay ?? site.phone}</a>.</>
+          )}
+        </p>
+      </div>
+
+      <h2 class="ty__sub">Worth reading while you wait</h2>
+      <ul class="ty__cards">
+        {
+          nextReads.map((card) => (
+            <li>
+              <a href={card.href}>
+                <span class="ty__card-title">{card.title}</span>
+                <span class="ty__card-text">{card.text}</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+
+      <div class="ty__foot">
+        <h2 class="ty__sub">Keep looking around</h2>
+        <ul class="ty__links">
+          <li><a href="/products/">All products</a></li>
+          {popular.map((product) => (
+            <li><a href={`/${product.slug}/`}>{product.name}</a></li>
+          ))}
+          {latest.map((post) => (
+            <li><a href={`/blog/${post.slug}/`}>{post.title}</a></li>
+          ))}
+        </ul>
+        <a href="/" class="btn btn--secondary ty__home">
+          Back to the homepage
+        </a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .ty {
+    padding-block: var(--sp-8) var(--sp-9);
+    background:
+      radial-gradient(
+        100% 80% at 88% 0%,
+        color-mix(in srgb, var(--rose-soft) 50%, transparent) 0%,
+        transparent 58%
+      ),
+      var(--paper);
+    flex: 1;
+  }
+  .ty__mark {
+    display: grid;
+    place-items: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-bottom: var(--sp-5);
+    border-radius: 50%;
+    background: var(--plum);
+    color: var(--white);
+  }
+  .ty h1 {
+    font-size: var(--step-4);
+    margin-bottom: var(--sp-4);
+  }
+  .ty__lead {
+    max-width: 50ch;
+    margin-bottom: var(--sp-7);
+  }
+
+  .ty__panel {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--gold);
+    border-radius: var(--radius);
+    padding: var(--sp-5);
+    margin-bottom: var(--sp-6);
+  }
+  .ty__panel-heading {
+    font-size: var(--step-1);
+    margin-bottom: var(--sp-4);
+  }
+  .ty__steps {
+    margin: 0;
+    padding-left: 1.25rem;
+  }
+  .ty__steps li {
+    margin-bottom: var(--sp-3);
+    color: var(--ink-soft);
+    line-height: 1.65;
+  }
+  .ty__steps li:last-child {
+    margin-bottom: 0;
+  }
+  .ty__steps strong {
+    color: var(--ink);
+  }
+  .ty__note {
+    margin: var(--sp-4) 0 0;
+    padding-top: var(--sp-4);
+    border-top: 1px solid var(--line);
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+  }
+
+  .ty__contact {
+    margin-bottom: var(--sp-8);
+    font-size: var(--step--1);
+    color: var(--ink-soft);
+  }
+  .ty__contact p {
+    max-width: var(--measure);
+    margin: 0;
+  }
+
+  .ty__sub {
+    font-family: var(--font-body);
+    font-size: var(--step--1);
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: var(--sp-4);
+  }
+
+  .ty__cards {
+    list-style: none;
+    margin: 0 0 var(--sp-8);
+    padding: 0;
+    display: grid;
+    gap: var(--sp-3);
+  }
+  @media (min-width: 46rem) {
+    .ty__cards {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  .ty__cards a {
+    display: block;
+    height: 100%;
+    padding: var(--sp-4);
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    text-decoration: none;
+    transition: border-color 0.18s var(--ease), box-shadow 0.18s var(--ease);
+  }
+  .ty__cards a:hover {
+    border-color: var(--plum);
+    box-shadow: var(--shadow-sm);
+  }
+  .ty__card-title {
+    display: block;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: var(--sp-2);
+  }
+  .ty__cards a:hover .ty__card-title {
+    color: var(--plum);
+  }
+  .ty__card-text {
+    display: block;
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+    line-height: 1.55;
+  }
+
+  .ty__foot {
+    padding-top: var(--sp-6);
+    border-top: 1px solid var(--line);
+  }
+  .ty__links {
+    list-style: none;
+    margin: 0 0 var(--sp-5);
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2) var(--sp-5);
+    font-size: var(--step--1);
+  }
+  .ty__links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 1.5rem;
+  }
+  .ty__home {
+    margin-top: var(--sp-2);
+  }
+</style>

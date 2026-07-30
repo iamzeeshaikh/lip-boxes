@@ -1,6 +1,6 @@
 # Generated URLs
 
-40 HTML pages, plus 3 generated files.
+41 HTML pages, plus 3 generated files.
 
 ## Pages
 
@@ -43,6 +43,7 @@
 - https://lipboxes.com/sample-kit/
 - https://lipboxes.com/shipping-information/
 - https://lipboxes.com/terms-and-conditions/
+- https://lipboxes.com/thank-you/
 - https://lipboxes.com/turnaround-time/
 
 ## Generated files
