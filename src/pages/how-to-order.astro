@@ -1,0 +1,150 @@
+---
+import InfoLayout from '../layouts/InfoLayout.astro';
+import InfoSection from '../components/InfoSection.astro';
+import SpecTable from '../components/SpecTable.astro';
+---
+
+<InfoLayout
+  path="/how-to-order/"
+  title="How to Order | Custom Packaging Process"
+  description="What to send with an enquiry, what happens at each of the five stages, and the two approvals required before anything goes to print."
+  h1="How to Order"
+  eyebrow="Ordering"
+  lead="Every order follows the same sequence, whether it is 500 cartons or a twelve-product range. Nothing goes to print until you have approved a die line and a proof in writing."
+  ogTitle="Ordering Custom Lip Packaging, Step by Step"
+  ogDescription="What we need from you, what you approve, and where each stage can be sped up or slowed down."
+  points={['Five stages', 'Two written approvals', 'No catalogue ordering']}
+  ctaHeading="Ready to start?"
+  ctaBody="Send the container dimensions or a sample, your quantity, and your launch date if one is fixed. That is enough for a written quote."
+>
+  <InfoSection
+    id="what-to-send"
+    heading="What to send with your first enquiry"
+    intro="You do not need a full specification. These five things are enough for us to quote accurately, and the more of them you have, the fewer questions come back."
+  >
+    <ol class="ordered">
+      <li>
+        <strong>The container.</strong> Its dimensions, or better, a physical
+        sample posted to us. For a tube, the outside diameter and the height with
+        the cap on. For a lipstick, the width at the widest point with the cap
+        fitted.
+      </li>
+      <li>
+        <strong>The quantity.</strong> The number you actually want, plus the
+        number per design if the job has shade or scent variants.
+      </li>
+      <li>
+        <strong>How it is sold.</strong> Shelf, peg fixture, e-commerce, gift set
+        or wholesale. This changes the structure more than anything else.
+      </li>
+      <li>
+        <strong>Artwork status.</strong> Print-ready, in progress, or nothing yet.
+        All three are workable; we just plan differently.
+      </li>
+      <li>
+        <strong>Any fixed date.</strong> If a launch or a planogram reset is
+        driving the schedule, say so at enquiry stage rather than at order stage.
+      </li>
+    </ol>
+    <p class="note">
+      Send it through the <a href="/request-a-quote/">full quote request form</a>,
+      which asks for these in order, or use the short form on any product page if
+      you would rather just start a conversation.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="stages"
+    heading="The five stages"
+    intro="What happens, who does it, and what you are asked to decide."
+  >
+    <SpecTable
+      caption="Order stages, responsibilities and approvals."
+      columns={['Stage', 'We do', 'You do']}
+      rows={[
+        [
+          '1. Quote',
+          'Propose board, print process, finishing and structure, and price it at your quantity and the next break',
+          'Confirm which option to develop',
+        ],
+        [
+          '2. Die line',
+          'Draw the structural die line around your container and issue it as a vector file',
+          'Approve the die line in writing, or send it to your designer to build on',
+        ],
+        [
+          '3. Sample',
+          'Produce a plain cut-and-creased sample, or an assembled white sample for a rigid box',
+          'Test it with your actual product and confirm the fit',
+        ],
+        [
+          '4. Proof',
+          'Issue a colour proof on the specified stock, with foil and spot UV positions shown',
+          'Approve each design or shade in writing',
+        ],
+        [
+          '5. Production',
+          'Print, finish, die-cut, glue, inspect, pack to your case count and dispatch with tracking',
+          'Confirm the delivery address and any receiving requirements',
+        ],
+      ]}
+    />
+  </InfoSection>
+
+  <InfoSection
+    id="approvals"
+    heading="The two approvals that matter"
+    intro="These are the points where a mistake becomes expensive, so both are handled in writing."
+  >
+    <p class="measure">
+      <strong>The die line approval</strong> fixes the structure. Once a die is
+      cut, changing a dimension means a new die. This is why a structural sample
+      tested with your real product is worth the few days it adds.
+    </p>
+    <p class="measure">
+      <strong>The proof approval</strong> fixes the colour and the content. The
+      production run is measured against the approved proof, so a compliance change
+      or a colour change afterwards means new plates and a new run. Have your
+      regulated copy reviewed before this point, as set out in the
+      <a href="/artwork-guidelines/">artwork guidelines</a>.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="reorders"
+    heading="Reordering"
+    intro="Repeat orders skip most of the work, and that is reflected in the price."
+  >
+    <p class="measure">
+      Once a die line is cut and a proof approved, both are held against your
+      account. A reorder is quoted on print and material cost at whatever quantity
+      you need, with no die charge and no proofing charge. Tell us at the first
+      quote if you expect to reorder on a cycle, because it changes how the tooling
+      is quoted.
+    </p>
+    <p class="measure">
+      For a range, a single shade or SKU can be reordered on its own. The economics
+      change, since a single-SKU reorder loses the benefit of sharing a press sheet,
+      but there is no new setup to pay for.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="changes"
+    heading="Changing an order in progress"
+    intro="What is straightforward and what is not, depending on how far the job has gone."
+  >
+    <ul class="bullets">
+      <li><strong>Before die line approval</strong> — dimensions, structure, board and quantity can all change freely.</li>
+      <li><strong>After die line, before proof</strong> — artwork and colour can change. A dimensional change means a new die.</li>
+      <li><strong>After proof approval, before production</strong> — a change means a new proof cycle and, if plates are made, new plates.</li>
+      <li><strong>Once production has started</strong> — the run cannot be altered. A change is a new order.</li>
+    </ul>
+    <p class="note">
+      Quantity increases are easier to accommodate before production than after,
+      because a second short run costs considerably more per unit than adding to
+      the first. If you are uncertain, ask for the price at both quantities in the
+      original quote.
+    </p>
+  </InfoSection>
+</InfoLayout>

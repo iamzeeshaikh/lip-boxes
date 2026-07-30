@@ -1,0 +1,177 @@
+---
+import { Image, Picture } from 'astro:assets';
+import type { ProductImage } from '../data/types';
+import { productImage } from '../lib/images';
+
+interface Props {
+  slug: string;
+  images: ProductImage[];
+  /** Used for the aria label on the thumbnail list. */
+  productName: string;
+}
+
+const { slug, images, productName } = Astro.props;
+const resolved = images.map((image) => ({
+  ...image,
+  asset: productImage(slug, image.file),
+}));
+const [lead, ...rest] = resolved;
+const captions = resolved.map((image) => image.caption ?? image.alt);
+---
+
+<div class="gallery" data-gallery data-captions={JSON.stringify(captions)}>
+  <figure class="gallery__stage">
+    {
+      resolved.map((image, i) => (
+        <div class="gallery__panel" data-panel={i} hidden={i !== 0}>
+          <Picture
+            src={image.asset}
+            alt={image.alt}
+            formats={['avif']}
+            fallbackFormat="webp"
+            widths={[420, 620, 840]}
+            sizes="(min-width: 62rem) 32rem, (min-width: 40rem) 60vw, 90vw"
+            loading={i === 0 ? 'eager' : 'lazy'}
+            fetchpriority={i === 0 ? 'high' : 'auto'}
+            decoding={i === 0 ? 'sync' : 'async'}
+            width={840}
+            height={840}
+            class="gallery__img"
+          />
+        </div>
+      ))
+    }
+    <figcaption class="gallery__caption" data-caption>{lead.caption ?? lead.alt}</figcaption>
+  </figure>
+
+  {
+    rest.length > 0 && (
+      <ul class="gallery__thumbs" aria-label={`${productName} photographs`}>
+        {resolved.map((image, i) => (
+          <li>
+            <button
+              type="button"
+              class="gallery__thumb"
+              data-thumb={i}
+              aria-pressed={i === 0 ? 'true' : 'false'}
+            >
+              <Image
+                src={image.asset}
+                alt={`View: ${image.alt}`}
+                widths={[120, 200]}
+                sizes="5rem"
+                loading="lazy"
+                decoding="async"
+                width={200}
+                height={200}
+              />
+            </button>
+          </li>
+        ))}
+      </ul>
+    )
+  }
+</div>
+
+<style>
+  .gallery {
+    display: grid;
+    gap: var(--sp-3);
+  }
+  .gallery__stage {
+    margin: 0;
+  }
+  .gallery__panel {
+    background: var(--paper-warm);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+  .gallery__panel[hidden] {
+    display: none;
+  }
+  .gallery__img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+  .gallery__caption {
+    margin-top: var(--sp-3);
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+    line-height: 1.5;
+    min-height: 2.6em;
+  }
+  .gallery__thumbs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+  }
+  .gallery__thumb {
+    display: block;
+    padding: 0;
+    width: 4.5rem;
+    background: var(--paper-warm);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    cursor: pointer;
+    transition: border-color 0.15s var(--ease), opacity 0.15s var(--ease);
+    opacity: 0.72;
+  }
+  .gallery__thumb:hover {
+    opacity: 1;
+  }
+  .gallery__thumb[aria-pressed='true'] {
+    border-color: var(--plum);
+    opacity: 1;
+    box-shadow: 0 0 0 1px var(--plum);
+  }
+  .gallery__thumb img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+  @media (min-width: 40rem) {
+    .gallery__thumb {
+      width: 5rem;
+    }
+  }
+</style>
+
+<script>
+  for (const gallery of document.querySelectorAll<HTMLElement>('[data-gallery]')) {
+    const panels = Array.from(gallery.querySelectorAll<HTMLElement>('[data-panel]'));
+    const thumbs = Array.from(gallery.querySelectorAll<HTMLButtonElement>('[data-thumb]'));
+    const caption = gallery.querySelector<HTMLElement>('[data-caption]');
+    if (thumbs.length < 2) continue;
+
+    // Captions are authored per image in the product data and serialised into
+    // the markup, so the client script never generates its own text.
+    let captions: string[] = [];
+    try {
+      captions = JSON.parse(gallery.dataset.captions ?? '[]');
+    } catch {
+      captions = [];
+    }
+
+    function show(index: number) {
+      panels.forEach((panel, i) => {
+        panel.hidden = i !== index;
+      });
+      thumbs.forEach((thumb, i) => {
+        thumb.setAttribute('aria-pressed', String(i === index));
+      });
+      if (caption && captions[index]) caption.textContent = captions[index];
+    }
+
+    thumbs.forEach((thumb, i) => {
+      thumb.addEventListener('click', () => show(i));
+    });
+  }
+</script>

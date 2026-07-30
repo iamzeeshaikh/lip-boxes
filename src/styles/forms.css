@@ -1,0 +1,167 @@
+/* ==========================================================================
+   Form controls, shared by the short product form and the full quote form.
+   ========================================================================== */
+
+.field {
+  display: grid;
+  gap: 0.35rem;
+}
+.field > label {
+  font-size: var(--step--1);
+  font-weight: 600;
+  color: var(--ink);
+  line-height: 1.4;
+}
+.field__optional {
+  font-weight: 400;
+  color: var(--ink-muted);
+}
+.req {
+  color: var(--rose);
+}
+
+.field input[type='text'],
+.field input[type='email'],
+.field input[type='tel'],
+.field input[type='url'],
+.field input[type='number'],
+.field input[type='date'],
+.field select,
+.field textarea {
+  width: 100%;
+  min-height: 2.875rem;
+  padding: 0.6rem 0.75rem;
+  font: inherit;
+  font-size: var(--step-0);
+  color: var(--ink);
+  background: var(--white);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  transition: border-color 0.15s var(--ease), box-shadow 0.15s var(--ease);
+}
+.field textarea {
+  min-height: 6rem;
+  resize: vertical;
+  line-height: 1.6;
+}
+.field select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%234c3f4f' stroke-width='1.5' stroke-linecap='round'%3E%3Cpath d='m4 6.5 4 4 4-4'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem center;
+  background-size: 1rem;
+  padding-right: 2.25rem;
+}
+.field :is(input, select, textarea):hover {
+  border-color: var(--ink-muted);
+}
+.field :is(input, select, textarea):focus-visible {
+  outline: none;
+  border-color: var(--plum);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--plum) 18%, transparent);
+}
+.field :is(input, select, textarea)[aria-invalid='true'] {
+  border-color: #b4636a;
+}
+.field input[type='file'] {
+  width: 100%;
+  min-height: 2.875rem;
+  font-size: var(--step--1);
+  padding: 0.55rem;
+  background: var(--paper-warm);
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+.field input[type='file']::file-selector-button {
+  font: inherit;
+  font-weight: 600;
+  margin-right: 0.75rem;
+  padding: 0.4rem 0.8rem;
+  color: var(--plum);
+  background: var(--white);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.field__hint {
+  font-size: var(--step--1);
+  color: var(--ink-muted);
+  margin: 0;
+  line-height: 1.45;
+}
+.field__error {
+  font-size: var(--step--1);
+  color: #a2323e;
+  font-weight: 500;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.35rem;
+}
+/* `display: flex` above beats the user-agent rule for [hidden], so restore it
+   explicitly — otherwise an empty error row shows its marker on load. */
+.field__error[hidden] {
+  display: none;
+}
+.field__error::before {
+  content: '!';
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 1.05rem;
+  height: 1.05rem;
+  margin-top: 0.1rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--white);
+  background: #a2323e;
+  border-radius: 50%;
+}
+
+.consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: var(--step--1);
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--ink-soft);
+  cursor: pointer;
+}
+.consent input[type='checkbox'] {
+  flex-shrink: 0;
+  /* 24px minimum target size (WCAG 2.2 AA, 2.5.8). */
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 0.05rem;
+  accent-color: var(--plum);
+  cursor: pointer;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+legend {
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  padding: 0;
+  margin-bottom: var(--sp-2);
+  color: var(--ink);
+}
+.fieldset-note {
+  font-size: var(--step--1);
+  color: var(--ink-muted);
+  margin: 0 0 var(--sp-4);
+  max-width: 56ch;
+}
+
+button[data-submit][aria-disabled='true'] {
+  opacity: 0.65;
+  cursor: progress;
+}

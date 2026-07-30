@@ -1,0 +1,86 @@
+---
+import Breadcrumbs from './Breadcrumbs.astro';
+import type { Crumb } from '../lib/schema';
+
+interface Props {
+  eyebrow?: string;
+  h1: string;
+  lead?: string;
+  crumbs: Crumb[];
+  /** Optional supporting points shown as a short row under the lead. */
+  points?: string[];
+}
+
+const { eyebrow, h1, lead, crumbs, points } = Astro.props;
+---
+
+<div class="page-hero">
+  <div class="wrap">
+    <Breadcrumbs crumbs={crumbs} tone="warm" />
+    <div class="page-hero__body">
+      {eyebrow && <span class="eyebrow">{eyebrow}</span>}
+      <h1>{h1}</h1>
+      {lead && <p class="lead page-hero__lead">{lead}</p>}
+      {
+        points && points.length > 0 && (
+          <ul class="page-hero__points">
+            {points.map((point) => <li>{point}</li>)}
+          </ul>
+        )
+      }
+    </div>
+  </div>
+</div>
+
+<style>
+  .page-hero {
+    background:
+      radial-gradient(
+        120% 100% at 88% 0%,
+        color-mix(in srgb, var(--rose-soft) 60%, transparent) 0%,
+        transparent 62%
+      ),
+      var(--paper-warm);
+    border-bottom: 1px solid var(--line);
+    padding-block: var(--sp-5) var(--sp-7);
+  }
+  .page-hero__body {
+    margin-top: var(--sp-5);
+    max-width: 46rem;
+  }
+  .page-hero h1 {
+    margin-bottom: var(--sp-4);
+  }
+  .page-hero__lead {
+    margin-bottom: 0;
+  }
+  .page-hero__points {
+    list-style: none;
+    margin: var(--sp-5) 0 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2) var(--sp-5);
+    font-size: var(--step--1);
+    color: var(--ink-soft);
+  }
+  .page-hero__points li {
+    position: relative;
+    padding-left: 1rem;
+  }
+  .page-hero__points li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--rose);
+  }
+  @media (min-width: 60rem) {
+    .page-hero {
+      padding-block: var(--sp-6) var(--sp-8);
+    }
+  }
+</style>

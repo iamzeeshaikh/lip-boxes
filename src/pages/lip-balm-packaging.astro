@@ -1,0 +1,338 @@
+---
+import { Image, getImage } from 'astro:assets';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import InfoSection from '../components/InfoSection.astro';
+import SpecTable from '../components/SpecTable.astro';
+import ProductCard from '../components/ProductCard.astro';
+import QuoteCta from '../components/QuoteCta.astro';
+import FaqList from '../components/FaqList.astro';
+import { getProduct } from '../data/products';
+import { productImage } from '../lib/images';
+import { abs } from '../data/site';
+import {
+  graph,
+  organizationSchema,
+  websiteSchema,
+  webPageSchema,
+  breadcrumbSchema,
+  faqSchema,
+  type Crumb,
+} from '../lib/schema';
+import type { Faq } from '../data/types';
+
+/*
+ * A comparison hub rather than a product page. It carries CollectionPage schema,
+ * no Product or Offer markup, and its job is to route buyers to whichever of the
+ * balm formats actually suits them. This keeps it clear of the product page for
+ * printed balm cartons rather than competing with it.
+ */
+
+const path = '/lip-balm-packaging/';
+const crumbs: Crumb[] = [{ name: 'Home', path: '/' }, { name: 'Lip Balm Packaging' }];
+
+const balmSlugs = [
+  'custom-lip-balm-boxes',
+  'hang-tab-lip-balm-boxes',
+  'paper-lip-balm-tubes',
+  'custom-lip-balm-labels',
+];
+const balmProducts = balmSlugs
+  .map((slug) => getProduct(slug))
+  .filter((p): p is NonNullable<typeof p> => Boolean(p));
+
+const heroSource = productImage('lip-balm-packaging', 'lip-balm-packaging-foil-stamped-carton.png');
+const heroAsset = await getImage({
+  src: heroSource,
+  widths: [480, 720, 960],
+  format: 'webp',
+  width: 960,
+  height: 960,
+});
+const ogAsset = await getImage({
+  src: heroSource,
+  width: 1200,
+  height: 1200,
+  format: 'png',
+});
+
+const faqs: Faq[] = [
+  {
+    q: 'Do I need an outer box if my tube is already printed?',
+    a: 'Not always. A directly printed paper tube can be sold bare. Brands still add a carton for three reasons: retail theft prevention on a small item, physical and thermal protection in transit, and room for legal copy that will not fit legibly around a small circumference.',
+  },
+  {
+    q: 'Which is cheaper, printing the tube or applying a label?',
+    a: 'It depends on how many variants you run. Direct printing is cheaper per unit at volume on a single design. Labels win as soon as you have several scents or shades, because one blank tube stock plus five printed labels avoids five sets of tooling.',
+  },
+  {
+    q: 'Can one carton design serve several balm flavours?',
+    a: 'Yes, and it is the most economical approach. Keep one die line, one board and one finish, and change only the printed panel per flavour. On digital printing there is no plate charge per design, so a six-flavour range costs close to one design at the same total quantity.',
+  },
+  {
+    q: 'What is the difference between a paper tube and a cardboard tube?',
+    a: 'Nothing, in practice. Both names describe the same rolled paperboard push-up format, and buyers search for it under either term. What varies between suppliers is the liner grade and whether the cap is genuinely paperboard rather than plastic.',
+  },
+  {
+    q: 'Which format suits a retail peg fixture?',
+    a: 'A carton with a die-cut hanging tab, because a bare tube cannot hang and a plain carton has nowhere for a hook. The tab is cut from the same board, so there is no separate plastic hook, and the geometry is specified against your packed weight.',
+  },
+  {
+    q: 'How do I package a lip balm tin rather than a stick?',
+    a: 'A shallow, wide carton with a die-cut platform insert that stops the tin sliding when the box is shaken. A tin also takes a circular top label well, so many brands use a printed lid label plus a plain carton rather than printing both.',
+  },
+  {
+    q: 'Can I get a multipack and a single pack from the same order?',
+    a: 'Yes. They are separate die lines but they can run in the same production window and ship together. Running them at the same time also keeps colour consistent between the two, which is harder to guarantee months apart.',
+  },
+  {
+    q: 'Which balm format is the most environmentally straightforward?',
+    a: 'An uncoated or varnish-only paperboard carton with no window film, or a paper tube with a paperboard cap. Both keep the pack close to a single material stream. Laminates, window patches and metallised board each add a material a consumer has to separate.',
+  },
+  {
+    q: 'Do you supply counter display units for lip balm?',
+    a: 'Yes, in printed E-flute corrugated. They ship flat, fold into an angled display and hold a dozen or more sticks at a checkout counter. Producing them alongside the cartons is the only reliable way to keep the display colour matching the packs inside it.',
+  },
+  {
+    q: 'What should I send you to get a quote across several balm formats?',
+    a: 'The container you fill or its dimensions, the quantity per format, how the product is sold, and whether you need the formats to look like one range. If you are launching several at once, quoting them together is normally cheaper than sequentially.',
+  },
+];
+
+const schema = graph(
+  organizationSchema(),
+  websiteSchema(),
+  webPageSchema({
+    path,
+    name: 'Lip Balm Packaging',
+    description:
+      'A comparison of every lip balm packaging format: printed cartons, hanging packs, paper tubes and wrap labels.',
+    type: 'CollectionPage',
+    primaryImage: ogAsset.src,
+  }),
+  breadcrumbSchema(crumbs),
+  faqSchema(faqs, path),
+  {
+    '@type': 'ItemList',
+    '@id': `${abs(path)}#formats`,
+    name: 'Lip balm packaging formats',
+    numberOfItems: balmProducts.length,
+    itemListElement: balmProducts.map((product, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: abs(`/${product.slug}/`),
+      name: product.name,
+    })),
+  },
+);
+---
+
+<BaseLayout
+  title="Lip Balm Packaging | Formats and Options Compared"
+  description="Compare every lip balm packaging format: printed cartons, hang tab packs, paper push-up tubes and wrap labels."
+  path={path}
+  ogTitle="Every Lip Balm Packaging Format, Compared"
+  ogDescription="Cartons, hanging packs, paperboard tubes and labels — what each format costs, protects and communicates."
+  ogImage={ogAsset.src}
+  ogImageAlt="Foil-stamped lip balm carton standing beside a matching pink lip balm tube"
+  preloadImage={heroAsset.src}
+  schema={[schema]}
+>
+  <PageHero
+    eyebrow="Format guide"
+    h1="Lip Balm Packaging"
+    lead="Four formats cover the whole category, and they are not interchangeable. This page sets out what each one does well, what it costs you and which product it suits, so you can pick before you get quotes."
+    crumbs={crumbs}
+    points={['Four formats compared', 'No fixed catalogue sizes', 'Quoted per project']}
+  />
+
+  <div class="section">
+    <div class="wrap">
+      <div class="hub-intro">
+        <div class="hub-intro__text">
+          <p class="lead">
+            Lip balm is the highest-volume category in lip care and the one with
+            the widest spread of packaging approaches. A handmade beeswax stick and
+            a national-brand SPF balm sit in completely different packs at
+            completely different unit costs.
+          </p>
+          <p>
+            The four formats below are the ones worth considering. Most brands end
+            up using two of them together — a printed container plus an outer
+            carton — and the useful question is which two.
+          </p>
+        </div>
+        <figure class="hub-intro__media">
+          <Image
+            src={heroSource}
+            alt="Foil-stamped cream lip balm carton standing beside a matching pink lip balm tube on a marble surface"
+            widths={[480, 720, 960]}
+            sizes="(min-width: 62rem) 24rem, (min-width: 40rem) 44vw, 88vw"
+            loading="eager"
+            fetchpriority="high"
+            decoding="sync"
+            width={960}
+            height={960}
+          />
+          <figcaption>Carton and container specified together as one range.</figcaption>
+        </figure>
+      </div>
+
+      <InfoSection
+        id="formats"
+        heading="The four lip balm packaging formats"
+        intro="Each has its own page with dimensions, materials and FAQs. This is the short version of what separates them."
+      >
+        <SpecTable
+          caption="Lip balm packaging formats compared."
+          columns={['Format', 'What it is', 'Strongest at', 'Consider that']}
+          rows={[
+            [
+              'Printed carton',
+              'A folding box around a filled tube, tin or pot',
+              'Legal copy, shelf presence, protection, multipacks',
+              'Adds a second component and a second cost per unit',
+            ],
+            [
+              'Hang tab carton',
+              'The same carton with a die-cut peg slot',
+              'Pegboard, slatwall and clip strip retail',
+              'Load concentrates at the slot; needs the right board weight',
+            ],
+            [
+              'Paper push-up tube',
+              'A rolled paperboard container with no plastic mechanism',
+              'Plastic-free positioning; prints directly, no label needed',
+              'The balm cannot be retracted, and heat sensitivity is higher',
+            ],
+            [
+              'Wrap label',
+              'A printed pressure-sensitive label on a plain container',
+              'Running many scents from one container stock',
+              'Paper stocks absorb oil unless varnished or laminated',
+            ],
+          ]}
+        />
+      </InfoSection>
+
+      <InfoSection
+        id="choosing"
+        heading="Which format suits which product"
+        intro="Working from the product rather than the packaging usually gets you to the answer faster."
+      >
+        <ul class="bullets">
+          <li>
+            <strong>A single 0.15 oz stick sold online</strong> — a printed wrap
+            label on the tube plus a slim carton, or a directly printed paper tube
+            if the plastic-free story matters more than the carton.
+          </li>
+          <li>
+            <strong>A stick going into pharmacy or convenience retail</strong> — a
+            carton with a hanging tab, because peg space is far easier to secure
+            than shelf space.
+          </li>
+          <li>
+            <strong>A six-flavour range</strong> — one container stock with six
+            printed labels, or one die line with six printed panels. Either way,
+            keep the tooling to one set.
+          </li>
+          <li>
+            <strong>A tin or salve pot</strong> — a circular top label plus a
+            shallow carton with a platform insert to stop it sliding.
+          </li>
+          <li>
+            <strong>A gift or holiday set</strong> — a multipack tray with a lift-off
+            lid, or a rigid box if the opening moment is part of what you are
+            selling.
+          </li>
+          <li>
+            <strong>A handmade or farmers-market product</strong> — kraft board or a
+            plain paper tube with a single-colour print, which suits the positioning
+            and keeps the unit cost low at small quantities.
+          </li>
+        </ul>
+      </InfoSection>
+
+      <InfoSection
+        id="products"
+        heading="The formats in detail"
+        intro="Full specification, sizing and FAQs for each format."
+      >
+        <div class="grid grid--products">
+          {balmProducts.map((product) => <ProductCard product={product} />)}
+        </div>
+      </InfoSection>
+
+      <InfoSection
+        id="cost-drivers"
+        heading="What drives cost across all four formats"
+        intro="The variables are largely the same whichever format you pick, which makes them easier to compare than they first appear."
+      >
+        <p class="measure">
+          Quantity is the largest single lever, because tooling, plates and
+          make-ready are one-time costs spread across the run. After that it is
+          board weight or liner grade, the number of print colours, and whether the
+          job carries a laminate, a foil pass, a window patch or an insert.
+        </p>
+        <p class="measure">
+          The one format-specific difference is that paper tubes are tooled per
+          diameter, so a first order in a new diameter carries a setup that repeat
+          orders do not. Keeping one diameter across a whole range and letting the
+          artwork differentiate is the equivalent of keeping one die line across a
+          carton range. How the curve behaves is set out in our article on
+          <a href="/blog/how-packaging-quantity-affects-unit-pricing/">quantity and
+          unit pricing</a>.
+        </p>
+      </InfoSection>
+
+      <InfoSection
+        id="faqs"
+        heading="Lip balm packaging questions"
+        intro="Questions that come up when brands are choosing between formats rather than specifying one."
+      >
+        <FaqList faqs={faqs} level={3} />
+      </InfoSection>
+    </div>
+  </div>
+
+  <QuoteCta
+    heading="Quote two formats and compare them properly"
+    body="Send the container you fill and the quantity you need. We will price the formats that genuinely suit it and say which we would choose, with the reasoning."
+  />
+</BaseLayout>
+
+<style>
+  .hub-intro {
+    display: grid;
+    gap: var(--sp-6);
+    margin-bottom: var(--sp-8);
+  }
+  @media (min-width: 62rem) {
+    .hub-intro {
+      grid-template-columns: 1fr minmax(16rem, 24rem);
+      gap: var(--sp-8);
+      align-items: start;
+    }
+  }
+  .hub-intro__text p:last-child {
+    color: var(--ink-soft);
+    max-width: var(--measure);
+  }
+  .hub-intro__media {
+    margin: 0;
+  }
+  .hub-intro__media img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: var(--paper-warm);
+  }
+  .hub-intro__media figcaption {
+    margin-top: var(--sp-3);
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+  }
+</style>

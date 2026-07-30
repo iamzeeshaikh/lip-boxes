@@ -1,0 +1,212 @@
+---
+import InfoLayout from '../layouts/InfoLayout.astro';
+import InfoSection from '../components/InfoSection.astro';
+import SpecTable from '../components/SpecTable.astro';
+---
+
+<InfoLayout
+  path="/materials/"
+  title="Packaging Materials | Board Grades | Lip Boxes"
+  description="Board grades and weights for lip packaging: SBS, kraft, recycled, black-through, metallised, corrugated and greyboard."
+  h1="Packaging Materials"
+  eyebrow="Specification"
+  lead="The board you choose decides how your print reproduces, how the pack holds its shape and how the finished carton is disposed of. This is what each grade actually does."
+  ogTitle="Board Grades for Lip Product Packaging"
+  ogDescription="How SBS, kraft, recycled, black-through, metallised and corrugated board differ in print, strength and disposal."
+  points={['Six board families', 'Weights from 14pt to 3 mm greyboard', 'Trade-offs stated plainly']}
+  ctaHeading="Not sure which board suits your product?"
+  ctaBody="Describe how the pack is sold and handled, and we will recommend a grade and weight with the reasoning, plus a proof on the actual stock before you commit."
+>
+  <InfoSection
+    id="how-to-choose"
+    heading="How to choose a board"
+    intro="Three questions settle it in almost every case, and they are worth answering in this order."
+  >
+    <ol class="ordered">
+      <li>
+        <strong>Does the print need to be bright?</strong> If shoppers have to
+        distinguish six shades at arm's length, you need a coated white surface.
+        If the range is monochrome or naturally toned, uncoated works.
+      </li>
+      <li>
+        <strong>What weight is the pack carrying?</strong> One lip balm stick is
+        almost nothing. A four-tube multipack, a glass gloss tube or a weighted
+        lipstick case all need more board than the size of the carton suggests.
+      </li>
+      <li>
+        <strong>Does disposal matter to your positioning?</strong> If it does,
+        that constrains the finish more than the board, and it is better decided
+        now than after artwork.
+      </li>
+    </ol>
+  </InfoSection>
+
+  <InfoSection
+    id="board-grades"
+    heading="The board grades we use"
+    intro="Six families cover every product on this site. The differences that matter in practice are colour accuracy, cut-edge appearance and what a laminate does to recyclability."
+  >
+    <SpecTable
+      caption="Board grades used for lip packaging, with their practical characteristics."
+      columns={['Grade', 'Surface', 'Colour reproduction', 'Typical use']}
+      rows={[
+        [
+          'SBS folding boxboard',
+          'Bleached, coated one or two sides',
+          'Closest to proof; holds fine halftones and small type',
+          'The default for full-colour cosmetic cartons',
+        ],
+        [
+          'Kraft board',
+          'Unbleached, uncoated, visible fibre',
+          'Warmer and darker throughout; no true white without an opaque underprint',
+          'Natural, unbleached and low-waste ranges',
+        ],
+        [
+          'Recycled greyback',
+          'White coated face, grey reverse',
+          'Good on the print face, marginally duller than SBS',
+          'Cost-sensitive volume work and recycled-content claims',
+        ],
+        [
+          'Black-through board',
+          'Coloured in the pulp, black throughout',
+          'Darker to print onto; needs opaque white for light colours',
+          'Dark cartons where white cut edges would show',
+        ],
+        [
+          'Metallised board',
+          'Reflective metallised layer under the print',
+          'Translucent inks pick up the reflection; opaque white required for normal colours',
+          'Holographic and mirror-finish limited editions',
+        ],
+        [
+          'E-flute corrugated',
+          'Printed liner over a fine flute',
+          'Slightly softer than flat board',
+          'Counter displays, shippers and direct mailers',
+        ],
+        [
+          'Greyboard with printed wrap',
+          'Rigid core, decorative paper wrap',
+          'As good as the wrap stock allows',
+          'Rigid gift boxes and presentation cases',
+        ],
+      ]}
+    />
+  </InfoSection>
+
+  <InfoSection
+    id="weights"
+    heading="Board weights and what they hold"
+    intro="Weight matters more than grade for strength. These are the starting points we work from, adjusted against your actual packed weight."
+  >
+    <SpecTable
+      caption="Board weight guidance by pack type."
+      columns={['Weight', 'Suits', 'Notes']}
+      rows={[
+        ['14pt', 'Very light single-item cartons inside a shipper', 'Feels thin if handled at a shelf edge'],
+        ['16–18pt', 'A single lip balm stick, gloss tube or lipstick bullet', 'The most common specification on this site'],
+        ['20–22pt', 'Cartons over three inches tall, or holding two items', 'Also the baseline for a window carton'],
+        ['24pt', 'Multipacks, three-packs, glass primaries, hanging packs', 'Noticeably more substantial in the hand'],
+        ['28pt and above', 'Heavier sets and premium single cartons', 'Diminishing returns on strength; mostly a feel decision'],
+        ['E-flute', 'Counter displays, shippers, direct mailers', 'Different construction rules from flat board'],
+        ['1.5–3 mm greyboard', 'Rigid boxes', 'Thickness chosen against box size and contents weight'],
+      ]}
+    />
+    <p class="note measure">
+      Send us the weight of the <em>packed</em> carton rather than the empty one.
+      That single figure decides board weight, base style and, on a hanging pack,
+      whether the tab needs reinforcement.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="cut-edges"
+    heading="Cut edges, and why black-through board exists"
+    intro="This is the detail that most often surprises brands after their first dark carton arrives."
+  >
+    <p class="measure">
+      A standard board is white in the middle. Print it black on the outside and
+      every die-cut edge and every crease shows a thin white line. On a pale
+      carton nobody notices. On a black soft-touch pack it is the first thing
+      anyone sees, and it is impossible to fix after production.
+    </p>
+    <p class="measure">
+      Black-through board is coloured throughout the pulp, so the edges stay
+      dark. It costs more per sheet and it is darker to print onto, which means
+      light colours need an opaque white layer underneath. On a dark
+      <a href="/hang-tab-lipstick-boxes/">window carton for peg display</a> the
+      window rim sits at eye level, which is exactly where that white line is
+      most visible, so the premium is usually worth paying there.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="liners"
+    heading="Liners for paper tubes"
+    intro="Rolled paper tubes have a material decision that flat cartons do not: the barrier layer between your product and the board."
+  >
+    <ul class="bullets measure">
+      <li>
+        A standard grease-resistant liner handles firm beeswax and butter
+        formulas without oil migrating into the paper.
+      </li>
+      <li>
+        Balms high in liquid oils, or poured warm and left soft, need a heavier
+        barrier grade.
+      </li>
+      <li>
+        The liner is a coating rather than a separate plastic sleeve, and whether
+        a specific grade is compatible with kerbside paper recycling varies by
+        material and by municipality.
+      </li>
+    </ul>
+    <p class="measure">
+      We confirm exactly which liner is quoted on your job so any plastic-free
+      wording you use is accurate. If you are choosing between formats, the
+      <a href="/paper-lip-balm-tubes/">rolled paperboard tube page</a> sets out
+      how the construction behaves in use.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="disposal"
+    heading="Recyclability, stated accurately"
+    intro="All the paperboard grades here are compatible with standard US kerbside paper recycling in their plain or varnished state. What complicates that is what goes on top."
+  >
+    <SpecTable
+      caption="What each addition does to the disposal route."
+      columns={['Addition', 'Effect on paper recycling', 'Alternative']}
+      rows={[
+        ['Varnish only', 'No practical effect', '—'],
+        ['Plastic lamination (matte, gloss, soft-touch)', 'Consumer must separate the film; many streams reject it', 'Matte or satin varnish'],
+        ['Clear window patch', 'A second material to separate', 'Printed swatch instead of a window'],
+        ['Metallised or holographic layer', 'Not paper-recyclable', 'Holo foil on a small area, or pearlescent ink'],
+        ['Foil stamping', 'Small foil areas are generally tolerated', 'Emboss with no ink or foil'],
+        ['Magnets in a rigid box', 'Must be removed first, which few consumers do', 'Tuck flap or ribbon closure'],
+        ['Foam or flocked insert', 'Separate material', 'Die-cut card platform or moulded pulp'],
+      ]}
+    />
+    <p class="note measure">
+      Recycled content and recyclability are different things and get conflated
+      often. We will tell you the recycled percentage a specific stock carries
+      rather than making a general claim, and we would rather you understated a
+      claim than made one you cannot substantiate.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="next"
+    heading="Once the board is settled"
+    intro="Material constrains what the rest of the specification can achieve, which is why it comes first."
+  >
+    <p class="measure">
+      With a grade and weight chosen, the next decisions are the press and the
+      coating. Which press suits you depends almost entirely on your quantity and
+      colour count, set out on the
+      <a href="/printing-options/">printing options page</a>, and the coatings
+      that each board supports are covered under finishes.
+    </p>
+  </InfoSection>
+</InfoLayout>

@@ -1,0 +1,193 @@
+---
+import InfoLayout from '../layouts/InfoLayout.astro';
+import InfoSection from '../components/InfoSection.astro';
+import SpecTable from '../components/SpecTable.astro';
+---
+
+<InfoLayout
+  path="/custom-packaging/"
+  title="Custom Packaging | Bespoke Lip Product Boxes"
+  description="How a custom packaging project runs at Lip Boxes: brief, die line, sampling, proofing, production and delivery."
+  h1="Custom Packaging"
+  eyebrow="How it works"
+  lead="Everything here is made to order. Nothing is picked from a catalogue of fixed sizes, which means the process has a shape worth understanding before you start."
+  ogTitle="How a Custom Packaging Project Runs"
+  ogDescription="From brief to delivered pallet: the stages, the decisions at each one, and what we need from you."
+  points={['Made to order, always', 'Die line before print', 'Nothing runs unsigned']}
+  ctaHeading="Start with a brief, however rough"
+  ctaBody="A sentence describing the product and a quantity is enough to open a conversation. We will tell you what else we need rather than expecting a full specification up front."
+>
+  <InfoSection
+    id="what-custom-means"
+    heading="What custom means here"
+    intro="The word is used loosely in packaging, so it is worth being specific about what is actually made to order."
+  >
+    <ul class="bullets">
+      <li>
+        <strong>The die line is drawn for your container.</strong> Not selected
+        from a size chart and not adjusted from a similar job.
+      </li>
+      <li>
+        <strong>The board grade and weight are chosen against your pack</strong>,
+        its packed weight and how it is merchandised.
+      </li>
+      <li>
+        <strong>The print process is selected against your quantity</strong> and
+        colour count, not fixed by what a supplier prefers to run.
+      </li>
+      <li>
+        <strong>Finishing is specified per job.</strong> There are no bundled
+        packages of laminate plus foil plus spot UV.
+      </li>
+      <li>
+        <strong>Pricing is quoted, not listed.</strong> A price list would either
+        overcharge simple jobs or under-quote complex ones.
+      </li>
+    </ul>
+    <p class="note">
+      The practical consequence is that we cannot give a firm price from a product
+      name alone. Dimensions and quantity are the minimum, and a physical sample
+      of the container removes most of the remaining uncertainty.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="stages"
+    heading="The stages of a project"
+    intro="Six stages, with the decisions that belong at each one. Skipping a stage almost always costs more than running it."
+  >
+    <SpecTable
+      caption="Custom packaging project stages."
+      columns={['Stage', 'What happens', 'What we need from you']}
+      rows={[
+        [
+          '1. Brief',
+          'We establish what the product is, how it is sold, and roughly what quantity',
+          'A description, a quantity, and a launch date if one is fixed',
+        ],
+        [
+          '2. Specification',
+          'Board grade and weight, print process, finishing and insert proposed with reasoning',
+          'Container dimensions or a physical sample',
+        ],
+        [
+          '3. Quote',
+          'Written price at your quantity and at the next volume break, plus one-time costs separated',
+          'Confirmation of which option to develop',
+        ],
+        [
+          '4. Die line and sample',
+          'Structural drawing issued; a plain cut-and-creased sample confirms fit',
+          'Written approval of the die line, ideally after testing the sample with product',
+        ],
+        [
+          '5. Proof',
+          'Colour proof on the specified stock, with foil and spot UV positions shown',
+          'Written approval per design or per shade',
+        ],
+        [
+          '6. Production and delivery',
+          'Print, finish, die-cut, glue, inspect, pack to your case count, dispatch',
+          'Delivery address, case count preference, any receiving requirements',
+        ],
+      ]}
+    />
+  </InfoSection>
+
+  <InfoSection
+    id="decisions"
+    heading="The five decisions that change your price"
+    intro="Worth understanding early, because each one is cheap to decide now and expensive to change after tooling."
+  >
+    <ol class="ordered">
+      <li>
+        <strong>Quantity.</strong> The largest single lever, because tooling and
+        make-ready are one-time costs spread across the run.
+      </li>
+      <li>
+        <strong>Board grade and weight.</strong> Constrains what the finish can
+        achieve, so it comes before the finish. Compared on the
+        <a href="/materials/">materials page</a>.
+      </li>
+      <li>
+        <strong>Colour count.</strong> Process, spot colours, and whether an opaque
+        white underprint is needed on the chosen stock.
+      </li>
+      <li>
+        <strong>Finishing passes.</strong> Each of laminate, foil, spot UV and
+        emboss is a separate pass with its own cost and its own lead time.
+      </li>
+      <li>
+        <strong>Structure and insert.</strong> An auto-bottom base or a die-cut
+        platform costs more per unit but can pay for itself in packing labour or
+        avoided damage.
+      </li>
+    </ol>
+  </InfoSection>
+
+  <InfoSection
+    id="samples"
+    heading="Structural samples, and why they are worth the delay"
+    intro="A plain unprinted sample is the cheapest insurance in a packaging project."
+  >
+    <p class="measure">
+      It tells you three things a drawing cannot: whether your container actually
+      fits with the right clearance, whether the carton stands and closes the way
+      you expect, and whether the insert holds the product when the box is shaken.
+      On a rigid box it also tells you how the lid feels and how strong the magnets
+      are.
+    </p>
+    <p class="measure">
+      Test it with your real product, not an empty carton. A fit that works on
+      paper sometimes fails with a slightly pillowed sachet or a lacquered case
+      that measures marginally larger than its specification. Sample options are
+      set out on the <a href="/sample-kit/">sample page</a>.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="ranges"
+    heading="If you are packaging more than one product"
+    intro="The economics change enough that it is worth treating a range as a single project rather than several orders."
+  >
+    <p class="measure">
+      Fix the board, the finish and the print process once and apply them across
+      everything. That consolidates the material buy, lets several die lines share
+      one press sheet, and collapses proofing from a series of separate reviews
+      into one standard plus a set of variants. It also produces a range that looks
+      like a range, which products specified separately over eighteen months
+      generally do not.
+    </p>
+    <p class="measure">
+      How that is structured, including scheduled call-offs and private label
+      programmes, is covered on the
+      <a href="/custom-lip-care-packaging/">bulk programme page</a>.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="what-we-dont-do"
+    heading="What we do not do"
+    intro="Being clear about the boundaries saves everyone time."
+  >
+    <ul class="bullets">
+      <li>
+        We do not review regulatory compliance. Ingredient declarations, net
+        contents statements, SPF drug facts panels and product claims are yours to
+        write and verify.
+      </li>
+      <li>
+        We do not fill or assemble product. We supply packaging components,
+        flat-packed or assembled as appropriate.
+      </li>
+      <li>
+        We do not stock a standard range. There is no catalogue to order from and
+        no off-the-shelf size list.
+      </li>
+      <li>
+        We do not quote from a product name alone, because it would not be a
+        quote in any useful sense.
+      </li>
+    </ul>
+  </InfoSection>
+</InfoLayout>

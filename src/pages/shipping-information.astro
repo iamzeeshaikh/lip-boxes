@@ -1,0 +1,155 @@
+---
+import InfoLayout from '../layouts/InfoLayout.astro';
+import InfoSection from '../components/InfoSection.astro';
+import SpecTable from '../components/SpecTable.astro';
+---
+
+<InfoLayout
+  path="/shipping-information/"
+  title="Shipping Information | Delivery and Freight"
+  description="How packaging orders are packed, cased and palletised for delivery across the United States, and what actually drives your freight cost."
+  h1="Shipping Information"
+  eyebrow="Ordering"
+  lead="Freight is quoted per order because it depends on volume, destination and how the consignment has to be received. This page explains what drives it and what we need from you."
+  ogTitle="How Packaging Orders Are Packed and Shipped"
+  ogDescription="Packing formats, case counts, pallet configurations and how freight cost is calculated on packaging orders."
+  points={['United States delivery', 'Quoted per consignment', 'Packed to your case count']}
+  ctaHeading="Have specific receiving requirements?"
+  ctaBody="Send your delivery address, any dock or appointment requirements, and your preferred case count with the enquiry so freight is quoted correctly first time."
+>
+  <InfoSection
+    id="how-packaging-arrives"
+    heading="How each product arrives"
+    intro="Not everything ships flat, and that has a real effect on freight cost."
+  >
+    <SpecTable
+      caption="How each product format is supplied and packed."
+      columns={['Product', 'Supplied as', 'Packed in', 'Freight driven by']}
+      rows={[
+        ['Folding cartons', 'Flat, glued along one seam', 'Counted, banded stacks in cases', 'Weight, usually'],
+        ['Hang tab cartons', 'Flat, glued', 'Cased upright so tabs are not crushed', 'Weight'],
+        ['Paper tubes', 'Assembled and capped', 'Nested in counted cases', 'Volume, not weight'],
+        ['Labels', 'Sheets or wound rolls', 'Boxed with core and unwind noted', 'Weight'],
+        ['Rigid boxes', 'Assembled, not flat', 'Interleaved or bagged, layered in cases', 'Volume, not weight'],
+        ['Counter displays', 'Flat, scored for folding', 'Cases or pallet layers', 'Volume'],
+        ['Inserts', 'Flat or pre-formed', 'Separate cases, matched to carton counts', 'Weight or volume'],
+      ]}
+    />
+    <p class="note">
+      For paper tubes and rigid boxes, consolidating into fewer larger shipments
+      usually costs materially less than several smaller ones, because carriers
+      charge on dimensional weight rather than actual weight.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="freight-cost"
+    heading="What determines your freight cost"
+    intro="We do not publish rates, because a rate that does not apply to your consignment is not useful. These are the variables."
+  >
+    <ul class="bullets">
+      <li><strong>Volume and weight of the consignment</strong>, with whichever is greater usually setting the price.</li>
+      <li><strong>Destination</strong>, including whether it is a commercial address, a residential one or a distribution centre.</li>
+      <li><strong>Service level</strong>, from standard ground through to expedited.</li>
+      <li><strong>Receiving requirements</strong>, such as a liftgate, an appointment, inside delivery or a booking portal.</li>
+      <li><strong>Whether the order palletises efficiently</strong>, since part-pallet space is charged as a full pallet position.</li>
+    </ul>
+    <p class="measure">
+      Freight is quoted alongside the goods so you see both figures before
+      committing. If you would rather arrange collection with your own carrier or
+      freight forwarder, that is straightforward — tell us at quoting stage and we
+      will prepare the consignment for collection instead.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="case-counts"
+    heading="Case counts and pallet configuration"
+    intro="How goods are packed matters more than it sounds, particularly if they are going to a filler or a retailer."
+  >
+    <p class="measure">
+      We pack to whatever case count suits your operation. If your filling line
+      runs in batches of 250, cases of 250 save your team counting. If a retailer
+      specifies units per case and a pallet pattern in their packaging guide, we
+      pack to that specification.
+    </p>
+    <p class="measure">
+      Send the requirement with the enquiry rather than after production. Building a
+      case count into the production plan costs nothing; repacking finished stock
+      costs labour and risks damage. For retail programmes the same applies to
+      pallet height, overhang tolerance and labelling, which is covered alongside
+      the structural detail on the
+      <a href="/hang-tab-lip-balm-boxes/">peg-ready carton page</a>.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="third-party"
+    heading="Delivering to a co-packer or third-party filler"
+    intro="This is common and works well, provided their intake requirements reach us in advance."
+  >
+    <ul class="bullets">
+      <li>Their receiving hours, and whether deliveries need a booked appointment.</li>
+      <li>Their purchase order or reference number, which usually has to appear on the paperwork and often on each case.</li>
+      <li>Case labelling requirements, including any barcode or SKU format they expect.</li>
+      <li>Maximum pallet height and weight they can handle.</li>
+      <li>Whether they need a packing list inside the consignment as well as attached to it.</li>
+    </ul>
+    <p class="note">
+      A refused delivery at a co-packer is expensive and slow to resolve. Ten
+      minutes gathering their requirements before we ship avoids nearly all of it.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="damage"
+    heading="Damage, shortages and what to do"
+    intro="Rare, but worth knowing the process before you need it."
+  >
+    <ol class="ordered">
+      <li>
+        <strong>Check the consignment on arrival</strong> against the packing list,
+        before the driver leaves if possible.
+      </li>
+      <li>
+        <strong>Note any visible damage on the delivery paperwork.</strong> A
+        signature without a notation makes a carrier claim considerably harder.
+      </li>
+      <li>
+        <strong>Photograph the packaging as received</strong>, including the outer
+        case and the pallet, not only the damaged goods.
+      </li>
+      <li>
+        <strong>Contact us within a reasonable period</strong> with the photographs
+        and the delivery reference, and we will work through it with the carrier.
+      </li>
+    </ol>
+    <p class="measure">
+      Custom-manufactured packaging is made to your approved specification and
+      cannot be resold, so returns for change of mind are not available. That
+      position, and how manufacturing faults are handled, is set out in the
+      <a href="/terms-and-conditions/">terms and conditions</a>.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="storage"
+    heading="Storing packaging once it arrives"
+    intro="Board and label stock both change with storage conditions, and a few precautions protect the investment."
+  >
+    <ul class="bullets">
+      <li>Keep pallets off concrete floors and away from external walls, since board absorbs moisture.</li>
+      <li>Store flat cartons flat and banded rather than loose, so they do not bow.</li>
+      <li>Case hang tab cartons upright, so tabs are not crushed under load.</li>
+      <li>Keep label rolls cool and out of sunlight; heat causes adhesive ooze at the edges.</li>
+      <li>Do not stack rigid boxes deeply, because assembled boxes mark each other under pressure.</li>
+      <li>Keep paper tubes cool, as they are more heat-sensitive than plastic containers.</li>
+    </ul>
+    <p class="measure">
+      If you would rather not warehouse a full run at once, a scheduled call-off
+      holds the volume price while releasing stock against a delivery schedule. That
+      arrangement is described on the
+      <a href="/custom-lip-care-packaging/">bulk programme page</a>.
+    </p>
+  </InfoSection>
+</InfoLayout>

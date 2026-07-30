@@ -1,0 +1,292 @@
+---
+import InfoLayout from '../layouts/InfoLayout.astro';
+import InfoSection from '../components/InfoSection.astro';
+import { site } from '../data/site';
+
+const effective = 'July 30, 2026';
+---
+
+<InfoLayout
+  path="/terms-and-conditions/"
+  title="Terms and Conditions | Lip Boxes"
+  description="Terms covering quotes, die line and proof approvals, manufacturing tolerances, payment, delivery, returns on custom goods and liability."
+  h1="Terms and Conditions"
+  eyebrow="Legal"
+  lead="These terms cover how quotes, approvals and production work on custom-manufactured packaging. The approval and returns sections are the ones worth reading closely."
+  narrow
+  points={[`Effective ${effective}`, 'Custom made-to-order goods', 'Written approvals required']}
+  ctaHeading="Need something clarified before ordering?"
+  ctaBody="Ask before you place an order rather than after. We would rather spend ten minutes explaining a clause than resolve a misunderstanding later."
+>
+  <InfoSection id="scope" heading="1. Scope">
+    <p>
+      These terms apply to quotes issued by Lip Boxes and to orders placed with us
+      for custom-manufactured packaging. Where we issue a written quote or order
+      confirmation containing specific terms, those specific terms take precedence
+      over anything on this page.
+    </p>
+    <p>
+      Registered company details will be published on this page once confirmed. Until
+      then, contact is by email at
+      <a href={`mailto:${site.email}`}>{site.email}</a>.
+    </p>
+  </InfoSection>
+
+  <InfoSection id="quotes" heading="2. Quotes and pricing">
+    <ul class="bullets">
+      <li>
+        Quotes are based on the specification you supply. If dimensions, quantity,
+        material, print colours or finishing change, the price changes with them.
+      </li>
+      <li>
+        Quotes are valid for the period stated on the quote. Where material or
+        freight costs move materially in the meantime, we may need to re-quote and
+        will say so rather than substituting a cheaper specification.
+      </li>
+      <li>
+        Any price shown on this website, including the starting unit price of
+        ${site.startingPrice} per piece, is an indicative entry figure for a simple
+        specification at qualifying large-volume quantities. It is not an offer and
+        not a fixed price for every order.
+      </li>
+      <li>
+        Freight is quoted separately from goods unless a quote states otherwise,
+        because it depends on volume, destination and receiving requirements.
+      </li>
+      <li>
+        Taxes and duties are additional unless expressly included in a quote.
+      </li>
+    </ul>
+  </InfoSection>
+
+  <InfoSection id="orders" heading="3. Placing an order">
+    <p>
+      An order exists when we issue a written confirmation against your instruction
+      to proceed. Production does not begin at that point — it begins after the
+      approvals in section 4.
+    </p>
+    <p>
+      Changes requested before die line approval can usually be accommodated
+      without cost. Changes after that point may incur new tooling, new plates or a
+      new proof cycle, and we will tell you the cost before proceeding.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="approvals"
+    heading="4. Approvals: die line and proof"
+    intro="These two approvals are the point at which responsibility for the specification and the artwork transfers to you."
+  >
+    <ul class="bullets">
+      <li>
+        <strong>Die line approval</strong> fixes the structure and dimensions. Once
+        a die is cut, a dimensional change requires a new die at your cost.
+      </li>
+      <li>
+        <strong>Proof approval</strong> fixes colour and content. The production run
+        is manufactured to the approved proof, and we retain it as the reference.
+      </li>
+      <li>
+        Both approvals must be given in writing by you or by a person you have
+        authorised. Verbal approval is not sufficient.
+      </li>
+      <li>
+        We are not responsible for errors present in an approved proof, including
+        spelling, ingredient declarations, net contents statements, barcodes, shade
+        names or any regulated copy.
+      </li>
+      <li>
+        Where you decline a structural sample or a printed proof on stock that we
+        have recommended one for, you accept the risk that arises from that
+        decision.
+      </li>
+    </ul>
+  </InfoSection>
+
+  <InfoSection
+    id="artwork"
+    heading="5. Artwork and intellectual property"
+    intro="You keep your rights; you also carry responsibility for what the artwork contains."
+  >
+    <ul class="bullets">
+      <li>
+        You retain all intellectual property rights in artwork you supply. We use it
+        only to produce your order.
+      </li>
+      <li>
+        You confirm that you hold the rights to everything in the artwork, including
+        images, fonts and trademarks, and that printing it does not infringe a third
+        party's rights.
+      </li>
+      <li>
+        You are responsible for the accuracy and legal compliance of all copy,
+        including ingredient declarations, net contents, responsible party details,
+        SPF drug facts panels and any product claim. We do not review compliance,
+        as stated in the <a href="/artwork-guidelines/">artwork guidelines</a>.
+      </li>
+      <li>
+        Die lines and structural drawings we create remain ours, and we license them
+        to you for the manufacture of your packaging.
+      </li>
+      <li>
+        We do not use your artwork or brand in our own promotion without your
+        written permission.
+      </li>
+    </ul>
+  </InfoSection>
+
+  <InfoSection
+    id="tolerances"
+    heading="6. Manufacturing tolerances"
+    intro="Print and converting are physical processes with normal variation. These are industry realities rather than defects."
+  >
+    <ul class="bullets">
+      <li>
+        <strong>Colour.</strong> Process colour varies within normal commercial
+        tolerance between runs. Where exact consistency matters, specify a spot
+        Pantone rather than a process build.
+      </li>
+      <li>
+        <strong>Dimensions.</strong> Cutting and creasing carry tolerance, which is
+        why artwork must include bleed and keep live copy inside a safe area.
+      </li>
+      <li>
+        <strong>Substrate.</strong> Board shade varies slightly between mill batches,
+        particularly on kraft and recycled grades.
+      </li>
+      <li>
+        <strong>Quantity.</strong> Print runs can deliver marginally over or under
+        the ordered quantity. Where a delivered quantity variance applies, it is
+        stated on your quote.
+      </li>
+      <li>
+        <strong>Hand-assembled goods.</strong> Rigid boxes show more unit-to-unit
+        variation than machine-converted cartons, by the nature of the process.
+      </li>
+    </ul>
+  </InfoSection>
+
+  <InfoSection id="payment" heading="7. Payment">
+    <p>
+      Payment terms are stated on your quote or order confirmation. Custom
+      manufacturing normally requires payment or a deposit before production begins,
+      because the goods have no resale value to us.
+    </p>
+    <p>
+      Where credit terms are agreed in writing, invoices are payable within the
+      agreed period. We may suspend work on overdue accounts and will tell you before
+      doing so. Title in the goods passes to you on full payment.
+    </p>
+  </InfoSection>
+
+  <InfoSection id="delivery" heading="8. Delivery and risk">
+    <ul class="bullets">
+      <li>
+        Delivery dates are estimates given in good faith and depend on your
+        approvals being returned promptly, as set out on the
+        <a href="/turnaround-time/">turnaround page</a>.
+      </li>
+      <li>
+        Risk in the goods passes on delivery to the address you nominate, or on
+        collection where you arrange your own carrier.
+      </li>
+      <li>
+        You are responsible for giving us accurate delivery information, including
+        receiving hours, appointment requirements and any access limitations.
+        Re-delivery costs arising from incorrect information are chargeable.
+      </li>
+      <li>
+        Visible damage or shortage must be noted on the delivery paperwork at the
+        time and reported to us promptly with photographs.
+      </li>
+    </ul>
+  </InfoSection>
+
+  <InfoSection
+    id="returns"
+    heading="9. Returns on custom goods"
+    intro="This section differs from what you may expect from consumer retail, and it is a consequence of the goods being made to your specification."
+  >
+    <p>
+      Packaging manufactured to your approved die line and proof is bespoke. It
+      cannot be resold or reused, so <strong>returns for change of mind, incorrect
+      ordering or over-ordering are not available</strong> once production has
+      begun.
+    </p>
+    <p>Where goods do not conform to the approved specification, we will:</p>
+    <ol class="ordered">
+      <li>Review the reported issue against the approved die line and proof.</li>
+      <li>Ask for photographs and, where useful, samples of the affected units.</li>
+      <li>
+        Reprint the affected quantity, or issue a credit or refund for it, at our
+        option and proportionate to the shortfall.
+      </li>
+    </ol>
+    <p>
+      Report a suspected fault promptly and before the packaging is filled or
+      distributed, since a fault found after filling is considerably harder to
+      assess and to remedy.
+    </p>
+  </InfoSection>
+
+  <InfoSection id="liability" heading="10. Liability">
+    <p>
+      Our liability in connection with an order is limited to the value of that
+      order. We are not liable for indirect or consequential loss, including lost
+      profit, lost sales, wasted product, recall costs, or costs arising from a delay
+      to a launch.
+    </p>
+    <p>
+      Nothing in these terms limits liability that cannot be limited by law. Where
+      an order is delayed or prevented by an event outside our reasonable control, we
+      will tell you promptly and work with you on the options rather than simply
+      invoking the clause.
+    </p>
+  </InfoSection>
+
+  <InfoSection id="website" heading="11. Use of this website">
+    <p>
+      Content on this site is provided for information. Dimensions, weights, lead
+      times and material characteristics described here are general guidance, and the
+      figures that apply to your order are the ones stated in your written quote.
+    </p>
+    <p>
+      Text, photography and layout on this site are ours or used with permission. Do
+      not reproduce them without written consent. Do not attempt to disrupt the site
+      or submit content through its forms that is unlawful or that you do not have
+      the right to send.
+    </p>
+  </InfoSection>
+
+  <InfoSection id="general" heading="12. General">
+    <ul class="bullets">
+      <li>
+        These terms, together with your written quote and order confirmation, form
+        the whole agreement between us on that order.
+      </li>
+      <li>
+        If a provision is found unenforceable, the rest continues to apply.
+      </li>
+      <li>
+        We may update these terms. The version in force for your order is the one
+        published when your order was confirmed.
+      </li>
+      <li>
+        The effective date of this version is {effective}.
+      </li>
+    </ul>
+    <p>
+      Questions about these terms go to
+      <a href={`mailto:${site.email}`}>{site.email}</a>. How we handle the
+      information you send is set out in the
+      <a href="/privacy-policy/">privacy policy</a>.
+    </p>
+  </InfoSection>
+</InfoLayout>
+
+<style>
+  p {
+    max-width: var(--measure);
+    color: var(--ink-soft);
+  }
+</style>

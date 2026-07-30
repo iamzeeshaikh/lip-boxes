@@ -1,0 +1,133 @@
+---
+import { Image } from 'astro:assets';
+import type { Product } from '../data/types';
+import { productImage } from '../lib/images';
+import Icon from './Icon.astro';
+
+interface Props {
+  product: Product;
+  /** Set true for cards above the fold so the image is not lazy-loaded. */
+  eager?: boolean;
+  /** Compact variant used in the related-products strip. */
+  compact?: boolean;
+}
+
+const { product, eager = false, compact = false } = Astro.props;
+const hero = product.images[0];
+const img = productImage(product.slug, hero.file);
+const href = `/${product.slug}/`;
+---
+
+<article class:list={['card', 'p-card', compact && 'p-card--compact']}>
+  <a class="p-card__media" href={href} tabindex="-1" aria-hidden="true">
+    <Image
+      src={img}
+      alt=""
+      widths={[320, 480, 640]}
+      sizes={compact
+        ? '(min-width: 62rem) 22vw, (min-width: 40rem) 44vw, 88vw'
+        : '(min-width: 76rem) 17rem, (min-width: 40rem) 44vw, 88vw'}
+      loading={eager ? 'eager' : 'lazy'}
+      fetchpriority={eager ? 'high' : 'auto'}
+      decoding={eager ? 'sync' : 'async'}
+      class="p-card__img"
+      width={480}
+      height={480}
+    />
+  </a>
+  <div class="p-card__body">
+    <h3 class="p-card__title">
+      <a href={href}>{product.name}</a>
+    </h3>
+    {!compact && <p class="p-card__desc">{product.cardDescription}</p>}
+    <p class="p-card__meta">
+      <span class="p-card__cta">
+        View specification
+        <Icon name="arrow-right" size={15} />
+      </span>
+    </p>
+  </div>
+</article>
+
+<style>
+  .p-card {
+    position: relative;
+  }
+  .p-card__media {
+    display: block;
+    background: var(--paper-warm);
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+  }
+  .p-card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s var(--ease);
+  }
+  .p-card:hover .p-card__img {
+    transform: scale(1.03);
+  }
+  .p-card__body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: var(--sp-4) var(--sp-4) var(--sp-5);
+  }
+  .p-card__title {
+    font-size: var(--step-1);
+    margin: 0 0 var(--sp-2);
+    line-height: 1.25;
+  }
+  .p-card__title a {
+    display: inline-block;
+    /* The ::after overlay makes the whole card clickable; this keeps the
+       anchor's own box at the 24px minimum as well. */
+    min-height: 1.5rem;
+    color: var(--ink);
+    text-decoration: none;
+  }
+  /* The title link covers the card, so the whole card is one target. */
+  .p-card__title a::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+  }
+  .p-card:hover .p-card__title a {
+    color: var(--plum);
+  }
+  .p-card__desc {
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+    line-height: 1.55;
+    margin: 0 0 var(--sp-4);
+  }
+  .p-card__meta {
+    margin: auto 0 0;
+  }
+  .p-card__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: var(--step--1);
+    font-weight: 600;
+    color: var(--plum);
+  }
+  .p-card:hover .p-card__cta {
+    color: var(--rose);
+  }
+  .p-card--compact .p-card__body {
+    padding: var(--sp-3) var(--sp-4) var(--sp-4);
+  }
+  .p-card--compact .p-card__title {
+    font-size: var(--step-0);
+    font-family: var(--font-body);
+    font-weight: 600;
+    letter-spacing: 0;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .p-card:hover .p-card__img {
+      transform: none;
+    }
+  }
+</style>

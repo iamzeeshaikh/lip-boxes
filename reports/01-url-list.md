@@ -1,0 +1,59 @@
+# Generated URLs
+
+40 HTML pages, plus 3 generated files.
+
+## Pages
+
+- https://lipboxes.com/
+- https://lipboxes.com/404/
+- https://lipboxes.com/about/
+- https://lipboxes.com/artwork-guidelines/
+- https://lipboxes.com/blog/
+- https://lipboxes.com/blog/how-packaging-quantity-affects-unit-pricing/
+- https://lipboxes.com/blog/how-to-choose-packaging-for-a-lip-gloss-line/
+- https://lipboxes.com/blog/how-to-prepare-artwork-for-custom-lip-boxes/
+- https://lipboxes.com/blog/lip-balm-box-materials-compared/
+- https://lipboxes.com/blog/lipstick-packaging-sizes-and-structural-options/
+- https://lipboxes.com/blog/packaging-inserts-for-lipstick-and-lip-gloss-products/
+- https://lipboxes.com/blog/paper-lip-balm-tubes-and-their-packaging-requirements/
+- https://lipboxes.com/blog/printing-methods-for-cosmetic-packaging/
+- https://lipboxes.com/box-styles/
+- https://lipboxes.com/contact/
+- https://lipboxes.com/custom-lip-balm-boxes/
+- https://lipboxes.com/custom-lip-balm-labels/
+- https://lipboxes.com/custom-lip-care-packaging/
+- https://lipboxes.com/custom-lip-mask-boxes/
+- https://lipboxes.com/custom-lipstick-boxes/
+- https://lipboxes.com/custom-packaging/
+- https://lipboxes.com/faqs/
+- https://lipboxes.com/finishes/
+- https://lipboxes.com/hang-tab-lip-balm-boxes/
+- https://lipboxes.com/hang-tab-lipstick-boxes/
+- https://lipboxes.com/holographic-lip-gloss-boxes/
+- https://lipboxes.com/how-to-order/
+- https://lipboxes.com/lip-balm-packaging/
+- https://lipboxes.com/lip-gloss-boxes/
+- https://lipboxes.com/materials/
+- https://lipboxes.com/paper-lip-balm-tubes/
+- https://lipboxes.com/printing-options/
+- https://lipboxes.com/privacy-policy/
+- https://lipboxes.com/products/
+- https://lipboxes.com/request-a-quote/
+- https://lipboxes.com/rigid-lipstick-boxes/
+- https://lipboxes.com/sample-kit/
+- https://lipboxes.com/shipping-information/
+- https://lipboxes.com/terms-and-conditions/
+- https://lipboxes.com/turnaround-time/
+
+## Generated files
+
+- https://lipboxes.com/sitemap.xml
+- https://lipboxes.com/robots.txt
+- https://lipboxes.com/rss.xml
+
+## Notes
+
+- `https://lipboxes.com/404/` is built as `404.html` and served with a genuine 404 status
+  for any unmatched path. It carries `noindex` and is excluded from the sitemap.
+- `/api/quote/` is a POST-only server endpoint, not a page. It is disallowed in
+  robots.txt and returns a 303 redirect on GET.

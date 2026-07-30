@@ -1,0 +1,49 @@
+---
+import '../styles/global.css';
+import Seo from '../components/Seo.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { site } from '../data/site';
+
+interface Props {
+  title: string;
+  description: string;
+  path: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  ogImage?: string;
+  ogImageAlt?: string;
+  ogType?: 'website' | 'article' | 'product';
+  noindex?: boolean;
+  preloadImage?: string;
+  preloadImageSrcset?: string;
+  preloadImageSizes?: string;
+  preloadImageType?: string;
+  publishedTime?: string;
+  modifiedTime?: string;
+  /** JSON-LD objects rendered into the head. */
+  schema?: unknown[];
+}
+
+const { schema = [], ...seo } = Astro.props;
+---
+
+<!doctype html>
+<html lang={site.lang}>
+  <head>
+    <Seo {...seo} />
+    {
+      schema.map((graph) => (
+        <script type="application/ld+json" set:html={JSON.stringify(graph)} is:inline />
+      ))
+    }
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <Header />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

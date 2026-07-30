@@ -1,0 +1,182 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.lipboxes.com"
+        }
+      ],
+      "destination": "https://lipboxes.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/products/:slug",
+      "destination": "/:slug/",
+      "permanent": true
+    },
+    {
+      "source": "/product/:slug",
+      "destination": "/:slug/",
+      "permanent": true
+    },
+    {
+      "source": "/lipstick-boxes",
+      "destination": "/custom-lipstick-boxes/",
+      "permanent": true
+    },
+    {
+      "source": "/lip-balm-labels",
+      "destination": "/custom-lip-balm-labels/",
+      "permanent": true
+    },
+    {
+      "source": "/cardboard-lip-balm-tubes",
+      "destination": "/paper-lip-balm-tubes/",
+      "permanent": true
+    },
+    {
+      "source": "/rigid-lipstic-boxes",
+      "destination": "/rigid-lipstick-boxes/",
+      "permanent": true
+    },
+    {
+      "source": "/hang-tab-lipstick-box",
+      "destination": "/hang-tab-lipstick-boxes/",
+      "permanent": true
+    },
+    {
+      "source": "/hang-tab-lip-balm-box",
+      "destination": "/hang-tab-lip-balm-boxes/",
+      "permanent": true
+    },
+    {
+      "source": "/custom-lip-care-packaging-bulk",
+      "destination": "/custom-lip-care-packaging/",
+      "permanent": true
+    },
+    {
+      "source": "/sitemap-index.xml",
+      "destination": "/sitemap.xml",
+      "permanent": true
+    },
+    {
+      "source": "/feed",
+      "destination": "/rss.xml",
+      "permanent": true
+    },
+    {
+      "source": "/quote",
+      "destination": "/request-a-quote/",
+      "permanent": true
+    },
+    {
+      "source": "/faq",
+      "destination": "/faqs/",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000; includeSubDomains; preload"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "accelerometer=(), autoplay=(), camera=(), display-capture=(), encrypted-media=(), fullscreen=(self), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), midi=(), payment=(), picture-in-picture=(), publickey-credentials-get=(), screen-wake-lock=(), usb=(), xr-spatial-tracking=()"
+        },
+        {
+          "key": "Cross-Origin-Opener-Policy",
+          "value": "same-origin"
+        },
+        {
+          "key": "Cross-Origin-Resource-Policy",
+          "value": "same-site"
+        },
+        {
+          "key": "X-DNS-Prefetch-Control",
+          "value": "off"
+        },
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; base-uri 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; form-action 'self'; frame-src 'none'; object-src 'none'; frame-ancestors 'none'; manifest-src 'self'; media-src 'self'; worker-src 'self'; upgrade-insecure-requests"
+        }
+      ]
+    },
+    {
+      "source": "/fonts/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/_astro/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(favicon.svg|favicon.ico|apple-touch-icon.png|icon-192.png|icon-512.png|icon-maskable-512.png)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        }
+      ]
+    },
+    {
+      "source": "/social/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        }
+      ]
+    },
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-store, max-age=0"
+        },
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
+      "source": "/(sitemap.xml|robots.txt|rss.xml)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
+      ]
+    }
+  ]
+}

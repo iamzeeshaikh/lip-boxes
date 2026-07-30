@@ -1,0 +1,348 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { Image, getImage } from 'astro:assets';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import QuoteCta from '../../components/QuoteCta.astro';
+import { blogPosts, getPost } from '../../data/blog';
+import { getProduct } from '../../data/products';
+import { productImage } from '../../lib/images';
+import { site } from '../../data/site';
+import {
+  graph,
+  organizationSchema,
+  websiteSchema,
+  webPageSchema,
+  breadcrumbSchema,
+  blogPostingSchema,
+  type Crumb,
+} from '../../lib/schema';
+
+export const getStaticPaths: GetStaticPaths = () =>
+  blogPosts.map((post) => ({ params: { post: post.slug } }));
+
+const { post: slug } = Astro.params;
+const post = getPost(slug!);
+if (!post) throw new Error(`Unknown blog slug: ${slug}`);
+
+const path = `/blog/${post.slug}/`;
+const crumbs: Crumb[] = [
+  { name: 'Home', path: '/' },
+  { name: 'Blog', path: '/blog/' },
+  { name: post.title },
+];
+
+const heroSource = productImage(post.heroFrom.slug, post.heroFrom.file);
+const heroAsset = await getImage({
+  src: heroSource,
+  widths: [640, 960, 1280],
+  format: 'webp',
+  width: 1280,
+  height: 960,
+});
+const ogAsset = await getImage({
+  src: heroSource,
+  width: 1200,
+  height: 900,
+  format: 'png',
+});
+
+const related = post.related
+  .map((relatedSlug) => getProduct(relatedSlug))
+  .filter((p): p is NonNullable<typeof p> => Boolean(p));
+
+const wordCount = post.sections.reduce((total, section) => {
+  const text = [
+    section.heading,
+    ...section.body,
+    ...(section.list ?? []),
+    ...(section.table?.rows.flat() ?? []),
+  ].join(' ');
+  return total + text.split(/\s+/).filter(Boolean).length;
+}, 0);
+
+const schema = graph(
+  organizationSchema(),
+  websiteSchema(),
+  webPageSchema({
+    path,
+    name: post.title,
+    description: post.metaDescription,
+    primaryImage: ogAsset.src,
+  }),
+  breadcrumbSchema(crumbs),
+  blogPostingSchema({
+    path,
+    headline: post.title,
+    description: post.metaDescription,
+    published: post.published,
+    modified: post.updated,
+    image: ogAsset.src,
+    wordCount,
+  }),
+);
+
+const publishedLabel = new Date(`${post.published}T09:00:00Z`).toLocaleDateString(
+  'en-US',
+  { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' },
+);
+---
+
+<BaseLayout
+  title={post.seoTitle}
+  description={post.metaDescription}
+  path={path}
+  ogTitle={post.title}
+  ogDescription={post.deck}
+  ogImage={ogAsset.src}
+  ogImageAlt={post.heroFrom.alt}
+  ogType="article"
+  preloadImage={heroAsset.src}
+  publishedTime={`${post.published}T09:00:00Z`}
+  modifiedTime={post.updated ? `${post.updated}T09:00:00Z` : undefined}
+  schema={[schema]}
+>
+  <div class="a-top">
+    <div class="wrap wrap--narrow">
+      <Breadcrumbs crumbs={crumbs} tone="warm" />
+      <p class="a-meta">
+        <time datetime={post.published}>{publishedLabel}</time>
+        <span aria-hidden="true">&middot;</span>
+        {post.readingMinutes} min read
+        <span aria-hidden="true">&middot;</span>
+        <span>{site.name}</span>
+      </p>
+      <h1>{post.h1}</h1>
+      <p class="lead a-deck">{post.deck}</p>
+    </div>
+  </div>
+
+  <figure class="a-hero">
+    <div class="wrap">
+      <Image
+        src={heroSource}
+        alt={post.heroFrom.alt}
+        widths={[640, 960, 1280]}
+        sizes="(min-width: 76rem) 72rem, 94vw"
+        loading="eager"
+        fetchpriority="high"
+        decoding="sync"
+        width={1280}
+        height={960}
+        class="a-hero__img"
+      />
+    </div>
+  </figure>
+
+  <div class="wrap a-body">
+    <aside class="a-toc" aria-labelledby="a-toc-heading">
+      <h2 class="a-toc__heading" id="a-toc-heading">Contents</h2>
+      <nav aria-labelledby="a-toc-heading">
+        <ol class="a-toc__list">
+          {post.sections.map((section) => <li><a href={`#${section.id}`}>{section.heading}</a></li>)}
+        </ol>
+      </nav>
+    </aside>
+
+    <article class="a-article prose">
+      {
+        post.sections.map((section) => (
+          <section id={section.id} class="a-section">
+            <h2>{section.heading}</h2>
+            {section.body.map((paragraph) => <p set:html={paragraph} />)}
+            {
+              section.list && (
+                <ul class="a-list">
+                  {section.list.map((item) => <li>{item}</li>)}
+                </ul>
+              )
+            }
+            {
+              section.table && (
+                <div class="table-scroll a-table">
+                  <table>
+                    <thead>
+                      <tr>{section.table.columns.map((column) => <th scope="col">{column}</th>)}</tr>
+                    </thead>
+                    <tbody>
+                      {section.table.rows.map((row) => (
+                        <tr>
+                          {row.map((cell, i) =>
+                            i === 0 ? <th scope="row">{cell}</th> : <td>{cell}</td>,
+                          )}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              )
+            }
+          </section>
+        ))
+      }
+
+      <footer class="a-footer">
+        <p>
+          Written by the {site.name} team. If something here is out of date or you
+          disagree with it, tell us in an enquiry and we will look at it again.
+        </p>
+        <p class="a-footer__nav">
+          <a href="/blog/">Back to all articles</a>
+        </p>
+      </footer>
+    </article>
+  </div>
+
+  {
+    related.length > 0 && (
+      <section class="section section--warm" aria-labelledby="a-related-heading">
+        <div class="wrap">
+          <span class="eyebrow">Products in this article</span>
+          <h2 id="a-related-heading">Packaging covered above</h2>
+          <div class="grid grid--products a-related">
+            {related.map((product) => <ProductCard product={product} compact />)}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  <QuoteCta />
+</BaseLayout>
+
+<style>
+  .a-top {
+    background:
+      radial-gradient(
+        120% 100% at 90% 0%,
+        color-mix(in srgb, var(--rose-soft) 55%, transparent) 0%,
+        transparent 62%
+      ),
+      var(--paper-warm);
+    padding-block: var(--sp-5) var(--sp-7);
+  }
+  .a-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin: var(--sp-5) 0 var(--sp-4);
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+  }
+  .a-top h1 {
+    font-size: var(--step-4);
+    margin-bottom: var(--sp-4);
+  }
+  .a-deck {
+    margin: 0;
+    max-width: 50ch;
+  }
+
+  .a-hero {
+    margin: 0;
+    background: var(--paper-warm);
+    padding-bottom: var(--sp-7);
+  }
+  .a-hero__img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+  }
+  @media (min-width: 48rem) {
+    .a-hero__img {
+      aspect-ratio: 16 / 9;
+    }
+  }
+
+  .a-body {
+    display: grid;
+    gap: var(--sp-6);
+    padding-block: var(--sp-7);
+  }
+  @media (min-width: 68rem) {
+    .a-body {
+      grid-template-columns: 15rem 1fr;
+      gap: var(--sp-8);
+      align-items: start;
+    }
+  }
+  .a-toc {
+    display: none;
+  }
+  @media (min-width: 68rem) {
+    .a-toc {
+      display: block;
+      position: sticky;
+      top: 5.5rem;
+    }
+  }
+  .a-toc__heading {
+    font-family: var(--font-body);
+    font-size: var(--step--1);
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: var(--sp-3);
+  }
+  .a-toc__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: toc;
+    border-left: 1px solid var(--line);
+  }
+  .a-toc__list a {
+    display: block;
+    padding: 0.35rem 0 0.35rem 0.85rem;
+    font-size: var(--step--1);
+    color: var(--ink-soft);
+    text-decoration: none;
+    border-left: 2px solid transparent;
+    margin-left: -1px;
+    line-height: 1.45;
+  }
+  .a-toc__list a:hover {
+    color: var(--plum);
+    border-left-color: var(--rose);
+  }
+
+  .a-article {
+    max-width: 40rem;
+  }
+  .a-section {
+    scroll-margin-top: 6rem;
+  }
+  .a-section + .a-section {
+    margin-top: var(--sp-6);
+  }
+  .a-section h2 {
+    font-size: var(--step-2);
+    margin: 0 0 var(--sp-4);
+  }
+  .a-list {
+    padding-left: 1.25rem;
+  }
+  .a-list li {
+    margin-bottom: var(--sp-2);
+    color: var(--ink-soft);
+  }
+  .a-table {
+    margin-block: var(--sp-5);
+  }
+  .a-footer {
+    margin-top: var(--sp-7);
+    padding-top: var(--sp-5);
+    border-top: 1px solid var(--line);
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+  }
+  .a-related {
+    margin-top: var(--sp-5);
+  }
+</style>

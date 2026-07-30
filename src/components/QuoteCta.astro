@@ -1,0 +1,93 @@
+---
+import { site } from '../data/site';
+import Icon from './Icon.astro';
+
+interface Props {
+  heading?: string;
+  body?: string;
+  /** Product name pre-filled into the quote form when arriving from a product page. */
+  product?: string;
+  /** Second button target. Defaults to the sample kit page. */
+  secondaryHref?: string;
+  secondaryLabel?: string;
+}
+
+const {
+  heading = 'Tell us what you need packaged',
+  body = 'Send your dimensions, quantity and artwork status. You will get a written quote with the price at your quantity and at the next volume break.',
+  product,
+  secondaryHref,
+  secondaryLabel,
+} = Astro.props;
+
+const ctaSecondaryHref = secondaryHref ?? '/sample-kit/';
+const ctaSecondaryLabel = secondaryLabel ?? 'See sample options';
+
+const quoteHref = product
+  ? `/request-a-quote/?product=${encodeURIComponent(product)}`
+  : '/request-a-quote/';
+---
+
+<section class="section section--ink quote-cta">
+  <div class="wrap quote-cta__inner">
+    <div class="quote-cta__text">
+      <h2>{heading}</h2>
+      <p>{body}</p>
+      <p class="quote-cta__price">{site.startingPriceStatement}</p>
+    </div>
+    <div class="quote-cta__actions">
+      <a href={quoteHref} class="btn btn--onink">
+        Request a Quote
+        <Icon name="arrow-right" size={18} />
+      </a>
+      <a href={ctaSecondaryHref} class="btn btn--ghostink">{ctaSecondaryLabel}</a>
+      <p class="quote-cta__contact">
+        Or email
+        <a href={`mailto:${site.email}`}>{site.email}</a>
+        {site.phone && <> or call <a href={`tel:${site.phone}`}>{site.phoneDisplay ?? site.phone}</a></>}
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .quote-cta {
+    padding-block: var(--sp-8);
+  }
+  .quote-cta__inner {
+    display: grid;
+    gap: var(--sp-6);
+    align-items: start;
+  }
+  @media (min-width: 58rem) {
+    .quote-cta__inner {
+      grid-template-columns: 1.35fr 1fr;
+      gap: var(--sp-8);
+      align-items: center;
+    }
+  }
+  .quote-cta h2 {
+    margin-bottom: var(--sp-3);
+  }
+  .quote-cta p {
+    max-width: 52ch;
+    color: color-mix(in srgb, var(--paper-warm) 88%, transparent);
+  }
+  .quote-cta__price {
+    margin-top: var(--sp-4);
+    padding-top: var(--sp-4);
+    border-top: 1px solid rgb(255 255 255 / 0.16);
+    font-size: var(--step--1);
+    color: var(--gold-soft) !important;
+  }
+  .quote-cta__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--sp-3);
+  }
+  .quote-cta__contact {
+    font-size: var(--step--1);
+    margin-top: var(--sp-2);
+  }
+</style>

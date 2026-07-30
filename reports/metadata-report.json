@@ -1,0 +1,672 @@
+[
+  {
+    "url": "https://lipboxes.com/",
+    "title": "Custom Lip Packaging Boxes | Lip Boxes USA",
+    "titleLength": 42,
+    "description": "Custom printed boxes, paper tubes and labels for lip balm, lipstick and lip gloss brands. Made to your dimensions. Request a quote.",
+    "descriptionLength": 131,
+    "h1": "Packaging built around the lip product you already make",
+    "canonical": "https://lipboxes.com/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/404/",
+    "title": "Page Not Found | Lip Boxes",
+    "titleLength": 26,
+    "description": "This page could not be found. Browse the custom lip packaging product directory, the specification guides, or request a quote.",
+    "descriptionLength": 126,
+    "h1": "This page could not be found",
+    "canonical": "https://lipboxes.com/404/",
+    "indexable": false,
+    "schemaTypes": []
+  },
+  {
+    "url": "https://lipboxes.com/about/",
+    "title": "About Lip Boxes | Custom Lip Product Packaging",
+    "titleLength": 46,
+    "description": "What Lip Boxes makes, how a project runs, who we suit, and the claims we deliberately leave off this site because they cannot be verified.",
+    "descriptionLength": 138,
+    "h1": "About Lip Boxes",
+    "canonical": "https://lipboxes.com/about/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "AboutPage",
+      "BreadcrumbList"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/artwork-guidelines/",
+    "title": "Artwork Guidelines | Print File Setup | Lip Boxes",
+    "titleLength": 49,
+    "description": "File formats, bleed, safe areas, colour space and named finishing layers for print-ready lip packaging artwork, plus what we do not check.",
+    "descriptionLength": 138,
+    "h1": "Artwork Guidelines",
+    "canonical": "https://lipboxes.com/artwork-guidelines/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/blog/",
+    "title": "Lip Packaging Blog | Guides and Notes | Lip Boxes",
+    "titleLength": 49,
+    "description": "Practical articles on specifying lip packaging: materials, printing, artwork, inserts and how quantity affects unit price.",
+    "descriptionLength": 122,
+    "h1": "Notes on Packaging Lip Products",
+    "canonical": "https://lipboxes.com/blog/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "CollectionPage",
+      "BreadcrumbList",
+      "Blog"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/blog/how-packaging-quantity-affects-unit-pricing/",
+    "title": "How Packaging Quantity Affects Unit Pricing",
+    "titleLength": 43,
+    "description": "Why packaging unit prices fall so steeply with volume, which costs are fixed, and where the real breakpoints sit.",
+    "descriptionLength": 113,
+    "h1": "How Packaging Quantity Affects Unit Pricing",
+    "canonical": "https://lipboxes.com/blog/how-packaging-quantity-affects-unit-pricing/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "BlogPosting"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/blog/how-to-choose-packaging-for-a-lip-gloss-line/",
+    "title": "How to Choose Packaging for a Lip Gloss Line",
+    "titleLength": 44,
+    "description": "A practical sequence for specifying lip gloss packaging: tube first, then carton height, board, print process and finish.",
+    "descriptionLength": 121,
+    "h1": "How to Choose Packaging for a Lip Gloss Line",
+    "canonical": "https://lipboxes.com/blog/how-to-choose-packaging-for-a-lip-gloss-line/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "BlogPosting"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/blog/how-to-prepare-artwork-for-custom-lip-boxes/",
+    "title": "How to Prepare Artwork for Custom Lip Boxes",
+    "titleLength": 43,
+    "description": "A file checklist for lip packaging artwork: die lines, bleed, safe areas, colour builds and named finishing layers.",
+    "descriptionLength": 115,
+    "h1": "How to Prepare Artwork for Custom Lip Boxes",
+    "canonical": "https://lipboxes.com/blog/how-to-prepare-artwork-for-custom-lip-boxes/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "BlogPosting"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/blog/lip-balm-box-materials-compared/",
+    "title": "Lip Balm Box Materials Compared: Board Grades",
+    "titleLength": 45,
+    "description": "How SBS, kraft, recycled and rigid board differ on print quality, strength, cost and disposal for lip balm cartons.",
+    "descriptionLength": 115,
+    "h1": "Lip Balm Box Materials Compared",
+    "canonical": "https://lipboxes.com/blog/lip-balm-box-materials-compared/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "BlogPosting"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/blog/lipstick-packaging-sizes-and-structural-options/",
+    "title": "Lipstick Packaging Sizes and Structural Options",
+    "titleLength": 47,
+    "description": "Why there is no standard lipstick box size, how to measure a bullet case, and which carton structures suit each pack.",
+    "descriptionLength": 117,
+    "h1": "Lipstick Packaging Sizes and Structural Options",
+    "canonical": "https://lipboxes.com/blog/lipstick-packaging-sizes-and-structural-options/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "BlogPosting"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/blog/packaging-inserts-for-lipstick-and-lip-gloss-products/",
+    "title": "Packaging Inserts for Lipstick and Lip Gloss",
+    "titleLength": 44,
+    "description": "When a lip product carton needs an insert, which insert type suits which pack, and what each one costs you in money and in disposal.",
+    "descriptionLength": 132,
+    "h1": "Packaging Inserts for Lipstick and Lip Gloss Products",
+    "canonical": "https://lipboxes.com/blog/packaging-inserts-for-lipstick-and-lip-gloss-products/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "BlogPosting"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
+    "title": "Paper Lip Balm Tubes: Packaging Requirements",
+    "titleLength": 44,
+    "description": "What paper lip balm tubes need from your formula, your filling process and your outer packaging to work in practice.",
+    "descriptionLength": 116,
+    "h1": "Paper Lip Balm Tubes and Their Packaging Requirements",
+    "canonical": "https://lipboxes.com/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "BlogPosting"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/blog/printing-methods-for-cosmetic-packaging/",
+    "title": "Printing Methods for Cosmetic Packaging Explained",
+    "titleLength": 49,
+    "description": "Digital, offset litho, flexo and screen printing compared for cosmetic cartons, with the quantity where each makes sense.",
+    "descriptionLength": 121,
+    "h1": "Printing Methods for Cosmetic Packaging",
+    "canonical": "https://lipboxes.com/blog/printing-methods-for-cosmetic-packaging/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "BlogPosting"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/box-styles/",
+    "title": "Box Styles | Tuck End, Auto-Bottom, Rigid",
+    "titleLength": 41,
+    "description": "Carton closures, base styles, sleeves, trays and rigid constructions for lip packaging, and which pack each one suits.",
+    "descriptionLength": 118,
+    "h1": "Box Styles and Structures",
+    "canonical": "https://lipboxes.com/box-styles/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/contact/",
+    "title": "Contact Lip Boxes | Custom Packaging Enquiries",
+    "titleLength": 46,
+    "description": "How to reach Lip Boxes about a quote, an existing order, artwork files or samples, and exactly what to include in each kind of message.",
+    "descriptionLength": 135,
+    "h1": "Contact Lip Boxes",
+    "canonical": "https://lipboxes.com/contact/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "ContactPage",
+      "BreadcrumbList"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/custom-lip-balm-boxes/",
+    "title": "Custom Lip Balm Boxes | Printed Cartons Made to Order",
+    "titleLength": 53,
+    "description": "Custom lip balm boxes printed to your artwork and cut to fit your tube. Paperboard and kraft stocks, foil, matte or gloss finish.",
+    "descriptionLength": 129,
+    "h1": "Custom Lip Balm Boxes",
+    "canonical": "https://lipboxes.com/custom-lip-balm-boxes/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Product",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/custom-lip-balm-labels/",
+    "title": "Custom Lip Balm Labels | Printed Tube Wrap Stickers",
+    "titleLength": 51,
+    "description": "Custom lip balm labels printed on waterproof stock and die cut to your tube size. Sheets or rolls, matte, gloss or kraft.",
+    "descriptionLength": 121,
+    "h1": "Custom Lip Balm Labels",
+    "canonical": "https://lipboxes.com/custom-lip-balm-labels/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Product",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/custom-lip-care-packaging/",
+    "title": "Custom Lip Care Packaging | Bulk and Private Label",
+    "titleLength": 50,
+    "description": "Bulk custom lip care packaging for multi-product ranges. One specification across balm, gloss, lipstick and treatment lines.",
+    "descriptionLength": 124,
+    "h1": "Custom Lip Care Packaging in Bulk",
+    "canonical": "https://lipboxes.com/custom-lip-care-packaging/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Product",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/custom-lip-mask-boxes/",
+    "title": "Custom Lip Mask Boxes | Hydrogel Patch Packaging",
+    "titleLength": 48,
+    "description": "Custom lip mask boxes for hydrogel patches, sachets and jars. Flat cartons, window options and multipack counts.",
+    "descriptionLength": 112,
+    "h1": "Custom Lip Mask Boxes",
+    "canonical": "https://lipboxes.com/custom-lip-mask-boxes/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Product",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/custom-lipstick-boxes/",
+    "title": "Custom Lipstick Boxes | Printed Cartons for Lipstick",
+    "titleLength": 52,
+    "description": "Custom lipstick boxes printed to your artwork and sized to your bullet case. Foil, soft-touch and window options available.",
+    "descriptionLength": 123,
+    "h1": "Custom Lipstick Boxes",
+    "canonical": "https://lipboxes.com/custom-lipstick-boxes/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Product",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/custom-packaging/",
+    "title": "Custom Packaging | Bespoke Lip Product Boxes",
+    "titleLength": 44,
+    "description": "How a custom packaging project runs at Lip Boxes: brief, die line, sampling, proofing, production and delivery.",
+    "descriptionLength": 111,
+    "h1": "Custom Packaging",
+    "canonical": "https://lipboxes.com/custom-packaging/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/faqs/",
+    "title": "FAQs | Custom Lip Packaging Questions",
+    "titleLength": 37,
+    "description": "Answers on pricing, minimum quantities, materials, artwork, lead times, delivery and quality for custom lip packaging.",
+    "descriptionLength": 118,
+    "h1": "Frequently Asked Questions",
+    "canonical": "https://lipboxes.com/faqs/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/finishes/",
+    "title": "Packaging Finishes | Foil, Soft-Touch, Spot UV",
+    "titleLength": 46,
+    "description": "Lamination, foil stamping, spot UV, embossing and varnish for lip packaging, with cost and recyclability trade-offs.",
+    "descriptionLength": 116,
+    "h1": "Packaging Finishes and Coatings",
+    "canonical": "https://lipboxes.com/finishes/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/hang-tab-lip-balm-boxes/",
+    "title": "Hang Tab Lip Balm Boxes | Peg Hook Retail Cartons",
+    "titleLength": 49,
+    "description": "Hang tab lip balm boxes with euro slot or round hole tabs for peg hook display. Window options, kraft or coated board.",
+    "descriptionLength": 118,
+    "h1": "Hang Tab Lip Balm Boxes",
+    "canonical": "https://lipboxes.com/hang-tab-lip-balm-boxes/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Product",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/hang-tab-lipstick-boxes/",
+    "title": "Hang Tab Lipstick Boxes | Window Peg Hook Cartons",
+    "titleLength": 49,
+    "description": "Hang tab lipstick boxes with a die-cut window and euro slot tab. Built for peg hook and clip strip retail display.",
+    "descriptionLength": 114,
+    "h1": "Hang Tab Lipstick Boxes",
+    "canonical": "https://lipboxes.com/hang-tab-lipstick-boxes/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Product",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/holographic-lip-gloss-boxes/",
+    "title": "Holographic Lip Gloss Boxes | Iridescent Cartons",
+    "titleLength": 48,
+    "description": "Holographic lip gloss boxes on rainbow metallised board or holo foil. Iridescent cartons that shift colour under light.",
+    "descriptionLength": 119,
+    "h1": "Holographic Lip Gloss Boxes",
+    "canonical": "https://lipboxes.com/holographic-lip-gloss-boxes/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Product",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/how-to-order/",
+    "title": "How to Order | Custom Packaging Process",
+    "titleLength": 39,
+    "description": "What to send with an enquiry, what happens at each of the five stages, and the two approvals required before anything goes to print.",
+    "descriptionLength": 132,
+    "h1": "How to Order",
+    "canonical": "https://lipboxes.com/how-to-order/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/lip-balm-packaging/",
+    "title": "Lip Balm Packaging | Formats and Options Compared",
+    "titleLength": 49,
+    "description": "Compare every lip balm packaging format: printed cartons, hang tab packs, paper push-up tubes and wrap labels.",
+    "descriptionLength": 110,
+    "h1": "Lip Balm Packaging",
+    "canonical": "https://lipboxes.com/lip-balm-packaging/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "CollectionPage",
+      "BreadcrumbList",
+      "FAQPage",
+      "ItemList"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/lip-gloss-boxes/",
+    "title": "Lip Gloss Boxes | Custom Printed Gloss Cartons",
+    "titleLength": 46,
+    "description": "Custom lip gloss boxes sized to your tube and wand. Tall slim cartons, full-colour print, matte or gloss finish.",
+    "descriptionLength": 112,
+    "h1": "Lip Gloss Boxes",
+    "canonical": "https://lipboxes.com/lip-gloss-boxes/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Product",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/materials/",
+    "title": "Packaging Materials | Board Grades | Lip Boxes",
+    "titleLength": 46,
+    "description": "Board grades and weights for lip packaging: SBS, kraft, recycled, black-through, metallised, corrugated and greyboard.",
+    "descriptionLength": 118,
+    "h1": "Packaging Materials",
+    "canonical": "https://lipboxes.com/materials/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/paper-lip-balm-tubes/",
+    "title": "Paper Lip Balm Tubes | Custom Push-Up Cardboard Tubes",
+    "titleLength": 53,
+    "description": "Custom paper lip balm tubes in kraft or printed board. Push-up base, 0.15 to 0.5 oz capacities, printed to your artwork.",
+    "descriptionLength": 120,
+    "h1": "Paper Lip Balm Tubes",
+    "canonical": "https://lipboxes.com/paper-lip-balm-tubes/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Product",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/printing-options/",
+    "title": "Printing Options | Digital, Litho and Flexo | Lip Boxes",
+    "titleLength": 55,
+    "description": "Digital, offset litho, flexo and screen printing for lip packaging, with the quantity where each becomes economical.",
+    "descriptionLength": 116,
+    "h1": "Printing Options",
+    "canonical": "https://lipboxes.com/printing-options/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/privacy-policy/",
+    "title": "Privacy Policy | How We Handle Your Data | Lip Boxes",
+    "titleLength": 52,
+    "description": "What information Lip Boxes collects through its quote forms, how it is used, how long it is kept and your choices.",
+    "descriptionLength": 114,
+    "h1": "Privacy Policy",
+    "canonical": "https://lipboxes.com/privacy-policy/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/products/",
+    "title": "All Products | Custom Lip Packaging | Lip Boxes",
+    "titleLength": 47,
+    "description": "Every lip packaging format we make: cartons, paper tubes, labels, hanging packs, rigid boxes and bulk programmes.",
+    "descriptionLength": 113,
+    "h1": "Custom Lip Packaging Products",
+    "canonical": "https://lipboxes.com/products/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "CollectionPage",
+      "BreadcrumbList",
+      "ItemList"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/request-a-quote/",
+    "title": "Request a Quote | Custom Lip Packaging Pricing",
+    "titleLength": 46,
+    "description": "Send your dimensions, quantity, material and finishing requirements and receive a written quote for custom lip packaging.",
+    "descriptionLength": 121,
+    "h1": "Request a Quote",
+    "canonical": "https://lipboxes.com/request-a-quote/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/rigid-lipstick-boxes/",
+    "title": "Rigid Lipstick Boxes | Magnetic and Drawer Gift Boxes",
+    "titleLength": 53,
+    "description": "Rigid lipstick boxes with magnetic lids, drawer sleeves or lift-off tops. Wrapped greyboard, foil detail and fitted inserts.",
+    "descriptionLength": 124,
+    "h1": "Rigid Lipstick Boxes",
+    "canonical": "https://lipboxes.com/rigid-lipstick-boxes/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Product",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/sample-kit/",
+    "title": "Sample Kit | Material Swatches and Test Boxes",
+    "titleLength": 45,
+    "description": "Request material swatches, a plain structural sample or a printed proof, and see which of the three answers your question.",
+    "descriptionLength": 122,
+    "h1": "Sample Kit",
+    "canonical": "https://lipboxes.com/sample-kit/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/shipping-information/",
+    "title": "Shipping Information | Delivery and Freight",
+    "titleLength": 43,
+    "description": "How packaging orders are packed, cased and palletised for delivery across the United States, and what actually drives your freight cost.",
+    "descriptionLength": 136,
+    "h1": "Shipping Information",
+    "canonical": "https://lipboxes.com/shipping-information/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/terms-and-conditions/",
+    "title": "Terms and Conditions | Lip Boxes",
+    "titleLength": 32,
+    "description": "Terms covering quotes, die line and proof approvals, manufacturing tolerances, payment, delivery, returns on custom goods and liability.",
+    "descriptionLength": 136,
+    "h1": "Terms and Conditions",
+    "canonical": "https://lipboxes.com/terms-and-conditions/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/turnaround-time/",
+    "title": "Turnaround Time | Packaging Production Lead Times",
+    "titleLength": 49,
+    "description": "What affects packaging lead times, which stages you control, and how we confirm a production window in writing.",
+    "descriptionLength": 111,
+    "h1": "Turnaround Time",
+    "canonical": "https://lipboxes.com/turnaround-time/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList"
+    ]
+  }
+]

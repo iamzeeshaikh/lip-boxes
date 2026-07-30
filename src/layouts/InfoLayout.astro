@@ -1,0 +1,94 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import QuoteCta from '../components/QuoteCta.astro';
+import {
+  graph,
+  organizationSchema,
+  websiteSchema,
+  webPageSchema,
+  breadcrumbSchema,
+  faqSchema,
+  type Crumb,
+} from '../lib/schema';
+import type { Faq } from '../data/types';
+
+interface Props {
+  path: string;
+  title: string;
+  description: string;
+  h1: string;
+  eyebrow: string;
+  lead: string;
+  points?: string[];
+  ogTitle?: string;
+  ogDescription?: string;
+  /** Page type for schema. */
+  pageType?: 'WebPage' | 'AboutPage' | 'ContactPage' | 'CollectionPage';
+  /** Rendered visibly by the caller; supplied here so FAQPage schema matches. */
+  faqs?: Faq[];
+  ctaHeading?: string;
+  ctaBody?: string;
+  /** Overrides the secondary CTA target, so a page never links to itself. */
+  ctaSecondaryHref?: string;
+  ctaSecondaryLabel?: string;
+  /** Extra schema nodes appended to the graph. */
+  extraSchema?: unknown[];
+  narrow?: boolean;
+}
+
+const {
+  path,
+  title,
+  description,
+  h1,
+  eyebrow,
+  lead,
+  points,
+  ogTitle,
+  ogDescription,
+  pageType = 'WebPage',
+  faqs,
+  ctaHeading,
+  ctaBody,
+  ctaSecondaryHref,
+  ctaSecondaryLabel,
+  extraSchema = [],
+  narrow = false,
+} = Astro.props;
+
+const crumbs: Crumb[] = [{ name: 'Home', path: '/' }, { name: h1 }];
+
+const schema = graph(
+  organizationSchema(),
+  websiteSchema(),
+  webPageSchema({ path, name: h1, description, type: pageType }),
+  breadcrumbSchema(crumbs),
+  ...(faqs && faqs.length > 0 ? [faqSchema(faqs, path)] : []),
+  ...extraSchema,
+);
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  path={path}
+  ogTitle={ogTitle}
+  ogDescription={ogDescription}
+  schema={[schema]}
+>
+  <PageHero eyebrow={eyebrow} h1={h1} lead={lead} crumbs={crumbs} points={points} />
+
+  <div class="section">
+    <div class:list={['wrap', narrow && 'wrap--narrow']}>
+      <slot />
+    </div>
+  </div>
+
+  <QuoteCta
+    heading={ctaHeading}
+    body={ctaBody}
+    secondaryHref={ctaSecondaryHref}
+    secondaryLabel={ctaSecondaryLabel}
+  />
+</BaseLayout>

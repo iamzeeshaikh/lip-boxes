@@ -1,0 +1,109 @@
+---
+import type { Faq } from '../data/types';
+
+interface Props {
+  faqs: Faq[];
+  heading?: string;
+  intro?: string;
+  /** Heading level for each question. */
+  level?: 2 | 3;
+  id?: string;
+}
+
+const { faqs, heading, intro, level = 3, id } = Astro.props;
+const QTag = `h${level}` as 'h2' | 'h3';
+---
+
+<div class="faqs" id={id}>
+  {heading && <h2 class="faqs__heading">{heading}</h2>}
+  {intro && <p class="faqs__intro measure">{intro}</p>}
+  <div class="faqs__list">
+    {
+      faqs.map((faq, i) => (
+        <details class="faq" open={i === 0}>
+          <summary class="faq__summary">
+            <QTag class="faq__q">{faq.q}</QTag>
+            <span class="faq__icon" aria-hidden="true">
+              <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+                <path d="M3 8h10" /><path class="faq__icon-v" d="M8 3v10" />
+              </svg>
+            </span>
+          </summary>
+          <div class="faq__a"><p>{faq.a}</p></div>
+        </details>
+      ))
+    }
+  </div>
+</div>
+
+<style>
+  .faqs__heading {
+    margin-bottom: var(--sp-3);
+  }
+  .faqs__intro {
+    margin-bottom: var(--sp-5);
+    color: var(--ink-soft);
+  }
+  .faqs__list {
+    border-top: 1px solid var(--line);
+  }
+  .faq {
+    border-bottom: 1px solid var(--line);
+  }
+  .faq__summary {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--sp-4);
+    padding: var(--sp-4) 0;
+    cursor: pointer;
+    list-style: none;
+    min-height: 3rem;
+  }
+  .faq__summary::-webkit-details-marker {
+    display: none;
+  }
+  .faq__summary:hover .faq__q {
+    color: var(--plum);
+  }
+  .faq__q {
+    font-family: var(--font-body);
+    font-size: var(--step-0);
+    font-weight: 600;
+    line-height: 1.45;
+    letter-spacing: 0;
+    margin: 0;
+    color: var(--ink);
+    transition: color 0.15s var(--ease);
+  }
+  .faq__icon {
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin-top: 0.1rem;
+    border: 1px solid var(--line-strong);
+    border-radius: 50%;
+    color: var(--plum);
+    transition: background-color 0.15s var(--ease);
+  }
+  .faq[open] .faq__icon {
+    background: var(--paper-warm);
+  }
+  .faq[open] .faq__icon-v {
+    display: none;
+  }
+  .faq__a {
+    padding: 0 0 var(--sp-5);
+    max-width: var(--measure);
+    color: var(--ink-soft);
+  }
+  .faq__a p {
+    margin: 0;
+  }
+  .faq__summary:focus-visible {
+    outline: 2px solid var(--plum);
+    outline-offset: 2px;
+  }
+</style>

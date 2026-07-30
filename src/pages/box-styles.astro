@@ -1,0 +1,238 @@
+---
+import InfoLayout from '../layouts/InfoLayout.astro';
+import InfoSection from '../components/InfoSection.astro';
+import SpecTable from '../components/SpecTable.astro';
+---
+
+<InfoLayout
+  path="/box-styles/"
+  title="Box Styles | Tuck End, Auto-Bottom, Rigid"
+  description="Carton closures, base styles, sleeves, trays and rigid constructions for lip packaging, and which pack each one suits."
+  h1="Box Styles and Structures"
+  eyebrow="Specification"
+  lead="Structure is a packing and merchandising decision more than a visual one. The closure affects how fast your line runs, and the base decides whether a full carton stays shut when it is lifted."
+  ogTitle="Carton Structures for Lip Product Packaging"
+  ogDescription="Tuck ends, seal ends, auto-bottoms, sleeves, trays, hanging tabs and rigid constructions compared."
+  points={['Closures and bases', 'Windows, tabs and inserts', 'Rigid constructions']}
+  ctaHeading="Tell us how the carton gets packed"
+  ctaBody="Whether you fill by hand or on an automated line changes which closure we recommend. Send that detail with your dimensions and we will propose a structure with the reasoning."
+>
+  <InfoSection
+    id="closures"
+    heading="Closures"
+    intro="How the carton opens and shuts. On a hand-filled product this is the choice that most affects how long packing takes."
+  >
+    <SpecTable
+      caption="Carton closure styles."
+      columns={['Closure', 'How it works', 'Suits', 'Notes']}
+      rows={[
+        [
+          'Straight tuck end',
+          'Both flaps tuck from the same side',
+          'Shelf display and boxed e-commerce',
+          'Front panel stays uninterrupted for artwork',
+        ],
+        [
+          'Reverse tuck end',
+          'Flaps tuck from opposite ends',
+          'Hand-packing lines',
+          'Same cost as straight tuck; some fillers prefer it',
+        ],
+        [
+          'Seal end',
+          'Glued closed after filling',
+          'Automated co-packing',
+          'Needs a sealer; strongest closure',
+        ],
+        [
+          'Tuck top with dust flaps',
+          'Tuck flap plus side flaps',
+          'Slightly heavier contents',
+          'More material, better contents retention',
+        ],
+        [
+          'Sleeve over tray',
+          'A printed band slides over an inner tray',
+          'Higher price points',
+          'Two components, more presence, more cost',
+        ],
+        [
+          'Hinged lid',
+          'Lid folds back from one edge',
+          'Sets and multipacks',
+          'Reads more considered than a tuck flap',
+        ],
+      ]}
+    />
+  </InfoSection>
+
+  <InfoSection
+    id="bases"
+    heading="Bases, and why they matter more than the top"
+    intro="The base is the part that fails. A carton that opens downward when someone picks it up loses the product on the floor."
+  >
+    <SpecTable
+      caption="Base styles and the weight each handles."
+      columns={['Base', 'Assembly', 'Holds', 'Use when']}
+      rows={[
+        ['Tuck flap base', 'Tucked by hand', 'Very light contents', 'A single lip balm stick or gloss tube'],
+        ['Snap-lock base', 'Locks flat as the carton is opened', 'Moderate weight', 'Two items, or a tall carton'],
+        ['Auto-bottom', 'Pre-glued, forms as the carton opens', 'Heaviest folding-carton loads', 'Multipacks, three-packs, glass primaries'],
+        ['Seal end base', 'Glued shut on the line', 'High', 'Automated filling operations'],
+        ['Rigid base', 'Assembled from greyboard', 'Highest', 'Gift and presentation boxes'],
+      ]}
+    />
+    <p class="note">
+      Auto-bottom cartons cost more per unit than a tuck base but assemble faster,
+      which on a hand-packing operation frequently pays for itself in labour. Ask
+      for both prices if you are packing thousands of units by hand.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="windows-tabs"
+    heading="Windows and hanging tabs"
+    intro="Both remove material from a panel, and both therefore interact with board weight."
+  >
+    <p class="measure">
+      A window lets the product sell itself, which matters most where shoppers are
+      matching a colour. It can be left open or covered with a clear film patch,
+      and on any pack that hangs the patch is worth having: it keeps dust out and
+      restores a surprising amount of stiffness to a panel that has just had a
+      large hole cut in it.
+    </p>
+    <p class="measure">
+      A hanging tab is die-cut from the same board as the carton, so there is no
+      separate plastic hook to source or dispose of. Euro slot, round hole, delta
+      cut and extended header are the common shapes, and the retailer usually
+      dictates which. Where a window sits directly below a tab, the load path is
+      interrupted and reinforcement becomes necessary — set out in detail on the
+      <a href="/hang-tab-lipstick-boxes/">peg display carton page</a>.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="inserts"
+    heading="Inserts"
+    intro="An insert restrains the product and controls what the customer sees on opening. The first job is the one that costs you money when it is missing."
+  >
+    <SpecTable
+      caption="Insert types, their protection and their disposal route."
+      columns={['Insert', 'Protection', 'Cost', 'Disposal']}
+      rows={[
+        ['Folded paperboard collar', 'Holds the base, stops sliding', 'Lowest', 'Paper stream with the carton'],
+        ['Die-cut card platform', 'Fixes position precisely', 'Low', 'Paper stream with the carton'],
+        ['Paperboard partition', 'Separates multiple items', 'Low', 'Paper stream with the carton'],
+        ['Moulded pulp tray', 'Good all-round cushioning', 'Moderate', 'Paper stream, though often not kerbside'],
+        ['Wrapped foam pad', 'High, conforms to shape', 'Moderate', 'Foam must be separated'],
+        ['EVA or flocked plastic tray', 'Highest, most premium feel', 'Highest', 'Not paper-recyclable'],
+      ]}
+    />
+    <p class="measure">
+      Quote the insert with the carton rather than separately. An insert sourced
+      on its own arrives a millimetre out, is discovered during packing, and leaves
+      you choosing between forcing it and reordering.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="rigid"
+    heading="Rigid constructions"
+    intro="A different category: thick greyboard assembled into a permanent shape and wrapped in printed paper. It does not fold and does not ship flat."
+  >
+    <ul class="info-cards">
+      <li>
+        <h3>Magnetic book box</h3>
+        <p>
+          A hinged lid with concealed magnets that closes with a click. The format
+          most customers associate with luxury cosmetics.
+        </p>
+      </li>
+      <li>
+        <h3>Drawer and sleeve</h3>
+        <p>
+          An inner tray sliding out of an outer shell, often with a ribbon pull.
+          Reveals the product gradually and protects on all sides.
+        </p>
+      </li>
+      <li>
+        <h3>Two-piece lid and base</h3>
+        <p>
+          A separate lid lifting off a base. Sturdy, simple, and the least
+          expensive of the rigid options.
+        </p>
+      </li>
+      <li>
+        <h3>Shoulder neck box</h3>
+        <p>
+          Lid and base separated by a visible collar, which allows a contrasting
+          colour or material in the gap.
+        </p>
+      </li>
+    </ul>
+    <p class="measure">
+      Rigid boxes are viable at genuinely small quantities because setup cost is
+      low relative to unit cost, which makes them practical for limited editions.
+      Construction detail and material options are on the
+      <a href="/rigid-lipstick-boxes/">wrapped rigid box page</a>.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="display"
+    heading="Retail display and shipping structures"
+    intro="Structures that hold other packs rather than a product."
+  >
+    <ul class="bullets">
+      <li>
+        <strong>Counter display units</strong> — a printed corrugated tray that
+        ships flat, folds into an angled display and holds a dozen or more sticks
+        at a checkout counter.
+      </li>
+      <li>
+        <strong>Shelf-ready trays</strong> — a case that opens into a display tray,
+        so store staff place one unit rather than unpacking individual cartons.
+      </li>
+      <li>
+        <strong>Clip strips</strong> — a vertical strip carrying hanging packs,
+        used to gain secondary placement outside the main fixture.
+      </li>
+      <li>
+        <strong>Printed mailer boxes</strong> — E-flute corrugated designed to take
+        postal handling, for products shipping direct to consumers.
+      </li>
+    </ul>
+    <p class="note">
+      A folding carton is secondary packaging, not a shipper. Posted loose it will
+      arrive crushed. Either put it inside a mailer with void fill or specify a
+      mailer designed for the purpose.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="choosing"
+    heading="Choosing a structure quickly"
+    intro="Four questions get you to the right answer in most cases."
+  >
+    <ol class="ordered">
+      <li>
+        <strong>How is it filled?</strong> Automated lines need seal end. Hand
+        packing usually wants a tuck end, and an auto-bottom if volumes are high
+        enough for assembly time to matter.
+      </li>
+      <li>
+        <strong>How much does the packed carton weigh?</strong> Anything above a
+        single light item points at a snap-lock or auto-bottom base.
+      </li>
+      <li>
+        <strong>Where is it merchandised?</strong> Peg fixtures need a tab. Shelf
+        and drawer do not.
+      </li>
+      <li>
+        <strong>Is the opening part of the product?</strong> If yes, look at
+        sleeve-and-tray or rigid construction. If no, a well-finished folding
+        carton does the job for far less.
+      </li>
+    </ol>
+  </InfoSection>
+</InfoLayout>

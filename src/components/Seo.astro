@@ -1,0 +1,116 @@
+---
+import { site, abs } from '../data/site';
+
+interface Props {
+  title: string;
+  description: string;
+  /** Path with a trailing slash, e.g. "/lip-gloss-boxes/". */
+  path: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  /** Absolute or root-relative social image URL. */
+  ogImage?: string;
+  ogImageAlt?: string;
+  ogType?: 'website' | 'article' | 'product';
+  noindex?: boolean;
+  /** LCP image preload. Mirrors the rendered srcset so the same file is used. */
+  preloadImage?: string;
+  preloadImageSrcset?: string;
+  preloadImageSizes?: string;
+  preloadImageType?: string;
+  publishedTime?: string;
+  modifiedTime?: string;
+}
+
+const {
+  title,
+  description,
+  path,
+  ogTitle,
+  ogDescription,
+  ogImage,
+  ogImageAlt,
+  ogType = 'website',
+  noindex = false,
+  preloadImage,
+  preloadImageSrcset,
+  preloadImageSizes,
+  preloadImageType,
+  publishedTime,
+  modifiedTime,
+} = Astro.props;
+
+const canonical = abs(path);
+const socialTitle = ogTitle ?? title;
+const socialDescription = ogDescription ?? description;
+const socialImage = ogImage ? abs(ogImage) : abs('/social/lip-boxes-default.png');
+---
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+
+{
+  noindex ? (
+    <meta name="robots" content="noindex, follow" />
+  ) : (
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+  )
+}
+
+<meta property="og:type" content={ogType} />
+<meta property="og:site_name" content={site.name} />
+<meta property="og:locale" content="en_US" />
+<meta property="og:url" content={canonical} />
+<meta property="og:title" content={socialTitle} />
+<meta property="og:description" content={socialDescription} />
+<meta property="og:image" content={socialImage} />
+{ogImageAlt && <meta property="og:image:alt" content={ogImageAlt} />}
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={socialTitle} />
+<meta name="twitter:description" content={socialDescription} />
+<meta name="twitter:image" content={socialImage} />
+{ogImageAlt && <meta name="twitter:image:alt" content={ogImageAlt} />}
+
+{publishedTime && <meta property="article:published_time" content={publishedTime} />}
+{modifiedTime && <meta property="article:modified_time" content={modifiedTime} />}
+
+<meta name="theme-color" content="#5c1f3c" />
+<meta name="format-detection" content="telephone=no" />
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="icon" href="/favicon.ico" sizes="32x32" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+
+<link
+  rel="preload"
+  href="/fonts/inter-latin.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin="anonymous"
+/>
+<link
+  rel="preload"
+  href="/fonts/fraunces-latin.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin="anonymous"
+/>
+{
+  preloadImage && (
+    <link
+      rel="preload"
+      as="image"
+      href={preloadImage}
+      imagesrcset={preloadImageSrcset}
+      imagesizes={preloadImageSizes}
+      type={preloadImageType}
+      fetchpriority="high"
+    />
+  )
+}

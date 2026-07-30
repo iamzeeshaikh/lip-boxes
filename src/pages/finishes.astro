@@ -1,0 +1,234 @@
+---
+import InfoLayout from '../layouts/InfoLayout.astro';
+import InfoSection from '../components/InfoSection.astro';
+import SpecTable from '../components/SpecTable.astro';
+---
+
+<InfoLayout
+  path="/finishes/"
+  title="Packaging Finishes | Foil, Soft-Touch, Spot UV"
+  description="Lamination, foil stamping, spot UV, embossing and varnish for lip packaging, with cost and recyclability trade-offs."
+  h1="Packaging Finishes and Coatings"
+  eyebrow="Specification"
+  lead="Coating does two jobs: it protects print from handling and it changes how the pack is judged before it is opened. Each option carries a cost and, in most cases, a disposal consequence."
+  ogTitle="Finishes and Coatings for Cosmetic Cartons"
+  ogDescription="Soft-touch, matte and gloss lamination, foil, spot UV, emboss and varnish compared for lip packaging."
+  points={['Protection and appearance', 'Cost per pass', 'Honest disposal notes']}
+  ctaHeading="Want to see a finish before committing?"
+  ctaBody="We can supply material swatches and a production-standard sample with your foil and spot UV in place, so you approve something you have held rather than something on a screen."
+>
+  <InfoSection
+    id="protection-first"
+    heading="Start with how the pack is handled"
+    intro="Appearance tends to dominate this conversation, but on lip packaging durability is the more practical consideration."
+  >
+    <p class="measure">
+      A lip balm carton on a peg fixture is picked up and put back repeatedly by
+      shoppers. A lipstick box sits in a drawer for months. A gloss carton
+      travels inside a mailer. Those three products need different amounts of
+      surface protection, and paying for a finish the pack does not need is as
+      wasteful as skipping one it does.
+    </p>
+    <ul class="bullets">
+      <li>
+        <strong>Self-service retail</strong> — laminate or a hard varnish, because
+        bare digital print scuffs at the seams within weeks.
+      </li>
+      <li>
+        <strong>Boxed e-commerce</strong> — a varnish is often enough, since the
+        carton is protected by its mailer.
+      </li>
+      <li>
+        <strong>Gift and limited edition</strong> — the finish is doing brand work
+        as much as protection, and the budget shifts accordingly.
+      </li>
+    </ul>
+  </InfoSection>
+
+  <InfoSection
+    id="lamination"
+    heading="Laminates and varnishes"
+    intro="These cover the whole surface. Everything else on this page is applied selectively on top."
+  >
+    <SpecTable
+      caption="Full-surface coatings compared."
+      columns={['Coating', 'Look and feel', 'Durability', 'Disposal']}
+      rows={[
+        [
+          'Matte lamination',
+          'Soft, non-reflective, understated',
+          'High, though finger marks show on dark solids',
+          'Plastic film; consumer must separate it',
+        ],
+        [
+          'Gloss lamination',
+          'Deep saturated colour, reflective',
+          'Highest; shrugs off scuffing',
+          'Plastic film; consumer must separate it',
+        ],
+        [
+          'Soft-touch lamination',
+          'Velvety, warm to the hand, reads premium',
+          'High, marks on very dark solids',
+          'Plastic film; consumer must separate it',
+        ],
+        [
+          'Matte or satin varnish',
+          'Close to the bare board, slight sheen',
+          'Moderate',
+          'No practical effect on paper recycling',
+        ],
+        [
+          'Gloss varnish',
+          'Shiny without a film layer',
+          'Moderate to good',
+          'No practical effect on paper recycling',
+        ],
+        [
+          'Aqueous coating',
+          'Neutral, minimal change to the board',
+          'Moderate',
+          'No practical effect on paper recycling',
+        ],
+      ]}
+    />
+    <p class="note">
+      If recyclability matters to your brand, a varnish rather than a laminate is
+      the single most useful substitution available. It keeps the carton in one
+      material stream at some cost to durability and depth of colour.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="selective"
+    heading="Selective finishes"
+    intro="Applied to chosen areas of the artwork, each as its own production pass and its own artwork layer."
+  >
+    <ul class="info-cards">
+      <li>
+        <h3>Hot foil stamping</h3>
+        <p>
+          Real metal leaf pressed into the board with heat and pressure. Genuinely
+          reflective in a way metallic ink is not. Most effective on logos and
+          thin frames; large solid foil areas are harder to lay down evenly.
+        </p>
+      </li>
+      <li>
+        <h3>Cold foil</h3>
+        <p>
+          Applied inline during printing, so you can print over it in the same
+          pass. On long runs with substantial metallic areas it can cost less than
+          hot stamping and allows coloured metallics.
+        </p>
+      </li>
+      <li>
+        <h3>Spot UV</h3>
+        <p>
+          Gloss varnish on selected artwork over a matte background. High contrast
+          for a fraction of the cost of foil, and the most economical way to
+          suggest shine on a gloss carton.
+        </p>
+      </li>
+      <li>
+        <h3>Embossing and debossing</h3>
+        <p>
+          Raises or recesses a shape into the board. Needs no ink at all, works on
+          coated and uncoated stock, and holds far more definition on rigid
+          greyboard than on thin folding board.
+        </p>
+      </li>
+      <li>
+        <h3>Metallic and pearlescent inks</h3>
+        <p>
+          A shimmer across large areas that foil cannot economically cover.
+          Subtler than foil and considerably cheaper at scale, and it keeps the
+          carton in the paper stream.
+        </p>
+      </li>
+      <li>
+        <h3>Screen-printed opaque white</h3>
+        <p>
+          A thick opaque layer for dark or reflective stock, where offset white
+          would look thin. Also used as the underprint that lets normal colours
+          read on kraft or holographic board.
+        </p>
+      </li>
+    </ul>
+  </InfoSection>
+
+  <InfoSection
+    id="combinations"
+    heading="Combinations that work"
+    intro="Finishes are rarely used alone. These pairings come up repeatedly because they solve a specific problem."
+  >
+    <SpecTable
+      caption="Common finishing combinations and what each achieves."
+      columns={['Combination', 'Effect', 'Suits']}
+      rows={[
+        ['Matte laminate + hot foil logo', 'Foil reads as genuinely metallic against a calm background', 'Premium lipstick and gift packaging'],
+        ['Matte laminate + spot UV', 'Contrast between matte and gloss without foil cost', 'Gloss cartons, mid-market ranges'],
+        ['Soft-touch + emboss', 'Tactile on two levels; the pack is judged before it is read', 'Luxury and limited edition'],
+        ['Gloss laminate on holographic board', 'Amplifies the iridescent shift', 'Holographic gloss packaging'],
+        ['Matte laminate on holographic board', 'Diffuses the rainbow into a soft pearl shimmer', 'Pastel and quieter iridescent ranges'],
+        ['Varnish only on kraft', 'Keeps the uncoated look and one material stream', 'Natural and low-waste ranges'],
+        ['Black-through board + foil', 'No white cut edges anywhere, metallic detail on top', 'Dark premium cartons'],
+      ]}
+    />
+    <p class="measure">
+      The pairing worth understanding properly is laminate over reflective stock,
+      because matte and gloss produce genuinely different products from the same
+      sheet. That difference is set out on the
+      <a href="/holographic-lip-gloss-boxes/">iridescent gloss carton page</a>.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="cost"
+    heading="What each finish costs you"
+    intro="Finishing costs split into tooling, which happens once, and a press or converting pass, which happens per unit."
+  >
+    <ul class="bullets">
+      <li>
+        <strong>Varnish</strong> — inline with printing, so the cheapest option by
+        a clear margin.
+      </li>
+      <li>
+        <strong>Lamination</strong> — a converting pass with a material cost.
+        Moderate, and soft-touch costs more than matte or gloss.
+      </li>
+      <li>
+        <strong>Spot UV</strong> — a screen or plate plus a pass. Modest tooling,
+        modest per-unit cost.
+      </li>
+      <li>
+        <strong>Foil and emboss</strong> — a metal die plus a pass. Tooling makes
+        these disproportionately expensive at low volumes and quite reasonable at
+        high ones.
+      </li>
+      <li>
+        <strong>Holographic or metallised board</strong> — a material premium on
+        every unit that does not fall away with volume the way tooling does.
+      </li>
+    </ul>
+    <p class="note">
+      Each additional pass also adds production time. If you are working to a
+      fixed launch date, tell us at quoting stage so the schedule accounts for the
+      finishing rather than being revised after it is specified. Current bands are
+      on the <a href="/turnaround-time/">lead time page</a>.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="artwork"
+    heading="How finishes have to reach us in the artwork"
+    intro="Foil, spot UV, emboss and opaque white are not colours. Each is a separate tool made from a separate layer."
+  >
+    <p class="measure">
+      Supply each as its own vector layer drawn in 100% black and named for what
+      it is: "foil gold", "spot UV gloss", "emboss", "opaque white". Where two
+      overlap, say which sits on top. An unnamed extra layer gets interpreted
+      rather than followed, and that costs a proof cycle. Full file requirements
+      are on the <a href="/artwork-guidelines/">artwork page</a>.
+    </p>
+  </InfoSection>
+</InfoLayout>

@@ -1,0 +1,141 @@
+---
+import InfoLayout from '../layouts/InfoLayout.astro';
+import InfoSection from '../components/InfoSection.astro';
+import SpecTable from '../components/SpecTable.astro';
+---
+
+<InfoLayout
+  path="/turnaround-time/"
+  title="Turnaround Time | Packaging Production Lead Times"
+  description="What affects packaging lead times, which stages you control, and how we confirm a production window in writing."
+  h1="Turnaround Time"
+  eyebrow="Ordering"
+  lead="We confirm a production window in writing with every quote rather than publishing a fixed figure, because the honest answer depends on your specification and on how quickly approvals come back."
+  ogTitle="Packaging Lead Times and What Affects Them"
+  ogDescription="The stages that make up a packaging lead time, which you control, and how to compress a schedule safely."
+  points={['Confirmed per order', 'Stages you control', 'Rush options where possible']}
+  ctaHeading="Working to a fixed launch date?"
+  ctaBody="Tell us the date at enquiry stage rather than at order stage. It changes which print process and finishing we would recommend, and there is usually a route that works."
+>
+  <InfoSection
+    id="why-no-fixed-number"
+    heading="Why we do not publish a single lead time"
+    intro="A number on a website that does not apply to your job is worse than no number at all."
+  >
+    <p class="measure">
+      A digitally printed carton with a varnish finish moves through production
+      quickly. The same carton in offset litho with foil stamping, spot UV and a
+      die-cut insert involves several additional passes, and a rigid box adds hand
+      assembly on top. Those are genuinely different schedules.
+    </p>
+    <p class="measure">
+      More importantly, a large part of most lead times sits on the customer side:
+      die line approval, artwork supply and proof sign-off. A job where proofs come
+      back the same day finishes noticeably sooner than an identical job where they
+      take a fortnight, and no supplier can quote around that.
+    </p>
+    <p class="note">
+      <strong>What we do commit to:</strong> a written production window with your
+      quote, and an updated one if the specification changes. If a date slips on our
+      side you will hear it from us rather than finding out later.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="stages"
+    heading="What makes up a lead time"
+    intro="Six stages. Three of them are yours, which is useful to know when a schedule is tight."
+  >
+    <SpecTable
+      caption="Lead time stages and who controls each."
+      columns={['Stage', 'Controlled by', 'What speeds it up']}
+      rows={[
+        ['Quoting', 'Us', 'Complete dimensions and quantity in the first enquiry'],
+        ['Die line issue', 'Us', 'A physical container sample rather than a drawing'],
+        ['Die line approval', 'You', 'Testing the structural sample promptly with real product'],
+        ['Artwork supply', 'You', 'Building to the die line from the start; regulated copy pre-checked'],
+        ['Proof approval', 'You', 'One decision-maker rather than a committee, especially across variants'],
+        ['Production', 'Us', 'Fewer finishing passes; digital rather than litho at low volume'],
+      ]}
+    />
+  </InfoSection>
+
+  <InfoSection
+    id="what-adds-time"
+    heading="What adds time to production"
+    intro="Each of these is a separate pass or a separate tool. None is unreasonable, but they accumulate."
+  >
+    <ul class="bullets">
+      <li><strong>Offset litho plates</strong> — plate making adds a step that digital printing does not have.</li>
+      <li><strong>Lamination</strong> — a converting pass after printing, plus curing time.</li>
+      <li><strong>Foil stamping and embossing</strong> — a metal die has to be made before the pass can run.</li>
+      <li><strong>Spot UV</strong> — a screen or plate plus an additional pass.</li>
+      <li><strong>Window patching</strong> — an extra machine pass, and film has to be in stock.</li>
+      <li><strong>Inserts</strong> — a separate die and often a separate production run.</li>
+      <li><strong>Rigid construction</strong> — wrapping, corner finishing and magnet setting are partly manual.</li>
+      <li><strong>New tube diameter</strong> — rolled paper tubes are tooled per diameter.</li>
+      <li><strong>Multiple SKUs</strong> — more artwork to approve and more dies to make, though far quicker than sequential orders.</li>
+    </ul>
+  </InfoSection>
+
+  <InfoSection
+    id="compressing"
+    heading="How to compress a schedule safely"
+    intro="Five things genuinely help. Two commonly suggested shortcuts are not worth taking."
+  >
+    <p class="measure"><strong>Worth doing:</strong></p>
+    <ul class="bullets">
+      <li>Post a container sample with the enquiry, so the die line is drawn once and correctly.</li>
+      <li>Have artwork built to the die line before the quote is even accepted.</li>
+      <li>Get regulated copy reviewed in parallel with structural sampling rather than after it.</li>
+      <li>Nominate one person to approve proofs, and give them the authority to do it.</li>
+      <li>Simplify the finishing. Dropping one pass often saves more time than any expediting.</li>
+    </ul>
+    <p class="measure"><strong>Not worth doing:</strong></p>
+    <ul class="bullets">
+      <li>
+        Skipping the structural sample. It saves a few days and risks the entire
+        run, because a fit problem found after production is unrecoverable.
+      </li>
+      <li>
+        Approving a digital proof on kraft, metallised or holographic stock. On
+        those substrates a screen proof does not predict the printed result, which
+        is explained on the <a href="/printing-options/">printing options page</a>.
+      </li>
+    </ul>
+  </InfoSection>
+
+  <InfoSection
+    id="rush"
+    heading="Rush schedules"
+    intro="Often possible, and the constraints are worth knowing before you ask."
+  >
+    <p class="measure">
+      Where a launch date is fixed, we will look at what can be brought forward.
+      Usually that means recommending a print process and a finishing specification
+      that suit the timeline, rather than expediting an elaborate specification. A
+      digitally printed carton with a varnish can be turned around considerably
+      faster than a foiled litho job, and on a tight deadline that trade is often
+      the right one.
+    </p>
+    <p class="measure">
+      What cannot be compressed is your approval time and the physical curing of
+      laminates and inks. Tell us the date early and we will tell you plainly
+      whether it is achievable and what would have to change.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="delivery"
+    heading="Transit time is separate"
+    intro="Production time and delivery time are two different things, and they are quoted separately."
+  >
+    <p class="measure">
+      A production window ends when the goods leave, not when they arrive. Transit
+      depends on the destination, the freight method and the volume of the
+      consignment, and rolled tubes and rigid boxes are bulky enough that volume
+      rather than weight drives the cost. How freight is arranged and quoted is set
+      out on the <a href="/shipping-information/">delivery page</a>.
+    </p>
+  </InfoSection>
+</InfoLayout>

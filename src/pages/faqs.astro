@@ -1,0 +1,185 @@
+---
+import InfoLayout from '../layouts/InfoLayout.astro';
+import InfoSection from '../components/InfoSection.astro';
+import FaqList from '../components/FaqList.astro';
+import { site } from '../data/site';
+import type { Faq } from '../data/types';
+
+/*
+ * Sitewide questions only. Product-specific questions live on their own product
+ * pages, so nothing is duplicated between here and there, and the FAQPage schema
+ * on this page matches exactly what is rendered below.
+ */
+
+const groups: { id: string; heading: string; intro: string; faqs: Faq[] }[] = [
+  {
+    id: 'ordering',
+    heading: 'Ordering and pricing',
+    intro:
+      'How quoting works, what the starting price means, and what we need before we can price a job.',
+    faqs: [
+      {
+        q: 'Why is there no price list on the site?',
+        a: 'Because every product is made to order. A 500-unit digital run and a 100,000-unit litho run with foil are different pieces of work, and a single listed price would either overcharge the simple job or under-quote the complex one. Send dimensions and a quantity and you get a real figure.',
+      },
+      {
+        q: 'What does the $0.30 starting price actually mean?',
+        a: `${site.startingPriceStatement} It is the entry figure for a simple specification at high volume — plain board, a straightforward print, no foil or insert. A short run with premium finishing sits well above it, and your written quote always states the actual unit price for your job.`,
+      },
+      {
+        q: 'Is there a minimum order quantity?',
+        a: 'It depends on the print process and finishing rather than being a fixed number. Digital printing supports genuinely short runs. Offset litho, foil and embossing carry setup costs that need volume to make sense. Tell us the quantity you actually want and we will quote it.',
+      },
+      {
+        q: 'Can I get a price without sending dimensions?',
+        a: 'Not a useful one. We can describe the variables and give you a sense of where a specification sits, but a number quoted from a product name alone would be a guess. The outside dimensions of your container, or a physical sample, is the minimum.',
+      },
+      {
+        q: 'Do you offer wholesale or trade pricing?',
+        a: 'All pricing is volume based, so a large order is priced as a large order without a separate trade tier. For brands packaging several products at once, quoting the whole range as one programme is usually cheaper than ordering each item separately.',
+      },
+      {
+        q: 'Why is my quote higher than the price I saw advertised elsewhere?',
+        a: 'Compare specification rather than headline figures. Board weight, colour count, laminate versus varnish, whether an insert is included, and whether tooling is quoted separately all move the number substantially. Ask any supplier which of those their price includes.',
+      },
+      {
+        q: 'Can I order a single sample box before a full run?',
+        a: 'You can order a plain structural sample to confirm fit, and a printed proof to confirm colour. A single finished retail-quality box is not economically producible on its own, because the tooling and setup would be carried by one unit.',
+      },
+    ],
+  },
+  {
+    id: 'specification',
+    heading: 'Specification and design',
+    intro:
+      'Questions about materials, printing, artwork and what can be changed once a job is under way.',
+    faqs: [
+      {
+        q: 'Do you make packaging for products other than lip care?',
+        a: 'Our work is focused on lip products, which is why the guidance here is specific rather than general. If you have a related cosmetic item in a similar format, ask — but if it is unrelated packaging, a supplier who works in that category will serve you better.',
+      },
+      {
+        q: 'Will you design my packaging for me?',
+        a: 'Our studio can build a die line and lay your supplied elements onto it, including setting the legal panels from copy you provide. What we do not do is create your brand identity or write your ingredient declaration and product claims.',
+      },
+      {
+        q: 'Do you check that my labelling is legally compliant?',
+        a: 'No. We print the file you approve. Ingredient declarations, net contents statements, SPF drug facts panels and product claims are yours to write and verify. Have that copy reviewed before proof approval, because changes afterwards mean new plates.',
+      },
+      {
+        q: 'Can you match the colour on my existing packaging?',
+        a: 'We can get close, and specifying a spot Pantone rather than a process build narrows the gap considerably. An exact match across different substrates is not achievable, because a printed film label and a coated paperboard carton reflect light differently.',
+      },
+      {
+        q: 'Can I change the design after I have approved a proof?',
+        a: 'Yes, but it means a new proof cycle and, if plates have been made, new plates. Before die line approval almost anything can change freely. After proof approval, changes carry real cost, which is why both approvals are handled in writing.',
+      },
+      {
+        q: 'Do you keep my die line and artwork for reorders?',
+        a: 'Yes. Approved die lines and proofs are held against your account, so a repeat order carries no die charge and no proofing charge. Tell us at the first quote if you expect to reorder on a cycle, since it affects how tooling is quoted.',
+      },
+    ],
+  },
+  {
+    id: 'production',
+    heading: 'Production, delivery and quality',
+    intro:
+      'What happens after approval, how goods arrive, and what we do if something is wrong.',
+    faqs: [
+      {
+        q: 'How long will my order take?',
+        a: 'We confirm a production window in writing with every quote rather than publishing a fixed figure, because it depends on your specification and on how quickly approvals come back. A digitally printed carton with a varnish moves much faster than a foiled litho job with an insert.',
+      },
+      {
+        q: 'Do you ship outside the United States?',
+        a: 'Our focus is the US market and freight is quoted for US destinations. If you have a requirement elsewhere, ask and we will tell you honestly whether we can serve it properly rather than quoting something we cannot support.',
+      },
+      {
+        q: 'How is my order quality checked?',
+        a: 'Three checks as standard: colour against the approved proof at press, dimensions on the first die-cut sheets, and a glue and fold test on finished units pulled from the line. Rigid boxes are inspected individually, because hand assembly produces unit-to-unit variation.',
+      },
+      {
+        q: 'What happens if there is a manufacturing fault?',
+        a: 'Tell us as soon as you find it, with photographs and the order reference, and we will work through it. Because these goods are made to your approved specification and cannot be resold, returns for change of mind are not available — the terms and conditions set out the detail.',
+      },
+      {
+        q: 'Can you deliver directly to my contract filler?',
+        a: 'Yes, and it is common. Send their receiving hours, appointment requirements, reference number and case labelling requirements with the order. A refused delivery at a co-packer is expensive to resolve and almost always avoidable.',
+      },
+      {
+        q: 'Is packaging recyclable?',
+        a: 'Plain and varnished paperboard is widely accepted in US kerbside paper recycling. Laminate films, window patches and metallised board each add a material a consumer must separate, and metallised board is not paper-recyclable. We will tell you exactly what your specification contains.',
+      },
+    ],
+  },
+  {
+    id: 'company',
+    heading: 'About Lip Boxes',
+    intro: 'What we are, what we are not, and how to reach us.',
+    faqs: [
+      {
+        q: 'Do you hold stock of standard boxes?',
+        a: 'No. There is no catalogue and no off-the-shelf size list. Every item is manufactured to a die line drawn for a specific container, which is the reason the guidance on this site is as specific as it is.',
+      },
+      {
+        q: 'Do you fill or assemble product?',
+        a: 'No. We supply packaging components, flat-packed or assembled as the format requires. Filling, sealing and final packing happen at your facility or your contract filler.',
+      },
+      {
+        q: 'How do I contact you?',
+        a: `Email ${site.email}, or use the quote request form, which routes straight to the team that prices work. If your enquiry is about an existing order, include the order reference so it reaches the right person first time.`,
+      },
+      {
+        q: 'How quickly do you reply to enquiries?',
+        a: 'Quote requests are answered in the order they arrive. If your enquiry includes dimensions, quantity and how the product is sold, you will get a price rather than a list of questions, which is usually the faster route overall.',
+      },
+    ],
+  },
+];
+
+const allFaqs = groups.flatMap((group) => group.faqs);
+---
+
+<InfoLayout
+  path="/faqs/"
+  title="FAQs | Custom Lip Packaging Questions"
+  description="Answers on pricing, minimum quantities, materials, artwork, lead times, delivery and quality for custom lip packaging."
+  h1="Frequently Asked Questions"
+  eyebrow="Support"
+  lead="Sitewide questions about how we quote, produce and deliver. Questions specific to a product are answered on that product's own page."
+  ogTitle="Custom Lip Packaging: Common Questions"
+  ogDescription="Pricing, minimums, materials, artwork responsibility, lead times, delivery and quality control, answered plainly."
+  points={[`${allFaqs.length} questions`, 'Product questions sit on product pages', 'No fixed price list']}
+  faqs={allFaqs}
+  ctaHeading="Question not answered here?"
+  ctaBody="Send it with your enquiry. Questions that come up repeatedly get added to this page or turned into an article."
+>
+  {
+    groups.map((group) => (
+      <InfoSection id={group.id} heading={group.heading} intro={group.intro}>
+        <FaqList faqs={group.faqs} level={3} />
+      </InfoSection>
+    ))
+  }
+
+  <InfoSection
+    id="more"
+    heading="Where to look next"
+    intro="The pages that answer the questions behind most enquiries in more depth."
+  >
+    <ul class="bullets">
+      <li>
+        Board grades and weights, print processes and finishing options each have
+        their own reference page, linked from the Specification menu above.
+      </li>
+      <li>
+        What to send us, and what you are asked to approve, is set out step by step
+        on the <a href="/how-to-order/">ordering page</a>.
+      </li>
+      <li>
+        Every product we make carries its own specification table and its own set
+        of questions, listed in the product menu.
+      </li>
+    </ul>
+  </InfoSection>
+</InfoLayout>

@@ -1,0 +1,121 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Icon from '../components/Icon.astro';
+import { indexableProducts } from '../data/products';
+
+/*
+ * Astro emits this as 404.html, and Vercel serves it with a genuine 404 status
+ * for unmatched routes. It is noindexed and excluded from the sitemap, so it
+ * cannot become a soft 404.
+ */
+const popular = indexableProducts.slice(0, 6);
+---
+
+<BaseLayout
+  title="Page Not Found | Lip Boxes"
+  description="This page could not be found. Browse the custom lip packaging product directory, the specification guides, or request a quote."
+  path="/404/"
+  noindex
+>
+  <div class="nf">
+    <div class="wrap wrap--narrow nf__inner">
+      <p class="nf__code" aria-hidden="true">404</p>
+      <h1>This page could not be found</h1>
+      <p class="lead nf__lead">
+        The address may have changed, or the link that brought you here may be out
+        of date. The routes below cover almost everything on the site.
+      </p>
+
+      <div class="btn-row nf__actions">
+        <a href="/products/" class="btn btn--primary">
+          Browse all products
+          <Icon name="arrow-right" size={18} />
+        </a>
+        <a href="/request-a-quote/" class="btn btn--secondary">Request a Quote</a>
+      </div>
+
+      <h2 class="nf__heading">Product pages</h2>
+      <ul class="nf__list">
+        {popular.map((product) => <li><a href={`/${product.slug}/`}>{product.name}</a></li>)}
+      </ul>
+
+      <h2 class="nf__heading">Specification and ordering</h2>
+      <ul class="nf__list">
+        <li><a href="/materials/">Materials</a></li>
+        <li><a href="/printing-options/">Printing options</a></li>
+        <li><a href="/finishes/">Finishes</a></li>
+        <li><a href="/box-styles/">Box styles</a></li>
+        <li><a href="/how-to-order/">How to order</a></li>
+        <li><a href="/faqs/">FAQs</a></li>
+      </ul>
+
+      <p class="nf__note">
+        If you followed a link from another site and think something is broken,
+        tell us on the <a href="/contact/">contact page</a> and we will look at it.
+      </p>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .nf {
+    padding-block: var(--sp-8) var(--sp-9);
+    background:
+      radial-gradient(
+        100% 90% at 90% 0%,
+        color-mix(in srgb, var(--rose-soft) 55%, transparent) 0%,
+        transparent 60%
+      ),
+      var(--paper);
+    flex: 1;
+  }
+  .nf__code {
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 8vw, 5rem);
+    font-weight: 600;
+    line-height: 1;
+    color: var(--rose-soft);
+    margin-bottom: var(--sp-3);
+    font-variation-settings: 'SOFT' 0, 'WONK' 1, 'opsz' 72;
+  }
+  .nf h1 {
+    font-size: var(--step-4);
+    margin-bottom: var(--sp-4);
+  }
+  .nf__lead {
+    max-width: 46ch;
+    margin-bottom: var(--sp-6);
+  }
+  .nf__actions {
+    margin-bottom: var(--sp-8);
+  }
+  .nf__heading {
+    font-family: var(--font-body);
+    font-size: var(--step--1);
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: var(--sp-3);
+  }
+  .nf__list {
+    list-style: none;
+    margin: 0 0 var(--sp-6);
+    padding: 0;
+    display: grid;
+    gap: var(--sp-2) var(--sp-5);
+    border-top: 1px solid var(--line);
+    padding-top: var(--sp-4);
+  }
+  @media (min-width: 40rem) {
+    .nf__list {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .nf__note {
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+    padding-top: var(--sp-5);
+    border-top: 1px solid var(--line);
+  }
+</style>

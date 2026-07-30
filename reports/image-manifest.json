@@ -1,0 +1,373 @@
+[
+  {
+    "slug": "custom-lip-balm-boxes",
+    "source": "Custom Lip Balm Boxes/Custom Lip Balm Boxes-1.png",
+    "output": "src/assets/products/custom-lip-balm-boxes/custom-lip-balm-box-counter-display.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "custom-lip-balm-boxes",
+    "source": "Custom Lip Balm Boxes/Custom Lip Balm Boxes-4.png",
+    "output": "src/assets/products/custom-lip-balm-boxes/custom-lip-balm-box-slim-tuck-end.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "custom-lip-balm-boxes",
+    "source": "Custom Lip Balm Boxes/Custom Lip Balm Boxes-2.png",
+    "output": "src/assets/products/custom-lip-balm-boxes/custom-lip-balm-box-multipack-tray.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "lip-balm-packaging",
+    "source": "Lip Balm packaging/Lip Balm packaging-2.png",
+    "output": "src/assets/products/lip-balm-packaging/lip-balm-packaging-foil-stamped-carton.png",
+    "w": 1200,
+    "h": 1200
+  },
+  {
+    "slug": "lip-balm-packaging",
+    "source": "Lip Balm packaging/Lip Balm packaging-1.png",
+    "output": "src/assets/products/lip-balm-packaging/lip-balm-packaging-blush-pink-cartons.png",
+    "w": 1200,
+    "h": 1200
+  },
+  {
+    "slug": "lip-balm-packaging",
+    "source": "Lip Balm packaging/Lip Balm packaging-3.png",
+    "output": "src/assets/products/lip-balm-packaging/lip-balm-packaging-floral-print-carton.png",
+    "w": 1200,
+    "h": 1200
+  },
+  {
+    "slug": "paper-lip-balm-tubes",
+    "source": "paper lip balm tubes/paper lip balm tubes-3.png",
+    "output": "src/assets/products/paper-lip-balm-tubes/paper-lip-balm-tube-printed-kraft.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "paper-lip-balm-tubes",
+    "source": "paper lip balm tubes/paper lip balm tubes-6.png",
+    "output": "src/assets/products/paper-lip-balm-tubes/paper-lip-balm-tube-natural-kraft-open.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "paper-lip-balm-tubes",
+    "source": "paper lip balm tubes/paper lip balm tubes-5.png",
+    "output": "src/assets/products/paper-lip-balm-tubes/paper-lip-balm-tube-teal-printed.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "paper-lip-balm-tubes",
+    "source": "paper lip balm tubes/paper lip balm tubes-2.png",
+    "output": "src/assets/products/paper-lip-balm-tubes/paper-lip-balm-tube-full-colour-print.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "paper-lip-balm-tubes",
+    "source": "cardboard lip balm tubes/cardboard lip balm tubes-2.png",
+    "output": "src/assets/products/paper-lip-balm-tubes/cardboard-lip-balm-tube-wrap-labels.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "paper-lip-balm-tubes",
+    "source": "cardboard lip balm tubes/cardboard lip balm tubes-1.png",
+    "output": "src/assets/products/paper-lip-balm-tubes/cardboard-lip-balm-tube-push-up-base.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "paper-lip-balm-tubes",
+    "source": "paper lip balm tubes/paper lip balm tubes-8.png",
+    "output": "src/assets/products/paper-lip-balm-tubes/paper-lip-balm-tube-larger-format-stick.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "paper-lip-balm-tubes",
+    "source": "cardboard lip balm tubes/cardboard lip balm tubes-5.png",
+    "output": "src/assets/products/paper-lip-balm-tubes/cardboard-lip-balm-tube-illustrated.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "custom-lip-balm-labels",
+    "source": "lip balm labels/lip balm labels​-TPB-3.png",
+    "output": "src/assets/products/custom-lip-balm-labels/custom-lip-balm-label-die-cut-wraps.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "custom-lip-balm-labels",
+    "source": "custom lip balm labels/custom lip balm labels-2.png",
+    "output": "src/assets/products/custom-lip-balm-labels/custom-lip-balm-label-minimal-two-colour.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "custom-lip-balm-labels",
+    "source": "lip balm labels/lip balm labels​-TPB-4.png",
+    "output": "src/assets/products/custom-lip-balm-labels/custom-lip-balm-label-kraft-uncoated.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "custom-lip-balm-labels",
+    "source": "custom lip balm labels/custom lip balm labels-3.png",
+    "output": "src/assets/products/custom-lip-balm-labels/custom-lip-balm-label-roll-format.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "custom-lip-balm-labels",
+    "source": "lip balm labels/lip balm labels​-TPB-1.png",
+    "output": "src/assets/products/custom-lip-balm-labels/custom-lip-balm-label-watercolour-print.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "hang-tab-lip-balm-boxes",
+    "source": "Hang Tab Lip Balm Box/Hang Tab Lip Balm Box-2.png",
+    "output": "src/assets/products/hang-tab-lip-balm-boxes/hang-tab-lip-balm-box-window-kraft.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "hang-tab-lip-balm-boxes",
+    "source": "Hang Tab Lip Balm Box/Hang Tab Lip Balm Box-1.png",
+    "output": "src/assets/products/hang-tab-lip-balm-boxes/hang-tab-lip-balm-boxes-on-pegboard.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "hang-tab-lip-balm-boxes",
+    "source": "Hang Tab Lip Balm Box/Hang Tab Lip Balm Box-3.png",
+    "output": "src/assets/products/hang-tab-lip-balm-boxes/hang-tab-lip-balm-box-euro-slot.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "hang-tab-lip-balm-boxes",
+    "source": "Hang Tab Lip Balm Box/Hang Tab Lip Balm Box-5.png",
+    "output": "src/assets/products/hang-tab-lip-balm-boxes/hang-tab-lip-balm-box-two-piece-set.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "hang-tab-lip-balm-boxes",
+    "source": "Hang Tab Lip Balm Box/Hang Tab Lip Balm Box-4.png",
+    "output": "src/assets/products/hang-tab-lip-balm-boxes/hang-tab-lip-balm-box-tall-tuck-end.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "custom-lipstick-boxes",
+    "source": "Custom Lipstick Boxes/Custom Lipstick Boxes-1.png",
+    "output": "src/assets/products/custom-lipstick-boxes/custom-lipstick-box-reverse-tuck-end.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "custom-lipstick-boxes",
+    "source": "Custom Lipstick Boxes/Custom Lipstick Boxes-3.png",
+    "output": "src/assets/products/custom-lipstick-boxes/custom-lipstick-box-floral-print.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "custom-lipstick-boxes",
+    "source": "Custom Lipstick Boxes/Custom Lipstick Boxes-2.png",
+    "output": "src/assets/products/custom-lipstick-boxes/custom-lipstick-box-metallic-foil.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "custom-lipstick-boxes",
+    "source": "Lipstick Boxes/Hang Tab Lipstick Box-3.png",
+    "output": "src/assets/products/custom-lipstick-boxes/custom-lipstick-box-slim-carton.png",
+    "w": 900,
+    "h": 900
+  },
+  {
+    "slug": "custom-lipstick-boxes",
+    "source": "Lipstick Boxes/Hang Tab Lipstick Box-5.png",
+    "output": "src/assets/products/custom-lipstick-boxes/custom-lipstick-boxes-matte-dark-range.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "custom-lipstick-boxes",
+    "source": "Lipstick Boxes/Hang Tab Lipstick Box-1.png",
+    "output": "src/assets/products/custom-lipstick-boxes/custom-lipstick-boxes-nude-collection.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "rigid-lipstick-boxes",
+    "source": "Rigid Lipstic Boxes/Rigid Lipstic Boxes-1.png",
+    "output": "src/assets/products/rigid-lipstick-boxes/rigid-lipstick-box-magnetic-closure.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "rigid-lipstick-boxes",
+    "source": "Rigid Lipstic Boxes/Rigid Lipstic Boxes-2.png",
+    "output": "src/assets/products/rigid-lipstick-boxes/rigid-lipstick-box-sleeve-and-tray.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "rigid-lipstick-boxes",
+    "source": "Rigid Lipstic Boxes/Rigid Lipstic Boxes-4.png",
+    "output": "src/assets/products/rigid-lipstick-boxes/rigid-lipstick-box-two-piece-lid.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "hang-tab-lipstick-boxes",
+    "source": "Hang Tab Lipstick Box/Hang Tab Lipstick Box-2.png",
+    "output": "src/assets/products/hang-tab-lipstick-boxes/hang-tab-lipstick-box-window-cutout.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "hang-tab-lipstick-boxes",
+    "source": "Hang Tab Lipstick Box/Hang Tab Lipstick Box-1.png",
+    "output": "src/assets/products/hang-tab-lipstick-boxes/hang-tab-lipstick-box-floral-pair.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "hang-tab-lipstick-boxes",
+    "source": "Hang Tab Lipstick Box/Hang Tab Lipstick Box-5.png",
+    "output": "src/assets/products/hang-tab-lipstick-boxes/hang-tab-lipstick-box-kraft-window.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "hang-tab-lipstick-boxes",
+    "source": "Hang Tab Lipstick Box/Hang Tab Lipstick Box-4.png",
+    "output": "src/assets/products/hang-tab-lipstick-boxes/hang-tab-lipstick-box-three-pack.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "lip-gloss-boxes",
+    "source": "Lip Gloss Boxes/Lip Gloss Boxes-2.png",
+    "output": "src/assets/products/lip-gloss-boxes/lip-gloss-box-straight-tuck-end.png",
+    "w": 1200,
+    "h": 1200
+  },
+  {
+    "slug": "lip-gloss-boxes",
+    "source": "Lip Gloss Boxes/Lip Gloss Boxes-1.png",
+    "output": "src/assets/products/lip-gloss-boxes/lip-gloss-box-tall-slim-carton.png",
+    "w": 1200,
+    "h": 1200
+  },
+  {
+    "slug": "lip-gloss-boxes",
+    "source": "Lip Gloss Boxes/Lip Gloss Boxes-3.png",
+    "output": "src/assets/products/lip-gloss-boxes/lip-gloss-box-soft-pink-set.png",
+    "w": 1200,
+    "h": 1200
+  },
+  {
+    "slug": "holographic-lip-gloss-boxes",
+    "source": "Holographic Lip Gloss Boxes/Holographic Lip Gloss Boxes-5.png",
+    "output": "src/assets/products/holographic-lip-gloss-boxes/holographic-lip-gloss-box-rainbow-foil.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "holographic-lip-gloss-boxes",
+    "source": "Holographic Lip Gloss Boxes/Holographic Lip Gloss Boxes-2.png",
+    "output": "src/assets/products/holographic-lip-gloss-boxes/holographic-lip-gloss-box-iridescent-carton.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "holographic-lip-gloss-boxes",
+    "source": "Holographic Lip Gloss Boxes/Holographic Lip Gloss Boxes-4.png",
+    "output": "src/assets/products/holographic-lip-gloss-boxes/holographic-lip-gloss-box-metallic-print.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "holographic-lip-gloss-boxes",
+    "source": "Holographic Lip Gloss Boxes/Holographic Lip Gloss Boxes-3.png",
+    "output": "src/assets/products/holographic-lip-gloss-boxes/holographic-lip-gloss-rigid-box-insert.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "holographic-lip-gloss-boxes",
+    "source": "Holographic Lip Gloss Boxes/Holographic Lip Gloss Boxes-1.png",
+    "output": "src/assets/products/holographic-lip-gloss-boxes/holographic-lip-gloss-box-silver-mirror.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "custom-lip-mask-boxes",
+    "source": "custom lip mask boxes/custom lip mask boxes-2.png",
+    "output": "src/assets/products/custom-lip-mask-boxes/custom-lip-mask-box-window-front.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "custom-lip-mask-boxes",
+    "source": "custom lip mask boxes/custom lip mask boxes-3.png",
+    "output": "src/assets/products/custom-lip-mask-boxes/custom-lip-mask-box-flat-carton.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "custom-lip-mask-boxes",
+    "source": "custom lip mask boxes/custom lip mask boxes-1.png",
+    "output": "src/assets/products/custom-lip-mask-boxes/custom-lip-mask-box-multi-patch-pack.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "custom-lip-mask-boxes",
+    "source": "custom lip mask boxes/custom lip mask boxes-4.png",
+    "output": "src/assets/products/custom-lip-mask-boxes/custom-lip-mask-box-single-sachet.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "custom-lip-mask-boxes",
+    "source": "custom lip mask boxes/custom lip mask boxes-5.png",
+    "output": "src/assets/products/custom-lip-mask-boxes/custom-lip-mask-mailer-box-open.png",
+    "w": 1080,
+    "h": 1080
+  },
+  {
+    "slug": "custom-lip-care-packaging",
+    "source": "custom lip care packaging bulk-PBEE-BLG/custom lip care packaging bulk-PBEE-BLG-3.png",
+    "output": "src/assets/products/custom-lip-care-packaging/custom-lip-care-packaging-carton-range.png",
+    "w": 1200,
+    "h": 850
+  },
+  {
+    "slug": "custom-lip-care-packaging",
+    "source": "custom lip care packaging bulk-PBEE-BLG/custom lip care packaging bulk-PBEE-BLG-1.png",
+    "output": "src/assets/products/custom-lip-care-packaging/custom-lip-care-packaging-shade-family.png",
+    "w": 1200,
+    "h": 850
+  },
+  {
+    "slug": "custom-lip-care-packaging",
+    "source": "custom lip care packaging bulk-PBEE-BLG/custom lip care packaging bulk-PBEE-BLG-2.png",
+    "output": "src/assets/products/custom-lip-care-packaging/custom-lip-care-packaging-gift-set.png",
+    "w": 615,
+    "h": 780
+  }
+]

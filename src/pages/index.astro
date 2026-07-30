@@ -1,0 +1,565 @@
+---
+import { Picture, getImage } from 'astro:assets';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProductCard from '../components/ProductCard.astro';
+import QuoteCta from '../components/QuoteCta.astro';
+import Icon from '../components/Icon.astro';
+import { indexableProducts, getProduct } from '../data/products';
+import { blogPosts } from '../data/blog';
+import { productImage } from '../lib/images';
+import { site } from '../data/site';
+import {
+  graph,
+  organizationSchema,
+  websiteSchema,
+  webPageSchema,
+} from '../lib/schema';
+
+const featuredSlugs = [
+  'custom-lip-balm-boxes',
+  'custom-lipstick-boxes',
+  'lip-gloss-boxes',
+  'paper-lip-balm-tubes',
+  'rigid-lipstick-boxes',
+  'holographic-lip-gloss-boxes',
+  'hang-tab-lip-balm-boxes',
+  'custom-lip-mask-boxes',
+];
+const featured = featuredSlugs
+  .map((slug) => getProduct(slug))
+  .filter((p): p is NonNullable<typeof p> => Boolean(p));
+
+const heroSource = productImage(
+  'custom-lipstick-boxes',
+  'custom-lipstick-boxes-nude-collection.png',
+);
+/* Preload the exact AVIF candidate set the <Picture> above will offer. */
+const heroAsset = await getImage({
+  src: heroSource,
+  widths: [480, 720, 960],
+  format: 'avif',
+  width: 960,
+  height: 960,
+});
+const ogAsset = await getImage({
+  src: heroSource,
+  width: 1200,
+  height: 1200,
+  format: 'png',
+});
+
+const latest = blogPosts.slice(0, 3);
+
+const schema = graph(
+  organizationSchema(),
+  websiteSchema(),
+  webPageSchema({
+    path: '/',
+    name: 'Lip Boxes — Custom Lip Product Packaging',
+    description: site.shortDescription,
+  }),
+);
+
+const capabilities = [
+  {
+    icon: 'ruler' as const,
+    title: 'Made to your dimensions',
+    text: 'Every die line is drawn around the tube, bullet or sachet you actually fill. Send measurements or post us a sample.',
+  },
+  {
+    icon: 'layers' as const,
+    title: 'Eleven lip formats',
+    text: 'Cartons, paper tubes, labels, hanging packs, rigid gift boxes and bulk programmes, all quoted from one enquiry.',
+  },
+  {
+    icon: 'sparkle' as const,
+    title: 'Finishing chosen for the product',
+    text: 'Soft-touch, foil, spot UV, holographic board and emboss, specified against your board rather than sold as a package.',
+  },
+  {
+    icon: 'shield' as const,
+    title: 'Checked before it ships',
+    text: 'Colour against the approved proof, dimensions on the first sheets, and a glue and fold test on finished cartons.',
+  },
+];
+---
+
+<BaseLayout
+  title="Custom Lip Packaging Boxes | Lip Boxes USA"
+  description="Custom printed boxes, paper tubes and labels for lip balm, lipstick and lip gloss brands. Made to your dimensions. Request a quote."
+  path="/"
+  ogTitle="Custom Packaging for Lip Balm, Lipstick and Lip Gloss"
+  ogDescription="Folding cartons, paper tubes, labels and rigid boxes made to your dimensions and printed to your artwork. Quote based, US-wide."
+  ogImage={ogAsset.src}
+  ogImageAlt="A collection of printed nude lipstick boxes with matching lipstick cases"
+  preloadImage={heroAsset.src}
+  preloadImageSrcset={heroAsset.srcSet.attribute}
+  preloadImageSizes="(min-width: 66rem) 34rem, (min-width: 40rem) 60vw, 90vw"
+  preloadImageType="image/avif"
+  schema={[schema]}
+>
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="wrap hero__inner">
+      <div class="hero__text">
+        <p class="hero__eyebrow">Custom lip product packaging &middot; United States</p>
+        <h1 id="hero-heading">
+          Packaging built around the lip product you already make
+        </h1>
+        <p class="lead hero__lead">
+          Printed cartons, paper tubes, wrap labels and rigid boxes for lip balm,
+          lipstick, lip gloss and lip care ranges. Nothing comes from a catalogue
+          of fixed sizes — the die line is drawn around your container.
+        </p>
+        <div class="btn-row hero__actions">
+          <a href="/request-a-quote/" class="btn btn--primary">
+            Request a Quote
+            <Icon name="arrow-right" size={18} />
+          </a>
+          <a href="/products/" class="btn btn--secondary">See all products</a>
+        </div>
+        <p class="hero__price">{site.startingPriceStatement}</p>
+      </div>
+
+      <div class="hero__media">
+        <Picture
+          src={heroSource}
+          alt="Printed nude and terracotta lipstick boxes arranged with matching lipstick cases"
+          formats={['avif']}
+          fallbackFormat="webp"
+          widths={[480, 720, 960]}
+          sizes="(min-width: 66rem) 34rem, (min-width: 40rem) 60vw, 90vw"
+          loading="eager"
+          fetchpriority="high"
+          decoding="sync"
+          width={960}
+          height={960}
+          class="hero__img"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight" aria-labelledby="capabilities-heading">
+    <div class="wrap">
+      <h2 id="capabilities-heading" class="visually-hidden">How we work</h2>
+      <ul class="cap-grid">
+        {
+          capabilities.map((item) => (
+            <li class="cap">
+              <span class="cap__icon" aria-hidden="true">
+                <Icon name={item.icon} size={20} />
+              </span>
+              <h3 class="cap__title">{item.title}</h3>
+              <p class="cap__text">{item.text}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section--warm" aria-labelledby="products-heading">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow">What we make</span>
+          <h2 id="products-heading">Packaging for every lip format</h2>
+        </div>
+        <p class="sec-head__note">
+          {indexableProducts.length} products, each quoted to your specification.
+          A full directory with descriptions is on the
+          <a href="/products/">product index</a>.
+        </p>
+      </div>
+      <div class="grid grid--products">
+        {featured.map((product, i) => <ProductCard product={product} eager={i < 4} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="process-heading">
+    <div class="wrap process">
+      <div class="process__intro">
+        <span class="eyebrow">How ordering works</span>
+        <h2 id="process-heading">Five stages, and nothing prints unsigned</h2>
+        <p class="text-muted">
+          The same sequence applies whether you are ordering 500 cartons or
+          running a twelve-product range. Full detail sits on the
+          <a href="/how-to-order/">ordering page</a>.
+        </p>
+      </div>
+      <ol class="process__steps">
+        <li>
+          <span class="process__num" aria-hidden="true">01</span>
+          <h3>Send your specification</h3>
+          <p>Dimensions or a sample container, quantity, and anything you know about material and finish.</p>
+        </li>
+        <li>
+          <span class="process__num" aria-hidden="true">02</span>
+          <h3>Get a written quote</h3>
+          <p>Priced at your quantity and at the next volume break, so you can see where the saving sits.</p>
+        </li>
+        <li>
+          <span class="process__num" aria-hidden="true">03</span>
+          <h3>Approve die line and proof</h3>
+          <p>A structural drawing, then a colour proof on the actual stock. Both need written sign-off.</p>
+        </li>
+        <li>
+          <span class="process__num" aria-hidden="true">04</span>
+          <h3>Production and inspection</h3>
+          <p>Print, finish, die-cut, glue, then colour, dimension and fold checks before packing.</p>
+        </li>
+        <li>
+          <span class="process__num" aria-hidden="true">05</span>
+          <h3>Dispatch</h3>
+          <p>Packed to your case count, palletised where appropriate, released with tracking.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section section--blush" aria-labelledby="spec-heading">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow">Specification</span>
+          <h2 id="spec-heading">Decide the details before you commit</h2>
+        </div>
+        <p class="sec-head__note">
+          Four reference pages covering the choices that change what your
+          packaging costs and how it looks.
+        </p>
+      </div>
+      <div class="grid grid--2 spec-grid">
+        <a class="spec-card" href="/materials/">
+          <Icon name="layers" size={22} />
+          <h3>Materials</h3>
+          <p>Board grades and weights, and what each one does to your print and your strength.</p>
+        </a>
+        <a class="spec-card" href="/printing-options/">
+          <Icon name="palette" size={22} />
+          <h3>Printing options</h3>
+          <p>Digital, offset litho, flexo and screen, and the quantity where each becomes economical.</p>
+        </a>
+        <a class="spec-card" href="/finishes/">
+          <Icon name="sparkle" size={22} />
+          <h3>Finishes</h3>
+          <p>Lamination, foil, spot UV and emboss, with the trade-offs each carries on cost and disposal.</p>
+        </a>
+        <a class="spec-card" href="/box-styles/">
+          <Icon name="box" size={22} />
+          <h3>Box styles</h3>
+          <p>Tuck ends, auto-bottoms, sleeves, trays and rigid constructions, and which pack each suits.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="blog-heading">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow">From the blog</span>
+          <h2 id="blog-heading">Practical notes on lip packaging</h2>
+        </div>
+        <p class="sec-head__note">
+          <a href="/blog/">All articles</a>
+        </p>
+      </div>
+      <ul class="post-list">
+        {
+          latest.map((post) => (
+            <li class="post-item">
+              <p class="post-item__meta">
+                <time datetime={post.published}>
+                  {new Date(post.published).toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                  })}
+                </time>
+                <span aria-hidden="true"> &middot; </span>
+                {post.readingMinutes} min read
+              </p>
+              <h3 class="post-item__title">
+                <a href={`/blog/${post.slug}/`}>{post.title}</a>
+              </h3>
+              <p class="post-item__deck">{post.deck}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <QuoteCta />
+</BaseLayout>
+
+<style>
+  /* --- Hero --- */
+  .hero {
+    background:
+      radial-gradient(
+        90% 80% at 85% 10%,
+        color-mix(in srgb, var(--rose-soft) 70%, transparent) 0%,
+        transparent 65%
+      ),
+      var(--paper-warm);
+    border-bottom: 1px solid var(--line);
+    padding-block: var(--sp-7);
+  }
+  .hero__inner {
+    display: grid;
+    gap: var(--sp-6);
+    align-items: center;
+  }
+  @media (min-width: 66rem) {
+    .hero {
+      padding-block: var(--sp-9);
+    }
+    .hero__inner {
+      grid-template-columns: 1fr minmax(20rem, 34rem);
+      gap: var(--sp-8);
+    }
+  }
+  .hero__eyebrow {
+    font-size: var(--step--1);
+    font-weight: 600;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: var(--rose);
+    margin-bottom: var(--sp-4);
+  }
+  .hero h1 {
+    max-width: 22ch;
+    margin-bottom: var(--sp-5);
+  }
+  .hero__lead {
+    max-width: 48ch;
+    margin-bottom: var(--sp-6);
+  }
+  .hero__actions {
+    margin-bottom: var(--sp-5);
+  }
+  .hero__price {
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+    max-width: 52ch;
+    padding-top: var(--sp-4);
+    border-top: 1px solid var(--line-strong);
+    margin: 0;
+  }
+  .hero__media {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--white);
+  }
+  .hero__img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
+  /* --- Capability row --- */
+  .cap-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--sp-5);
+    grid-template-columns: repeat(auto-fit, minmax(min(14rem, 100%), 1fr));
+  }
+  .cap {
+    padding-top: var(--sp-3);
+    border-top: 2px solid var(--rose-soft);
+  }
+  .cap__icon {
+    display: grid;
+    place-items: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-bottom: var(--sp-3);
+    border-radius: var(--radius-sm);
+    background: var(--paper-blush);
+    color: var(--plum);
+  }
+  .cap__title {
+    font-family: var(--font-body);
+    font-size: var(--step-0);
+    font-weight: 600;
+    letter-spacing: 0;
+    margin-bottom: var(--sp-2);
+  }
+  .cap__text {
+    font-size: var(--step--1);
+    color: var(--ink-soft);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* --- Section headers --- */
+  .sec-head {
+    display: grid;
+    gap: var(--sp-3);
+    margin-bottom: var(--sp-6);
+  }
+  @media (min-width: 54rem) {
+    .sec-head {
+      grid-template-columns: 1fr auto;
+      align-items: end;
+      gap: var(--sp-6);
+    }
+    .sec-head__note {
+      text-align: right;
+    }
+  }
+  .sec-head h2 {
+    margin-bottom: 0;
+  }
+  .sec-head__note {
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+    max-width: 34ch;
+    margin: 0;
+    line-height: 1.55;
+  }
+
+  /* --- Process --- */
+  .process {
+    display: grid;
+    gap: var(--sp-6);
+  }
+  @media (min-width: 62rem) {
+    .process {
+      grid-template-columns: minmax(16rem, 22rem) 1fr;
+      gap: var(--sp-8);
+      align-items: start;
+    }
+    .process__intro {
+      position: sticky;
+      top: 6rem;
+    }
+  }
+  .process__intro p {
+    max-width: 34ch;
+    font-size: var(--step--1);
+  }
+  .process__steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--sp-4);
+  }
+  @media (min-width: 46rem) {
+    .process__steps {
+      grid-template-columns: 1fr 1fr;
+      gap: var(--sp-5);
+    }
+  }
+  .process__steps li {
+    padding-top: var(--sp-3);
+    border-top: 1px solid var(--line);
+  }
+  .process__num {
+    display: block;
+    font-family: var(--font-display);
+    font-size: var(--step-1);
+    font-weight: 600;
+    color: var(--rose);
+    margin-bottom: var(--sp-2);
+    font-variation-settings: 'SOFT' 0, 'WONK' 1, 'opsz' 24;
+  }
+  .process__steps h3 {
+    font-family: var(--font-body);
+    font-size: var(--step-0);
+    font-weight: 600;
+    letter-spacing: 0;
+    margin-bottom: var(--sp-2);
+  }
+  .process__steps p {
+    font-size: var(--step--1);
+    color: var(--ink-soft);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* --- Specification cards --- */
+  .spec-grid {
+    gap: var(--sp-4);
+  }
+  .spec-card {
+    display: block;
+    padding: var(--sp-5);
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    text-decoration: none;
+    color: var(--ink);
+    transition: border-color 0.18s var(--ease), box-shadow 0.18s var(--ease);
+  }
+  .spec-card:hover {
+    border-color: var(--plum);
+    box-shadow: var(--shadow-sm);
+    color: var(--ink);
+  }
+  .spec-card svg {
+    color: var(--plum);
+    margin-bottom: var(--sp-3);
+  }
+  .spec-card h3 {
+    font-size: var(--step-1);
+    margin-bottom: var(--sp-2);
+  }
+  .spec-card:hover h3 {
+    color: var(--plum);
+  }
+  .spec-card p {
+    font-size: var(--step--1);
+    color: var(--ink-soft);
+    line-height: 1.6;
+    margin: 0;
+    max-width: 42ch;
+  }
+
+  /* --- Blog list --- */
+  .post-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--sp-5);
+    grid-template-columns: repeat(auto-fit, minmax(min(17rem, 100%), 1fr));
+  }
+  .post-item {
+    padding-top: var(--sp-4);
+    border-top: 1px solid var(--line);
+  }
+  .post-item__meta {
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+    margin-bottom: var(--sp-2);
+  }
+  .post-item__title {
+    font-size: var(--step-1);
+    margin-bottom: var(--sp-2);
+    line-height: 1.3;
+  }
+  .post-item__title a {
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .post-item__title a:hover {
+    color: var(--plum);
+    text-decoration: underline;
+    text-underline-offset: 0.16em;
+  }
+  .post-item__deck {
+    font-size: var(--step--1);
+    color: var(--ink-soft);
+    line-height: 1.6;
+    margin: 0;
+  }
+</style>

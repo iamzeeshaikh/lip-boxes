@@ -1,0 +1,198 @@
+---
+import InfoLayout from '../layouts/InfoLayout.astro';
+import InfoSection from '../components/InfoSection.astro';
+import SpecTable from '../components/SpecTable.astro';
+import FaqList from '../components/FaqList.astro';
+import type { Faq } from '../data/types';
+
+const faqs: Faq[] = [
+  {
+    q: 'What file format should I send?',
+    a: 'A print-ready PDF is the safest option, or native AI or EPS with all links embedded and fonts outlined. PSD is acceptable for image-led designs built at final size. Avoid supplying only a JPG or a PNG for a carton, because neither carries the vector paths a die line and finishing layers need.',
+  },
+  {
+    q: 'How much bleed do you need?',
+    a: 'Three millimetres beyond every trimmed edge, with the artwork continuing into that area rather than stopping at the trim line. Artwork that stops exactly at the trim will show a white sliver on some units, because cutting and creasing both have real tolerance.',
+  },
+  {
+    q: 'How far inside the trim should text sit?',
+    a: 'At least 4 mm on a folding carton and 2 mm on a label. Type placed tight to the trim looks off-centre on some units even when production is comfortably within tolerance, and on a small pack that is very noticeable.',
+  },
+  {
+    q: 'Do you supply a die line before I design?',
+    a: 'Yes, and you should always build to it. It arrives as a vector file with separate layers for cut, crease and any window. Place it on its own locked layer and do not move it. For a rolled tube or a label, the equivalent is a flat template with the seam and safe area marked.',
+  },
+  {
+    q: 'How should foil and spot UV be supplied?',
+    a: 'Each as its own vector layer drawn in 100% black and named for what it is, such as "foil gold" or "spot UV gloss". They are separate tools rather than colours. Where two overlap, say in the file or the email which one sits on top.',
+  },
+  {
+    q: 'When do I need an opaque white layer?',
+    a: 'Whenever the stock is kraft, metallised, holographic or black-through and something needs to read as white or as a true light colour. On those substrates an unprinted area is the substrate, not white. The white layer is drawn as its own named layer in the shape of whatever needs it.',
+  },
+  {
+    q: 'What resolution do raster images need?',
+    a: '300 dpi at final size. A 72 dpi image scaled up does not recover detail; it just becomes a larger soft image. If you only have a low-resolution asset, tell us at proof stage rather than hoping it holds, because it will be visible on a printed carton.',
+  },
+  {
+    q: 'Should black be 100% K or a rich black?',
+    a: 'Use 100% K for small type and thin rules, so they stay sharp and do not show registration error. Use a rich black build for large solid areas, because 100% K alone looks washed out over a large panel. We will flag it if the file uses the wrong one for the area.',
+  },
+  {
+    q: 'Do you check my ingredient list and claims?',
+    a: 'No. We print the file you approve. Writing and checking regulated content is your responsibility, and it matters: SPF claims make a product an over-the-counter drug in the United States with its own panel rules, and lip mask claims of a physiological effect fall into similar territory.',
+  },
+  {
+    q: 'Where should the barcode go?',
+    a: 'On a flat panel with at least 1.5 inches of clear width, not crossing a crease and not on a hanging tab. Retail scanners fail on barcodes that sit over a fold. On a narrow carton the back panel is usually the only place it fits properly, so plan for it early.',
+  },
+  {
+    q: 'My ingredient list will not fit legibly. What are the options?',
+    a: 'A small folded leaflet inside the carton, a peel-back multi-panel label on the container, or moving the declaration from the primary pack to the outer box. All three are cheaper and better than setting a long declaration below 5 pt, which on uncoated board is genuinely unreadable.',
+  },
+  {
+    q: 'Can you build the artwork if I only have a rough idea?',
+    a: 'Our studio can lay your elements onto the die line and set the legal panels from copy you supply. Send a sketch, a competitor reference or a rough layout with your enquiry. What we cannot do is write your ingredient declaration or verify your claims.',
+  },
+];
+---
+
+<InfoLayout
+  path="/artwork-guidelines/"
+  title="Artwork Guidelines | Print File Setup | Lip Boxes"
+  description="File formats, bleed, safe areas, colour space and named finishing layers for print-ready lip packaging artwork, plus what we do not check."
+  h1="Artwork Guidelines"
+  eyebrow="Specification"
+  lead="Files built to these requirements go to print without a wasted proof cycle. Almost every delay we see comes from one of five things, and all five are avoidable."
+  ogTitle="How to Prepare Print-Ready Packaging Artwork"
+  ogDescription="Formats, bleed, safe areas, colour space, black builds and finishing layers for lip packaging files."
+  points={['File specification', 'Finishing layers', 'What we do not check']}
+  faqs={faqs}
+  ctaHeading="Send your file for a free preflight check"
+  ctaBody="Attach artwork to your enquiry and we will tell you what needs changing before anything is quoted for production, rather than after."
+>
+  <InfoSection
+    id="die-line"
+    heading="Always build to the supplied die line"
+    intro="A folding carton is cut and creased from a flat sheet. The die line is the map of where those cuts and creases fall."
+  >
+    <p class="measure">
+      Designing to your own rectangle and hoping it maps onto the die is the single
+      most common cause of rework we see. Ask for the die line before you start.
+      It arrives as a vector file with separate layers for cut, crease and any
+      window. Place it on its own locked layer and never move it.
+    </p>
+    <p class="measure">
+      The same principle applies to labels and rolled tubes, with a different
+      template. A tube template is a rectangle whose width is the circumference
+      plus a seam overlap, not a folding die line, so any element crossing the seam
+      will show a small step. Details for that format are on the
+      <a href="/paper-lip-balm-tubes/">paperboard tube page</a>.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="file-spec"
+    heading="File specification"
+    intro="These requirements cover every product on this site."
+  >
+    <SpecTable
+      caption="Print file requirements."
+      columns={['Item', 'Requirement', 'Why']}
+      rows={[
+        ['Format', 'Print-ready PDF, or AI / EPS with links embedded; PSD at final size for image-led work', 'Vector paths are needed for die lines and finishing tools'],
+        ['Resolution', '300 dpi at final size for all raster content', 'Upscaling a low-resolution image does not recover detail'],
+        ['Colour space', 'CMYK, plus named spot colours from the appropriate Pantone library', 'RGB converts unpredictably; spot colours must be named to be mixed'],
+        ['Bleed', '3 mm beyond every trimmed edge, artwork continuing into it', 'Cutting and creasing both have tolerance'],
+        ['Safe area', '4 mm inside trim on cartons, 2 mm inside cut on labels', 'Keeps type from looking off-centre on outer units'],
+        ['Fonts', 'Outlined, or supplied with the file', 'Missing fonts substitute silently'],
+        ['Black', '100% K for small type, rich black build for large solids', 'Small type stays sharp; large solids do not look washed out'],
+        ['Overprint', 'Set deliberately and flagged, not left at defaults', 'Unintended overprint can drop white type entirely'],
+        ['File naming', 'Product, die line reference and revision number', 'Prevents an outdated version being approved'],
+      ]}
+    />
+  </InfoSection>
+
+  <InfoSection
+    id="finishing-layers"
+    heading="Finishing needs its own layers"
+    intro="Foil, spot UV, embossing and opaque white are not colours. Each is a separate plate or metal tool, made from a separate layer."
+  >
+    <ul class="bullets">
+      <li>Draw each in 100% black, as vector paths, on its own layer.</li>
+      <li>Name each layer for what it is: "foil gold", "spot UV gloss", "emboss", "deboss", "opaque white".</li>
+      <li>Where two finishing areas overlap, state which sits on top.</li>
+      <li>Keep foil clear of die-cut edges, since heavy foil on a cut edge tends to flake.</li>
+      <li>Keep emboss detail away from creases, because a raised area on a fold will crack.</li>
+    </ul>
+    <p class="note">
+      An unnamed extra layer gets interpreted rather than followed, and that costs
+      a proof cycle. What each finish does physically is covered on the
+      <a href="/finishes/">page on coatings and surface treatments</a>.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="regulated-copy"
+    heading="Regulated copy is your responsibility"
+    intro="We print the file that was approved. Writing and checking the regulated content is the brand's job, and it is worth scheduling time for."
+  >
+    <p class="measure">
+      A cosmetic sold in the United States needs an ingredient declaration in
+      descending order of predominance, the net quantity of contents, and the name
+      and place of business of the responsible party. If the product carries an SPF
+      claim it is regulated as an over-the-counter drug and the drug facts panel has
+      its own layout rules. Lip masks claiming a physiological effect rather than
+      a cosmetic one move toward the same territory.
+    </p>
+    <p class="measure">
+      Have that copy reviewed before you approve a proof. Once a proof is signed
+      off, the run is measured against it, and a compliance change afterwards means
+      new plates and a new run.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="panel-planning"
+    heading="Plan the panels before you design"
+    intro="Lip packaging is small and the legal copy is long. That tension is easier to resolve before the layout exists than after."
+  >
+    <p class="measure">
+      Decide which panel carries the brand mark, which carries the ingredient
+      declaration, which carries directions or wear time, and where the barcode
+      goes. On a slim lipstick or gloss carton there is genuinely no spare room to
+      find later, and the barcode alone needs about 1.5 inches of clear flat width.
+    </p>
+    <p class="measure">
+      Where a design runs across many variants, keep every fixed element in exactly
+      the same position and change only the variable zone. Twelve shades then
+      review as one standard plus twelve checks, which is how
+      <a href="/custom-lip-care-packaging/">multi-SKU packaging programmes</a> stay
+      manageable.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="preflight"
+    heading="Five checks before you send the file"
+    intro="These catch the overwhelming majority of problems we would otherwise find at proof stage."
+  >
+    <ol class="ordered">
+      <li><strong>Die line present and unmoved</strong> on its own layer.</li>
+      <li><strong>Bleed extends past every trim edge</strong>, with no artwork stopping at the trim.</li>
+      <li>
+        <strong>Separations preview shows exactly the plates you intended</strong>,
+        with no stray spot colours and finishing layers correctly named.
+      </li>
+      <li>
+        <strong>Barcode sits on a flat panel</strong> with clear space and does not
+        cross a crease.
+      </li>
+      <li><strong>View at 100%</strong> and read the smallest type at final size.</li>
+    </ol>
+  </InfoSection>
+
+  <InfoSection id="faqs" heading="Artwork questions">
+    <FaqList faqs={faqs} level={3} />
+  </InfoSection>
+</InfoLayout>

@@ -1,0 +1,39 @@
+{
+  "name": "lipboxes",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "images": "node scripts/prepare-images.mjs",
+    "audit:site": "node scripts/audit-site.mjs",
+    "audit:deps": "npm audit --omit=dev",
+    "lighthouse": "node scripts/lighthouse.mjs",
+    "test:browser": "node scripts/browser-checks.mjs",
+    "test:form": "node scripts/test-form.mjs",
+    "test:email": "node scripts/test-email-delivery.mjs",
+    "smtp:test": "node scripts/smtp-test.mjs",
+    "reports": "node scripts/generate-reports.mjs",
+    "verify": "npm run build && npm run check && npm run audit:site && npm run test:browser && npm run reports"
+  },
+  "dependencies": {
+    "@astrojs/vercel": "^11.0.4",
+    "astro": "^7.1.6",
+    "nodemailer": "^9.0.3",
+    "sharp": "^0.35.3"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@types/nodemailer": "^7.0.4",
+    "chrome-launcher": "^1.2.1",
+    "lighthouse": "^13.4.1",
+    "puppeteer": "^25.4.0",
+    "typescript": "^5.9.3"
+  },
+  "overrides": {
+    "path-to-regexp": "^6.3.0"
+  }
+}

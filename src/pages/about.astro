@@ -1,0 +1,142 @@
+---
+import InfoLayout from '../layouts/InfoLayout.astro';
+import InfoSection from '../components/InfoSection.astro';
+import { site } from '../data/site';
+---
+
+<InfoLayout
+  path="/about/"
+  title="About Lip Boxes | Custom Lip Product Packaging"
+  description="What Lip Boxes makes, how a project runs, who we suit, and the claims we deliberately leave off this site because they cannot be verified."
+  h1="About Lip Boxes"
+  eyebrow="Company"
+  lead="We make printed packaging for lip products, sold through quotes rather than a catalogue. This page sets out how we work and, just as usefully, what we do not claim."
+  ogTitle="About Lip Boxes"
+  ogDescription="A packaging supplier for lip balm, lipstick, lip gloss and lip care brands in the United States."
+  pageType="AboutPage"
+  points={['Lip products only', 'Quote based, made to order', 'No unverified claims']}
+  ctaHeading="Working out whether we are a fit?"
+  ctaBody="Describe your product and quantity. If we are the wrong supplier for it, we will say so rather than quoting work we cannot do well."
+>
+  <InfoSection
+    id="what-we-do"
+    heading="What we do"
+    intro="One category, done in depth, rather than a broad packaging catalogue."
+  >
+    <p class="measure">
+      Lip Boxes supplies custom printed packaging for lip products across the
+      United States: folding cartons for balm, lipstick and gloss, rolled
+      paperboard tubes, pressure-sensitive wrap labels, hanging retail packs,
+      rigid gift boxes and bulk programmes covering a whole range.
+    </p>
+    <p class="measure">
+      Every item is manufactured to a die line drawn for a specific container.
+      There is no size chart and no stock range. That is a constraint as much as a
+      selling point: it means we cannot ship you something tomorrow, and it means
+      the pack fits the product properly when it arrives. The full range is listed
+      in the <a href="/products/">product directory</a>.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="how-we-work"
+    heading="How we work"
+    intro="Four commitments that shape how a project runs."
+  >
+    <dl class="kv">
+      <div>
+        <dt>We quote the process that suits the job</dt>
+        <dd>
+          Digital under a couple of thousand units, offset litho above it, and we
+          will say plainly where the alternative would be cheaper for you.
+        </dd>
+      </div>
+      <div>
+        <dt>Nothing prints without two written approvals</dt>
+        <dd>
+          A die line and a colour proof. The production run is measured against the
+          proof you signed off, and we keep it.
+        </dd>
+      </div>
+      <div>
+        <dt>Trade-offs get stated, not hidden</dt>
+        <dd>
+          A laminate improves durability and complicates recycling. Holographic
+          board looks striking and is not paper-recyclable. Both facts belong in the
+          conversation.
+        </dd>
+      </div>
+      <div>
+        <dt>We recommend against things</dt>
+        <dd>
+          If a rigid box is not justified at your price point, or a paper tube is
+          wrong for your formula, we will say so before quoting it.
+        </dd>
+      </div>
+    </dl>
+  </InfoSection>
+
+  <InfoSection
+    id="what-we-dont-claim"
+    heading="What we do not claim"
+    intro="Packaging websites are full of numbers that cannot be checked. We have left ours out rather than invented them."
+  >
+    <p class="measure">
+      You will not find a client count, a years-in-business figure, a production
+      capacity, a customer logo wall, an award badge or a certification mark
+      anywhere on this site. Not because none of those things could ever be true,
+      but because we are not going to publish a figure we cannot substantiate to a
+      buyer who asks.
+    </p>
+    <p class="measure">
+      The same applies to product pages. Where a dimension, a minimum quantity, a
+      lead time or a certification depends on your specification, we describe what
+      can be specified and confirm the actual figure in writing with your quote.
+      There are no star ratings on this site either, because we do not have a
+      verified review dataset to display — and a rating you cannot trace is worth
+      nothing to you.
+    </p>
+    <p class="note">
+      If a supplier quotes you a firm price, a firm lead time and a guaranteed
+      minimum from a product name alone, ask what specification those figures
+      assume. That question is usually informative.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="who-we-suit"
+    heading="Who this suits, and who it does not"
+    intro="Being direct about fit saves both sides time."
+  >
+    <p class="measure"><strong>A good fit:</strong></p>
+    <ul class="bullets">
+      <li>Brands launching or relaunching a lip product and needing packaging built around a specific container.</li>
+      <li>Ranges of several shades or scents, where one die line and one board serve the whole line.</li>
+      <li>Private label operations and contract fillers buying to a fixed structural specification.</li>
+      <li>Brands entering peg or clip strip retail and needing a pack that hangs reliably.</li>
+    </ul>
+    <p class="measure"><strong>Not a good fit:</strong></p>
+    <ul class="bullets">
+      <li>Anyone needing stock boxes shipped immediately, since nothing here is held in stock.</li>
+      <li>Packaging for categories unrelated to lip products, where a specialist in that category will do better.</li>
+      <li>Projects that need the supplier to own regulatory compliance, which remains with the brand.</li>
+    </ul>
+  </InfoSection>
+
+  <InfoSection
+    id="contact"
+    heading="Getting in touch"
+    intro="One email address, one form, and no call-centre routing."
+  >
+    <p class="measure">
+      Email <a href={`mailto:${site.email}`}>{site.email}</a>, or use the quote
+      request form linked from every page. Including dimensions and quantity in
+      the first message is the fastest route to a real number rather than a list of
+      questions.
+    </p>
+    <p class="measure">
+      Contact hours and what to include for different kinds of enquiry are set out
+      on the <a href="/contact/">contact page</a>.
+    </p>
+  </InfoSection>
+</InfoLayout>

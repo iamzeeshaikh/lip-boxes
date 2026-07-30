@@ -1,0 +1,317 @@
+---
+import { Image } from 'astro:assets';
+import type { ContentBlock } from '../data/types';
+import { productImage } from '../lib/images';
+import Icon from './Icon.astro';
+import type { IconName } from './Icon.astro';
+
+interface Props {
+  blocks: ContentBlock[];
+  /** Slug used to resolve any images referenced by split blocks. */
+  slug: string;
+}
+
+const { blocks, slug } = Astro.props;
+
+const iconMap: Record<string, IconName> = {
+  check: 'check',
+  layers: 'layers',
+  sparkle: 'sparkle',
+  shield: 'shield',
+  leaf: 'leaf',
+  ruler: 'ruler',
+};
+---
+
+{
+  blocks.map((block, index) => (
+    <section
+      class:list={[
+        'block',
+        `block--${block.type}`,
+        index % 2 === 1 && block.type === 'features' && 'block--tinted',
+      ]}
+      id={block.id}
+      aria-labelledby={`${block.id}-heading`}
+    >
+      <h2 id={`${block.id}-heading`} class="block__heading">{block.heading}</h2>
+
+      {block.type === 'prose' && (
+        <div class="prose">
+          {block.body.map((paragraph) => <p set:html={paragraph} />)}
+        </div>
+      )}
+
+      {block.type === 'features' && (
+        <>
+          {block.intro && <p class="block__intro measure">{block.intro}</p>}
+          <ul class="feature-grid">
+            {block.items.map((item) => (
+              <li class="feature">
+                <span class="feature__icon" aria-hidden="true">
+                  <Icon name={iconMap[block.icon ?? 'check'] ?? 'check'} size={18} />
+                </span>
+                <h3 class="feature__title">{item.title}</h3>
+                <p class="feature__text">{item.text}</p>
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
+
+      {block.type === 'list' && (
+        <>
+          {block.intro && <p class="block__intro measure">{block.intro}</p>}
+          <ul class="check-list">
+            {block.items.map((item) => (
+              <li>
+                <Icon name="check" size={17} class="check-list__tick" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+          {block.outro && <p class="block__outro measure" set:html={block.outro} />}
+        </>
+      )}
+
+      {block.type === 'split' && (
+        <div class:list={['split', block.imageSide === 'left' && 'split--flip']}>
+          <div class="split__text prose">
+            {block.body.map((paragraph) => <p set:html={paragraph} />)}
+          </div>
+          <figure class="split__media">
+            <Image
+              src={productImage(slug, block.image.file)}
+              alt={block.image.alt}
+              widths={[400, 620, 840]}
+              sizes="(min-width: 62rem) 26rem, (min-width: 40rem) 46vw, 88vw"
+              loading="lazy"
+              decoding="async"
+              width={840}
+              height={840}
+            />
+          </figure>
+        </div>
+      )}
+
+      {block.type === 'steps' && (
+        <>
+          {block.intro && <p class="block__intro measure">{block.intro}</p>}
+          <ol class="steps">
+            {block.steps.map((step, i) => (
+              <li class="step">
+                <span class="step__num" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
+                <div>
+                  <h3 class="step__title">{step.title}</h3>
+                  <p class="step__text">{step.text}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </>
+      )}
+
+      {block.type === 'compare' && (
+        <>
+          {block.intro && <p class="block__intro measure">{block.intro}</p>}
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  {block.columns.map((column) => (
+                    <th scope="col">{column === '' ? <span class="visually-hidden">Option</span> : column}</th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {block.rows.map((row) => (
+                  <tr>
+                    {row.map((cell, i) =>
+                      i === 0 ? <th scope="row">{cell}</th> : <td>{cell}</td>,
+                    )}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          {block.outro && <p class="block__outro measure" set:html={block.outro} />}
+        </>
+      )}
+    </section>
+  ))
+}
+
+<style>
+  .block {
+    padding-block: var(--sp-6);
+    border-top: 1px solid var(--line);
+    scroll-margin-top: 6rem;
+  }
+  .block:first-child {
+    border-top: 0;
+    padding-top: 0;
+  }
+  .block__heading {
+    font-size: var(--step-2);
+    margin-bottom: var(--sp-4);
+  }
+  .block__intro {
+    color: var(--ink-soft);
+    margin-bottom: var(--sp-5);
+  }
+  .block__outro {
+    margin-top: var(--sp-5);
+    color: var(--ink-soft);
+    font-size: var(--step--1);
+  }
+
+  /* --- Feature grid --- */
+  .feature-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--sp-5);
+    grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
+  }
+  .feature {
+    padding-top: var(--sp-3);
+    border-top: 2px solid var(--rose-soft);
+  }
+  .feature__icon {
+    display: grid;
+    place-items: center;
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: var(--sp-3);
+    border-radius: var(--radius-sm);
+    background: var(--paper-blush);
+    color: var(--plum);
+  }
+  .feature__title {
+    font-family: var(--font-body);
+    font-size: var(--step-0);
+    font-weight: 600;
+    letter-spacing: 0;
+    margin: 0 0 var(--sp-2);
+  }
+  .feature__text {
+    font-size: var(--step--1);
+    color: var(--ink-soft);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* --- Check list --- */
+  .check-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--sp-3);
+  }
+  @media (min-width: 48rem) {
+    .check-list {
+      grid-template-columns: 1fr 1fr;
+      gap: var(--sp-3) var(--sp-6);
+    }
+  }
+  .check-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    font-size: var(--step--1);
+    line-height: 1.6;
+    color: var(--ink-soft);
+  }
+  /* :global — the class lands on an <Icon> component's <svg>. */
+  :global(.check-list__tick) {
+    flex-shrink: 0;
+    margin-top: 0.22em;
+    color: var(--rose);
+  }
+
+  /* --- Split --- */
+  .split {
+    display: grid;
+    gap: var(--sp-5);
+  }
+  @media (min-width: 58rem) {
+    .split {
+      grid-template-columns: 1fr minmax(16rem, 24rem);
+      gap: var(--sp-7);
+      align-items: start;
+    }
+    .split--flip {
+      grid-template-columns: minmax(16rem, 24rem) 1fr;
+    }
+    .split--flip .split__text {
+      order: 2;
+    }
+    .split--flip .split__media {
+      order: 1;
+    }
+  }
+  .split__media {
+    margin: 0;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--paper-warm);
+  }
+  .split__media img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+
+  /* --- Steps --- */
+  .steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: step;
+    display: grid;
+    gap: var(--sp-4);
+  }
+  .step {
+    display: flex;
+    gap: var(--sp-4);
+    padding-bottom: var(--sp-4);
+    border-bottom: 1px solid var(--line);
+  }
+  .step:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  .step__num {
+    flex-shrink: 0;
+    font-family: var(--font-display);
+    font-size: var(--step-1);
+    font-weight: 600;
+    color: var(--rose);
+    line-height: 1.2;
+    min-width: 2rem;
+    font-variation-settings: 'SOFT' 0, 'WONK' 1, 'opsz' 24;
+  }
+  .step__title {
+    font-family: var(--font-body);
+    font-size: var(--step-0);
+    font-weight: 600;
+    letter-spacing: 0;
+    margin: 0 0 var(--sp-1);
+  }
+  .step__text {
+    font-size: var(--step--1);
+    color: var(--ink-soft);
+    line-height: 1.6;
+    margin: 0;
+    max-width: var(--measure);
+  }
+  @media (min-width: 48rem) {
+    .steps {
+      gap: var(--sp-5);
+    }
+  }
+</style>

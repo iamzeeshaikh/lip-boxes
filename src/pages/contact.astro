@@ -1,0 +1,239 @@
+---
+import InfoLayout from '../layouts/InfoLayout.astro';
+import InfoSection from '../components/InfoSection.astro';
+import Icon from '../components/Icon.astro';
+import { site } from '../data/site';
+
+const channels = [
+  {
+    icon: 'mail' as const,
+    label: 'Email',
+    value: site.email,
+    href: `mailto:${site.email}`,
+    note: 'Quotes, artwork files and existing order queries.',
+    show: true,
+  },
+  {
+    icon: 'phone' as const,
+    label: 'Phone',
+    value: site.phoneDisplay ?? site.phone ?? '',
+    href: site.phone ? `tel:${site.phone}` : '',
+    note: 'For discussing a specification directly.',
+    show: Boolean(site.phone),
+  },
+  {
+    icon: 'phone' as const,
+    label: 'WhatsApp',
+    value: site.whatsapp ?? '',
+    href: site.whatsapp ? `https://wa.me/${site.whatsapp.replace(/[^0-9]/g, '')}` : '',
+    note: 'Quick questions and photographs of samples.',
+    show: Boolean(site.whatsapp),
+  },
+].filter((channel) => channel.show);
+---
+
+<InfoLayout
+  path="/contact/"
+  title="Contact Lip Boxes | Custom Packaging Enquiries"
+  description="How to reach Lip Boxes about a quote, an existing order, artwork files or samples, and exactly what to include in each kind of message."
+  h1="Contact Lip Boxes"
+  eyebrow="Contact"
+  lead="One route for quotes and one for everything else. Including the right details in your first message is usually the fastest way to a useful answer."
+  ogTitle="Contact Lip Boxes"
+  ogDescription="Reach us about a quote, an existing order, artwork or samples for custom lip product packaging."
+  pageType="ContactPage"
+  points={[site.supportHours, 'United States market', 'Quote requests answered in order']}
+  ctaHeading="Sending a specification?"
+  ctaBody="The quote form asks for everything we need in order, so nothing has to come back to you as a follow-up question."
+>
+  <InfoSection
+    id="channels"
+    heading="How to reach us"
+    intro="Contact details are listed only where they are confirmed. Anything not shown here has not been published yet rather than being withheld."
+  >
+    <ul class="channels">
+      {
+        channels.map((channel) => (
+          <li class="channel">
+            <span class="channel__icon" aria-hidden="true">
+              <Icon name={channel.icon} size={20} />
+            </span>
+            <div>
+              <h3 class="channel__label">{channel.label}</h3>
+              <p class="channel__value">
+                <a href={channel.href}>{channel.value}</a>
+              </p>
+              <p class="channel__note">{channel.note}</p>
+            </div>
+          </li>
+        ))
+      }
+      <li class="channel">
+        <span class="channel__icon" aria-hidden="true">
+          <Icon name="file-text" size={20} />
+        </span>
+        <div>
+          <h3 class="channel__label">Quote request form</h3>
+          <p class="channel__value">
+            <a href="/request-a-quote/">Request a Quote</a>
+          </p>
+          <p class="channel__note">
+            Asks for dimensions, quantity and artwork status in order, and accepts a
+            file upload.
+          </p>
+        </div>
+      </li>
+    </ul>
+    <p class="note">
+      <strong>Response hours:</strong> {site.supportHours}. Quote requests are
+      answered in the order they arrive.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="what-to-include"
+    heading="What to include, by enquiry type"
+    intro="Each of these avoids a round trip."
+  >
+    <dl class="kv">
+      <div>
+        <dt>A new quote</dt>
+        <dd>
+          Container dimensions or a physical sample, quantity, how the product is
+          sold, artwork status, and any fixed launch date. The
+          <a href="/request-a-quote/">quote form</a> covers all of it.
+        </dd>
+      </div>
+      <div>
+        <dt>An existing order</dt>
+        <dd>
+          Your order reference in the subject line, plus what you need — a status
+          update, a delivery change or a query on a proof.
+        </dd>
+      </div>
+      <div>
+        <dt>Artwork files</dt>
+        <dd>
+          Attach files up to {site.uploadLimitMb} MB to the form, or send a
+          download link for anything larger. Include the die line reference and a
+          revision number in the filename.
+        </dd>
+      </div>
+      <div>
+        <dt>Samples or swatches</dt>
+        <dd>
+          Say which question you need answered — fit, feel, or colour — because
+          each needs a different <a href="/sample-kit/">type of sample</a>.
+        </dd>
+      </div>
+      <div>
+        <dt>A delivery problem</dt>
+        <dd>
+          Photographs of the packaging as received, the delivery reference, and
+          anything noted on the paperwork at the time.
+        </dd>
+      </div>
+      <div>
+        <dt>A bulk or private label programme</dt>
+        <dd>
+          A SKU list with quantities and launch dates, ideally as a spreadsheet.
+          Detail on how programmes are structured is
+          <a href="/custom-lip-care-packaging/">set out here</a>.
+        </dd>
+      </div>
+    </dl>
+  </InfoSection>
+
+  <InfoSection
+    id="what-we-cannot-help-with"
+    heading="Things we cannot help with"
+    intro="So you can find the right source rather than waiting on a reply from us."
+  >
+    <ul class="bullets">
+      <li>
+        <strong>Regulatory advice.</strong> We print the file you approve.
+        Ingredient declarations, SPF drug facts panels and product claims need a
+        regulatory reviewer, not a printer.
+      </li>
+      <li>
+        <strong>Formula and filling.</strong> We supply packaging components, not
+        contract manufacturing or filling services.
+      </li>
+      <li>
+        <strong>Stock boxes for immediate dispatch.</strong> Nothing is held in
+        stock, because everything is made to a die line drawn for a specific
+        container.
+      </li>
+      <li>
+        <strong>Packaging outside lip products.</strong> A supplier working in your
+        category will serve you considerably better than we would.
+      </li>
+    </ul>
+  </InfoSection>
+
+  <InfoSection
+    id="business-details"
+    heading="Business details"
+    intro="Company registration details, a postal address and a phone number will be published here once they are confirmed for this site."
+  >
+    <p class="measure">
+      We would rather leave those fields empty than show an address or a phone
+      number that has not been verified. Until they are confirmed, email and the
+      quote form are the routes that reach us reliably, and both are monitored
+      during the response hours above.
+    </p>
+    <p class="measure">
+      How we handle the information you send, and how long it is kept, is set out
+      in the <a href="/privacy-policy/">privacy policy</a>.
+    </p>
+  </InfoSection>
+</InfoLayout>
+
+<style>
+  .channels {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--sp-4);
+    grid-template-columns: repeat(auto-fit, minmax(min(17rem, 100%), 1fr));
+  }
+  .channel {
+    display: flex;
+    gap: var(--sp-3);
+    padding: var(--sp-4);
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+  }
+  .channel__icon {
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: var(--radius-sm);
+    background: var(--paper-blush);
+    color: var(--plum);
+  }
+  .channel__label {
+    font-family: var(--font-body);
+    font-size: var(--step--1);
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin: 0 0 var(--sp-1);
+  }
+  .channel__value {
+    font-weight: 600;
+    margin: 0 0 var(--sp-2);
+    word-break: break-word;
+  }
+  .channel__note {
+    font-size: var(--step--1);
+    color: var(--ink-soft);
+    line-height: 1.55;
+    margin: 0;
+  }
+</style>

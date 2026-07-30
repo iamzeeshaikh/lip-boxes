@@ -1,0 +1,75 @@
+/**
+ * Central configuration for every business detail that appears on the site.
+ *
+ * Anything the owner still has to supply is set to `null` here rather than
+ * invented. Components check for `null` and hide the related UI, so the site
+ * never publishes a phone number, address or claim that has not been confirmed.
+ */
+
+export interface ContactChannel {
+  /** E.164 or display value. `null` hides the channel sitewide. */
+  value: string | null;
+  label: string;
+}
+
+export const site = {
+  name: 'Lip Boxes',
+  legalName: 'Lip Boxes',
+  url: 'https://lipboxes.com',
+  locale: 'en-US',
+  lang: 'en',
+  country: 'US',
+  currency: 'USD',
+
+  tagline: 'Custom lip product packaging, made to order',
+  shortDescription:
+    'Custom printed boxes, cartons, paper tubes and labels for lip balm, lipstick, lip gloss and lip care brands across the United States.',
+
+  /** Visible starting unit price used in copy and Offer schema. */
+  startingPrice: '0.30',
+  startingPriceStatement:
+    'Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity.',
+
+  /* ---------------------------------------------------------------------- *
+   * Contact details — supply real values before launch.                     *
+   * A `null` value removes the channel from the header, footer and schema.  *
+   * ---------------------------------------------------------------------- */
+  email: 'info@lipboxes.com',
+  phone: null as string | null,
+  phoneDisplay: null as string | null,
+  whatsapp: null as string | null,
+  /** Postal address. Leave `null` until a real address is confirmed. */
+  address: null as null | {
+    street: string;
+    city: string;
+    region: string;
+    postalCode: string;
+    country: string;
+  },
+
+  /** Public social profiles. Only non-null entries reach `sameAs`. */
+  social: {
+    instagram: null as string | null,
+    facebook: null as string | null,
+    linkedin: null as string | null,
+    pinterest: null as string | null,
+  },
+
+  /** Business hours shown on /contact/. Kept generic until confirmed. */
+  supportHours: 'Monday to Friday, 9:00 AM to 6:00 PM Eastern Time',
+
+  /** Maximum accepted artwork upload size, in megabytes. */
+  uploadLimitMb: 10,
+} as const;
+
+export const sameAs = Object.values(site.social).filter(
+  (v): v is string => typeof v === 'string' && v.length > 0,
+);
+
+/** Absolute, trailing-slash URL for any internal path. */
+export function abs(path: string): string {
+  if (/^https?:\/\//.test(path)) return path;
+  let p = path.startsWith('/') ? path : `/${path}`;
+  if (!p.endsWith('/') && !/\.[a-z0-9]+$/i.test(p)) p += '/';
+  return `${site.url}${p}`;
+}

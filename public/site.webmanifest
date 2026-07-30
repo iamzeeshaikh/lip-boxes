@@ -1,0 +1,17 @@
+{
+  "name": "Lip Boxes",
+  "short_name": "Lip Boxes",
+  "description": "Custom printed packaging for lip balm, lipstick, lip gloss and lip care brands.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "background_color": "#fdfaf7",
+  "theme_color": "#5c1f3c",
+  "lang": "en-US",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

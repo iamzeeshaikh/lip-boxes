@@ -1,0 +1,210 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import QuoteCta from '../../components/QuoteCta.astro';
+import { getImage } from 'astro:assets';
+import { indexableProducts, productGroups, productsInGroup } from '../../data/products';
+import { productImage } from '../../lib/images';
+import { site } from '../../data/site';
+import {
+  graph,
+  organizationSchema,
+  websiteSchema,
+  webPageSchema,
+  breadcrumbSchema,
+  type Crumb,
+} from '../../lib/schema';
+import { abs } from '../../data/site';
+
+const path = '/products/';
+const crumbs: Crumb[] = [{ name: 'Home', path: '/' }, { name: 'Products' }];
+
+const ogAsset = await getImage({
+  src: productImage('custom-lip-care-packaging', 'custom-lip-care-packaging-carton-range.png'),
+  width: 1200,
+  height: 850,
+  format: 'png',
+});
+
+const itemList = {
+  '@type': 'ItemList',
+  '@id': `${abs(path)}#products`,
+  name: 'Lip Boxes product directory',
+  numberOfItems: indexableProducts.length,
+  itemListElement: indexableProducts.map((product, i) => ({
+    '@type': 'ListItem',
+    position: i + 1,
+    url: abs(`/${product.slug}/`),
+    name: product.name,
+  })),
+};
+
+const schema = graph(
+  organizationSchema(),
+  websiteSchema(),
+  webPageSchema({
+    path,
+    name: 'Custom Lip Packaging Products',
+    description:
+      'Every packaging format Lip Boxes produces for lip balm, lipstick, lip gloss and lip care brands.',
+    type: 'CollectionPage',
+  }),
+  breadcrumbSchema(crumbs),
+  itemList,
+);
+
+let cardIndex = 0;
+---
+
+<BaseLayout
+  title="All Products | Custom Lip Packaging | Lip Boxes"
+  description="Every lip packaging format we make: cartons, paper tubes, labels, hanging packs, rigid boxes and bulk programmes."
+  path={path}
+  ogTitle="Every Lip Packaging Format We Produce"
+  ogDescription="Eleven made-to-order formats for lip balm, lipstick, lip gloss and lip care, each quoted to your dimensions."
+  ogImage={ogAsset.src}
+  ogImageAlt="A range of printed lip care cartons in pink and nude shades"
+  schema={[schema]}
+>
+  <PageHero
+    eyebrow="Product directory"
+    h1="Custom Lip Packaging Products"
+    lead="Eleven made-to-order formats, grouped by the product they hold. Every one is cut to your dimensions, printed to your artwork and quoted rather than sold from a price list."
+    crumbs={crumbs}
+    points={[
+      `${indexableProducts.length} products`,
+      'All made to order',
+      `From $${site.startingPrice} per piece at volume`,
+    ]}
+  />
+
+  <div class="section">
+    <div class="wrap">
+      <p class="measure directory__intro">
+        Groups below are for navigation only — each product has its own page and
+        there are no category URLs to work through. If you are packaging a whole
+        range rather than one item, the bulk and private label route is usually
+        the cheaper way to buy.
+      </p>
+
+      {
+        productGroups.map((group) => {
+          const items = productsInGroup(group.name);
+          if (items.length === 0) return null;
+          return (
+            <section class="group" aria-labelledby={`group-${group.name.replace(/\s+/g, '-').toLowerCase()}`}>
+              <div class="group__head">
+                <h2 id={`group-${group.name.replace(/\s+/g, '-').toLowerCase()}`}>
+                  {group.name} packaging
+                </h2>
+                <p class="group__blurb">{group.blurb}</p>
+              </div>
+              <div class="grid grid--products">
+                {items.map((product) => {
+                  const eager = cardIndex < 4;
+                  cardIndex += 1;
+                  return <ProductCard product={product} eager={eager} />;
+                })}
+              </div>
+            </section>
+          );
+        })
+      }
+
+      <section class="group" aria-labelledby="guides-heading">
+        <div class="group__head">
+          <h2 id="guides-heading">Guides and specification references</h2>
+          <p class="group__blurb">
+            Pages that compare options across every product rather than covering
+            a single format.
+          </p>
+        </div>
+        <ul class="ref-list">
+          <li>
+            <a href="/lip-balm-packaging/">Lip balm packaging guide</a>
+            <span>Every balm format compared: cartons, tubes, labels and hanging packs.</span>
+          </li>
+          <li>
+            <a href="/custom-packaging/">Custom packaging overview</a>
+            <span>How a bespoke packaging project runs from brief to delivery.</span>
+          </li>
+          <li>
+            <a href="/materials/">Materials</a>
+            <span>Board grades and weights, and what each does to print and strength.</span>
+          </li>
+          <li>
+            <a href="/printing-options/">Printing options</a>
+            <span>Digital, litho, flexo and screen, and where each becomes economical.</span>
+          </li>
+          <li>
+            <a href="/finishes/">Finishes</a>
+            <span>Lamination, foil, spot UV and emboss, with their cost and disposal trade-offs.</span>
+          </li>
+          <li>
+            <a href="/box-styles/">Box styles</a>
+            <span>Closures, bases and constructions, and which pack each one suits.</span>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <QuoteCta
+    heading="Not sure which format fits your product?"
+    body="Describe the container you fill and how it is sold. We will tell you which formats work, which do not, and what each would cost at your quantity."
+  />
+</BaseLayout>
+
+<style>
+  .directory__intro {
+    color: var(--ink-soft);
+    margin-bottom: var(--sp-7);
+  }
+  .group + .group {
+    margin-top: var(--sp-8);
+    padding-top: var(--sp-7);
+    border-top: 1px solid var(--line);
+  }
+  .group__head {
+    margin-bottom: var(--sp-5);
+  }
+  .group__head h2 {
+    font-size: var(--step-2);
+    margin-bottom: var(--sp-2);
+  }
+  .group__blurb {
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+    max-width: 52ch;
+    margin: 0;
+  }
+  .ref-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--sp-4);
+  }
+  @media (min-width: 48rem) {
+    .ref-list {
+      grid-template-columns: 1fr 1fr;
+      gap: var(--sp-4) var(--sp-6);
+    }
+  }
+  .ref-list li {
+    padding-top: var(--sp-3);
+    border-top: 1px solid var(--line);
+  }
+  .ref-list a {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  .ref-list span {
+    display: block;
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+    line-height: 1.55;
+  }
+</style>

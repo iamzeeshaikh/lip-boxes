@@ -1,0 +1,478 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PageHero from '../components/PageHero.astro';
+import Icon from '../components/Icon.astro';
+import { indexableProducts } from '../data/products';
+import { site } from '../data/site';
+import {
+  graph,
+  organizationSchema,
+  websiteSchema,
+  webPageSchema,
+  breadcrumbSchema,
+  type Crumb,
+} from '../lib/schema';
+import '../styles/forms.css';
+
+const path = '/request-a-quote/';
+const crumbs: Crumb[] = [{ name: 'Home', path: '/' }, { name: 'Request a Quote' }];
+
+const schema = graph(
+  organizationSchema(),
+  websiteSchema(),
+  webPageSchema({
+    path,
+    name: 'Request a Quote',
+    description:
+      'Send your packaging specification and receive a written quote for custom lip product packaging.',
+  }),
+  breadcrumbSchema(crumbs),
+);
+
+const accept = '.pdf,.ai,.eps,.psd,.svg,.png,.jpg,.jpeg,.doc,.docx';
+---
+
+<BaseLayout
+  title="Request a Quote | Custom Lip Packaging Pricing"
+  description="Send your dimensions, quantity, material and finishing requirements and receive a written quote for custom lip packaging."
+  path={path}
+  ogTitle="Request a Custom Packaging Quote"
+  ogDescription="Give us your specification and get a written price at your quantity and at the next volume break."
+  schema={[schema]}
+>
+  <PageHero
+    eyebrow="Quote request"
+    h1="Request a Quote"
+    lead="The more of this you can fill in, the closer the first reply is to a final price. Anything you do not know yet can be left blank — we will ask about it rather than guess."
+    crumbs={crumbs}
+    points={['Written quote, not a range', 'Priced at two quantities', 'Artwork upload supported']}
+  />
+
+  <div class="section">
+    <div class="wrap quote-page">
+      <div class="quote-page__form">
+        <form
+          class="qform qform--full"
+          method="post"
+          action="/api/quote/"
+          enctype="multipart/form-data"
+          novalidate
+          data-quote-form
+        >
+          <input type="hidden" name="formType" value="full" />
+          <input type="hidden" name="pageUrl" value={Astro.url.href} data-page-url />
+
+          <!-- Honeypot: hidden from users, checked on the server. -->
+          <div class="qform__trap" aria-hidden="true">
+            <label for="full-company-website">Company website</label>
+            <input type="text" id="full-company-website" name="companyWebsite" tabindex="-1" autocomplete="off" />
+          </div>
+
+          <fieldset class="qform__set">
+            <legend>Your details</legend>
+            <div class="qform__grid">
+              <div class="field">
+                <label for="q-name">Name <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="q-name" name="name" required autocomplete="name" maxlength="120" aria-describedby="q-name-error" />
+                <p class="field__error" id="q-name-error" data-error hidden></p>
+              </div>
+              <div class="field">
+                <label for="q-business">Business name</label>
+                <input type="text" id="q-business" name="businessName" autocomplete="organization" maxlength="160" aria-describedby="q-business-error" />
+                <p class="field__error" id="q-business-error" data-error hidden></p>
+              </div>
+              <div class="field">
+                <label for="q-email">Email <span class="req" aria-hidden="true">*</span></label>
+                <input type="email" id="q-email" name="email" required autocomplete="email" maxlength="180" inputmode="email" aria-describedby="q-email-error" />
+                <p class="field__error" id="q-email-error" data-error hidden></p>
+              </div>
+              <div class="field">
+                <label for="q-phone">Phone <span class="req" aria-hidden="true">*</span></label>
+                <input type="tel" id="q-phone" name="phone" required autocomplete="tel" maxlength="40" inputmode="tel" aria-describedby="q-phone-error" />
+                <p class="field__error" id="q-phone-error" data-error hidden></p>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="qform__set">
+            <legend>The packaging</legend>
+            <p class="fieldset-note">
+              If you are quoting several products, name the main one here and list
+              the rest in the additional details field.
+            </p>
+            <div class="qform__grid">
+              <div class="field">
+                <label for="q-product">Product</label>
+                <select id="q-product" name="product" aria-describedby="q-product-error">
+                  <option value="">Select a product</option>
+                  {indexableProducts.map((product) => (
+                    <option value={product.name}>{product.name}</option>
+                  ))}
+                  <option value="Not sure yet">Not sure yet</option>
+                  <option value="Multiple products">Multiple products</option>
+                </select>
+                <p class="field__error" id="q-product-error" data-error hidden></p>
+              </div>
+              <div class="field">
+                <label for="q-quantity">Quantity</label>
+                <input type="text" id="q-quantity" name="quantity" maxlength="80" aria-describedby="q-quantity-hint q-quantity-error" />
+                <p class="field__hint" id="q-quantity-hint">
+                  Total, and per design if you have shade or scent variants.
+                </p>
+                <p class="field__error" id="q-quantity-error" data-error hidden></p>
+              </div>
+              <div class="field">
+                <label for="q-dimensions">Dimensions</label>
+                <input type="text" id="q-dimensions" name="dimensions" maxlength="160" aria-describedby="q-dimensions-hint q-dimensions-error" />
+                <p class="field__hint" id="q-dimensions-hint">
+                  Length &times; width &times; depth, or the container size if you do
+                  not know the box yet.
+                </p>
+                <p class="field__error" id="q-dimensions-error" data-error hidden></p>
+              </div>
+              <div class="field">
+                <label for="q-unit">Unit</label>
+                <select id="q-unit" name="dimensionUnit">
+                  <option value="">Select a unit</option>
+                  <option value="Inches">Inches</option>
+                  <option value="Millimetres">Millimetres</option>
+                  <option value="Centimetres">Centimetres</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="qform__set">
+            <legend>Specification</legend>
+            <p class="fieldset-note">
+              Leave anything blank that you would rather we recommended. Our
+              <a href="/materials/">materials</a>,
+              <a href="/printing-options/">printing</a> and
+              <a href="/finishes/">finishes</a> pages cover the options if you want
+              to decide first.
+            </p>
+            <div class="qform__grid">
+              <div class="field">
+                <label for="q-material">Material preference</label>
+                <input type="text" id="q-material" name="material" maxlength="200" aria-describedby="q-material-hint" />
+                <p class="field__hint" id="q-material-hint">
+                  For example: kraft, coated white board, 24pt, recycled content.
+                </p>
+              </div>
+              <div class="field">
+                <label for="q-printing">Printing requirements</label>
+                <input type="text" id="q-printing" name="printing" maxlength="200" aria-describedby="q-printing-hint" />
+                <p class="field__hint" id="q-printing-hint">
+                  Full colour, spot Pantone references, number of designs.
+                </p>
+              </div>
+              <div class="field">
+                <label for="q-finishing">Finishing requirements</label>
+                <input type="text" id="q-finishing" name="finishing" maxlength="200" aria-describedby="q-finishing-hint" />
+                <p class="field__hint" id="q-finishing-hint">
+                  Matte or gloss laminate, soft-touch, foil, spot UV, emboss,
+                  window.
+                </p>
+              </div>
+              <div class="field">
+                <label for="q-artwork-status">Artwork status</label>
+                <select id="q-artwork-status" name="artworkStatus">
+                  <option value="">Select a status</option>
+                  <option value="Print-ready files available">Print-ready files available</option>
+                  <option value="Design in progress">Design in progress</option>
+                  <option value="Need a die line to design onto">Need a die line to design onto</option>
+                  <option value="Need design help">Need design help</option>
+                  <option value="Reordering an existing design">Reordering an existing design</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="qform__set">
+            <legend>Delivery</legend>
+            <div class="qform__grid">
+              <div class="field">
+                <label for="q-date">Required delivery date</label>
+                <input type="date" id="q-date" name="deliveryDate" aria-describedby="q-date-hint" />
+                <p class="field__hint" id="q-date-hint">
+                  If a launch or planogram reset is fixed, tell us now rather than
+                  later.
+                </p>
+              </div>
+              <div class="field">
+                <label for="q-destination">Shipping destination</label>
+                <input type="text" id="q-destination" name="shippingDestination" maxlength="160" aria-describedby="q-destination-hint" />
+                <p class="field__hint" id="q-destination-hint">
+                  City and state, or the co-packer's location.
+                </p>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="qform__set">
+            <legend>Anything else</legend>
+            <div class="qform__grid">
+              <div class="field field--full">
+                <label for="q-message">Additional details <span class="req" aria-hidden="true">*</span></label>
+                <textarea id="q-message" name="message" rows="6" required maxlength="4000" aria-describedby="q-message-hint q-message-error"></textarea>
+                <p class="field__hint" id="q-message-hint">
+                  How the product is sold, other products in the range, samples you
+                  need, or anything you are unsure about.
+                </p>
+                <p class="field__error" id="q-message-error" data-error hidden></p>
+              </div>
+
+              <div class="field field--full">
+                <label for="q-file">Artwork or reference file <span class="field__optional">(optional)</span></label>
+                <input type="file" id="q-file" name="artwork" accept={accept} aria-describedby="q-file-hint q-file-error" />
+                <p class="field__hint" id="q-file-hint">
+                  PDF, AI, EPS, PSD, SVG, PNG, JPG, DOC or DOCX, up to
+                  {' '}{site.uploadLimitMb} MB. Send a download link in the message
+                  for anything larger.
+                </p>
+                <p class="field__error" id="q-file-error" data-error hidden></p>
+              </div>
+
+              <div class="field field--full">
+                <label class="consent">
+                  <input type="checkbox" name="consent" value="yes" required aria-describedby="q-consent-error" />
+                  <span>
+                    I agree that Lip Boxes may use these details to prepare and send
+                    a quote, as described in the
+                    <a href="/privacy-policy/">privacy policy</a>.
+                  </span>
+                </label>
+                <p class="field__error" id="q-consent-error" data-error hidden></p>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="qform__foot">
+            <button type="submit" class="btn btn--primary" data-submit>
+              <span data-submit-label>Send quote request</span>
+              <Icon name="arrow-right" size={18} />
+            </button>
+            <p class="qform__alt">
+              Or email <a href={`mailto:${site.email}`}>{site.email}</a>.
+            </p>
+          </div>
+
+          <p class="qform__status" role="status" aria-live="polite" data-status hidden></p>
+        </form>
+      </div>
+
+      <aside class="quote-page__side" aria-labelledby="side-heading">
+        <h2 class="side-heading" id="side-heading">What happens next</h2>
+        <ol class="side-steps">
+          <li>
+            <strong>We read the specification</strong> and come back with a written
+            price at your quantity and at the next volume break.
+          </li>
+          <li>
+            <strong>If something is missing</strong> we ask about it rather than
+            assuming a value that would make the quote misleading.
+          </li>
+          <li>
+            <strong>Once you confirm</strong>, a die line is drawn and a structural
+            sample can be made before anything prints.
+          </li>
+        </ol>
+
+        <div class="side-price">
+          <h3>About pricing</h3>
+          <p>{site.startingPriceStatement}</p>
+          <p class="side-price__note">
+            That figure is the entry point for a simple specification at high
+            volume. Your quote will state the actual unit price for your job.
+          </p>
+        </div>
+
+        <div class="side-block">
+          <h3>Not sure what to put?</h3>
+          <p>
+            Leave a field blank rather than guessing. If you would rather decide the
+            specification first, the
+            <a href="/how-to-order/">ordering guide</a> sets out what each decision
+            affects.
+          </p>
+        </div>
+
+        <div class="side-block">
+          <h3>Your file</h3>
+          <p>
+            Uploads are validated on the server for type and size before anything is
+            attached to an email. Files are not published anywhere and are used only
+            to prepare your quote.
+          </p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .quote-page {
+    display: grid;
+    gap: var(--sp-7);
+    align-items: start;
+  }
+  @media (min-width: 64rem) {
+    .quote-page {
+      grid-template-columns: 1fr minmax(16rem, 20rem);
+      gap: var(--sp-8);
+    }
+    .quote-page__side {
+      position: sticky;
+      top: 6rem;
+    }
+  }
+
+  .qform--full {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: var(--sp-5);
+  }
+  @media (min-width: 40rem) {
+    .qform--full {
+      padding: var(--sp-6);
+    }
+  }
+  .qform__trap {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .qform__set + .qform__set {
+    margin-top: var(--sp-6);
+  }
+  .qform__set + .qform__set::before {
+    content: '';
+    display: block;
+    height: 1px;
+    background: var(--line);
+    margin-bottom: var(--sp-6);
+  }
+  .qform__grid {
+    display: grid;
+    gap: var(--sp-4);
+  }
+  @media (min-width: 34rem) {
+    .qform__grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    .field--full {
+      grid-column: 1 / -1;
+    }
+  }
+  .qform__foot {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--sp-3) var(--sp-5);
+    margin-top: var(--sp-6);
+    padding-top: var(--sp-5);
+    border-top: 1px solid var(--line);
+  }
+  .qform__alt {
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+    margin: 0;
+  }
+  .qform__status {
+    margin: var(--sp-4) 0 0;
+    padding: var(--sp-3) var(--sp-4);
+    border-radius: var(--radius);
+    font-size: var(--step--1);
+    border: 1px solid var(--line);
+    background: var(--paper-warm);
+  }
+  .qform__status[data-tone='success'] {
+    border-color: #7a9a6e;
+    background: #f0f6ec;
+    color: #2f4a26;
+  }
+  .qform__status[data-tone='error'] {
+    border-color: #b4636a;
+    background: #fbeef0;
+    color: #7a2731;
+  }
+
+  /* --- Sidebar --- */
+  .side-heading {
+    font-size: var(--step-1);
+    margin-bottom: var(--sp-4);
+  }
+  .side-steps {
+    margin: 0 0 var(--sp-6);
+    padding-left: 1.25rem;
+    font-size: var(--step--1);
+    color: var(--ink-soft);
+  }
+  .side-steps li {
+    margin-bottom: var(--sp-3);
+    line-height: 1.6;
+  }
+  .side-steps strong {
+    color: var(--ink);
+  }
+  .side-price,
+  .side-block {
+    padding: var(--sp-4);
+    border-radius: var(--radius-sm);
+    font-size: var(--step--1);
+    margin-bottom: var(--sp-4);
+  }
+  .side-price {
+    background: var(--paper-warm);
+    border-left: 3px solid var(--gold);
+  }
+  .side-block {
+    background: var(--white);
+    border: 1px solid var(--line);
+  }
+  .side-price h3,
+  .side-block h3 {
+    font-family: var(--font-body);
+    font-size: var(--step-0);
+    font-weight: 600;
+    letter-spacing: 0;
+    margin-bottom: var(--sp-2);
+  }
+  .side-price p,
+  .side-block p {
+    color: var(--ink-soft);
+    line-height: 1.6;
+    margin-bottom: var(--sp-2);
+  }
+  .side-price p:last-child,
+  .side-block p:last-child {
+    margin-bottom: 0;
+  }
+  .side-price__note {
+    color: var(--ink-muted) !important;
+  }
+</style>
+
+<script>
+  import { initQuoteForms } from '../scripts/quote-form';
+  initQuoteForms();
+
+  /*
+   * Product pages link here with ?product=<name>. Pre-select that option if it
+   * matches one of the rendered choices. The value is only ever compared against
+   * the existing option list, never inserted into the DOM, and the canonical URL
+   * on this page has no query string.
+   */
+  const requested = new URLSearchParams(window.location.search).get('product');
+  if (requested) {
+    const select = document.querySelector<HTMLSelectElement>('#q-product');
+    const match = Array.from(select?.options ?? []).find(
+      (option) => option.value === requested,
+    );
+    if (select && match) select.value = match.value;
+  }
+</script>

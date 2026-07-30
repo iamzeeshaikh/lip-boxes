@@ -1,0 +1,489 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { getImage } from 'astro:assets';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import ProductGallery from '../components/ProductGallery.astro';
+import ShortQuoteForm from '../components/ShortQuoteForm.astro';
+import ContentBlocks from '../components/ContentBlocks.astro';
+import FaqList from '../components/FaqList.astro';
+import ProductCard from '../components/ProductCard.astro';
+import QuoteCta from '../components/QuoteCta.astro';
+import Icon from '../components/Icon.astro';
+import { products, getProduct, hasReviews } from '../data/products';
+import { productImage } from '../lib/images';
+import { site } from '../data/site';
+import {
+  graph,
+  organizationSchema,
+  websiteSchema,
+  breadcrumbSchema,
+  webPageSchema,
+  productSchema,
+  faqSchema,
+  type Crumb,
+} from '../lib/schema';
+import '../styles/forms.css';
+
+export const getStaticPaths: GetStaticPaths = () =>
+  products.map((product) => ({ params: { product: product.slug } }));
+
+const { product: slug } = Astro.params;
+const product = getProduct(slug!);
+if (!product) throw new Error(`Unknown product slug: ${slug}`);
+
+const path = `/${product.slug}/`;
+
+/* Social image and LCP preload both point at the first gallery photograph. */
+const ogIndex = product.ogImageIndex ?? 0;
+const ogSource = productImage(product.slug, product.images[ogIndex].file);
+const ogAsset = await getImage({
+  src: ogSource,
+  width: 1200,
+  height: 1200,
+  format: 'png',
+});
+/* Mirrors the <Picture> candidates rendered by ProductGallery. */
+const lcpAsset = await getImage({
+  src: productImage(product.slug, product.images[0].file),
+  widths: [420, 620, 840],
+  format: 'avif',
+  width: 840,
+  height: 840,
+});
+
+const galleryUrls = await Promise.all(
+  product.images.map(async (image) => {
+    const generated = await getImage({
+      src: productImage(product.slug, image.file),
+      width: 1080,
+      height: 1080,
+      format: 'png',
+    });
+    return generated.src;
+  }),
+);
+
+const crumbs: Crumb[] = [
+  { name: 'Home', path: '/' },
+  { name: 'Products', path: '/products/' },
+  { name: product.name },
+];
+
+const related = product.related
+  .map((relatedSlug) => getProduct(relatedSlug))
+  .filter((p): p is NonNullable<typeof p> => Boolean(p));
+
+const contents = product.blocks.map((block) => ({
+  id: block.id,
+  label: block.navLabel ?? block.heading,
+}));
+
+const schema = graph(
+  organizationSchema(),
+  websiteSchema(),
+  webPageSchema({
+    path,
+    name: product.h1,
+    description: product.metaDescription,
+    primaryImage: galleryUrls[ogIndex],
+  }),
+  breadcrumbSchema(crumbs),
+  productSchema(product, galleryUrls),
+  faqSchema(product.faqs, path),
+);
+
+const showReviews = hasReviews(product.reviews);
+---
+
+<BaseLayout
+  title={product.seoTitle}
+  description={product.metaDescription}
+  path={path}
+  ogTitle={product.ogTitle}
+  ogDescription={product.ogDescription}
+  ogImage={ogAsset.src}
+  ogImageAlt={product.images[ogIndex].alt}
+  ogType="product"
+  preloadImage={lcpAsset.src}
+  preloadImageSrcset={lcpAsset.srcSet.attribute}
+  preloadImageSizes="(min-width: 62rem) 32rem, (min-width: 40rem) 60vw, 90vw"
+  preloadImageType="image/avif"
+  schema={[schema]}
+>
+  <div class="p-top">
+    <div class="wrap">
+      <Breadcrumbs crumbs={crumbs} tone="warm" />
+
+      <div class="p-hero">
+        <div class="p-hero__gallery">
+          <ProductGallery
+            slug={product.slug}
+            images={product.images}
+            productName={product.name}
+          />
+        </div>
+
+        <div class="p-hero__intro">
+          <p class="p-hero__group">{product.group} packaging</p>
+          <h1>{product.h1}</h1>
+          <p class="lead p-hero__lead">{product.valueProp}</p>
+
+          <ul class="p-hero__highlights">
+            {
+              product.highlights.map((highlight) => (
+                <li>
+                  <Icon name="check" size={17} class="p-hero__tick" />
+                  <span>{highlight}</span>
+                </li>
+              ))
+            }
+          </ul>
+
+          <div class="price-note">
+            <p class="price-note__line">{site.startingPriceStatement}</p>
+            <p class="price-note__sub">
+              The starting figure applies to qualifying large-volume custom
+              orders. It is not a fixed price for every quantity, and your
+              written quote will state the actual unit price for your job.
+            </p>
+          </div>
+
+          <div class="btn-row p-hero__actions">
+            <a href="#quick-quote" class="btn btn--primary">
+              Request a Quote
+              <Icon name="arrow-right" size={18} />
+            </a>
+            <a href="/sample-kit/" class="btn btn--secondary">Request a sample</a>
+          </div>
+
+          <p class="p-hero__contact">
+            <a href={`mailto:${site.email}`}>{site.email}</a>
+            {site.phone && <> &middot; <a href={`tel:${site.phone}`}>{site.phoneDisplay ?? site.phone}</a></>}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap p-body">
+    <aside class="p-contents" aria-labelledby="contents-heading">
+      <h2 class="p-contents__heading" id="contents-heading">On this page</h2>
+      <nav aria-labelledby="contents-heading">
+        <ul class="p-contents__list">
+          {contents.map((item) => <li><a href={`#${item.id}`}>{item.label}</a></li>)}
+          <li><a href="#specification">Specification</a></li>
+          <li><a href="#faqs">Questions</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <div class="p-main">
+      <div class="p-quote">
+        <ShortQuoteForm product={product.name} />
+      </div>
+
+      <ContentBlocks blocks={product.blocks} slug={product.slug} />
+
+      <section class="block" id="specification" aria-labelledby="specification-heading">
+        <h2 class="block__h" id="specification-heading">
+          {product.name} specification
+        </h2>
+        <p class="block__intro measure">
+          A summary of what can be specified on this product. Anything marked as
+          quoted or made to order is confirmed in writing before production.
+        </p>
+        <div class="table-scroll">
+          <table>
+            <caption>Specification summary for {product.name.toLowerCase()}.</caption>
+            <tbody>
+              {
+                product.specs.map((spec) => (
+                  <tr>
+                    <th scope="row">{spec.label}</th>
+                    <td>{spec.value}</td>
+                  </tr>
+                ))
+              }
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      {
+        showReviews && (
+          <section class="block" id="reviews" aria-labelledby="reviews-heading">
+            <h2 class="block__h" id="reviews-heading">Customer reviews</h2>
+            <p class="reviews__summary">
+              <strong>{product.reviews!.ratingValue}</strong> out of
+              {' '}{product.reviews!.bestRating ?? 5} from
+              {' '}{product.reviews!.reviewCount} reviews
+            </p>
+            <ul class="reviews">
+              {
+                product.reviews!.reviews.map((review) => (
+                  <li class="review">
+                    <p class="review__rating">
+                      {review.ratingValue} / {product.reviews!.bestRating ?? 5}
+                    </p>
+                    <blockquote class="review__body"><p>{review.body}</p></blockquote>
+                    <p class="review__meta">
+                      {review.author} &middot;{' '}
+                      <time datetime={review.datePublished}>
+                        {new Date(review.datePublished).toLocaleDateString('en-US', {
+                          year: 'numeric',
+                          month: 'long',
+                        })}
+                      </time>
+                    </p>
+                  </li>
+                ))
+              }
+            </ul>
+          </section>
+        )
+      }
+
+      <section class="block" id="faqs" aria-labelledby="faqs-heading">
+        <h2 class="block__h" id="faqs-heading">
+          {product.name}: common questions
+        </h2>
+        <p class="block__intro measure">
+          Answers to the questions we are asked most often about this product.
+          If yours is not here, put it in the enquiry form and we will answer it
+          directly.
+        </p>
+        <FaqList faqs={product.faqs} level={3} />
+      </section>
+    </div>
+  </div>
+
+  {
+    related.length > 0 && (
+      <section class="section section--warm" aria-labelledby="related-heading">
+        <div class="wrap">
+          <span class="eyebrow">Related packaging</span>
+          <h2 id="related-heading">Other formats brands pair with this</h2>
+          <p class="measure text-muted related__intro">
+            Each of these is quoted from the same enquiry, so a range can be
+            produced on one specification and one schedule.
+          </p>
+          <div class="grid grid--products">
+            {related.map((item) => <ProductCard product={item} compact />)}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  <QuoteCta
+    product={product.name}
+    heading={`Get a written price for ${product.name.toLowerCase()}`}
+    body="Send your dimensions, quantity and artwork status. You will get a written quote with the price at your quantity and at the next volume break, plus anything we need clarified."
+  />
+</BaseLayout>
+
+<style>
+  .p-top {
+    background:
+      radial-gradient(
+        110% 90% at 92% 0%,
+        color-mix(in srgb, var(--rose-soft) 55%, transparent) 0%,
+        transparent 60%
+      ),
+      var(--paper-warm);
+    border-bottom: 1px solid var(--line);
+    padding-block: var(--sp-5) var(--sp-7);
+  }
+
+  .p-hero {
+    display: grid;
+    gap: var(--sp-6);
+    margin-top: var(--sp-5);
+  }
+  @media (min-width: 62rem) {
+    .p-hero {
+      grid-template-columns: minmax(20rem, 32rem) 1fr;
+      gap: var(--sp-8);
+      align-items: start;
+    }
+  }
+
+  .p-hero__group {
+    font-size: var(--step--1);
+    font-weight: 600;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: var(--rose);
+    margin-bottom: var(--sp-3);
+  }
+  .p-hero h1 {
+    font-size: var(--step-4);
+    margin-bottom: var(--sp-4);
+  }
+  .p-hero__lead {
+    margin-bottom: var(--sp-5);
+    max-width: 44ch;
+  }
+  .p-hero__highlights {
+    list-style: none;
+    margin: 0 0 var(--sp-5);
+    padding: 0;
+    display: grid;
+    gap: var(--sp-2);
+  }
+  .p-hero__highlights li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    font-size: var(--step--1);
+    line-height: 1.55;
+    color: var(--ink-soft);
+  }
+  /* :global — the class lands on an <Icon> component's <svg>. */
+  :global(.p-hero__tick) {
+    flex-shrink: 0;
+    margin-top: 0.2em;
+    color: var(--rose);
+  }
+
+  .price-note {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--gold);
+    border-radius: var(--radius-sm);
+    padding: var(--sp-4);
+    margin-bottom: var(--sp-5);
+  }
+  .price-note__line {
+    font-weight: 600;
+    margin: 0 0 var(--sp-2);
+    line-height: 1.5;
+  }
+  .price-note__sub {
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+    margin: 0;
+    line-height: 1.55;
+  }
+
+  .p-hero__actions {
+    margin-bottom: var(--sp-4);
+  }
+  .p-hero__contact {
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+    margin: 0;
+  }
+
+  /* --- Body --- */
+  .p-body {
+    display: grid;
+    gap: var(--sp-6);
+    padding-block: var(--sp-7);
+  }
+  @media (min-width: 68rem) {
+    .p-body {
+      grid-template-columns: 13rem 1fr;
+      gap: var(--sp-8);
+      align-items: start;
+    }
+  }
+
+  .p-contents {
+    display: none;
+  }
+  @media (min-width: 68rem) {
+    .p-contents {
+      display: block;
+      position: sticky;
+      top: 5.5rem;
+    }
+  }
+  .p-contents__heading {
+    font-family: var(--font-body);
+    font-size: var(--step--1);
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: var(--sp-3);
+  }
+  .p-contents__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1px;
+    border-left: 1px solid var(--line);
+  }
+  .p-contents__list a {
+    display: block;
+    padding: 0.35rem 0 0.35rem 0.85rem;
+    font-size: var(--step--1);
+    color: var(--ink-soft);
+    text-decoration: none;
+    border-left: 2px solid transparent;
+    margin-left: -1px;
+    line-height: 1.45;
+  }
+  .p-contents__list a:hover {
+    color: var(--plum);
+    border-left-color: var(--rose);
+  }
+
+  .p-quote {
+    margin-bottom: var(--sp-7);
+    scroll-margin-top: 6rem;
+  }
+
+  .p-main .block {
+    padding-block: var(--sp-6);
+    border-top: 1px solid var(--line);
+    scroll-margin-top: 6rem;
+  }
+  .block__h {
+    font-size: var(--step-2);
+    margin-bottom: var(--sp-4);
+  }
+  .block__intro {
+    color: var(--ink-soft);
+    margin-bottom: var(--sp-5);
+  }
+
+  /* --- Reviews (rendered only when real review data exists) --- */
+  .reviews__summary {
+    font-size: var(--step-1);
+    margin-bottom: var(--sp-4);
+  }
+  .reviews {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--sp-4);
+  }
+  .review {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: var(--sp-4);
+  }
+  .review__rating {
+    font-weight: 600;
+    color: var(--plum);
+    margin-bottom: var(--sp-2);
+  }
+  .review__body {
+    margin: 0 0 var(--sp-2);
+  }
+  .review__meta {
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+    margin: 0;
+  }
+
+  .related__intro {
+    margin-bottom: var(--sp-5);
+  }
+</style>

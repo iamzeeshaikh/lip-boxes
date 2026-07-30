@@ -1,0 +1,273 @@
+---
+import InfoLayout from '../layouts/InfoLayout.astro';
+import InfoSection from '../components/InfoSection.astro';
+import { site } from '../data/site';
+
+/*
+ * Written to describe what this site actually does. It claims no certifications
+ * and names no third-party processors that are not in use. Company registration
+ * details and a postal address are marked as pending rather than invented.
+ */
+const effective = 'July 30, 2026';
+---
+
+<InfoLayout
+  path="/privacy-policy/"
+  title="Privacy Policy | How We Handle Your Data | Lip Boxes"
+  description="What information Lip Boxes collects through its quote forms, how it is used, how long it is kept and your choices."
+  h1="Privacy Policy"
+  eyebrow="Legal"
+  lead="This policy describes what this website collects, why, and what happens to it. It reflects how the site is actually built rather than covering features we do not have."
+  narrow
+  points={[`Effective ${effective}`, 'No advertising trackers', 'No data sold']}
+  ctaHeading="Question about your data?"
+  ctaBody="Email us and say what you would like to know, correct or have deleted. We will confirm what we hold and act on it."
+>
+  <InfoSection id="summary" heading="The short version">
+    <ul class="bullets">
+      <li>We collect only what you type into a quote form, plus any file you choose to attach.</li>
+      <li>We use it to reply to your enquiry and prepare a quote. Nothing else.</li>
+      <li>We do not sell or rent your information, and we do not run advertising or analytics trackers on this site.</li>
+      <li>Form submissions are delivered to us by email over an encrypted connection.</li>
+      <li>You can ask us what we hold, ask for a correction, or ask us to delete it.</li>
+    </ul>
+  </InfoSection>
+
+  <InfoSection
+    id="who-we-are"
+    heading="Who is responsible for your information"
+    intro="Lip Boxes operates the website at lipboxes.com and is responsible for the information submitted through it."
+  >
+    <p>
+      Enquiries about this policy go to
+      <a href={`mailto:${site.email}`}>{site.email}</a>. Registered company
+      details and a postal address will be added here once they are confirmed for
+      publication; until then, email is the route that reaches us.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="what-we-collect"
+    heading="What we collect"
+    intro="Two categories, and nothing beyond them."
+  >
+    <h3>Information you give us</h3>
+    <ul class="bullets">
+      <li>
+        <strong>Short product form:</strong> your name, email address, phone
+        number and message, plus the product name and the page URL you submitted
+        from.
+      </li>
+      <li>
+        <strong>Full quote form:</strong> the above, plus business name, quantity,
+        dimensions and unit, material, printing and finishing preferences, artwork
+        status, required delivery date and shipping destination.
+      </li>
+      <li>
+        <strong>An optional file</strong> you attach — artwork, a reference image or
+        a specification document.
+      </li>
+      <li>
+        <strong>A consent record</strong>, since both forms require you to tick a
+        consent box before submitting.
+      </li>
+      <li>
+        <strong>A timestamp</strong> for when the submission was received.
+      </li>
+    </ul>
+
+    <h3>Information collected automatically</h3>
+    <ul class="bullets">
+      <li>
+        Standard server request data handled by our hosting provider, including the
+        IP address that made the request. This is used for delivering the site and
+        for abuse prevention.
+      </li>
+      <li>
+        A short-lived, in-memory count of recent form submissions per IP address,
+        used only to rate-limit the form. It is not stored persistently and is not
+        linked to your enquiry.
+      </li>
+    </ul>
+    <p class="note">
+      <strong>What we do not do:</strong> no advertising pixels, no analytics
+      scripts, no cookies set by this site for tracking, no social media embeds,
+      and no third-party fonts loaded from an external host. Fonts are served from
+      our own domain.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="why" heading="Why we use it"
+    intro="Each purpose is tied to something you asked us to do or to keeping the site working."
+  >
+    <ul class="bullets">
+      <li><strong>To reply to your enquiry</strong> and prepare a written quote.</li>
+      <li><strong>To ask follow-up questions</strong> where a specification is incomplete.</li>
+      <li><strong>To produce your order</strong> if you go ahead, including using your artwork for that purpose.</li>
+      <li><strong>To keep records of what was agreed</strong>, including approved die lines and proofs.</li>
+      <li><strong>To prevent abuse of the form</strong> through rate limiting and spam checks.</li>
+    </ul>
+    <p>
+      We do not use your details for marketing you did not ask for, and we do not
+      add enquiry contacts to a mailing list.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="how-forms-work"
+    heading="How the forms handle your data technically"
+    intro="Being specific here is more useful than a general assurance."
+  >
+    <ul class="bullets">
+      <li>
+        Submissions are sent over HTTPS to a server-side endpoint on our own
+        domain. Nothing is posted to a third-party form service.
+      </li>
+      <li>
+        Every field is validated and sanitised on the server before use, including
+        stripping control characters so nothing can be injected into email headers.
+      </li>
+      <li>
+        Uploaded files are checked server-side for extension, declared type and
+        size before being attached. Files are never written to a publicly
+        accessible location and are never executed.
+      </li>
+      <li>
+        The email is delivered by SMTP over an encrypted connection. Your email
+        address is placed in the Reply-To header so we can answer you directly.
+      </li>
+      <li>
+        Mail credentials are held in server environment variables and never appear
+        in any code sent to your browser.
+      </li>
+    </ul>
+  </InfoSection>
+
+  <InfoSection
+    id="sharing"
+    heading="Who else sees it"
+    intro="A short list, and only where a service is genuinely involved in delivering your enquiry."
+  >
+    <ul class="bullets">
+      <li>
+        <strong>Our hosting provider</strong>, which serves the site and runs the
+        form endpoint.
+      </li>
+      <li>
+        <strong>Our email provider</strong>, which transmits and stores the
+        enquiry email.
+      </li>
+      <li>
+        <strong>Manufacturing and freight partners</strong>, where progressing your
+        specific order requires it — for example sending a delivery address to a
+        carrier. Only what is needed is shared.
+      </li>
+      <li>
+        <strong>Where the law requires it</strong>, in response to a valid legal
+        request.
+      </li>
+    </ul>
+    <p>
+      We do not sell, rent or trade your information, and we do not share it with
+      advertising networks or data brokers.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="retention"
+    heading="How long we keep it"
+    intro="Long enough to do the work and meet our record-keeping obligations, and no longer than we can justify."
+  >
+    <ul class="bullets">
+      <li>
+        <strong>Enquiries that do not become orders</strong> are kept while the
+        conversation is live and for a reasonable follow-up period afterwards, then
+        deleted.
+      </li>
+      <li>
+        <strong>Order records, approved die lines and proofs</strong> are kept for
+        as long as we may need them to service a reorder or resolve a dispute, and
+        to satisfy accounting and tax record-keeping requirements.
+      </li>
+      <li>
+        <strong>Artwork files</strong> are kept while a project is active and for
+        the reorder period. Ask us to delete them sooner and we will.
+      </li>
+      <li>
+        <strong>Rate-limiting counts</strong> exist in memory only and expire within
+        minutes.
+      </li>
+    </ul>
+  </InfoSection>
+
+  <InfoSection
+    id="your-choices"
+    heading="Your choices and rights"
+    intro="These apply regardless of where you are, and some jurisdictions give you additional statutory rights."
+  >
+    <ul class="bullets">
+      <li><strong>Ask what we hold</strong> about you and receive a copy.</li>
+      <li><strong>Ask us to correct</strong> anything that is wrong.</li>
+      <li><strong>Ask us to delete</strong> your enquiry and any attached files, subject to records we are required to keep.</li>
+      <li><strong>Withdraw consent</strong> for future contact at any time.</li>
+      <li><strong>Object</strong> to a particular use and have us explain the basis for it.</li>
+    </ul>
+    <p>
+      Email <a href={`mailto:${site.email}`}>{site.email}</a> with what you would
+      like done. We may ask a question to confirm you are the person the
+      information relates to, so we do not disclose it to someone else.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="security"
+    heading="Security"
+    intro="What we do, stated without overclaiming."
+  >
+    <p>
+      The site is served over HTTPS with strict transport security, a content
+      security policy, and headers that prevent framing and content-type sniffing.
+      Form input is validated and sanitised server-side, uploads are restricted by
+      type and size, and credentials are held only in server environment
+      variables.
+    </p>
+    <p>
+      No system is completely secure, and we will not claim otherwise. If you have
+      something genuinely confidential, tell us before sending it and we will agree
+      a suitable route.
+    </p>
+  </InfoSection>
+
+  <InfoSection id="children" heading="Children">
+    <p>
+      This is a business-to-business website and is not directed at children. We do
+      not knowingly collect information from anyone under 16. If you believe a child
+      has submitted information through this site, contact us and we will delete it.
+    </p>
+  </InfoSection>
+
+  <InfoSection id="changes" heading="Changes to this policy">
+    <p>
+      If we change how the site handles information, this page is updated and the
+      effective date changes with it. The effective date of this version is
+      {' '}{effective}. Material changes to how we use information you have already
+      submitted will be raised with you directly rather than only posted here.
+    </p>
+  </InfoSection>
+</InfoLayout>
+
+<style>
+  h3 {
+    font-family: var(--font-body);
+    font-size: var(--step-0);
+    font-weight: 600;
+    letter-spacing: 0;
+    margin-top: var(--sp-5);
+    margin-bottom: var(--sp-3);
+  }
+  p {
+    max-width: var(--measure);
+    color: var(--ink-soft);
+  }
+</style>

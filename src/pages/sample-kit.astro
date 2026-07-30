@@ -1,0 +1,170 @@
+---
+import InfoLayout from '../layouts/InfoLayout.astro';
+import InfoSection from '../components/InfoSection.astro';
+import SpecTable from '../components/SpecTable.astro';
+---
+
+<InfoLayout
+  path="/sample-kit/"
+  title="Sample Kit | Material Swatches and Test Boxes"
+  description="Request material swatches, a plain structural sample or a printed proof, and see which of the three answers your question."
+  h1="Sample Kit"
+  eyebrow="Ordering"
+  lead="There are three different things people mean by a sample, and they answer three different questions. Asking for the right one saves a round trip."
+  ogTitle="Packaging Samples: Swatches, Structures and Proofs"
+  ogDescription="Which type of sample answers which question, and what to test when it arrives."
+  points={['Three sample types', 'Test with real product', 'Tell us what you need to verify']}
+  ctaSecondaryHref="/how-to-order/"
+  ctaSecondaryLabel="See the ordering steps"
+  ctaHeading="Tell us what you need to check"
+  ctaBody="Say which question you are trying to answer — does it fit, does it feel right, or does the colour work — and we will send the sample that answers it."
+>
+  <InfoSection
+    id="three-types"
+    heading="Three kinds of sample"
+    intro="Each answers a specific question. Requesting the wrong one is the most common reason a sample turns out not to help."
+  >
+    <SpecTable
+      caption="Sample types and what each one tells you."
+      columns={['Sample', 'Answers', 'Does not answer']}
+      rows={[
+        [
+          'Material swatches',
+          'How a board or a label stock looks and feels; how holographic film shifts in real light',
+          'Whether your product fits, or how your artwork prints',
+        ],
+        [
+          'Plain structural sample',
+          'Whether your container fits with the right clearance, how the carton stands and closes, whether the insert holds',
+          'Colour, finish or how the print will look',
+        ],
+        [
+          'Printed proof or production sample',
+          'Colour on the actual stock, foil and spot UV position, whether small type is legible',
+          'Little else — it is the final check before a run',
+        ],
+      ]}
+    />
+  </InfoSection>
+
+  <InfoSection
+    id="swatches"
+    heading="Material swatches"
+    intro="Useful early, when you are still deciding between board grades or considering a specialty stock."
+  >
+    <p class="measure">
+      A swatch tells you things no image can. Kraft board is warmer in the hand than
+      it looks on a screen. Soft-touch lamination is the difference between a pack
+      that feels mid-market and one that feels expensive. Holographic film behaves
+      completely differently under store lighting, daylight and a phone camera flash,
+      which is why we recommend swatches of rainbow, mirror and pearlescent side by
+      side before committing to an
+      <a href="/holographic-lip-gloss-boxes/">iridescent specification</a>.
+    </p>
+    <p class="measure">
+      Tell us which decision you are trying to make and we will send the relevant
+      swatches rather than a generic pack of everything.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="structural"
+    heading="Plain structural samples"
+    intro="The single most valuable sample in a packaging project, and the one most often skipped under time pressure."
+  >
+    <p class="measure">
+      A plain unprinted sample is cut and creased from the approved die line in the
+      specified board. It exists to answer one question: does this carton work with
+      your product. For a rigid box the equivalent is an assembled white sample,
+      which also lets you judge proportion, lid fit and magnet strength.
+    </p>
+    <p class="measure">
+      <strong>Test it with your real product, not empty.</strong> A fit that works
+      on paper sometimes fails with a slightly pillowed sachet, a lacquered lipstick
+      case that measures marginally larger than its drawing, or a paper tube with
+      more surface friction than a plastic one. Then check four things:
+    </p>
+    <ol class="ordered">
+      <li>Does the container go in and out without forcing, and without rattling?</li>
+      <li>Does the carton close cleanly, and would it do so quickly on your packing line?</li>
+      <li>Does it stand upright, and does the base hold when you lift it by the top?</li>
+      <li>If there is an insert, does the product stay put when the box is shaken?</li>
+    </ol>
+  </InfoSection>
+
+  <InfoSection
+    id="printed"
+    heading="Printed proofs and production samples"
+    intro="The last check before a run. What you approve here is what production is measured against."
+  >
+    <p class="measure">
+      A calibrated digital proof is enough on plain coated white board with process
+      colour. On kraft, metallised, holographic or black-through stock it is not,
+      because none of those substrates behaves the way white paper does, and an
+      on-screen approval will not predict the printed result.
+    </p>
+    <p class="measure">
+      Where the job carries foil, embossing or spot UV, ask for a
+      production-standard sample rather than a flat proof. Position and register on
+      those finishes need physical checking, and the raised or reflective effect
+      cannot be judged from a printed simulation. What each finish does is set out on
+      the <a href="/finishes/">coatings page</a>.
+    </p>
+    <p class="note">
+      Check spot colours under daylight rather than office lighting, read the
+      smallest type at final size, and if the pack carries a shade swatch, hold it
+      next to the actual product. Then approve in writing and keep the proof.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="how-to-request"
+    heading="How to request samples"
+    intro="Two things make a sample request genuinely useful."
+  >
+    <ul class="bullets">
+      <li>
+        <strong>Say what you need to verify.</strong> "Does my tube fit" and "does
+        this board feel premium enough" need completely different samples.
+      </li>
+      <li>
+        <strong>Send the container if you have one.</strong> Posting a filled sample
+        to us means the structural sample is built around the real thing rather than
+        around a nominal dimension, which removes most fit risk in one step.
+      </li>
+    </ul>
+    <p class="measure">
+      Sample availability, cost and lead time vary by type and by how far a project
+      has progressed, and we will confirm all three in writing when you ask. Use the
+      <a href="/request-a-quote/">quote request form</a> and note the sample you
+      want in the additional details field, or the short form on any product page.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="what-samples-cannot-do"
+    heading="What a sample cannot tell you"
+    intro="Worth being realistic about, so a sample is not asked to carry more weight than it can."
+  >
+    <ul class="bullets">
+      <li>
+        A single sample does not represent production variation. A run has tolerance
+        across it, particularly on hand-assembled rigid boxes.
+      </li>
+      <li>
+        A digital proof on white paper does not represent colour on a different
+        substrate, however good the proofing device.
+      </li>
+      <li>
+        A sample cannot verify your regulatory compliance. That is your review to
+        run, as described in the
+        <a href="/artwork-guidelines/">artwork guidelines</a>.
+      </li>
+      <li>
+        A structural sample does not test long-term shelf behaviour. If you are
+        putting a soft balm in a paper tube, that needs a proper stability test over
+        time rather than a fit check.
+      </li>
+    </ul>
+  </InfoSection>
+</InfoLayout>

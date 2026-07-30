@@ -1,0 +1,302 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import QuoteCta from '../../components/QuoteCta.astro';
+import { blogPosts } from '../../data/blog';
+import { productImage } from '../../lib/images';
+import { abs } from '../../data/site';
+import {
+  graph,
+  organizationSchema,
+  websiteSchema,
+  webPageSchema,
+  breadcrumbSchema,
+  type Crumb,
+} from '../../lib/schema';
+
+const path = '/blog/';
+const crumbs: Crumb[] = [{ name: 'Home', path: '/' }, { name: 'Blog' }];
+
+const blogSchema = {
+  '@type': 'Blog',
+  '@id': `${abs(path)}#blog`,
+  name: 'Lip Boxes packaging notes',
+  description:
+    'Practical articles on specifying and buying packaging for lip balm, lipstick, lip gloss and lip care products.',
+  url: abs(path),
+  publisher: { '@id': `${abs('/')}#organization` },
+  blogPost: blogPosts.map((post) => ({
+    '@type': 'BlogPosting',
+    '@id': `${abs(`/blog/${post.slug}/`)}#article`,
+    headline: post.title,
+    url: abs(`/blog/${post.slug}/`),
+    datePublished: post.published,
+  })),
+};
+
+const schema = graph(
+  organizationSchema(),
+  websiteSchema(),
+  webPageSchema({
+    path,
+    name: 'Lip Packaging Blog',
+    description:
+      'Articles on choosing, specifying and pricing packaging for lip products.',
+    type: 'CollectionPage',
+  }),
+  breadcrumbSchema(crumbs),
+  blogSchema,
+);
+
+const [lead, ...rest] = blogPosts;
+---
+
+<BaseLayout
+  title="Lip Packaging Blog | Guides and Notes | Lip Boxes"
+  description="Practical articles on specifying lip packaging: materials, printing, artwork, inserts and how quantity affects unit price."
+  path={path}
+  ogTitle="Practical Notes on Lip Product Packaging"
+  ogDescription="Guides on materials, printing methods, artwork preparation, inserts and packaging pricing for lip brands."
+  schema={[schema]}
+>
+  <PageHero
+    eyebrow="Blog"
+    h1="Notes on Packaging Lip Products"
+    lead="Articles written for the person actually specifying the packaging: what each decision costs, what it constrains, and where projects usually go wrong."
+    crumbs={crumbs}
+    points={[`${blogPosts.length} articles`, 'No sponsored content', 'Updated as practice changes']}
+  />
+
+  <div class="section">
+    <div class="wrap">
+      <article class="lead-post">
+        <a class="lead-post__media" href={`/blog/${lead.slug}/`} tabindex="-1" aria-hidden="true">
+          <Image
+            src={productImage(lead.heroFrom.slug, lead.heroFrom.file)}
+            alt=""
+            widths={[480, 720, 960]}
+            sizes="(min-width: 62rem) 30rem, (min-width: 40rem) 50vw, 90vw"
+            loading="eager"
+            fetchpriority="high"
+            decoding="sync"
+            width={960}
+            height={960}
+          />
+        </a>
+        <div class="lead-post__body">
+          <p class="post-meta">
+            <span class="post-meta__flag">Latest</span>
+            <time datetime={lead.published}>
+              {new Date(lead.published).toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+              })}
+            </time>
+            <span aria-hidden="true">&middot;</span>
+            {lead.readingMinutes} min read
+          </p>
+          <h2 class="lead-post__title">
+            <a href={`/blog/${lead.slug}/`}>{lead.title}</a>
+          </h2>
+          <p class="lead-post__deck">{lead.deck}</p>
+          <p class="lead-post__desc">{lead.metaDescription}</p>
+        </div>
+      </article>
+
+      <h2 class="archive-heading">All articles</h2>
+      <ul class="archive">
+        {
+          rest.map((post) => (
+            <li class="archive__item">
+              <a class="archive__media" href={`/blog/${post.slug}/`} tabindex="-1" aria-hidden="true">
+                <Image
+                  src={productImage(post.heroFrom.slug, post.heroFrom.file)}
+                  alt=""
+                  widths={[220, 360]}
+                  sizes="(min-width: 48rem) 11rem, 30vw"
+                  loading="lazy"
+                  decoding="async"
+                  width={360}
+                  height={360}
+                />
+              </a>
+              <div class="archive__body">
+                <p class="post-meta">
+                  <time datetime={post.published}>
+                    {new Date(post.published).toLocaleDateString('en-US', {
+                      year: 'numeric',
+                      month: 'long',
+                      day: 'numeric',
+                    })}
+                  </time>
+                  <span aria-hidden="true">&middot;</span>
+                  {post.readingMinutes} min read
+                </p>
+                <h3 class="archive__title">
+                  <a href={`/blog/${post.slug}/`}>{post.title}</a>
+                </h3>
+                <p class="archive__deck">{post.deck}</p>
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+
+      <p class="feed-note">
+        The blog is also available as an <a href="/rss.xml">RSS feed</a>.
+      </p>
+    </div>
+  </div>
+
+  <QuoteCta
+    heading="Have a packaging question these do not answer?"
+    body="Send it with your enquiry. Questions that come up repeatedly tend to become the next article."
+  />
+</BaseLayout>
+
+<style>
+  .post-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+    margin-bottom: var(--sp-3);
+  }
+  .post-meta__flag {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    background: var(--rose-soft);
+    color: var(--plum-deep);
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+  }
+
+  .lead-post {
+    display: grid;
+    gap: var(--sp-5);
+    padding-bottom: var(--sp-7);
+    border-bottom: 1px solid var(--line);
+    margin-bottom: var(--sp-7);
+  }
+  @media (min-width: 62rem) {
+    .lead-post {
+      grid-template-columns: minmax(18rem, 30rem) 1fr;
+      gap: var(--sp-7);
+      align-items: center;
+    }
+  }
+  .lead-post__media {
+    display: block;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--paper-warm);
+  }
+  .lead-post__media img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+  .lead-post__title {
+    font-size: var(--step-3);
+    margin-bottom: var(--sp-3);
+    line-height: 1.18;
+  }
+  .lead-post__title a {
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .lead-post__title a:hover {
+    color: var(--plum);
+  }
+  .lead-post__deck {
+    font-size: var(--step-1);
+    color: var(--ink-soft);
+    line-height: 1.5;
+    margin-bottom: var(--sp-3);
+    max-width: 46ch;
+  }
+  .lead-post__desc {
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+    max-width: 54ch;
+    margin: 0;
+  }
+
+  .archive-heading {
+    font-size: var(--step-2);
+    margin-bottom: var(--sp-5);
+  }
+  .archive {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--sp-5);
+  }
+  .archive__item {
+    display: grid;
+    grid-template-columns: 5.5rem 1fr;
+    gap: var(--sp-4);
+    padding-bottom: var(--sp-5);
+    border-bottom: 1px solid var(--line);
+  }
+  @media (min-width: 48rem) {
+    .archive__item {
+      grid-template-columns: 11rem 1fr;
+      gap: var(--sp-5);
+      align-items: start;
+    }
+  }
+  .archive__item:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  .archive__media {
+    display: block;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    background: var(--paper-warm);
+  }
+  .archive__media img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+  .archive__title {
+    font-size: var(--step-1);
+    margin-bottom: var(--sp-2);
+    line-height: 1.28;
+  }
+  .archive__title a {
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .archive__title a:hover {
+    color: var(--plum);
+  }
+  .archive__deck {
+    font-size: var(--step--1);
+    color: var(--ink-soft);
+    line-height: 1.6;
+    margin: 0;
+    max-width: 56ch;
+  }
+  .feed-note {
+    margin-top: var(--sp-7);
+    padding-top: var(--sp-5);
+    border-top: 1px solid var(--line);
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+  }
+</style>

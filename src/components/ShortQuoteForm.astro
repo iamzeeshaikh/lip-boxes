@@ -1,0 +1,180 @@
+---
+import { site } from '../data/site';
+import Icon from './Icon.astro';
+
+interface Props {
+  /** Product name written into the hidden field and the email subject. */
+  product: string;
+  heading?: string;
+  id?: string;
+}
+
+const { product, heading = 'Get a price for this box', id = 'quick-quote' } =
+  Astro.props;
+const accept =
+  '.pdf,.ai,.eps,.psd,.svg,.png,.jpg,.jpeg,.doc,.docx';
+---
+
+<section class="quick-quote" id={id} aria-labelledby={`${id}-heading`}>
+  <div class="quick-quote__head">
+    <h2 class="quick-quote__heading" id={`${id}-heading`}>{heading}</h2>
+    <p class="quick-quote__sub">
+      Four fields. We reply with a written price for your quantity, or with the
+      questions we need answered first.
+    </p>
+  </div>
+
+  <form class="qform" method="post" action="/api/quote/" enctype="multipart/form-data" novalidate data-quote-form>
+    <input type="hidden" name="formType" value="short" />
+    <input type="hidden" name="product" value={product} />
+    <input type="hidden" name="pageUrl" value={Astro.url.href} data-page-url />
+
+    <!-- Honeypot: hidden from users, checked on the server. -->
+    <div class="qform__trap" aria-hidden="true">
+      <label for={`${id}-company-website`}>Company website</label>
+      <input type="text" id={`${id}-company-website`} name="companyWebsite" tabindex="-1" autocomplete="off" />
+    </div>
+
+    <div class="qform__grid">
+      <div class="field">
+        <label for={`${id}-name`}>Name <span class="req" aria-hidden="true">*</span></label>
+        <input type="text" id={`${id}-name`} name="name" required autocomplete="name" maxlength="120" aria-describedby={`${id}-name-error`} />
+        <p class="field__error" id={`${id}-name-error`} data-error hidden></p>
+      </div>
+
+      <div class="field">
+        <label for={`${id}-email`}>Email <span class="req" aria-hidden="true">*</span></label>
+        <input type="email" id={`${id}-email`} name="email" required autocomplete="email" maxlength="180" inputmode="email" aria-describedby={`${id}-email-error`} />
+        <p class="field__error" id={`${id}-email-error`} data-error hidden></p>
+      </div>
+
+      <div class="field">
+        <label for={`${id}-phone`}>Phone <span class="req" aria-hidden="true">*</span></label>
+        <input type="tel" id={`${id}-phone`} name="phone" required autocomplete="tel" maxlength="40" inputmode="tel" aria-describedby={`${id}-phone-error`} />
+        <p class="field__error" id={`${id}-phone-error`} data-error hidden></p>
+      </div>
+
+      <div class="field field--full">
+        <label for={`${id}-message`}>Message <span class="req" aria-hidden="true">*</span></label>
+        <textarea id={`${id}-message`} name="message" rows="4" required maxlength="4000" aria-describedby={`${id}-message-hint ${id}-message-error`}></textarea>
+        <p class="field__hint" id={`${id}-message-hint`}>
+          Quantity, box dimensions and anything you already know about material
+          or finish.
+        </p>
+        <p class="field__error" id={`${id}-message-error`} data-error hidden></p>
+      </div>
+
+      <div class="field field--full">
+        <label for={`${id}-artwork`}>Artwork or reference file <span class="field__optional">(optional)</span></label>
+        <input type="file" id={`${id}-artwork`} name="artwork" accept={accept} aria-describedby={`${id}-artwork-hint ${id}-artwork-error`} />
+        <p class="field__hint" id={`${id}-artwork-hint`}>
+          PDF, AI, EPS, PSD, SVG, PNG, JPG, DOC or DOCX. Up to {site.uploadLimitMb} MB.
+        </p>
+        <p class="field__error" id={`${id}-artwork-error`} data-error hidden></p>
+      </div>
+
+      <div class="field field--full field--consent">
+        <label class="consent">
+          <input type="checkbox" name="consent" value="yes" required aria-describedby={`${id}-consent-error`} />
+          <span>
+            I agree that Lip Boxes may use these details to reply to my enquiry,
+            as described in the <a href="/privacy-policy/">privacy policy</a>.
+          </span>
+        </label>
+        <p class="field__error" id={`${id}-consent-error`} data-error hidden></p>
+      </div>
+    </div>
+
+    <div class="qform__foot">
+      <button type="submit" class="btn btn--primary" data-submit>
+        <span data-submit-label>Send enquiry</span>
+        <Icon name="arrow-right" size={18} />
+      </button>
+      <p class="qform__alt">
+        Need to specify materials, finishes and dates? Use the
+        <a href="/request-a-quote/">full quote request form</a>.
+      </p>
+    </div>
+
+    <p class="qform__status" role="status" aria-live="polite" data-status hidden></p>
+  </form>
+</section>
+
+<style>
+  .quick-quote {
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: var(--sp-5);
+  }
+  @media (min-width: 40rem) {
+    .quick-quote {
+      padding: var(--sp-6);
+    }
+  }
+  .quick-quote__heading {
+    font-size: var(--step-2);
+    margin-bottom: var(--sp-2);
+  }
+  .quick-quote__sub {
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+    margin-bottom: var(--sp-5);
+    max-width: 46ch;
+  }
+  .qform__trap {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .qform__grid {
+    display: grid;
+    gap: var(--sp-4);
+  }
+  @media (min-width: 34rem) {
+    .qform__grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    .field--full {
+      grid-column: 1 / -1;
+    }
+  }
+  .qform__foot {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--sp-3) var(--sp-5);
+    margin-top: var(--sp-5);
+  }
+  .qform__alt {
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+    margin: 0;
+  }
+  .qform__status {
+    margin: var(--sp-4) 0 0;
+    padding: var(--sp-3) var(--sp-4);
+    border-radius: var(--radius);
+    font-size: var(--step--1);
+    border: 1px solid var(--line);
+    background: var(--paper-warm);
+  }
+  .qform__status[data-tone='success'] {
+    border-color: #7a9a6e;
+    background: #f0f6ec;
+    color: #2f4a26;
+  }
+  .qform__status[data-tone='error'] {
+    border-color: #b4636a;
+    background: #fbeef0;
+    color: #7a2731;
+  }
+</style>
+
+<script>
+  import { initQuoteForms } from '../scripts/quote-form';
+  initQuoteForms();
+</script>
