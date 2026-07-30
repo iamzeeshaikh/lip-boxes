@@ -333,6 +333,10 @@ const isCurrent = (href?: string) =>
       position: absolute;
       top: calc(100% + 0.4rem);
       left: 0;
+      /* An invisible bridge across the gap above the panel. Without it the
+         pointer leaves the menu item while moving down from the trigger and
+         the submenu closes before it can be reached. */
+      --submenu-gap: 0.4rem;
       width: max-content;
       max-width: min(30rem, calc(100vw - 3rem));
       background: var(--white);
@@ -340,6 +344,14 @@ const isCurrent = (href?: string) =>
       border-radius: var(--radius);
       box-shadow: var(--shadow);
       padding: var(--sp-3);
+    }
+    .submenu::before {
+      content: '';
+      position: absolute;
+      top: calc(var(--submenu-gap) * -1);
+      left: 0;
+      right: 0;
+      height: var(--submenu-gap);
     }
     .nav__item--has-menu:last-of-type .submenu {
       left: auto;
@@ -404,14 +416,22 @@ const isCurrent = (href?: string) =>
 
     // On pointer devices at desktop width, hovering the group opens it.
     const item = button.closest('.nav__item--has-menu');
+    let closeTimer: ReturnType<typeof setTimeout> | undefined;
+
     item?.addEventListener('pointerenter', (event) => {
       if (!DESKTOP.matches || (event as PointerEvent).pointerType === 'touch') return;
+      clearTimeout(closeTimer);
       closeAllSubmenus(button);
       button.setAttribute('aria-expanded', 'true');
     });
     item?.addEventListener('pointerleave', () => {
       if (!DESKTOP.matches) return;
-      button.setAttribute('aria-expanded', 'false');
+      // A short grace period, so a diagonal path toward the panel does not
+      // close it the moment the pointer clips outside the item.
+      clearTimeout(closeTimer);
+      closeTimer = setTimeout(() => {
+        button.setAttribute('aria-expanded', 'false');
+      }, 180);
     });
   }
 
