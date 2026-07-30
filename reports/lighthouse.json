@@ -2,33 +2,33 @@
   "/": {
     "mobile": {
       "scores": {
-        "performance": 98,
+        "performance": 96,
         "accessibility": 100,
         "best-practices": 100,
         "seo": 100
       },
       "metrics": {
-        "LCP": "2.4 s",
+        "LCP": "2.7 s",
         "CLS": "0",
         "TBT": "0 ms",
-        "FCP": "1.2 s",
-        "SI": "1.2 s"
+        "FCP": "1.4 s",
+        "SI": "1.4 s"
       },
       "failedAudits": [
         {
           "id": "first-contentful-paint",
           "title": "First Contentful Paint",
-          "score": 0.99
+          "score": 0.97
         },
         {
           "id": "largest-contentful-paint",
           "title": "Largest Contentful Paint",
-          "score": 0.91
+          "score": 0.85
         },
         {
           "id": "interactive",
           "title": "Time to Interactive",
-          "score": 0.98
+          "score": 0.97
         },
         {
           "id": "unused-css-rules",
@@ -154,33 +154,33 @@
   "/custom-lip-balm-boxes/": {
     "mobile": {
       "scores": {
-        "performance": 96,
+        "performance": 95,
         "accessibility": 100,
         "best-practices": 100,
         "seo": 100
       },
       "metrics": {
-        "LCP": "2.6 s",
+        "LCP": "2.7 s",
         "CLS": "0",
         "TBT": "0 ms",
-        "FCP": "1.7 s",
-        "SI": "1.7 s"
+        "FCP": "1.8 s",
+        "SI": "1.8 s"
       },
       "failedAudits": [
         {
           "id": "first-contentful-paint",
           "title": "First Contentful Paint",
-          "score": 0.93
+          "score": 0.89
         },
         {
           "id": "largest-contentful-paint",
           "title": "Largest Contentful Paint",
-          "score": 0.88
+          "score": 0.85
         },
         {
           "id": "interactive",
           "title": "Time to Interactive",
-          "score": 0.98
+          "score": 0.97
         },
         {
           "id": "unused-css-rules",
@@ -321,33 +321,33 @@
   "/lip-balm-packaging/": {
     "mobile": {
       "scores": {
-        "performance": 98,
+        "performance": 97,
         "accessibility": 100,
         "best-practices": 100,
         "seo": 100
       },
       "metrics": {
-        "LCP": "2.3 s",
+        "LCP": "2.5 s",
         "CLS": "0",
         "TBT": "0 ms",
-        "FCP": "1.2 s",
-        "SI": "1.2 s"
+        "FCP": "1.4 s",
+        "SI": "1.4 s"
       },
       "failedAudits": [
         {
           "id": "first-contentful-paint",
           "title": "First Contentful Paint",
-          "score": 0.99
+          "score": 0.98
         },
         {
           "id": "largest-contentful-paint",
           "title": "Largest Contentful Paint",
-          "score": 0.93
+          "score": 0.9
         },
         {
           "id": "interactive",
           "title": "Time to Interactive",
-          "score": 0.99
+          "score": 0.98
         },
         {
           "id": "unused-css-rules",
@@ -385,11 +385,6 @@
           "id": "document-latency-insight",
           "title": "Document request latency",
           "score": 0.5
-        },
-        {
-          "id": "image-delivery-insight",
-          "title": "Improve image delivery",
-          "score": 0
         },
         {
           "id": "network-dependency-tree-insight",
@@ -463,6 +458,11 @@
       },
       "failedAudits": [
         {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0.5
+        },
+        {
           "id": "document-latency-insight",
           "title": "Document request latency",
           "score": 0.5
@@ -478,13 +478,13 @@
   "/blog/how-packaging-quantity-affects-unit-pricing/": {
     "mobile": {
       "scores": {
-        "performance": 97,
+        "performance": 98,
         "accessibility": 100,
         "best-practices": 100,
         "seo": 100
       },
       "metrics": {
-        "LCP": "2.6 s",
+        "LCP": "2.4 s",
         "CLS": "0",
         "TBT": "0 ms",
         "FCP": "1.2 s",
@@ -499,7 +499,7 @@
         {
           "id": "largest-contentful-paint",
           "title": "Largest Contentful Paint",
-          "score": 0.88
+          "score": 0.91
         },
         {
           "id": "interactive",
@@ -581,6 +581,11 @@
           "id": "interactive",
           "title": "Time to Interactive",
           "score": 0.99
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0.5
         },
         {
           "id": "document-latency-insight",

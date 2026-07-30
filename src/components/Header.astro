@@ -1,11 +1,30 @@
 ---
+import { Image } from 'astro:assets';
 import { primaryNav } from '../data/nav';
 import { site } from '../data/site';
+import { products } from '../data/products';
+import { productImage } from '../lib/images';
 import Icon from './Icon.astro';
 
 const path = Astro.url.pathname;
 const isCurrent = (href?: string) =>
   Boolean(href) && (href === '/' ? path === '/' : path.startsWith(href!));
+
+/*
+ * Thumbnails for the products mega menu, resolved from the product data so a
+ * new product picks one up automatically. The lip balm hub is not a product,
+ * so its image is named explicitly.
+ */
+const thumbnails = new Map<string, ImageMetadata>(
+  products.map((product) => [
+    `/${product.slug}/`,
+    productImage(product.slug, product.images[0].file),
+  ]),
+);
+thumbnails.set(
+  '/lip-balm-packaging/',
+  productImage('lip-balm-packaging', 'lip-balm-packaging-foil-stamped-carton.png'),
+);
 ---
 
 <header class="site-header">
@@ -38,7 +57,13 @@ const isCurrent = (href?: string) =>
         {
           primaryNav.map((item) =>
             item.children ? (
-              <li class="nav__item nav__item--has-menu">
+              <li
+                class:list={[
+                  'nav__item',
+                  'nav__item--has-menu',
+                  item.href === '/products/' && 'nav__item--mega',
+                ]}
+              >
                 <button
                   type="button"
                   class="nav__link nav__link--button"
@@ -48,27 +73,48 @@ const isCurrent = (href?: string) =>
                   {item.label}
                   <Icon name="chevron-down" size={15} class="nav__chevron" />
                 </button>
-                <div class="submenu">
+                <div class:list={['submenu', item.href === '/products/' && 'submenu--mega']}>
                   <ul class="submenu__list">
                     {
-                      item.children.map((child) => (
-                        <li>
-                          <a
-                            href={child.href}
-                            class="submenu__link"
-                            aria-current={path === child.href ? 'page' : undefined}
-                          >
-                            <span class="submenu__label">{child.label}</span>
-                            {child.note && <span class="submenu__note">{child.note}</span>}
-                          </a>
-                        </li>
-                      ))
+                      item.children.map((child) => {
+                        const thumb = thumbnails.get(child.href);
+                        return (
+                          <li>
+                            <a
+                              href={child.href}
+                              class:list={['submenu__link', thumb && 'submenu__link--thumb']}
+                              aria-current={path === child.href ? 'page' : undefined}
+                            >
+                              {
+                                thumb && (
+                                  <span class="submenu__thumb" aria-hidden="true">
+                                    <Image
+                                      src={thumb}
+                                      alt=""
+                                      widths={[96, 144]}
+                                      sizes="48px"
+                                      loading="lazy"
+                                      decoding="async"
+                                      width={144}
+                                      height={144}
+                                    />
+                                  </span>
+                                )
+                              }
+                              <span class="submenu__text">
+                                <span class="submenu__label">{child.label}</span>
+                                {child.note && <span class="submenu__note">{child.note}</span>}
+                              </span>
+                            </a>
+                          </li>
+                        );
+                      })
                     }
                   </ul>
                   {
                     item.href && (
                       <a href={item.href} class="submenu__all">
-                        All products
+                        See the full product directory
                         <Icon name="arrow-right" size={15} />
                       </a>
                     )
@@ -236,21 +282,47 @@ const isCurrent = (href?: string) =>
     gap: 1px;
   }
   .submenu__link {
-    display: block;
-    padding: 0.6rem 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 0.5rem 0.6rem;
     border-radius: var(--radius-sm);
     text-decoration: none;
     color: var(--ink-soft);
+    transition: background-color 0.15s var(--ease);
   }
   .submenu__link:hover,
   .submenu__link[aria-current='page'] {
     background: var(--paper-warm);
     color: var(--plum);
   }
+  .submenu__thumb {
+    flex-shrink: 0;
+    display: block;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    background: var(--paper-warm);
+    border: 1px solid var(--line);
+  }
+  .submenu__thumb :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .submenu__link[aria-current='page'] .submenu__thumb {
+    border-color: var(--plum);
+  }
+  .submenu__text {
+    min-width: 0;
+  }
   .submenu__label {
     display: block;
     font-weight: 500;
     font-size: var(--step-0);
+    line-height: 1.3;
     color: var(--ink);
   }
   .submenu__link:hover .submenu__label {
@@ -260,7 +332,8 @@ const isCurrent = (href?: string) =>
     display: block;
     font-size: var(--step--1);
     color: var(--ink-muted);
-    line-height: 1.4;
+    line-height: 1.35;
+    margin-top: 0.1rem;
   }
   .submenu__all {
     display: inline-flex;
@@ -270,7 +343,8 @@ const isCurrent = (href?: string) =>
     font-weight: 600;
     color: var(--plum);
     text-decoration: none;
-    padding: 0.4rem 0.75rem;
+    padding: 0.5rem 0.6rem;
+    min-height: 2.25rem;
   }
   .nav__actions {
     display: flex;
@@ -315,8 +389,16 @@ const isCurrent = (href?: string) =>
     .nav__item + .nav__item {
       border-top: 0;
     }
+    .nav {
+      position: relative;
+    }
     .nav__item--has-menu {
       position: relative;
+    }
+    /* The mega panel spans the nav rather than hanging off its trigger, so a
+       wide panel cannot run past the right edge of the viewport. */
+    .nav__item--mega {
+      position: static;
     }
     .nav__link {
       padding: 0.5rem 0.7rem;
@@ -360,6 +442,28 @@ const isCurrent = (href?: string) =>
     .submenu__list {
       grid-template-columns: 1fr;
       margin-bottom: var(--sp-2);
+      gap: 2px;
+    }
+
+    /* Products opens as a mega menu: every product visible at once, in a grid,
+       each with a thumbnail. Anchored to the nav rather than the trigger so a
+       wide panel cannot run off the right edge. */
+    .submenu--mega {
+      left: 0;
+      right: 0;
+      width: auto;
+      max-width: none;
+      padding: var(--sp-4);
+    }
+    .submenu--mega .submenu__list {
+      grid-template-columns: 1fr 1fr;
+      gap: 2px var(--sp-3);
+      margin-bottom: var(--sp-3);
+    }
+    .submenu--mega .submenu__all {
+      padding-top: var(--sp-3);
+      border-top: 1px solid var(--line);
+      width: 100%;
     }
     .nav__actions {
       flex-direction: row;
@@ -378,10 +482,9 @@ const isCurrent = (href?: string) =>
       font-size: 0.94rem;
     }
   }
-  @media (min-width: 62rem) and (min-width: 78rem) {
-    .submenu__list {
-      grid-template-columns: 1fr 1fr;
-      gap: 2px 0.5rem;
+  @media (min-width: 84rem) {
+    .submenu--mega .submenu__list {
+      grid-template-columns: 1fr 1fr 1fr;
     }
   }
 </style>
