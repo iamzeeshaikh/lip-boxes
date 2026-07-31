@@ -8,6 +8,7 @@
  */
 import { Image } from 'astro:assets';
 import { productImage } from '../lib/images';
+import Icon from './Icon.astro';
 import type { Product } from '../data/types';
 
 interface Props {
@@ -44,9 +45,14 @@ const banner = variant === 'banner';
     />
   </a>
   <figcaption class="m-figure__caption">
-    {context && <span class="m-figure__context">{context}</span>}
-    <span class="m-figure__text">{picture.caption ?? picture.alt}</span>
-    <a class="m-figure__more" href={`/${product.slug}/`}>{product.name}</a>
+    <p class="m-figure__text">
+      {context && <span class="m-figure__context">{context}</span>}
+      {picture.caption ?? picture.alt}
+    </p>
+    <a class="m-figure__more" href={`/${product.slug}/`}>
+      <span>Sizes, materials and pricing for {product.name}</span>
+      <Icon name="arrow-right" size={15} class="m-figure__arrow" />
+    </a>
   </figcaption>
 </figure>
 
@@ -84,11 +90,10 @@ const banner = variant === 'banner';
       aspect-ratio: 21 / 9;
     }
   }
+  /* Caption and link stack rather than sitting on one row. A bare product
+     name floating at the right end of a caption does not explain where it
+     goes; a full sentence with an arrow does. */
   .m-figure__caption {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    gap: 0.35rem 0.6rem;
     margin-top: var(--sp-3);
     font-size: var(--step--1);
     color: var(--ink-muted);
@@ -96,6 +101,7 @@ const banner = variant === 'banner';
   }
   .m-figure__context {
     display: inline-block;
+    margin-right: 0.45rem;
     padding: 0.1rem 0.45rem;
     background: var(--rose-soft);
     color: var(--plum-deep);
@@ -104,13 +110,27 @@ const banner = variant === 'banner';
     font-weight: 600;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    vertical-align: 0.08em;
   }
   .m-figure__text {
-    flex: 1 1 16rem;
+    margin: 0 0 0.5rem;
     min-width: 0;
   }
   .m-figure__more {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
     font-size: var(--step--1);
-    white-space: nowrap;
+    font-weight: 600;
+    color: var(--plum);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+  }
+  .m-figure__more :global(.m-figure__arrow) {
+    flex-shrink: 0;
+    transition: transform 0.18s var(--ease);
+  }
+  .m-figure__more:hover :global(.m-figure__arrow) {
+    transform: translateX(3px);
   }
 </style>

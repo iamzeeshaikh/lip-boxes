@@ -61,7 +61,10 @@ function toRoute(file) {
  * A regex alone cannot do this because these blocks nest.
  */
 function stripByClass(html, className) {
-  const open = new RegExp(`<(section|div|article|li|aside|p)\\b[^>]*class="[^"]*\\b${className}\\b[^"]*"[^>]*>`, 'i');
+  const open = new RegExp(
+    `<(section|div|article|li|aside|figure|figcaption|p)\\b[^>]*class="[^"]*\\b${className}\\b[^"]*"[^>]*>`,
+    'i',
+  );
   let out = html;
   for (let guard = 0; guard < 500; guard += 1) {
     const match = open.exec(out);
@@ -108,6 +111,9 @@ function stripChrome(html) {
     'quote-cta',
     'quick-quote',
     'p-card',
+    // Image captions belong to the photograph, not the page. The same product
+    // shot legitimately appears on more than one market page.
+    'm-figure__caption',
     'archive__item',
     'post-item',
     'post-card',
