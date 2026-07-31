@@ -228,7 +228,7 @@ export const chicago: Location = {
       navLabel: 'The market',
       body: [
         'Chicago hosts a concentration of buying offices and industry events, and the consequence for a brand is that a lot of commercial outcomes turn on what you can hand across a table.',
-        'A render does not survive that context. A buyer picks a pack up, feels its weight, opens it, and forms a view in a few seconds. A printed proof laid flat on a table communicates almost nothing by comparison.',
+        'A render does not survive that context. A buyer picks a pack up, feels its weight, opens it, and forms a view in a few seconds. A <a href="/artwork-guidelines/">printed proof</a> laid flat on a table communicates almost nothing by comparison.',
         'Planning for that means producing physical samples earlier than a purely production-driven schedule would, and treating them as a commercial cost rather than an engineering one.',
       ],
     },
@@ -243,7 +243,7 @@ export const chicago: Location = {
         'A printed proof: shows colour on the actual stock. Flat, so it shows nothing about the object',
         'A production-standard sample: printed, finished and assembled. The only one that represents the finished pack',
         'A white rigid sample: unprinted but assembled, showing lid fit, magnet strength and the opening action',
-        'Material swatches: how a board or laminate feels, useful early when the specification is still open',
+        'Material swatches: how a board or <a href="/finishes/">laminate</a> feels, useful early when the specification is still open',
         'A mocked-up shelf set: several units together, which is what a buyer is actually deciding about',
       ],
       outro:
@@ -257,7 +257,7 @@ export const chicago: Location = {
       body: [
         'The tension is that a production-standard sample requires the specification to be settled, and a buyer meeting often happens before you want to settle it.',
         'The workable sequence is to fix the structure early, produce a plain structural sample, and use a printed proof alongside it so the buyer can see both the object and the colour even though they are separate pieces. It is not as persuasive as a finished pack but it is far better than a render.',
-        'Where a listing depends on the meeting, it is usually worth committing to the specification and producing a small number of finished samples. The approval sequence that leads to them is on our <a href="/how-to-order/">the sampling and approval steps</a>.',
+        'Where a listing depends on the meeting, it is usually worth committing to the specification and producing a small number of finished samples. The sequence is covered in <a href="/how-to-order/">the sampling and approval steps</a>.',
       ],
     },
   ],
@@ -338,7 +338,7 @@ export const houston: Location = {
       navLabel: 'Deep ranges',
       intro: 'Six decisions that make twenty shades viable rather than prohibitive.',
       items: [
-        'One die line, one board and one finish across every shade without exception',
+        'One <a href="/resources/packaging-dieline-guide/">die line</a>, one board and one finish across every shade without exception',
         'Digital printing at launch quantities, since there is no plate charge per design',
         'Spot Pantone for each swatch, because process colour drift is visible across a wide range',
         'A locked artwork template where only the swatch and shade name change',
@@ -453,7 +453,7 @@ export const phoenix: Location = {
       heading: 'Finish choices for constant handling',
       navLabel: 'Durability',
       body: [
-        'A laminate earns its cost in this channel more clearly than almost anywhere else. Bare print with a varnish scuffs at the tab and along the panel edges within weeks of being handled by dozens of shoppers a day.',
+        'A <a href="/finishes/">laminate</a> earns its cost in this channel more clearly than almost anywhere else. Bare print with a varnish scuffs at the tab and along the panel edges within weeks of being handled by dozens of shoppers a day.',
         'Gloss lamination outperforms matte here, which is the opposite of the prestige recommendation. Matte shows finger marks on dark solids, and a self-service peg fixture generates a lot of finger marks.',
         'Where a window is used, a clear film patch is worth the extra pass. An open window on a peg collects dust, lets the product shift, and removes stiffness from a panel that is already carrying the hanging load. That engineering is set out on our <a href="/hang-tab-lip-balm-boxes/">window and tab carton detail</a>.',
       ],

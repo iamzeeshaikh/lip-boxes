@@ -163,7 +163,7 @@ export const resource: Resource = {
       body: [
         'Any change to a cut or crease position needs a new die. That includes changing a dimension, adding or moving a window, changing the tab shape on a hanging carton, and switching from a tuck base to a snap-lock.',
         'What does not need a new die: changing the artwork, changing the board weight within a small range, changing the coating, adding or removing foil, and changing the print process. All of those run on the existing tool.',
-        'This is why the die line approval is treated as a separate written sign-off from the colour proof. It is the point at which the structure becomes fixed, and the structure is the expensive thing to change. The sequence around it is set out on our <a href="/how-to-order/">the approval stages of an order</a>.',
+        'This is why the die line approval is treated as a separate written sign-off from the colour proof. It is the point at which the structure becomes fixed, and the structure is the expensive thing to change. <a href="/how-to-order/">The approval stages of an order</a> set out the sequence around it.',
       ],
     },
   ],

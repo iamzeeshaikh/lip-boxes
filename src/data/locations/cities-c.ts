@@ -42,10 +42,10 @@ export const jacksonville: Location = {
       items: [
         'Cartons and labels ship flat and travel economically; combining them is almost always worthwhile',
         'Assembled tubes and rigid boxes are charged on volume, so they benefit most from consolidation',
-        'Label stock has a practical shelf life, so do not consolidate more than you will use',
+        '<a href="/lip-balm-labels/">Label stock</a> has a practical shelf life, so do not consolidate more than you will use',
         'Board absorbs humidity, so consolidating only helps if storage is dry and off the floor',
         'Different components may have different lead times, so the slowest sets the shipment date',
-        'A scheduled call-off achieves the same freight saving without holding everything at once',
+        'A <a href="/how-to-order/">scheduled call-off</a> achieves the same freight saving without holding everything at once',
       ],
       outro:
         'The call-off option is worth pricing against straight consolidation. It holds the volume price without requiring you to store the whole quantity.',
@@ -144,7 +144,7 @@ export const fortWorth: Location = {
         'Use digital label printing, which has no plate charge and can be reordered quickly',
         'Hold container and carton stock across events, since only the label becomes obsolete',
         'Agree a reorder lead time before the window, so a fast top-up is possible',
-        'Keep one die line across events so the tooling is never repeated',
+        'Keep one <a href="/resources/packaging-dieline-guide/">die line</a> across events so the tooling is never repeated',
       ],
       outro:
         'The principle throughout is to put whatever expires onto the cheapest, fastest component to reproduce, which is almost always the label.',
@@ -239,7 +239,7 @@ export const columbus: Location = {
       intro: 'Six choices that keep test results attributable.',
       items: [
         'Produce the entire pilot quantity in one run, so there is no batch-to-batch variation',
-        'Specify spot colour rather than process, so a mid-test reprint would still match',
+        'Specify <a href="/printing-options/">spot colour</a> rather than process, so a mid-test reprint would still match',
         'Use one case count across every test store, so sell-through is comparable',
         'Retain the approved proof, so any question about drift can be settled against a reference',
         'Fix the structure before the pilot rather than optimising during it',
@@ -255,7 +255,7 @@ export const columbus: Location = {
       navLabel: 'Testing packaging',
       body: [
         'Some pilots test the pack rather than the product: two carton designs, or a hanging pack against a shelf pack, to see which performs.',
-        'That is a legitimate use of a short run, and digital printing makes it affordable because there is no plate charge per design. Two artwork variants on one die line cost very little more than one.',
+        'That is a legitimate use of a short run, and digital printing makes it affordable because there is no plate charge per design. Two artwork variants on one <a href="/resources/packaging-dieline-guide/">die line</a> cost very little more than one.',
         'Testing two structures is more expensive, because each needs its own die. Where budget is limited, testing artwork on one structure usually yields a more readable result than testing two structures with confounded artwork. How the two relate is covered on our <a href="/hang-tab-lip-balm-boxes/">peg hook packs for lip balm</a>.',
       ],
     },
@@ -456,7 +456,7 @@ export const indianapolis: Location = {
       body: [
         'A refused delivery at a 3PL is more expensive than the redelivery charge suggests, because the stock is not in the system and every order depending on it waits.',
         'The usual causes are mundane: no appointment booked, a missing reference number, case labels in the wrong format, or a pallet over the height limit. All are avoidable with information that takes minutes to gather.',
-        'Send the requirements with your order rather than after the pallet is on the road. Building them into the production plan costs nothing; repacking finished goods to meet a requirement discovered late costs labour and risks damage. Delivery detail is on our <a href="/shipping-information/">how freight and delivery are quoted</a>.',
+        'Send the requirements with your order rather than after the pallet is on the road. Building them into the production plan costs nothing; repacking finished goods to meet a requirement discovered late costs labour and risks damage. <a href="/shipping-information/">How freight and delivery are quoted</a> is set out separately.',
       ],
     },
   ],

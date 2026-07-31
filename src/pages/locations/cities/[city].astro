@@ -5,7 +5,6 @@ import PageHero from '../../../components/PageHero.astro';
 import ContentBlocks from '../../../components/ContentBlocks.astro';
 import FaqList from '../../../components/FaqList.astro';
 import ProductCard from '../../../components/ProductCard.astro';
-import MarketFigure from '../../../components/MarketFigure.astro';
 import QuoteBand from '../../../components/QuoteBand.astro';
 import Icon from '../../../components/Icon.astro';
 import { cities, getCity, getState, siblingCities, locationUrl } from '../../../data/locations';
@@ -95,7 +94,6 @@ const nextHeading = pick([
   'Read around this market',
   'Wider context for this page',
 ]);
-const leadFigure = related[0];
 ---
 
 <BaseLayout
@@ -117,7 +115,6 @@ const leadFigure = related[0];
   <div class="city-lead">
     <div class="wrap">
       <div class="city-lead__row">
-        {leadFigure && <MarketFigure product={leadFigure} index={offset} eager />}
         <div class="city-lead__aside">
           <p class="city-lead__angle">{location.cardDescription}</p>
           <a class="btn btn--primary" href="#quote">

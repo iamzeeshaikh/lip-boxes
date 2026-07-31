@@ -5,7 +5,6 @@ import PageHero from '../../../components/PageHero.astro';
 import ContentBlocks from '../../../components/ContentBlocks.astro';
 import FaqList from '../../../components/FaqList.astro';
 import ProductCard from '../../../components/ProductCard.astro';
-import MarketFigure from '../../../components/MarketFigure.astro';
 import QuoteBand from '../../../components/QuoteBand.astro';
 import Icon from '../../../components/Icon.astro';
 import {
@@ -115,7 +114,6 @@ const regionHeading = pick([
   `Where else in the ${region?.toLowerCase()} we cover`,
   `Compare this with neighbouring states`,
 ]);
-const midFigure = related[1] ?? related[0];
 const openingBlocks = location.sections.slice(0, 1);
 const remainingBlocks = location.sections.slice(1);
 ---
@@ -177,14 +175,6 @@ const remainingBlocks = location.sections.slice(1);
 
     <article class="loc-article">
       <ContentBlocks blocks={openingBlocks} slug={location.related[0]} />
-
-      {
-        midFigure && (
-          <div class="loc-figure">
-            <MarketFigure product={midFigure} index={offset + 1} eager />
-          </div>
-        )
-      }
 
       <ContentBlocks blocks={remainingBlocks} slug={location.related[0]} />
 
@@ -261,9 +251,6 @@ const remainingBlocks = location.sections.slice(1);
   }
   .loc-lead__cta {
     margin-bottom: 0;
-  }
-  .loc-figure {
-    padding-block: var(--sp-4) var(--sp-5);
   }
 
   .loc-body {

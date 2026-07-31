@@ -46,7 +46,7 @@ export const texas: Location = {
         },
         {
           title: 'Private label operations',
-          text: 'Producing under several brand names from one structural specification, where the die line is amortised across all of them.',
+          text: 'Producing under several brand names from one structural specification, where the <a href="/resources/packaging-dieline-guide/">die line</a> is amortised across all of them.',
         },
         {
           title: 'Salon and med-spa retail lines',
@@ -86,7 +86,7 @@ export const texas: Location = {
       items: [
         'A case count that a single independent store can order without taking six months of stock',
         'An inner pack quantity, so a case can be split without opening individual cartons',
-        'A pallet pattern, if any account receives on pallets rather than by parcel',
+        'A <a href="/shipping-information/">pallet pattern</a>, if any account receives on pallets rather than by parcel',
         'Case labelling that identifies the SKU without opening the case',
         'A call-off schedule, so the volume price is held without warehousing everything at once',
         'Whether any account requires a specific barcode format on the outer case',
@@ -162,7 +162,7 @@ export const florida: Location = {
       body: [
         'A significant share of Florida lip product sales happen in resort shops, hotel retail, cruise terminals and airport concessions. That buyer behaves differently from a drugstore or a beauty specialist.',
         'Purchases are impulsive and often gifts, so the pack does more selling than the brand does. Price points sit higher than the equivalent product in mass retail. And the pack frequently travels home in a suitcase, which is a physical requirement rather than a marketing one.',
-        'The formats that suit this are gift-ready: sets rather than singles, cartons with more presence than a plain tuck end, and finishes that read well under the bright lighting these stores use.',
+        'The formats that suit this are gift-ready: sets rather than singles, cartons with more presence than a plain <a href="/box-styles/">tuck end</a>, and finishes that read well under the bright lighting these stores use.',
       ],
     },
     {
@@ -202,10 +202,10 @@ export const florida: Location = {
       intro: 'Tourism retail rewards packaging that looks like a present rather than a product.',
       items: [
         'Multipack trays holding three or four shades, with a lift-off lid',
-        'Sleeve and tray constructions, which read as more considered than a tuck end',
+        '<a href="/rigid-lipstick-boxes/">Sleeve and tray</a> constructions, which read as more considered than a tuck end',
         'Small rigid boxes for higher price points, viable at modest quantities',
         'Printed bands or belly wraps that turn two singles into a set without new tooling',
-        'Holographic and metallised board for limited editions and seasonal ranges',
+        'Holographic and <a href="/holographic-lip-gloss-boxes/">metallised board</a> for limited editions and seasonal ranges',
         'Window cartons where the shade itself is the selling point',
       ],
       outro:
@@ -278,7 +278,7 @@ export const georgia: Location = {
       body: [
         'Atlanta supports an unusually large number of independent lip gloss and colour brands, many of them founded and run by a single person, selling primarily online and through pop-up and event retail.',
         'The packaging requirements that follow are specific. Quantities are modest, often a few hundred to a few thousand per shade. Launch cycles are short, sometimes tied to a content schedule rather than a retail calendar. And the pack has to photograph well, because most of the selling happens on a screen before anything reaches a customer.',
-        'That combination favours digital printing, one die line across a range, and finishes that read on camera rather than only in the hand.',
+        'That combination favours digital printing, one <a href="/resources/packaging-dieline-guide/">die line</a> across a range, and finishes that read on camera rather than only in the hand.',
       ],
     },
     {
@@ -288,7 +288,7 @@ export const georgia: Location = {
       navLabel: 'On camera',
       body: [
         'Packaging for a brand that sells mostly through images has a requirement most retail packaging does not: it has to survive being photographed under uncontrolled lighting by someone with a phone.',
-        'Some finishes help. Holographic and metallised board shifts colour as the camera moves, which reads as movement in video. Spot UV over matte creates contrast that a camera picks up more reliably than a subtle emboss does. Foil catches light in a way that photographs as genuinely metallic.',
+        'Some finishes help. Holographic and metallised board shifts colour as the camera moves, which reads as movement in video. <a href="/finishes/">Spot UV</a> over matte creates contrast that a camera picks up more reliably than a subtle emboss does. Foil catches light in a way that photographs as genuinely metallic.',
         'Some finishes work against you. Soft-touch lamination feels expensive and photographs as flat grey. Very fine embossing disappears entirely at phone resolution. And a high-gloss laminate reflects the ring light straight back into the lens. Our <a href="/holographic-lip-gloss-boxes/">iridescent gloss carton page</a> covers what actually changes under light.',
       ],
     },
@@ -388,7 +388,7 @@ export const northCarolina: Location = {
       body: [
         'North Carolina has more contract cosmetic manufacturing capacity than most states, and that changes who is actually specifying the packaging.',
         'When a brand fills its own product by hand, the packaging brief comes from the brand. When a contract manufacturer fills it on an automated line, the line imposes constraints that override preferences: how the carton is fed, whether it is glued shut by a sealer, what case count the packing station expects, and how the pallet is built.',
-        'Those constraints are not negotiable and they are cheap to accommodate if they arrive with the enquiry. They are expensive to accommodate afterwards, because most of them affect the die line.',
+        'Those constraints are not negotiable and they are cheap to accommodate if they arrive with the enquiry. They are expensive to accommodate afterwards, because most of them affect the <a href="/resources/packaging-dieline-guide/">die line</a>.',
       ],
     },
     {
@@ -399,7 +399,7 @@ export const northCarolina: Location = {
       intro: 'Send these with the enquiry and the die line is drawn correctly the first time.',
       items: [
         'Whether cartons are erected by hand or by machine, which changes the base construction',
-        'Whether the carton is closed by tuck or glued shut on a sealer, which decides seal end versus tuck end',
+        'Whether the carton is closed by tuck or glued shut on a sealer, which decides seal end versus <a href="/box-styles/">tuck end</a>',
         'The carton feed orientation the magazine expects',
         'Units per case and whether an inner pack is required',
         'Pallet pattern, maximum height and whether pallets are stretch wrapped',
@@ -417,7 +417,7 @@ export const northCarolina: Location = {
       body: [
         'The common failure on a contract-filled project is that the brand approves the artwork and the filler then finds the structure does not suit their line. Both were doing their job; nobody was holding both sets of requirements.',
         'The straightforward fix is to get the filler into the specification conversation before the die line is approved, not after. A ten minute call about carton feed and closure is enough, and it happens once.',
-        'It is also worth agreeing who approves what. Structure is usually the filler\'s call; artwork and colour are the brand\'s. Writing that down prevents the situation where a die line sits unapproved because each party assumed the other owned it. The approval sequence is set out on our <a href="/how-to-order/">who signs off what, and when</a>.',
+        'It is also worth agreeing who approves what. Structure is usually the filler\'s call; artwork and colour are the brand\'s. Writing that down prevents the situation where a die line sits unapproved because each party assumed the other owned it. <a href="/how-to-order/">Who signs off what, and when</a> is set out in the ordering steps.',
       ],
     },
     {

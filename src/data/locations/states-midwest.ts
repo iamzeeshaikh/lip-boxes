@@ -40,7 +40,7 @@ export const illinois: Location = {
       navLabel: 'Fixture constraints',
       intro: 'Six measurements to get from the account before a die line is drawn.',
       items: [
-        'Peg hook diameter and spacing, which sets the tab type and the maximum pack width',
+        '<a href="/hang-tab-lip-balm-boxes/">Peg hook</a> diameter and spacing, which sets the tab type and the maximum pack width',
         'Fixture depth, since the pack must clear the one hanging in front of it',
         'Shelf height where the product sits on a shelf rather than a peg',
         'Required barcode format and its position on the pack and on the outer case',
@@ -58,7 +58,7 @@ export const illinois: Location = {
       body: [
         'The two things that most often cost a reset are approval delay and a late specification change, and both are within your control.',
         'Nominate one person with authority to approve proofs. On date-driven work, approval time is more frequently the binding constraint than production time, and a proof circulating for consensus is the most common cause of a missed cutoff.',
-        'Get the vendor manual before the die line rather than after. A structural requirement discovered post-approval means a new die, and a die is the one thing in a packaging project that cannot be hurried much. The approval sequence is on our <a href="/how-to-order/">the order sequence</a>.',
+        'Get the vendor manual before the die line rather than after. A structural requirement discovered post-approval means a new die, and a die is the one thing in a packaging project that cannot be hurried much. <a href="/how-to-order/">The order sequence</a> is set out step by step.',
       ],
     },
   ],
@@ -158,7 +158,7 @@ export const ohio: Location = {
       body: [
         'Once a die is cut and a proof approved, both are held against your account. A rollout order then carries no die charge and no proofing charge and is priced on print and material at the new quantity.',
         'That is worth saying at the first quote rather than the second. Telling a supplier that a trial is a trial changes how the tooling is quoted, and it changes which board and process get recommended.',
-        'It also makes the scale-up quote genuinely comparable, because you can see the difference between the trial price and the rollout price without the setup cost distorting it. How that split works is set out in our <a href="/resources/custom-packaging-cost-guide/">how a packaging price breaks down</a>.',
+        'It also makes the scale-up quote genuinely comparable, because you can see the difference between the trial price and the rollout price without the setup cost distorting it. <a href="/resources/custom-packaging-cost-guide/">How a packaging price breaks down</a> covers that split in full.',
       ],
     },
   ],
@@ -227,8 +227,8 @@ export const michigan: Location = {
       navLabel: 'The market',
       body: [
         'Lip balm demand in cold-weather states concentrates heavily into a few months. For a Michigan brand that can mean the majority of annual volume moves between October and February.',
-        'That creates an awkward packaging decision. Ordering the whole year in one run gets the lowest unit price but means holding stock through spring and summer, which ties up cash and warehouse space. Ordering in small batches through the year costs more per unit and risks a stockout in the one period that matters.',
-        'The usual resolution is a scheduled call-off: produce the full quantity in one run to hold the volume price, then take delivery in stages as the season builds. It is the single most useful arrangement for a seasonal brand and it is frequently not asked about.',
+        'That creates an awkward packaging decision. Ordering the whole year in one run gets the lowest <a href="/resources/custom-packaging-cost-guide/">unit price</a> but means holding stock through spring and summer, which ties up cash and warehouse space. Ordering in small batches through the year costs more per unit and risks a stockout in the one period that matters.',
+        'The usual resolution is a <a href="/how-to-order/">scheduled call-off</a>: produce the full quantity in one run to hold the volume price, then take delivery in stages as the season builds. It is the single most useful arrangement for a seasonal brand and it is frequently not asked about.',
       ],
     },
     {
@@ -327,7 +327,7 @@ export const indiana: Location = {
       body: [
         'Indiana carries a large share of national distribution activity, and brands operating there tend to think about packaging in terms of cases and pallets rather than only units.',
         'That is a useful discipline, because case efficiency is a real cost that most packaging conversations ignore. A carton an eighth of an inch wider can drop the number that fit a case, which changes the number of cases on a pallet, which changes freight cost on every shipment for the life of the product.',
-        'It is also one of the few packaging decisions that is genuinely free to get right, provided it is raised before the die line rather than after.',
+        'It is also one of the few packaging decisions that is genuinely free to get right, provided it is raised before the <a href="/resources/packaging-dieline-guide/">die line</a> rather than after.',
       ],
     },
     {
@@ -426,7 +426,7 @@ export const missouri: Location = {
       body: [
         'Regional grocery and drug chains across Missouri tend to keep a listing longer than national accounts do. A product that earns shelf space can hold it for years, with reorders every few months.',
         'That shifts the packaging priority. A national launch optimises for impact at the reset; a long regional listing optimises for reproducing the same pack, indistinguishably, across a dozen reorders spread over several years.',
-        'The failure mode is drift. Board shade moves slightly between mill batches, process colour moves within tolerance between runs, and a laminate supplier changes. Individually each is within specification. Together, across three years, the pack on the shelf stops matching the one the buyer approved.',
+        'The failure mode is drift. Board shade moves slightly between mill batches, process colour moves within tolerance between runs, and a <a href="/finishes/">laminate</a> supplier changes. Individually each is within specification. Together, across three years, the pack on the shelf stops matching the one the buyer approved.',
       ],
     },
     {
@@ -439,7 +439,7 @@ export const missouri: Location = {
         'Spot Pantone for brand colours and any shade swatch, rather than a process build that drifts',
         'A coated white board rather than kraft or recycled, both of which vary more between batches',
         'A retained approved proof, held as the reference every reorder is measured against',
-        'A held die line, so the structure is identical rather than redrawn',
+        'A held <a href="/resources/packaging-dieline-guide/">die line</a>, so the structure is identical rather than redrawn',
         'One named laminate or varnish specification rather than "matte finish"',
         'Reorders quoted against the held specification rather than re-specified each time',
       ],
@@ -454,7 +454,7 @@ export const missouri: Location = {
       body: [
         'A product with a multi-year listing is the strongest case for packaging economics, because the one-time costs are spread across every reorder rather than across a single run.',
         'The die is cut once. The proof is approved once. Every subsequent order is priced on print and material at whatever quantity you need, with no tooling and no proofing charge. Over three years that changes the effective unit cost considerably.',
-        'It is worth telling a supplier at the first quote that you expect a long listing, because it changes what gets recommended. A specification chosen for a one-off run and one chosen for a decade of reorders are not the same specification, and the cost model behind that is set out in our <a href="/resources/custom-packaging-cost-guide/">spreading one-time costs over reorders</a>.',
+        'It is worth telling a supplier at the first quote that you expect a long listing, because it changes what gets recommended. A specification chosen for a one-off run and one chosen for a decade of reorders are not the same specification, and <a href="/resources/custom-packaging-cost-guide/">spreading one-time costs over reorders</a> explains why.',
       ],
     },
   ],

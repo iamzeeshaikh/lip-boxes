@@ -166,7 +166,7 @@ export const resource: Resource = {
       body: [
         'Ask for one-time costs to be separated from unit cost. If a supplier lists them separately, you can immediately see what a reorder will cost and whether the specification or the volume is driving your price. If they will not separate them, that is worth noting.',
         'Ask what happens at the next volume break, and at half your quantity. Three points on the curve tell you far more than one, and occasionally reveal that a larger order costs less in total.',
-        'Ask what is excluded. Freight, tooling, inserts, samples, proofs and any rush charge are the usual candidates. A complete quote names them even when the answer is zero. The stages a quote covers are set out on our <a href="/how-to-order/">what happens once a quote is accepted</a>.',
+        'Ask what is excluded. Freight, tooling, inserts, samples, proofs and any rush charge are the usual candidates. A complete quote names them even when the answer is zero. <a href="/how-to-order/">What happens once a quote is accepted</a> sets out the stages that follow.',
       ],
     },
   ],

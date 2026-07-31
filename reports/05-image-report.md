@@ -13,7 +13,7 @@
 | Format | Files | Total size |
 | --- | --- | --- |
 | AVIF | 210 | 2.36 MB |
-| WebP | 558 | 6.72 MB |
+| WebP | 461 | 5.72 MB |
 | PNG (social and schema images) | 0 | 0.00 MB |
 | **Normalised sources in `src/assets`** | 58 | 54.12 MB |
 

@@ -41,7 +41,7 @@ export const philadelphia: Location = {
       intro: 'Six things to have ready before the first account asks, rather than after.',
       items: [
         'A barcode, registered to you rather than borrowed, printed on a flat panel with clear space',
-        'A full ingredient declaration that is actually legible at final size',
+        'A full <a href="/resources/cosmetic-packaging-label-requirements/">ingredient declaration</a> that is actually legible at final size',
         'A case count a small shop can order without taking months of stock',
         'Consistent packaging between batches, which hand-cut labels do not deliver',
         'A wholesale price that survives a retail margin, which constrains packaging cost',
@@ -255,7 +255,7 @@ export const sanDiego: Location = {
       navLabel: 'Outdoor retail',
       body: [
         'Beyond the regulated content, the channel imposes its own requirements. Surf shops, dive stores and outdoor retailers merchandise small items on pegs and spinner racks rather than beauty fixtures.',
-        'That means a hanging pack, and it means a finish that tolerates sun exposure in a shop with large windows and constant handling by browsing customers. A laminate holds up considerably better than bare print with a varnish.',
+        'That means a hanging pack, and it means a finish that tolerates sun exposure in a shop with large windows and constant handling by browsing customers. A <a href="/finishes/">laminate</a> holds up considerably better than bare print with a varnish.',
         'It also favours durable container formats. A plastic twist-up gives more thermal protection than paperboard, which matters for a product likely to spend time in a beach bag. Our <a href="/hang-tab-lip-balm-boxes/">hang tab carton options</a> covers the tab engineering.',
       ],
     },
@@ -355,7 +355,7 @@ export const dallas: Location = {
       body: [
         'The scheduling problem is that a production-standard sample requires the specification to be finalised, and market dates arrive before most brands want to finalise anything.',
         'The practical route is to lock the structure early and produce a small quantity to production standard for the market, accepting that the unit cost on that small run is high. It is a selling cost rather than a production cost, and it is small against the orders it writes.',
-        'It also means the die is already cut when the orders come in, which shortens the path from written order to delivery considerably. The approval sequence is on our <a href="/how-to-order/">how an order runs from quote to delivery</a>.',
+        'It also means the die is already cut when the orders come in, which shortens the path from written order to delivery considerably. <a href="/how-to-order/">How an order runs from quote to delivery</a> is set out separately.',
       ],
     },
   ],

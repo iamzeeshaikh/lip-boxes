@@ -2,10 +2,8 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import PageHero from '../../../components/PageHero.astro';
 import QuoteCta from '../../../components/QuoteCta.astro';
-import MarketFigure from '../../../components/MarketFigure.astro';
 import { indexableCities, locationUrl } from '../../../data/locations';
 import { site } from '../../../data/site';
-import { getProduct } from '../../../data/products';
 import {
   graph,
   organizationSchema,
@@ -37,10 +35,6 @@ const schema = graph(
 
 const rows = indexableCities;
 
-/* Formats named in the intro copy above the fold. */
-const figures = ['hang-tab-lipstick-boxes', 'lip-gloss-boxes', 'paper-lip-balm-tubes']
-  .map((slug) => getProduct(slug))
-  .filter((p): p is NonNullable<typeof p> => Boolean(p));
 ---
 
 <BaseLayout
@@ -71,11 +65,6 @@ const figures = ['hang-tab-lipstick-boxes', 'lip-gloss-boxes', 'paper-lip-balm-t
         parent state page. If you want the wider view, the{' '}
         <a href="/locations/states/">state directory</a> has it.
       </p>
-      <div class="ci-figures">
-        {figures.map((product, index) => (
-          <MarketFigure product={product} index={index} eager={index === 0} />
-        ))}
-      </div>
       <p class="ci-note">
         {site.name} has no address, warehouse, held stock, staff or collection point
         in any city listed here. Everything is made to order and shipped through a
@@ -115,16 +104,6 @@ const figures = ['hang-tab-lipstick-boxes', 'lip-gloss-boxes', 'paper-lip-balm-t
 </BaseLayout>
 
 <style>
-  .ci-figures {
-    display: grid;
-    gap: var(--sp-4);
-    margin-block: var(--sp-5) var(--sp-6);
-  }
-  @media (min-width: 48rem) {
-    .ci-figures {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-  }
   .ci-note {
     padding: var(--sp-4);
     background: var(--paper-warm);

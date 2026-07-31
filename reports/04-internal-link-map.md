@@ -1,7 +1,7 @@
 # Internal link map
 
-9653 internal links across 98 pages, of which
-202 are contextual editorial links written into
+9629 internal links across 98 pages, of which
+226 are contextual editorial links written into
 body copy. Header, footer, breadcrumbs and product grids are excluded from the
 editorial count.
 
@@ -94,7 +94,7 @@ distinct linking pages. Verified by `npm run audit:site`.
 | /products/ | 97 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +89 |
 | /request-a-quote/ | 97 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +89 |
 | /resources/ | 97 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +89 |
-| /resources/choosing-packaging-inserts/ | 5 | /resources/, /resources/custom-packaging-cost-guide/, /resources/lip-balm-box-size-guide/, /resources/lip-gloss-box-size-guide/, /resources/lipstick-box-size-guide/ |
+| /resources/choosing-packaging-inserts/ | 6 | /locations/cities/seattle/, /resources/, /resources/custom-packaging-cost-guide/, /resources/lip-balm-box-size-guide/, /resources/lip-gloss-box-size-guide/, /resources/lipstick-box-size-guide/ |
 | /resources/cosmetic-packaging-label-requirements/ | 6 | /locations/cities/san-antonio/, /locations/states/new-jersey/, /locations/states/texas/, /resources/, /resources/lip-product-packaging-guide/, /resources/prepress-checklist/ |
 | /resources/custom-packaging-cost-guide/ | 97 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +89 |
 | /resources/lip-balm-box-size-guide/ | 97 | /, /404/, /about/, /artwork-guidelines/, /blog/, /blog/how-packaging-quantity-affects-unit-pricing/, /blog/how-to-choose-packaging-for-a-lip-gloss-line/, /blog/how-to-prepare-artwork-for-custom-lip-boxes/ +89 |
@@ -195,14 +195,16 @@ Written inside body prose, one per content section, with varied anchor text.
 | /locations/cities/austin/ | packaging set page | /lip-balm-packaging/ |
 | /locations/cities/austin/ | how Texas buys, and where Austin differs | /locations/states/texas/ |
 | /locations/cities/boston/ | how Massachusetts buys, and where Boston differs | /locations/states/massachusetts/ |
-| /locations/cities/boston/ | what a staged run costs | /resources/custom-packaging-cost-guide/ |
+| /locations/cities/boston/ | What a staged run costs | /resources/custom-packaging-cost-guide/ |
 | /locations/cities/charlotte/ | how North Carolina buys, and where Charlotte differs | /locations/states/north-carolina/ |
 | /locations/cities/charlotte/ | rigid gift box formats | /rigid-lipstick-boxes/ |
+| /locations/cities/chicago/ | printed proof | /artwork-guidelines/ |
 | /locations/cities/chicago/ | the sampling and approval steps | /how-to-order/ |
 | /locations/cities/chicago/ | how Illinois buys, and where Chicago differs | /locations/states/illinois/ |
 | /locations/cities/columbus/ | peg hook packs for lip balm | /hang-tab-lip-balm-boxes/ |
 | /locations/cities/columbus/ | how Ohio buys, and where Columbus differs | /locations/states/ohio/ |
-| /locations/cities/dallas/ | how an order runs from quote to delivery | /how-to-order/ |
+| /locations/cities/columbus/ | die line | /resources/packaging-dieline-guide/ |
+| /locations/cities/dallas/ | How an order runs from quote to delivery | /how-to-order/ |
 | /locations/cities/dallas/ | how Texas buys, and where Dallas differs | /locations/states/texas/ |
 | /locations/cities/denver/ | label reference page | /lip-balm-labels/ |
 | /locations/cities/denver/ | how Colorado buys, and where Denver differs | /locations/states/colorado/ |
@@ -211,7 +213,7 @@ Written inside body prose, one per content section, with varied anchor text.
 | /locations/cities/houston/ | printed bullet cartons | /custom-lipstick-boxes/ |
 | /locations/cities/houston/ | how Texas buys, and where Houston differs | /locations/states/texas/ |
 | /locations/cities/indianapolis/ | how Indiana buys, and where Indianapolis differs | /locations/states/indiana/ |
-| /locations/cities/indianapolis/ | how freight and delivery are quoted | /shipping-information/ |
+| /locations/cities/indianapolis/ | How freight and delivery are quoted | /shipping-information/ |
 | /locations/cities/jacksonville/ | how Florida buys, and where Jacksonville differs | /locations/states/florida/ |
 | /locations/cities/los-angeles/ | how California buys, and where Los Angeles differs | /locations/states/california/ |
 | /locations/cities/los-angeles/ | rigid boxes built for press packs | /rigid-lipstick-boxes/ |
@@ -221,54 +223,76 @@ Written inside body prose, one per content section, with varied anchor text.
 | /locations/cities/new-york-city/ | delivery access requirements | /shipping-information/ |
 | /locations/cities/philadelphia/ | label reference page | /lip-balm-labels/ |
 | /locations/cities/philadelphia/ | how Pennsylvania buys, and where Philadelphia differs | /locations/states/pennsylvania/ |
+| /locations/cities/phoenix/ | laminate | /finishes/ |
 | /locations/cities/phoenix/ | window and tab carton detail | /hang-tab-lip-balm-boxes/ |
 | /locations/cities/phoenix/ | how Arizona buys, and where Phoenix differs | /locations/states/arizona/ |
 | /locations/cities/san-antonio/ | how Texas buys, and where San Antonio differs | /locations/states/texas/ |
 | /locations/cities/san-antonio/ | labelling guide | /resources/cosmetic-packaging-label-requirements/ |
+| /locations/cities/san-diego/ | laminate | /finishes/ |
 | /locations/cities/san-diego/ | hang tab carton options | /hang-tab-lip-balm-boxes/ |
 | /locations/cities/san-diego/ | how California buys, and where San Diego differs | /locations/states/california/ |
 | /locations/cities/seattle/ | how Washington buys, and where Seattle differs | /locations/states/washington/ |
 | /locations/cities/seattle/ | materials page | /materials/ |
+| /locations/cities/seattle/ | paperboard insert | /resources/choosing-packaging-inserts/ |
+| /locations/cities/washington-dc/ | spot UV | /finishes/ |
+| /locations/cities/washington-dc/ | Holographic board | /holographic-lip-gloss-boxes/ |
 | /locations/cities/washington-dc/ | sleeve, tray and rigid options | /rigid-lipstick-boxes/ |
 | /locations/states/ | city directory | /locations/cities/ |
+| /locations/states/arizona/ | label stock | /lip-balm-labels/ |
 | /locations/states/arizona/ | Every format a Arizona brand can order | /products/ |
 | /locations/states/arizona/ | storage and transit notes | /shipping-information/ |
 | /locations/states/california/ | printed cartons built around a bullet case | /custom-lipstick-boxes/ |
 | /locations/states/california/ | Every format a California brand can order | /products/ |
-| /locations/states/california/ | what changes a delivery quote | /shipping-information/ |
+| /locations/states/california/ | What changes a delivery quote | /shipping-information/ |
+| /locations/states/colorado/ | artwork approval | /artwork-guidelines/ |
 | /locations/states/colorado/ | kraft tube page | /cardboard-lip-balm-tubes/ |
 | /locations/states/colorado/ | Every format a Colorado brand can order | /products/ |
+| /locations/states/florida/ | tuck end | /box-styles/ |
 | /locations/states/florida/ | Every format a Florida brand can order | /products/ |
+| /locations/states/georgia/ | Spot UV | /finishes/ |
 | /locations/states/georgia/ | iridescent gloss carton page | /holographic-lip-gloss-boxes/ |
 | /locations/states/georgia/ | Every format a Georgia brand can order | /products/ |
-| /locations/states/illinois/ | the order sequence | /how-to-order/ |
+| /locations/states/georgia/ | die line | /resources/packaging-dieline-guide/ |
+| /locations/states/illinois/ | The order sequence | /how-to-order/ |
 | /locations/states/illinois/ | Every format a Illinois brand can order | /products/ |
 | /locations/states/indiana/ | Every format a Indiana brand can order | /products/ |
+| /locations/states/indiana/ | die line | /resources/packaging-dieline-guide/ |
 | /locations/states/indiana/ | pallet and freight information | /shipping-information/ |
 | /locations/states/maryland/ | label reference | /lip-balm-labels/ |
 | /locations/states/maryland/ | Every format a Maryland brand can order | /products/ |
 | /locations/states/massachusetts/ | lip mask carton page | /custom-lip-mask-boxes/ |
 | /locations/states/massachusetts/ | Every format a Massachusetts brand can order | /products/ |
 | /locations/states/michigan/ | hanging cartons for checkout fixtures | /hang-tab-lip-balm-boxes/ |
+| /locations/states/michigan/ | scheduled call-off | /how-to-order/ |
 | /locations/states/michigan/ | Every format a Michigan brand can order | /products/ |
+| /locations/states/michigan/ | unit price | /resources/custom-packaging-cost-guide/ |
+| /locations/states/missouri/ | laminate | /finishes/ |
 | /locations/states/missouri/ | Every format a Missouri brand can order | /products/ |
 | /locations/states/missouri/ | spreading one-time costs over reorders | /resources/custom-packaging-cost-guide/ |
 | /locations/states/new-jersey/ | Every format a New Jersey brand can order | /products/ |
 | /locations/states/new-jersey/ | labelling guide | /resources/cosmetic-packaging-label-requirements/ |
+| /locations/states/new-jersey/ | die line | /resources/packaging-dieline-guide/ |
+| /locations/states/new-york/ | board weight | /materials/ |
 | /locations/states/new-york/ | Every format a New York brand can order | /products/ |
+| /locations/states/new-york/ | die line | /resources/packaging-dieline-guide/ |
 | /locations/states/new-york/ | wrapped rigid construction | /rigid-lipstick-boxes/ |
-| /locations/states/north-carolina/ | who signs off what, and when | /how-to-order/ |
+| /locations/states/north-carolina/ | Who signs off what, and when | /how-to-order/ |
 | /locations/states/north-carolina/ | Every format a North Carolina brand can order | /products/ |
+| /locations/states/north-carolina/ | die line | /resources/packaging-dieline-guide/ |
 | /locations/states/ohio/ | Every format a Ohio brand can order | /products/ |
-| /locations/states/ohio/ | how a packaging price breaks down | /resources/custom-packaging-cost-guide/ |
+| /locations/states/ohio/ | How a packaging price breaks down | /resources/custom-packaging-cost-guide/ |
 | /locations/states/pennsylvania/ | bulk and private label page | /custom-lip-care-packaging/ |
+| /locations/states/pennsylvania/ | board weight | /materials/ |
 | /locations/states/pennsylvania/ | Every format a Pennsylvania brand can order | /products/ |
+| /locations/states/pennsylvania/ | die line | /resources/packaging-dieline-guide/ |
 | /locations/states/tennessee/ | label formats page | /lip-balm-labels/ |
 | /locations/states/tennessee/ | Every format a Tennessee brand can order | /products/ |
 | /locations/states/texas/ | Every format a Texas brand can order | /products/ |
 | /locations/states/texas/ | labelling guide | /resources/cosmetic-packaging-label-requirements/ |
+| /locations/states/virginia/ | board weight | /materials/ |
 | /locations/states/virginia/ | Every format a Virginia brand can order | /products/ |
-| /locations/states/virginia/ | receiving and delivery detail | /shipping-information/ |
+| /locations/states/virginia/ | receiving and delivery notes | /shipping-information/ |
+| /locations/states/washington/ | paperboard tube | /paper-lip-balm-tubes/ |
 | /locations/states/washington/ | Every format a Washington brand can order | /products/ |
 | /materials/ | window carton for peg display | /hang-tab-lipstick-boxes/ |
 | /materials/ | rolled paperboard tube page | /paper-lip-balm-tubes/ |
@@ -290,17 +314,17 @@ Written inside body prose, one per content section, with varied anchor text.
 | /resources/choosing-packaging-inserts/ | rigid gift construction | /rigid-lipstick-boxes/ |
 | /resources/cosmetic-packaging-label-requirements/ | launch planning guide | /resources/lip-product-packaging-guide/ |
 | /resources/cosmetic-packaging-label-requirements/ | terms | /terms-and-conditions/ |
-| /resources/custom-packaging-cost-guide/ | what happens once a quote is accepted | /how-to-order/ |
+| /resources/custom-packaging-cost-guide/ | What happens once a quote is accepted | /how-to-order/ |
 | /resources/lip-balm-box-size-guide/ | cartons cut to a filled balm tube | /custom-lip-balm-boxes/ |
 | /resources/lip-balm-box-size-guide/ | peg hook carton page | /hang-tab-lip-balm-boxes/ |
 | /resources/lip-gloss-box-size-guide/ | structural reference | /box-styles/ |
 | /resources/lip-gloss-box-size-guide/ | gloss carton page | /lip-gloss-boxes/ |
 | /resources/lip-product-packaging-guide/ | bulk and private label programmes | /custom-lip-care-packaging/ |
-| /resources/lip-product-packaging-guide/ | the full cost breakdown | /resources/custom-packaging-cost-guide/ |
+| /resources/lip-product-packaging-guide/ | full cost breakdown | /resources/custom-packaging-cost-guide/ |
 | /resources/lipstick-box-size-guide/ | comparison of lipstick box constructions | /lipstick-boxes/ |
 | /resources/lipstick-box-size-guide/ | wrapped rigid box page | /rigid-lipstick-boxes/ |
 | /resources/packaging-dieline-guide/ | artwork requirements | /artwork-guidelines/ |
-| /resources/packaging-dieline-guide/ | the approval stages of an order | /how-to-order/ |
+| /resources/packaging-dieline-guide/ | The approval stages of an order | /how-to-order/ |
 | /resources/packaging-glossary/ | finishes page | /finishes/ |
 | /resources/packaging-glossary/ | the order process end to end | /how-to-order/ |
 | /resources/packaging-glossary/ | materials page | /materials/ |

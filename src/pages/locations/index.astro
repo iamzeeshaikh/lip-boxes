@@ -2,7 +2,6 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHero from '../../components/PageHero.astro';
 import FaqList from '../../components/FaqList.astro';
-import MarketFigure from '../../components/MarketFigure.astro';
 import QuoteCta from '../../components/QuoteCta.astro';
 import {
   stateRegions,
@@ -12,7 +11,6 @@ import {
   locationUrl,
 } from '../../data/locations';
 import { site } from '../../data/site';
-import { getProduct } from '../../data/products';
 import {
   graph,
   organizationSchema,
@@ -52,11 +50,6 @@ const faqs = [
     a: 'That depends on the specification and the destination, so it is confirmed in writing on the quote rather than promised in advance. Production time and transit time are stated separately.',
   },
 ];
-
-/* Three formats that turn up repeatedly across the markets below. */
-const showcase = ['hang-tab-lip-balm-boxes', 'rigid-lipstick-boxes', 'cardboard-lip-balm-tubes']
-  .map((slug) => getProduct(slug))
-  .filter((p): p is NonNullable<typeof p> => Boolean(p));
 
 const schema = graph(
   organizationSchema(),
@@ -121,23 +114,6 @@ const schema = graph(
         When you have dimensions and a quantity, send a{' '}
         <a href="/request-a-quote/">quote request</a> and you will get a written price.
       </p>
-    </div>
-  </section>
-
-  <section class="section section--warm" aria-labelledby="loc-showcase-heading">
-    <div class="wrap">
-      <span class="eyebrow">Across every market</span>
-      <h2 id="loc-showcase-heading">Three formats that come up everywhere</h2>
-      <p class="loc-lede">
-        Different markets ask for different things, but these three appear in almost
-        every one: a peg-ready carton for fixture retail, a rigid box for gifting, and
-        a plastic-free tube for small runs.
-      </p>
-      <div class="loc-showcase">
-        {showcase.map((product, index) => (
-          <MarketFigure product={product} index={index} />
-        ))}
-      </div>
     </div>
   </section>
 
@@ -224,16 +200,6 @@ const schema = graph(
   .loc-lede {
     max-width: 60ch;
     margin-bottom: var(--sp-5);
-  }
-  .loc-showcase {
-    display: grid;
-    gap: var(--sp-5);
-    margin-top: var(--sp-5);
-  }
-  @media (min-width: 48rem) {
-    .loc-showcase {
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
   }
   .loc-region {
     margin-bottom: var(--sp-6);

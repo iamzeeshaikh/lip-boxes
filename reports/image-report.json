@@ -7778,17 +7778,6 @@
   },
   {
     "page": "/locations/cities/austin/",
-    "src": "/_astro/lip-balm-packaging-blush-pink-cartons.Dd111al2_Z234eMB.webp",
-    "alt": "Two blush pink lip balm cartons with gold foil botanical artwork on a pale marble surface",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/lip-balm-packaging-blush-pink-cartons.Dd111al2_Z20WXx7.webp 320w, /_astro/lip-balm-packaging-blush-pink-cartons.Dd111al2_9mAmu.webp 480w, /_astro/lip-balm-packaging-blush-pink-cartons.Dd111al2_Z234eMB.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/cities/austin/",
     "src": "/_astro/lip-balm-packaging-foil-stamped-carton.Dcw-9f5G_Z1CGWhV.webp",
     "alt": "",
     "width": "480",
@@ -7983,17 +7972,6 @@
     "loading": "lazy",
     "srcset": "/_astro/custom-lip-care-packaging-carton-range.CESy9JUo_1U3lxx.webp 96w, /_astro/custom-lip-care-packaging-carton-range.CESy9JUo_ZeErPT.webp 144w",
     "sizes": "48px",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/cities/boston/",
-    "src": "/_astro/custom-lip-balm-box-multipack-tray.GvnhQw6r_Z291pzY.webp",
-    "alt": "Open pastel multipack tray holding four printed lip balm tubes with a lid beside it",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/custom-lip-balm-box-multipack-tray.GvnhQw6r_ZpCwWS.webp 320w, /_astro/custom-lip-balm-box-multipack-tray.GvnhQw6r_T3IfU.webp 480w, /_astro/custom-lip-balm-box-multipack-tray.GvnhQw6r_Z291pzY.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
     "fetchpriority": null
   },
   {
@@ -8196,17 +8174,6 @@
   },
   {
     "page": "/locations/cities/charlotte/",
-    "src": "/_astro/rigid-lipstick-box-sleeve-and-tray.BXFxLQ0b_Z1e5a0x.webp",
-    "alt": "Pink rigid drawer box for lipstick half open, showing the white inner tray sliding out of the outer sleeve",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/rigid-lipstick-box-sleeve-and-tray.BXFxLQ0b_uiHBy.webp 320w, /_astro/rigid-lipstick-box-sleeve-and-tray.BXFxLQ0b_1NYXPm.webp 480w, /_astro/rigid-lipstick-box-sleeve-and-tray.BXFxLQ0b_Z1e5a0x.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/cities/charlotte/",
     "src": "/_astro/rigid-lipstick-box-magnetic-closure.D7K2LZXF_1N9EU4.webp",
     "alt": "",
     "width": "480",
@@ -8401,17 +8368,6 @@
     "loading": "lazy",
     "srcset": "/_astro/custom-lip-care-packaging-carton-range.CESy9JUo_1U3lxx.webp 96w, /_astro/custom-lip-care-packaging-carton-range.CESy9JUo_ZeErPT.webp 144w",
     "sizes": "48px",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/cities/chicago/",
-    "src": "/_astro/custom-lip-care-packaging-gift-set.B-YV_3yj_ZCt5I6.webp",
-    "alt": "Striped lip care gift box open beside three matching slim cartons in pink, yellow and cream",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/custom-lip-care-packaging-gift-set.B-YV_3yj_Z1tiPzP.webp 320w, /_astro/custom-lip-care-packaging-gift-set.B-YV_3yj_Z1p6kw5.webp 480w, /_astro/custom-lip-care-packaging-gift-set.B-YV_3yj_Z2itG0.webp 615w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
     "fetchpriority": null
   },
   {
@@ -8614,17 +8570,6 @@
   },
   {
     "page": "/locations/cities/columbus/",
-    "src": "/_astro/custom-lip-balm-box-multipack-tray.GvnhQw6r_Z291pzY.webp",
-    "alt": "Open pastel multipack tray holding four printed lip balm tubes with a lid beside it",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/custom-lip-balm-box-multipack-tray.GvnhQw6r_ZpCwWS.webp 320w, /_astro/custom-lip-balm-box-multipack-tray.GvnhQw6r_T3IfU.webp 480w, /_astro/custom-lip-balm-box-multipack-tray.GvnhQw6r_Z291pzY.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/cities/columbus/",
     "src": "/_astro/custom-lip-balm-box-slim-tuck-end.HnVLdLRm_Z1MldBU.webp",
     "alt": "",
     "width": "480",
@@ -8819,17 +8764,6 @@
     "loading": "lazy",
     "srcset": "/_astro/custom-lip-care-packaging-carton-range.CESy9JUo_1U3lxx.webp 96w, /_astro/custom-lip-care-packaging-carton-range.CESy9JUo_ZeErPT.webp 144w",
     "sizes": "48px",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/cities/dallas/",
-    "src": "/_astro/custom-lip-care-packaging-gift-set.B-YV_3yj_ZCt5I6.webp",
-    "alt": "Striped lip care gift box open beside three matching slim cartons in pink, yellow and cream",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/custom-lip-care-packaging-gift-set.B-YV_3yj_Z1tiPzP.webp 320w, /_astro/custom-lip-care-packaging-gift-set.B-YV_3yj_Z1p6kw5.webp 480w, /_astro/custom-lip-care-packaging-gift-set.B-YV_3yj_Z2itG0.webp 615w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
     "fetchpriority": null
   },
   {
@@ -9032,17 +8966,6 @@
   },
   {
     "page": "/locations/cities/denver/",
-    "src": "/_astro/cardboard-lip-balm-tube-push-up-base.BIuYwvW6_Z1WD8j8.webp",
-    "alt": "Open kraft cardboard lip balm tube lying beside its separate lid, showing the white push-up chamber",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/cardboard-lip-balm-tube-push-up-base.BIuYwvW6_awGGm.webp 320w, /_astro/cardboard-lip-balm-tube-push-up-base.BIuYwvW6_1hOYdX.webp 480w, /_astro/cardboard-lip-balm-tube-push-up-base.BIuYwvW6_Z1WD8j8.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/cities/denver/",
     "src": "/_astro/cardboard-lip-balm-tube-push-up-base.BIuYwvW6_Z29BxfD.webp",
     "alt": "",
     "width": "480",
@@ -9241,17 +9164,6 @@
   },
   {
     "page": "/locations/cities/fort-worth/",
-    "src": "/_astro/custom-lip-balm-label-minimal-two-colour.DSTTCXpA_afckq.webp",
-    "alt": "Two lip balm tubes in white and black next to a printed vanilla lip balm label showing an ingredient panel",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/custom-lip-balm-label-minimal-two-colour.DSTTCXpA_1PICxt.webp 320w, /_astro/custom-lip-balm-label-minimal-two-colour.DSTTCXpA_Z1SjvP8.webp 480w, /_astro/custom-lip-balm-label-minimal-two-colour.DSTTCXpA_afckq.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/cities/fort-worth/",
     "src": "/_astro/custom-lip-balm-label-minimal-two-colour.DSTTCXpA_1YUtpS.webp",
     "alt": "",
     "width": "480",
@@ -9446,17 +9358,6 @@
     "loading": "lazy",
     "srcset": "/_astro/custom-lip-care-packaging-carton-range.CESy9JUo_1U3lxx.webp 96w, /_astro/custom-lip-care-packaging-carton-range.CESy9JUo_ZeErPT.webp 144w",
     "sizes": "48px",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/cities/houston/",
-    "src": "/_astro/custom-lipstick-box-metallic-foil.CcCyYMso_Zie1Lx.webp",
-    "alt": "Deep blue lipstick box with a faceted pattern and a silver foil oval detail on the front panel",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/custom-lipstick-box-metallic-foil.CcCyYMso_Z1dPnPl.webp 320w, /_astro/custom-lipstick-box-metallic-foil.CcCyYMso_Z17f4Fy.webp 480w, /_astro/custom-lipstick-box-metallic-foil.CcCyYMso_Zie1Lx.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
     "fetchpriority": null
   },
   {
@@ -9658,39 +9559,6 @@
     "fetchpriority": null
   },
   {
-    "page": "/locations/cities/",
-    "src": "/_astro/hang-tab-lipstick-box-window-cutout.nph1lV52_Z126uDF.webp",
-    "alt": "Pink and red hang tab lipstick box with a euro slot at the top and a window showing a gold lipstick inside",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/hang-tab-lipstick-box-window-cutout.nph1lV52_1Edwaq.webp 320w, /_astro/hang-tab-lipstick-box-window-cutout.nph1lV52_Z2DQ6J.webp 480w, /_astro/hang-tab-lipstick-box-window-cutout.nph1lV52_Z126uDF.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/cities/",
-    "src": "/_astro/lip-gloss-box-tall-slim-carton.rZaNoG3c_Z1QR37e.webp",
-    "alt": "Tall slim black and white lip gloss box standing beside a clear gloss tube with a black cap",
-    "width": "640",
-    "height": "400",
-    "loading": "lazy",
-    "srcset": "/_astro/lip-gloss-box-tall-slim-carton.rZaNoG3c_1XKYeL.webp 320w, /_astro/lip-gloss-box-tall-slim-carton.rZaNoG3c_2ePaAC.webp 480w, /_astro/lip-gloss-box-tall-slim-carton.rZaNoG3c_Z1QR37e.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/cities/",
-    "src": "/_astro/paper-lip-balm-tube-full-colour-print.w-L9720K_ZtcVxa.webp",
-    "alt": "Pink illustrated paper lip balm tube lying on its side with its cap off, next to a mint green cap",
-    "width": "640",
-    "height": "400",
-    "loading": "lazy",
-    "srcset": "/_astro/paper-lip-balm-tube-full-colour-print.w-L9720K_Zr6FhF.webp 320w, /_astro/paper-lip-balm-tube-full-colour-print.w-L9720K_1IdSBV.webp 480w, /_astro/paper-lip-balm-tube-full-colour-print.w-L9720K_ZtcVxa.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
-    "fetchpriority": null
-  },
-  {
     "page": "/locations/cities/indianapolis/",
     "src": "/_astro/custom-lip-balm-box-slim-tuck-end.HnVLdLRm_2hUvIS.webp",
     "alt": "",
@@ -9853,17 +9721,6 @@
     "loading": "lazy",
     "srcset": "/_astro/custom-lip-care-packaging-carton-range.CESy9JUo_1U3lxx.webp 96w, /_astro/custom-lip-care-packaging-carton-range.CESy9JUo_ZeErPT.webp 144w",
     "sizes": "48px",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/cities/indianapolis/",
-    "src": "/_astro/custom-lip-care-packaging-shade-family.BEVLrw-2_Z2bDG8Q.webp",
-    "alt": "Four lip care cartons in red, coral, pink and nude printed with photographic lip artwork",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/custom-lip-care-packaging-shade-family.BEVLrw-2_Z29xpSm.webp 320w, /_astro/custom-lip-care-packaging-shade-family.BEVLrw-2_M91f.webp 480w, /_astro/custom-lip-care-packaging-shade-family.BEVLrw-2_Z2bDG8Q.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
     "fetchpriority": null
   },
   {
@@ -10066,17 +9923,6 @@
   },
   {
     "page": "/locations/cities/jacksonville/",
-    "src": "/_astro/custom-lip-balm-box-multipack-tray.GvnhQw6r_Z291pzY.webp",
-    "alt": "Open pastel multipack tray holding four printed lip balm tubes with a lid beside it",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/custom-lip-balm-box-multipack-tray.GvnhQw6r_ZpCwWS.webp 320w, /_astro/custom-lip-balm-box-multipack-tray.GvnhQw6r_T3IfU.webp 480w, /_astro/custom-lip-balm-box-multipack-tray.GvnhQw6r_Z291pzY.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/cities/jacksonville/",
     "src": "/_astro/custom-lip-balm-box-slim-tuck-end.HnVLdLRm_Z1MldBU.webp",
     "alt": "",
     "width": "480",
@@ -10271,17 +10117,6 @@
     "loading": "lazy",
     "srcset": "/_astro/custom-lip-care-packaging-carton-range.CESy9JUo_1U3lxx.webp 96w, /_astro/custom-lip-care-packaging-carton-range.CESy9JUo_ZeErPT.webp 144w",
     "sizes": "48px",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/cities/los-angeles/",
-    "src": "/_astro/rigid-lipstick-box-two-piece-lid.DWDq4Iu7_ZJvPoO.webp",
-    "alt": "Two rigid lipstick boxes in white and navy with gold base sections and printed lipstick labels",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/rigid-lipstick-box-two-piece-lid.DWDq4Iu7_Z1AlAgy.webp 320w, /_astro/rigid-lipstick-box-two-piece-lid.DWDq4Iu7_Z1w95cN.webp 480w, /_astro/rigid-lipstick-box-two-piece-lid.DWDq4Iu7_ZJvPoO.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
     "fetchpriority": null
   },
   {
@@ -10484,17 +10319,6 @@
   },
   {
     "page": "/locations/cities/nashville/",
-    "src": "/_astro/custom-lip-balm-box-counter-display.CkuAQugb_ZlPwLB.webp",
-    "alt": "Kraft brown lip balm counter display box with a printed mountain scene and a hanging tab at the top",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/custom-lip-balm-box-counter-display.CkuAQugb_2ktu2u.webp 320w, /_astro/custom-lip-balm-box-counter-display.CkuAQugb_CB6Kk.webp 480w, /_astro/custom-lip-balm-box-counter-display.CkuAQugb_ZlPwLB.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/cities/nashville/",
     "src": "/_astro/custom-lip-balm-box-slim-tuck-end.HnVLdLRm_Z1MldBU.webp",
     "alt": "",
     "width": "480",
@@ -10693,17 +10517,6 @@
   },
   {
     "page": "/locations/cities/new-york-city/",
-    "src": "/_astro/custom-lipstick-box-floral-print.C_wk8ez2_7eiEn.webp",
-    "alt": "Two floral printed lipstick boxes, one standing and one lying flat on an olive background",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/custom-lipstick-box-floral-print.C_wk8ez2_ZIArcm.webp 320w, /_astro/custom-lipstick-box-floral-print.C_wk8ez2_ZEnV8B.webp 480w, /_astro/custom-lipstick-box-floral-print.C_wk8ez2_7eiEn.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/cities/new-york-city/",
     "src": "/_astro/custom-lipstick-box-reverse-tuck-end.CUy1vHgB_P9QJ7.webp",
     "alt": "",
     "width": "480",
@@ -10898,17 +10711,6 @@
     "loading": "lazy",
     "srcset": "/_astro/custom-lip-care-packaging-carton-range.CESy9JUo_1U3lxx.webp 96w, /_astro/custom-lip-care-packaging-carton-range.CESy9JUo_ZeErPT.webp 144w",
     "sizes": "48px",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/cities/philadelphia/",
-    "src": "/_astro/cardboard-lip-balm-tube-floral-print.BLhxEjcI_29G3LA.webp",
-    "alt": "Two cardboard lip balm tubes with floral artwork lying at an angle on a grey background",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/cardboard-lip-balm-tube-floral-print.BLhxEjcI_ZMkf1Q.webp 320w, /_astro/cardboard-lip-balm-tube-floral-print.BLhxEjcI_jX2uK.webp 480w, /_astro/cardboard-lip-balm-tube-floral-print.BLhxEjcI_29G3LA.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
     "fetchpriority": null
   },
   {
@@ -11111,17 +10913,6 @@
   },
   {
     "page": "/locations/cities/phoenix/",
-    "src": "/_astro/hang-tab-lip-balm-box-tall-tuck-end.D-4OrVA9_1YOkvW.webp",
-    "alt": "Tall cream lip balm box with a hanging tab and a single-line rose illustration on the front panel",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/hang-tab-lip-balm-box-tall-tuck-end.D-4OrVA9_Zo2LsS.webp 320w, /_astro/hang-tab-lip-balm-box-tall-tuck-end.D-4OrVA9_Z25U9K3.webp 480w, /_astro/hang-tab-lip-balm-box-tall-tuck-end.D-4OrVA9_1YOkvW.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/cities/phoenix/",
     "src": "/_astro/hang-tab-lip-balm-box-window-kraft.BQir5rUx_Z1kX0k4.webp",
     "alt": "",
     "width": "480",
@@ -11316,17 +11107,6 @@
     "loading": "lazy",
     "srcset": "/_astro/custom-lip-care-packaging-carton-range.CESy9JUo_1U3lxx.webp 96w, /_astro/custom-lip-care-packaging-carton-range.CESy9JUo_ZeErPT.webp 144w",
     "sizes": "48px",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/cities/san-antonio/",
-    "src": "/_astro/custom-lip-balm-box-slim-tuck-end.HnVLdLRm_ZvpuWW.webp",
-    "alt": "Slim white custom lip balm box standing next to a matching white twist-up lip balm tube",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/custom-lip-balm-box-slim-tuck-end.HnVLdLRm_Z1r1R1K.webp 320w, /_astro/custom-lip-balm-box-slim-tuck-end.HnVLdLRm_Z1kqxQX.webp 480w, /_astro/custom-lip-balm-box-slim-tuck-end.HnVLdLRm_ZvpuWW.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
     "fetchpriority": null
   },
   {
@@ -11529,17 +11309,6 @@
   },
   {
     "page": "/locations/cities/san-diego/",
-    "src": "/_astro/custom-lip-balm-box-slim-tuck-end.HnVLdLRm_ZvpuWW.webp",
-    "alt": "Slim white custom lip balm box standing next to a matching white twist-up lip balm tube",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/custom-lip-balm-box-slim-tuck-end.HnVLdLRm_Z1r1R1K.webp 320w, /_astro/custom-lip-balm-box-slim-tuck-end.HnVLdLRm_Z1kqxQX.webp 480w, /_astro/custom-lip-balm-box-slim-tuck-end.HnVLdLRm_ZvpuWW.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/cities/san-diego/",
     "src": "/_astro/custom-lip-balm-box-slim-tuck-end.HnVLdLRm_Z1MldBU.webp",
     "alt": "",
     "width": "480",
@@ -11734,17 +11503,6 @@
     "loading": "lazy",
     "srcset": "/_astro/custom-lip-care-packaging-carton-range.CESy9JUo_1U3lxx.webp 96w, /_astro/custom-lip-care-packaging-carton-range.CESy9JUo_ZeErPT.webp 144w",
     "sizes": "48px",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/cities/seattle/",
-    "src": "/_astro/cardboard-lip-balm-tube-push-up-base.BIuYwvW6_Z1WD8j8.webp",
-    "alt": "Open kraft cardboard lip balm tube lying beside its separate lid, showing the white push-up chamber",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/cardboard-lip-balm-tube-push-up-base.BIuYwvW6_awGGm.webp 320w, /_astro/cardboard-lip-balm-tube-push-up-base.BIuYwvW6_1hOYdX.webp 480w, /_astro/cardboard-lip-balm-tube-push-up-base.BIuYwvW6_Z1WD8j8.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
     "fetchpriority": null
   },
   {
@@ -11947,17 +11705,6 @@
   },
   {
     "page": "/locations/cities/washington-dc/",
-    "src": "/_astro/rigid-lipstick-box-magnetic-closure.D7K2LZXF_Z1QBvUq.webp",
-    "alt": "Open white rigid lipstick box with a magnetic lid, a mirror inside the lid and a lipstick on pink satin",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/rigid-lipstick-box-magnetic-closure.D7K2LZXF_OHuSF.webp 320w, /_astro/rigid-lipstick-box-magnetic-closure.D7K2LZXF_ZR9Rnu.webp 480w, /_astro/rigid-lipstick-box-magnetic-closure.D7K2LZXF_Z1QBvUq.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/cities/washington-dc/",
     "src": "/_astro/rigid-lipstick-box-magnetic-closure.D7K2LZXF_1N9EU4.webp",
     "alt": "",
     "width": "480",
@@ -12155,39 +11902,6 @@
     "fetchpriority": null
   },
   {
-    "page": "/locations/",
-    "src": "/_astro/hang-tab-lip-balm-box-window-kraft.BQir5rUx_Zn9Ism.webp",
-    "alt": "Kraft hang tab lip balm box with a euro slot and a rectangular window showing the white tube inside",
-    "width": "640",
-    "height": "400",
-    "loading": "lazy",
-    "srcset": "/_astro/hang-tab-lip-balm-box-window-kraft.BQir5rUx_1le99J.webp 320w, /_astro/hang-tab-lip-balm-box-window-kraft.BQir5rUx_Z2pgIqo.webp 480w, /_astro/hang-tab-lip-balm-box-window-kraft.BQir5rUx_Zn9Ism.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/",
-    "src": "/_astro/rigid-lipstick-box-sleeve-and-tray.BXFxLQ0b_Z1e5a0x.webp",
-    "alt": "Pink rigid drawer box for lipstick half open, showing the white inner tray sliding out of the outer sleeve",
-    "width": "640",
-    "height": "400",
-    "loading": "lazy",
-    "srcset": "/_astro/rigid-lipstick-box-sleeve-and-tray.BXFxLQ0b_uiHBy.webp 320w, /_astro/rigid-lipstick-box-sleeve-and-tray.BXFxLQ0b_1NYXPm.webp 480w, /_astro/rigid-lipstick-box-sleeve-and-tray.BXFxLQ0b_Z1e5a0x.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/",
-    "src": "/_astro/cardboard-lip-balm-tube-kraft-range.C5VzLang_15eeRX.webp",
-    "alt": "Three natural kraft lip balm tubes printed in one colour, standing in a row on a grey surface",
-    "width": "640",
-    "height": "400",
-    "loading": "lazy",
-    "srcset": "/_astro/cardboard-lip-balm-tube-kraft-range.C5VzLang_Z1iCR6R.webp 320w, /_astro/cardboard-lip-balm-tube-kraft-range.C5VzLang_24FSpT.webp 480w, /_astro/cardboard-lip-balm-tube-kraft-range.C5VzLang_15eeRX.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
-    "fetchpriority": null
-  },
-  {
     "page": "/locations/states/arizona/",
     "src": "/_astro/custom-lip-balm-box-slim-tuck-end.HnVLdLRm_2hUvIS.webp",
     "alt": "",
@@ -12350,17 +12064,6 @@
     "loading": "lazy",
     "srcset": "/_astro/custom-lip-care-packaging-carton-range.CESy9JUo_1U3lxx.webp 96w, /_astro/custom-lip-care-packaging-carton-range.CESy9JUo_ZeErPT.webp 144w",
     "sizes": "48px",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/states/arizona/",
-    "src": "/_astro/hang-tab-lip-balm-box-euro-slot.BNzKQcUE_ZXutlJ.webp",
-    "alt": "Kraft lip balm box with a printed recycle instruction beside the euro slot at the top of the panel",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/hang-tab-lip-balm-box-euro-slot.BNzKQcUE_1hVBDa.webp 320w, /_astro/hang-tab-lip-balm-box-euro-slot.BNzKQcUE_2l6Lb4.webp 480w, /_astro/hang-tab-lip-balm-box-euro-slot.BNzKQcUE_ZXutlJ.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
     "fetchpriority": null
   },
   {
@@ -12563,17 +12266,6 @@
   },
   {
     "page": "/locations/states/california/",
-    "src": "/_astro/holographic-lip-gloss-box-silver-mirror.-v7Kfr6b_ZLADVI.webp",
-    "alt": "Silver mirror finish lip gloss box with reversed type beside a lilac gloss tube and its applicator",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/holographic-lip-gloss-box-silver-mirror.-v7Kfr6b_1oNGQS.webp 320w, /_astro/holographic-lip-gloss-box-silver-mirror.-v7Kfr6b_2uudYV.webp 480w, /_astro/holographic-lip-gloss-box-silver-mirror.-v7Kfr6b_ZLADVI.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/states/california/",
     "src": "/_astro/custom-lipstick-box-reverse-tuck-end.CUy1vHgB_P9QJ7.webp",
     "alt": "",
     "width": "480",
@@ -12768,17 +12460,6 @@
     "loading": "lazy",
     "srcset": "/_astro/custom-lip-care-packaging-carton-range.CESy9JUo_1U3lxx.webp 96w, /_astro/custom-lip-care-packaging-carton-range.CESy9JUo_ZeErPT.webp 144w",
     "sizes": "48px",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/states/colorado/",
-    "src": "/_astro/custom-lip-balm-box-slim-tuck-end.HnVLdLRm_ZvpuWW.webp",
-    "alt": "Slim white custom lip balm box standing next to a matching white twist-up lip balm tube",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/custom-lip-balm-box-slim-tuck-end.HnVLdLRm_Z1r1R1K.webp 320w, /_astro/custom-lip-balm-box-slim-tuck-end.HnVLdLRm_Z1kqxQX.webp 480w, /_astro/custom-lip-balm-box-slim-tuck-end.HnVLdLRm_ZvpuWW.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
     "fetchpriority": null
   },
   {
@@ -12981,17 +12662,6 @@
   },
   {
     "page": "/locations/states/florida/",
-    "src": "/_astro/holographic-lip-gloss-rigid-box-insert.MQMpYu8D_2gCsAx.webp",
-    "alt": "Open holographic rigid box with a black foam insert holding a single lip gloss tube",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/holographic-lip-gloss-rigid-box-insert.MQMpYu8D_Z1KcbGK.webp 320w, /_astro/holographic-lip-gloss-rigid-box-insert.MQMpYu8D_2r6kYf.webp 480w, /_astro/holographic-lip-gloss-rigid-box-insert.MQMpYu8D_2gCsAx.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/states/florida/",
     "src": "/_astro/lip-gloss-box-straight-tuck-end.BcQlWFfo_ZcEAn5.webp",
     "alt": "",
     "width": "480",
@@ -13186,17 +12856,6 @@
     "loading": "lazy",
     "srcset": "/_astro/custom-lip-care-packaging-carton-range.CESy9JUo_1U3lxx.webp 96w, /_astro/custom-lip-care-packaging-carton-range.CESy9JUo_ZeErPT.webp 144w",
     "sizes": "48px",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/states/georgia/",
-    "src": "/_astro/holographic-lip-gloss-box-rainbow-foil.BobbubjC_1pURBV.webp",
-    "alt": "Holographic lip gloss box with a rainbow iridescent surface and printed lip artwork beside two gloss tubes",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/holographic-lip-gloss-box-rainbow-foil.BobbubjC_2tim8z.webp 320w, /_astro/holographic-lip-gloss-box-rainbow-foil.BobbubjC_1AoK0D.webp 480w, /_astro/holographic-lip-gloss-box-rainbow-foil.BobbubjC_1pURBV.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
     "fetchpriority": null
   },
   {
@@ -13399,17 +13058,6 @@
   },
   {
     "page": "/locations/states/illinois/",
-    "src": "/_astro/hang-tab-lipstick-box-window-cutout.nph1lV52_Z126uDF.webp",
-    "alt": "Pink and red hang tab lipstick box with a euro slot at the top and a window showing a gold lipstick inside",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/hang-tab-lipstick-box-window-cutout.nph1lV52_1Edwaq.webp 320w, /_astro/hang-tab-lipstick-box-window-cutout.nph1lV52_Z2DQ6J.webp 480w, /_astro/hang-tab-lipstick-box-window-cutout.nph1lV52_Z126uDF.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/states/illinois/",
     "src": "/_astro/hang-tab-lip-balm-box-window-kraft.BQir5rUx_Z1kX0k4.webp",
     "alt": "",
     "width": "480",
@@ -13607,28 +13255,6 @@
     "fetchpriority": null
   },
   {
-    "page": "/locations/states/",
-    "src": "/_astro/custom-lip-balm-box-counter-display.CkuAQugb_ZlPwLB.webp",
-    "alt": "Kraft brown lip balm counter display box with a printed mountain scene and a hanging tab at the top",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/custom-lip-balm-box-counter-display.CkuAQugb_2ktu2u.webp 320w, /_astro/custom-lip-balm-box-counter-display.CkuAQugb_CB6Kk.webp 480w, /_astro/custom-lip-balm-box-counter-display.CkuAQugb_ZlPwLB.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/states/",
-    "src": "/_astro/lip-balm-packaging-floral-print-carton.CdBY-oLh_280tUL.webp",
-    "alt": "Cream lip balm carton with floral line artwork standing beside a lilac lip balm tube on wood",
-    "width": "640",
-    "height": "400",
-    "loading": "lazy",
-    "srcset": "/_astro/lip-balm-packaging-floral-print-carton.CdBY-oLh_Z1SOamw.webp 320w, /_astro/lip-balm-packaging-floral-print-carton.CdBY-oLh_2itmjt.webp 480w, /_astro/lip-balm-packaging-floral-print-carton.CdBY-oLh_280tUL.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
-    "fetchpriority": null
-  },
-  {
     "page": "/locations/states/indiana/",
     "src": "/_astro/custom-lip-balm-box-slim-tuck-end.HnVLdLRm_2hUvIS.webp",
     "alt": "",
@@ -13791,17 +13417,6 @@
     "loading": "lazy",
     "srcset": "/_astro/custom-lip-care-packaging-carton-range.CESy9JUo_1U3lxx.webp 96w, /_astro/custom-lip-care-packaging-carton-range.CESy9JUo_ZeErPT.webp 144w",
     "sizes": "48px",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/states/indiana/",
-    "src": "/_astro/custom-lip-balm-box-multipack-tray.GvnhQw6r_Z291pzY.webp",
-    "alt": "Open pastel multipack tray holding four printed lip balm tubes with a lid beside it",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/custom-lip-balm-box-multipack-tray.GvnhQw6r_ZpCwWS.webp 320w, /_astro/custom-lip-balm-box-multipack-tray.GvnhQw6r_T3IfU.webp 480w, /_astro/custom-lip-balm-box-multipack-tray.GvnhQw6r_Z291pzY.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
     "fetchpriority": null
   },
   {
@@ -14000,17 +13615,6 @@
     "loading": "lazy",
     "srcset": "/_astro/custom-lip-care-packaging-carton-range.CESy9JUo_1U3lxx.webp 96w, /_astro/custom-lip-care-packaging-carton-range.CESy9JUo_ZeErPT.webp 144w",
     "sizes": "48px",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/states/maryland/",
-    "src": "/_astro/custom-lip-balm-box-multipack-tray.GvnhQw6r_Z291pzY.webp",
-    "alt": "Open pastel multipack tray holding four printed lip balm tubes with a lid beside it",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/custom-lip-balm-box-multipack-tray.GvnhQw6r_ZpCwWS.webp 320w, /_astro/custom-lip-balm-box-multipack-tray.GvnhQw6r_T3IfU.webp 480w, /_astro/custom-lip-balm-box-multipack-tray.GvnhQw6r_Z291pzY.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
     "fetchpriority": null
   },
   {
@@ -14213,17 +13817,6 @@
   },
   {
     "page": "/locations/states/massachusetts/",
-    "src": "/_astro/custom-lip-balm-box-counter-display.CkuAQugb_ZlPwLB.webp",
-    "alt": "Kraft brown lip balm counter display box with a printed mountain scene and a hanging tab at the top",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/custom-lip-balm-box-counter-display.CkuAQugb_2ktu2u.webp 320w, /_astro/custom-lip-balm-box-counter-display.CkuAQugb_CB6Kk.webp 480w, /_astro/custom-lip-balm-box-counter-display.CkuAQugb_ZlPwLB.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/states/massachusetts/",
     "src": "/_astro/custom-lip-mask-box-window-front.Ck7FkH6f_2ovxRp.webp",
     "alt": "",
     "width": "480",
@@ -14418,17 +14011,6 @@
     "loading": "lazy",
     "srcset": "/_astro/custom-lip-care-packaging-carton-range.CESy9JUo_1U3lxx.webp 96w, /_astro/custom-lip-care-packaging-carton-range.CESy9JUo_ZeErPT.webp 144w",
     "sizes": "48px",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/states/michigan/",
-    "src": "/_astro/paper-lip-balm-tube-magenta-print.BEABiFVs_Z28a6AJ.webp",
-    "alt": "Two magenta printed paper lip balm tubes lying on a grey surface, one with its cap removed",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/paper-lip-balm-tube-magenta-print.BEABiFVs_21pF9o.webp 320w, /_astro/paper-lip-balm-tube-magenta-print.BEABiFVs_280Yjb.webp 480w, /_astro/paper-lip-balm-tube-magenta-print.BEABiFVs_Z28a6AJ.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
     "fetchpriority": null
   },
   {
@@ -14631,17 +14213,6 @@
   },
   {
     "page": "/locations/states/missouri/",
-    "src": "/_astro/hang-tab-lip-balm-box-euro-slot.BNzKQcUE_ZXutlJ.webp",
-    "alt": "Kraft lip balm box with a printed recycle instruction beside the euro slot at the top of the panel",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/hang-tab-lip-balm-box-euro-slot.BNzKQcUE_1hVBDa.webp 320w, /_astro/hang-tab-lip-balm-box-euro-slot.BNzKQcUE_2l6Lb4.webp 480w, /_astro/hang-tab-lip-balm-box-euro-slot.BNzKQcUE_ZXutlJ.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/states/missouri/",
     "src": "/_astro/custom-lip-balm-box-slim-tuck-end.HnVLdLRm_Z1MldBU.webp",
     "alt": "",
     "width": "480",
@@ -14840,17 +14411,6 @@
   },
   {
     "page": "/locations/states/new-jersey/",
-    "src": "/_astro/custom-lip-mask-mailer-box-open.Def1v4CO_ZFsJIR.webp",
-    "alt": "Open pink mailer box containing a lip mask sachet, printed tissue paper and a thank you card",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/custom-lip-mask-mailer-box-open.Def1v4CO_1zXlg2.webp 320w, /_astro/custom-lip-mask-mailer-box-open.Def1v4CO_Z2r3D10.webp 480w, /_astro/custom-lip-mask-mailer-box-open.Def1v4CO_ZFsJIR.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/states/new-jersey/",
     "src": "/_astro/custom-lip-care-packaging-carton-range.CESy9JUo_1OeoKC.webp",
     "alt": "",
     "width": "480",
@@ -15045,17 +14605,6 @@
     "loading": "lazy",
     "srcset": "/_astro/custom-lip-care-packaging-carton-range.CESy9JUo_1U3lxx.webp 96w, /_astro/custom-lip-care-packaging-carton-range.CESy9JUo_ZeErPT.webp 144w",
     "sizes": "48px",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/states/new-york/",
-    "src": "/_astro/custom-lipstick-box-floral-print.C_wk8ez2_7eiEn.webp",
-    "alt": "Two floral printed lipstick boxes, one standing and one lying flat on an olive background",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/custom-lipstick-box-floral-print.C_wk8ez2_ZIArcm.webp 320w, /_astro/custom-lipstick-box-floral-print.C_wk8ez2_ZEnV8B.webp 480w, /_astro/custom-lipstick-box-floral-print.C_wk8ez2_7eiEn.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
     "fetchpriority": null
   },
   {
@@ -15258,17 +14807,6 @@
   },
   {
     "page": "/locations/states/north-carolina/",
-    "src": "/_astro/custom-lip-balm-box-multipack-tray.GvnhQw6r_Z291pzY.webp",
-    "alt": "Open pastel multipack tray holding four printed lip balm tubes with a lid beside it",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/custom-lip-balm-box-multipack-tray.GvnhQw6r_ZpCwWS.webp 320w, /_astro/custom-lip-balm-box-multipack-tray.GvnhQw6r_T3IfU.webp 480w, /_astro/custom-lip-balm-box-multipack-tray.GvnhQw6r_Z291pzY.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/states/north-carolina/",
     "src": "/_astro/custom-lip-care-packaging-carton-range.CESy9JUo_1OeoKC.webp",
     "alt": "",
     "width": "480",
@@ -15463,17 +15001,6 @@
     "loading": "lazy",
     "srcset": "/_astro/custom-lip-care-packaging-carton-range.CESy9JUo_1U3lxx.webp 96w, /_astro/custom-lip-care-packaging-carton-range.CESy9JUo_ZeErPT.webp 144w",
     "sizes": "48px",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/states/ohio/",
-    "src": "/_astro/custom-lipstick-box-reverse-tuck-end.CUy1vHgB_128gFC.webp",
-    "alt": "Two pink lipstick boxes printed with lip prints, one closed and one open showing the tuck flap inside",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/custom-lipstick-box-reverse-tuck-end.CUy1vHgB_Z1TS27O.webp 320w, /_astro/custom-lipstick-box-reverse-tuck-end.CUy1vHgB_ZMzJAd.webp 480w, /_astro/custom-lipstick-box-reverse-tuck-end.CUy1vHgB_128gFC.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
     "fetchpriority": null
   },
   {
@@ -15676,17 +15203,6 @@
   },
   {
     "page": "/locations/states/pennsylvania/",
-    "src": "/_astro/custom-lip-care-packaging-carton-range.CESy9JUo_ZdnWxi.webp",
-    "alt": "A range of pink and nude lip care cartons standing and lying together with matching printed panels",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/custom-lip-care-packaging-carton-range.CESy9JUo_ZbhGhN.webp 320w, /_astro/custom-lip-care-packaging-carton-range.CESy9JUo_1Y2RBN.webp 480w, /_astro/custom-lip-care-packaging-carton-range.CESy9JUo_ZdnWxi.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/states/pennsylvania/",
     "src": "/_astro/hang-tab-lip-balm-box-window-kraft.BQir5rUx_Z1kX0k4.webp",
     "alt": "",
     "width": "480",
@@ -15881,17 +15397,6 @@
     "loading": "lazy",
     "srcset": "/_astro/custom-lip-care-packaging-carton-range.CESy9JUo_1U3lxx.webp 96w, /_astro/custom-lip-care-packaging-carton-range.CESy9JUo_ZeErPT.webp 144w",
     "sizes": "48px",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/states/tennessee/",
-    "src": "/_astro/custom-lip-balm-label-roll-format.fUHfDXTG_1neJjM.webp",
-    "alt": "Roll of printed lip balm labels unwinding beside a labelled blue lip balm tube and a lip scrub jar",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/custom-lip-balm-label-roll-format.fUHfDXTG_rCnfY.webp 320w, /_astro/custom-lip-balm-label-roll-format.fUHfDXTG_ydGpL.webp 480w, /_astro/custom-lip-balm-label-roll-format.fUHfDXTG_1neJjM.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
     "fetchpriority": null
   },
   {
@@ -16094,17 +15599,6 @@
   },
   {
     "page": "/locations/states/texas/",
-    "src": "/_astro/custom-lipstick-box-floral-print.C_wk8ez2_7eiEn.webp",
-    "alt": "Two floral printed lipstick boxes, one standing and one lying flat on an olive background",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/custom-lipstick-box-floral-print.C_wk8ez2_ZIArcm.webp 320w, /_astro/custom-lipstick-box-floral-print.C_wk8ez2_ZEnV8B.webp 480w, /_astro/custom-lipstick-box-floral-print.C_wk8ez2_7eiEn.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/states/texas/",
     "src": "/_astro/custom-lip-care-packaging-carton-range.CESy9JUo_1OeoKC.webp",
     "alt": "",
     "width": "480",
@@ -16303,17 +15797,6 @@
   },
   {
     "page": "/locations/states/virginia/",
-    "src": "/_astro/lip-balm-packaging-foil-stamped-carton.Dcw-9f5G_Z1TeiXY.webp",
-    "alt": "Foil-stamped cream lip balm carton standing beside a matching pink lip balm tube on marble",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/lip-balm-packaging-foil-stamped-carton.Dcw-9f5G_ZPQOsl.webp 320w, /_astro/lip-balm-packaging-foil-stamped-carton.Dcw-9f5G_Z1IKqAh.webp 480w, /_astro/lip-balm-packaging-foil-stamped-carton.Dcw-9f5G_Z1TeiXY.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/states/virginia/",
     "src": "/_astro/custom-lip-mask-box-window-front.Ck7FkH6f_2ovxRp.webp",
     "alt": "",
     "width": "480",
@@ -16508,17 +15991,6 @@
     "loading": "lazy",
     "srcset": "/_astro/custom-lip-care-packaging-carton-range.CESy9JUo_1U3lxx.webp 96w, /_astro/custom-lip-care-packaging-carton-range.CESy9JUo_ZeErPT.webp 144w",
     "sizes": "48px",
-    "fetchpriority": null
-  },
-  {
-    "page": "/locations/states/washington/",
-    "src": "/_astro/cardboard-lip-balm-tube-wrap-labels.BmilXC1h_1g3GyA.webp",
-    "alt": "Three kraft cardboard lip balm tubes with pink, blue and cream wrap labels and printed safety seals",
-    "width": "640",
-    "height": "400",
-    "loading": "eager",
-    "srcset": "/_astro/cardboard-lip-balm-tube-wrap-labels.BmilXC1h_Z17Npqf.webp 320w, /_astro/cardboard-lip-balm-tube-wrap-labels.BmilXC1h_2fvl6w.webp 480w, /_astro/cardboard-lip-balm-tube-wrap-labels.BmilXC1h_1g3GyA.webp 640w",
-    "sizes": "(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw",
     "fetchpriority": null
   },
   {

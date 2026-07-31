@@ -163,7 +163,7 @@ export const resource: Resource = {
         ['Variance', 'Delivered quantity differing slightly from ordered', 'Print runs are not exact; the tolerance is stated on the quote'],
       ],
       outro:
-        'How these fit together across an order is set out on the <a href="/how-to-order/">the order process end to end</a>.',
+        'How these fit together is set out in <a href="/how-to-order/">the order process end to end</a>.',
     },
     {
       type: 'list',

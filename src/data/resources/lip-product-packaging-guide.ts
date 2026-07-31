@@ -188,7 +188,7 @@ export const resource: Resource = {
         'A second carton for peg retail added after launch rather than quoted alongside the first',
       ],
       outro:
-        'The pattern is consistent: the forgotten items are the small ones, and together they routinely add more than the choice of laminate did. Our <a href="/resources/custom-packaging-cost-guide/">the full cost breakdown</a> breaks down what each element contributes.',
+        'The pattern is consistent: the forgotten items are the small ones, and together they routinely add more than the choice of laminate did. The <a href="/resources/custom-packaging-cost-guide/">full cost breakdown</a> shows what each element contributes.',
     },
     {
       type: 'features',
