@@ -1,0 +1,154 @@
+---
+/**
+ * The short quote form given its own full-width band rather than sitting as one
+ * more block inside the article.
+ *
+ * Same component and same endpoint as the product pages — this only changes how
+ * prominently it is presented and adds a supporting column that explains what
+ * happens after the form is sent.
+ */
+import ShortQuoteForm from './ShortQuoteForm.astro';
+import Icon from './Icon.astro';
+
+interface Props {
+  /** Product name written into the hidden field and the subject line. */
+  product: string;
+  heading: string;
+  sub: string;
+  /** Location name, set only on state and city pages. */
+  location?: string;
+  pageTitle?: string;
+  /** Three short lines beside the form. Written per page, not shared. */
+  points: string[];
+  eyebrow?: string;
+  id?: string;
+}
+
+const {
+  product,
+  heading,
+  sub,
+  location,
+  pageTitle,
+  points,
+  eyebrow = 'Get a price',
+  id = 'quote',
+} = Astro.props;
+---
+
+<section class="quote-band" id={id} aria-labelledby="quick-quote-heading">
+  <div class="wrap">
+    <div class="quote-band__inner">
+      <div class="quote-band__aside">
+        <span class="eyebrow">{eyebrow}</span>
+        <p class="quote-band__lede">{sub}</p>
+        <ul class="quote-band__points">
+          {
+            points.map((point) => (
+              <li>
+                <Icon name="check" size={17} class="quote-band__tick" />
+                <span>{point}</span>
+              </li>
+            ))
+          }
+        </ul>
+        <p class="quote-band__alt" data-boilerplate>
+          Need to specify materials, finishes and dates in full? Use the{' '}
+          <a href="/request-a-quote/">detailed quote request</a> instead.
+        </p>
+      </div>
+
+      <div class="quote-band__form">
+        <ShortQuoteForm
+          product={product}
+          location={location}
+          pageTitle={pageTitle}
+          heading={heading}
+          sub={sub}
+          id="quick-quote"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .quote-band {
+    padding-block: var(--sp-7);
+    background:
+      radial-gradient(
+        90% 120% at 8% 0%,
+        color-mix(in srgb, var(--rose-soft) 70%, transparent) 0%,
+        transparent 60%
+      ),
+      var(--paper-warm);
+    border-block: 1px solid var(--line);
+    scroll-margin-top: 4.5rem;
+  }
+  .quote-band__inner {
+    display: grid;
+    gap: var(--sp-5);
+    align-items: start;
+  }
+  @media (min-width: 62rem) {
+    .quote-band__inner {
+      grid-template-columns: minmax(0, 20rem) minmax(0, 1fr);
+      gap: var(--sp-7);
+    }
+    .quote-band__aside {
+      position: sticky;
+      top: 5.5rem;
+    }
+  }
+  .quote-band__aside,
+  .quote-band__form {
+    min-width: 0;
+  }
+  .quote-band__lede {
+    font-size: var(--step-0);
+    color: var(--ink-soft);
+    line-height: 1.65;
+    margin: var(--sp-3) 0 var(--sp-4);
+  }
+  .quote-band__points {
+    list-style: none;
+    margin: 0 0 var(--sp-4);
+    padding: 0;
+    display: grid;
+    gap: var(--sp-3);
+  }
+  .quote-band__points li {
+    display: flex;
+    gap: 0.6rem;
+    align-items: flex-start;
+    font-size: var(--step--1);
+    color: var(--ink-soft);
+    line-height: 1.55;
+  }
+  .quote-band__points :global(.quote-band__tick) {
+    flex-shrink: 0;
+    margin-top: 0.15rem;
+    color: var(--plum);
+  }
+  .quote-band__alt {
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+    margin: 0;
+    padding-top: var(--sp-4);
+    border-top: 1px solid var(--line);
+  }
+
+  /* The form card carries the visual weight in this band, so it gets a
+     stronger edge than it does inside an article column. */
+  .quote-band__form :global(.quick-quote) {
+    border-color: var(--line-strong);
+    box-shadow: 0 1px 2px rgb(36 26 38 / 4%), 0 12px 32px rgb(36 26 38 / 6%);
+  }
+  /* The heading and sub-line are already stated in the aside column on wide
+     screens, so the card repeats them only where the aside stacks above. */
+  @media (min-width: 62rem) {
+    .quote-band__form :global(.quick-quote__sub) {
+      display: none;
+    }
+  }
+</style>

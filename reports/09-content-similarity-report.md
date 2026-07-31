@@ -58,49 +58,49 @@ No page pair reaches 45.0%. No duplicate titles, duplicate meta descriptions, sh
 | /lip-balm-packaging/ | Page | lip balm packaging | — | 2111 | — | 0.0% | None |
 | /lip-gloss-boxes/ | Page | lip gloss boxes | — | 2376 | — | 0.0% | None |
 | /lipstick-boxes/ | Page | lipstick boxes | — | 2107 | — | 0.0% | None |
-| /locations/ | Location hub | — | — | 860 | — | 0.0% | None |
-| /locations/cities/ | Location hub | — | — | 153 | — | 0.0% | None |
-| /locations/cities/austin/ | City | custom lip boxes in Austin | Direct-to-consumer economics and repeat shipping | 813 | — | 0.0% | None |
-| /locations/cities/boston/ | City | custom lip boxes in Boston | Student market price sensitivity and academic seasonality | 822 | — | 0.0% | None |
-| /locations/cities/charlotte/ | City | custom lip boxes in Charlotte | Corporate gifting and perceived value | 794 | — | 0.0% | None |
-| /locations/cities/chicago/ | City | custom lip boxes in Chicago | Buyer meetings and physical sample requirements | 822 | — | 0.0% | None |
-| /locations/cities/columbus/ | City | custom lip boxes in Columbus | Retail pilots and keeping results readable | 777 | — | 0.0% | None |
-| /locations/cities/dallas/ | City | custom lip boxes in Dallas | Wholesale showroom selling and line sheet requirements | 819 | — | 0.0% | None |
-| /locations/cities/denver/ | City | custom lip boxes in Denver | Outdoor specialty retail and durability assessment | 855 | — | 0.0% | None |
-| /locations/cities/fort-worth/ | City | custom lip boxes in Fort Worth | Short fixed selling windows and stock planning | 810 | — | 0.0% | None |
-| /locations/cities/houston/ | City | custom lip boxes in Houston | Deep shade ranges and salon retail | 832 | — | 0.0% | None |
-| /locations/cities/indianapolis/ | City | custom lip boxes in Indianapolis | Third-party logistics intake requirements | 788 | — | 0.0% | None |
-| /locations/cities/jacksonville/ | City | custom lip boxes in Jacksonville | Freight consolidation and ordering frequency | 776 | — | 0.0% | None |
-| /locations/cities/los-angeles/ | City | custom lip boxes in Los Angeles | Seeding kits and press packaging alongside retail | 813 | — | 0.0% | None |
-| /locations/cities/nashville/ | City | custom lip boxes in Nashville | Visitor purchases that travel home | 815 | — | 0.0% | None |
-| /locations/cities/new-york-city/ | City | custom lip boxes in New York City | Small-format retail and narrow fixture space | 859 | — | 0.0% | None |
-| /locations/cities/philadelphia/ | City | custom lip boxes in Philadelphia | The transition from maker market to wholesale | 843 | — | 0.0% | None |
-| /locations/cities/phoenix/ | City | custom lip boxes in Phoenix | Convenience and pharmacy peg retail | 882 | — | 0.0% | None |
-| /locations/cities/san-antonio/ | City | custom lip boxes in San Antonio | Bilingual panels and the space they require | 840 | — | 0.0% | None |
-| /locations/cities/san-diego/ | City | custom lip boxes in San Diego | Sun care formats and SPF panel requirements | 834 | — | 0.0% | None |
-| /locations/cities/seattle/ | City | custom lip boxes in Seattle | Refill and reuse programme packaging | 783 | — | 0.0% | None |
-| /locations/cities/washington-dc/ | City | custom lip boxes in Washington, D.C. | Museum and institutional retail standards | 732 | — | 0.0% | None |
-| /locations/states/ | Location hub | — | — | 170 | — | 0.0% | None |
-| /locations/states/arizona/ | State | custom lip boxes in Arizona | Heat, storage conditions and sun-care formats | 1134 | — | 0.0% | None |
-| /locations/states/california/ | State | custom lip boxes in California | Indie brand density and the speed of shade-range launches | 1410 | — | 0.0% | None |
-| /locations/states/colorado/ | State | custom lip boxes in Colorado | Outdoor and apothecary positioning in specialty retail | 1034 | — | 0.0% | None |
-| /locations/states/florida/ | State | custom lip boxes in Florida | Resort and tourism retail, and humidity in storage | 1014 | — | 0.0% | None |
-| /locations/states/georgia/ | State | custom lip boxes in Georgia | Independent gloss brands and short launch cycles | 1022 | — | 0.0% | None |
-| /locations/states/illinois/ | State | custom lip boxes in Illinois | Mass retail resets and fixture constraints | 846 | — | 0.0% | None |
-| /locations/states/indiana/ | State | custom lip boxes in Indiana | Case pack efficiency and pallet configuration | 847 | — | 0.0% | None |
-| /locations/states/maryland/ | State | custom lip boxes in Maryland | Corporate gifting and promotional programmes | 887 | — | 0.0% | None |
-| /locations/states/massachusetts/ | State | custom lip boxes in Massachusetts | Treatment and clinical positioning | 813 | — | 0.0% | None |
-| /locations/states/michigan/ | State | custom lip boxes in Michigan | Seasonal demand and call-off ordering | 898 | — | 0.0% | None |
-| /locations/states/missouri/ | State | custom lip boxes in Missouri | Long shelf tenure and reorder consistency | 855 | — | 0.0% | None |
-| /locations/states/new-jersey/ | State | custom lip boxes in New Jersey | Documentation, version control and formal approvals | 815 | — | 0.0% | None |
-| /locations/states/new-york/ | State | custom lip boxes in New York | Prestige retail specifications set by the account | 817 | — | 0.0% | None |
-| /locations/states/north-carolina/ | State | custom lip boxes in North Carolina | Contract manufacturing and automated line requirements | 1020 | — | 0.0% | None |
-| /locations/states/ohio/ | State | custom lip boxes in Ohio | Test market runs that have to scale | 905 | — | 0.0% | None |
-| /locations/states/pennsylvania/ | State | custom lip boxes in Pennsylvania | Private label economics and the pharmacy channel | 836 | — | 0.0% | None |
-| /locations/states/tennessee/ | State | custom lip boxes in Tennessee | Merchandise and date-driven production | 1019 | — | 0.0% | None |
-| /locations/states/texas/ | State | custom lip boxes in Texas | Distribution across multiple metros and wholesale case planning | 1022 | — | 0.0% | None |
-| /locations/states/virginia/ | State | custom lip boxes in Virginia | Direct-to-consumer fulfilment and shipper specification | 864 | — | 0.0% | None |
-| /locations/states/washington/ | State | custom lip boxes in Washington | Material scrutiny and defensible disposal claims | 1141 | — | 0.0% | None |
+| /locations/ | Location hub | — | — | 953 | — | 0.0% | None |
+| /locations/cities/ | Location hub | — | — | 202 | — | 0.0% | None |
+| /locations/cities/austin/ | City | custom lip boxes in Austin | Direct-to-consumer economics and repeat shipping | 928 | — | 0.0% | None |
+| /locations/cities/boston/ | City | custom lip boxes in Boston | Student market price sensitivity and academic seasonality | 928 | — | 0.0% | None |
+| /locations/cities/charlotte/ | City | custom lip boxes in Charlotte | Corporate gifting and perceived value | 902 | — | 0.0% | None |
+| /locations/cities/chicago/ | City | custom lip boxes in Chicago | Buyer meetings and physical sample requirements | 930 | — | 0.0% | None |
+| /locations/cities/columbus/ | City | custom lip boxes in Columbus | Retail pilots and keeping results readable | 882 | — | 0.0% | None |
+| /locations/cities/dallas/ | City | custom lip boxes in Dallas | Wholesale showroom selling and line sheet requirements | 929 | — | 0.0% | None |
+| /locations/cities/denver/ | City | custom lip boxes in Denver | Outdoor specialty retail and durability assessment | 967 | — | 0.0% | None |
+| /locations/cities/fort-worth/ | City | custom lip boxes in Fort Worth | Short fixed selling windows and stock planning | 922 | — | 0.0% | None |
+| /locations/cities/houston/ | City | custom lip boxes in Houston | Deep shade ranges and salon retail | 939 | — | 0.0% | None |
+| /locations/cities/indianapolis/ | City | custom lip boxes in Indianapolis | Third-party logistics intake requirements | 896 | — | 0.0% | None |
+| /locations/cities/jacksonville/ | City | custom lip boxes in Jacksonville | Freight consolidation and ordering frequency | 880 | — | 0.0% | None |
+| /locations/cities/los-angeles/ | City | custom lip boxes in Los Angeles | Seeding kits and press packaging alongside retail | 923 | — | 0.0% | None |
+| /locations/cities/nashville/ | City | custom lip boxes in Nashville | Visitor purchases that travel home | 922 | — | 0.0% | None |
+| /locations/cities/new-york-city/ | City | custom lip boxes in New York City | Small-format retail and narrow fixture space | 972 | — | 0.0% | None |
+| /locations/cities/philadelphia/ | City | custom lip boxes in Philadelphia | The transition from maker market to wholesale | 950 | — | 0.0% | None |
+| /locations/cities/phoenix/ | City | custom lip boxes in Phoenix | Convenience and pharmacy peg retail | 994 | — | 0.0% | None |
+| /locations/cities/san-antonio/ | City | custom lip boxes in San Antonio | Bilingual panels and the space they require | 955 | — | 0.0% | None |
+| /locations/cities/san-diego/ | City | custom lip boxes in San Diego | Sun care formats and SPF panel requirements | 951 | — | 0.0% | None |
+| /locations/cities/seattle/ | City | custom lip boxes in Seattle | Refill and reuse programme packaging | 897 | — | 0.0% | None |
+| /locations/cities/washington-dc/ | City | custom lip boxes in Washington, D.C. | Museum and institutional retail standards | 845 | — | 0.0% | None |
+| /locations/states/ | Location hub | — | — | 199 | — | 0.0% | None |
+| /locations/states/arizona/ | State | custom lip boxes in Arizona | Heat, storage conditions and sun-care formats | 1239 | — | 0.0% | None |
+| /locations/states/california/ | State | custom lip boxes in California | Indie brand density and the speed of shade-range launches | 1505 | — | 0.0% | None |
+| /locations/states/colorado/ | State | custom lip boxes in Colorado | Outdoor and apothecary positioning in specialty retail | 1139 | — | 0.0% | None |
+| /locations/states/florida/ | State | custom lip boxes in Florida | Resort and tourism retail, and humidity in storage | 1115 | — | 0.0% | None |
+| /locations/states/georgia/ | State | custom lip boxes in Georgia | Independent gloss brands and short launch cycles | 1120 | — | 0.0% | None |
+| /locations/states/illinois/ | State | custom lip boxes in Illinois | Mass retail resets and fixture constraints | 950 | — | 0.0% | None |
+| /locations/states/indiana/ | State | custom lip boxes in Indiana | Case pack efficiency and pallet configuration | 944 | — | 0.0% | None |
+| /locations/states/maryland/ | State | custom lip boxes in Maryland | Corporate gifting and promotional programmes | 980 | — | 0.0% | None |
+| /locations/states/massachusetts/ | State | custom lip boxes in Massachusetts | Treatment and clinical positioning | 907 | — | 0.0% | None |
+| /locations/states/michigan/ | State | custom lip boxes in Michigan | Seasonal demand and call-off ordering | 992 | — | 0.0% | None |
+| /locations/states/missouri/ | State | custom lip boxes in Missouri | Long shelf tenure and reorder consistency | 960 | — | 0.0% | None |
+| /locations/states/new-jersey/ | State | custom lip boxes in New Jersey | Documentation, version control and formal approvals | 920 | — | 0.0% | None |
+| /locations/states/new-york/ | State | custom lip boxes in New York | Prestige retail specifications set by the account | 917 | — | 0.0% | None |
+| /locations/states/north-carolina/ | State | custom lip boxes in North Carolina | Contract manufacturing and automated line requirements | 1120 | — | 0.0% | None |
+| /locations/states/ohio/ | State | custom lip boxes in Ohio | Test market runs that have to scale | 1000 | — | 0.0% | None |
+| /locations/states/pennsylvania/ | State | custom lip boxes in Pennsylvania | Private label economics and the pharmacy channel | 936 | — | 0.0% | None |
+| /locations/states/tennessee/ | State | custom lip boxes in Tennessee | Merchandise and date-driven production | 1112 | — | 0.0% | None |
+| /locations/states/texas/ | State | custom lip boxes in Texas | Distribution across multiple metros and wholesale case planning | 1117 | — | 0.0% | None |
+| /locations/states/virginia/ | State | custom lip boxes in Virginia | Direct-to-consumer fulfilment and shipper specification | 959 | — | 0.0% | None |
+| /locations/states/washington/ | State | custom lip boxes in Washington | Material scrutiny and defensible disposal claims | 1243 | — | 0.0% | None |
 | /materials/ | Page | — | — | 1068 | — | 0.0% | None |
 | /paper-lip-balm-tubes/ | Page | paper lip balm tubes | — | 2530 | — | 0.0% | None |
 | /printing-options/ | Page | — | — | 986 | /blog/printing-methods-for-cosmetic-packaging/ | 12.7% | None |
@@ -108,16 +108,16 @@ No page pair reaches 45.0%. No duplicate titles, duplicate meta descriptions, sh
 | /products/ | Page | — | — | 252 | — | 0.0% | None |
 | /request-a-quote/ | Page | — | — | 214 | — | 0.0% | None |
 | /resources/ | Page | — | — | 598 | — | 0.0% | None |
-| /resources/choosing-packaging-inserts/ | Resource | packaging inserts | Does my product need an insert, and which type should I specify? | 1695 | — | 0.0% | None |
-| /resources/cosmetic-packaging-label-requirements/ | Resource | cosmetic packaging label requirements | What information has to appear on a cosmetic package, and where does each part go? | 1867 | — | 0.0% | None |
-| /resources/custom-packaging-cost-guide/ | Resource | custom packaging cost | What am I actually paying for in a packaging quote, and which parts can I change? | 1726 | — | 0.0% | None |
-| /resources/lip-balm-box-size-guide/ | Resource | lip balm box size | What size box do I need for the lip balm tube I am already filling? | 1942 | — | 0.0% | None |
-| /resources/lip-gloss-box-size-guide/ | Resource | lip gloss box size | How tall does a lip gloss box need to be for a wand applicator tube? | 1775 | — | 0.0% | None |
-| /resources/lip-product-packaging-guide/ | Resource | lip product packaging | I am launching a lip product. What packaging decisions do I need to make, and in what order? | 1979 | — | 0.0% | None |
-| /resources/lipstick-box-size-guide/ | Resource | lipstick box size | How do I measure a lipstick bullet case and work out the carton dimensions? | 1744 | — | 0.0% | None |
-| /resources/packaging-dieline-guide/ | Resource | packaging dieline | What is a dieline, what do the lines on it mean, and how is one made? | 1926 | — | 0.0% | None |
-| /resources/packaging-glossary/ | Resource | packaging glossary | A supplier used a term I do not know. What does it mean? | 1477 | — | 0.0% | None |
-| /resources/prepress-checklist/ | Resource | prepress checklist | Give me a step-by-step list I can work through before I send my file to print. | 1543 | — | 0.0% | None |
+| /resources/choosing-packaging-inserts/ | Resource | packaging inserts | Does my product need an insert, and which type should I specify? | 1756 | — | 0.0% | None |
+| /resources/cosmetic-packaging-label-requirements/ | Resource | cosmetic packaging label requirements | What information has to appear on a cosmetic package, and where does each part go? | 1932 | — | 0.0% | None |
+| /resources/custom-packaging-cost-guide/ | Resource | custom packaging cost | What am I actually paying for in a packaging quote, and which parts can I change? | 1789 | — | 0.0% | None |
+| /resources/lip-balm-box-size-guide/ | Resource | lip balm box size | What size box do I need for the lip balm tube I am already filling? | 2007 | — | 0.0% | None |
+| /resources/lip-gloss-box-size-guide/ | Resource | lip gloss box size | How tall does a lip gloss box need to be for a wand applicator tube? | 1840 | — | 0.0% | None |
+| /resources/lip-product-packaging-guide/ | Resource | lip product packaging | I am launching a lip product. What packaging decisions do I need to make, and in what order? | 2042 | — | 0.0% | None |
+| /resources/lipstick-box-size-guide/ | Resource | lipstick box size | How do I measure a lipstick bullet case and work out the carton dimensions? | 1807 | — | 0.0% | None |
+| /resources/packaging-dieline-guide/ | Resource | packaging dieline | What is a dieline, what do the lines on it mean, and how is one made? | 1987 | — | 0.0% | None |
+| /resources/packaging-glossary/ | Resource | packaging glossary | A supplier used a term I do not know. What does it mean? | 1538 | — | 0.0% | None |
+| /resources/prepress-checklist/ | Resource | prepress checklist | Give me a step-by-step list I can work through before I send my file to print. | 1604 | — | 0.0% | None |
 | /rigid-lipstick-boxes/ | Page | rigid lipstick boxes | — | 2435 | — | 0.0% | None |
 | /sample-kit/ | Page | — | — | 865 | — | 0.0% | None |
 | /shipping-information/ | Page | — | — | 846 | — | 0.0% | None |
@@ -179,7 +179,15 @@ No page pair reaches 45.0%. No duplicate titles, duplicate meta descriptions, sh
 
 | Anchor text | Target | Pages |
 | --- | --- | ---: |
+| custom lip balm boxes | /custom-lip-balm-boxes/ | 23 |
 | request a sample | /sample-kit/ | 15 |
+| custom lipstick boxes | /custom-lipstick-boxes/ | 9 |
+| custom lip care packaging | /custom-lip-care-packaging/ | 8 |
+| lip balm packaging | /lip-balm-packaging/ | 7 |
+| hang tab lip balm boxes | /hang-tab-lip-balm-boxes/ | 6 |
+| rigid lipstick boxes | /rigid-lipstick-boxes/ | 6 |
+| cardboard lip balm tubes | /cardboard-lip-balm-tubes/ | 6 |
+| custom lip balm labels | /custom-lip-balm-labels/ | 6 |
 | texas tx distribution across multiple metros and wholesale case planning | /locations/states/texas/ | 6 |
 | georgia ga independent gloss brands and short launch cycles | /locations/states/georgia/ | 6 |
 | north carolina nc contract manufacturing and automated line requirements | /locations/states/north-carolina/ | 6 |
@@ -189,6 +197,8 @@ No page pair reaches 45.0%. No duplicate titles, duplicate meta descriptions, sh
 | florida fl resort and tourism retail, and humidity in storage | /locations/states/florida/ | 6 |
 | artwork guidelines | /artwork-guidelines/ | 5 |
 | materials page | /materials/ | 4 |
+| lip gloss boxes | /lip-gloss-boxes/ | 4 |
+| paper lip balm tubes | /paper-lip-balm-tubes/ | 4 |
 | ohio oh test market runs that have to scale | /locations/states/ohio/ | 4 |
 | michigan mi seasonal demand and call-off ordering | /locations/states/michigan/ | 4 |
 | indiana in case pack efficiency and pallet configuration | /locations/states/indiana/ | 4 |

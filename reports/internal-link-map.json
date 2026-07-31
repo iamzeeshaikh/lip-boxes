@@ -356,6 +356,11 @@
       "text": "packaging set page"
     },
     {
+      "from": "/locations/cities/austin/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
+    },
+    {
       "from": "/locations/cities/boston/",
       "href": "/locations/states/massachusetts/",
       "text": "how Massachusetts buys, and where Boston differs"
@@ -364,6 +369,11 @@
       "from": "/locations/cities/boston/",
       "href": "/resources/custom-packaging-cost-guide/",
       "text": "what a staged run costs"
+    },
+    {
+      "from": "/locations/cities/boston/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
     },
     {
       "from": "/locations/cities/charlotte/",
@@ -376,6 +386,11 @@
       "text": "rigid gift box formats"
     },
     {
+      "from": "/locations/cities/charlotte/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
+    },
+    {
       "from": "/locations/cities/chicago/",
       "href": "/locations/states/illinois/",
       "text": "how Illinois buys, and where Chicago differs"
@@ -384,6 +399,11 @@
       "from": "/locations/cities/chicago/",
       "href": "/how-to-order/",
       "text": "the sampling and approval steps"
+    },
+    {
+      "from": "/locations/cities/chicago/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
     },
     {
       "from": "/locations/cities/columbus/",
@@ -396,6 +416,11 @@
       "text": "peg hook packs for lip balm"
     },
     {
+      "from": "/locations/cities/columbus/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
+    },
+    {
       "from": "/locations/cities/dallas/",
       "href": "/locations/states/texas/",
       "text": "how Texas buys, and where Dallas differs"
@@ -404,6 +429,11 @@
       "from": "/locations/cities/dallas/",
       "href": "/how-to-order/",
       "text": "how an order runs from quote to delivery"
+    },
+    {
+      "from": "/locations/cities/dallas/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
     },
     {
       "from": "/locations/cities/denver/",
@@ -416,6 +446,11 @@
       "text": "label reference page"
     },
     {
+      "from": "/locations/cities/denver/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
+    },
+    {
       "from": "/locations/cities/fort-worth/",
       "href": "/locations/states/texas/",
       "text": "how Texas buys, and where Fort Worth differs"
@@ -426,6 +461,11 @@
       "text": "custom label page"
     },
     {
+      "from": "/locations/cities/fort-worth/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
+    },
+    {
       "from": "/locations/cities/houston/",
       "href": "/locations/states/texas/",
       "text": "how Texas buys, and where Houston differs"
@@ -434,6 +474,11 @@
       "from": "/locations/cities/houston/",
       "href": "/custom-lipstick-boxes/",
       "text": "printed bullet cartons"
+    },
+    {
+      "from": "/locations/cities/houston/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
     },
     {
       "from": "/locations/cities/",
@@ -451,9 +496,19 @@
       "text": "how freight and delivery are quoted"
     },
     {
+      "from": "/locations/cities/indianapolis/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
+    },
+    {
       "from": "/locations/cities/jacksonville/",
       "href": "/locations/states/florida/",
       "text": "how Florida buys, and where Jacksonville differs"
+    },
+    {
+      "from": "/locations/cities/jacksonville/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
     },
     {
       "from": "/locations/cities/los-angeles/",
@@ -466,6 +521,11 @@
       "text": "rigid boxes built for press packs"
     },
     {
+      "from": "/locations/cities/los-angeles/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
+    },
+    {
       "from": "/locations/cities/nashville/",
       "href": "/locations/states/tennessee/",
       "text": "how Tennessee buys, and where Nashville differs"
@@ -474,6 +534,11 @@
       "from": "/locations/cities/nashville/",
       "href": "/lip-balm-packaging/",
       "text": "coordinated set page"
+    },
+    {
+      "from": "/locations/cities/nashville/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
     },
     {
       "from": "/locations/cities/new-york-city/",
@@ -486,6 +551,11 @@
       "text": "delivery access requirements"
     },
     {
+      "from": "/locations/cities/new-york-city/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
+    },
+    {
       "from": "/locations/cities/philadelphia/",
       "href": "/locations/states/pennsylvania/",
       "text": "how Pennsylvania buys, and where Philadelphia differs"
@@ -494,6 +564,11 @@
       "from": "/locations/cities/philadelphia/",
       "href": "/lip-balm-labels/",
       "text": "label reference page"
+    },
+    {
+      "from": "/locations/cities/philadelphia/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
     },
     {
       "from": "/locations/cities/phoenix/",
@@ -506,6 +581,11 @@
       "text": "window and tab carton detail"
     },
     {
+      "from": "/locations/cities/phoenix/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
+    },
+    {
       "from": "/locations/cities/san-antonio/",
       "href": "/locations/states/texas/",
       "text": "how Texas buys, and where San Antonio differs"
@@ -514,6 +594,11 @@
       "from": "/locations/cities/san-antonio/",
       "href": "/resources/cosmetic-packaging-label-requirements/",
       "text": "labelling guide"
+    },
+    {
+      "from": "/locations/cities/san-antonio/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
     },
     {
       "from": "/locations/cities/san-diego/",
@@ -526,6 +611,11 @@
       "text": "hang tab carton options"
     },
     {
+      "from": "/locations/cities/san-diego/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
+    },
+    {
       "from": "/locations/cities/seattle/",
       "href": "/locations/states/washington/",
       "text": "how Washington buys, and where Seattle differs"
@@ -536,9 +626,19 @@
       "text": "materials page"
     },
     {
+      "from": "/locations/cities/seattle/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
+    },
+    {
       "from": "/locations/cities/washington-dc/",
       "href": "/rigid-lipstick-boxes/",
       "text": "sleeve, tray and rigid options"
+    },
+    {
+      "from": "/locations/cities/washington-dc/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
     },
     {
       "from": "/locations/",
@@ -572,6 +672,11 @@
     },
     {
       "from": "/locations/states/arizona/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
+    },
+    {
+      "from": "/locations/states/arizona/",
       "href": "/products/",
       "text": "Every format a Arizona brand can order"
     },
@@ -587,6 +692,11 @@
     },
     {
       "from": "/locations/states/california/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
+    },
+    {
+      "from": "/locations/states/california/",
       "href": "/products/",
       "text": "Every format a California brand can order"
     },
@@ -597,8 +707,18 @@
     },
     {
       "from": "/locations/states/colorado/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
+    },
+    {
+      "from": "/locations/states/colorado/",
       "href": "/products/",
       "text": "Every format a Colorado brand can order"
+    },
+    {
+      "from": "/locations/states/florida/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
     },
     {
       "from": "/locations/states/florida/",
@@ -612,6 +732,11 @@
     },
     {
       "from": "/locations/states/georgia/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
+    },
+    {
+      "from": "/locations/states/georgia/",
       "href": "/products/",
       "text": "Every format a Georgia brand can order"
     },
@@ -619,6 +744,11 @@
       "from": "/locations/states/illinois/",
       "href": "/how-to-order/",
       "text": "the order sequence"
+    },
+    {
+      "from": "/locations/states/illinois/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
     },
     {
       "from": "/locations/states/illinois/",
@@ -637,6 +767,11 @@
     },
     {
       "from": "/locations/states/indiana/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
+    },
+    {
+      "from": "/locations/states/indiana/",
       "href": "/products/",
       "text": "Every format a Indiana brand can order"
     },
@@ -644,6 +779,11 @@
       "from": "/locations/states/maryland/",
       "href": "/lip-balm-labels/",
       "text": "label reference"
+    },
+    {
+      "from": "/locations/states/maryland/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
     },
     {
       "from": "/locations/states/maryland/",
@@ -657,6 +797,11 @@
     },
     {
       "from": "/locations/states/massachusetts/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
+    },
+    {
+      "from": "/locations/states/massachusetts/",
       "href": "/products/",
       "text": "Every format a Massachusetts brand can order"
     },
@@ -664,6 +809,11 @@
       "from": "/locations/states/michigan/",
       "href": "/hang-tab-lip-balm-boxes/",
       "text": "hanging cartons for checkout fixtures"
+    },
+    {
+      "from": "/locations/states/michigan/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
     },
     {
       "from": "/locations/states/michigan/",
@@ -677,6 +827,11 @@
     },
     {
       "from": "/locations/states/missouri/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
+    },
+    {
+      "from": "/locations/states/missouri/",
       "href": "/products/",
       "text": "Every format a Missouri brand can order"
     },
@@ -684,6 +839,11 @@
       "from": "/locations/states/new-jersey/",
       "href": "/resources/cosmetic-packaging-label-requirements/",
       "text": "labelling guide"
+    },
+    {
+      "from": "/locations/states/new-jersey/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
     },
     {
       "from": "/locations/states/new-jersey/",
@@ -697,6 +857,11 @@
     },
     {
       "from": "/locations/states/new-york/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
+    },
+    {
+      "from": "/locations/states/new-york/",
       "href": "/products/",
       "text": "Every format a New York brand can order"
     },
@@ -704,6 +869,11 @@
       "from": "/locations/states/north-carolina/",
       "href": "/how-to-order/",
       "text": "who signs off what, and when"
+    },
+    {
+      "from": "/locations/states/north-carolina/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
     },
     {
       "from": "/locations/states/north-carolina/",
@@ -717,6 +887,11 @@
     },
     {
       "from": "/locations/states/ohio/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
+    },
+    {
+      "from": "/locations/states/ohio/",
       "href": "/products/",
       "text": "Every format a Ohio brand can order"
     },
@@ -724,6 +899,11 @@
       "from": "/locations/states/pennsylvania/",
       "href": "/custom-lip-care-packaging/",
       "text": "bulk and private label page"
+    },
+    {
+      "from": "/locations/states/pennsylvania/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
     },
     {
       "from": "/locations/states/pennsylvania/",
@@ -737,6 +917,11 @@
     },
     {
       "from": "/locations/states/tennessee/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
+    },
+    {
+      "from": "/locations/states/tennessee/",
       "href": "/products/",
       "text": "Every format a Tennessee brand can order"
     },
@@ -744,6 +929,11 @@
       "from": "/locations/states/texas/",
       "href": "/resources/cosmetic-packaging-label-requirements/",
       "text": "labelling guide"
+    },
+    {
+      "from": "/locations/states/texas/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
     },
     {
       "from": "/locations/states/texas/",
@@ -757,8 +947,18 @@
     },
     {
       "from": "/locations/states/virginia/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
+    },
+    {
+      "from": "/locations/states/virginia/",
       "href": "/products/",
       "text": "Every format a Virginia brand can order"
+    },
+    {
+      "from": "/locations/states/washington/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
     },
     {
       "from": "/locations/states/washington/",
@@ -851,6 +1051,11 @@
       "text": "rigid gift construction"
     },
     {
+      "from": "/resources/choosing-packaging-inserts/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
+    },
+    {
       "from": "/resources/cosmetic-packaging-label-requirements/",
       "href": "/terms-and-conditions/",
       "text": "terms"
@@ -861,9 +1066,19 @@
       "text": "launch planning guide"
     },
     {
+      "from": "/resources/cosmetic-packaging-label-requirements/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
+    },
+    {
       "from": "/resources/custom-packaging-cost-guide/",
       "href": "/how-to-order/",
       "text": "what happens once a quote is accepted"
+    },
+    {
+      "from": "/resources/custom-packaging-cost-guide/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
     },
     {
       "from": "/resources/",
@@ -881,6 +1096,11 @@
       "text": "peg hook carton page"
     },
     {
+      "from": "/resources/lip-balm-box-size-guide/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
+    },
+    {
       "from": "/resources/lip-gloss-box-size-guide/",
       "href": "/box-styles/",
       "text": "structural reference"
@@ -889,6 +1109,11 @@
       "from": "/resources/lip-gloss-box-size-guide/",
       "href": "/lip-gloss-boxes/",
       "text": "gloss carton page"
+    },
+    {
+      "from": "/resources/lip-gloss-box-size-guide/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
     },
     {
       "from": "/resources/lip-product-packaging-guide/",
@@ -901,6 +1126,11 @@
       "text": "the full cost breakdown"
     },
     {
+      "from": "/resources/lip-product-packaging-guide/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
+    },
+    {
       "from": "/resources/lipstick-box-size-guide/",
       "href": "/lipstick-boxes/",
       "text": "comparison of lipstick box constructions"
@@ -911,6 +1141,11 @@
       "text": "wrapped rigid box page"
     },
     {
+      "from": "/resources/lipstick-box-size-guide/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
+    },
+    {
       "from": "/resources/packaging-dieline-guide/",
       "href": "/artwork-guidelines/",
       "text": "artwork requirements"
@@ -919,6 +1154,11 @@
       "from": "/resources/packaging-dieline-guide/",
       "href": "/how-to-order/",
       "text": "the approval stages of an order"
+    },
+    {
+      "from": "/resources/packaging-dieline-guide/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
     },
     {
       "from": "/resources/packaging-glossary/",
@@ -946,6 +1186,11 @@
       "text": "the order process end to end"
     },
     {
+      "from": "/resources/packaging-glossary/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
+    },
+    {
       "from": "/resources/prepress-checklist/",
       "href": "/artwork-guidelines/",
       "text": "artwork requirements"
@@ -954,6 +1199,11 @@
       "from": "/resources/prepress-checklist/",
       "href": "/finishes/",
       "text": "coatings page"
+    },
+    {
+      "from": "/resources/prepress-checklist/",
+      "href": "/request-a-quote/",
+      "text": "detailed quote request"
     },
     {
       "from": "/rigid-lipstick-boxes/",
@@ -16549,13 +16799,38 @@
     },
     {
       "from": "/locations/cities/austin/",
+      "to": "/lip-balm-packaging/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/austin/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/locations/cities/austin/",
       "to": "/locations/states/texas/",
       "anchor": "how Texas buys, and where Austin differs"
     },
     {
       "from": "/locations/cities/austin/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/austin/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": "Custom Lip Balm Boxes"
+    },
+    {
+      "from": "/locations/cities/austin/",
       "to": "/lip-balm-packaging/",
       "anchor": "packaging set page"
+    },
+    {
+      "from": "/locations/cities/austin/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/cities/austin/",
@@ -17059,13 +17334,38 @@
     },
     {
       "from": "/locations/cities/boston/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/boston/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": "Custom Lip Balm Boxes"
+    },
+    {
+      "from": "/locations/cities/boston/",
       "to": "/locations/states/massachusetts/",
       "anchor": "how Massachusetts buys, and where Boston differs"
     },
     {
       "from": "/locations/cities/boston/",
+      "to": "/custom-lip-balm-labels/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/boston/",
+      "to": "/custom-lip-balm-labels/",
+      "anchor": "Custom Lip Balm Labels"
+    },
+    {
+      "from": "/locations/cities/boston/",
       "to": "/resources/custom-packaging-cost-guide/",
       "anchor": "what a staged run costs"
+    },
+    {
+      "from": "/locations/cities/boston/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/cities/boston/",
@@ -17549,13 +17849,38 @@
     },
     {
       "from": "/locations/cities/charlotte/",
+      "to": "/rigid-lipstick-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/charlotte/",
+      "to": "/rigid-lipstick-boxes/",
+      "anchor": "Rigid Lipstick Boxes"
+    },
+    {
+      "from": "/locations/cities/charlotte/",
       "to": "/locations/states/north-carolina/",
       "anchor": "how North Carolina buys, and where Charlotte differs"
     },
     {
       "from": "/locations/cities/charlotte/",
+      "to": "/custom-lipstick-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/charlotte/",
+      "to": "/custom-lipstick-boxes/",
+      "anchor": "Custom Lipstick Boxes"
+    },
+    {
+      "from": "/locations/cities/charlotte/",
       "to": "/rigid-lipstick-boxes/",
       "anchor": "rigid gift box formats"
+    },
+    {
+      "from": "/locations/cities/charlotte/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/cities/charlotte/",
@@ -18039,13 +18364,38 @@
     },
     {
       "from": "/locations/cities/chicago/",
+      "to": "/custom-lip-care-packaging/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/chicago/",
+      "to": "/custom-lip-care-packaging/",
+      "anchor": "Custom Lip Care Packaging"
+    },
+    {
+      "from": "/locations/cities/chicago/",
       "to": "/locations/states/illinois/",
       "anchor": "how Illinois buys, and where Chicago differs"
     },
     {
       "from": "/locations/cities/chicago/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/chicago/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": "Custom Lip Balm Boxes"
+    },
+    {
+      "from": "/locations/cities/chicago/",
       "to": "/how-to-order/",
       "anchor": "the sampling and approval steps"
+    },
+    {
+      "from": "/locations/cities/chicago/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/cities/chicago/",
@@ -18529,13 +18879,38 @@
     },
     {
       "from": "/locations/cities/columbus/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/columbus/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": "Custom Lip Balm Boxes"
+    },
+    {
+      "from": "/locations/cities/columbus/",
       "to": "/locations/states/ohio/",
       "anchor": "how Ohio buys, and where Columbus differs"
     },
     {
       "from": "/locations/cities/columbus/",
+      "to": "/custom-lipstick-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/columbus/",
+      "to": "/custom-lipstick-boxes/",
+      "anchor": "Custom Lipstick Boxes"
+    },
+    {
+      "from": "/locations/cities/columbus/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "peg hook packs for lip balm"
+    },
+    {
+      "from": "/locations/cities/columbus/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/cities/columbus/",
@@ -19019,13 +19394,38 @@
     },
     {
       "from": "/locations/cities/dallas/",
+      "to": "/custom-lip-care-packaging/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/dallas/",
+      "to": "/custom-lip-care-packaging/",
+      "anchor": "Custom Lip Care Packaging"
+    },
+    {
+      "from": "/locations/cities/dallas/",
       "to": "/locations/states/texas/",
       "anchor": "how Texas buys, and where Dallas differs"
     },
     {
       "from": "/locations/cities/dallas/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/dallas/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": "Custom Lip Balm Boxes"
+    },
+    {
+      "from": "/locations/cities/dallas/",
       "to": "/how-to-order/",
       "anchor": "how an order runs from quote to delivery"
+    },
+    {
+      "from": "/locations/cities/dallas/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/cities/dallas/",
@@ -19529,13 +19929,38 @@
     },
     {
       "from": "/locations/cities/denver/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/denver/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/locations/cities/denver/",
       "to": "/locations/states/colorado/",
       "anchor": "how Colorado buys, and where Denver differs"
     },
     {
       "from": "/locations/cities/denver/",
+      "to": "/custom-lip-balm-labels/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/denver/",
+      "to": "/custom-lip-balm-labels/",
+      "anchor": "Custom Lip Balm Labels"
+    },
+    {
+      "from": "/locations/cities/denver/",
       "to": "/lip-balm-labels/",
       "anchor": "label reference page"
+    },
+    {
+      "from": "/locations/cities/denver/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/cities/denver/",
@@ -20019,13 +20444,38 @@
     },
     {
       "from": "/locations/cities/fort-worth/",
+      "to": "/custom-lip-balm-labels/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/fort-worth/",
+      "to": "/custom-lip-balm-labels/",
+      "anchor": "Custom Lip Balm Labels"
+    },
+    {
+      "from": "/locations/cities/fort-worth/",
       "to": "/locations/states/texas/",
       "anchor": "how Texas buys, and where Fort Worth differs"
     },
     {
       "from": "/locations/cities/fort-worth/",
+      "to": "/lip-balm-labels/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/fort-worth/",
+      "to": "/lip-balm-labels/",
+      "anchor": "Lip Balm Labels"
+    },
+    {
+      "from": "/locations/cities/fort-worth/",
       "to": "/custom-lip-balm-labels/",
       "anchor": "custom label page"
+    },
+    {
+      "from": "/locations/cities/fort-worth/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/cities/fort-worth/",
@@ -20529,13 +20979,38 @@
     },
     {
       "from": "/locations/cities/houston/",
+      "to": "/custom-lipstick-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/houston/",
+      "to": "/custom-lipstick-boxes/",
+      "anchor": "Custom Lipstick Boxes"
+    },
+    {
+      "from": "/locations/cities/houston/",
       "to": "/locations/states/texas/",
       "anchor": "how Texas buys, and where Houston differs"
     },
     {
       "from": "/locations/cities/houston/",
+      "to": "/lip-gloss-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/houston/",
+      "to": "/lip-gloss-boxes/",
+      "anchor": "Lip Gloss Boxes"
+    },
+    {
+      "from": "/locations/cities/houston/",
       "to": "/custom-lipstick-boxes/",
       "anchor": "printed bullet cartons"
+    },
+    {
+      "from": "/locations/cities/houston/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/cities/houston/",
@@ -21031,6 +21506,36 @@
       "from": "/locations/cities/",
       "to": "/locations/states/",
       "anchor": "state directory"
+    },
+    {
+      "from": "/locations/cities/",
+      "to": "/hang-tab-lipstick-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/",
+      "to": "/hang-tab-lipstick-boxes/",
+      "anchor": "Hang Tab Lipstick Boxes"
+    },
+    {
+      "from": "/locations/cities/",
+      "to": "/lip-gloss-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/",
+      "to": "/lip-gloss-boxes/",
+      "anchor": "Lip Gloss Boxes"
+    },
+    {
+      "from": "/locations/cities/",
+      "to": "/paper-lip-balm-tubes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/",
+      "to": "/paper-lip-balm-tubes/",
+      "anchor": "Paper Lip Balm Tubes"
     },
     {
       "from": "/locations/cities/",
@@ -21574,13 +22079,38 @@
     },
     {
       "from": "/locations/cities/indianapolis/",
+      "to": "/custom-lip-care-packaging/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/indianapolis/",
+      "to": "/custom-lip-care-packaging/",
+      "anchor": "Custom Lip Care Packaging"
+    },
+    {
+      "from": "/locations/cities/indianapolis/",
       "to": "/locations/states/indiana/",
       "anchor": "how Indiana buys, and where Indianapolis differs"
     },
     {
       "from": "/locations/cities/indianapolis/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/indianapolis/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": "Custom Lip Balm Boxes"
+    },
+    {
+      "from": "/locations/cities/indianapolis/",
       "to": "/shipping-information/",
       "anchor": "how freight and delivery are quoted"
+    },
+    {
+      "from": "/locations/cities/indianapolis/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/cities/indianapolis/",
@@ -22064,8 +22594,33 @@
     },
     {
       "from": "/locations/cities/jacksonville/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/jacksonville/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": "Custom Lip Balm Boxes"
+    },
+    {
+      "from": "/locations/cities/jacksonville/",
       "to": "/locations/states/florida/",
       "anchor": "how Florida buys, and where Jacksonville differs"
+    },
+    {
+      "from": "/locations/cities/jacksonville/",
+      "to": "/custom-lip-balm-labels/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/jacksonville/",
+      "to": "/custom-lip-balm-labels/",
+      "anchor": "Custom Lip Balm Labels"
+    },
+    {
+      "from": "/locations/cities/jacksonville/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/cities/jacksonville/",
@@ -22549,13 +23104,38 @@
     },
     {
       "from": "/locations/cities/los-angeles/",
+      "to": "/rigid-lipstick-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/los-angeles/",
+      "to": "/rigid-lipstick-boxes/",
+      "anchor": "Rigid Lipstick Boxes"
+    },
+    {
+      "from": "/locations/cities/los-angeles/",
       "to": "/locations/states/california/",
       "anchor": "how California buys, and where Los Angeles differs"
     },
     {
       "from": "/locations/cities/los-angeles/",
+      "to": "/custom-lipstick-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/los-angeles/",
+      "to": "/custom-lipstick-boxes/",
+      "anchor": "Custom Lipstick Boxes"
+    },
+    {
+      "from": "/locations/cities/los-angeles/",
       "to": "/rigid-lipstick-boxes/",
       "anchor": "rigid boxes built for press packs"
+    },
+    {
+      "from": "/locations/cities/los-angeles/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/cities/los-angeles/",
@@ -23044,13 +23624,38 @@
     },
     {
       "from": "/locations/cities/nashville/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/nashville/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": "Custom Lip Balm Boxes"
+    },
+    {
+      "from": "/locations/cities/nashville/",
       "to": "/locations/states/tennessee/",
       "anchor": "how Tennessee buys, and where Nashville differs"
     },
     {
       "from": "/locations/cities/nashville/",
       "to": "/lip-balm-packaging/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/nashville/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/locations/cities/nashville/",
+      "to": "/lip-balm-packaging/",
       "anchor": "coordinated set page"
+    },
+    {
+      "from": "/locations/cities/nashville/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/cities/nashville/",
@@ -23534,13 +24139,38 @@
     },
     {
       "from": "/locations/cities/new-york-city/",
+      "to": "/custom-lipstick-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/new-york-city/",
+      "to": "/custom-lipstick-boxes/",
+      "anchor": "Custom Lipstick Boxes"
+    },
+    {
+      "from": "/locations/cities/new-york-city/",
       "to": "/locations/states/new-york/",
       "anchor": "how New York buys, and where New York City differs"
     },
     {
       "from": "/locations/cities/new-york-city/",
+      "to": "/rigid-lipstick-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/new-york-city/",
+      "to": "/rigid-lipstick-boxes/",
+      "anchor": "Rigid Lipstick Boxes"
+    },
+    {
+      "from": "/locations/cities/new-york-city/",
       "to": "/shipping-information/",
       "anchor": "delivery access requirements"
+    },
+    {
+      "from": "/locations/cities/new-york-city/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/cities/new-york-city/",
@@ -24024,13 +24654,38 @@
     },
     {
       "from": "/locations/cities/philadelphia/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/philadelphia/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/locations/cities/philadelphia/",
       "to": "/locations/states/pennsylvania/",
       "anchor": "how Pennsylvania buys, and where Philadelphia differs"
     },
     {
       "from": "/locations/cities/philadelphia/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/philadelphia/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": "Custom Lip Balm Boxes"
+    },
+    {
+      "from": "/locations/cities/philadelphia/",
       "to": "/lip-balm-labels/",
       "anchor": "label reference page"
+    },
+    {
+      "from": "/locations/cities/philadelphia/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/cities/philadelphia/",
@@ -24514,13 +25169,38 @@
     },
     {
       "from": "/locations/cities/phoenix/",
+      "to": "/hang-tab-lip-balm-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/phoenix/",
+      "to": "/hang-tab-lip-balm-boxes/",
+      "anchor": "Hang Tab Lip Balm Boxes"
+    },
+    {
+      "from": "/locations/cities/phoenix/",
       "to": "/locations/states/arizona/",
       "anchor": "how Arizona buys, and where Phoenix differs"
     },
     {
       "from": "/locations/cities/phoenix/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/phoenix/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": "Custom Lip Balm Boxes"
+    },
+    {
+      "from": "/locations/cities/phoenix/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "window and tab carton detail"
+    },
+    {
+      "from": "/locations/cities/phoenix/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/cities/phoenix/",
@@ -25004,13 +25684,38 @@
     },
     {
       "from": "/locations/cities/san-antonio/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/san-antonio/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": "Custom Lip Balm Boxes"
+    },
+    {
+      "from": "/locations/cities/san-antonio/",
       "to": "/locations/states/texas/",
       "anchor": "how Texas buys, and where San Antonio differs"
     },
     {
       "from": "/locations/cities/san-antonio/",
+      "to": "/lip-balm-packaging/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/san-antonio/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/locations/cities/san-antonio/",
       "to": "/resources/cosmetic-packaging-label-requirements/",
       "anchor": "labelling guide"
+    },
+    {
+      "from": "/locations/cities/san-antonio/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/cities/san-antonio/",
@@ -25514,13 +26219,38 @@
     },
     {
       "from": "/locations/cities/san-diego/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/san-diego/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": "Custom Lip Balm Boxes"
+    },
+    {
+      "from": "/locations/cities/san-diego/",
       "to": "/locations/states/california/",
       "anchor": "how California buys, and where San Diego differs"
     },
     {
       "from": "/locations/cities/san-diego/",
+      "to": "/paper-lip-balm-tubes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/san-diego/",
+      "to": "/paper-lip-balm-tubes/",
+      "anchor": "Paper Lip Balm Tubes"
+    },
+    {
+      "from": "/locations/cities/san-diego/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "hang tab carton options"
+    },
+    {
+      "from": "/locations/cities/san-diego/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/cities/san-diego/",
@@ -26009,13 +26739,38 @@
     },
     {
       "from": "/locations/cities/seattle/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/seattle/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/locations/cities/seattle/",
       "to": "/locations/states/washington/",
       "anchor": "how Washington buys, and where Seattle differs"
     },
     {
       "from": "/locations/cities/seattle/",
+      "to": "/lip-balm-packaging/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/seattle/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/locations/cities/seattle/",
       "to": "/materials/",
       "anchor": "materials page"
+    },
+    {
+      "from": "/locations/cities/seattle/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/cities/seattle/",
@@ -26500,7 +27255,32 @@
     {
       "from": "/locations/cities/washington-dc/",
       "to": "/rigid-lipstick-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/washington-dc/",
+      "to": "/rigid-lipstick-boxes/",
+      "anchor": "Rigid Lipstick Boxes"
+    },
+    {
+      "from": "/locations/cities/washington-dc/",
+      "to": "/lip-balm-packaging/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/cities/washington-dc/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/locations/cities/washington-dc/",
+      "to": "/rigid-lipstick-boxes/",
       "anchor": "sleeve, tray and rigid options"
+    },
+    {
+      "from": "/locations/cities/washington-dc/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/cities/washington-dc/",
@@ -26971,6 +27751,36 @@
       "from": "/locations/",
       "to": "/request-a-quote/",
       "anchor": "quote request"
+    },
+    {
+      "from": "/locations/",
+      "to": "/hang-tab-lip-balm-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/",
+      "to": "/hang-tab-lip-balm-boxes/",
+      "anchor": "Hang Tab Lip Balm Boxes"
+    },
+    {
+      "from": "/locations/",
+      "to": "/rigid-lipstick-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/",
+      "to": "/rigid-lipstick-boxes/",
+      "anchor": "Rigid Lipstick Boxes"
+    },
+    {
+      "from": "/locations/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
     },
     {
       "from": "/locations/",
@@ -27619,13 +28429,38 @@
     },
     {
       "from": "/locations/states/arizona/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/arizona/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": "Custom Lip Balm Boxes"
+    },
+    {
+      "from": "/locations/states/arizona/",
       "to": "/locations/cities/phoenix/",
       "anchor": "Phoenix Convenience and pharmacy peg retail"
     },
     {
       "from": "/locations/states/arizona/",
+      "to": "/hang-tab-lip-balm-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/arizona/",
+      "to": "/hang-tab-lip-balm-boxes/",
+      "anchor": "Hang Tab Lip Balm Boxes"
+    },
+    {
+      "from": "/locations/states/arizona/",
       "to": "/shipping-information/",
       "anchor": "storage and transit notes"
+    },
+    {
+      "from": "/locations/states/arizona/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/states/arizona/",
@@ -28114,6 +28949,16 @@
     },
     {
       "from": "/locations/states/california/",
+      "to": "/custom-lipstick-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/california/",
+      "to": "/custom-lipstick-boxes/",
+      "anchor": "Custom Lipstick Boxes"
+    },
+    {
+      "from": "/locations/states/california/",
       "to": "/locations/cities/los-angeles/",
       "anchor": "Los Angeles Seeding kits and press packaging alongside retail"
     },
@@ -28124,6 +28969,16 @@
     },
     {
       "from": "/locations/states/california/",
+      "to": "/holographic-lip-gloss-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/california/",
+      "to": "/holographic-lip-gloss-boxes/",
+      "anchor": "Holographic Lip Gloss Boxes"
+    },
+    {
+      "from": "/locations/states/california/",
       "to": "/custom-lipstick-boxes/",
       "anchor": "printed cartons built around a bullet case"
     },
@@ -28131,6 +28986,11 @@
       "from": "/locations/states/california/",
       "to": "/shipping-information/",
       "anchor": "what changes a delivery quote"
+    },
+    {
+      "from": "/locations/states/california/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/states/california/",
@@ -28624,13 +29484,38 @@
     },
     {
       "from": "/locations/states/colorado/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/colorado/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/locations/states/colorado/",
       "to": "/locations/cities/denver/",
       "anchor": "Denver Outdoor specialty retail and durability assessment"
     },
     {
       "from": "/locations/states/colorado/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/colorado/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": "Custom Lip Balm Boxes"
+    },
+    {
+      "from": "/locations/states/colorado/",
       "to": "/cardboard-lip-balm-tubes/",
       "anchor": "kraft tube page"
+    },
+    {
+      "from": "/locations/states/colorado/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/states/colorado/",
@@ -29119,8 +30004,33 @@
     },
     {
       "from": "/locations/states/florida/",
+      "to": "/lip-gloss-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/florida/",
+      "to": "/lip-gloss-boxes/",
+      "anchor": "Lip Gloss Boxes"
+    },
+    {
+      "from": "/locations/states/florida/",
       "to": "/locations/cities/jacksonville/",
       "anchor": "Jacksonville Freight consolidation and ordering frequency"
+    },
+    {
+      "from": "/locations/states/florida/",
+      "to": "/holographic-lip-gloss-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/florida/",
+      "to": "/holographic-lip-gloss-boxes/",
+      "anchor": "Holographic Lip Gloss Boxes"
+    },
+    {
+      "from": "/locations/states/florida/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/states/florida/",
@@ -29629,8 +30539,33 @@
     },
     {
       "from": "/locations/states/georgia/",
+      "to": "/lip-gloss-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/georgia/",
+      "to": "/lip-gloss-boxes/",
+      "anchor": "Lip Gloss Boxes"
+    },
+    {
+      "from": "/locations/states/georgia/",
+      "to": "/holographic-lip-gloss-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/georgia/",
+      "to": "/holographic-lip-gloss-boxes/",
+      "anchor": "Holographic Lip Gloss Boxes"
+    },
+    {
+      "from": "/locations/states/georgia/",
       "to": "/holographic-lip-gloss-boxes/",
       "anchor": "iridescent gloss carton page"
+    },
+    {
+      "from": "/locations/states/georgia/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/states/georgia/",
@@ -30139,13 +31074,38 @@
     },
     {
       "from": "/locations/states/illinois/",
+      "to": "/hang-tab-lip-balm-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/illinois/",
+      "to": "/hang-tab-lip-balm-boxes/",
+      "anchor": "Hang Tab Lip Balm Boxes"
+    },
+    {
+      "from": "/locations/states/illinois/",
       "to": "/locations/cities/chicago/",
       "anchor": "Chicago Buyer meetings and physical sample requirements"
     },
     {
       "from": "/locations/states/illinois/",
+      "to": "/hang-tab-lipstick-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/illinois/",
+      "to": "/hang-tab-lipstick-boxes/",
+      "anchor": "Hang Tab Lipstick Boxes"
+    },
+    {
+      "from": "/locations/states/illinois/",
       "to": "/how-to-order/",
       "anchor": "the order sequence"
+    },
+    {
+      "from": "/locations/states/illinois/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/states/illinois/",
@@ -30636,6 +31596,26 @@
       "from": "/locations/states/",
       "to": "/locations/cities/",
       "anchor": "city directory"
+    },
+    {
+      "from": "/locations/states/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": "Custom Lip Balm Boxes"
+    },
+    {
+      "from": "/locations/states/",
+      "to": "/lip-balm-packaging/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
     },
     {
       "from": "/locations/states/",
@@ -31274,13 +32254,38 @@
     },
     {
       "from": "/locations/states/indiana/",
+      "to": "/custom-lip-care-packaging/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/indiana/",
+      "to": "/custom-lip-care-packaging/",
+      "anchor": "Custom Lip Care Packaging"
+    },
+    {
+      "from": "/locations/states/indiana/",
       "to": "/locations/cities/indianapolis/",
       "anchor": "Indianapolis Third-party logistics intake requirements"
     },
     {
       "from": "/locations/states/indiana/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/indiana/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": "Custom Lip Balm Boxes"
+    },
+    {
+      "from": "/locations/states/indiana/",
       "to": "/shipping-information/",
       "anchor": "pallet and freight information"
+    },
+    {
+      "from": "/locations/states/indiana/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/states/indiana/",
@@ -31779,8 +32784,33 @@
     },
     {
       "from": "/locations/states/maryland/",
+      "to": "/custom-lip-balm-labels/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/maryland/",
+      "to": "/custom-lip-balm-labels/",
+      "anchor": "Custom Lip Balm Labels"
+    },
+    {
+      "from": "/locations/states/maryland/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/maryland/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": "Custom Lip Balm Boxes"
+    },
+    {
+      "from": "/locations/states/maryland/",
       "to": "/lip-balm-labels/",
       "anchor": "label reference"
+    },
+    {
+      "from": "/locations/states/maryland/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/states/maryland/",
@@ -32289,13 +33319,38 @@
     },
     {
       "from": "/locations/states/massachusetts/",
+      "to": "/custom-lip-mask-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/massachusetts/",
+      "to": "/custom-lip-mask-boxes/",
+      "anchor": "Custom Lip Mask Boxes"
+    },
+    {
+      "from": "/locations/states/massachusetts/",
       "to": "/locations/cities/boston/",
       "anchor": "Boston Student market price sensitivity and academic seasonality"
     },
     {
       "from": "/locations/states/massachusetts/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/massachusetts/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": "Custom Lip Balm Boxes"
+    },
+    {
+      "from": "/locations/states/massachusetts/",
       "to": "/custom-lip-mask-boxes/",
       "anchor": "lip mask carton page"
+    },
+    {
+      "from": "/locations/states/massachusetts/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/states/massachusetts/",
@@ -32789,8 +33844,33 @@
     },
     {
       "from": "/locations/states/michigan/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/michigan/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": "Custom Lip Balm Boxes"
+    },
+    {
+      "from": "/locations/states/michigan/",
+      "to": "/paper-lip-balm-tubes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/michigan/",
+      "to": "/paper-lip-balm-tubes/",
+      "anchor": "Paper Lip Balm Tubes"
+    },
+    {
+      "from": "/locations/states/michigan/",
       "to": "/hang-tab-lip-balm-boxes/",
       "anchor": "hanging cartons for checkout fixtures"
+    },
+    {
+      "from": "/locations/states/michigan/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/states/michigan/",
@@ -33289,8 +34369,33 @@
     },
     {
       "from": "/locations/states/missouri/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/missouri/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": "Custom Lip Balm Boxes"
+    },
+    {
+      "from": "/locations/states/missouri/",
+      "to": "/hang-tab-lip-balm-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/missouri/",
+      "to": "/hang-tab-lip-balm-boxes/",
+      "anchor": "Hang Tab Lip Balm Boxes"
+    },
+    {
+      "from": "/locations/states/missouri/",
       "to": "/resources/custom-packaging-cost-guide/",
       "anchor": "spreading one-time costs over reorders"
+    },
+    {
+      "from": "/locations/states/missouri/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/states/missouri/",
@@ -33789,8 +34894,33 @@
     },
     {
       "from": "/locations/states/new-jersey/",
+      "to": "/custom-lip-care-packaging/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/new-jersey/",
+      "to": "/custom-lip-care-packaging/",
+      "anchor": "Custom Lip Care Packaging"
+    },
+    {
+      "from": "/locations/states/new-jersey/",
+      "to": "/custom-lip-mask-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/new-jersey/",
+      "to": "/custom-lip-mask-boxes/",
+      "anchor": "Custom Lip Mask Boxes"
+    },
+    {
+      "from": "/locations/states/new-jersey/",
       "to": "/resources/cosmetic-packaging-label-requirements/",
       "anchor": "labelling guide"
+    },
+    {
+      "from": "/locations/states/new-jersey/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/states/new-jersey/",
@@ -34279,13 +35409,38 @@
     },
     {
       "from": "/locations/states/new-york/",
+      "to": "/rigid-lipstick-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/new-york/",
+      "to": "/rigid-lipstick-boxes/",
+      "anchor": "Rigid Lipstick Boxes"
+    },
+    {
+      "from": "/locations/states/new-york/",
       "to": "/locations/cities/new-york-city/",
       "anchor": "New York City Small-format retail and narrow fixture space"
     },
     {
       "from": "/locations/states/new-york/",
+      "to": "/custom-lipstick-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/new-york/",
+      "to": "/custom-lipstick-boxes/",
+      "anchor": "Custom Lipstick Boxes"
+    },
+    {
+      "from": "/locations/states/new-york/",
       "to": "/rigid-lipstick-boxes/",
       "anchor": "wrapped rigid construction"
+    },
+    {
+      "from": "/locations/states/new-york/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/states/new-york/",
@@ -34779,13 +35934,38 @@
     },
     {
       "from": "/locations/states/north-carolina/",
+      "to": "/custom-lip-care-packaging/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/north-carolina/",
+      "to": "/custom-lip-care-packaging/",
+      "anchor": "Custom Lip Care Packaging"
+    },
+    {
+      "from": "/locations/states/north-carolina/",
       "to": "/locations/cities/charlotte/",
       "anchor": "Charlotte Corporate gifting and perceived value"
     },
     {
       "from": "/locations/states/north-carolina/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/north-carolina/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": "Custom Lip Balm Boxes"
+    },
+    {
+      "from": "/locations/states/north-carolina/",
       "to": "/how-to-order/",
       "anchor": "who signs off what, and when"
+    },
+    {
+      "from": "/locations/states/north-carolina/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/states/north-carolina/",
@@ -35294,13 +36474,38 @@
     },
     {
       "from": "/locations/states/ohio/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/ohio/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": "Custom Lip Balm Boxes"
+    },
+    {
+      "from": "/locations/states/ohio/",
       "to": "/locations/cities/columbus/",
       "anchor": "Columbus Retail pilots and keeping results readable"
     },
     {
       "from": "/locations/states/ohio/",
+      "to": "/custom-lipstick-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/ohio/",
+      "to": "/custom-lipstick-boxes/",
+      "anchor": "Custom Lipstick Boxes"
+    },
+    {
+      "from": "/locations/states/ohio/",
       "to": "/resources/custom-packaging-cost-guide/",
       "anchor": "how a packaging price breaks down"
+    },
+    {
+      "from": "/locations/states/ohio/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/states/ohio/",
@@ -35799,13 +37004,38 @@
     },
     {
       "from": "/locations/states/pennsylvania/",
+      "to": "/hang-tab-lip-balm-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/pennsylvania/",
+      "to": "/hang-tab-lip-balm-boxes/",
+      "anchor": "Hang Tab Lip Balm Boxes"
+    },
+    {
+      "from": "/locations/states/pennsylvania/",
       "to": "/locations/cities/philadelphia/",
       "anchor": "Philadelphia The transition from maker market to wholesale"
     },
     {
       "from": "/locations/states/pennsylvania/",
       "to": "/custom-lip-care-packaging/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/pennsylvania/",
+      "to": "/custom-lip-care-packaging/",
+      "anchor": "Custom Lip Care Packaging"
+    },
+    {
+      "from": "/locations/states/pennsylvania/",
+      "to": "/custom-lip-care-packaging/",
       "anchor": "bulk and private label page"
+    },
+    {
+      "from": "/locations/states/pennsylvania/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/states/pennsylvania/",
@@ -36299,13 +37529,38 @@
     },
     {
       "from": "/locations/states/tennessee/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/tennessee/",
+      "to": "/custom-lip-balm-boxes/",
+      "anchor": "Custom Lip Balm Boxes"
+    },
+    {
+      "from": "/locations/states/tennessee/",
       "to": "/locations/cities/nashville/",
       "anchor": "Nashville Visitor purchases that travel home"
     },
     {
       "from": "/locations/states/tennessee/",
+      "to": "/custom-lip-balm-labels/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/tennessee/",
+      "to": "/custom-lip-balm-labels/",
+      "anchor": "Custom Lip Balm Labels"
+    },
+    {
+      "from": "/locations/states/tennessee/",
       "to": "/lip-balm-labels/",
       "anchor": "label formats page"
+    },
+    {
+      "from": "/locations/states/tennessee/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/states/tennessee/",
@@ -36809,6 +38064,16 @@
     },
     {
       "from": "/locations/states/texas/",
+      "to": "/custom-lip-care-packaging/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/texas/",
+      "to": "/custom-lip-care-packaging/",
+      "anchor": "Custom Lip Care Packaging"
+    },
+    {
+      "from": "/locations/states/texas/",
       "to": "/locations/cities/houston/",
       "anchor": "Houston Deep shade ranges and salon retail"
     },
@@ -36834,8 +38099,23 @@
     },
     {
       "from": "/locations/states/texas/",
+      "to": "/custom-lipstick-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/texas/",
+      "to": "/custom-lipstick-boxes/",
+      "anchor": "Custom Lipstick Boxes"
+    },
+    {
+      "from": "/locations/states/texas/",
       "to": "/resources/cosmetic-packaging-label-requirements/",
       "anchor": "labelling guide"
+    },
+    {
+      "from": "/locations/states/texas/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/states/texas/",
@@ -37344,8 +38624,33 @@
     },
     {
       "from": "/locations/states/virginia/",
+      "to": "/custom-lip-mask-boxes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/virginia/",
+      "to": "/custom-lip-mask-boxes/",
+      "anchor": "Custom Lip Mask Boxes"
+    },
+    {
+      "from": "/locations/states/virginia/",
+      "to": "/lip-balm-packaging/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/virginia/",
+      "to": "/lip-balm-packaging/",
+      "anchor": "Lip Balm Packaging"
+    },
+    {
+      "from": "/locations/states/virginia/",
       "to": "/shipping-information/",
       "anchor": "receiving and delivery detail"
+    },
+    {
+      "from": "/locations/states/virginia/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/states/virginia/",
@@ -37854,8 +39159,33 @@
     },
     {
       "from": "/locations/states/washington/",
+      "to": "/paper-lip-balm-tubes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/washington/",
+      "to": "/paper-lip-balm-tubes/",
+      "anchor": "Paper Lip Balm Tubes"
+    },
+    {
+      "from": "/locations/states/washington/",
       "to": "/locations/cities/seattle/",
       "anchor": "Seattle Refill and reuse programme packaging"
+    },
+    {
+      "from": "/locations/states/washington/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": ""
+    },
+    {
+      "from": "/locations/states/washington/",
+      "to": "/cardboard-lip-balm-tubes/",
+      "anchor": "Cardboard Lip Balm Tubes"
+    },
+    {
+      "from": "/locations/states/washington/",
+      "to": "/request-a-quote/",
+      "anchor": "detailed quote request"
     },
     {
       "from": "/locations/states/washington/",
@@ -41235,12 +42565,17 @@
     {
       "from": "/resources/choosing-packaging-inserts/",
       "to": "/request-a-quote/",
-      "anchor": "Request a Quote"
+      "anchor": "detailed quote request"
     },
     {
       "from": "/resources/choosing-packaging-inserts/",
-      "to": "/sample-kit/",
-      "anchor": "See sample options"
+      "to": "/privacy-policy/",
+      "anchor": "privacy policy"
+    },
+    {
+      "from": "/resources/choosing-packaging-inserts/",
+      "to": "/request-a-quote/",
+      "anchor": "full quote request form"
     },
     {
       "from": "/resources/choosing-packaging-inserts/",
@@ -41725,12 +43060,17 @@
     {
       "from": "/resources/cosmetic-packaging-label-requirements/",
       "to": "/request-a-quote/",
-      "anchor": "Request a Quote"
+      "anchor": "detailed quote request"
     },
     {
       "from": "/resources/cosmetic-packaging-label-requirements/",
-      "to": "/sample-kit/",
-      "anchor": "See sample options"
+      "to": "/privacy-policy/",
+      "anchor": "privacy policy"
+    },
+    {
+      "from": "/resources/cosmetic-packaging-label-requirements/",
+      "to": "/request-a-quote/",
+      "anchor": "full quote request form"
     },
     {
       "from": "/resources/cosmetic-packaging-label-requirements/",
@@ -42205,12 +43545,17 @@
     {
       "from": "/resources/custom-packaging-cost-guide/",
       "to": "/request-a-quote/",
-      "anchor": "Request a Quote"
+      "anchor": "detailed quote request"
     },
     {
       "from": "/resources/custom-packaging-cost-guide/",
-      "to": "/sample-kit/",
-      "anchor": "See sample options"
+      "to": "/privacy-policy/",
+      "anchor": "privacy policy"
+    },
+    {
+      "from": "/resources/custom-packaging-cost-guide/",
+      "to": "/request-a-quote/",
+      "anchor": "full quote request form"
     },
     {
       "from": "/resources/custom-packaging-cost-guide/",
@@ -43205,12 +44550,17 @@
     {
       "from": "/resources/lip-balm-box-size-guide/",
       "to": "/request-a-quote/",
-      "anchor": "Request a Quote"
+      "anchor": "detailed quote request"
     },
     {
       "from": "/resources/lip-balm-box-size-guide/",
-      "to": "/sample-kit/",
-      "anchor": "See sample options"
+      "to": "/privacy-policy/",
+      "anchor": "privacy policy"
+    },
+    {
+      "from": "/resources/lip-balm-box-size-guide/",
+      "to": "/request-a-quote/",
+      "anchor": "full quote request form"
     },
     {
       "from": "/resources/lip-balm-box-size-guide/",
@@ -43695,12 +45045,17 @@
     {
       "from": "/resources/lip-gloss-box-size-guide/",
       "to": "/request-a-quote/",
-      "anchor": "Request a Quote"
+      "anchor": "detailed quote request"
     },
     {
       "from": "/resources/lip-gloss-box-size-guide/",
-      "to": "/sample-kit/",
-      "anchor": "See sample options"
+      "to": "/privacy-policy/",
+      "anchor": "privacy policy"
+    },
+    {
+      "from": "/resources/lip-gloss-box-size-guide/",
+      "to": "/request-a-quote/",
+      "anchor": "full quote request form"
     },
     {
       "from": "/resources/lip-gloss-box-size-guide/",
@@ -44180,12 +45535,17 @@
     {
       "from": "/resources/lip-product-packaging-guide/",
       "to": "/request-a-quote/",
-      "anchor": "Request a Quote"
+      "anchor": "detailed quote request"
     },
     {
       "from": "/resources/lip-product-packaging-guide/",
-      "to": "/sample-kit/",
-      "anchor": "See sample options"
+      "to": "/privacy-policy/",
+      "anchor": "privacy policy"
+    },
+    {
+      "from": "/resources/lip-product-packaging-guide/",
+      "to": "/request-a-quote/",
+      "anchor": "full quote request form"
     },
     {
       "from": "/resources/lip-product-packaging-guide/",
@@ -44670,12 +46030,17 @@
     {
       "from": "/resources/lipstick-box-size-guide/",
       "to": "/request-a-quote/",
-      "anchor": "Request a Quote"
+      "anchor": "detailed quote request"
     },
     {
       "from": "/resources/lipstick-box-size-guide/",
-      "to": "/sample-kit/",
-      "anchor": "See sample options"
+      "to": "/privacy-policy/",
+      "anchor": "privacy policy"
+    },
+    {
+      "from": "/resources/lipstick-box-size-guide/",
+      "to": "/request-a-quote/",
+      "anchor": "full quote request form"
     },
     {
       "from": "/resources/lipstick-box-size-guide/",
@@ -45155,12 +46520,17 @@
     {
       "from": "/resources/packaging-dieline-guide/",
       "to": "/request-a-quote/",
-      "anchor": "Request a Quote"
+      "anchor": "detailed quote request"
     },
     {
       "from": "/resources/packaging-dieline-guide/",
-      "to": "/sample-kit/",
-      "anchor": "See sample options"
+      "to": "/privacy-policy/",
+      "anchor": "privacy policy"
+    },
+    {
+      "from": "/resources/packaging-dieline-guide/",
+      "to": "/request-a-quote/",
+      "anchor": "full quote request form"
     },
     {
       "from": "/resources/packaging-dieline-guide/",
@@ -45660,12 +47030,17 @@
     {
       "from": "/resources/packaging-glossary/",
       "to": "/request-a-quote/",
-      "anchor": "Request a Quote"
+      "anchor": "detailed quote request"
     },
     {
       "from": "/resources/packaging-glossary/",
-      "to": "/sample-kit/",
-      "anchor": "See sample options"
+      "to": "/privacy-policy/",
+      "anchor": "privacy policy"
+    },
+    {
+      "from": "/resources/packaging-glossary/",
+      "to": "/request-a-quote/",
+      "anchor": "full quote request form"
     },
     {
       "from": "/resources/packaging-glossary/",
@@ -46145,12 +47520,17 @@
     {
       "from": "/resources/prepress-checklist/",
       "to": "/request-a-quote/",
-      "anchor": "Request a Quote"
+      "anchor": "detailed quote request"
     },
     {
       "from": "/resources/prepress-checklist/",
-      "to": "/sample-kit/",
-      "anchor": "See sample options"
+      "to": "/privacy-policy/",
+      "anchor": "privacy policy"
+    },
+    {
+      "from": "/resources/prepress-checklist/",
+      "to": "/request-a-quote/",
+      "anchor": "full quote request form"
     },
     {
       "from": "/resources/prepress-checklist/",

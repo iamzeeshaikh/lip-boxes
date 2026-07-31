@@ -2,6 +2,7 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import PageHero from '../../../components/PageHero.astro';
 import QuoteCta from '../../../components/QuoteCta.astro';
+import MarketFigure from '../../../components/MarketFigure.astro';
 import {
   stateRegions,
   statesInRegion,
@@ -10,6 +11,7 @@ import {
   locationUrl,
 } from '../../../data/locations';
 import { site } from '../../../data/site';
+import { getProduct } from '../../../data/products';
 import {
   graph,
   organizationSchema,
@@ -25,6 +27,11 @@ const crumbs: Crumb[] = [
   { name: 'Locations', path: '/locations/' },
   { name: 'States' },
 ];
+
+/* Two formats that recur across statewide retail programmes. */
+const figures = ['custom-lip-balm-boxes', 'lip-balm-packaging']
+  .map((slug) => getProduct(slug))
+  .filter((p): p is NonNullable<typeof p> => Boolean(p));
 
 const schema = graph(
   organizationSchema(),
@@ -68,6 +75,16 @@ const schema = graph(
         and the city page if you already know the channel and want the specifics.
         The <a href="/locations/cities/">city directory</a> lists all twenty.
       </p>
+      <div class="st-figures">
+        {figures.map((product, index) => (
+          <MarketFigure
+            product={product}
+            index={index + 1}
+            context={index === 0 ? 'Retail carton' : 'Coordinated set'}
+            eager={index === 0}
+          />
+        ))}
+      </div>
       <p class="st-note">
         {site.name} has no premises, warehouse, held stock or staff in any of these
         states. Packaging is made to order and shipped nationwide, with delivery
@@ -131,6 +148,16 @@ const schema = graph(
 </BaseLayout>
 
 <style>
+  .st-figures {
+    display: grid;
+    gap: var(--sp-4);
+    margin-block: var(--sp-5) var(--sp-6);
+  }
+  @media (min-width: 44rem) {
+    .st-figures {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
   .st-note {
     padding: var(--sp-4);
     background: var(--paper-warm);

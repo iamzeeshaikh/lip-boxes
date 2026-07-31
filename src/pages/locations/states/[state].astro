@@ -5,7 +5,9 @@ import PageHero from '../../../components/PageHero.astro';
 import ContentBlocks from '../../../components/ContentBlocks.astro';
 import FaqList from '../../../components/FaqList.astro';
 import ProductCard from '../../../components/ProductCard.astro';
-import ShortQuoteForm from '../../../components/ShortQuoteForm.astro';
+import MarketFigure from '../../../components/MarketFigure.astro';
+import QuoteBand from '../../../components/QuoteBand.astro';
+import Icon from '../../../components/Icon.astro';
 import {
   states,
   getState,
@@ -73,6 +75,17 @@ const contents = location.sections.map((section) => ({
   id: section.id,
   label: section.navLabel ?? section.heading,
 }));
+
+/*
+ * Photography is drawn from the products this market actually uses, and the
+ * offset is derived from the slug so two states recommending the same product
+ * do not open with the same photograph.
+ */
+const offset = [...location.slug].reduce((sum, char) => sum + char.charCodeAt(0), 0);
+const leadFigure = related[0];
+const midFigure = related[1] ?? related[0];
+const openingBlocks = location.sections.slice(0, 1);
+const remainingBlocks = location.sections.slice(1);
 ---
 
 <BaseLayout
@@ -90,6 +103,26 @@ const contents = location.sections.map((section) => ({
     crumbs={crumbs}
     points={[location.marketAngle, 'Shipped nationwide', 'Made to order']}
   />
+
+  <div class="loc-lead">
+    <div class="wrap">
+      <a class="btn btn--primary loc-lead__cta" href="#quote">
+        {`Get a price for ${location.name}`}
+        <Icon name="arrow-right" size={18} />
+      </a>
+      {
+        leadFigure && (
+          <MarketFigure
+            product={leadFigure}
+            index={offset}
+            variant="banner"
+            context={`${location.name} market`}
+            eager
+          />
+        )
+      }
+    </div>
+  </div>
 
   <div class="wrap loc-body">
     <aside class="loc-side">
@@ -122,24 +155,23 @@ const contents = location.sections.map((section) => ({
     </aside>
 
     <article class="loc-article">
-      <ContentBlocks blocks={location.sections} slug={location.related[0]} />
+      <ContentBlocks blocks={openingBlocks} slug={location.related[0]} />
+
+      {
+        midFigure && (
+          <div class="loc-figure">
+            <MarketFigure product={midFigure} index={offset + 1} context="Format in use" />
+          </div>
+        )
+      }
+
+      <ContentBlocks blocks={remainingBlocks} slug={location.related[0]} />
 
       <section class="loc-section" id="faqs" aria-labelledby="loc-faqs-heading">
         <h2 class="loc-section__heading" id="loc-faqs-heading">
           {location.name}: common questions
         </h2>
         <FaqList faqs={location.faqs} level={3} />
-      </section>
-
-      <section class="loc-section" id="quote" aria-labelledby="quick-quote-heading">
-        <ShortQuoteForm
-          product={related[0]?.name ?? 'Custom Lip Balm Boxes'}
-          location={location.name}
-          pageTitle={location.seoTitle}
-          id="quick-quote"
-          heading={`Get a price for a ${location.name} delivery`}
-          sub={`Four fields. Tell us your quantity and dimensions and you will get a written price, with delivery costed to your ${location.name} address.`}
-        />
       </section>
 
       <p class="loc-note">
@@ -149,6 +181,19 @@ const contents = location.sections.map((section) => ({
       </p>
     </article>
   </div>
+
+  <QuoteBand
+    product={related[0]?.name ?? 'Custom Lip Balm Boxes'}
+    location={location.name}
+    pageTitle={location.seoTitle}
+    heading={`Get a price for a ${location.name} delivery`}
+    sub={`Send your quantity and dimensions and you will get a written price, with delivery costed to your ${location.name} address.`}
+    points={[
+      `Priced for ${location.marketAngle.toLowerCase()}, which is what this page covers`,
+      'Production time and transit time quoted separately, never merged into one number',
+      'Anything that cannot be priced without more detail comes back as a specific question',
+    ]}
+  />
 
   {
     related.length > 0 && (
@@ -191,6 +236,18 @@ const contents = location.sections.map((section) => ({
 </BaseLayout>
 
 <style>
+  .loc-lead {
+    background: var(--paper-warm);
+    padding-bottom: var(--sp-7);
+  }
+  .loc-lead__cta {
+    margin-bottom: var(--sp-5);
+  }
+  .loc-figure {
+    padding-block: var(--sp-5) var(--sp-6);
+    border-top: 1px solid var(--line);
+  }
+
   .loc-body {
     display: grid;
     gap: var(--sp-6);

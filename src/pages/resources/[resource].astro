@@ -6,7 +6,7 @@ import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import ContentBlocks from '../../components/ContentBlocks.astro';
 import FaqList from '../../components/FaqList.astro';
 import ProductCard from '../../components/ProductCard.astro';
-import QuoteCta from '../../components/QuoteCta.astro';
+import QuoteBand from '../../components/QuoteBand.astro';
 import { resources, getResource } from '../../data/resources';
 import { getProduct } from '../../data/products';
 import { productImage, publicSocialUrl } from '../../lib/images';
@@ -163,6 +163,7 @@ const updatedLabel = new Date(`${resource.updated}T00:00:00Z`).toLocaleDateStrin
           {resource.faqs && resource.faqs.length > 0 && (
             <li><a href="#faqs">Questions</a></li>
           )}
+          <li><a href="#quote">Get a price</a></li>
         </ol>
       </nav>
     </aside>
@@ -215,9 +216,17 @@ const updatedLabel = new Date(`${resource.updated}T00:00:00Z`).toLocaleDateStrin
     )
   }
 
-  <QuoteCta
-    heading="Ready to put this into a specification?"
-    body="Send your dimensions, quantity and artwork status, and you will get a written price with anything we still need clarified."
+  <QuoteBand
+    product={related[0]?.name ?? 'Custom Lip Balm Boxes'}
+    pageTitle={resource.seoTitle}
+    heading="Turn this into a quoted specification"
+    sub={`Send the ${resource.primaryKeyword} figures you settled on here, along with your quantity, and you will get a written price back.`}
+    points={[
+      `A price for the ${resource.primaryKeyword} decisions this guide sets out`,
+      'A written unit price at your quantity and at the next volume break',
+      'Anything still unclear comes back as a specific question, not an estimate',
+    ]}
+    eyebrow="From guide to quote"
   />
 </BaseLayout>
 

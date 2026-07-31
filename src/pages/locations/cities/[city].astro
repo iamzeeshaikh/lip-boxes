@@ -5,7 +5,9 @@ import PageHero from '../../../components/PageHero.astro';
 import ContentBlocks from '../../../components/ContentBlocks.astro';
 import FaqList from '../../../components/FaqList.astro';
 import ProductCard from '../../../components/ProductCard.astro';
-import ShortQuoteForm from '../../../components/ShortQuoteForm.astro';
+import MarketFigure from '../../../components/MarketFigure.astro';
+import QuoteBand from '../../../components/QuoteBand.astro';
+import Icon from '../../../components/Icon.astro';
 import { cities, getCity, getState, siblingCities, locationUrl } from '../../../data/locations';
 import { getProduct } from '../../../data/products';
 import { site } from '../../../data/site';
@@ -57,6 +59,17 @@ const schema = graph(
   breadcrumbSchema(crumbs),
   faqSchema(location.faqs, path),
 );
+
+/*
+ * City pages take a different photograph from their parent state page. The
+ * offset is seeded from the slug and shifted by one so a city and its state
+ * never open with the same image even when they recommend the same product.
+ */
+const offset = [...location.slug].reduce((sum, char) => sum + char.charCodeAt(0), 1);
+const leadFigure = related[0];
+const midFigure = related[related.length - 1];
+const openingBlocks = location.sections.slice(0, 2);
+const remainingBlocks = location.sections.slice(2);
 ---
 
 <BaseLayout
@@ -75,6 +88,31 @@ const schema = graph(
     points={[location.marketAngle, 'Made to order', 'Shipped nationwide']}
   />
 
+  <div class="city-lead">
+    <div class="wrap">
+      <div class="city-lead__row">
+        {leadFigure && (
+          <MarketFigure
+            product={leadFigure}
+            index={offset}
+            context={`${location.name} market`}
+            eager
+          />
+        )}
+        <div class="city-lead__aside">
+          <p class="city-lead__angle">{location.cardDescription}</p>
+          <a class="btn btn--primary" href="#quote">
+            {`Get a price for ${location.name}`}
+            <Icon name="arrow-right" size={18} />
+          </a>
+          <p class="city-lead__note" data-boilerplate>
+            Four fields. A written price, or the questions we need answered first.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="wrap city-body">
     <article class="city-article">
       {
@@ -89,7 +127,15 @@ const schema = graph(
         )
       }
 
-      <ContentBlocks blocks={location.sections} slug={location.related[0]} />
+      <ContentBlocks blocks={openingBlocks} slug={location.related[0]} />
+
+      {midFigure && remainingBlocks.length > 0 && (
+        <div class="city-figure">
+          <MarketFigure product={midFigure} index={offset + 2} context="Format in use" />
+        </div>
+      )}
+
+      <ContentBlocks blocks={remainingBlocks} slug={location.related[0]} />
 
       <section class="city-section" id="faqs" aria-labelledby="city-faqs-heading">
         <h2 class="city-section__heading" id="city-faqs-heading">
@@ -107,18 +153,18 @@ const schema = graph(
     </article>
   </div>
 
-  <section class="section section--warm" aria-labelledby="city-quote-heading">
-    <div class="wrap wrap--narrow">
-      <ShortQuoteForm
-        product={related[0]?.name ?? 'Custom Lip Balm Boxes'}
-        location={location.name}
-        pageTitle={location.seoTitle}
-        id="quick-quote"
-        heading={`Get a price delivered to ${location.name}`}
-        sub={`Four fields. Send your quantity and dimensions and you will get a written price with delivery to your ${location.name} address costed in.`}
-      />
-    </div>
-  </section>
+  <QuoteBand
+    product={related[0]?.name ?? 'Custom Lip Balm Boxes'}
+    location={location.name}
+    pageTitle={location.seoTitle}
+    heading={`Get a price delivered to ${location.name}`}
+    sub={`Send your quantity and dimensions and you will get a written price with delivery to your ${location.name} address costed in.`}
+    points={[
+      `Specified around ${location.marketAngle.toLowerCase()}, the pattern this page covers`,
+      'A written unit price at your quantity and at the next volume break',
+      'Delivery costed to the address you give us, not estimated',
+    ]}
+  />
 
   {
     related.length > 0 && (
@@ -167,6 +213,41 @@ const schema = graph(
 </BaseLayout>
 
 <style>
+  .city-lead {
+    background: var(--paper-warm);
+    padding-bottom: var(--sp-7);
+  }
+  .city-lead__row {
+    display: grid;
+    gap: var(--sp-5);
+    align-items: center;
+  }
+  @media (min-width: 56rem) {
+    .city-lead__row {
+      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+      gap: var(--sp-6);
+    }
+  }
+  .city-lead__aside {
+    min-width: 0;
+  }
+  .city-lead__angle {
+    font-size: var(--step-1);
+    line-height: 1.5;
+    color: var(--ink);
+    margin-bottom: var(--sp-4);
+    text-wrap: balance;
+  }
+  .city-lead__note {
+    margin: var(--sp-3) 0 0;
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+  }
+  .city-figure {
+    padding-block: var(--sp-5) var(--sp-6);
+    border-top: 1px solid var(--line);
+  }
+
   .city-body {
     padding-block: var(--sp-7);
   }

@@ -315,7 +315,7 @@
       "type": "Location hub",
       "primary": "—",
       "intent": "—",
-      "words": 860,
+      "words": 953,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -325,7 +325,7 @@
       "type": "Location hub",
       "primary": "—",
       "intent": "—",
-      "words": 153,
+      "words": 202,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -335,7 +335,7 @@
       "type": "City",
       "primary": "custom lip boxes in Austin",
       "intent": "Direct-to-consumer economics and repeat shipping",
-      "words": 813,
+      "words": 928,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -345,7 +345,7 @@
       "type": "City",
       "primary": "custom lip boxes in Boston",
       "intent": "Student market price sensitivity and academic seasonality",
-      "words": 822,
+      "words": 928,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -355,7 +355,7 @@
       "type": "City",
       "primary": "custom lip boxes in Charlotte",
       "intent": "Corporate gifting and perceived value",
-      "words": 794,
+      "words": 902,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -365,7 +365,7 @@
       "type": "City",
       "primary": "custom lip boxes in Chicago",
       "intent": "Buyer meetings and physical sample requirements",
-      "words": 822,
+      "words": 930,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -375,7 +375,7 @@
       "type": "City",
       "primary": "custom lip boxes in Columbus",
       "intent": "Retail pilots and keeping results readable",
-      "words": 777,
+      "words": 882,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -385,7 +385,7 @@
       "type": "City",
       "primary": "custom lip boxes in Dallas",
       "intent": "Wholesale showroom selling and line sheet requirements",
-      "words": 819,
+      "words": 929,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -395,7 +395,7 @@
       "type": "City",
       "primary": "custom lip boxes in Denver",
       "intent": "Outdoor specialty retail and durability assessment",
-      "words": 855,
+      "words": 967,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -405,7 +405,7 @@
       "type": "City",
       "primary": "custom lip boxes in Fort Worth",
       "intent": "Short fixed selling windows and stock planning",
-      "words": 810,
+      "words": 922,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -415,7 +415,7 @@
       "type": "City",
       "primary": "custom lip boxes in Houston",
       "intent": "Deep shade ranges and salon retail",
-      "words": 832,
+      "words": 939,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -425,7 +425,7 @@
       "type": "City",
       "primary": "custom lip boxes in Indianapolis",
       "intent": "Third-party logistics intake requirements",
-      "words": 788,
+      "words": 896,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -435,7 +435,7 @@
       "type": "City",
       "primary": "custom lip boxes in Jacksonville",
       "intent": "Freight consolidation and ordering frequency",
-      "words": 776,
+      "words": 880,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -445,7 +445,7 @@
       "type": "City",
       "primary": "custom lip boxes in Los Angeles",
       "intent": "Seeding kits and press packaging alongside retail",
-      "words": 813,
+      "words": 923,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -455,7 +455,7 @@
       "type": "City",
       "primary": "custom lip boxes in Nashville",
       "intent": "Visitor purchases that travel home",
-      "words": 815,
+      "words": 922,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -465,7 +465,7 @@
       "type": "City",
       "primary": "custom lip boxes in New York City",
       "intent": "Small-format retail and narrow fixture space",
-      "words": 859,
+      "words": 972,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -475,7 +475,7 @@
       "type": "City",
       "primary": "custom lip boxes in Philadelphia",
       "intent": "The transition from maker market to wholesale",
-      "words": 843,
+      "words": 950,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -485,7 +485,7 @@
       "type": "City",
       "primary": "custom lip boxes in Phoenix",
       "intent": "Convenience and pharmacy peg retail",
-      "words": 882,
+      "words": 994,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -495,7 +495,7 @@
       "type": "City",
       "primary": "custom lip boxes in San Antonio",
       "intent": "Bilingual panels and the space they require",
-      "words": 840,
+      "words": 955,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -505,7 +505,7 @@
       "type": "City",
       "primary": "custom lip boxes in San Diego",
       "intent": "Sun care formats and SPF panel requirements",
-      "words": 834,
+      "words": 951,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -515,7 +515,7 @@
       "type": "City",
       "primary": "custom lip boxes in Seattle",
       "intent": "Refill and reuse programme packaging",
-      "words": 783,
+      "words": 897,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -525,7 +525,7 @@
       "type": "City",
       "primary": "custom lip boxes in Washington, D.C.",
       "intent": "Museum and institutional retail standards",
-      "words": 732,
+      "words": 845,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -535,7 +535,7 @@
       "type": "Location hub",
       "primary": "—",
       "intent": "—",
-      "words": 170,
+      "words": 199,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -545,7 +545,7 @@
       "type": "State",
       "primary": "custom lip boxes in Arizona",
       "intent": "Heat, storage conditions and sun-care formats",
-      "words": 1134,
+      "words": 1239,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -555,7 +555,7 @@
       "type": "State",
       "primary": "custom lip boxes in California",
       "intent": "Indie brand density and the speed of shade-range launches",
-      "words": 1410,
+      "words": 1505,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -565,7 +565,7 @@
       "type": "State",
       "primary": "custom lip boxes in Colorado",
       "intent": "Outdoor and apothecary positioning in specialty retail",
-      "words": 1034,
+      "words": 1139,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -575,7 +575,7 @@
       "type": "State",
       "primary": "custom lip boxes in Florida",
       "intent": "Resort and tourism retail, and humidity in storage",
-      "words": 1014,
+      "words": 1115,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -585,7 +585,7 @@
       "type": "State",
       "primary": "custom lip boxes in Georgia",
       "intent": "Independent gloss brands and short launch cycles",
-      "words": 1022,
+      "words": 1120,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -595,7 +595,7 @@
       "type": "State",
       "primary": "custom lip boxes in Illinois",
       "intent": "Mass retail resets and fixture constraints",
-      "words": 846,
+      "words": 950,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -605,7 +605,7 @@
       "type": "State",
       "primary": "custom lip boxes in Indiana",
       "intent": "Case pack efficiency and pallet configuration",
-      "words": 847,
+      "words": 944,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -615,7 +615,7 @@
       "type": "State",
       "primary": "custom lip boxes in Maryland",
       "intent": "Corporate gifting and promotional programmes",
-      "words": 887,
+      "words": 980,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -625,7 +625,7 @@
       "type": "State",
       "primary": "custom lip boxes in Massachusetts",
       "intent": "Treatment and clinical positioning",
-      "words": 813,
+      "words": 907,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -635,7 +635,7 @@
       "type": "State",
       "primary": "custom lip boxes in Michigan",
       "intent": "Seasonal demand and call-off ordering",
-      "words": 898,
+      "words": 992,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -645,7 +645,7 @@
       "type": "State",
       "primary": "custom lip boxes in Missouri",
       "intent": "Long shelf tenure and reorder consistency",
-      "words": 855,
+      "words": 960,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -655,7 +655,7 @@
       "type": "State",
       "primary": "custom lip boxes in New Jersey",
       "intent": "Documentation, version control and formal approvals",
-      "words": 815,
+      "words": 920,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -665,7 +665,7 @@
       "type": "State",
       "primary": "custom lip boxes in New York",
       "intent": "Prestige retail specifications set by the account",
-      "words": 817,
+      "words": 917,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -675,7 +675,7 @@
       "type": "State",
       "primary": "custom lip boxes in North Carolina",
       "intent": "Contract manufacturing and automated line requirements",
-      "words": 1020,
+      "words": 1120,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -685,7 +685,7 @@
       "type": "State",
       "primary": "custom lip boxes in Ohio",
       "intent": "Test market runs that have to scale",
-      "words": 905,
+      "words": 1000,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -695,7 +695,7 @@
       "type": "State",
       "primary": "custom lip boxes in Pennsylvania",
       "intent": "Private label economics and the pharmacy channel",
-      "words": 836,
+      "words": 936,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -705,7 +705,7 @@
       "type": "State",
       "primary": "custom lip boxes in Tennessee",
       "intent": "Merchandise and date-driven production",
-      "words": 1019,
+      "words": 1112,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -715,7 +715,7 @@
       "type": "State",
       "primary": "custom lip boxes in Texas",
       "intent": "Distribution across multiple metros and wholesale case planning",
-      "words": 1022,
+      "words": 1117,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -725,7 +725,7 @@
       "type": "State",
       "primary": "custom lip boxes in Virginia",
       "intent": "Direct-to-consumer fulfilment and shipper specification",
-      "words": 864,
+      "words": 959,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -735,7 +735,7 @@
       "type": "State",
       "primary": "custom lip boxes in Washington",
       "intent": "Material scrutiny and defensible disposal claims",
-      "words": 1141,
+      "words": 1243,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -815,7 +815,7 @@
       "type": "Resource",
       "primary": "packaging inserts",
       "intent": "Does my product need an insert, and which type should I specify?",
-      "words": 1695,
+      "words": 1756,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -825,7 +825,7 @@
       "type": "Resource",
       "primary": "cosmetic packaging label requirements",
       "intent": "What information has to appear on a cosmetic package, and where does each part go?",
-      "words": 1867,
+      "words": 1932,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -835,7 +835,7 @@
       "type": "Resource",
       "primary": "custom packaging cost",
       "intent": "What am I actually paying for in a packaging quote, and which parts can I change?",
-      "words": 1726,
+      "words": 1789,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -845,7 +845,7 @@
       "type": "Resource",
       "primary": "lip balm box size",
       "intent": "What size box do I need for the lip balm tube I am already filling?",
-      "words": 1942,
+      "words": 2007,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -855,7 +855,7 @@
       "type": "Resource",
       "primary": "lip gloss box size",
       "intent": "How tall does a lip gloss box need to be for a wand applicator tube?",
-      "words": 1775,
+      "words": 1840,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -865,7 +865,7 @@
       "type": "Resource",
       "primary": "lip product packaging",
       "intent": "I am launching a lip product. What packaging decisions do I need to make, and in what order?",
-      "words": 1979,
+      "words": 2042,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -875,7 +875,7 @@
       "type": "Resource",
       "primary": "lipstick box size",
       "intent": "How do I measure a lipstick bullet case and work out the carton dimensions?",
-      "words": 1744,
+      "words": 1807,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -885,7 +885,7 @@
       "type": "Resource",
       "primary": "packaging dieline",
       "intent": "What is a dieline, what do the lines on it mean, and how is one made?",
-      "words": 1926,
+      "words": 1987,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -895,7 +895,7 @@
       "type": "Resource",
       "primary": "packaging glossary",
       "intent": "A supplier used a term I do not know. What does it mean?",
-      "words": 1477,
+      "words": 1538,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -905,7 +905,7 @@
       "type": "Resource",
       "primary": "prepress checklist",
       "intent": "Give me a step-by-step list I can work through before I send my file to print.",
-      "words": 1543,
+      "words": 1604,
       "closest": "—",
       "score": 0,
       "risk": "None"
@@ -1489,9 +1489,49 @@
   ],
   "repeatedAnchors": [
     {
+      "text": "custom lip balm boxes",
+      "href": "/custom-lip-balm-boxes/",
+      "count": 23
+    },
+    {
       "text": "request a sample",
       "href": "/sample-kit/",
       "count": 15
+    },
+    {
+      "text": "custom lipstick boxes",
+      "href": "/custom-lipstick-boxes/",
+      "count": 9
+    },
+    {
+      "text": "custom lip care packaging",
+      "href": "/custom-lip-care-packaging/",
+      "count": 8
+    },
+    {
+      "text": "lip balm packaging",
+      "href": "/lip-balm-packaging/",
+      "count": 7
+    },
+    {
+      "text": "hang tab lip balm boxes",
+      "href": "/hang-tab-lip-balm-boxes/",
+      "count": 6
+    },
+    {
+      "text": "rigid lipstick boxes",
+      "href": "/rigid-lipstick-boxes/",
+      "count": 6
+    },
+    {
+      "text": "cardboard lip balm tubes",
+      "href": "/cardboard-lip-balm-tubes/",
+      "count": 6
+    },
+    {
+      "text": "custom lip balm labels",
+      "href": "/custom-lip-balm-labels/",
+      "count": 6
     },
     {
       "text": "texas tx distribution across multiple metros and wholesale case planning",
@@ -1536,6 +1576,16 @@
     {
       "text": "materials page",
       "href": "/materials/",
+      "count": 4
+    },
+    {
+      "text": "lip gloss boxes",
+      "href": "/lip-gloss-boxes/",
+      "count": 4
+    },
+    {
+      "text": "paper lip balm tubes",
+      "href": "/paper-lip-balm-tubes/",
       "count": 4
     },
     {

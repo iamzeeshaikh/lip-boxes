@@ -1,0 +1,116 @@
+---
+/**
+ * A single piece of product photography used inside a market or guide page.
+ *
+ * The image is real product photography drawn from the product the page
+ * already recommends, with the alt text and caption that were written for that
+ * photograph. Nothing here invents a caption about the location.
+ */
+import { Image } from 'astro:assets';
+import { productImage } from '../lib/images';
+import type { Product } from '../data/types';
+
+interface Props {
+  product: Product;
+  /** Which photograph to use. Wrapped, so an out-of-range index is safe. */
+  index?: number;
+  /** Wide banner or inline block. */
+  variant?: 'banner' | 'inline';
+  /** Short line above the caption, written per page. */
+  context?: string;
+  eager?: boolean;
+}
+
+const { product, index = 0, variant = 'inline', context, eager = false } = Astro.props;
+
+const picture = product.images[index % product.images.length];
+const source = productImage(product.slug, picture.file);
+const banner = variant === 'banner';
+---
+
+<figure class:list={['m-figure', banner && 'm-figure--banner']}>
+  <a class="m-figure__link" href={`/${product.slug}/`}>
+    <Image
+      src={source}
+      alt={picture.alt}
+      widths={banner ? [560, 840, 1120] : [420, 640, 860]}
+      sizes={banner ? '(min-width: 76rem) 72rem, 94vw' : '(min-width: 68rem) 44rem, 94vw'}
+      loading={eager ? 'eager' : 'lazy'}
+      decoding={eager ? 'sync' : 'async'}
+      fetchpriority={eager ? 'high' : 'auto'}
+      width={banner ? 1120 : 860}
+      height={banner ? 480 : 645}
+      class="m-figure__img"
+    />
+  </a>
+  <figcaption class="m-figure__caption">
+    {context && <span class="m-figure__context">{context}</span>}
+    <span class="m-figure__text">{picture.caption ?? picture.alt}</span>
+    <a class="m-figure__more" href={`/${product.slug}/`}>{product.name}</a>
+  </figcaption>
+</figure>
+
+<style>
+  .m-figure {
+    margin: 0;
+    min-width: 0;
+  }
+  .m-figure__link {
+    display: block;
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid var(--line);
+    background: var(--paper-warm);
+  }
+  .m-figure__link:hover {
+    border-color: var(--plum);
+  }
+  .m-figure__img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s var(--ease);
+  }
+  .m-figure__link:hover .m-figure__img {
+    transform: scale(1.02);
+  }
+  .m-figure--banner .m-figure__img {
+    aspect-ratio: 4 / 3;
+  }
+  @media (min-width: 48rem) {
+    .m-figure--banner .m-figure__img {
+      aspect-ratio: 21 / 9;
+    }
+  }
+  .m-figure__caption {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.35rem 0.6rem;
+    margin-top: var(--sp-3);
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+    line-height: 1.55;
+  }
+  .m-figure__context {
+    display: inline-block;
+    padding: 0.1rem 0.45rem;
+    background: var(--rose-soft);
+    color: var(--plum-deep);
+    border-radius: var(--radius-sm);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .m-figure__text {
+    flex: 1 1 16rem;
+    min-width: 0;
+  }
+  .m-figure__more {
+    font-size: var(--step--1);
+    white-space: nowrap;
+  }
+</style>
