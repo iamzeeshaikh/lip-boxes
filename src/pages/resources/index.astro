@@ -1,0 +1,379 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import QuoteCta from '../../components/QuoteCta.astro';
+import Icon from '../../components/Icon.astro';
+import {
+  indexableResources,
+  resourceGroups,
+  resourcesInGroup,
+  getResource,
+} from '../../data/resources';
+import { publicSocialUrl } from '../../lib/images';
+import { abs } from '../../data/site';
+import {
+  graph,
+  organizationSchema,
+  websiteSchema,
+  webPageSchema,
+  breadcrumbSchema,
+  type Crumb,
+} from '../../lib/schema';
+
+const path = '/resources/';
+const crumbs: Crumb[] = [{ name: 'Home', path: '/' }, { name: 'Resources' }];
+
+const ogUrl = publicSocialUrl('custom-lip-care-packaging', 'custom-lip-care-packaging-carton-range.png');
+
+/* Three entry points chosen by the question a reader arrives with. */
+const startingPoints = [
+  {
+    question: 'I am planning a launch and do not know where to start',
+    slug: 'lip-product-packaging-guide',
+    icon: 'layers' as const,
+  },
+  {
+    question: 'I have a container and need a box dimension',
+    slug: 'lip-balm-box-size-guide',
+    icon: 'ruler' as const,
+  },
+  {
+    question: 'I have artwork and want to check it before sending',
+    slug: 'prepress-checklist',
+    icon: 'file-text' as const,
+  },
+];
+
+const schema = graph(
+  organizationSchema(),
+  websiteSchema(),
+  webPageSchema({
+    path,
+    name: 'Packaging Resources and Guides',
+    description:
+      'Evergreen guides, size references and checklists for specifying lip product packaging.',
+    type: 'CollectionPage',
+  }),
+  breadcrumbSchema(crumbs),
+  {
+    '@type': 'ItemList',
+    '@id': `${abs(path)}#resources`,
+    name: 'Lip Boxes packaging resources',
+    numberOfItems: indexableResources.length,
+    itemListElement: indexableResources.map((resource, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      url: abs(`/resources/${resource.slug}/`),
+      name: resource.title,
+    })),
+  },
+);
+---
+
+<BaseLayout
+  title="Packaging Resources | Guides and Size References"
+  description="Evergreen guides, size references and checklists for specifying lip packaging, from planning a launch to checking print files."
+  path={path}
+  ogTitle="Lip Packaging Guides and References"
+  ogDescription="Sizing tables, cost breakdowns, dieline explanations and prepress checklists for lip product packaging."
+  ogImage={ogUrl}
+  ogImageAlt="A range of printed lip care cartons in pink and nude shades"
+  schema={[schema]}
+>
+  <PageHero
+    eyebrow="Learning centre"
+    h1="Packaging Resources"
+    lead="Reference material for people specifying lip packaging: how to measure a container, what drives a quote, how dielines work, and what has to appear on a label. Written to be used while you work rather than read once."
+    crumbs={crumbs}
+    points={[
+      `${indexableResources.length} guides`,
+      'Updated as practice changes',
+      'No sales pitch inside the guides',
+    ]}
+  />
+
+  <div class="section">
+    <div class="wrap">
+      <div class="res-intro">
+        <p class="measure">
+          These pages are separate from the
+          <a href="/blog/">blog</a>, which covers ideas, comparisons and things
+          that change. Resources are the evergreen half: sizing tables you come
+          back to, checklists you run before sending a file, and definitions for
+          the terms that appear on a quote.
+        </p>
+      </div>
+
+      <section class="starters" aria-labelledby="starters-heading">
+        <h2 id="starters-heading" class="starters__heading">Start with your question</h2>
+        <ul class="starters__list">
+          {
+            startingPoints.map((point) => {
+              const resource = getResource(point.slug);
+              if (!resource) return null;
+              return (
+                <li>
+                  <a href={`/resources/${resource.slug}/`}>
+                    <span class="starters__icon" aria-hidden="true">
+                      <Icon name={point.icon} size={20} />
+                    </span>
+                    <span class="starters__q">“{point.question}”</span>
+                    <span class="starters__a">
+                      {resource.title}
+                      <Icon name="arrow-right" size={15} />
+                    </span>
+                  </a>
+                </li>
+              );
+            })
+          }
+        </ul>
+      </section>
+
+      {
+        resourceGroups.map((group) => {
+          const items = resourcesInGroup(group.name);
+          if (items.length === 0) return null;
+          const id = `group-${group.name.toLowerCase()}`;
+          return (
+            <section class="res-group" aria-labelledby={id}>
+              <div class="res-group__head">
+                <h2 id={id}>{group.name}</h2>
+                <p class="res-group__blurb">{group.blurb}</p>
+              </div>
+              <ul class="res-list">
+                {items.map((resource) => (
+                  <li class="res-item">
+                    <h3 class="res-item__title">
+                      <a href={`/resources/${resource.slug}/`}>{resource.title}</a>
+                    </h3>
+                    <p class="res-item__desc">{resource.cardDescription}</p>
+                    <p class="res-item__meta">
+                      {resource.readingMinutes} min read
+                      <span aria-hidden="true"> &middot; </span>
+                      Reviewed{' '}
+                      <time datetime={resource.updated}>
+                        {new Date(`${resource.updated}T00:00:00Z`).toLocaleDateString('en-US', {
+                          month: 'long',
+                          year: 'numeric',
+                          timeZone: 'UTC',
+                        })}
+                      </time>
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          );
+        })
+      }
+
+      <section class="res-group" aria-labelledby="commercial-heading">
+        <div class="res-group__head">
+          <h2 id="commercial-heading">Specification pages, not guides</h2>
+          <p class="res-group__blurb">
+            These describe what we offer rather than explaining a subject. They
+            sit alongside the resources and answer a different question.
+          </p>
+        </div>
+        <ul class="ref-list">
+          <li>
+            <a href="/materials/">Materials</a>
+            <span>The board grades we stock and what each does to your print.</span>
+          </li>
+          <li>
+            <a href="/printing-options/">Printing options</a>
+            <span>Which press we would quote at your quantity and colour count.</span>
+          </li>
+          <li>
+            <a href="/finishes/">Finishes</a>
+            <span>Coatings, foil and spot treatments available on your order.</span>
+          </li>
+          <li>
+            <a href="/box-styles/">Box styles</a>
+            <span>Closures, bases and constructions you can specify.</span>
+          </li>
+          <li>
+            <a href="/artwork-guidelines/">Artwork guidelines</a>
+            <span>What a file must contain before we can accept it for print.</span>
+          </li>
+          <li>
+            <a href="/how-to-order/">How to order</a>
+            <span>The stages of an order and the two approvals we need.</span>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <QuoteCta
+    heading="Worked out what you need?"
+    body="Send the dimensions, the quantity and the artwork status. If a guide left something unclear, put the question in the message and we will answer it directly."
+  />
+</BaseLayout>
+
+<style>
+  .res-intro {
+    margin-bottom: var(--sp-7);
+    color: var(--ink-soft);
+  }
+
+  .starters {
+    margin-bottom: var(--sp-8);
+    padding-bottom: var(--sp-7);
+    border-bottom: 1px solid var(--line);
+  }
+  .starters__heading {
+    font-family: var(--font-body);
+    font-size: var(--step--1);
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: var(--sp-4);
+  }
+  .starters__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--sp-4);
+  }
+  @media (min-width: 52rem) {
+    .starters__list {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  .starters__list a {
+    display: block;
+    height: 100%;
+    padding: var(--sp-5);
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    text-decoration: none;
+    transition: border-color 0.18s var(--ease), box-shadow 0.18s var(--ease);
+  }
+  .starters__list a:hover {
+    border-color: var(--plum);
+    box-shadow: var(--shadow-sm);
+  }
+  .starters__icon {
+    display: grid;
+    place-items: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    margin-bottom: var(--sp-3);
+    border-radius: var(--radius-sm);
+    background: var(--paper-blush);
+    color: var(--plum);
+  }
+  .starters__q {
+    display: block;
+    font-family: var(--font-display);
+    font-size: var(--step-1);
+    line-height: 1.35;
+    color: var(--ink);
+    margin-bottom: var(--sp-3);
+  }
+  .starters__a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: var(--step--1);
+    font-weight: 600;
+    color: var(--plum);
+  }
+
+  .res-group + .res-group {
+    margin-top: var(--sp-8);
+    padding-top: var(--sp-7);
+    border-top: 1px solid var(--line);
+  }
+  .res-group__head {
+    margin-bottom: var(--sp-5);
+  }
+  .res-group__head h2 {
+    font-size: var(--step-2);
+    margin-bottom: var(--sp-2);
+  }
+  .res-group__blurb {
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+    max-width: 54ch;
+    margin: 0;
+  }
+
+  .res-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--sp-5);
+  }
+  @media (min-width: 46rem) {
+    .res-list {
+      grid-template-columns: 1fr 1fr;
+      gap: var(--sp-5) var(--sp-6);
+    }
+  }
+  .res-item {
+    padding-top: var(--sp-4);
+    border-top: 1px solid var(--line);
+  }
+  .res-item__title {
+    font-size: var(--step-1);
+    margin-bottom: var(--sp-2);
+    line-height: 1.3;
+  }
+  .res-item__title a {
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .res-item__title a:hover {
+    color: var(--plum);
+    text-decoration: underline;
+    text-underline-offset: 0.16em;
+  }
+  .res-item__desc {
+    font-size: var(--step--1);
+    color: var(--ink-soft);
+    line-height: 1.6;
+    margin-bottom: var(--sp-2);
+    max-width: 52ch;
+  }
+  .res-item__meta {
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+    margin: 0;
+  }
+
+  .ref-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--sp-4);
+  }
+  @media (min-width: 48rem) {
+    .ref-list {
+      grid-template-columns: 1fr 1fr;
+      gap: var(--sp-4) var(--sp-6);
+    }
+  }
+  .ref-list li {
+    padding-top: var(--sp-3);
+    border-top: 1px solid var(--line);
+  }
+  .ref-list a {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  .ref-list span {
+    display: block;
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+    line-height: 1.55;
+  }
+</style>

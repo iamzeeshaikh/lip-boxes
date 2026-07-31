@@ -130,6 +130,15 @@ export function initQuoteForms() {
     const pageUrlField = form.querySelector<HTMLInputElement>('[data-page-url]');
     if (pageUrlField) pageUrlField.value = window.location.href;
 
+    // Stamped on submit rather than at build time, so a cached static page
+    // cannot report a stale time. The server records its own receipt time too.
+    const stampField = form.querySelector<HTMLInputElement>('[data-submitted-at]');
+    if (stampField) {
+      form.addEventListener('submit', () => {
+        stampField.value = new Date().toISOString();
+      });
+    }
+
     const fields = Array.from(
       form.querySelectorAll<HTMLElement>(
         'input:not([type="hidden"]):not([tabindex="-1"]), select, textarea',

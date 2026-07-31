@@ -1,6 +1,6 @@
 # Generated URLs
 
-44 HTML pages, plus 3 generated files.
+98 HTML pages, plus 3 generated files.
 
 ## Pages
 
@@ -36,12 +36,66 @@
 - https://lipboxes.com/lip-balm-packaging/
 - https://lipboxes.com/lip-gloss-boxes/
 - https://lipboxes.com/lipstick-boxes/
+- https://lipboxes.com/locations/
+- https://lipboxes.com/locations/cities/
+- https://lipboxes.com/locations/cities/austin/
+- https://lipboxes.com/locations/cities/boston/
+- https://lipboxes.com/locations/cities/charlotte/
+- https://lipboxes.com/locations/cities/chicago/
+- https://lipboxes.com/locations/cities/columbus/
+- https://lipboxes.com/locations/cities/dallas/
+- https://lipboxes.com/locations/cities/denver/
+- https://lipboxes.com/locations/cities/fort-worth/
+- https://lipboxes.com/locations/cities/houston/
+- https://lipboxes.com/locations/cities/indianapolis/
+- https://lipboxes.com/locations/cities/jacksonville/
+- https://lipboxes.com/locations/cities/los-angeles/
+- https://lipboxes.com/locations/cities/nashville/
+- https://lipboxes.com/locations/cities/new-york-city/
+- https://lipboxes.com/locations/cities/philadelphia/
+- https://lipboxes.com/locations/cities/phoenix/
+- https://lipboxes.com/locations/cities/san-antonio/
+- https://lipboxes.com/locations/cities/san-diego/
+- https://lipboxes.com/locations/cities/seattle/
+- https://lipboxes.com/locations/cities/washington-dc/
+- https://lipboxes.com/locations/states/
+- https://lipboxes.com/locations/states/arizona/
+- https://lipboxes.com/locations/states/california/
+- https://lipboxes.com/locations/states/colorado/
+- https://lipboxes.com/locations/states/florida/
+- https://lipboxes.com/locations/states/georgia/
+- https://lipboxes.com/locations/states/illinois/
+- https://lipboxes.com/locations/states/indiana/
+- https://lipboxes.com/locations/states/maryland/
+- https://lipboxes.com/locations/states/massachusetts/
+- https://lipboxes.com/locations/states/michigan/
+- https://lipboxes.com/locations/states/missouri/
+- https://lipboxes.com/locations/states/new-jersey/
+- https://lipboxes.com/locations/states/new-york/
+- https://lipboxes.com/locations/states/north-carolina/
+- https://lipboxes.com/locations/states/ohio/
+- https://lipboxes.com/locations/states/pennsylvania/
+- https://lipboxes.com/locations/states/tennessee/
+- https://lipboxes.com/locations/states/texas/
+- https://lipboxes.com/locations/states/virginia/
+- https://lipboxes.com/locations/states/washington/
 - https://lipboxes.com/materials/
 - https://lipboxes.com/paper-lip-balm-tubes/
 - https://lipboxes.com/printing-options/
 - https://lipboxes.com/privacy-policy/
 - https://lipboxes.com/products/
 - https://lipboxes.com/request-a-quote/
+- https://lipboxes.com/resources/
+- https://lipboxes.com/resources/choosing-packaging-inserts/
+- https://lipboxes.com/resources/cosmetic-packaging-label-requirements/
+- https://lipboxes.com/resources/custom-packaging-cost-guide/
+- https://lipboxes.com/resources/lip-balm-box-size-guide/
+- https://lipboxes.com/resources/lip-gloss-box-size-guide/
+- https://lipboxes.com/resources/lip-product-packaging-guide/
+- https://lipboxes.com/resources/lipstick-box-size-guide/
+- https://lipboxes.com/resources/packaging-dieline-guide/
+- https://lipboxes.com/resources/packaging-glossary/
+- https://lipboxes.com/resources/prepress-checklist/
 - https://lipboxes.com/rigid-lipstick-boxes/
 - https://lipboxes.com/sample-kit/
 - https://lipboxes.com/shipping-information/

@@ -3,9 +3,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHero from '../../components/PageHero.astro';
 import ProductCard from '../../components/ProductCard.astro';
 import QuoteCta from '../../components/QuoteCta.astro';
-import { getImage } from 'astro:assets';
 import { indexableProducts, productGroups, productsInGroup } from '../../data/products';
-import { productImage } from '../../lib/images';
+import { publicSocialUrl } from '../../lib/images';
 import { site } from '../../data/site';
 import {
   graph,
@@ -20,12 +19,10 @@ import { abs } from '../../data/site';
 const path = '/products/';
 const crumbs: Crumb[] = [{ name: 'Home', path: '/' }, { name: 'Products' }];
 
-const ogAsset = await getImage({
-  src: productImage('custom-lip-care-packaging', 'custom-lip-care-packaging-carton-range.png'),
-  width: 1200,
-  height: 850,
-  format: 'png',
-});
+const ogUrl = publicSocialUrl(
+  'custom-lip-care-packaging',
+  'custom-lip-care-packaging-carton-range.png',
+);
 
 const itemList = {
   '@type': 'ItemList',
@@ -63,7 +60,7 @@ let cardIndex = 0;
   path={path}
   ogTitle="Every Lip Packaging Format We Produce"
   ogDescription="Eleven made-to-order formats for lip balm, lipstick, lip gloss and lip care, each quoted to your dimensions."
-  ogImage={ogAsset.src}
+  ogImage={ogUrl}
   ogImageAlt="A range of printed lip care cartons in pink and nude shades"
   schema={[schema]}
 >

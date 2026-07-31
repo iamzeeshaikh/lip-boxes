@@ -50,7 +50,32 @@ export const primaryNav: { label: string; href?: string; children?: NavLink[] }[
       { href: '/faqs/', label: 'FAQs' },
     ],
   },
-  { label: 'Blog', href: '/blog/' },
+  {
+    label: 'Resources',
+    href: '/resources/',
+    children: [
+      { href: '/resources/', label: 'All Guides', note: 'The full ten-guide library' },
+      { href: '/resources/lip-product-packaging-guide/', label: 'Lip Packaging Guide', note: 'Start here if you are new to it' },
+      { href: '/resources/lip-balm-box-size-guide/', label: 'Lip Balm Box Sizes', note: 'Measure a stick, get a carton size' },
+      { href: '/resources/custom-packaging-cost-guide/', label: 'Packaging Cost Guide', note: 'What actually drives the unit price' },
+      { href: '/resources/packaging-dieline-guide/', label: 'Dielines Explained', note: 'How a flat drawing becomes a box' },
+      { href: '/resources/prepress-checklist/', label: 'Prepress Checklist', note: 'Check artwork before it goes to print' },
+      { href: '/blog/', label: 'Blog', note: 'Shorter pieces and updates' },
+    ],
+  },
+  {
+    label: 'Locations',
+    href: '/locations/',
+    children: [
+      { href: '/locations/', label: 'All Locations', note: 'Forty US market guides' },
+      { href: '/locations/states/', label: 'By State', note: 'Twenty state guides' },
+      { href: '/locations/cities/', label: 'By City', note: 'Twenty city guides' },
+      { href: '/locations/states/california/', label: 'California', note: 'Indie density and shade ranges' },
+      { href: '/locations/states/texas/', label: 'Texas', note: 'Multi-metro distribution' },
+      { href: '/locations/states/new-york/', label: 'New York', note: 'Prestige retailer specifications' },
+      { href: '/locations/states/florida/', label: 'Florida', note: 'Resort retail and humidity' },
+    ],
+  },
   { label: 'About', href: '/about/' },
   { label: 'Contact', href: '/contact/' },
 ];
@@ -69,7 +94,7 @@ export const footerNav: { heading: string; links: NavLink[] }[] = [
     ],
   },
   {
-    heading: 'Lipstick & Gloss',
+    heading: 'Lipstick, Gloss & Care',
     links: [
       { href: '/lipstick-boxes/', label: 'Lipstick Boxes' },
       { href: '/custom-lipstick-boxes/', label: 'Custom Lipstick Boxes' },
@@ -77,6 +102,8 @@ export const footerNav: { heading: string; links: NavLink[] }[] = [
       { href: '/hang-tab-lipstick-boxes/', label: 'Hang Tab Lipstick Boxes' },
       { href: '/lip-gloss-boxes/', label: 'Lip Gloss Boxes' },
       { href: '/holographic-lip-gloss-boxes/', label: 'Holographic Lip Gloss Boxes' },
+      { href: '/custom-lip-mask-boxes/', label: 'Custom Lip Mask Boxes' },
+      { href: '/custom-lip-care-packaging/', label: 'Bulk & Private Label' },
     ],
   },
   {
@@ -100,12 +127,12 @@ export const footerNav: { heading: string; links: NavLink[] }[] = [
     ],
   },
   {
-    heading: 'Company',
+    heading: 'Learn & Company',
     links: [
-      { href: '/about/', label: 'About Lip Boxes' },
-      { href: '/custom-lip-care-packaging/', label: 'Bulk & Private Label' },
-      { href: '/custom-lip-mask-boxes/', label: 'Custom Lip Mask Boxes' },
+      { href: '/resources/', label: 'Packaging Guides' },
+      { href: '/locations/', label: 'Locations' },
       { href: '/blog/', label: 'Blog' },
+      { href: '/about/', label: 'About Lip Boxes' },
       { href: '/contact/', label: 'Contact' },
       { href: '/faqs/', label: 'FAQs' },
     ],

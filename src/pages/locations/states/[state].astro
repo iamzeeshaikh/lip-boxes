@@ -1,0 +1,377 @@
+---
+import type { GetStaticPaths } from 'astro';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PageHero from '../../../components/PageHero.astro';
+import ContentBlocks from '../../../components/ContentBlocks.astro';
+import FaqList from '../../../components/FaqList.astro';
+import ProductCard from '../../../components/ProductCard.astro';
+import ShortQuoteForm from '../../../components/ShortQuoteForm.astro';
+import {
+  states,
+  getState,
+  citiesInState,
+  locationUrl,
+  stateRegions,
+  statesInRegion,
+} from '../../../data/locations';
+import { getProduct } from '../../../data/products';
+import { site } from '../../../data/site';
+import {
+  graph,
+  organizationSchema,
+  websiteSchema,
+  webPageSchema,
+  breadcrumbSchema,
+  faqSchema,
+  type Crumb,
+} from '../../../lib/schema';
+
+export const getStaticPaths: GetStaticPaths = () =>
+  states.map((state) => ({ params: { state: state.slug } }));
+
+const { state: slug } = Astro.params;
+const location = getState(slug!);
+if (!location) throw new Error(`Unknown state slug: ${slug}`);
+
+const path = `/locations/states/${location.slug}/`;
+const crumbs: Crumb[] = [
+  { name: 'Home', path: '/' },
+  { name: 'Locations', path: '/locations/' },
+  { name: 'States', path: '/locations/states/' },
+  { name: location.name },
+];
+
+const cities = citiesInState(location.slug);
+const region = stateRegions.find((group) => group.states.includes(location.slug))?.region;
+const neighbours = region
+  ? statesInRegion(region).filter((state) => state.slug !== location.slug)
+  : [];
+const related = location.related
+  .map((productSlug) => getProduct(productSlug))
+  .filter((p): p is NonNullable<typeof p> => Boolean(p));
+
+/*
+ * No LocalBusiness node here, and none anywhere in the location directory.
+ * There is no branch, staff or address in any of these states, so a
+ * LocalBusiness claim would be a false statement in structured data.
+ * These are informational pages about serving a market, so WebPage plus
+ * BreadcrumbList and FAQPage is the accurate description.
+ */
+const schema = graph(
+  organizationSchema(),
+  websiteSchema(),
+  webPageSchema({
+    path,
+    name: location.h1,
+    description: location.metaDescription,
+  }),
+  breadcrumbSchema(crumbs),
+  faqSchema(location.faqs, path),
+);
+
+const contents = location.sections.map((section) => ({
+  id: section.id,
+  label: section.navLabel ?? section.heading,
+}));
+---
+
+<BaseLayout
+  title={location.seoTitle}
+  description={location.metaDescription}
+  path={path}
+  ogTitle={location.ogTitle}
+  ogDescription={location.ogDescription}
+  schema={[schema]}
+>
+  <PageHero
+    eyebrow={`${location.name} (${location.stateCode})`}
+    h1={location.h1}
+    lead={location.deck}
+    crumbs={crumbs}
+    points={[location.marketAngle, 'Shipped nationwide', 'Made to order']}
+  />
+
+  <div class="wrap loc-body">
+    <aside class="loc-side">
+      <nav class="loc-toc" aria-labelledby="loc-toc-heading">
+        <h2 class="loc-side__heading" id="loc-toc-heading">On this page</h2>
+        <ol class="loc-toc__list">
+          {contents.map((item) => <li><a href={`#${item.id}`}>{item.label}</a></li>)}
+          <li><a href="#faqs">Questions</a></li>
+          <li><a href="#quote">Get a price</a></li>
+        </ol>
+      </nav>
+
+      {
+        cities.length > 0 && (
+          <div class="loc-cities">
+            <h2 class="loc-side__heading">Cities in {location.name}</h2>
+            <ul class="loc-cities__list">
+              {cities.map((city) => (
+                <li>
+                  <a href={locationUrl(city)}>
+                    <span class="loc-cities__name">{city.name}</span>
+                    <span class="loc-cities__angle">{city.marketAngle}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )
+      }
+    </aside>
+
+    <article class="loc-article">
+      <ContentBlocks blocks={location.sections} slug={location.related[0]} />
+
+      <section class="loc-section" id="faqs" aria-labelledby="loc-faqs-heading">
+        <h2 class="loc-section__heading" id="loc-faqs-heading">
+          {location.name}: common questions
+        </h2>
+        <FaqList faqs={location.faqs} level={3} />
+      </section>
+
+      <section class="loc-section" id="quote" aria-labelledby="quick-quote-heading">
+        <ShortQuoteForm
+          product={related[0]?.name ?? 'Custom Lip Balm Boxes'}
+          location={location.name}
+          pageTitle={location.seoTitle}
+          id="quick-quote"
+          heading={`Get a price for a ${location.name} delivery`}
+          sub={`Four fields. Tell us your quantity and dimensions and you will get a written price, with delivery costed to your ${location.name} address.`}
+        />
+      </section>
+
+      <p class="loc-note">
+        {site.name} has no office, plant, warehouse or held stock in {location.name}.
+        Packaging is made to order and shipped to {location.name} addresses through a
+        nationwide carrier service. Delivery cost and lead time are quoted per order.
+      </p>
+    </article>
+  </div>
+
+  {
+    related.length > 0 && (
+      <section class="section section--warm" aria-labelledby="loc-products-heading">
+        <div class="wrap">
+          <span class="eyebrow">Suited to this market</span>
+          <h2 id="loc-products-heading">Packaging {location.name} brands ask for</h2>
+          <div class="grid grid--products loc-products">
+            {related.map((product) => <ProductCard product={product} compact />)}
+          </div>
+          <p class="loc-products__more">
+            <a href="/products/">{`Every format a ${location.name} brand can order`}</a>
+          </p>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    neighbours.length > 0 && (
+      <section class="section" aria-labelledby="loc-region-heading">
+        <div class="wrap">
+          <span class="eyebrow">{region}</span>
+          <h2 id="loc-region-heading">Other {region?.toLowerCase()} markets</h2>
+          <div class="loc-region-grid">
+            {neighbours.map((state) => (
+              <a class="loc-region-card" href={locationUrl(state)}>
+                <span class="loc-region-card__name">
+                  {state.name}
+                  <span class="loc-region-card__code">{state.stateCode}</span>
+                </span>
+                <span class="loc-region-card__angle">{state.marketAngle}</span>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+</BaseLayout>
+
+<style>
+  .loc-body {
+    display: grid;
+    gap: var(--sp-6);
+    padding-block: var(--sp-7);
+  }
+  @media (min-width: 68rem) {
+    .loc-body {
+      grid-template-columns: 1fr 16rem;
+      gap: var(--sp-8);
+      align-items: start;
+    }
+    .loc-side {
+      order: 2;
+      position: sticky;
+      top: 5.5rem;
+    }
+    .loc-article {
+      order: 1;
+    }
+  }
+  .loc-article {
+    max-width: 46rem;
+    min-width: 0;
+  }
+  .loc-side {
+    min-width: 0;
+  }
+  .loc-side__heading {
+    font-family: var(--font-body);
+    font-size: var(--step--1);
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: var(--sp-3);
+  }
+  .loc-toc {
+    display: none;
+  }
+  @media (min-width: 68rem) {
+    .loc-toc {
+      display: block;
+      margin-bottom: var(--sp-6);
+    }
+  }
+  .loc-toc__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-left: 1px solid var(--line);
+  }
+  .loc-toc__list a {
+    display: block;
+    padding: 0.35rem 0 0.35rem 0.85rem;
+    font-size: var(--step--1);
+    color: var(--ink-soft);
+    text-decoration: none;
+    border-left: 2px solid transparent;
+    margin-left: -1px;
+    line-height: 1.45;
+  }
+  .loc-toc__list a:hover {
+    color: var(--plum);
+    border-left-color: var(--rose);
+  }
+
+  .loc-cities__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--sp-2);
+  }
+  .loc-cities__list a {
+    display: block;
+    padding: var(--sp-3);
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    transition: border-color 0.18s var(--ease);
+  }
+  .loc-cities__list a:hover {
+    border-color: var(--plum);
+  }
+  .loc-cities__name {
+    display: block;
+    font-weight: 600;
+    color: var(--ink);
+    font-size: var(--step--1);
+  }
+  .loc-cities__list a:hover .loc-cities__name {
+    color: var(--plum);
+  }
+  .loc-cities__angle {
+    display: block;
+    font-size: 0.78rem;
+    color: var(--ink-muted);
+    line-height: 1.45;
+    margin-top: 0.1rem;
+  }
+
+  .loc-section {
+    padding-block: var(--sp-6);
+    border-top: 1px solid var(--line);
+    scroll-margin-top: 6rem;
+  }
+  .loc-section__heading {
+    font-size: var(--step-2);
+    margin-bottom: var(--sp-4);
+  }
+  .loc-note {
+    margin-top: var(--sp-6);
+    padding: var(--sp-4);
+    background: var(--paper-warm);
+    border-radius: var(--radius-sm);
+    font-size: var(--step--1);
+    color: var(--ink-soft);
+    line-height: 1.6;
+  }
+
+  .loc-products {
+    margin-top: var(--sp-5);
+  }
+  .loc-products__more {
+    margin-top: var(--sp-5);
+    font-size: var(--step--1);
+  }
+
+  .loc-region-grid {
+    display: grid;
+    gap: var(--sp-3);
+    margin-top: var(--sp-5);
+  }
+  @media (min-width: 40rem) {
+    .loc-region-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (min-width: 62rem) {
+    .loc-region-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .loc-region-card {
+    display: block;
+    min-width: 0;
+    padding: var(--sp-4);
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    text-decoration: none;
+    transition: border-color 0.18s var(--ease);
+  }
+  .loc-region-card:hover {
+    border-color: var(--plum);
+  }
+  .loc-region-card__name {
+    display: block;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.2rem;
+  }
+  .loc-region-card:hover .loc-region-card__name {
+    color: var(--plum);
+  }
+  .loc-region-card__code {
+    display: inline-block;
+    margin-left: 0.4rem;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: var(--plum-deep);
+    background: var(--rose-soft);
+    border-radius: var(--radius-sm);
+    padding: 0.08rem 0.35rem;
+  }
+  .loc-region-card__angle {
+    display: block;
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+    line-height: 1.5;
+  }
+</style>

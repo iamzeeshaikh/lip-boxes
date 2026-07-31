@@ -9,6 +9,13 @@ import sharp from 'sharp';
 
 const ROOT = process.cwd();
 const DEST = path.join(ROOT, 'src/assets/products');
+/*
+ * Stable, unhashed copies for the sitemap, structured data and social cards.
+ * Astro's own /_astro/ output carries a content hash and is rewritten by the
+ * host with a ?dpl= deployment parameter, so those URLs change on every deploy
+ * and are not suitable for a sitemap. These are.
+ */
+const PUBLIC_DEST = path.join(ROOT, 'public/images/products');
 
 /** slug -> ordered list of { folder, file, name, crop? } */
 const MAP = {
@@ -104,6 +111,7 @@ const MAP = {
 };
 
 fs.rmSync(DEST, { recursive: true, force: true });
+fs.rmSync(PUBLIC_DEST, { recursive: true, force: true });
 
 let count = 0;
 const manifest = [];
@@ -118,7 +126,29 @@ for (const [slug, entries] of Object.entries(MAP)) {
     if (crop) img = img.extract(crop);
     await img.png({ compressionLevel: 9 }).toFile(out);
     const meta = await sharp(out).metadata();
-    manifest.push({ slug, source: `${folder}/${file}`, output: path.relative(ROOT, out), w: meta.width, h: meta.height });
+
+    // Stable public derivatives, referenced by canonical URL.
+    const publicDir = path.join(PUBLIC_DEST, slug);
+    fs.mkdirSync(publicDir, { recursive: true });
+    await sharp(out)
+      .resize(1200, 1200, { fit: 'cover', position: 'centre' })
+      .webp({ quality: 82 })
+      .toFile(path.join(publicDir, `${name}.webp`));
+    // A JPEG social card as well, since some scrapers still refuse WebP.
+    await sharp(out)
+      .resize(1200, 1200, { fit: 'cover', position: 'centre' })
+      .jpeg({ quality: 84, mozjpeg: true })
+      .toFile(path.join(publicDir, `${name}-social.jpg`));
+
+    manifest.push({
+      slug,
+      source: `${folder}/${file}`,
+      output: path.relative(ROOT, out),
+      publicWebp: `/images/products/${slug}/${name}.webp`,
+      publicSocial: `/images/products/${slug}/${name}-social.jpg`,
+      w: meta.width,
+      h: meta.height,
+    });
     count++;
   }
 }

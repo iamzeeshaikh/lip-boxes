@@ -11,7 +11,7 @@ import ProductCard from '../components/ProductCard.astro';
 import QuoteCta from '../components/QuoteCta.astro';
 import Icon from '../components/Icon.astro';
 import { products, getProduct, hasReviews } from '../data/products';
-import { productImage } from '../lib/images';
+import { productImage, publicImageUrl, publicSocialUrl } from '../lib/images';
 import { site } from '../data/site';
 import {
   graph,
@@ -34,15 +34,12 @@ if (!product) throw new Error(`Unknown product slug: ${slug}`);
 
 const path = `/${product.slug}/`;
 
-/* Social image and LCP preload both point at the first gallery photograph. */
+/*
+ * Social and structured-data image URLs use the stable public copies rather
+ * than Astro's hashed /_astro/ output, so they survive a redeploy unchanged.
+ */
 const ogIndex = product.ogImageIndex ?? 0;
-const ogSource = productImage(product.slug, product.images[ogIndex].file);
-const ogAsset = await getImage({
-  src: ogSource,
-  width: 1200,
-  height: 1200,
-  format: 'png',
-});
+const ogUrl = publicSocialUrl(product.slug, product.images[ogIndex].file);
 /* Mirrors the <Picture> candidates rendered by ProductGallery. */
 const lcpAsset = await getImage({
   src: productImage(product.slug, product.images[0].file),
@@ -52,16 +49,8 @@ const lcpAsset = await getImage({
   height: 840,
 });
 
-const galleryUrls = await Promise.all(
-  product.images.map(async (image) => {
-    const generated = await getImage({
-      src: productImage(product.slug, image.file),
-      width: 1080,
-      height: 1080,
-      format: 'png',
-    });
-    return generated.src;
-  }),
+const galleryUrls = product.images.map((image) =>
+  publicImageUrl(product.slug, image.file),
 );
 
 const crumbs: Crumb[] = [
@@ -102,7 +91,7 @@ const showReviews = hasReviews(product.reviews);
   path={path}
   ogTitle={product.ogTitle}
   ogDescription={product.ogDescription}
-  ogImage={ogAsset.src}
+  ogImage={ogUrl}
   ogImageAlt={product.images[ogIndex].alt}
   ogType="product"
   preloadImage={lcpAsset.src}
@@ -141,8 +130,8 @@ const showReviews = hasReviews(product.reviews);
           </ul>
 
           <div class="price-note">
-            <p class="price-note__line">{site.startingPriceStatement}</p>
-            <p class="price-note__sub">
+            <p class="price-note__line" data-boilerplate>{site.startingPriceStatement}</p>
+            <p class="price-note__sub" data-boilerplate>
               The starting figure applies to qualifying large-volume custom
               orders. It is not a fixed price for every quantity, and your
               written quote will state the actual unit price for your job.
@@ -189,7 +178,7 @@ const showReviews = hasReviews(product.reviews);
         <h2 class="block__h" id="specification-heading">
           {product.name} specification
         </h2>
-        <p class="block__intro measure">
+        <p class="block__intro measure" data-boilerplate>
           A summary of what can be specified on this product. Anything marked as
           quoted or made to order is confirmed in writing before production.
         </p>
@@ -248,7 +237,7 @@ const showReviews = hasReviews(product.reviews);
         <h2 class="block__h" id="faqs-heading">
           {product.name}: common questions
         </h2>
-        <p class="block__intro measure">
+        <p class="block__intro measure" data-boilerplate>
           Answers to the questions we are asked most often about this product.
           If yours is not here, put it in the enquiry form and we will answer it
           directly.
@@ -264,7 +253,7 @@ const showReviews = hasReviews(product.reviews);
         <div class="wrap">
           <span class="eyebrow">Related packaging</span>
           <h2 id="related-heading">Other formats brands pair with this</h2>
-          <p class="measure text-muted related__intro">
+          <p class="measure text-muted related__intro" data-boilerplate>
             Each of these is quoted from the same enquiry, so a range can be
             produced on one specification and one schedule.
           </p>

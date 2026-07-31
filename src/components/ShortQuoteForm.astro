@@ -1,16 +1,32 @@
 ---
 import { site } from '../data/site';
 import Icon from './Icon.astro';
+/* Imported here rather than per page: any route that renders this component
+   needs the field styles, and a page that forgot the import shipped an
+   unstyled form. */
+import '../styles/forms.css';
 
 interface Props {
   /** Product name written into the hidden field and the email subject. */
   product: string;
   heading?: string;
   id?: string;
+  /** Page <title>, recorded so a submission can be traced to the exact page. */
+  pageTitle?: string;
+  /** Location name, set only on state and city pages. */
+  location?: string;
+  /** Replaces the standard sub-heading where a page needs different wording. */
+  sub?: string;
 }
 
-const { product, heading = 'Get a price for this box', id = 'quick-quote' } =
-  Astro.props;
+const {
+  product,
+  heading = 'Get a price for this box',
+  id = 'quick-quote',
+  pageTitle,
+  location,
+  sub,
+} = Astro.props;
 const accept =
   '.pdf,.ai,.eps,.psd,.svg,.png,.jpg,.jpeg,.doc,.docx';
 ---
@@ -19,8 +35,10 @@ const accept =
   <div class="quick-quote__head">
     <h2 class="quick-quote__heading" id={`${id}-heading`}>{heading}</h2>
     <p class="quick-quote__sub">
-      Four fields. We reply with a written price for your quantity, or with the
-      questions we need answered first.
+      {
+        sub ??
+          'Four fields. We reply with a written price for your quantity, or with the questions we need answered first.'
+      }
     </p>
   </div>
 
@@ -28,6 +46,9 @@ const accept =
     <input type="hidden" name="formType" value="short" />
     <input type="hidden" name="product" value={product} />
     <input type="hidden" name="pageUrl" value={Astro.url.href} data-page-url />
+    {pageTitle && <input type="hidden" name="pageTitle" value={pageTitle} />}
+    {location && <input type="hidden" name="location" value={location} />}
+    <input type="hidden" name="submittedAt" value="" data-submitted-at />
 
     <!-- Honeypot: hidden from users, checked on the server. -->
     <div class="qform__trap" aria-hidden="true">

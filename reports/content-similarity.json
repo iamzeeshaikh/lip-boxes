@@ -1,0 +1,1588 @@
+{
+  "pages": [
+    {
+      "route": "/",
+      "type": "Page",
+      "primary": "—",
+      "intent": "—",
+      "words": 408,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/about/",
+      "type": "Page",
+      "primary": "—",
+      "intent": "—",
+      "words": 672,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/artwork-guidelines/",
+      "type": "Page",
+      "primary": "—",
+      "intent": "—",
+      "words": 1532,
+      "closest": "/blog/how-to-prepare-artwork-for-custom-lip-boxes/",
+      "score": 0.09559834938101788,
+      "risk": "None"
+    },
+    {
+      "route": "/blog/",
+      "type": "Page",
+      "primary": "—",
+      "intent": "—",
+      "words": 115,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/blog/how-packaging-quantity-affects-unit-pricing/",
+      "type": "Blog",
+      "primary": "—",
+      "intent": "—",
+      "words": 726,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/blog/how-to-choose-packaging-for-a-lip-gloss-line/",
+      "type": "Blog",
+      "primary": "—",
+      "intent": "—",
+      "words": 808,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/blog/how-to-prepare-artwork-for-custom-lip-boxes/",
+      "type": "Blog",
+      "primary": "—",
+      "intent": "—",
+      "words": 791,
+      "closest": "/artwork-guidelines/",
+      "score": 0.09559834938101788,
+      "risk": "None"
+    },
+    {
+      "route": "/blog/lip-balm-box-materials-compared/",
+      "type": "Blog",
+      "primary": "—",
+      "intent": "—",
+      "words": 786,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/blog/lipstick-packaging-sizes-and-structural-options/",
+      "type": "Blog",
+      "primary": "—",
+      "intent": "—",
+      "words": 645,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/blog/packaging-inserts-for-lipstick-and-lip-gloss-products/",
+      "type": "Blog",
+      "primary": "—",
+      "intent": "—",
+      "words": 574,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
+      "type": "Blog",
+      "primary": "—",
+      "intent": "—",
+      "words": 663,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/blog/printing-methods-for-cosmetic-packaging/",
+      "type": "Blog",
+      "primary": "—",
+      "intent": "—",
+      "words": 681,
+      "closest": "/printing-options/",
+      "score": 0.1266540642722117,
+      "risk": "None"
+    },
+    {
+      "route": "/box-styles/",
+      "type": "Page",
+      "primary": "—",
+      "intent": "—",
+      "words": 1036,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/cardboard-lip-balm-tubes/",
+      "type": "Page",
+      "primary": "cardboard lip balm tubes",
+      "intent": "—",
+      "words": 2083,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/contact/",
+      "type": "Page",
+      "primary": "—",
+      "intent": "—",
+      "words": 496,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/custom-lip-balm-boxes/",
+      "type": "Page",
+      "primary": "custom lip balm boxes",
+      "intent": "—",
+      "words": 2997,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/custom-lip-balm-labels/",
+      "type": "Page",
+      "primary": "custom lip balm labels",
+      "intent": "—",
+      "words": 2451,
+      "closest": "/lip-balm-labels/",
+      "score": 0.08992926911417985,
+      "risk": "None"
+    },
+    {
+      "route": "/custom-lip-care-packaging/",
+      "type": "Page",
+      "primary": "custom lip care packaging",
+      "intent": "—",
+      "words": 2370,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/custom-lip-mask-boxes/",
+      "type": "Page",
+      "primary": "custom lip mask boxes",
+      "intent": "—",
+      "words": 2397,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/custom-lipstick-boxes/",
+      "type": "Page",
+      "primary": "custom lipstick boxes",
+      "intent": "—",
+      "words": 2362,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/custom-packaging/",
+      "type": "Page",
+      "primary": "—",
+      "intent": "—",
+      "words": 839,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/faqs/",
+      "type": "Page",
+      "primary": "—",
+      "intent": "—",
+      "words": 1348,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/finishes/",
+      "type": "Page",
+      "primary": "—",
+      "intent": "—",
+      "words": 1016,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/hang-tab-lip-balm-boxes/",
+      "type": "Page",
+      "primary": "hang tab lip balm boxes",
+      "intent": "—",
+      "words": 2381,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/hang-tab-lipstick-boxes/",
+      "type": "Page",
+      "primary": "hang tab lipstick boxes",
+      "intent": "—",
+      "words": 2435,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/holographic-lip-gloss-boxes/",
+      "type": "Page",
+      "primary": "holographic lip gloss boxes",
+      "intent": "—",
+      "words": 2333,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/how-to-order/",
+      "type": "Page",
+      "primary": "—",
+      "intent": "—",
+      "words": 744,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/lip-balm-labels/",
+      "type": "Page",
+      "primary": "lip balm labels",
+      "intent": "—",
+      "words": 2159,
+      "closest": "/custom-lip-balm-labels/",
+      "score": 0.08992926911417985,
+      "risk": "None"
+    },
+    {
+      "route": "/lip-balm-packaging/",
+      "type": "Page",
+      "primary": "lip balm packaging",
+      "intent": "—",
+      "words": 2111,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/lip-gloss-boxes/",
+      "type": "Page",
+      "primary": "lip gloss boxes",
+      "intent": "—",
+      "words": 2376,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/lipstick-boxes/",
+      "type": "Page",
+      "primary": "lipstick boxes",
+      "intent": "—",
+      "words": 2107,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/",
+      "type": "Location hub",
+      "primary": "—",
+      "intent": "—",
+      "words": 860,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/cities/",
+      "type": "Location hub",
+      "primary": "—",
+      "intent": "—",
+      "words": 153,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/cities/austin/",
+      "type": "City",
+      "primary": "custom lip boxes in Austin",
+      "intent": "Direct-to-consumer economics and repeat shipping",
+      "words": 813,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/cities/boston/",
+      "type": "City",
+      "primary": "custom lip boxes in Boston",
+      "intent": "Student market price sensitivity and academic seasonality",
+      "words": 822,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/cities/charlotte/",
+      "type": "City",
+      "primary": "custom lip boxes in Charlotte",
+      "intent": "Corporate gifting and perceived value",
+      "words": 794,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/cities/chicago/",
+      "type": "City",
+      "primary": "custom lip boxes in Chicago",
+      "intent": "Buyer meetings and physical sample requirements",
+      "words": 822,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/cities/columbus/",
+      "type": "City",
+      "primary": "custom lip boxes in Columbus",
+      "intent": "Retail pilots and keeping results readable",
+      "words": 777,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/cities/dallas/",
+      "type": "City",
+      "primary": "custom lip boxes in Dallas",
+      "intent": "Wholesale showroom selling and line sheet requirements",
+      "words": 819,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/cities/denver/",
+      "type": "City",
+      "primary": "custom lip boxes in Denver",
+      "intent": "Outdoor specialty retail and durability assessment",
+      "words": 855,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/cities/fort-worth/",
+      "type": "City",
+      "primary": "custom lip boxes in Fort Worth",
+      "intent": "Short fixed selling windows and stock planning",
+      "words": 810,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/cities/houston/",
+      "type": "City",
+      "primary": "custom lip boxes in Houston",
+      "intent": "Deep shade ranges and salon retail",
+      "words": 832,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/cities/indianapolis/",
+      "type": "City",
+      "primary": "custom lip boxes in Indianapolis",
+      "intent": "Third-party logistics intake requirements",
+      "words": 788,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/cities/jacksonville/",
+      "type": "City",
+      "primary": "custom lip boxes in Jacksonville",
+      "intent": "Freight consolidation and ordering frequency",
+      "words": 776,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/cities/los-angeles/",
+      "type": "City",
+      "primary": "custom lip boxes in Los Angeles",
+      "intent": "Seeding kits and press packaging alongside retail",
+      "words": 813,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/cities/nashville/",
+      "type": "City",
+      "primary": "custom lip boxes in Nashville",
+      "intent": "Visitor purchases that travel home",
+      "words": 815,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/cities/new-york-city/",
+      "type": "City",
+      "primary": "custom lip boxes in New York City",
+      "intent": "Small-format retail and narrow fixture space",
+      "words": 859,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/cities/philadelphia/",
+      "type": "City",
+      "primary": "custom lip boxes in Philadelphia",
+      "intent": "The transition from maker market to wholesale",
+      "words": 843,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/cities/phoenix/",
+      "type": "City",
+      "primary": "custom lip boxes in Phoenix",
+      "intent": "Convenience and pharmacy peg retail",
+      "words": 882,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/cities/san-antonio/",
+      "type": "City",
+      "primary": "custom lip boxes in San Antonio",
+      "intent": "Bilingual panels and the space they require",
+      "words": 840,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/cities/san-diego/",
+      "type": "City",
+      "primary": "custom lip boxes in San Diego",
+      "intent": "Sun care formats and SPF panel requirements",
+      "words": 834,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/cities/seattle/",
+      "type": "City",
+      "primary": "custom lip boxes in Seattle",
+      "intent": "Refill and reuse programme packaging",
+      "words": 783,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/cities/washington-dc/",
+      "type": "City",
+      "primary": "custom lip boxes in Washington, D.C.",
+      "intent": "Museum and institutional retail standards",
+      "words": 732,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/states/",
+      "type": "Location hub",
+      "primary": "—",
+      "intent": "—",
+      "words": 170,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/states/arizona/",
+      "type": "State",
+      "primary": "custom lip boxes in Arizona",
+      "intent": "Heat, storage conditions and sun-care formats",
+      "words": 1134,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/states/california/",
+      "type": "State",
+      "primary": "custom lip boxes in California",
+      "intent": "Indie brand density and the speed of shade-range launches",
+      "words": 1410,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/states/colorado/",
+      "type": "State",
+      "primary": "custom lip boxes in Colorado",
+      "intent": "Outdoor and apothecary positioning in specialty retail",
+      "words": 1034,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/states/florida/",
+      "type": "State",
+      "primary": "custom lip boxes in Florida",
+      "intent": "Resort and tourism retail, and humidity in storage",
+      "words": 1014,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/states/georgia/",
+      "type": "State",
+      "primary": "custom lip boxes in Georgia",
+      "intent": "Independent gloss brands and short launch cycles",
+      "words": 1022,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/states/illinois/",
+      "type": "State",
+      "primary": "custom lip boxes in Illinois",
+      "intent": "Mass retail resets and fixture constraints",
+      "words": 846,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/states/indiana/",
+      "type": "State",
+      "primary": "custom lip boxes in Indiana",
+      "intent": "Case pack efficiency and pallet configuration",
+      "words": 847,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/states/maryland/",
+      "type": "State",
+      "primary": "custom lip boxes in Maryland",
+      "intent": "Corporate gifting and promotional programmes",
+      "words": 887,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/states/massachusetts/",
+      "type": "State",
+      "primary": "custom lip boxes in Massachusetts",
+      "intent": "Treatment and clinical positioning",
+      "words": 813,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/states/michigan/",
+      "type": "State",
+      "primary": "custom lip boxes in Michigan",
+      "intent": "Seasonal demand and call-off ordering",
+      "words": 898,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/states/missouri/",
+      "type": "State",
+      "primary": "custom lip boxes in Missouri",
+      "intent": "Long shelf tenure and reorder consistency",
+      "words": 855,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/states/new-jersey/",
+      "type": "State",
+      "primary": "custom lip boxes in New Jersey",
+      "intent": "Documentation, version control and formal approvals",
+      "words": 815,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/states/new-york/",
+      "type": "State",
+      "primary": "custom lip boxes in New York",
+      "intent": "Prestige retail specifications set by the account",
+      "words": 817,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/states/north-carolina/",
+      "type": "State",
+      "primary": "custom lip boxes in North Carolina",
+      "intent": "Contract manufacturing and automated line requirements",
+      "words": 1020,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/states/ohio/",
+      "type": "State",
+      "primary": "custom lip boxes in Ohio",
+      "intent": "Test market runs that have to scale",
+      "words": 905,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/states/pennsylvania/",
+      "type": "State",
+      "primary": "custom lip boxes in Pennsylvania",
+      "intent": "Private label economics and the pharmacy channel",
+      "words": 836,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/states/tennessee/",
+      "type": "State",
+      "primary": "custom lip boxes in Tennessee",
+      "intent": "Merchandise and date-driven production",
+      "words": 1019,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/states/texas/",
+      "type": "State",
+      "primary": "custom lip boxes in Texas",
+      "intent": "Distribution across multiple metros and wholesale case planning",
+      "words": 1022,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/states/virginia/",
+      "type": "State",
+      "primary": "custom lip boxes in Virginia",
+      "intent": "Direct-to-consumer fulfilment and shipper specification",
+      "words": 864,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/locations/states/washington/",
+      "type": "State",
+      "primary": "custom lip boxes in Washington",
+      "intent": "Material scrutiny and defensible disposal claims",
+      "words": 1141,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/materials/",
+      "type": "Page",
+      "primary": "—",
+      "intent": "—",
+      "words": 1068,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/paper-lip-balm-tubes/",
+      "type": "Page",
+      "primary": "paper lip balm tubes",
+      "intent": "—",
+      "words": 2530,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/printing-options/",
+      "type": "Page",
+      "primary": "—",
+      "intent": "—",
+      "words": 986,
+      "closest": "/blog/printing-methods-for-cosmetic-packaging/",
+      "score": 0.1266540642722117,
+      "risk": "None"
+    },
+    {
+      "route": "/privacy-policy/",
+      "type": "Page",
+      "primary": "—",
+      "intent": "—",
+      "words": 1129,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/products/",
+      "type": "Page",
+      "primary": "—",
+      "intent": "—",
+      "words": 252,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/request-a-quote/",
+      "type": "Page",
+      "primary": "—",
+      "intent": "—",
+      "words": 214,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/resources/",
+      "type": "Page",
+      "primary": "—",
+      "intent": "—",
+      "words": 598,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/resources/choosing-packaging-inserts/",
+      "type": "Resource",
+      "primary": "packaging inserts",
+      "intent": "Does my product need an insert, and which type should I specify?",
+      "words": 1695,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/resources/cosmetic-packaging-label-requirements/",
+      "type": "Resource",
+      "primary": "cosmetic packaging label requirements",
+      "intent": "What information has to appear on a cosmetic package, and where does each part go?",
+      "words": 1867,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/resources/custom-packaging-cost-guide/",
+      "type": "Resource",
+      "primary": "custom packaging cost",
+      "intent": "What am I actually paying for in a packaging quote, and which parts can I change?",
+      "words": 1726,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/resources/lip-balm-box-size-guide/",
+      "type": "Resource",
+      "primary": "lip balm box size",
+      "intent": "What size box do I need for the lip balm tube I am already filling?",
+      "words": 1942,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/resources/lip-gloss-box-size-guide/",
+      "type": "Resource",
+      "primary": "lip gloss box size",
+      "intent": "How tall does a lip gloss box need to be for a wand applicator tube?",
+      "words": 1775,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/resources/lip-product-packaging-guide/",
+      "type": "Resource",
+      "primary": "lip product packaging",
+      "intent": "I am launching a lip product. What packaging decisions do I need to make, and in what order?",
+      "words": 1979,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/resources/lipstick-box-size-guide/",
+      "type": "Resource",
+      "primary": "lipstick box size",
+      "intent": "How do I measure a lipstick bullet case and work out the carton dimensions?",
+      "words": 1744,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/resources/packaging-dieline-guide/",
+      "type": "Resource",
+      "primary": "packaging dieline",
+      "intent": "What is a dieline, what do the lines on it mean, and how is one made?",
+      "words": 1926,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/resources/packaging-glossary/",
+      "type": "Resource",
+      "primary": "packaging glossary",
+      "intent": "A supplier used a term I do not know. What does it mean?",
+      "words": 1477,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/resources/prepress-checklist/",
+      "type": "Resource",
+      "primary": "prepress checklist",
+      "intent": "Give me a step-by-step list I can work through before I send my file to print.",
+      "words": 1543,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/rigid-lipstick-boxes/",
+      "type": "Page",
+      "primary": "rigid lipstick boxes",
+      "intent": "—",
+      "words": 2435,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/sample-kit/",
+      "type": "Page",
+      "primary": "—",
+      "intent": "—",
+      "words": 865,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/shipping-information/",
+      "type": "Page",
+      "primary": "—",
+      "intent": "—",
+      "words": 846,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/terms-and-conditions/",
+      "type": "Page",
+      "primary": "—",
+      "intent": "—",
+      "words": 1283,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    },
+    {
+      "route": "/turnaround-time/",
+      "type": "Page",
+      "primary": "—",
+      "intent": "—",
+      "words": 803,
+      "closest": "—",
+      "score": 0,
+      "risk": "None"
+    }
+  ],
+  "pairs": [
+    {
+      "a": "/blog/printing-methods-for-cosmetic-packaging/",
+      "b": "/printing-options/",
+      "score": 0.1266540642722117
+    },
+    {
+      "a": "/artwork-guidelines/",
+      "b": "/blog/how-to-prepare-artwork-for-custom-lip-boxes/",
+      "score": 0.09559834938101788
+    },
+    {
+      "a": "/custom-lip-balm-labels/",
+      "b": "/lip-balm-labels/",
+      "score": 0.08992926911417985
+    }
+  ],
+  "repeatedHeadings": [
+    {
+      "value": "On this page",
+      "routes": [
+        "/cardboard-lip-balm-tubes/",
+        "/custom-lip-balm-boxes/",
+        "/custom-lip-balm-labels/",
+        "/custom-lip-care-packaging/",
+        "/custom-lip-mask-boxes/",
+        "/custom-lipstick-boxes/",
+        "/hang-tab-lip-balm-boxes/",
+        "/hang-tab-lipstick-boxes/",
+        "/holographic-lip-gloss-boxes/",
+        "/lip-balm-labels/",
+        "/lip-balm-packaging/",
+        "/lip-gloss-boxes/",
+        "/lipstick-boxes/",
+        "/paper-lip-balm-tubes/",
+        "/resources/choosing-packaging-inserts/",
+        "/resources/cosmetic-packaging-label-requirements/",
+        "/resources/custom-packaging-cost-guide/",
+        "/resources/lip-balm-box-size-guide/",
+        "/resources/lip-gloss-box-size-guide/",
+        "/resources/lip-product-packaging-guide/",
+        "/resources/lipstick-box-size-guide/",
+        "/resources/packaging-dieline-guide/",
+        "/resources/packaging-glossary/",
+        "/resources/prepress-checklist/",
+        "/rigid-lipstick-boxes/"
+      ],
+      "count": 25
+    },
+    {
+      "value": "Where to go next",
+      "routes": [
+        "/locations/cities/austin/",
+        "/locations/cities/boston/",
+        "/locations/cities/charlotte/",
+        "/locations/cities/chicago/",
+        "/locations/cities/columbus/",
+        "/locations/cities/dallas/",
+        "/locations/cities/denver/",
+        "/locations/cities/fort-worth/",
+        "/locations/cities/houston/",
+        "/locations/cities/indianapolis/",
+        "/locations/cities/jacksonville/",
+        "/locations/cities/los-angeles/",
+        "/locations/cities/nashville/",
+        "/locations/cities/new-york-city/",
+        "/locations/cities/philadelphia/",
+        "/locations/cities/phoenix/",
+        "/locations/cities/san-antonio/",
+        "/locations/cities/san-diego/",
+        "/locations/cities/seattle/",
+        "/locations/cities/washington-dc/"
+      ],
+      "count": 20
+    },
+    {
+      "value": "Other formats brands pair with this",
+      "routes": [
+        "/cardboard-lip-balm-tubes/",
+        "/custom-lip-balm-boxes/",
+        "/custom-lip-balm-labels/",
+        "/custom-lip-care-packaging/",
+        "/custom-lip-mask-boxes/",
+        "/custom-lipstick-boxes/",
+        "/hang-tab-lip-balm-boxes/",
+        "/hang-tab-lipstick-boxes/",
+        "/holographic-lip-gloss-boxes/",
+        "/lip-balm-labels/",
+        "/lip-balm-packaging/",
+        "/lip-gloss-boxes/",
+        "/lipstick-boxes/",
+        "/paper-lip-balm-tubes/",
+        "/rigid-lipstick-boxes/"
+      ],
+      "count": 15
+    },
+    {
+      "value": "Read next",
+      "routes": [
+        "/resources/choosing-packaging-inserts/",
+        "/resources/cosmetic-packaging-label-requirements/",
+        "/resources/custom-packaging-cost-guide/",
+        "/resources/lip-balm-box-size-guide/",
+        "/resources/lip-gloss-box-size-guide/",
+        "/resources/lip-product-packaging-guide/",
+        "/resources/lipstick-box-size-guide/",
+        "/resources/packaging-dieline-guide/",
+        "/resources/packaging-glossary/",
+        "/resources/prepress-checklist/"
+      ],
+      "count": 10
+    },
+    {
+      "value": "Products this guide applies to",
+      "routes": [
+        "/resources/choosing-packaging-inserts/",
+        "/resources/cosmetic-packaging-label-requirements/",
+        "/resources/custom-packaging-cost-guide/",
+        "/resources/lip-balm-box-size-guide/",
+        "/resources/lip-gloss-box-size-guide/",
+        "/resources/lip-product-packaging-guide/",
+        "/resources/lipstick-box-size-guide/",
+        "/resources/packaging-dieline-guide/",
+        "/resources/packaging-glossary/",
+        "/resources/prepress-checklist/"
+      ],
+      "count": 10
+    },
+    {
+      "value": "Contents",
+      "routes": [
+        "/blog/how-packaging-quantity-affects-unit-pricing/",
+        "/blog/how-to-choose-packaging-for-a-lip-gloss-line/",
+        "/blog/how-to-prepare-artwork-for-custom-lip-boxes/",
+        "/blog/lip-balm-box-materials-compared/",
+        "/blog/lipstick-packaging-sizes-and-structural-options/",
+        "/blog/packaging-inserts-for-lipstick-and-lip-gloss-products/",
+        "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
+        "/blog/printing-methods-for-cosmetic-packaging/"
+      ],
+      "count": 8
+    },
+    {
+      "value": "Packaging covered above",
+      "routes": [
+        "/blog/how-packaging-quantity-affects-unit-pricing/",
+        "/blog/how-to-choose-packaging-for-a-lip-gloss-line/",
+        "/blog/how-to-prepare-artwork-for-custom-lip-boxes/",
+        "/blog/lip-balm-box-materials-compared/",
+        "/blog/lipstick-packaging-sizes-and-structural-options/",
+        "/blog/packaging-inserts-for-lipstick-and-lip-gloss-products/",
+        "/blog/paper-lip-balm-tubes-and-their-packaging-requirements/",
+        "/blog/printing-methods-for-cosmetic-packaging/"
+      ],
+      "count": 8
+    },
+    {
+      "value": "Other south markets",
+      "routes": [
+        "/locations/states/florida/",
+        "/locations/states/georgia/",
+        "/locations/states/maryland/",
+        "/locations/states/north-carolina/",
+        "/locations/states/tennessee/",
+        "/locations/states/texas/",
+        "/locations/states/virginia/"
+      ],
+      "count": 7
+    },
+    {
+      "value": "Other midwest markets",
+      "routes": [
+        "/locations/states/illinois/",
+        "/locations/states/indiana/",
+        "/locations/states/michigan/",
+        "/locations/states/missouri/",
+        "/locations/states/ohio/"
+      ],
+      "count": 5
+    },
+    {
+      "value": "Other west markets",
+      "routes": [
+        "/locations/states/arizona/",
+        "/locations/states/california/",
+        "/locations/states/colorado/",
+        "/locations/states/washington/"
+      ],
+      "count": 4
+    },
+    {
+      "value": "Other northeast markets",
+      "routes": [
+        "/locations/states/massachusetts/",
+        "/locations/states/new-jersey/",
+        "/locations/states/new-york/",
+        "/locations/states/pennsylvania/"
+      ],
+      "count": 4
+    },
+    {
+      "value": "Plan the panels before you design",
+      "routes": [
+        "/artwork-guidelines/",
+        "/blog/lipstick-packaging-sizes-and-structural-options/",
+        "/lipstick-boxes/"
+      ],
+      "count": 3
+    },
+    {
+      "value": "How we work",
+      "routes": [
+        "/",
+        "/about/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "Send your specification",
+      "routes": [
+        "/",
+        "/custom-lip-balm-boxes/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "Dispatch",
+      "routes": [
+        "/",
+        "/custom-lip-balm-boxes/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "Always build to the supplied die line",
+      "routes": [
+        "/artwork-guidelines/",
+        "/blog/how-to-prepare-artwork-for-custom-lip-boxes/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "Finishing needs its own layers",
+      "routes": [
+        "/artwork-guidelines/",
+        "/blog/how-to-prepare-artwork-for-custom-lip-boxes/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "Regulated copy is your responsibility",
+      "routes": [
+        "/artwork-guidelines/",
+        "/blog/how-to-prepare-artwork-for-custom-lip-boxes/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "Do you supply a die line before I design?",
+      "routes": [
+        "/artwork-guidelines/",
+        "/custom-lip-balm-labels/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "There is no standard lipstick box size",
+      "routes": [
+        "/blog/lipstick-packaging-sizes-and-structural-options/",
+        "/lipstick-boxes/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "Spot colour or process build",
+      "routes": [
+        "/blog/printing-methods-for-cosmetic-packaging/",
+        "/printing-options/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "Printing on difficult substrates",
+      "routes": [
+        "/blog/printing-methods-for-cosmetic-packaging/",
+        "/printing-options/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "Ganging: the saving most brands miss",
+      "routes": [
+        "/blog/printing-methods-for-cosmetic-packaging/",
+        "/printing-options/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "What to ask for at proof stage",
+      "routes": [
+        "/blog/printing-methods-for-cosmetic-packaging/",
+        "/printing-options/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "Drawer and sleeve",
+      "routes": [
+        "/box-styles/",
+        "/rigid-lipstick-boxes/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "Two-piece lid and base",
+      "routes": [
+        "/box-styles/",
+        "/rigid-lipstick-boxes/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "Shoulder neck box",
+      "routes": [
+        "/box-styles/",
+        "/rigid-lipstick-boxes/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "Production and dispatch",
+      "routes": [
+        "/cardboard-lip-balm-tubes/",
+        "/custom-lip-mask-boxes/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "Matte lamination",
+      "routes": [
+        "/custom-lip-balm-boxes/",
+        "/custom-lipstick-boxes/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "Soft-touch lamination",
+      "routes": [
+        "/custom-lip-balm-boxes/",
+        "/custom-lipstick-boxes/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "Foil stamping",
+      "routes": [
+        "/custom-lip-balm-boxes/",
+        "/paper-lip-balm-tubes/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "Spot UV",
+      "routes": [
+        "/custom-lip-balm-boxes/",
+        "/finishes/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "Embossing and debossing",
+      "routes": [
+        "/custom-lip-balm-boxes/",
+        "/finishes/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "Production",
+      "routes": [
+        "/custom-lip-balm-boxes/",
+        "/resources/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "Is there a minimum order quantity?",
+      "routes": [
+        "/custom-lip-balm-boxes/",
+        "/faqs/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "Tin and jar labels",
+      "routes": [
+        "/custom-lip-balm-labels/",
+        "/lip-balm-labels/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "Quality control and storage",
+      "routes": [
+        "/custom-lip-balm-labels/",
+        "/lip-balm-labels/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "Quality control, delivery and disposal",
+      "routes": [
+        "/custom-lip-mask-boxes/",
+        "/hang-tab-lipstick-boxes/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "Hot foil stamping",
+      "routes": [
+        "/custom-lipstick-boxes/",
+        "/finishes/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "Metallic and pearlescent inks",
+      "routes": [
+        "/custom-lipstick-boxes/",
+        "/finishes/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "Die line and structural sample",
+      "routes": [
+        "/custom-lipstick-boxes/",
+        "/lip-gloss-boxes/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "Production and case packing",
+      "routes": [
+        "/hang-tab-lip-balm-boxes/",
+        "/hang-tab-lipstick-boxes/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "Order sequence",
+      "routes": [
+        "/hang-tab-lipstick-boxes/",
+        "/holographic-lip-gloss-boxes/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "Quality control and end-of-life",
+      "routes": [
+        "/paper-lip-balm-tubes/",
+        "/rigid-lipstick-boxes/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "At what weight does an insert become necessary?",
+      "routes": [
+        "/resources/choosing-packaging-inserts/",
+        "/resources/lipstick-box-size-guide/"
+      ],
+      "count": 2
+    }
+  ],
+  "repeatedParagraphs": [
+    {
+      "value": "Where the money actually goes in a packaging quote, and why 10,000 costs far less than ten times 1,000.",
+      "routes": [
+        "/blog/",
+        "/blog/how-packaging-quantity-affects-unit-pricing/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "Allocate the panels first, then design into them. Where the ingredient list will not fit legibly, a small folded leaflet inside the carton is a normal and inexpensive answer.",
+      "routes": [
+        "/blog/lipstick-packaging-sizes-and-structural-options/",
+        "/lipstick-boxes/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "Each has a substrate and a colour profile it suits, quite apart from the economics.",
+      "routes": [
+        "/blog/printing-methods-for-cosmetic-packaging/",
+        "/printing-options/"
+      ],
+      "count": 2
+    }
+  ],
+  "repeatedFaqs": [
+    {
+      "value": "Do you supply a die line before I design?",
+      "routes": [
+        "/artwork-guidelines/",
+        "/custom-lip-balm-labels/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "Is there a minimum order quantity?",
+      "routes": [
+        "/custom-lip-balm-boxes/",
+        "/faqs/"
+      ],
+      "count": 2
+    },
+    {
+      "value": "At what weight does an insert become necessary?",
+      "routes": [
+        "/resources/choosing-packaging-inserts/",
+        "/resources/lipstick-box-size-guide/"
+      ],
+      "count": 2
+    }
+  ],
+  "repeatedAnchors": [
+    {
+      "text": "request a sample",
+      "href": "/sample-kit/",
+      "count": 15
+    },
+    {
+      "text": "texas tx distribution across multiple metros and wholesale case planning",
+      "href": "/locations/states/texas/",
+      "count": 6
+    },
+    {
+      "text": "georgia ga independent gloss brands and short launch cycles",
+      "href": "/locations/states/georgia/",
+      "count": 6
+    },
+    {
+      "text": "north carolina nc contract manufacturing and automated line requirements",
+      "href": "/locations/states/north-carolina/",
+      "count": 6
+    },
+    {
+      "text": "tennessee tn merchandise and date-driven production",
+      "href": "/locations/states/tennessee/",
+      "count": 6
+    },
+    {
+      "text": "virginia va direct-to-consumer fulfilment and shipper specification",
+      "href": "/locations/states/virginia/",
+      "count": 6
+    },
+    {
+      "text": "maryland md corporate gifting and promotional programmes",
+      "href": "/locations/states/maryland/",
+      "count": 6
+    },
+    {
+      "text": "florida fl resort and tourism retail, and humidity in storage",
+      "href": "/locations/states/florida/",
+      "count": 6
+    },
+    {
+      "text": "artwork guidelines",
+      "href": "/artwork-guidelines/",
+      "count": 5
+    },
+    {
+      "text": "materials page",
+      "href": "/materials/",
+      "count": 4
+    },
+    {
+      "text": "ohio oh test market runs that have to scale",
+      "href": "/locations/states/ohio/",
+      "count": 4
+    },
+    {
+      "text": "michigan mi seasonal demand and call-off ordering",
+      "href": "/locations/states/michigan/",
+      "count": 4
+    },
+    {
+      "text": "indiana in case pack efficiency and pallet configuration",
+      "href": "/locations/states/indiana/",
+      "count": 4
+    },
+    {
+      "text": "missouri mo long shelf tenure and reorder consistency",
+      "href": "/locations/states/missouri/",
+      "count": 4
+    },
+    {
+      "text": "illinois il mass retail resets and fixture constraints",
+      "href": "/locations/states/illinois/",
+      "count": 4
+    },
+    {
+      "text": "custom packaging cost guide what am i actually paying for in a packaging quote, and which parts can i change?",
+      "href": "/resources/custom-packaging-cost-guide/",
+      "count": 4
+    },
+    {
+      "text": "packaging glossary a supplier used a term i do not know. what does it mean?",
+      "href": "/resources/packaging-glossary/",
+      "count": 4
+    },
+    {
+      "text": "choosing packaging inserts does my product need an insert, and which type should i specify?",
+      "href": "/resources/choosing-packaging-inserts/",
+      "count": 4
+    },
+    {
+      "text": "packaging dieline guide what is a dieline, what do the lines on it mean, and how is one made?",
+      "href": "/resources/packaging-dieline-guide/",
+      "count": 4
+    }
+  ],
+  "failures": []
+}

@@ -543,6 +543,735 @@
     ]
   },
   {
+    "url": "https://lipboxes.com/locations/",
+    "title": "Locations | Lip Packaging Across the United States",
+    "titleLength": 50,
+    "description": "State and city guides to lip packaging across the US, each written around how that market actually buys. Made to order, shipped nationwide.",
+    "descriptionLength": 139,
+    "h1": "Lip Packaging Across the United States",
+    "canonical": "https://lipboxes.com/locations/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "CollectionPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/cities/",
+    "title": "Lip Packaging by City | 20 US City Guides",
+    "titleLength": 41,
+    "description": "Twenty city guides to custom lip packaging, each written around one buying pattern in that market. Made to order and shipped nationwide.",
+    "descriptionLength": 136,
+    "h1": "Lip Packaging by City",
+    "canonical": "https://lipboxes.com/locations/cities/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "CollectionPage",
+      "BreadcrumbList"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/cities/austin/",
+    "title": "Custom Lip Boxes in Austin | Packaging Supply",
+    "titleLength": 45,
+    "description": "Lip packaging for Austin brands selling direct to consumers, where unboxing and repeat shipping costs shape the specification.",
+    "descriptionLength": 126,
+    "h1": "Custom Lip Boxes in Austin",
+    "canonical": "https://lipboxes.com/locations/cities/austin/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/cities/boston/",
+    "title": "Custom Lip Boxes in Boston | Packaging Supply",
+    "titleLength": 45,
+    "description": "Lip packaging for Boston brands selling to a dense student market, where price sensitivity and term dates shape the pack.",
+    "descriptionLength": 121,
+    "h1": "Custom Lip Boxes in Boston",
+    "canonical": "https://lipboxes.com/locations/cities/boston/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/cities/charlotte/",
+    "title": "Custom Lip Boxes in Charlotte | Packaging Supply",
+    "titleLength": 48,
+    "description": "Lip packaging for Charlotte brands and corporate gifting programmes, where presentation carries most of the perceived value.",
+    "descriptionLength": 124,
+    "h1": "Custom Lip Boxes in Charlotte",
+    "canonical": "https://lipboxes.com/locations/cities/charlotte/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/cities/chicago/",
+    "title": "Custom Lip Boxes in Chicago | Packaging Supply",
+    "titleLength": 46,
+    "description": "Lip packaging for Chicago brands, including the physical samples that buyer meetings and Midwest trade shows both require.",
+    "descriptionLength": 122,
+    "h1": "Custom Lip Boxes in Chicago",
+    "canonical": "https://lipboxes.com/locations/cities/chicago/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/cities/columbus/",
+    "title": "Custom Lip Boxes in Columbus | Packaging Supply",
+    "titleLength": 47,
+    "description": "Lip packaging for Columbus brands running store pilots, where the pack has to be measurable as well as sellable at shelf.",
+    "descriptionLength": 121,
+    "h1": "Custom Lip Boxes in Columbus",
+    "canonical": "https://lipboxes.com/locations/cities/columbus/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/cities/dallas/",
+    "title": "Custom Lip Boxes in Dallas | Packaging Supply",
+    "titleLength": 45,
+    "description": "Lip packaging for Dallas brands selling through wholesale showrooms, where line sheets and sample sets drive the order book.",
+    "descriptionLength": 124,
+    "h1": "Custom Lip Boxes in Dallas",
+    "canonical": "https://lipboxes.com/locations/cities/dallas/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/cities/denver/",
+    "title": "Custom Lip Boxes in Denver | Packaging Supply",
+    "titleLength": 45,
+    "description": "Lip packaging for Denver brands selling through outdoor specialty retail, where buyers assess durability before appearance.",
+    "descriptionLength": 123,
+    "h1": "Custom Lip Boxes in Denver",
+    "canonical": "https://lipboxes.com/locations/cities/denver/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/cities/fort-worth/",
+    "title": "Custom Lip Boxes in Fort Worth | Packaging Supply",
+    "titleLength": 49,
+    "description": "Lip packaging for Fort Worth brands selling through event and destination retail, where the selling dates are fixed early.",
+    "descriptionLength": 122,
+    "h1": "Custom Lip Boxes in Fort Worth",
+    "canonical": "https://lipboxes.com/locations/cities/fort-worth/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/cities/houston/",
+    "title": "Custom Lip Boxes in Houston | Packaging Supply",
+    "titleLength": 46,
+    "description": "Lip packaging for Houston brands, including wide shade ranges, bilingual panels and the salon retail channel they sell into.",
+    "descriptionLength": 124,
+    "h1": "Custom Lip Boxes in Houston",
+    "canonical": "https://lipboxes.com/locations/cities/houston/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/cities/indianapolis/",
+    "title": "Custom Lip Boxes in Indianapolis | Packaging",
+    "titleLength": 44,
+    "description": "Lip packaging for Indianapolis brands using third-party logistics, where intake rules decide whether delivery is accepted.",
+    "descriptionLength": 122,
+    "h1": "Custom Lip Boxes in Indianapolis",
+    "canonical": "https://lipboxes.com/locations/cities/indianapolis/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/cities/jacksonville/",
+    "title": "Custom Lip Boxes in Jacksonville | Packaging",
+    "titleLength": 44,
+    "description": "Lip packaging for Jacksonville brands, with the storage and freight consolidation planning that a logistics hub allows for.",
+    "descriptionLength": 123,
+    "h1": "Custom Lip Boxes in Jacksonville",
+    "canonical": "https://lipboxes.com/locations/cities/jacksonville/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/cities/los-angeles/",
+    "title": "Custom Lip Boxes in Los Angeles | Packaging",
+    "titleLength": 43,
+    "description": "Lip packaging for Los Angeles beauty brands, including seeding kits and press boxes produced at the small quantities PR needs.",
+    "descriptionLength": 126,
+    "h1": "Custom Lip Boxes in Los Angeles",
+    "canonical": "https://lipboxes.com/locations/cities/los-angeles/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/cities/nashville/",
+    "title": "Custom Lip Boxes in Nashville | Packaging Supply",
+    "titleLength": 48,
+    "description": "Lip packaging for Nashville brands selling to visitors, where every purchase has to travel home in a suitcase undamaged.",
+    "descriptionLength": 120,
+    "h1": "Custom Lip Boxes in Nashville",
+    "canonical": "https://lipboxes.com/locations/cities/nashville/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/cities/new-york-city/",
+    "title": "Custom Lip Boxes in New York City | Packaging",
+    "titleLength": 45,
+    "description": "Lip packaging for New York City brands selling through small-format retail, where shelf space is measured in inches, not feet.",
+    "descriptionLength": 126,
+    "h1": "Custom Lip Boxes in New York City",
+    "canonical": "https://lipboxes.com/locations/cities/new-york-city/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/cities/philadelphia/",
+    "title": "Custom Lip Boxes in Philadelphia | Packaging",
+    "titleLength": 44,
+    "description": "Lip packaging for Philadelphia makers and small brands moving from market stalls into their first wholesale retail accounts.",
+    "descriptionLength": 124,
+    "h1": "Custom Lip Boxes in Philadelphia",
+    "canonical": "https://lipboxes.com/locations/cities/philadelphia/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/cities/phoenix/",
+    "title": "Custom Lip Boxes in Phoenix | Packaging Supply",
+    "titleLength": 46,
+    "description": "Lip packaging for Phoenix brands supplying convenience and pharmacy, where peg display and heat durability govern the spec.",
+    "descriptionLength": 123,
+    "h1": "Custom Lip Boxes in Phoenix",
+    "canonical": "https://lipboxes.com/locations/cities/phoenix/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/cities/san-antonio/",
+    "title": "Custom Lip Boxes in San Antonio | Packaging",
+    "titleLength": 43,
+    "description": "Lip packaging for San Antonio brands, including dual-language panels and the extra surface area that bilingual copy needs.",
+    "descriptionLength": 122,
+    "h1": "Custom Lip Boxes in San Antonio",
+    "canonical": "https://lipboxes.com/locations/cities/san-antonio/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/cities/san-diego/",
+    "title": "Custom Lip Boxes in San Diego | Packaging Supply",
+    "titleLength": 48,
+    "description": "Lip packaging for San Diego brands, including sun care formats and the panel space that SPF claims and drug facts require.",
+    "descriptionLength": 122,
+    "h1": "Custom Lip Boxes in San Diego",
+    "canonical": "https://lipboxes.com/locations/cities/san-diego/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/cities/seattle/",
+    "title": "Custom Lip Boxes in Seattle | Packaging Supply",
+    "titleLength": 46,
+    "description": "Lip packaging for Seattle brands running refill and low-waste models, where the outer pack is built to have a second life.",
+    "descriptionLength": 122,
+    "h1": "Custom Lip Boxes in Seattle",
+    "canonical": "https://lipboxes.com/locations/cities/seattle/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/cities/washington-dc/",
+    "title": "Custom Lip Boxes in Washington, D.C. | Packaging",
+    "titleLength": 48,
+    "description": "Lip packaging for Washington, D.C. brands selling through museum, institutional and visitor retail with curatorial standards.",
+    "descriptionLength": 125,
+    "h1": "Custom Lip Boxes in Washington, D.C.",
+    "canonical": "https://lipboxes.com/locations/cities/washington-dc/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/states/",
+    "title": "Lip Packaging by State | 20 US State Guides",
+    "titleLength": 43,
+    "description": "Twenty state guides to custom lip packaging, each built around the retail pattern that shapes how specifications get written there.",
+    "descriptionLength": 131,
+    "h1": "Lip Packaging by State",
+    "canonical": "https://lipboxes.com/locations/states/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "CollectionPage",
+      "BreadcrumbList"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/states/arizona/",
+    "title": "Custom Lip Boxes in Arizona | Packaging Supply",
+    "titleLength": 46,
+    "description": "Lip packaging for Arizona brands, with the storage, transit and heat considerations that a desert climate makes unavoidable.",
+    "descriptionLength": 124,
+    "h1": "Custom Lip Boxes in Arizona",
+    "canonical": "https://lipboxes.com/locations/states/arizona/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/states/california/",
+    "title": "Custom Lip Boxes in California | Packaging Supply",
+    "titleLength": 49,
+    "description": "Custom lip packaging for California beauty brands, indie labels and contract fillers, made to order and shipped statewide.",
+    "descriptionLength": 122,
+    "h1": "Custom Lip Boxes in California",
+    "canonical": "https://lipboxes.com/locations/states/california/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/states/colorado/",
+    "title": "Custom Lip Boxes in Colorado | Packaging Supply",
+    "titleLength": 47,
+    "description": "Lip packaging for Colorado brands, including outdoor and apothecary lines sold through small independent specialty retail.",
+    "descriptionLength": 122,
+    "h1": "Custom Lip Boxes in Colorado",
+    "canonical": "https://lipboxes.com/locations/states/colorado/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/states/florida/",
+    "title": "Custom Lip Boxes in Florida | Packaging Supply",
+    "titleLength": 46,
+    "description": "Lip packaging for Florida brands, including resort retail, tourism gifting and specifications written around high humidity.",
+    "descriptionLength": 123,
+    "h1": "Custom Lip Boxes in Florida",
+    "canonical": "https://lipboxes.com/locations/states/florida/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/states/georgia/",
+    "title": "Custom Lip Boxes in Georgia | Packaging Supply",
+    "titleLength": 46,
+    "description": "Lip packaging for Georgia brands, with the fast launch cycles and gloss formats common in the Atlanta beauty scene.",
+    "descriptionLength": 115,
+    "h1": "Custom Lip Boxes in Georgia",
+    "canonical": "https://lipboxes.com/locations/states/georgia/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/states/illinois/",
+    "title": "Custom Lip Boxes in Illinois | Packaging Supply",
+    "titleLength": 47,
+    "description": "Lip packaging for Illinois brands supplying mass retail, where planogram reset dates fix the delivery deadline in advance.",
+    "descriptionLength": 122,
+    "h1": "Custom Lip Boxes in Illinois",
+    "canonical": "https://lipboxes.com/locations/states/illinois/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/states/indiana/",
+    "title": "Custom Lip Boxes in Indiana | Packaging Supply",
+    "titleLength": 46,
+    "description": "Lip packaging for Indiana brands and distributors, with case pack and pallet planning built into the quote from the start.",
+    "descriptionLength": 122,
+    "h1": "Custom Lip Boxes in Indiana",
+    "canonical": "https://lipboxes.com/locations/states/indiana/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/states/maryland/",
+    "title": "Custom Lip Boxes in Maryland | Packaging Supply",
+    "titleLength": 47,
+    "description": "Lip packaging for Maryland brands and corporate gifting programmes, including branded, promotional and event-driven runs.",
+    "descriptionLength": 121,
+    "h1": "Custom Lip Boxes in Maryland",
+    "canonical": "https://lipboxes.com/locations/states/maryland/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/states/massachusetts/",
+    "title": "Custom Lip Boxes in Massachusetts | Packaging",
+    "titleLength": 45,
+    "description": "Lip packaging for Massachusetts brands, including treatment and clinical positioning where credibility matters most.",
+    "descriptionLength": 116,
+    "h1": "Custom Lip Boxes in Massachusetts",
+    "canonical": "https://lipboxes.com/locations/states/massachusetts/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/states/michigan/",
+    "title": "Custom Lip Boxes in Michigan | Packaging Supply",
+    "titleLength": 47,
+    "description": "Lip packaging for Michigan brands, including the seasonal ordering patterns that winter lip care demand creates each year.",
+    "descriptionLength": 122,
+    "h1": "Custom Lip Boxes in Michigan",
+    "canonical": "https://lipboxes.com/locations/states/michigan/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/states/missouri/",
+    "title": "Custom Lip Boxes in Missouri | Packaging Supply",
+    "titleLength": 47,
+    "description": "Lip packaging for Missouri brands supplying regional chains, where colour consistency across long reorder runs matters most.",
+    "descriptionLength": 124,
+    "h1": "Custom Lip Boxes in Missouri",
+    "canonical": "https://lipboxes.com/locations/states/missouri/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/states/new-jersey/",
+    "title": "Custom Lip Boxes in New Jersey | Packaging",
+    "titleLength": 42,
+    "description": "Lip packaging for New Jersey brands and manufacturers, built around documented specifications and change control.",
+    "descriptionLength": 113,
+    "h1": "Custom Lip Boxes in New Jersey",
+    "canonical": "https://lipboxes.com/locations/states/new-jersey/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/states/new-york/",
+    "title": "Custom Lip Boxes in New York | Packaging Supply",
+    "titleLength": 47,
+    "description": "Lip packaging for New York brands selling into prestige retail, where packaging specifications are set by the account.",
+    "descriptionLength": 118,
+    "h1": "Custom Lip Boxes in New York",
+    "canonical": "https://lipboxes.com/locations/states/new-york/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/states/north-carolina/",
+    "title": "Custom Lip Boxes in North Carolina | Packaging",
+    "titleLength": 46,
+    "description": "Lip packaging for North Carolina brands and contract manufacturers, built around filling line and tolerance requirements.",
+    "descriptionLength": 121,
+    "h1": "Custom Lip Boxes in North Carolina",
+    "canonical": "https://lipboxes.com/locations/states/north-carolina/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/states/ohio/",
+    "title": "Custom Lip Boxes in Ohio | Packaging Supply",
+    "titleLength": 43,
+    "description": "Lip packaging for Ohio brands, including test market runs that have to scale up later without redoing any of the tooling.",
+    "descriptionLength": 121,
+    "h1": "Custom Lip Boxes in Ohio",
+    "canonical": "https://lipboxes.com/locations/states/ohio/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/states/pennsylvania/",
+    "title": "Custom Lip Boxes in Pennsylvania | Packaging",
+    "titleLength": 44,
+    "description": "Lip packaging for Pennsylvania brands and private label producers supplying the pharmacy and value retail channels.",
+    "descriptionLength": 115,
+    "h1": "Custom Lip Boxes in Pennsylvania",
+    "canonical": "https://lipboxes.com/locations/states/pennsylvania/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/states/tennessee/",
+    "title": "Custom Lip Boxes in Tennessee | Packaging Supply",
+    "titleLength": 48,
+    "description": "Lip packaging for Tennessee brands, including merchandise, tour retail and gift programmes built to fixed release dates.",
+    "descriptionLength": 120,
+    "h1": "Custom Lip Boxes in Tennessee",
+    "canonical": "https://lipboxes.com/locations/states/tennessee/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/states/texas/",
+    "title": "Custom Lip Boxes in Texas | Packaging Supply",
+    "titleLength": 44,
+    "description": "Lip packaging for Texas brands across five major metros, from independent lines to multi-state wholesale programmes.",
+    "descriptionLength": 116,
+    "h1": "Custom Lip Boxes in Texas",
+    "canonical": "https://lipboxes.com/locations/states/texas/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/states/virginia/",
+    "title": "Custom Lip Boxes in Virginia | Packaging Supply",
+    "titleLength": 47,
+    "description": "Lip packaging for Virginia brands selling online, with the shipper, void fill and fulfilment requirements that this entails.",
+    "descriptionLength": 124,
+    "h1": "Custom Lip Boxes in Virginia",
+    "canonical": "https://lipboxes.com/locations/states/virginia/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/locations/states/washington/",
+    "title": "Custom Lip Boxes in Washington | Packaging Supply",
+    "titleLength": 49,
+    "description": "Lip packaging for Washington brands, with material choices suited to a market where disposal claims are scrutinised.",
+    "descriptionLength": 116,
+    "h1": "Custom Lip Boxes in Washington",
+    "canonical": "https://lipboxes.com/locations/states/washington/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "FAQPage"
+    ]
+  },
+  {
     "url": "https://lipboxes.com/materials/",
     "title": "Packaging Materials | Board Grades | Lip Boxes",
     "titleLength": 46,
@@ -639,6 +1368,202 @@
       "WebSite",
       "WebPage",
       "BreadcrumbList"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/resources/",
+    "title": "Packaging Resources | Guides and Size References",
+    "titleLength": 48,
+    "description": "Evergreen guides, size references and checklists for specifying lip packaging, from planning a launch to checking print files.",
+    "descriptionLength": 126,
+    "h1": "Packaging Resources",
+    "canonical": "https://lipboxes.com/resources/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "CollectionPage",
+      "BreadcrumbList",
+      "ItemList"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/resources/choosing-packaging-inserts/",
+    "title": "Choosing Packaging Inserts | Types and When to Use",
+    "titleLength": 50,
+    "description": "When a lip product needs an insert, which type suits which pack, and what each one costs in money and in disposal terms.",
+    "descriptionLength": 120,
+    "h1": "Choosing Packaging Inserts",
+    "canonical": "https://lipboxes.com/resources/choosing-packaging-inserts/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Article",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/resources/cosmetic-packaging-label-requirements/",
+    "title": "Cosmetic Packaging Label Requirements Explained",
+    "titleLength": 47,
+    "description": "What information cosmetic packaging carries, which panel it belongs on, and where lip products commonly run short of space.",
+    "descriptionLength": 123,
+    "h1": "Cosmetic Packaging Label Requirements",
+    "canonical": "https://lipboxes.com/resources/cosmetic-packaging-label-requirements/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Article",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/resources/custom-packaging-cost-guide/",
+    "title": "Custom Packaging Cost Guide | What Drives Price",
+    "titleLength": 47,
+    "description": "What sits inside a packaging quote, which costs are one-time, and the specification changes that move unit price the most.",
+    "descriptionLength": 122,
+    "h1": "Custom Packaging Cost Guide",
+    "canonical": "https://lipboxes.com/resources/custom-packaging-cost-guide/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Article",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/resources/lip-balm-box-size-guide/",
+    "title": "Lip Balm Box Size Guide | Dimensions and Clearance",
+    "titleLength": 50,
+    "description": "Measure your lip balm tube and work out the carton size, including clearance, board allowance and multipack maths.",
+    "descriptionLength": 114,
+    "h1": "Lip Balm Box Size Guide",
+    "canonical": "https://lipboxes.com/resources/lip-balm-box-size-guide/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Article",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/resources/lip-gloss-box-size-guide/",
+    "title": "Lip Gloss Box Size Guide | Wand Tube Dimensions",
+    "titleLength": 47,
+    "description": "Why gloss cartons run taller than the fill suggests, how to measure a wand tube, and base stability on slim boxes.",
+    "descriptionLength": 114,
+    "h1": "Lip Gloss Box Size Guide",
+    "canonical": "https://lipboxes.com/resources/lip-gloss-box-size-guide/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Article",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/resources/lip-product-packaging-guide/",
+    "title": "Lip Product Packaging Guide | Plan a Launch",
+    "titleLength": 43,
+    "description": "The eight packaging decisions behind a lip product launch, in the order they have to be made, with the cost of each.",
+    "descriptionLength": 116,
+    "h1": "Lip Product Packaging Guide",
+    "canonical": "https://lipboxes.com/resources/lip-product-packaging-guide/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Article",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/resources/lipstick-box-size-guide/",
+    "title": "Lipstick Box Size Guide | Bullet Case Dimensions",
+    "titleLength": 48,
+    "description": "Measure a lipstick bullet case correctly, including magnetic cap tolerance, and read off carton and duo pack sizes.",
+    "descriptionLength": 115,
+    "h1": "Lipstick Box Size Guide",
+    "canonical": "https://lipboxes.com/resources/lipstick-box-size-guide/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Article",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/resources/packaging-dieline-guide/",
+    "title": "Packaging Dieline Guide | How Dielines Work",
+    "titleLength": 43,
+    "description": "What a dieline is, what each line type means, how the physical die is cut, and why glue flaps sit where they do.",
+    "descriptionLength": 112,
+    "h1": "Packaging Dieline Guide",
+    "canonical": "https://lipboxes.com/resources/packaging-dieline-guide/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Article",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/resources/packaging-glossary/",
+    "title": "Packaging Glossary | Printing and Carton Terms",
+    "titleLength": 46,
+    "description": "Plain definitions of the packaging, printing and finishing terms that turn up on quotes, proofs, dielines and delivery notes.",
+    "descriptionLength": 125,
+    "h1": "Packaging Glossary",
+    "canonical": "https://lipboxes.com/resources/packaging-glossary/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Article"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/resources/prepress-checklist/",
+    "title": "Prepress Checklist | Check Artwork Before Print",
+    "titleLength": 47,
+    "description": "A step-by-step prepress checklist for packaging artwork: separations, overprint, resolution, type and finishing layers.",
+    "descriptionLength": 119,
+    "h1": "Prepress Checklist",
+    "canonical": "https://lipboxes.com/resources/prepress-checklist/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList",
+      "Article",
+      "FAQPage"
     ]
   },
   {

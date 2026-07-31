@@ -62,6 +62,11 @@ const ROUTES = [
   '/', '/products/', '/custom-lip-balm-boxes/', '/rigid-lipstick-boxes/',
   '/lip-balm-packaging/', '/request-a-quote/', '/blog/', '/contact/',
   '/materials/', '/404/',
+  // One page from each of the newer families: the two directories, a state,
+  // a city and a guide. Each uses a different template.
+  '/resources/', '/resources/lip-balm-box-size-guide/',
+  '/locations/', '/locations/states/', '/locations/cities/',
+  '/locations/states/texas/', '/locations/cities/phoenix/',
 ];
 const BREAKPOINTS = [
   { name: '375', width: 375, height: 812, mobile: true },

@@ -84,7 +84,7 @@ export const product: Product = {
         },
         {
           title: 'Tin and jar labels',
-          text: 'Circular top labels and rectangular side wraps for screw-top tins, lip scrub jars and salve pots.',
+          text: 'Round lid labels paired with a wrap around the body, sized for tins, salve pots and scrub jars.',
         },
         {
           title: 'Tamper seal band',
@@ -224,7 +224,7 @@ export const product: Product = {
       a: 'Not usually, but a small circular cap seal is a cheap way to add a shade name, a batch code or a logo where the wrap is already full. It is also the easiest place to put information that changes per batch without altering the main label.',
     },
     {
-      q: 'Can I get a no-label look on a coloured tube?',
+      q: 'Which stock gives a no-label look?',
       a: 'Yes, using a clear BOPP stock so the container colour shows through the unprinted areas. Remember that ink on clear film is translucent, so pale colours and whites need a white underprint layer or they will disappear against a dark container.',
     },
     {
@@ -240,11 +240,11 @@ export const product: Product = {
       a: 'A standard permanent acrylic bonds well to clean metal. Two things change that: cold storage, which stiffens the adhesive and can lift the edges, and any release coating left on the tin from manufacturing. Tell us the container material and storage conditions and it is specified accordingly.',
     },
     {
-      q: 'How long can I store unused labels?',
+      q: 'What is the shelf life of unused label stock?',
       a: 'A long time if they are kept flat, cool and out of direct sun. Heat is the main enemy — a roll stored near a warehouse ceiling in summer can develop adhesive ooze at the edges and become difficult to run through an applicator.',
     },
     {
-      q: 'Are the labels waterproof?',
+      q: 'Which stocks survive water and humidity?',
       a: 'Synthetic face stocks with a laminate or varnish over the print resist water and will not disintegrate. Paper stocks are not waterproof and should not be described as such on your packaging or listings.',
     },
     {

@@ -183,6 +183,11 @@ const form = new FormData();
 form.set('formType', 'short');
 form.set('product', 'Holographic Lip Gloss Boxes');
 form.set('pageUrl', `${BASE}/holographic-lip-gloss-boxes/`);
+// Fields added by the location pages. `location` is validated against the
+// published list, `spoofLocation` below checks an unlisted value is flagged.
+form.set('pageTitle', 'Custom Lip Boxes in Phoenix | Packaging Supply');
+form.set('location', 'Phoenix');
+form.set('submittedAt', '2026-07-31T09:15:00.000Z');
 // A crafted name that would inject a header if it were not sanitised.
 form.set('name', 'Dana Reed\r\nBcc: attacker@example.com');
 form.set('email', 'dana@brandexample.com');
@@ -315,6 +320,15 @@ check(
   textPart.includes('Quote 6,000 units.'),
 );
 check('no credential appears in the message', !/test-app-password/.test(raw));
+
+check('location page name reaches the recipient', /Location page:\s*Phoenix, AZ/.test(decoded));
+check('page title reaches the recipient', decoded.includes('Custom Lip Boxes in Phoenix'));
+check('browser timestamp is recorded separately', decoded.includes('2026-07-31T09:15:00.000Z'));
+check(
+  'subject carries the location as well as the product',
+  /^subject:.*Holographic Lip Gloss Boxes.*Phoenix/im.test(headers),
+  headers.match(/^subject:.*/im)?.[0],
+);
 
 console.log(`\n${passed} passed, ${failures.length} failed`);
 if (failures.length) {

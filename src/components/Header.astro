@@ -482,6 +482,23 @@ thumbnails.set(
       font-size: 0.94rem;
     }
   }
+  /* Seven top-level items plus the call to action do not fit a 1024px viewport
+     at full size. Between the desktop breakpoint and 78rem the nav tightens
+     rather than wrapping or overflowing. */
+  @media (min-width: 62rem) and (max-width: 77.999rem) {
+    .nav {
+      gap: var(--sp-3);
+    }
+    .nav__link {
+      padding-inline: 0.42rem;
+      font-size: 0.88rem;
+      gap: 0.25rem;
+    }
+    .nav__cta {
+      padding-inline: 0.9rem;
+      font-size: 0.88rem;
+    }
+  }
   @media (min-width: 84rem) {
     .submenu--mega .submenu__list {
       grid-template-columns: 1fr 1fr 1fr;

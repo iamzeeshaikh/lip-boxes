@@ -23,6 +23,11 @@ const ROUTES = [
   '/request-a-quote/',
   '/blog/how-packaging-quantity-affects-unit-pricing/',
   '/materials/',
+  '/resources/',
+  '/resources/lip-balm-box-size-guide/',
+  '/locations/',
+  '/locations/states/texas/',
+  '/locations/cities/phoenix/',
 ];
 
 const MIME = {

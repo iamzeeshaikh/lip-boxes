@@ -2,109 +2,38 @@
   "/": {
     "mobile": {
       "scores": {
-        "performance": 96,
+        "performance": 94,
         "accessibility": 100,
         "best-practices": 100,
         "seo": 100
       },
       "metrics": {
-        "LCP": "2.7 s",
+        "LCP": "3.0 s",
         "CLS": "0",
         "TBT": "0 ms",
-        "FCP": "1.4 s",
-        "SI": "1.4 s"
+        "FCP": "1.5 s",
+        "SI": "2.3 s"
       },
       "failedAudits": [
         {
           "id": "first-contentful-paint",
           "title": "First Contentful Paint",
-          "score": 0.97
+          "score": 0.96
         },
         {
           "id": "largest-contentful-paint",
           "title": "Largest Contentful Paint",
-          "score": 0.85
+          "score": 0.77
         },
         {
-          "id": "interactive",
-          "title": "Time to Interactive",
-          "score": 0.97
-        },
-        {
-          "id": "unused-css-rules",
-          "title": "Reduce unused CSS",
-          "score": 0.5
-        },
-        {
-          "id": "document-latency-insight",
-          "title": "Document request latency",
-          "score": 0.5
-        },
-        {
-          "id": "network-dependency-tree-insight",
-          "title": "Network dependency tree",
-          "score": 0
-        }
-      ]
-    },
-    "desktop": {
-      "scores": {
-        "performance": 100,
-        "accessibility": 100,
-        "best-practices": 100,
-        "seo": 100
-      },
-      "metrics": {
-        "LCP": "0.5 s",
-        "CLS": "0",
-        "TBT": "0 ms",
-        "FCP": "0.3 s",
-        "SI": "0.3 s"
-      },
-      "failedAudits": [
-        {
-          "id": "document-latency-insight",
-          "title": "Document request latency",
-          "score": 0.5
-        },
-        {
-          "id": "network-dependency-tree-insight",
-          "title": "Network dependency tree",
-          "score": 0
-        }
-      ]
-    }
-  },
-  "/products/": {
-    "mobile": {
-      "scores": {
-        "performance": 97,
-        "accessibility": 100,
-        "best-practices": 100,
-        "seo": 100
-      },
-      "metrics": {
-        "LCP": "2.5 s",
-        "CLS": "0",
-        "TBT": "0 ms",
-        "FCP": "1.2 s",
-        "SI": "1.2 s"
-      },
-      "failedAudits": [
-        {
-          "id": "first-contentful-paint",
-          "title": "First Contentful Paint",
+          "id": "speed-index",
+          "title": "Speed Index",
           "score": 0.99
         },
         {
-          "id": "largest-contentful-paint",
-          "title": "Largest Contentful Paint",
-          "score": 0.9
-        },
-        {
           "id": "interactive",
           "title": "Time to Interactive",
-          "score": 0.98
+          "score": 0.96
         },
         {
           "id": "unused-css-rules",
@@ -151,7 +80,255 @@
       ]
     }
   },
+  "/products/": {
+    "mobile": {
+      "scores": {
+        "performance": 95,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "LCP": "2.9 s",
+        "CLS": "0",
+        "TBT": "0 ms",
+        "FCP": "1.4 s",
+        "SI": "1.4 s"
+      },
+      "failedAudits": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.97
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.81
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.96
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0.5
+        },
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        }
+      ]
+    },
+    "desktop": {
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "LCP": "0.6 s",
+        "CLS": "0",
+        "TBT": "0 ms",
+        "FCP": "0.4 s",
+        "SI": "0.4 s"
+      },
+      "failedAudits": [
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        }
+      ]
+    }
+  },
   "/custom-lip-balm-boxes/": {
+    "mobile": {
+      "scores": {
+        "performance": 95,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "LCP": "2.7 s",
+        "CLS": "0",
+        "TBT": "0 ms",
+        "FCP": "1.8 s",
+        "SI": "1.8 s"
+      },
+      "failedAudits": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.89
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.85
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.97
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0.5
+        },
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        }
+      ]
+    },
+    "desktop": {
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "LCP": "0.6 s",
+        "CLS": "0",
+        "TBT": "0 ms",
+        "FCP": "0.5 s",
+        "SI": "0.5 s"
+      },
+      "failedAudits": [
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.99
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0.5
+        },
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        }
+      ]
+    }
+  },
+  "/holographic-lip-gloss-boxes/": {
+    "mobile": {
+      "scores": {
+        "performance": 95,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "LCP": "2.7 s",
+        "CLS": "0",
+        "TBT": "0 ms",
+        "FCP": "1.8 s",
+        "SI": "1.8 s"
+      },
+      "failedAudits": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.88
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.84
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.97
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0.5
+        },
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        }
+      ]
+    },
+    "desktop": {
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "LCP": "0.7 s",
+        "CLS": "0",
+        "TBT": "0 ms",
+        "FCP": "0.4 s",
+        "SI": "0.4 s"
+      },
+      "failedAudits": [
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.99
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0.5
+        },
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        }
+      ]
+    }
+  },
+  "/lip-balm-packaging/": {
     "mobile": {
       "scores": {
         "performance": 95,
@@ -232,36 +409,36 @@
       ]
     }
   },
-  "/holographic-lip-gloss-boxes/": {
+  "/request-a-quote/": {
     "mobile": {
       "scores": {
-        "performance": 96,
+        "performance": 98,
         "accessibility": 100,
         "best-practices": 100,
         "seo": 100
       },
       "metrics": {
-        "LCP": "2.7 s",
+        "LCP": "2.3 s",
         "CLS": "0",
         "TBT": "0 ms",
-        "FCP": "1.7 s",
-        "SI": "1.7 s"
+        "FCP": "1.5 s",
+        "SI": "1.5 s"
       },
       "failedAudits": [
         {
           "id": "first-contentful-paint",
           "title": "First Contentful Paint",
-          "score": 0.93
+          "score": 0.96
         },
         {
           "id": "largest-contentful-paint",
           "title": "Largest Contentful Paint",
-          "score": 0.85
+          "score": 0.94
         },
         {
           "id": "interactive",
           "title": "Time to Interactive",
-          "score": 0.97
+          "score": 0.99
         },
         {
           "id": "unused-css-rules",
@@ -288,173 +465,11 @@
         "seo": 100
       },
       "metrics": {
-        "LCP": "0.6 s",
+        "LCP": "0.5 s",
         "CLS": "0",
         "TBT": "0 ms",
         "FCP": "0.4 s",
         "SI": "0.4 s"
-      },
-      "failedAudits": [
-        {
-          "id": "largest-contentful-paint",
-          "title": "Largest Contentful Paint",
-          "score": 0.99
-        },
-        {
-          "id": "unused-css-rules",
-          "title": "Reduce unused CSS",
-          "score": 0.5
-        },
-        {
-          "id": "document-latency-insight",
-          "title": "Document request latency",
-          "score": 0.5
-        },
-        {
-          "id": "network-dependency-tree-insight",
-          "title": "Network dependency tree",
-          "score": 0
-        }
-      ]
-    }
-  },
-  "/lip-balm-packaging/": {
-    "mobile": {
-      "scores": {
-        "performance": 97,
-        "accessibility": 100,
-        "best-practices": 100,
-        "seo": 100
-      },
-      "metrics": {
-        "LCP": "2.5 s",
-        "CLS": "0",
-        "TBT": "0 ms",
-        "FCP": "1.4 s",
-        "SI": "1.4 s"
-      },
-      "failedAudits": [
-        {
-          "id": "first-contentful-paint",
-          "title": "First Contentful Paint",
-          "score": 0.98
-        },
-        {
-          "id": "largest-contentful-paint",
-          "title": "Largest Contentful Paint",
-          "score": 0.9
-        },
-        {
-          "id": "interactive",
-          "title": "Time to Interactive",
-          "score": 0.98
-        },
-        {
-          "id": "unused-css-rules",
-          "title": "Reduce unused CSS",
-          "score": 0.5
-        },
-        {
-          "id": "document-latency-insight",
-          "title": "Document request latency",
-          "score": 0.5
-        },
-        {
-          "id": "network-dependency-tree-insight",
-          "title": "Network dependency tree",
-          "score": 0
-        }
-      ]
-    },
-    "desktop": {
-      "scores": {
-        "performance": 100,
-        "accessibility": 100,
-        "best-practices": 100,
-        "seo": 100
-      },
-      "metrics": {
-        "LCP": "0.5 s",
-        "CLS": "0",
-        "TBT": "0 ms",
-        "FCP": "0.3 s",
-        "SI": "0.3 s"
-      },
-      "failedAudits": [
-        {
-          "id": "document-latency-insight",
-          "title": "Document request latency",
-          "score": 0.5
-        },
-        {
-          "id": "network-dependency-tree-insight",
-          "title": "Network dependency tree",
-          "score": 0
-        }
-      ]
-    }
-  },
-  "/request-a-quote/": {
-    "mobile": {
-      "scores": {
-        "performance": 99,
-        "accessibility": 100,
-        "best-practices": 100,
-        "seo": 100
-      },
-      "metrics": {
-        "LCP": "2.2 s",
-        "CLS": "0",
-        "TBT": "0 ms",
-        "FCP": "1.4 s",
-        "SI": "1.4 s"
-      },
-      "failedAudits": [
-        {
-          "id": "first-contentful-paint",
-          "title": "First Contentful Paint",
-          "score": 0.98
-        },
-        {
-          "id": "largest-contentful-paint",
-          "title": "Largest Contentful Paint",
-          "score": 0.95
-        },
-        {
-          "id": "interactive",
-          "title": "Time to Interactive",
-          "score": 0.99
-        },
-        {
-          "id": "unused-css-rules",
-          "title": "Reduce unused CSS",
-          "score": 0.5
-        },
-        {
-          "id": "document-latency-insight",
-          "title": "Document request latency",
-          "score": 0.5
-        },
-        {
-          "id": "network-dependency-tree-insight",
-          "title": "Network dependency tree",
-          "score": 0
-        }
-      ]
-    },
-    "desktop": {
-      "scores": {
-        "performance": 100,
-        "accessibility": 100,
-        "best-practices": 100,
-        "seo": 100
-      },
-      "metrics": {
-        "LCP": "0.5 s",
-        "CLS": "0",
-        "TBT": "0 ms",
-        "FCP": "0.3 s",
-        "SI": "0.3 s"
       },
       "failedAudits": [
         {
@@ -478,28 +493,28 @@
   "/blog/how-packaging-quantity-affects-unit-pricing/": {
     "mobile": {
       "scores": {
-        "performance": 98,
+        "performance": 97,
         "accessibility": 100,
         "best-practices": 100,
         "seo": 100
       },
       "metrics": {
-        "LCP": "2.4 s",
+        "LCP": "2.6 s",
         "CLS": "0",
         "TBT": "0 ms",
-        "FCP": "1.2 s",
-        "SI": "1.2 s"
+        "FCP": "1.4 s",
+        "SI": "1.4 s"
       },
       "failedAudits": [
         {
           "id": "first-contentful-paint",
           "title": "First Contentful Paint",
-          "score": 0.99
+          "score": 0.98
         },
         {
           "id": "largest-contentful-paint",
           "title": "Largest Contentful Paint",
-          "score": 0.91
+          "score": 0.88
         },
         {
           "id": "interactive",
@@ -614,6 +629,406 @@
         "SI": "0.3 s"
       },
       "failedAudits": [
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        }
+      ]
+    }
+  },
+  "/resources/": {
+    "mobile": {
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "LCP": "2.3 s",
+        "CLS": "0",
+        "TBT": "0 ms",
+        "FCP": "1.4 s",
+        "SI": "1.4 s"
+      },
+      "failedAudits": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.98
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.94
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.99
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0.5
+        },
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        }
+      ]
+    },
+    "desktop": {
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "LCP": "0.5 s",
+        "CLS": "0",
+        "TBT": "0 ms",
+        "FCP": "0.3 s",
+        "SI": "0.3 s"
+      },
+      "failedAudits": [
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        }
+      ]
+    }
+  },
+  "/resources/lip-balm-box-size-guide/": {
+    "mobile": {
+      "scores": {
+        "performance": 97,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "LCP": "2.6 s",
+        "CLS": "0",
+        "TBT": "0 ms",
+        "FCP": "1.5 s",
+        "SI": "1.5 s"
+      },
+      "failedAudits": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.96
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.88
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.98
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0.5
+        },
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        }
+      ]
+    },
+    "desktop": {
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "LCP": "0.6 s",
+        "CLS": "0",
+        "TBT": "0 ms",
+        "FCP": "0.4 s",
+        "SI": "0.4 s"
+      },
+      "failedAudits": [
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0.5
+        },
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        }
+      ]
+    }
+  },
+  "/locations/": {
+    "mobile": {
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "LCP": "2.3 s",
+        "CLS": "0",
+        "TBT": "0 ms",
+        "FCP": "1.4 s",
+        "SI": "1.4 s"
+      },
+      "failedAudits": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.97
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.94
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.99
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0.5
+        },
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        }
+      ]
+    },
+    "desktop": {
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "LCP": "0.5 s",
+        "CLS": "0",
+        "TBT": "0 ms",
+        "FCP": "0.3 s",
+        "SI": "0.3 s"
+      },
+      "failedAudits": [
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0.5
+        },
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        }
+      ]
+    }
+  },
+  "/locations/states/texas/": {
+    "mobile": {
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "LCP": "2.3 s",
+        "CLS": "0",
+        "TBT": "0 ms",
+        "FCP": "1.5 s",
+        "SI": "1.5 s"
+      },
+      "failedAudits": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.95
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.93
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.99
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0.5
+        },
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        }
+      ]
+    },
+    "desktop": {
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "LCP": "0.5 s",
+        "CLS": "0",
+        "TBT": "0 ms",
+        "FCP": "0.4 s",
+        "SI": "0.4 s"
+      },
+      "failedAudits": [
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0.5
+        },
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        }
+      ]
+    }
+  },
+  "/locations/cities/phoenix/": {
+    "mobile": {
+      "scores": {
+        "performance": 98,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "LCP": "2.3 s",
+        "CLS": "0",
+        "TBT": "0 ms",
+        "FCP": "1.5 s",
+        "SI": "1.5 s"
+      },
+      "failedAudits": [
+        {
+          "id": "first-contentful-paint",
+          "title": "First Contentful Paint",
+          "score": 0.95
+        },
+        {
+          "id": "largest-contentful-paint",
+          "title": "Largest Contentful Paint",
+          "score": 0.94
+        },
+        {
+          "id": "interactive",
+          "title": "Time to Interactive",
+          "score": 0.99
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0.5
+        },
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0.5
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0
+        }
+      ]
+    },
+    "desktop": {
+      "scores": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "LCP": "0.5 s",
+        "CLS": "0",
+        "TBT": "0 ms",
+        "FCP": "0.4 s",
+        "SI": "0.4 s"
+      },
+      "failedAudits": [
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0.5
+        },
         {
           "id": "document-latency-insight",
           "title": "Document request latency",

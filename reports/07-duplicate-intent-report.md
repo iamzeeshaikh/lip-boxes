@@ -113,3 +113,79 @@ These handle URL variants and legacy paths, not merges. All single-hop 301s:
 | `/quote` | `/request-a-quote/` |
 | `/faq` | `/faqs/` |
 | `www.lipboxes.com/*` | `lipboxes.com/*` |
+
+---
+
+# Addendum: the resources library and the location directory
+
+Fifty-three pages were added after this report was first written: ten guides
+under `/resources/`, twenty state pages, twenty city pages and three directory
+pages. Both families create obvious cannibalisation exposure, so both were built
+against explicit separation rules and then measured.
+
+## Guides against product pages
+
+A guide and a product page can easily end up answering the same question. They
+were separated by job:
+
+| | Product page | Guide |
+| --- | --- | --- |
+| Question it answers | "Can you make this, and what does it cost?" | "How do I work out what I need?" |
+| Intent | Transactional | Informational |
+| Ends with | The quote form | A link to the products the guide applies to |
+| Keyword shape | `custom lip balm boxes` | `lip balm box size` |
+| Schema | `Product` + `Offer` | `Article` |
+
+No guide targets a product page's primary keyword, and no product page targets a
+guide's. The full keyword map is in `09-content-similarity-report.md`.
+
+Guide groups (Planning, Sizing, Production, Compliance, Reference) are labels on
+the hub. They create **no URLs**, so there is no thin category page competing
+with either the guides or the products.
+
+## State pages against city pages
+
+The larger risk was forty location pages reading as one template. Three rules
+were applied:
+
+1. **One market angle per page.** Each page is built around a single
+   characteristic of that market — peg-fixture engineering in Phoenix, freight
+   consolidation in Jacksonville, planogram resets in Illinois — rather than a
+   general description of the place. The full list is in
+   `11-locations-report.md`.
+2. **Different block types in a different order.** The content model lets each
+   page pick from six block types. No two location pages use the same sequence.
+3. **An explicit differentiation FAQ.** Every city page answers, in words, how it
+   differs from its parent state page — and each of those questions is phrased
+   differently, so the answer set is not itself a template.
+
+## Measured outcome
+
+From `09-content-similarity-report.md`, generated from the built HTML:
+
+- The highest similarity between **any** two pages on the site is **12.7%**,
+  between `/blog/printing-methods-for-cosmetic-packaging/` and
+  `/printing-options/`. The duplicate threshold is 45%.
+- No two location pages, and no two guides, exceed the low-risk band.
+- No paragraph of twelve words or more appears on more than two pages.
+- No FAQ question appears on more than two pages.
+- No duplicate titles, no duplicate meta descriptions, and no two pages share a
+  primary keyword.
+
+## What this addendum does not claim
+
+Low measured similarity means the pages are not duplicates of each other. It
+does not guarantee that Google will index all forty location pages, or rank
+them. Location pages without a physical presence are inherently weaker than
+pages backed by a real address, and some may be treated as thin regardless of
+word count. The honest expectation is that the strongest few earn traffic and
+the rest sit in the index as supporting pages.
+
+## What to monitor for these families
+
+| Signal in Search Console | What it means | What to do |
+| --- | --- | --- |
+| A state page and its city page both appear for the same query | Signal splitting inside the directory | Sharpen the city page's angle, or fold it into the state page with a 301 |
+| Location pages indexed but with zero impressions after three months | Treated as low-value | Consolidate to the fifteen or twenty strongest markets |
+| "Crawled — currently not indexed" on many location URLs | Google sees them as thin | Same as above; reduce the count rather than adding more |
+| A guide outranking its product page for a buying query | The guide is absorbing commercial intent | Move the commercial section of the guide onto the product page |

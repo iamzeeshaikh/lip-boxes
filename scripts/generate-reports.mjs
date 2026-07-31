@@ -311,6 +311,189 @@ ${rows
   );
 }
 
+/* ------------------------------------------------------------------ *
+ * 7. Resources library                                                *
+ * ------------------------------------------------------------------ */
+
+/**
+ * Reads the fields we need straight out of the data files rather than the
+ * built HTML. A report generated from source cannot drift from the pages,
+ * and it keeps the guide metadata (search intent, group, review date) that
+ * never appears in the markup.
+ */
+function readEntries(dir, fields) {
+  const out = [];
+  for (const file of fs.readdirSync(path.join(ROOT, dir)).sort()) {
+    if (!file.endsWith('.ts')) continue;
+    const source = fs.readFileSync(path.join(ROOT, dir, file), 'utf8');
+
+    // Only object-level declarations, which sit at two spaces of indent. A
+    // `slug:` nested inside `hero:` or a section is a reference, not an entry.
+    const starts = [...source.matchAll(/\n {2}slug:\s*'([^']+)',/g)];
+    starts.forEach((match, index) => {
+      const from = match.index;
+      const to = index + 1 < starts.length ? starts[index + 1].index : source.length;
+      const seg = source.slice(from, to);
+      const entry = { slug: match[1], file };
+      for (const field of fields) {
+        const value = seg.match(new RegExp(`\\n {2}${field}:\\s*\\n?\\s*'((?:[^'\\\\]|\\\\.)*)'`));
+        entry[field] = value ? value[1].replace(/\\'/g, "'") : '';
+      }
+      const list = seg.match(/\n {2}related:\s*\[([\s\S]*?)\]/);
+      entry.related = list
+        ? list[1].split(',').map((s) => s.replace(/['"\s]+/g, '')).filter(Boolean)
+        : [];
+      entry.faqCount = (seg.match(/\n\s+q:\s*'/g) || []).length;
+      out.push(entry);
+    });
+  }
+  return out;
+}
+
+const wordsFor = (route) => {
+  const file = path.join(DIST, route.replace(/^\//, ''), 'index.html');
+  if (!fs.existsSync(file)) return 0;
+  const html = fs
+    .readFileSync(file, 'utf8')
+    .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+    .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+    .replace(/<header[\s\S]*?<\/header>/gi, ' ')
+    .replace(/<footer[\s\S]*?<\/footer>/gi, ' ');
+  return html.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim().split(' ').length;
+};
+
+const guides = readEntries('src/data/resources', [
+  'title',
+  'primaryKeyword',
+  'searchIntent',
+  'group',
+  'updated',
+]);
+
+fs.writeFileSync(
+  path.join(REPORTS, '10-resources-report.md'),
+  `# Resources library
+
+${guides.length} guides published under \`/resources/\`, plus the hub at
+\`${SITE}/resources/\`. Each guide answers one question, targets one primary
+keyword, and links only to the products and guides it genuinely relates to.
+
+Groups are presentational: they organise the hub and create no additional URLs,
+so there is no thin \`/resources/sizing/\` style page to compete with the guides.
+
+| URL | Group | Primary keyword | Question it answers | Words | FAQs | Reviewed |
+| --- | --- | --- | --- | ---: | ---: | --- |
+${guides
+  .map((g) => {
+    const route = `/resources/${g.slug}/`;
+    return `| \`${route}\` | ${esc(g.group)} | ${esc(g.primaryKeyword)} | ${esc(g.searchIntent)} | ${wordsFor(route)} | ${g.faqCount} | ${g.updated} |`;
+  })
+  .join('\n')}
+
+## Schema
+
+Each guide carries \`Organization\`, \`WebSite\`, \`WebPage\`, \`BreadcrumbList\`,
+\`Article\` and, where questions are published, \`FAQPage\`. \`dateModified\` on the
+\`Article\` node is the review date recorded in the data file — never a build
+timestamp, so it does not change when the site is redeployed.
+
+## Products referenced
+
+| Guide | Products linked at the foot |
+| --- | --- |
+${guides.map((g) => `| \`${g.slug}\` | ${g.related.map((r) => `\`/${r}/\``).join(', ') || '—'} |`).join('\n')}
+`,
+);
+
+/* ------------------------------------------------------------------ *
+ * 8. Location directory                                               *
+ * ------------------------------------------------------------------ */
+
+const places = readEntries('src/data/locations', [
+  'type',
+  'name',
+  'state',
+  'stateCode',
+  'parentState',
+  'primaryKeyword',
+  'marketAngle',
+]);
+const statePages = places.filter((p) => p.type === 'state');
+const cityPages = places.filter((p) => p.type === 'city');
+const routeFor = (p) =>
+  p.type === 'state' ? `/locations/states/${p.slug}/` : `/locations/cities/${p.slug}/`;
+
+fs.writeFileSync(
+  path.join(REPORTS, '11-locations-report.md'),
+  `# Location directory
+
+${statePages.length} state pages and ${cityPages.length} city pages, plus three
+directory pages: \`/locations/\`, \`/locations/states/\` and \`/locations/cities/\`.
+
+## What these pages claim, and what they do not
+
+Every location page states plainly that there is **no office, plant, warehouse,
+held stock, local staff or collection point** in that place. Nothing on any of
+them asserts a local address, a local phone number, a local employee, a local
+customer count, a guaranteed delivery time, same-day service, free shipping, a
+local certification or a partnership with a local business. The phrases
+"located in", "based in" and "near you" are not used anywhere in the directory.
+
+Because there is no physical premises in any of these locations, **no page
+carries \`LocalBusiness\` schema**. Each one uses \`Organization\`, \`WebSite\`,
+\`WebPage\`, \`BreadcrumbList\` and \`FAQPage\`, which describes what the page
+actually is: an informational page about supplying a market. No \`Product\`
+schema appears on a location page either — that belongs on the product pages,
+and duplicating it here would compete with them.
+
+## Differentiation
+
+Each page is built around one market characteristic rather than a template with
+the place name substituted. Every city page carries an FAQ that states in words
+how it differs from its parent state page, and no two of those questions are
+phrased the same way. Similarity between any two location pages is measured in
+\`09-content-similarity-report.md\`.
+
+## State pages
+
+| URL | State | Primary keyword | Market angle | Words | FAQs | Cities beneath it |
+| --- | --- | --- | --- | ---: | ---: | --- |
+${statePages
+  .map((p) => {
+    const route = routeFor(p);
+    const children = cityPages.filter((c) => c.parentState === p.slug).map((c) => c.name);
+    return `| \`${route}\` | ${esc(p.name)} (${p.stateCode}) | ${esc(p.primaryKeyword)} | ${esc(p.marketAngle)} | ${wordsFor(route)} | ${p.faqCount} | ${children.join(', ') || '—'} |`;
+  })
+  .join('\n')}
+
+## City pages
+
+| URL | City | Primary keyword | Market angle | Words | FAQs | Parent state page |
+| --- | --- | --- | --- | ---: | ---: | --- |
+${cityPages
+  .map((p) => {
+    const route = routeFor(p);
+    return `| \`${route}\` | ${esc(p.name)}, ${p.stateCode} | ${esc(p.primaryKeyword)} | ${esc(p.marketAngle)} | ${wordsFor(route)} | ${p.faqCount} | ${p.parentState ? `\`/locations/states/${p.parentState}/\`` : '— (no state page)'} |`;
+  })
+  .join('\n')}
+
+## Quote form
+
+Every location page renders the same \`ShortQuoteForm\` component posting to the
+same \`/api/quote/\` endpoint used by the product pages. No second mail handler
+was written. Alongside the existing fields it sends four hidden values: the page
+URL, the page title, the location name and a submission timestamp. The location
+name is validated server-side against this published list before it reaches the
+subject line, so a crafted request cannot put arbitrary text in an email header.
+
+## Products linked per market
+
+| Location | Products surfaced |
+| --- | --- |
+${places.map((p) => `| \`${routeFor(p)}\` | ${p.related.map((r) => `\`/${r}/\``).join(', ') || '—'} |`).join('\n')}
+`,
+);
+
 console.log('Reports written:');
 for (const file of fs.readdirSync(REPORTS).sort()) {
   console.log(`  reports/${file}`);

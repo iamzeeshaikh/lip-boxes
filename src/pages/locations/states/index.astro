@@ -1,0 +1,234 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PageHero from '../../../components/PageHero.astro';
+import QuoteCta from '../../../components/QuoteCta.astro';
+import {
+  stateRegions,
+  statesInRegion,
+  indexableStates,
+  citiesInState,
+  locationUrl,
+} from '../../../data/locations';
+import { site } from '../../../data/site';
+import {
+  graph,
+  organizationSchema,
+  websiteSchema,
+  webPageSchema,
+  breadcrumbSchema,
+  type Crumb,
+} from '../../../lib/schema';
+
+const path = '/locations/states/';
+const crumbs: Crumb[] = [
+  { name: 'Home', path: '/' },
+  { name: 'Locations', path: '/locations/' },
+  { name: 'States' },
+];
+
+const schema = graph(
+  organizationSchema(),
+  websiteSchema(),
+  webPageSchema({
+    path,
+    name: 'Lip Packaging by State',
+    description:
+      'Twenty state guides to lip packaging, each written around the retail pattern that shapes specifications in that state.',
+    type: 'CollectionPage',
+  }),
+  breadcrumbSchema(crumbs),
+);
+---
+
+<BaseLayout
+  title="Lip Packaging by State | 20 US State Guides"
+  description="Twenty state guides to custom lip packaging, each built around the retail pattern that shapes how specifications get written there."
+  path={path}
+  schema={[schema]}
+>
+  <PageHero
+    eyebrow="Locations"
+    h1="Lip Packaging by State"
+    lead="Each state guide is built around one thing about that market that changes how packaging gets specified."
+    crumbs={crumbs}
+    points={[`${indexableStates.length} states covered`, 'Grouped by region', 'Shipped nationwide']}
+  />
+
+  <section class="section" aria-labelledby="st-intro-heading">
+    <div class="wrap wrap--narrow">
+      <h2 id="st-intro-heading">How to use these</h2>
+      <p>
+        A state page is the wider view: the retail structure, the seasonality, the
+        kind of buyer you are likely to be presenting to, and the specification
+        decisions that follow. Where a city page exists inside that state, it goes
+        narrower still and covers one buying pattern in detail.
+      </p>
+      <p>
+        Read the state page first if you are working out how to approach a market,
+        and the city page if you already know the channel and want the specifics.
+        The <a href="/locations/cities/">city directory</a> lists all twenty.
+      </p>
+      <p class="st-note">
+        {site.name} has no premises, warehouse, held stock or staff in any of these
+        states. Packaging is made to order and shipped nationwide, with delivery
+        costed per order.
+      </p>
+    </div>
+  </section>
+
+  {
+    stateRegions.map((group, index) => (
+      <section
+        class:list={['section', index % 2 === 0 && 'section--warm']}
+        aria-labelledby={`st-${group.region.toLowerCase()}-heading`}
+      >
+        <div class="wrap">
+          <span class="eyebrow">{group.region}</span>
+          <h2 id={`st-${group.region.toLowerCase()}-heading`}>
+            {group.region === 'West' && 'Western states'}
+            {group.region === 'South' && 'Southern states'}
+            {group.region === 'Northeast' && 'Northeastern states'}
+            {group.region === 'Midwest' && 'Midwestern states'}
+          </h2>
+          <ul class="st-list">
+            {statesInRegion(group.region).map((state) => {
+              const cities = citiesInState(state.slug);
+              return (
+                <li class="st-card">
+                  <h3 class="st-card__title">
+                    <a href={locationUrl(state)}>
+                      {state.name}
+                      <span class="st-card__code">{state.stateCode}</span>
+                    </a>
+                  </h3>
+                  <p class="st-card__angle">{state.marketAngle}</p>
+                  <p class="st-card__text">{state.cardDescription}</p>
+                  {cities.length > 0 && (
+                    <div class="st-card__cities">
+                      <h4 class="st-card__citiesLabel">City guides</h4>
+                      <ul class="st-card__cityList">
+                        {cities.map((city) => (
+                          <li>
+                            <a href={locationUrl(city)}>{city.name}</a>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </section>
+    ))
+  }
+
+  <QuoteCta
+    heading="Ready for a price on your specification?"
+    body="Send dimensions, quantity, artwork status and the delivery state. You will get a written quote with production and transit time stated separately."
+  />
+</BaseLayout>
+
+<style>
+  .st-note {
+    padding: var(--sp-4);
+    background: var(--paper-warm);
+    border-left: 3px solid var(--gold);
+    border-radius: var(--radius-sm);
+    font-size: var(--step--1);
+    color: var(--ink-soft);
+    line-height: 1.65;
+  }
+  .st-list {
+    list-style: none;
+    margin: var(--sp-5) 0 0;
+    padding: 0;
+    display: grid;
+    gap: var(--sp-4);
+  }
+  @media (min-width: 44rem) {
+    .st-list {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (min-width: 68rem) {
+    .st-list {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  .st-card {
+    min-width: 0;
+    padding: var(--sp-5);
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+  }
+  .st-card__title {
+    font-size: var(--step-1);
+    margin-bottom: 0.35rem;
+  }
+  .st-card__title a {
+    text-decoration: none;
+    color: var(--ink);
+  }
+  .st-card__title a:hover {
+    color: var(--plum);
+  }
+  .st-card__code {
+    display: inline-block;
+    margin-left: 0.45rem;
+    font-family: var(--font-body);
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: var(--plum-deep);
+    background: var(--rose-soft);
+    border-radius: var(--radius-sm);
+    padding: 0.1rem 0.38rem;
+    vertical-align: 0.22em;
+  }
+  .st-card__angle {
+    font-size: 0.72rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: var(--sp-3);
+  }
+  .st-card__text {
+    font-size: var(--step--1);
+    color: var(--ink-soft);
+    line-height: 1.6;
+    margin-bottom: var(--sp-3);
+  }
+  .st-card__citiesLabel {
+    font-family: var(--font-body);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: 0.4rem;
+  }
+  .st-card__cityList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.5rem;
+    font-size: var(--step--1);
+  }
+  .st-card__cityList a {
+    display: inline-block;
+    padding: 0.1rem 0.5rem;
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    color: var(--ink-soft);
+  }
+  .st-card__cityList a:hover {
+    border-color: var(--plum);
+    color: var(--plum);
+  }
+</style>

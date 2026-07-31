@@ -1,0 +1,421 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { Image, getImage } from 'astro:assets';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import ContentBlocks from '../../components/ContentBlocks.astro';
+import FaqList from '../../components/FaqList.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import QuoteCta from '../../components/QuoteCta.astro';
+import { resources, getResource } from '../../data/resources';
+import { getProduct } from '../../data/products';
+import { productImage, publicSocialUrl } from '../../lib/images';
+import { site } from '../../data/site';
+import {
+  graph,
+  organizationSchema,
+  websiteSchema,
+  webPageSchema,
+  breadcrumbSchema,
+  faqSchema,
+  type Crumb,
+} from '../../lib/schema';
+import { abs } from '../../data/site';
+
+export const getStaticPaths: GetStaticPaths = () =>
+  resources.map((resource) => ({ params: { resource: resource.slug } }));
+
+const { resource: slug } = Astro.params;
+const resource = getResource(slug!);
+if (!resource) throw new Error(`Unknown resource slug: ${slug}`);
+
+const path = `/resources/${resource.slug}/`;
+const crumbs: Crumb[] = [
+  { name: 'Home', path: '/' },
+  { name: 'Resources', path: '/resources/' },
+  { name: resource.title },
+];
+
+const heroSource = productImage(resource.hero.slug, resource.hero.file);
+const heroAsset = await getImage({
+  src: heroSource,
+  widths: [560, 840, 1120],
+  format: 'avif',
+  width: 1120,
+  height: 840,
+});
+const ogUrl = publicSocialUrl(resource.hero.slug, resource.hero.file);
+
+const related = resource.related
+  .map((productSlug) => getProduct(productSlug))
+  .filter((p): p is NonNullable<typeof p> => Boolean(p));
+
+const relatedResources = resource.relatedResources
+  .map((resourceSlug) => getResource(resourceSlug))
+  .filter((r): r is NonNullable<typeof r> => Boolean(r));
+
+const wordCount = JSON.stringify(resource.sections).split(/\s+/).length;
+
+/*
+ * Article rather than plain WebPage: these are maintained, dated guides with a
+ * publisher. `dateModified` is the real review date recorded in the data file,
+ * never a build timestamp.
+ */
+const articleSchema = {
+  '@type': 'Article',
+  '@id': `${abs(path)}#article`,
+  headline: resource.h1,
+  description: resource.metaDescription,
+  url: abs(path),
+  mainEntityOfPage: { '@id': `${abs(path)}#webpage` },
+  dateModified: resource.updated,
+  image: abs(ogUrl),
+  inLanguage: site.locale,
+  author: { '@id': `${site.url}/#organization` },
+  publisher: { '@id': `${site.url}/#organization` },
+  about: resource.primaryKeyword,
+  wordCount,
+};
+
+const schema = graph(
+  organizationSchema(),
+  websiteSchema(),
+  webPageSchema({
+    path,
+    name: resource.h1,
+    description: resource.metaDescription,
+    primaryImage: ogUrl,
+  }),
+  breadcrumbSchema(crumbs),
+  articleSchema,
+  ...(resource.faqs && resource.faqs.length > 0 ? [faqSchema(resource.faqs, path)] : []),
+);
+
+const contents = resource.sections.map((section) => ({
+  id: section.id,
+  label: section.navLabel ?? section.heading,
+}));
+
+const updatedLabel = new Date(`${resource.updated}T00:00:00Z`).toLocaleDateString(
+  'en-US',
+  { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' },
+);
+---
+
+<BaseLayout
+  title={resource.seoTitle}
+  description={resource.metaDescription}
+  path={path}
+  ogTitle={resource.ogTitle}
+  ogDescription={resource.ogDescription}
+  ogImage={ogUrl}
+  ogImageAlt={resource.hero.alt}
+  ogType="article"
+  preloadImage={heroAsset.src}
+  preloadImageSrcset={heroAsset.srcSet.attribute}
+  preloadImageSizes="(min-width: 76rem) 72rem, 94vw"
+  preloadImageType="image/avif"
+  modifiedTime={`${resource.updated}T00:00:00Z`}
+  schema={[schema]}
+>
+  <div class="r-top">
+    <div class="wrap wrap--narrow">
+      <Breadcrumbs crumbs={crumbs} tone="warm" />
+      <p class="r-meta">
+        <span class="r-meta__group">{resource.group}</span>
+        <span aria-hidden="true">&middot;</span>
+        {resource.readingMinutes} min read
+        <span aria-hidden="true">&middot;</span>
+        Reviewed <time datetime={resource.updated}>{updatedLabel}</time>
+      </p>
+      <h1>{resource.h1}</h1>
+      <p class="lead r-deck">{resource.deck}</p>
+      <p class="r-intent"><strong>Answers:</strong> {resource.searchIntent}</p>
+      <ul class="r-highlights">
+        {resource.highlights.map((point) => <li>{point}</li>)}
+      </ul>
+    </div>
+  </div>
+
+  <figure class="r-hero">
+    <div class="wrap">
+      <Image
+        src={heroSource}
+        alt={resource.hero.alt}
+        widths={[560, 840, 1120]}
+        sizes="(min-width: 76rem) 72rem, 94vw"
+        loading="eager"
+        fetchpriority="high"
+        decoding="sync"
+        width={1120}
+        height={840}
+        class="r-hero__img"
+      />
+    </div>
+  </figure>
+
+  <div class="wrap r-body">
+    <aside class="r-toc" aria-labelledby="r-toc-heading">
+      <h2 class="r-toc__heading" id="r-toc-heading">On this page</h2>
+      <nav aria-labelledby="r-toc-heading">
+        <ol class="r-toc__list">
+          {contents.map((item) => <li><a href={`#${item.id}`}>{item.label}</a></li>)}
+          {resource.faqs && resource.faqs.length > 0 && (
+            <li><a href="#faqs">Questions</a></li>
+          )}
+        </ol>
+      </nav>
+    </aside>
+
+    <article class="r-article">
+      <ContentBlocks blocks={resource.sections} slug={resource.hero.slug} />
+
+      {
+        resource.faqs && resource.faqs.length > 0 && (
+          <section class="r-section" id="faqs" aria-labelledby="r-faqs-heading">
+            <h2 class="r-section__heading" id="r-faqs-heading">
+              {resource.title}: common questions
+            </h2>
+            <FaqList faqs={resource.faqs} level={3} />
+          </section>
+        )
+      }
+
+      {
+        relatedResources.length > 0 && (
+          <section class="r-section" aria-labelledby="r-next-heading">
+            <h2 class="r-section__heading" id="r-next-heading">Read next</h2>
+            <ul class="r-next">
+              {relatedResources.map((next) => (
+                <li>
+                  <a href={`/resources/${next.slug}/`}>
+                    <span class="r-next__title">{next.title}</span>
+                    <span class="r-next__text">{next.searchIntent}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )
+      }
+    </article>
+  </div>
+
+  {
+    related.length > 0 && (
+      <section class="section section--warm" aria-labelledby="r-products-heading">
+        <div class="wrap">
+          <span class="eyebrow">Packaging covered here</span>
+          <h2 id="r-products-heading">Products this guide applies to</h2>
+          <div class="grid grid--products r-products">
+            {related.map((product) => <ProductCard product={product} compact />)}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  <QuoteCta
+    heading="Ready to put this into a specification?"
+    body="Send your dimensions, quantity and artwork status, and you will get a written price with anything we still need clarified."
+  />
+</BaseLayout>
+
+<style>
+  .r-top {
+    background:
+      radial-gradient(
+        120% 100% at 90% 0%,
+        color-mix(in srgb, var(--rose-soft) 52%, transparent) 0%,
+        transparent 62%
+      ),
+      var(--paper-warm);
+    padding-block: var(--sp-5) var(--sp-7);
+  }
+  .r-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin: var(--sp-5) 0 var(--sp-4);
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+  }
+  .r-meta__group {
+    display: inline-block;
+    padding: 0.15rem 0.55rem;
+    background: var(--rose-soft);
+    color: var(--plum-deep);
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+  }
+  .r-top h1 {
+    font-size: var(--step-4);
+    margin-bottom: var(--sp-4);
+  }
+  .r-deck {
+    margin-bottom: var(--sp-4);
+    max-width: 50ch;
+  }
+  .r-intent {
+    font-size: var(--step--1);
+    color: var(--ink-soft);
+    padding: var(--sp-3) var(--sp-4);
+    background: var(--white);
+    border-left: 3px solid var(--gold);
+    border-radius: var(--radius-sm);
+    max-width: 56ch;
+    margin-bottom: var(--sp-5);
+  }
+  .r-highlights {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2) var(--sp-5);
+    font-size: var(--step--1);
+    color: var(--ink-soft);
+  }
+  .r-highlights li {
+    position: relative;
+    padding-left: 1rem;
+  }
+  .r-highlights li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--rose);
+  }
+
+  .r-hero {
+    margin: 0;
+    background: var(--paper-warm);
+    padding-bottom: var(--sp-7);
+  }
+  .r-hero__img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+  }
+  @media (min-width: 48rem) {
+    .r-hero__img {
+      aspect-ratio: 21 / 9;
+    }
+  }
+
+  .r-body {
+    display: grid;
+    gap: var(--sp-6);
+    padding-block: var(--sp-7);
+  }
+  @media (min-width: 68rem) {
+    .r-body {
+      grid-template-columns: 15rem 1fr;
+      gap: var(--sp-8);
+      align-items: start;
+    }
+  }
+  .r-toc {
+    display: none;
+  }
+  @media (min-width: 68rem) {
+    .r-toc {
+      display: block;
+      position: sticky;
+      top: 5.5rem;
+    }
+  }
+  .r-toc__heading {
+    font-family: var(--font-body);
+    font-size: var(--step--1);
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: var(--sp-3);
+  }
+  .r-toc__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-left: 1px solid var(--line);
+  }
+  .r-toc__list a {
+    display: block;
+    padding: 0.35rem 0 0.35rem 0.85rem;
+    font-size: var(--step--1);
+    color: var(--ink-soft);
+    text-decoration: none;
+    border-left: 2px solid transparent;
+    margin-left: -1px;
+    line-height: 1.45;
+  }
+  .r-toc__list a:hover {
+    color: var(--plum);
+    border-left-color: var(--rose);
+  }
+
+  .r-article {
+    max-width: 44rem;
+    min-width: 0;
+  }
+  .r-section {
+    padding-block: var(--sp-6);
+    border-top: 1px solid var(--line);
+    scroll-margin-top: 6rem;
+  }
+  .r-section__heading {
+    font-size: var(--step-2);
+    margin-bottom: var(--sp-4);
+  }
+
+  .r-next {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--sp-3);
+  }
+  .r-next a {
+    display: block;
+    padding: var(--sp-4);
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    text-decoration: none;
+    transition: border-color 0.18s var(--ease);
+  }
+  .r-next a:hover {
+    border-color: var(--plum);
+  }
+  .r-next__title {
+    display: block;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.2rem;
+  }
+  .r-next a:hover .r-next__title {
+    color: var(--plum);
+  }
+  .r-next__text {
+    display: block;
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+    line-height: 1.55;
+  }
+
+  .r-products {
+    margin-top: var(--sp-5);
+  }
+</style>

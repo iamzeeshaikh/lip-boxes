@@ -7,7 +7,7 @@ import ProductCard from '../../components/ProductCard.astro';
 import QuoteCta from '../../components/QuoteCta.astro';
 import { blogPosts, getPost } from '../../data/blog';
 import { getProduct } from '../../data/products';
-import { productImage } from '../../lib/images';
+import { productImage, publicSocialUrl } from '../../lib/images';
 import { site } from '../../data/site';
 import {
   graph,
@@ -41,12 +41,7 @@ const heroAsset = await getImage({
   width: 1280,
   height: 960,
 });
-const ogAsset = await getImage({
-  src: heroSource,
-  width: 1200,
-  height: 900,
-  format: 'png',
-});
+const ogUrl = publicSocialUrl(post.heroFrom.slug, post.heroFrom.file);
 
 const related = post.related
   .map((relatedSlug) => getProduct(relatedSlug))
@@ -69,7 +64,7 @@ const schema = graph(
     path,
     name: post.title,
     description: post.metaDescription,
-    primaryImage: ogAsset.src,
+    primaryImage: ogUrl,
   }),
   breadcrumbSchema(crumbs),
   blogPostingSchema({
@@ -78,7 +73,7 @@ const schema = graph(
     description: post.metaDescription,
     published: post.published,
     modified: post.updated,
-    image: ogAsset.src,
+    image: ogUrl,
     wordCount,
   }),
 );
@@ -95,7 +90,7 @@ const publishedLabel = new Date(`${post.published}T09:00:00Z`).toLocaleDateStrin
   path={path}
   ogTitle={post.title}
   ogDescription={post.deck}
-  ogImage={ogAsset.src}
+  ogImage={ogUrl}
   ogImageAlt={post.heroFrom.alt}
   ogType="article"
   preloadImage={heroAsset.src}

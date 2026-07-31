@@ -1,0 +1,183 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PageHero from '../../../components/PageHero.astro';
+import QuoteCta from '../../../components/QuoteCta.astro';
+import { indexableCities, locationUrl } from '../../../data/locations';
+import { site } from '../../../data/site';
+import {
+  graph,
+  organizationSchema,
+  websiteSchema,
+  webPageSchema,
+  breadcrumbSchema,
+  type Crumb,
+} from '../../../lib/schema';
+
+const path = '/locations/cities/';
+const crumbs: Crumb[] = [
+  { name: 'Home', path: '/' },
+  { name: 'Locations', path: '/locations/' },
+  { name: 'Cities' },
+];
+
+const schema = graph(
+  organizationSchema(),
+  websiteSchema(),
+  webPageSchema({
+    path,
+    name: 'Lip Packaging by City',
+    description:
+      'Twenty city guides to lip packaging, each written around a single buying pattern in that market.',
+    type: 'CollectionPage',
+  }),
+  breadcrumbSchema(crumbs),
+);
+
+const rows = indexableCities;
+---
+
+<BaseLayout
+  title="Lip Packaging by City | 20 US City Guides"
+  description="Twenty city guides to custom lip packaging, each written around one buying pattern in that market. Made to order and shipped nationwide."
+  path={path}
+  schema={[schema]}
+>
+  <PageHero
+    eyebrow="Locations"
+    h1="Lip Packaging by City"
+    lead="Twenty markets, each covered through the single buying pattern that most affects how packaging is specified there."
+    crumbs={crumbs}
+    points={[`${indexableCities.length} cities covered`, 'One pattern per page', 'Shipped nationwide']}
+  />
+
+  <section class="section" aria-labelledby="ci-intro-heading">
+    <div class="wrap wrap--narrow">
+      <h2 id="ci-intro-heading">Narrower than a state page, on purpose</h2>
+      <p>
+        A state page describes a market broadly. A city page picks the one thing
+        that changes decisions there and stays with it: peg-fixture engineering in
+        Phoenix, freight consolidation in Jacksonville, refill programme structure
+        in Seattle, third-party logistics intake in Indianapolis.
+      </p>
+      <p>
+        That is why each city page also says explicitly how it differs from its
+        parent state page. If you want the wider view, the{' '}
+        <a href="/locations/states/">state directory</a> has it.
+      </p>
+      <p class="ci-note">
+        {site.name} has no address, warehouse, held stock, staff or collection point
+        in any city listed here. Everything is made to order and shipped through a
+        nationwide carrier service.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section--warm" aria-labelledby="ci-list-heading">
+    <div class="wrap">
+      <span class="eyebrow">Directory</span>
+      <h2 id="ci-list-heading">All twenty city guides</h2>
+      <ul class="ci-list">
+        {
+          rows.map((city) => (
+            <li class="ci-card">
+              <h3 class="ci-card__title">
+                <a href={locationUrl(city)}>{city.name}</a>
+              </h3>
+              <p class="ci-card__where">
+                {city.state}
+                <span class="ci-card__code">{city.stateCode}</span>
+              </p>
+              <p class="ci-card__text">{city.cardDescription}</p>
+              <p class="ci-card__angle">{city.marketAngle}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <QuoteCta
+    heading="Send a specification and get a written price"
+    body="Dimensions, quantity, artwork status and the delivery city. Anything that cannot be priced without more detail comes back as a specific question rather than a vague estimate."
+  />
+</BaseLayout>
+
+<style>
+  .ci-note {
+    padding: var(--sp-4);
+    background: var(--paper-warm);
+    border-left: 3px solid var(--gold);
+    border-radius: var(--radius-sm);
+    font-size: var(--step--1);
+    color: var(--ink-soft);
+    line-height: 1.65;
+  }
+  .ci-list {
+    list-style: none;
+    margin: var(--sp-5) 0 0;
+    padding: 0;
+    display: grid;
+    gap: var(--sp-4);
+  }
+  @media (min-width: 44rem) {
+    .ci-list {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (min-width: 68rem) {
+    .ci-list {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .ci-card {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    padding: var(--sp-5);
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+  }
+  .ci-card__title {
+    font-size: var(--step-1);
+    margin-bottom: 0.2rem;
+  }
+  .ci-card__title a {
+    text-decoration: none;
+    color: var(--ink);
+  }
+  .ci-card__title a:hover {
+    color: var(--plum);
+  }
+  .ci-card__where {
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+    margin-bottom: var(--sp-3);
+  }
+  .ci-card__code {
+    display: inline-block;
+    margin-left: 0.4rem;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: var(--plum-deep);
+    background: var(--rose-soft);
+    border-radius: var(--radius-sm);
+    padding: 0.08rem 0.35rem;
+  }
+  .ci-card__text {
+    font-size: var(--step--1);
+    color: var(--ink-soft);
+    line-height: 1.6;
+    margin-bottom: var(--sp-3);
+  }
+  .ci-card__angle {
+    margin: auto 0 0;
+    padding-top: var(--sp-3);
+    border-top: 1px solid var(--line);
+    font-size: 0.72rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+  }
+</style>

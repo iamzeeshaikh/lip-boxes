@@ -1,0 +1,277 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PageHero from '../../components/PageHero.astro';
+import FaqList from '../../components/FaqList.astro';
+import QuoteCta from '../../components/QuoteCta.astro';
+import {
+  stateRegions,
+  statesInRegion,
+  indexableStates,
+  indexableCities,
+  locationUrl,
+} from '../../data/locations';
+import { site } from '../../data/site';
+import {
+  graph,
+  organizationSchema,
+  websiteSchema,
+  webPageSchema,
+  breadcrumbSchema,
+  faqSchema,
+  type Crumb,
+} from '../../lib/schema';
+
+const path = '/locations/';
+const crumbs: Crumb[] = [{ name: 'Home', path: '/' }, { name: 'Locations' }];
+
+const faqs = [
+  {
+    q: 'Do you have offices or plants in these locations?',
+    a: `No. ${site.name} has no branch, plant, warehouse or held stock in any of the states or cities listed here. Every order is manufactured to order and shipped through a nationwide carrier service.`,
+  },
+  {
+    q: 'Then what are these pages for?',
+    a: 'Each one is written around a buying pattern that is genuinely characteristic of that market: what the retailers there ask for, how the seasonality runs, what buyers check in a meeting. They exist to be useful reading, not to imply a local presence.',
+  },
+  {
+    q: 'Does the price change depending on where I am?',
+    a: 'The packaging price does not. Delivery is quoted per order and does vary with destination, weight and how quickly you need it, so the total on your quote reflects where it is going.',
+  },
+  {
+    q: 'You do not list my state or city. Can you still supply me?',
+    a: 'Yes. Delivery covers the whole United States. These forty pages cover the markets we are asked about most often, not the limits of where packaging can be sent.',
+  },
+  {
+    q: 'Can I collect an order in person?',
+    a: 'No. There is no collection point anywhere in the directory, so every order is shipped to the address on the quote.',
+  },
+  {
+    q: 'How quickly will an order reach me?',
+    a: 'That depends on the specification and the destination, so it is confirmed in writing on the quote rather than promised in advance. Production time and transit time are stated separately.',
+  },
+];
+
+const schema = graph(
+  organizationSchema(),
+  websiteSchema(),
+  webPageSchema({
+    path,
+    name: 'Lip Packaging Across the United States',
+    description:
+      'A directory of twenty state pages and twenty city pages, each written around the buying pattern of that market.',
+    type: 'CollectionPage',
+  }),
+  breadcrumbSchema(crumbs),
+  faqSchema(faqs, path),
+);
+---
+
+<BaseLayout
+  title="Locations | Lip Packaging Across the United States"
+  description="State and city guides to lip packaging across the US, each written around how that market actually buys. Made to order, shipped nationwide."
+  path={path}
+  schema={[schema]}
+>
+  <PageHero
+    eyebrow="Locations"
+    h1="Lip Packaging Across the United States"
+    lead="Forty market guides: what retailers in each place ask for, how the season runs there, and which packaging formats fit."
+    crumbs={crumbs}
+    points={[
+      `${indexableStates.length} state guides`,
+      `${indexableCities.length} city guides`,
+      'Shipped nationwide',
+    ]}
+  />
+
+  <section class="section" aria-labelledby="loc-intro-heading">
+    <div class="wrap wrap--narrow">
+      <h2 id="loc-intro-heading">What these pages are, and what they are not</h2>
+      <p>
+        Packaging requirements shift by market, and not for vague reasons. A brand
+        selling into resort retail in Florida is specifying against humidity and a
+        fixed season. One selling into planogram-driven chains out of Illinois is
+        specifying against a reset date it does not control. One selling to outdoor
+        specialty buyers in Denver is being asked whether the label survives water.
+        Those are different briefs, and each page here is written around the one that
+        applies.
+      </p>
+      <p class="loc-disclosure">
+        <strong>To be plain about it:</strong> {site.name} has no office, plant,
+        warehouse, held stock, local staff or collection point in any location listed
+        below. Packaging is manufactured to order and delivered through a nationwide
+        carrier service. These pages describe markets we supply, not places we occupy.
+      </p>
+      <p>
+        If your state or city is not listed, nothing changes about what you can order.
+        Start with the <a href="/products/">product range</a> and work out the format.
+      </p>
+      <p>
+        From there the <a href="/resources/">packaging guides</a> cover sizing, cost
+        and artwork in more depth than any market page does.
+      </p>
+      <p>
+        When you have dimensions and a quantity, send a{' '}
+        <a href="/request-a-quote/">quote request</a> and you will get a written price.
+      </p>
+    </div>
+  </section>
+
+  <section class="section section--warm" aria-labelledby="loc-states-heading">
+    <div class="wrap">
+      <span class="eyebrow">By state</span>
+      <h2 id="loc-states-heading">State guides</h2>
+      <p class="loc-lede">
+        Twenty states, grouped by region for navigation only. Each page covers the
+        characteristic of that state's market that changes a packaging specification.
+        <a href="/locations/states/">See the full state directory</a>.
+      </p>
+
+      {
+        stateRegions.map((group) => (
+          <div class="loc-region">
+            <h3 class="loc-region__heading">{group.region}</h3>
+            <ul class="loc-grid">
+              {statesInRegion(group.region).map((state) => (
+                <li>
+                  <a href={locationUrl(state)}>
+                    <span class="loc-grid__name">{state.name}</span>
+                    <span class="loc-grid__angle">{state.marketAngle}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="loc-cities-heading">
+    <div class="wrap">
+      <span class="eyebrow">By city</span>
+      <h2 id="loc-cities-heading">City guides</h2>
+      <p class="loc-lede">
+        Twenty cities, each narrower than its state page and built around one
+        buying pattern rather than a statewide overview.
+        <a href="/locations/cities/">See the full city directory</a>.
+      </p>
+      <ul class="loc-grid">
+        {
+          indexableCities.map((city) => (
+            <li>
+              <a href={locationUrl(city)}>
+                <span class="loc-grid__name">
+                  {city.name}
+                  <span class="loc-grid__state">{city.stateCode}</span>
+                </span>
+                <span class="loc-grid__angle">{city.marketAngle}</span>
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section--warm" aria-labelledby="loc-faqs-heading">
+    <div class="wrap wrap--narrow">
+      <h2 id="loc-faqs-heading">Questions about supply and delivery</h2>
+      <FaqList faqs={faqs} level={3} />
+    </div>
+  </section>
+
+  <QuoteCta
+    heading="Wherever it is going, the quote is written the same way"
+    body="Send your dimensions, quantity and delivery destination. You will get a written price with production time and transit time stated separately."
+  />
+</BaseLayout>
+
+<style>
+  .loc-disclosure {
+    padding: var(--sp-4);
+    background: var(--paper-warm);
+    border-left: 3px solid var(--gold);
+    border-radius: var(--radius-sm);
+    font-size: var(--step--1);
+    color: var(--ink-soft);
+    line-height: 1.65;
+  }
+  .loc-lede {
+    max-width: 60ch;
+    margin-bottom: var(--sp-5);
+  }
+  .loc-region {
+    margin-bottom: var(--sp-6);
+  }
+  .loc-region__heading {
+    font-family: var(--font-body);
+    font-size: var(--step--1);
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    margin-bottom: var(--sp-3);
+  }
+  .loc-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: var(--sp-3);
+  }
+  @media (min-width: 40rem) {
+    .loc-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (min-width: 62rem) {
+    .loc-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .loc-grid a {
+    display: block;
+    height: 100%;
+    min-width: 0;
+    padding: var(--sp-4);
+    background: var(--white);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    text-decoration: none;
+    transition:
+      border-color 0.18s var(--ease),
+      transform 0.18s var(--ease);
+  }
+  .loc-grid a:hover {
+    border-color: var(--plum);
+    transform: translateY(-2px);
+  }
+  .loc-grid__name {
+    display: block;
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 0.25rem;
+  }
+  .loc-grid a:hover .loc-grid__name {
+    color: var(--plum);
+  }
+  .loc-grid__state {
+    display: inline-block;
+    margin-left: 0.4rem;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    color: var(--plum-deep);
+    background: var(--rose-soft);
+    border-radius: var(--radius-sm);
+    padding: 0.08rem 0.35rem;
+    vertical-align: 0.1em;
+  }
+  .loc-grid__angle {
+    display: block;
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+    line-height: 1.5;
+  }
+</style>

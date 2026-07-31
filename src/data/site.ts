@@ -77,10 +77,18 @@ export const sameAs = Object.values(site.social).filter(
   (v): v is string => typeof v === 'string' && v.length > 0,
 );
 
-/** Absolute, trailing-slash URL for any internal path. */
+/**
+ * Absolute URL for an internal path.
+ *
+ * Page paths gain a trailing slash. Anything carrying a query string, a hash or
+ * a file extension is left exactly as given — appending a slash after a query
+ * string produces a URL that does not resolve.
+ */
 export function abs(path: string): string {
   if (/^https?:\/\//.test(path)) return path;
-  let p = path.startsWith('/') ? path : `/${path}`;
-  if (!p.endsWith('/') && !/\.[a-z0-9]+$/i.test(p)) p += '/';
-  return `${site.url}${p}`;
+  const p = path.startsWith('/') ? path : `/${path}`;
+  const hasQueryOrHash = /[?#]/.test(p);
+  const looksLikeFile = /\.[a-z0-9]{2,5}$/i.test(p.split(/[?#]/)[0]);
+  if (p.endsWith('/') || hasQueryOrHash || looksLikeFile) return `${site.url}${p}`;
+  return `${site.url}${p}/`;
 }

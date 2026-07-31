@@ -6,7 +6,7 @@ import QuoteCta from '../components/QuoteCta.astro';
 import Icon from '../components/Icon.astro';
 import { indexableProducts, getProduct } from '../data/products';
 import { blogPosts } from '../data/blog';
-import { productImage } from '../lib/images';
+import { productImage, publicSocialUrl } from '../lib/images';
 import { site } from '../data/site';
 import {
   graph,
@@ -41,12 +41,7 @@ const heroAsset = await getImage({
   width: 960,
   height: 960,
 });
-const ogAsset = await getImage({
-  src: heroSource,
-  width: 1200,
-  height: 1200,
-  format: 'png',
-});
+const ogUrl = publicSocialUrl('lipstick-boxes', 'lipstick-boxes-nude-collection.png');
 
 const latest = blogPosts.slice(0, 3);
 
@@ -90,7 +85,7 @@ const capabilities = [
   path="/"
   ogTitle="Custom Packaging for Lip Balm, Lipstick and Lip Gloss"
   ogDescription="Folding cartons, paper tubes, labels and rigid boxes made to your dimensions and printed to your artwork. Quote based, US-wide."
-  ogImage={ogAsset.src}
+  ogImage={ogUrl}
   ogImageAlt="A collection of printed nude lipstick boxes with matching lipstick cases"
   preloadImage={heroAsset.src}
   preloadImageSrcset={heroAsset.srcSet.attribute}
@@ -117,7 +112,7 @@ const capabilities = [
           </a>
           <a href="/products/" class="btn btn--secondary">See all products</a>
         </div>
-        <p class="hero__price">{site.startingPriceStatement}</p>
+        <p class="hero__price" data-boilerplate>{site.startingPriceStatement}</p>
       </div>
 
       <div class="hero__media">

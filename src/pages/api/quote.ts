@@ -9,6 +9,7 @@
 import type { APIRoute } from 'astro';
 import { site } from '../../data/site';
 import { products } from '../../data/products';
+import { locations } from '../../data/locations';
 import {
   checkUpload,
   escapeHtml,
@@ -227,12 +228,29 @@ export const POST: APIRoute = async ({ request }) => {
       ? `${submittedProduct} (not a listed product)`
       : 'Not specified';
 
+  // Same treatment as the product field: only a published location name is
+  // echoed back verbatim, so the subject line cannot be set by a crafted post.
+  const submittedLocation = sanitizeHeaderValue(form.get('location'), 120);
+  const knownLocation = locations.find(
+    (l) => l.name.toLowerCase() === submittedLocation.toLowerCase(),
+  );
+  const locationLabel = knownLocation
+    ? `${knownLocation.name}${knownLocation.type === 'city' ? `, ${knownLocation.stateCode}` : ''}`
+    : submittedLocation
+      ? `${submittedLocation} (not a listed location)`
+      : '';
+
+  const pageTitle = sanitizeText(form.get('pageTitle'), 200);
+  const clientStamp = sanitizeHeaderValue(form.get('submittedAt'), 40);
+
   const rows: [string, string][] = [
     ['Name', name],
     ['Email', email],
     ['Phone', phone],
     ['Product', productLabel],
   ];
+
+  if (locationLabel) rows.push(['Location page', locationLabel]);
 
   if (formType === 'full') {
     for (const field of LONG_FIELDS) {
@@ -243,11 +261,15 @@ export const POST: APIRoute = async ({ request }) => {
   }
 
   rows.push(['Source page', pageUrl || 'Not recorded']);
+  if (pageTitle) rows.push(['Page title', pageTitle]);
   rows.push(['Submitted', new Date().toISOString()]);
+  if (clientStamp) rows.push(['Submitted (browser)', clientStamp]);
   rows.push(['Attachment', attachment ? attachment.filename : 'None']);
 
   const subject = sanitizeHeaderValue(
-    `Quote request — ${productLabel} — ${name}`,
+    locationLabel && knownLocation
+      ? `Quote request — ${productLabel} — ${knownLocation.name} — ${name}`
+      : `Quote request — ${productLabel} — ${name}`,
     150,
   );
 

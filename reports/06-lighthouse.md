@@ -7,22 +7,32 @@ than these.
 
 | Page | Mode | Performance | Accessibility | Best practices | SEO | LCP | CLS | TBT |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| / | mobile | 96 | 100 | 100 | 100 | 2.7 s | 0 | 0 ms |
-| / | desktop | 100 | 100 | 100 | 100 | 0.5 s | 0 | 0 ms |
-| /products/ | mobile | 97 | 100 | 100 | 100 | 2.5 s | 0 | 0 ms |
+| / | mobile | 94 | 100 | 100 | 100 | 3.0 s | 0 | 0 ms |
+| / | desktop | 100 | 100 | 100 | 100 | 0.6 s | 0 | 0 ms |
+| /products/ | mobile | 95 | 100 | 100 | 100 | 2.9 s | 0 | 0 ms |
 | /products/ | desktop | 100 | 100 | 100 | 100 | 0.6 s | 0 | 0 ms |
 | /custom-lip-balm-boxes/ | mobile | 95 | 100 | 100 | 100 | 2.7 s | 0 | 0 ms |
 | /custom-lip-balm-boxes/ | desktop | 100 | 100 | 100 | 100 | 0.6 s | 0 | 0 ms |
-| /holographic-lip-gloss-boxes/ | mobile | 96 | 100 | 100 | 100 | 2.7 s | 0 | 0 ms |
-| /holographic-lip-gloss-boxes/ | desktop | 100 | 100 | 100 | 100 | 0.6 s | 0 | 0 ms |
-| /lip-balm-packaging/ | mobile | 97 | 100 | 100 | 100 | 2.5 s | 0 | 0 ms |
-| /lip-balm-packaging/ | desktop | 100 | 100 | 100 | 100 | 0.5 s | 0 | 0 ms |
-| /request-a-quote/ | mobile | 99 | 100 | 100 | 100 | 2.2 s | 0 | 0 ms |
+| /holographic-lip-gloss-boxes/ | mobile | 95 | 100 | 100 | 100 | 2.7 s | 0 | 0 ms |
+| /holographic-lip-gloss-boxes/ | desktop | 100 | 100 | 100 | 100 | 0.7 s | 0 | 0 ms |
+| /lip-balm-packaging/ | mobile | 95 | 100 | 100 | 100 | 2.7 s | 0 | 0 ms |
+| /lip-balm-packaging/ | desktop | 100 | 100 | 100 | 100 | 0.6 s | 0 | 0 ms |
+| /request-a-quote/ | mobile | 98 | 100 | 100 | 100 | 2.3 s | 0 | 0 ms |
 | /request-a-quote/ | desktop | 100 | 100 | 100 | 100 | 0.5 s | 0 | 0 ms |
-| /blog/how-packaging-quantity-affects-unit-pricing/ | mobile | 98 | 100 | 100 | 100 | 2.4 s | 0 | 0 ms |
+| /blog/how-packaging-quantity-affects-unit-pricing/ | mobile | 97 | 100 | 100 | 100 | 2.6 s | 0 | 0 ms |
 | /blog/how-packaging-quantity-affects-unit-pricing/ | desktop | 100 | 100 | 100 | 100 | 0.5 s | 0 | 0 ms |
 | /materials/ | mobile | 99 | 100 | 100 | 100 | 2.1 s | 0 | 0 ms |
 | /materials/ | desktop | 100 | 100 | 100 | 100 | 0.5 s | 0 | 0 ms |
+| /resources/ | mobile | 98 | 100 | 100 | 100 | 2.3 s | 0 | 0 ms |
+| /resources/ | desktop | 100 | 100 | 100 | 100 | 0.5 s | 0 | 0 ms |
+| /resources/lip-balm-box-size-guide/ | mobile | 97 | 100 | 100 | 100 | 2.6 s | 0 | 0 ms |
+| /resources/lip-balm-box-size-guide/ | desktop | 100 | 100 | 100 | 100 | 0.6 s | 0 | 0 ms |
+| /locations/ | mobile | 98 | 100 | 100 | 100 | 2.3 s | 0 | 0 ms |
+| /locations/ | desktop | 100 | 100 | 100 | 100 | 0.5 s | 0 | 0 ms |
+| /locations/states/texas/ | mobile | 98 | 100 | 100 | 100 | 2.3 s | 0 | 0 ms |
+| /locations/states/texas/ | desktop | 100 | 100 | 100 | 100 | 0.5 s | 0 | 0 ms |
+| /locations/cities/phoenix/ | mobile | 98 | 100 | 100 | 100 | 2.3 s | 0 | 0 ms |
+| /locations/cities/phoenix/ | desktop | 100 | 100 | 100 | 100 | 0.5 s | 0 | 0 ms |
 
 ## Core Web Vitals against target
 

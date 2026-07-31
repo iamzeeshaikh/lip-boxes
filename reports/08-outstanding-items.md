@@ -62,7 +62,7 @@ to add once you have evidence.
 | **`priceValidUntil`** | No genuine expiry date exists | Offer schema |
 | **A physical address or map** | Not confirmed | Contact page |
 | **`LocalBusiness` schema** | Requires a genuine physical location represented on the page. `Organization` is used instead | Sitewide |
-| **City and state landing pages** | Deliberately not generated. The architecture supports them, but thin city-swapped pages would be worse than none | — |
+| **Local offices, plants, warehouses or staff** | None exist. The forty location pages state this explicitly rather than implying a local presence, and none uses "located in", "based in" or "near you" | Location pages |
 
 ### The one price that *is* stated
 
@@ -76,11 +76,32 @@ the visible statement backing it.
 
 ## C. Location pages
 
-No city or state pages were generated. The data layer and routing would support
-them, but publishing name-swapped pages would create exactly the duplicate-intent
-problem the rest of the build avoids.
+Forty were published after this report was first written: twenty state pages and
+twenty city pages under `/locations/`. They were built to the constraints below,
+which are the ones that make the difference between a useful market page and a
+name-swapped one.
 
-If you later want them, publish only for markets where you can write something
-genuinely specific — a real fulfilment route, a named regional retail programme,
-a genuine local presence — and do not use `LocalBusiness` schema unless the page
-represents a real physical location.
+**What each page does contain:** a single market characteristic it is written
+around, three or four content blocks in an order that differs from its
+neighbours, eight questions unique to it, a set of related products chosen for
+that market, and a short quote form that posts to the existing endpoint.
+
+**What none of them contains:** a local office, plant, warehouse, employee,
+phone number, customer count, guaranteed delivery time, same-day service, free
+shipping, local certification or partnership with a local business. Every page
+states in plain words that packaging is made to order and shipped nationwide,
+and that there is no local stock or collection point.
+
+**Schema:** `Organization`, `WebSite`, `WebPage`, `BreadcrumbList` and
+`FAQPage`. No `LocalBusiness`, because there is no physical location to
+represent. No `Product`, because that belongs on the product pages.
+
+**The honest expectation**, repeated from `07-duplicate-intent-report.md`:
+location pages without a physical presence are weaker than pages backed by a
+real address. Some of these forty may not be indexed. The plan if that happens
+is to consolidate down to the markets that earn traffic, not to add more.
+
+**Still outstanding for this family:** if a genuine fulfilment partner, regional
+warehouse or physical location is established in any of these markets, that page
+can then say so — and only then does `LocalBusiness` schema become appropriate
+for it.

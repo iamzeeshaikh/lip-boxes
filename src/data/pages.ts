@@ -17,6 +17,10 @@ export interface StaticPage {
 export const staticPages: StaticPage[] = [
   { path: '/', priority: 1.0, changefreq: 'weekly' },
   { path: '/products/', priority: 0.9, changefreq: 'weekly' },
+  { path: '/resources/', priority: 0.8, changefreq: 'monthly' },
+  { path: '/locations/', priority: 0.7, changefreq: 'monthly' },
+  { path: '/locations/states/', priority: 0.6, changefreq: 'monthly' },
+  { path: '/locations/cities/', priority: 0.6, changefreq: 'monthly' },
   { path: '/custom-packaging/', priority: 0.7, changefreq: 'monthly' },
   { path: '/materials/', priority: 0.7, changefreq: 'monthly' },
   { path: '/printing-options/', priority: 0.7, changefreq: 'monthly' },
