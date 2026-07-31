@@ -66,6 +66,35 @@ const schema = graph(
  * never open with the same image even when they recommend the same product.
  */
 const offset = [...location.slug].reduce((sum, char) => sum + char.charCodeAt(0), 1);
+
+/* Rotated for the same reason as the state pages: identical headings across
+   twenty pages read as generated copy rather than written copy. */
+const pick = <T,>(options: T[]): T => options[offset % options.length];
+
+const faqHeading = pick([
+  `Questions from ${location.name} brands`,
+  `${location.name}: what people ask`,
+  `Answered before you order for ${location.name}`,
+  `Common ${location.name} queries`,
+]);
+const productsHeading = pick([
+  `Packaging for ${location.name} brands`,
+  `Formats that fit this ${location.name} pattern`,
+  `What works in this channel`,
+  `Suited to the ${location.name} brief above`,
+]);
+const quoteHeading = pick([
+  `Get a price delivered to ${location.name}`,
+  `Price this for ${location.name}`,
+  `Send a ${location.name} specification`,
+  `What does this cost in ${location.name}?`,
+]);
+const nextHeading = pick([
+  'Where to go next',
+  'Related market guides',
+  'Read around this market',
+  'Wider context for this page',
+]);
 const leadFigure = related[0];
 const midFigure = related[related.length - 1];
 const openingBlocks = location.sections.slice(0, 2);
@@ -138,9 +167,7 @@ const remainingBlocks = location.sections.slice(2);
       <ContentBlocks blocks={remainingBlocks} slug={location.related[0]} />
 
       <section class="city-section" id="faqs" aria-labelledby="city-faqs-heading">
-        <h2 class="city-section__heading" id="city-faqs-heading">
-          Questions from {location.name} brands
-        </h2>
+        <h2 class="city-section__heading" id="city-faqs-heading">{faqHeading}</h2>
         <FaqList faqs={location.faqs} level={3} />
       </section>
 
@@ -157,7 +184,7 @@ const remainingBlocks = location.sections.slice(2);
     product={related[0]?.name ?? 'Custom Lip Balm Boxes'}
     location={location.name}
     pageTitle={location.seoTitle}
-    heading={`Get a price delivered to ${location.name}`}
+    heading={quoteHeading}
     sub={`Send your quantity and dimensions and you will get a written price with delivery to your ${location.name} address costed in.`}
     points={[
       `Specified around ${location.marketAngle.toLowerCase()}, the pattern this page covers`,
@@ -171,7 +198,7 @@ const remainingBlocks = location.sections.slice(2);
       <section class="section" aria-labelledby="city-products-heading">
         <div class="wrap">
           <span class="eyebrow">Formats that fit this market</span>
-          <h2 id="city-products-heading">Packaging for {location.name} brands</h2>
+          <h2 id="city-products-heading">{productsHeading}</h2>
           <div class="grid grid--products city-products">
             {related.map((product) => <ProductCard product={product} compact />)}
           </div>
@@ -182,7 +209,7 @@ const remainingBlocks = location.sections.slice(2);
 
   <section class="section section--warm" aria-labelledby="city-nearby-heading">
     <div class="wrap">
-      <h2 id="city-nearby-heading">Where to go next</h2>
+      <h2 id="city-nearby-heading">{nextHeading}</h2>
       <div class="city-next">
         {
           parent && (

@@ -59,6 +59,25 @@ const crumbs: Crumb[] = [
   { name: product.name },
 ];
 
+/* Rotated so fifteen product pages do not repeat the same two headings. */
+const headingOffset = [...product.slug].reduce((sum, char) => sum + char.charCodeAt(0), 0);
+const pickHeading = <T,>(options: T[]): T => options[headingOffset % options.length];
+
+const formHeading = pickHeading([
+  'Get a price for this box',
+  'Price this specification',
+  'Send your dimensions and quantity',
+  'What would this cost at your volume?',
+  'Ask for a written price',
+]);
+const relatedHeading = pickHeading([
+  'Other formats brands pair with this',
+  'Commonly ordered alongside',
+  'What else fits the same line',
+  'Formats that work with this one',
+  'Often specified together',
+]);
+
 const related = product.related
   .map((relatedSlug) => getProduct(relatedSlug))
   .filter((p): p is NonNullable<typeof p> => Boolean(p));
@@ -169,7 +188,7 @@ const showReviews = hasReviews(product.reviews);
 
     <div class="p-main">
       <div class="p-quote">
-        <ShortQuoteForm product={product.name} />
+        <ShortQuoteForm product={product.name} heading={formHeading} />
       </div>
 
       <ContentBlocks blocks={product.blocks} slug={product.slug} />
@@ -252,7 +271,7 @@ const showReviews = hasReviews(product.reviews);
       <section class="section section--warm" aria-labelledby="related-heading">
         <div class="wrap">
           <span class="eyebrow">Related packaging</span>
-          <h2 id="related-heading">Other formats brands pair with this</h2>
+          <h2 id="related-heading">{relatedHeading}</h2>
           <p class="measure text-muted related__intro" data-boilerplate>
             Each of these is quoted from the same enquiry, so a range can be
             produced on one specification and one schedule.

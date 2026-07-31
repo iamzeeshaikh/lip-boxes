@@ -92,8 +92,9 @@ export const jacksonville: Location = {
       a: 'The Florida page covers resort and tourism retail formats and the humidity that affects them. This page is about freight consolidation and ordering frequency, which is a logistics question specific to being on a distribution corridor.',
     },
     {
-      q: 'Do you have a Jacksonville facility?',
-      a: 'No. Packaging is made to order and shipped to Jacksonville addresses through a nationwide service. There is no local warehouse, held stock or collection point.',
+      q: 'Are you based in Jacksonville?',
+      a:
+        'No. The business has no premises in Jacksonville and no local team. What it does have is a nationwide delivery service that reaches every Jacksonville address.',
     },
   ],
 };
@@ -190,8 +191,9 @@ export const fortWorth: Location = {
       a: 'The Texas page covers distribution across five metros with case counts and pallet planning. This page is about short fixed selling windows at events and destination venues, which is a stock planning problem rather than a distribution one.',
     },
     {
-      q: 'Do you have a Fort Worth facility?',
-      a: 'No. Packaging is made to order and shipped to Fort Worth addresses through a nationwide service. There is no local warehouse, held stock or collection point.',
+      q: 'Where does a Fort Worth order actually ship from?',
+      a:
+        'From the production site, not from anywhere in Fort Worth. Nothing is stored locally, so the transit leg to Fort Worth is quoted as part of your order.',
     },
   ],
 };
@@ -288,8 +290,9 @@ export const columbus: Location = {
       a: 'The Ohio page covers specifying a test run so it scales to a national rollout without new tooling. This page is about running the pilot itself as a measurement exercise, where consistency during the test is the priority.',
     },
     {
-      q: 'Do you have a Columbus facility?',
-      a: 'No. Packaging is made to order and shipped to Columbus addresses through a nationwide service. There is no local warehouse, held stock or collection point.',
+      q: 'Is stock held locally in Columbus?',
+      a:
+        'No stock is held in Columbus or anywhere else. Packaging is made against a confirmed order, which is why sizes and finishes are open rather than fixed to a catalogue.',
     },
   ],
 };
@@ -387,8 +390,9 @@ export const charlotte: Location = {
       a: 'The North Carolina page covers contract manufacturing and specifying cartons to a filling line. This page is about corporate gifting, where the pack carries the perceived value and the retail calculations do not apply.',
     },
     {
-      q: 'Do you have a Charlotte facility?',
-      a: 'No. Packaging is made to order and shipped to Charlotte addresses through a nationwide service. There is no local warehouse, held stock or collection point.',
+      q: 'Can I come and see samples in Charlotte?',
+      a:
+        'Not in person. There is no showroom or office in Charlotte, so samples are posted to you instead, and the sample options are set out on the sample kit page.',
     },
   ],
 };
@@ -486,8 +490,9 @@ export const indianapolis: Location = {
       a: 'The Indiana page covers case pack efficiency and pallet configuration as a freight cost question. This page is about third-party logistics intake requirements, which govern whether a delivery is accepted at all rather than what it costs.',
     },
     {
-      q: 'Do you have an Indianapolis facility?',
-      a: 'No. Packaging is made to order and shipped to Indianapolis addresses through a nationwide service. There is no local warehouse, held stock or collection point.',
+      q: 'Do you have staff on the ground in Indianapolis?',
+      a:
+        'No. Nobody is employed in Indianapolis. You deal with the same team wherever you are, and delivery to Indianapolis is handled by a national carrier.',
     },
   ],
 };

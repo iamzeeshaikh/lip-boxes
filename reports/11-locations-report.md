@@ -31,51 +31,51 @@ phrased the same way. Similarity between any two location pages is measured in
 
 | URL | State | Primary keyword | Market angle | Words | FAQs | Cities beneath it |
 | --- | --- | --- | --- | ---: | ---: | --- |
-| `/locations/states/illinois/` | Illinois (IL) | custom lip boxes in Illinois | Mass retail resets and fixture constraints | 1114 | 8 | Chicago |
-| `/locations/states/ohio/` | Ohio (OH) | custom lip boxes in Ohio | Test market runs that have to scale | 1159 | 8 | Columbus |
-| `/locations/states/michigan/` | Michigan (MI) | custom lip boxes in Michigan | Seasonal demand and call-off ordering | 1144 | 8 | — |
-| `/locations/states/indiana/` | Indiana (IN) | custom lip boxes in Indiana | Case pack efficiency and pallet configuration | 1103 | 8 | Indianapolis |
-| `/locations/states/missouri/` | Missouri (MO) | custom lip boxes in Missouri | Long shelf tenure and reorder consistency | 1112 | 8 | — |
-| `/locations/states/new-york/` | New York (NY) | custom lip boxes in New York | Prestige retail specifications set by the account | 1084 | 8 | New York City |
+| `/locations/states/illinois/` | Illinois (IL) | custom lip boxes in Illinois | Mass retail resets and fixture constraints | 1124 | 8 | Chicago |
+| `/locations/states/ohio/` | Ohio (OH) | custom lip boxes in Ohio | Test market runs that have to scale | 1171 | 8 | Columbus |
+| `/locations/states/michigan/` | Michigan (MI) | custom lip boxes in Michigan | Seasonal demand and call-off ordering | 1147 | 8 | — |
+| `/locations/states/indiana/` | Indiana (IN) | custom lip boxes in Indiana | Case pack efficiency and pallet configuration | 1110 | 8 | Indianapolis |
+| `/locations/states/missouri/` | Missouri (MO) | custom lip boxes in Missouri | Long shelf tenure and reorder consistency | 1118 | 8 | — |
+| `/locations/states/new-york/` | New York (NY) | custom lip boxes in New York | Prestige retail specifications set by the account | 1092 | 8 | New York City |
 | `/locations/states/pennsylvania/` | Pennsylvania (PA) | custom lip boxes in Pennsylvania | Private label economics and the pharmacy channel | 1100 | 8 | Philadelphia |
-| `/locations/states/new-jersey/` | New Jersey (NJ) | custom lip boxes in New Jersey | Documentation, version control and formal approvals | 1074 | 8 | — |
-| `/locations/states/massachusetts/` | Massachusetts (MA) | custom lip boxes in Massachusetts | Treatment and clinical positioning | 1070 | 8 | Boston |
-| `/locations/states/maryland/` | Maryland (MD) | custom lip boxes in Maryland | Corporate gifting and promotional programmes | 1132 | 8 | — |
-| `/locations/states/virginia/` | Virginia (VA) | custom lip boxes in Virginia | Direct-to-consumer fulfilment and shipper specification | 1111 | 8 | — |
-| `/locations/states/texas/` | Texas (TX) | custom lip boxes in Texas | Distribution across multiple metros and wholesale case planning | 1312 | 8 | Houston, San Antonio, Dallas, Austin, Fort Worth |
-| `/locations/states/florida/` | Florida (FL) | custom lip boxes in Florida | Resort and tourism retail, and humidity in storage | 1276 | 8 | Jacksonville |
-| `/locations/states/georgia/` | Georgia (GA) | custom lip boxes in Georgia | Independent gloss brands and short launch cycles | 1271 | 8 | — |
-| `/locations/states/north-carolina/` | North Carolina (NC) | custom lip boxes in North Carolina | Contract manufacturing and automated line requirements | 1286 | 8 | Charlotte |
-| `/locations/states/tennessee/` | Tennessee (TN) | custom lip boxes in Tennessee | Merchandise and date-driven production | 1272 | 8 | Nashville |
-| `/locations/states/california/` | California (CA) | custom lip boxes in California | Indie brand density and the speed of shade-range launches | 1680 | 9 | Los Angeles, San Diego |
-| `/locations/states/washington/` | Washington (WA) | custom lip boxes in Washington | Material scrutiny and defensible disposal claims | 1406 | 8 | Seattle |
-| `/locations/states/arizona/` | Arizona (AZ) | custom lip boxes in Arizona | Heat, storage conditions and sun-care formats | 1404 | 8 | Phoenix |
-| `/locations/states/colorado/` | Colorado (CO) | custom lip boxes in Colorado | Outdoor and apothecary positioning in specialty retail | 1302 | 8 | Denver |
+| `/locations/states/new-jersey/` | New Jersey (NJ) | custom lip boxes in New Jersey | Documentation, version control and formal approvals | 1081 | 8 | — |
+| `/locations/states/massachusetts/` | Massachusetts (MA) | custom lip boxes in Massachusetts | Treatment and clinical positioning | 1075 | 8 | Boston |
+| `/locations/states/maryland/` | Maryland (MD) | custom lip boxes in Maryland | Corporate gifting and promotional programmes | 1139 | 8 | — |
+| `/locations/states/virginia/` | Virginia (VA) | custom lip boxes in Virginia | Direct-to-consumer fulfilment and shipper specification | 1117 | 8 | — |
+| `/locations/states/texas/` | Texas (TX) | custom lip boxes in Texas | Distribution across multiple metros and wholesale case planning | 1316 | 8 | Houston, San Antonio, Dallas, Austin, Fort Worth |
+| `/locations/states/florida/` | Florida (FL) | custom lip boxes in Florida | Resort and tourism retail, and humidity in storage | 1278 | 8 | Jacksonville |
+| `/locations/states/georgia/` | Georgia (GA) | custom lip boxes in Georgia | Independent gloss brands and short launch cycles | 1285 | 8 | — |
+| `/locations/states/north-carolina/` | North Carolina (NC) | custom lip boxes in North Carolina | Contract manufacturing and automated line requirements | 1290 | 8 | Charlotte |
+| `/locations/states/tennessee/` | Tennessee (TN) | custom lip boxes in Tennessee | Merchandise and date-driven production | 1282 | 8 | Nashville |
+| `/locations/states/california/` | California (CA) | custom lip boxes in California | Indie brand density and the speed of shade-range launches | 1671 | 9 | Los Angeles, San Diego |
+| `/locations/states/washington/` | Washington (WA) | custom lip boxes in Washington | Material scrutiny and defensible disposal claims | 1414 | 8 | Seattle |
+| `/locations/states/arizona/` | Arizona (AZ) | custom lip boxes in Arizona | Heat, storage conditions and sun-care formats | 1403 | 8 | Phoenix |
+| `/locations/states/colorado/` | Colorado (CO) | custom lip boxes in Colorado | Outdoor and apothecary positioning in specialty retail | 1312 | 8 | Denver |
 
 ## City pages
 
 | URL | City | Primary keyword | Market angle | Words | FAQs | Parent state page |
 | --- | --- | --- | --- | ---: | ---: | --- |
-| `/locations/cities/new-york-city/` | New York City, NY | custom lip boxes in New York City | Small-format retail and narrow fixture space | 1150 | 8 | `/locations/states/new-york/` |
-| `/locations/cities/los-angeles/` | Los Angeles, CA | custom lip boxes in Los Angeles | Seeding kits and press packaging alongside retail | 1111 | 8 | `/locations/states/california/` |
-| `/locations/cities/chicago/` | Chicago, IL | custom lip boxes in Chicago | Buyer meetings and physical sample requirements | 1104 | 8 | `/locations/states/illinois/` |
-| `/locations/cities/houston/` | Houston, TX | custom lip boxes in Houston | Deep shade ranges and salon retail | 1150 | 8 | `/locations/states/texas/` |
-| `/locations/cities/phoenix/` | Phoenix, AZ | custom lip boxes in Phoenix | Convenience and pharmacy peg retail | 1168 | 8 | `/locations/states/arizona/` |
-| `/locations/cities/philadelphia/` | Philadelphia, PA | custom lip boxes in Philadelphia | The transition from maker market to wholesale | 1123 | 8 | `/locations/states/pennsylvania/` |
-| `/locations/cities/san-antonio/` | San Antonio, TX | custom lip boxes in San Antonio | Bilingual panels and the space they require | 1170 | 8 | `/locations/states/texas/` |
-| `/locations/cities/san-diego/` | San Diego, CA | custom lip boxes in San Diego | Sun care formats and SPF panel requirements | 1142 | 8 | `/locations/states/california/` |
-| `/locations/cities/dallas/` | Dallas, TX | custom lip boxes in Dallas | Wholesale showroom selling and line sheet requirements | 1141 | 8 | `/locations/states/texas/` |
-| `/locations/cities/austin/` | Austin, TX | custom lip boxes in Austin | Direct-to-consumer economics and repeat shipping | 1143 | 8 | `/locations/states/texas/` |
-| `/locations/cities/jacksonville/` | Jacksonville, FL | custom lip boxes in Jacksonville | Freight consolidation and ordering frequency | 1054 | 8 | `/locations/states/florida/` |
-| `/locations/cities/fort-worth/` | Fort Worth, TX | custom lip boxes in Fort Worth | Short fixed selling windows and stock planning | 1137 | 8 | `/locations/states/texas/` |
-| `/locations/cities/columbus/` | Columbus, OH | custom lip boxes in Columbus | Retail pilots and keeping results readable | 1056 | 8 | `/locations/states/ohio/` |
-| `/locations/cities/charlotte/` | Charlotte, NC | custom lip boxes in Charlotte | Corporate gifting and perceived value | 1073 | 8 | `/locations/states/north-carolina/` |
-| `/locations/cities/indianapolis/` | Indianapolis, IN | custom lip boxes in Indianapolis | Third-party logistics intake requirements | 1068 | 8 | `/locations/states/indiana/` |
-| `/locations/cities/seattle/` | Seattle, WA | custom lip boxes in Seattle | Refill and reuse programme packaging | 1069 | 8 | `/locations/states/washington/` |
+| `/locations/cities/new-york-city/` | New York City, NY | custom lip boxes in New York City | Small-format retail and narrow fixture space | 1153 | 8 | `/locations/states/new-york/` |
+| `/locations/cities/los-angeles/` | Los Angeles, CA | custom lip boxes in Los Angeles | Seeding kits and press packaging alongside retail | 1122 | 8 | `/locations/states/california/` |
+| `/locations/cities/chicago/` | Chicago, IL | custom lip boxes in Chicago | Buyer meetings and physical sample requirements | 1106 | 8 | `/locations/states/illinois/` |
+| `/locations/cities/houston/` | Houston, TX | custom lip boxes in Houston | Deep shade ranges and salon retail | 1152 | 8 | `/locations/states/texas/` |
+| `/locations/cities/phoenix/` | Phoenix, AZ | custom lip boxes in Phoenix | Convenience and pharmacy peg retail | 1173 | 8 | `/locations/states/arizona/` |
+| `/locations/cities/philadelphia/` | Philadelphia, PA | custom lip boxes in Philadelphia | The transition from maker market to wholesale | 1131 | 8 | `/locations/states/pennsylvania/` |
+| `/locations/cities/san-antonio/` | San Antonio, TX | custom lip boxes in San Antonio | Bilingual panels and the space they require | 1174 | 8 | `/locations/states/texas/` |
+| `/locations/cities/san-diego/` | San Diego, CA | custom lip boxes in San Diego | Sun care formats and SPF panel requirements | 1149 | 8 | `/locations/states/california/` |
+| `/locations/cities/dallas/` | Dallas, TX | custom lip boxes in Dallas | Wholesale showroom selling and line sheet requirements | 1143 | 8 | `/locations/states/texas/` |
+| `/locations/cities/austin/` | Austin, TX | custom lip boxes in Austin | Direct-to-consumer economics and repeat shipping | 1151 | 8 | `/locations/states/texas/` |
+| `/locations/cities/jacksonville/` | Jacksonville, FL | custom lip boxes in Jacksonville | Freight consolidation and ordering frequency | 1055 | 8 | `/locations/states/florida/` |
+| `/locations/cities/fort-worth/` | Fort Worth, TX | custom lip boxes in Fort Worth | Short fixed selling windows and stock planning | 1140 | 8 | `/locations/states/texas/` |
+| `/locations/cities/columbus/` | Columbus, OH | custom lip boxes in Columbus | Retail pilots and keeping results readable | 1063 | 8 | `/locations/states/ohio/` |
+| `/locations/cities/charlotte/` | Charlotte, NC | custom lip boxes in Charlotte | Corporate gifting and perceived value | 1082 | 8 | `/locations/states/north-carolina/` |
+| `/locations/cities/indianapolis/` | Indianapolis, IN | custom lip boxes in Indianapolis | Third-party logistics intake requirements | 1071 | 8 | `/locations/states/indiana/` |
+| `/locations/cities/seattle/` | Seattle, WA | custom lip boxes in Seattle | Refill and reuse programme packaging | 1078 | 8 | `/locations/states/washington/` |
 | `/locations/cities/denver/` | Denver, CO | custom lip boxes in Denver | Outdoor specialty retail and durability assessment | 1142 | 8 | `/locations/states/colorado/` |
-| `/locations/cities/washington-dc/` | Washington, D.C., DC | custom lip boxes in Washington, D.C. | Museum and institutional retail standards | 1010 | 8 | — (no state page) |
-| `/locations/cities/nashville/` | Nashville, TN | custom lip boxes in Nashville | Visitor purchases that travel home | 1092 | 8 | `/locations/states/tennessee/` |
-| `/locations/cities/boston/` | Boston, MA | custom lip boxes in Boston | Student market price sensitivity and academic seasonality | 1098 | 8 | `/locations/states/massachusetts/` |
+| `/locations/cities/washington-dc/` | Washington, D.C., DC | custom lip boxes in Washington, D.C. | Museum and institutional retail standards | 1020 | 8 | — (no state page) |
+| `/locations/cities/nashville/` | Nashville, TN | custom lip boxes in Nashville | Visitor purchases that travel home | 1094 | 8 | `/locations/states/tennessee/` |
+| `/locations/cities/boston/` | Boston, MA | custom lip boxes in Boston | Student market price sensitivity and academic seasonality | 1102 | 8 | `/locations/states/massachusetts/` |
 
 ## Quote form
 

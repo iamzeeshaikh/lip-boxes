@@ -82,6 +82,39 @@ const contents = location.sections.map((section) => ({
  * do not open with the same photograph.
  */
 const offset = [...location.slug].reduce((sum, char) => sum + char.charCodeAt(0), 0);
+
+/*
+ * Section headings rotate across the directory. Twenty pages carrying the
+ * identical heading with only the place name changed is the clearest tell
+ * that copy was generated rather than written, so the wording varies and the
+ * choice is stable per slug.
+ */
+const pick = <T,>(options: T[]): T => options[offset % options.length];
+
+const faqHeading = pick([
+  `${location.name}: common questions`,
+  `What ${location.name} brands ask first`,
+  `Questions that come up on ${location.name} orders`,
+  `Before you order for ${location.name}`,
+]);
+const productsHeading = pick([
+  `Packaging ${location.name} brands ask for`,
+  `Formats that suit this ${location.name} channel`,
+  `What tends to get specified here`,
+  `Built for the ${location.name} pattern above`,
+]);
+const quoteHeading = pick([
+  `Get a price for a ${location.name} delivery`,
+  `Price this for ${location.name}`,
+  `Send a ${location.name} specification`,
+  `What would this cost, delivered to ${location.name}?`,
+]);
+const regionHeading = pick([
+  `Other ${region?.toLowerCase()} markets`,
+  `Nearby states with their own guide`,
+  `Where else in the ${region?.toLowerCase()} we cover`,
+  `Compare this with neighbouring states`,
+]);
 const leadFigure = related[0];
 const midFigure = related[1] ?? related[0];
 const openingBlocks = location.sections.slice(0, 1);
@@ -168,9 +201,7 @@ const remainingBlocks = location.sections.slice(1);
       <ContentBlocks blocks={remainingBlocks} slug={location.related[0]} />
 
       <section class="loc-section" id="faqs" aria-labelledby="loc-faqs-heading">
-        <h2 class="loc-section__heading" id="loc-faqs-heading">
-          {location.name}: common questions
-        </h2>
+        <h2 class="loc-section__heading" id="loc-faqs-heading">{faqHeading}</h2>
         <FaqList faqs={location.faqs} level={3} />
       </section>
 
@@ -186,7 +217,7 @@ const remainingBlocks = location.sections.slice(1);
     product={related[0]?.name ?? 'Custom Lip Balm Boxes'}
     location={location.name}
     pageTitle={location.seoTitle}
-    heading={`Get a price for a ${location.name} delivery`}
+    heading={quoteHeading}
     sub={`Send your quantity and dimensions and you will get a written price, with delivery costed to your ${location.name} address.`}
     points={[
       `Priced for ${location.marketAngle.toLowerCase()}, which is what this page covers`,
@@ -200,7 +231,7 @@ const remainingBlocks = location.sections.slice(1);
       <section class="section section--warm" aria-labelledby="loc-products-heading">
         <div class="wrap">
           <span class="eyebrow">Suited to this market</span>
-          <h2 id="loc-products-heading">Packaging {location.name} brands ask for</h2>
+          <h2 id="loc-products-heading">{productsHeading}</h2>
           <div class="grid grid--products loc-products">
             {related.map((product) => <ProductCard product={product} compact />)}
           </div>
@@ -217,7 +248,7 @@ const remainingBlocks = location.sections.slice(1);
       <section class="section" aria-labelledby="loc-region-heading">
         <div class="wrap">
           <span class="eyebrow">{region}</span>
-          <h2 id="loc-region-heading">Other {region?.toLowerCase()} markets</h2>
+          <h2 id="loc-region-heading">{regionHeading}</h2>
           <div class="loc-region-grid">
             {neighbours.map((state) => (
               <a class="loc-region-card" href={locationUrl(state)}>

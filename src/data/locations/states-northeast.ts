@@ -93,8 +93,9 @@ export const newYork: Location = {
       a: 'We confirm a production window in writing with the quote and will say plainly whether a date is achievable. Reset dates are fixed, so tell us the date at enquiry stage rather than at order stage.',
     },
     {
-      q: 'Do you have a New York office?',
-      a: 'No. Packaging is manufactured to order and shipped to New York addresses through a nationwide service. There is no local office, warehouse, held stock or collection point.',
+      q: 'Is there anywhere in New York I can collect an order from?',
+      a:
+        'No, there is no collection point. Orders are made to order and delivered to the New York address on your quote, so nothing is ever waiting to be picked up.',
     },
   ],
 };
@@ -193,8 +194,9 @@ export const pennsylvania: Location = {
       a: 'Hanging packs, because peg space is easier to secure than shelf space, and multipacks, because lip balm sells as a consumable in that channel. Both need the tab or base engineered against the packed weight.',
     },
     {
-      q: 'Do you have a Pennsylvania facility?',
-      a: 'No. Packaging is made to order and shipped to Pennsylvania addresses through a nationwide service. There is no local warehouse, held stock or collection point.',
+      q: 'Are you based in Pennsylvania?',
+      a:
+        'No. The business has no premises in Pennsylvania and no local team. What it does have is a nationwide delivery service that reaches every Pennsylvania address.',
     },
   ],
 };
@@ -290,8 +292,9 @@ export const newJersey: Location = {
       a: 'Yes. The quote states board grade and weight, print process, colours, finishing and construction, and the die line carries the reference number those documents cite.',
     },
     {
-      q: 'Do you have a New Jersey facility?',
-      a: 'No. Packaging is made to order and shipped to New Jersey addresses through a nationwide service. There is no local warehouse, held stock or collection point.',
+      q: 'Where does a New Jersey order actually ship from?',
+      a:
+        'From the production site, not from anywhere in New Jersey. Nothing is stored locally, so the transit leg to New Jersey is quoted as part of your order.',
     },
   ],
 };
@@ -388,8 +391,9 @@ export const massachusetts: Location = {
       a: 'Coated white SBS, because clean whites depend on a bright, coated substrate. Kraft and recycled greyback both shift the white and will undermine a clinical look regardless of how the artwork is designed.',
     },
     {
-      q: 'Do you have a Massachusetts location?',
-      a: 'No. Packaging is manufactured to order and shipped to Massachusetts addresses through a nationwide service. There is no local facility, held stock or collection point.',
+      q: 'Is stock held locally in Massachusetts?',
+      a:
+        'No stock is held in Massachusetts or anywhere else. Packaging is made against a confirmed order, which is why sizes and finishes are open rather than fixed to a catalogue.',
     },
   ],
 };
@@ -486,8 +490,9 @@ export const maryland: Location = {
       a: 'That shifts toward retail specification: a carton for presentation and panel space, a better board, and a finish that survives handling. A printed band around two tubes is the cheapest way to turn a giveaway into something that reads as a gift.',
     },
     {
-      q: 'Do you have a Maryland facility?',
-      a: 'No. Packaging is made to order and shipped to Maryland addresses through a nationwide service. There is no local warehouse, held stock or collection point.',
+      q: 'Can I come and see samples in Maryland?',
+      a:
+        'Not in person. There is no showroom or office in Maryland, so samples are posted to you instead, and the sample options are set out on the sample kit page.',
     },
   ],
 };
@@ -584,8 +589,9 @@ export const virginia: Location = {
       a: 'Yes, in printed E-flute corrugated, along with printed tissue and insert cards. Producing them alongside the cartons is the only reliable way to keep the colours matching between the outer and inner packaging.',
     },
     {
-      q: 'Do you have a Virginia facility?',
-      a: 'No. Packaging is made to order and shipped to Virginia addresses through a nationwide service. There is no local warehouse, held stock or collection point.',
+      q: 'Do you have staff on the ground in Virginia?',
+      a:
+        'No. Nobody is employed in Virginia. You deal with the same team wherever you are, and delivery to Virginia is handled by a national carrier.',
     },
   ],
 };

@@ -11,6 +11,7 @@
     "images": "node scripts/prepare-images.mjs",
     "audit:site": "node scripts/audit-site.mjs",
     "audit:similarity": "node scripts/audit-similarity.mjs",
+    "audit:spam": "node scripts/audit-spam-signals.mjs",
     "audit:deps": "npm audit --omit=dev",
     "lighthouse": "node scripts/lighthouse.mjs",
     "test:browser": "node scripts/browser-checks.mjs",
@@ -18,7 +19,7 @@
     "test:email": "node scripts/test-email-delivery.mjs",
     "smtp:test": "node scripts/smtp-test.mjs",
     "reports": "node scripts/generate-reports.mjs",
-    "verify": "npm run build && npm run check && npm run audit:site && npm run audit:similarity && npm run test:browser && npm run reports",
+    "verify": "npm run build && npm run check && npm run audit:site && npm run audit:similarity && npm run audit:spam && npm run test:browser && npm run reports",
     "env:push": "node scripts/push-env-to-vercel.mjs"
   },
   "dependencies": {

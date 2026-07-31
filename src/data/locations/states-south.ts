@@ -121,8 +121,9 @@ export const texas: Location = {
       a: 'Quoted per consignment based on volume, destination and receiving conditions. Given the distances between metros, consolidating into one delivery point and distributing yourself is sometimes cheaper than shipping separately to each — worth pricing both ways.',
     },
     {
-      q: 'Do you have a Texas facility?',
-      a: 'No. Packaging is manufactured to order and shipped to Texas addresses through a nationwide service. There is no local warehouse, no held stock and no collection point in any Texas city.',
+      q: 'Should I treat this as a local Texas supplier?',
+      a:
+        'Only in the sense that Texas deliveries are routine. There is no local address, no local phone number and no local stock, and this page does not claim otherwise.',
     },
     {
       q: 'What suits convenience and pharmacy accounts here?',
@@ -237,8 +238,9 @@ export const florida: Location = {
       a: 'If your receiving area is not climate controlled, yes. Smaller, more frequent orders are usually better than holding a large stock through a Florida summer, and the unit price difference is often smaller than the risk of degraded board.',
     },
     {
-      q: 'Do you have a Florida warehouse?',
-      a: 'No. Everything is made to order and shipped to Florida addresses through a nationwide service. There is no local facility, no held stock and no collection point.',
+      q: 'Do you have a Florida facility?',
+      a:
+        'No. There is no office, plant or warehouse in Florida. Every order is manufactured after you approve it and sent to your Florida address by carrier.',
     },
     {
       q: 'What works for beach and surf retail?',
@@ -349,8 +351,9 @@ export const georgia: Location = {
       a: 'We confirm a production window in writing with the quote rather than publishing a figure, because it depends on the specification and on how quickly proofs come back. On a tight date, simplifying the finishing usually saves more time than expediting does.',
     },
     {
-      q: 'Do you have an Atlanta location?',
-      a: 'No. Packaging is manufactured to order and shipped to Georgia addresses as part of a nationwide service. There is no local facility, warehouse or pickup option.',
+      q: 'Is there anywhere in Georgia I can collect an order from?',
+      a:
+        'No, there is no collection point. Orders are made to order and delivered to the Georgia address on your quote, so nothing is ever waiting to be picked up.',
     },
   ],
 };
@@ -459,8 +462,9 @@ export const northCarolina: Location = {
       a: 'Yes, and in either direction: a brand can nominate us and we work to the filler\'s constraints, or a filler can order on behalf of clients against a held structural specification with only the artwork changing.',
     },
     {
-      q: 'Do you have a North Carolina facility?',
-      a: 'No. Packaging is made to order and shipped to North Carolina addresses through a nationwide service. There is no local warehouse, held stock or collection point.',
+      q: 'Are you based in North Carolina?',
+      a:
+        'No. The business has no premises in North Carolina and no local team. What it does have is a nationwide delivery service that reaches every North Carolina address.',
     },
   ],
 };
@@ -569,8 +573,9 @@ export const tennessee: Location = {
       a: 'We will look at what can be brought forward and tell you plainly whether a date is achievable and what would have to change. We do not offer a guaranteed rush service or same-day production anywhere in the country.',
     },
     {
-      q: 'Do you have a Nashville location?',
-      a: 'No. Packaging is made to order and shipped to Tennessee addresses through a nationwide service. There is no local facility, warehouse or pickup point.',
+      q: 'Where does a Tennessee order actually ship from?',
+      a:
+        'From the production site, not from anywhere in Tennessee. Nothing is stored locally, so the transit leg to Tennessee is quoted as part of your order.',
     },
   ],
 };

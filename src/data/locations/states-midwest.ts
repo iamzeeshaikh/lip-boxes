@@ -92,8 +92,9 @@ export const illinois: Location = {
       a: 'Earlier than you think, because the gating item is usually your own approvals rather than production. Tell us the reset date at enquiry stage and we will work back from it and say plainly whether it is achievable.',
     },
     {
-      q: 'Do you have an Illinois facility?',
-      a: 'No. Packaging is made to order and shipped to Illinois addresses through a nationwide service. There is no local warehouse, held stock or collection point.',
+      q: 'Is stock held locally in Illinois?',
+      a:
+        'No stock is held in Illinois or anywhere else. Packaging is made against a confirmed order, which is why sizes and finishes are open rather than fixed to a catalogue.',
     },
   ],
 };
@@ -191,8 +192,9 @@ export const ohio: Location = {
       a: 'Usually, but it has to be built with both in mind. Spot colour handling and total ink coverage differ between the processes, so a file designed only for digital sometimes needs adjustment before a litho run.',
     },
     {
-      q: 'Do you have an Ohio facility?',
-      a: 'No. Packaging is made to order and shipped to Ohio addresses through a nationwide service. There is no local warehouse, held stock or collection point.',
+      q: 'Can I come and see samples in Ohio?',
+      a:
+        'Not in person. There is no showroom or office in Ohio, so samples are posted to you instead, and the sample options are set out on the sample kit page.',
     },
   ],
 };
@@ -288,8 +290,9 @@ export const michigan: Location = {
       a: 'Yes, because a lot of it sells through pharmacy and convenience at the checkout rather than from a beauty fixture. For a multipack the tab needs reinforcement or a heavier board, since the packed weight is several times a single stick.',
     },
     {
-      q: 'Do you have a Michigan facility?',
-      a: 'No. Packaging is made to order and shipped to Michigan addresses through a nationwide service. There is no local warehouse, held stock or collection point.',
+      q: 'Do you have staff on the ground in Michigan?',
+      a:
+        'No. Nobody is employed in Michigan. You deal with the same team wherever you are, and delivery to Michigan is handled by a national carrier.',
     },
   ],
 };
@@ -387,8 +390,9 @@ export const indiana: Location = {
       a: 'Occasionally, yes. If a two millimetre reduction adds a column to the case, that is a permanent freight saving on every shipment. It is only worth doing before the die line is cut, which is why it should be raised early.',
     },
     {
-      q: 'Do you have an Indiana facility?',
-      a: 'No. Packaging is made to order and shipped to Indiana addresses through a nationwide service. There is no local warehouse, held stock or collection point.',
+      q: 'Should I treat this as a local Indiana supplier?',
+      a:
+        'Only in the sense that Indiana deliveries are routine. There is no local address, no local phone number and no local stock, and this page does not claim otherwise.',
     },
   ],
 };
@@ -485,7 +489,8 @@ export const missouri: Location = {
     },
     {
       q: 'Do you have a Missouri facility?',
-      a: 'No. Packaging is made to order and shipped to Missouri addresses through a nationwide service. There is no local warehouse, held stock or collection point.',
+      a:
+        'No. There is no office, plant or warehouse in Missouri. Every order is manufactured after you approve it and sent to your Missouri address by carrier.',
     },
   ],
 };

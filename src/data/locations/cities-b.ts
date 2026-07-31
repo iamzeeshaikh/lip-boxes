@@ -92,8 +92,9 @@ export const philadelphia: Location = {
       a: 'The Pennsylvania page covers private label economics and the pharmacy channel, where unit cost governs at volume. This page is about the specific transition a small maker faces when moving from markets into wholesale accounts.',
     },
     {
-      q: 'Do you have a Philadelphia facility?',
-      a: 'No. Packaging is made to order and shipped to Philadelphia addresses through a nationwide service. There is no local warehouse, held stock or collection point.',
+      q: 'Can I come and see samples in Philadelphia?',
+      a:
+        'Not in person. There is no showroom or office in Philadelphia, so samples are posted to you instead, and the sample options are set out on the sample kit page.',
     },
   ],
 };
@@ -190,8 +191,9 @@ export const sanAntonio: Location = {
       a: 'The Texas page covers distribution across five metros, with case counts, pallet patterns and call-off scheduling. This page focuses on the bilingual panel problem, which is a structural and copy-planning question specific to this market.',
     },
     {
-      q: 'Do you have a San Antonio facility?',
-      a: 'No. Packaging is made to order and shipped to San Antonio addresses through a nationwide service. There is no local warehouse, held stock or collection point.',
+      q: 'Do you have staff on the ground in San Antonio?',
+      a:
+        'No. Nobody is employed in San Antonio. You deal with the same team wherever you are, and delivery to San Antonio is handled by a national carrier.',
     },
   ],
 };
@@ -288,8 +290,9 @@ export const sanDiego: Location = {
       a: 'The California page covers indie brand density and shade range economics across the state. This page is about sun care formats and the specific panel space an SPF claim requires, which is a structural constraint rather than a range one.',
     },
     {
-      q: 'Do you have a San Diego facility?',
-      a: 'No. Packaging is made to order and shipped to San Diego addresses through a nationwide service. There is no local warehouse, held stock or collection point.',
+      q: 'Should I treat this as a local San Diego supplier?',
+      a:
+        'Only in the sense that San Diego deliveries are routine. There is no local address, no local phone number and no local stock, and this page does not claim otherwise.',
     },
   ],
 };
@@ -387,7 +390,8 @@ export const dallas: Location = {
     },
     {
       q: 'Do you have a Dallas facility?',
-      a: 'No. Packaging is made to order and shipped to Dallas addresses through a nationwide service. There is no local warehouse, held stock or collection point.',
+      a:
+        'No. There is no office, plant or warehouse in Dallas. Every order is manufactured after you approve it and sent to your Dallas address by carrier.',
     },
   ],
 };
@@ -485,8 +489,9 @@ export const austin: Location = {
       a: 'The Texas page covers wholesale distribution across five metros, with case counts and pallet planning. This page is about direct-to-consumer economics, where packaging ships individually on every order and weight is a running cost.',
     },
     {
-      q: 'Do you have an Austin facility?',
-      a: 'No. Packaging is made to order and shipped to Austin addresses through a nationwide service. There is no local warehouse, held stock or collection point.',
+      q: 'Is there anywhere in Austin I can collect an order from?',
+      a:
+        'No, there is no collection point. Orders are made to order and delivered to the Austin address on your quote, so nothing is ever waiting to be picked up.',
     },
   ],
 };

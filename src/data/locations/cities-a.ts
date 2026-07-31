@@ -92,8 +92,9 @@ export const newYorkCity: Location = {
       a: 'The state page covers prestige and department store retail, where the account sets a packaging specification you design to. This page covers small-format independent retail, where fixture space and case counts drive the decision instead.',
     },
     {
-      q: 'Do you have a New York City office?',
-      a: 'No. Packaging is manufactured to order and shipped to addresses across the five boroughs through a nationwide service. There is no local office, warehouse, held stock or pickup point.',
+      q: 'Do you have a New York City facility?',
+      a:
+        'No. There is no office, plant or warehouse in New York City. Every order is manufactured after you approve it and sent to your New York City address by carrier.',
     },
   ],
 };
@@ -191,8 +192,9 @@ export const losAngeles: Location = {
       a: 'The California page covers shade range economics and packaging a colour line across the state. This page is about the seeding and press packaging that LA launches are specifically built around, which is a separate production run.',
     },
     {
-      q: 'Do you have a Los Angeles warehouse?',
-      a: 'No. Packaging is made to order and shipped to Los Angeles addresses through a nationwide service. There is no local facility, held stock or collection point.',
+      q: 'Is there anywhere in Los Angeles I can collect an order from?',
+      a:
+        'No, there is no collection point. Orders are made to order and delivered to the Los Angeles address on your quote, so nothing is ever waiting to be picked up.',
     },
   ],
 };
@@ -289,8 +291,9 @@ export const chicago: Location = {
       a: 'The Illinois page covers supplying mass retail, where planogram resets fix the delivery date and fixture specifications constrain the pack. This page is about the sample requirements of the buyer meetings that happen before any of that.',
     },
     {
-      q: 'Do you have a Chicago facility?',
-      a: 'No. Packaging is made to order and shipped to Chicago addresses through a nationwide service. There is no local warehouse, held stock or collection point.',
+      q: 'Are you based in Chicago?',
+      a:
+        'No. The business has no premises in Chicago and no local team. What it does have is a nationwide delivery service that reaches every Chicago address.',
     },
   ],
 };
@@ -387,8 +390,9 @@ export const houston: Location = {
       a: 'The Texas page covers distributing across five metros, with case counts, pallet patterns and call-off scheduling. This page is about deep shade ranges and salon retail, which is a production and range economics question rather than a logistics one.',
     },
     {
-      q: 'Do you have a Houston facility?',
-      a: 'No. Packaging is made to order and shipped to Houston addresses through a nationwide service. There is no local warehouse, held stock or collection point.',
+      q: 'Where does a Houston order actually ship from?',
+      a:
+        'From the production site, not from anywhere in Houston. Nothing is stored locally, so the transit leg to Houston is quoted as part of your order.',
     },
   ],
 };
@@ -485,8 +489,9 @@ export const phoenix: Location = {
       a: 'The Arizona page covers heat, storage conditions and SPF product formats across the state. This page is specifically about peg retail in the convenience and pharmacy channels, which is a structural engineering question rather than a climate one.',
     },
     {
-      q: 'Do you have a Phoenix warehouse?',
-      a: 'No. Packaging is made to order and shipped to Phoenix addresses through a nationwide service. There is no local facility, held stock or collection point.',
+      q: 'Is stock held locally in Phoenix?',
+      a:
+        'No stock is held in Phoenix or anywhere else. Packaging is made against a confirmed order, which is why sizes and finishes are open rather than fixed to a catalogue.',
     },
   ],
 };

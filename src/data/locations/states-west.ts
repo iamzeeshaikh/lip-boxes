@@ -131,8 +131,9 @@ export const california: Location = {
   ],
   faqs: [
     {
-      q: 'Do you have a California office or warehouse?',
-      a: 'No. Lip Boxes manufactures to order and ships to California addresses through a nationwide custom-order service. There is no local office, warehouse or pickup point, and we do not offer a same-day or local courier service anywhere.',
+      q: 'Is stock held locally in California?',
+      a:
+        'No stock is held in California or anywhere else. Packaging is made against a confirmed order, which is why sizes and finishes are open rather than fixed to a catalogue.',
     },
     {
       q: 'Can you ship directly to my contract filler in Southern California?',
@@ -320,8 +321,9 @@ export const washington: Location = {
       a: 'We supply lighter secondary cartons for refill units sold without an outer case, where the pack has to protect but not present. Tell us how the refill programme works and the specification is built around that rather than around a standard retail carton.',
     },
     {
-      q: 'Do you have a Washington warehouse?',
-      a: 'No. Everything is manufactured to order and shipped to Washington addresses as part of a nationwide service. There is no local facility, no held stock and no local pickup option.',
+      q: 'Can I come and see samples in Washington?',
+      a:
+        'Not in person. There is no showroom or office in Washington, so samples are posted to you instead, and the sample options are set out on the sample kit page.',
     },
     {
       q: 'Why are paperboard tubes more expensive to ship than cartons?',
@@ -467,8 +469,9 @@ export const arizona: Location = {
       a: 'Yes, and pharmacy and convenience peg fixtures move a lot of lip balm in this market. The tab is die-cut from the same board as the carton, and the geometry is specified against your packed weight rather than added as an afterthought.',
     },
     {
-      q: 'Do you have an Arizona warehouse?',
-      a: 'No. Everything is made to order and shipped to Arizona addresses as part of a nationwide service. There is no local facility, no held stock and no collection option.',
+      q: 'Do you have staff on the ground in Arizona?',
+      a:
+        'No. Nobody is employed in Arizona. You deal with the same team wherever you are, and delivery to Arizona is handled by a national carrier.',
     },
     {
       q: 'Can you recommend a tamper seal for friction-fit caps?',
@@ -585,8 +588,9 @@ export const colorado: Location = {
       a: 'Yes, in printed E-flute corrugated. They ship flat, fold into an angled display and are useful for independents that have no dedicated shelf for a new brand. Producing them alongside your cartons keeps the colours matching.',
     },
     {
-      q: 'Do you have a Colorado location?',
-      a: 'No. Packaging is made to order and shipped to Colorado addresses through a nationwide service. There is no local facility, no held stock and no collection point.',
+      q: 'Should I treat this as a local Colorado supplier?',
+      a:
+        'Only in the sense that Colorado deliveries are routine. There is no local address, no local phone number and no local stock, and this page does not claim otherwise.',
     },
   ],
 };

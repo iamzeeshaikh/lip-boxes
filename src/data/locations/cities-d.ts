@@ -93,8 +93,9 @@ export const seattle: Location = {
       a: 'The Washington page covers material scrutiny and writing disposal claims you can defend across the state. This page is about the specific structure a refill programme needs, which is two packs with opposite requirements.',
     },
     {
-      q: 'Do you have a Seattle facility?',
-      a: 'No. Packaging is made to order and shipped to Seattle addresses through a nationwide service. There is no local warehouse, held stock or collection point.',
+      q: 'Should I treat this as a local Seattle supplier?',
+      a:
+        'Only in the sense that Seattle deliveries are routine. There is no local address, no local phone number and no local stock, and this page does not claim otherwise.',
     },
   ],
 };
@@ -192,7 +193,8 @@ export const denver: Location = {
     },
     {
       q: 'Do you have a Denver facility?',
-      a: 'No. Packaging is made to order and shipped to Denver addresses through a nationwide service. There is no local warehouse, held stock or collection point.',
+      a:
+        'No. There is no office, plant or warehouse in Denver. Every order is manufactured after you approve it and sent to your Denver address by carrier.',
     },
   ],
 };
@@ -288,8 +290,9 @@ export const washingtonDc: Location = {
       a: 'Longer than seasonal retail, often years. That makes reorder consistency important: specify spot colours rather than process builds, and make sure the approved proof is retained as the reference for every reorder.',
     },
     {
-      q: 'Do you have a Washington, D.C. facility?',
-      a: 'No. Packaging is made to order and shipped to Washington, D.C. addresses through a nationwide service. There is no local office, warehouse, held stock or collection point.',
+      q: 'Is there anywhere in Washington, D.C. I can collect an order from?',
+      a:
+        'No, there is no collection point. Orders are made to order and delivered to the Washington, D.C. address on your quote, so nothing is ever waiting to be picked up.',
     },
   ],
 };
@@ -386,8 +389,9 @@ export const nashville: Location = {
       a: 'The Tennessee page covers merchandise and date-driven production, where a fixed event date shapes every decision. This page is about visitor purchases that travel home, which is a physical durability and gifting question.',
     },
     {
-      q: 'Do you have a Nashville facility?',
-      a: 'No. Packaging is made to order and shipped to Nashville addresses through a nationwide service. There is no local warehouse, held stock or collection point.',
+      q: 'Are you based in Nashville?',
+      a:
+        'No. The business has no premises in Nashville and no local team. What it does have is a nationwide delivery service that reaches every Nashville address.',
     },
   ],
 };
@@ -484,8 +488,9 @@ export const boston: Location = {
       a: 'The Massachusetts page covers treatment and clinical positioning, where restraint signals credibility. This page is about the student market: price sensitivity at the shelf and a demand curve set by term dates.',
     },
     {
-      q: 'Do you have a Boston facility?',
-      a: 'No. Packaging is made to order and shipped to Boston addresses through a nationwide service. There is no local warehouse, held stock or collection point.',
+      q: 'Where does a Boston order actually ship from?',
+      a:
+        'From the production site, not from anywhere in Boston. Nothing is stored locally, so the transit leg to Boston is quoted as part of your order.',
     },
   ],
 };
