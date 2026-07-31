@@ -77,12 +77,7 @@ const schema = graph(
       </p>
       <div class="st-figures">
         {figures.map((product, index) => (
-          <MarketFigure
-            product={product}
-            index={index + 1}
-            context={index === 0 ? 'Retail carton' : 'Coordinated set'}
-            eager={index === 0}
-          />
+          <MarketFigure product={product} index={index + 1} eager={index === 0} />
         ))}
       </div>
       <p class="st-note">

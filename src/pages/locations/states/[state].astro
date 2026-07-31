@@ -115,7 +115,6 @@ const regionHeading = pick([
   `Where else in the ${region?.toLowerCase()} we cover`,
   `Compare this with neighbouring states`,
 ]);
-const leadFigure = related[0];
 const midFigure = related[1] ?? related[0];
 const openingBlocks = location.sections.slice(0, 1);
 const remainingBlocks = location.sections.slice(1);
@@ -143,17 +142,6 @@ const remainingBlocks = location.sections.slice(1);
         {`Get a price for ${location.name}`}
         <Icon name="arrow-right" size={18} />
       </a>
-      {
-        leadFigure && (
-          <MarketFigure
-            product={leadFigure}
-            index={offset}
-            variant="banner"
-            context={`${location.name} market`}
-            eager
-          />
-        )
-      }
     </div>
   </div>
 
@@ -193,7 +181,7 @@ const remainingBlocks = location.sections.slice(1);
       {
         midFigure && (
           <div class="loc-figure">
-            <MarketFigure product={midFigure} index={offset + 1} context="Format in use" />
+            <MarketFigure product={midFigure} index={offset + 1} eager />
           </div>
         )
       }
@@ -269,14 +257,13 @@ const remainingBlocks = location.sections.slice(1);
 <style>
   .loc-lead {
     background: var(--paper-warm);
-    padding-bottom: var(--sp-7);
+    padding-bottom: var(--sp-6);
   }
   .loc-lead__cta {
-    margin-bottom: var(--sp-5);
+    margin-bottom: 0;
   }
   .loc-figure {
-    padding-block: var(--sp-5) var(--sp-6);
-    border-top: 1px solid var(--line);
+    padding-block: var(--sp-4) var(--sp-5);
   }
 
   .loc-body {

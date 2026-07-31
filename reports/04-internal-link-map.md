@@ -1,6 +1,6 @@
 # Internal link map
 
-9781 internal links across 98 pages, of which
+9653 internal links across 98 pages, of which
 202 are contextual editorial links written into
 body copy. Header, footer, breadcrumbs and product grids are excluded from the
 editorial count.

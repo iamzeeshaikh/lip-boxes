@@ -73,7 +73,7 @@ const figures = ['hang-tab-lipstick-boxes', 'lip-gloss-boxes', 'paper-lip-balm-t
       </p>
       <div class="ci-figures">
         {figures.map((product, index) => (
-          <MarketFigure product={product} index={index} context={product.name} eager={index === 0} />
+          <MarketFigure product={product} index={index} eager={index === 0} />
         ))}
       </div>
       <p class="ci-note">

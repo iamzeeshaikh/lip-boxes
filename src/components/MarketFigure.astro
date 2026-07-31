@@ -1,136 +1,62 @@
 ---
 /**
- * A single piece of product photography used inside a market or guide page.
+ * A small piece of product photography used inside a market or guide page.
  *
- * The image is real product photography drawn from the product the page
- * already recommends, with the alt text and caption that were written for that
- * photograph. Nothing here invents a caption about the location.
+ * Deliberately modest: a capped, wide-crop thumbnail that links to the product
+ * page. No caption block — the alt text names the photograph for assistive
+ * technology, and the surrounding copy already says what the format is.
  */
 import { Image } from 'astro:assets';
 import { productImage } from '../lib/images';
-import Icon from './Icon.astro';
 import type { Product } from '../data/types';
 
 interface Props {
   product: Product;
   /** Which photograph to use. Wrapped, so an out-of-range index is safe. */
   index?: number;
-  /** Wide banner or inline block. */
-  variant?: 'banner' | 'inline';
-  /** Short line above the caption, written per page. */
-  context?: string;
   eager?: boolean;
 }
 
-const { product, index = 0, variant = 'inline', context, eager = false } = Astro.props;
+const { product, index = 0, eager = false } = Astro.props;
 
 const picture = product.images[index % product.images.length];
 const source = productImage(product.slug, picture.file);
-const banner = variant === 'banner';
 ---
 
-<figure class:list={['m-figure', banner && 'm-figure--banner']}>
-  <a class="m-figure__link" href={`/${product.slug}/`}>
-    <Image
-      src={source}
-      alt={picture.alt}
-      widths={banner ? [560, 840, 1120] : [420, 640, 860]}
-      sizes={banner ? '(min-width: 76rem) 72rem, 94vw' : '(min-width: 68rem) 44rem, 94vw'}
-      loading={eager ? 'eager' : 'lazy'}
-      decoding={eager ? 'sync' : 'async'}
-      fetchpriority={eager ? 'high' : 'auto'}
-      width={banner ? 1120 : 860}
-      height={banner ? 480 : 645}
-      class="m-figure__img"
-    />
-  </a>
-  <figcaption class="m-figure__caption">
-    <p class="m-figure__text">
-      {context && <span class="m-figure__context">{context}</span>}
-      {picture.caption ?? picture.alt}
-    </p>
-    <a class="m-figure__more" href={`/${product.slug}/`}>
-      <span>Sizes, materials and pricing for {product.name}</span>
-      <Icon name="arrow-right" size={15} class="m-figure__arrow" />
-    </a>
-  </figcaption>
-</figure>
+<a class="m-figure" href={`/${product.slug}/`}>
+  <Image
+    src={source}
+    alt={picture.alt}
+    widths={[320, 480, 640]}
+    sizes="(min-width: 62rem) 26rem, (min-width: 40rem) 40vw, 88vw"
+    loading={eager ? 'eager' : 'lazy'}
+    decoding={eager ? 'sync' : 'async'}
+    width={640}
+    height={400}
+    class="m-figure__img"
+  />
+</a>
 
 <style>
   .m-figure {
-    margin: 0;
-    min-width: 0;
-  }
-  .m-figure__link {
     display: block;
-    border-radius: var(--radius);
-    overflow: hidden;
+    width: 100%;
+    max-width: 26rem;
+    min-width: 0;
     border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
     background: var(--paper-warm);
+    line-height: 0;
   }
-  .m-figure__link:hover {
+  .m-figure:hover {
     border-color: var(--plum);
   }
   .m-figure__img {
     width: 100%;
     height: auto;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 16 / 10;
     object-fit: cover;
     display: block;
-    transition: transform 0.4s var(--ease);
-  }
-  .m-figure__link:hover .m-figure__img {
-    transform: scale(1.02);
-  }
-  .m-figure--banner .m-figure__img {
-    aspect-ratio: 4 / 3;
-  }
-  @media (min-width: 48rem) {
-    .m-figure--banner .m-figure__img {
-      aspect-ratio: 21 / 9;
-    }
-  }
-  /* Caption and link stack rather than sitting on one row. A bare product
-     name floating at the right end of a caption does not explain where it
-     goes; a full sentence with an arrow does. */
-  .m-figure__caption {
-    margin-top: var(--sp-3);
-    font-size: var(--step--1);
-    color: var(--ink-muted);
-    line-height: 1.55;
-  }
-  .m-figure__context {
-    display: inline-block;
-    margin-right: 0.45rem;
-    padding: 0.1rem 0.45rem;
-    background: var(--rose-soft);
-    color: var(--plum-deep);
-    border-radius: var(--radius-sm);
-    font-size: 0.68rem;
-    font-weight: 600;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    vertical-align: 0.08em;
-  }
-  .m-figure__text {
-    margin: 0 0 0.5rem;
-    min-width: 0;
-  }
-  .m-figure__more {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35rem;
-    font-size: var(--step--1);
-    font-weight: 600;
-    color: var(--plum);
-    text-decoration-thickness: 1px;
-    text-underline-offset: 0.2em;
-  }
-  .m-figure__more :global(.m-figure__arrow) {
-    flex-shrink: 0;
-    transition: transform 0.18s var(--ease);
-  }
-  .m-figure__more:hover :global(.m-figure__arrow) {
-    transform: translateX(3px);
   }
 </style>
