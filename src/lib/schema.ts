@@ -120,9 +120,10 @@ export function productSchema(product: Product, images: string[]) {
     url,
     price,
     priceCurrency: site.currency,
+    priceValidUntil: site.priceValidUntil,
     itemCondition: 'https://schema.org/NewCondition',
-    // Made to order: production starts after the order is confirmed.
-    availability: 'https://schema.org/MadeToOrder',
+    // Always orderable: production starts as soon as the order is confirmed.
+    availability: 'https://schema.org/InStock',
     priceSpecification: {
       '@type': 'UnitPriceSpecification',
       price,
@@ -157,6 +158,7 @@ export function productSchema(product: Product, images: string[]) {
     name: product.h1,
     description: product.metaDescription,
     url,
+    sku: product.slug,
     category: `${product.group} Packaging`,
     image: images.map((src) => abs(src)),
     brand: { '@type': 'Brand', name: site.name },

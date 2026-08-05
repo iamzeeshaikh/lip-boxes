@@ -27,6 +27,8 @@ export const site = {
 
   /** Visible starting unit price used in copy and Offer schema. */
   startingPrice: '0.30',
+  /** Date through which the advertised starting price is honoured. */
+  priceValidUntil: '2027-08-04',
   startingPriceStatement:
     'Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity.',
 

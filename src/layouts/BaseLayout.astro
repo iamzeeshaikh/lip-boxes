@@ -45,5 +45,9 @@ const { schema = [], ...seo } = Astro.props;
       <slot />
     </main>
     <Footer />
+    {/* ZeeOps live chat. Loaded last and deferred so it never blocks render;
+        its origin is allow-listed in the CSP in vercel.json. Conversations land
+        in the dashboard at chat.zeeops.dev under the `lipboxes` site. */}
+    <script src="https://chat.zeeops.dev/widget.js?siteId=lipboxes" defer is:inline></script>
   </body>
 </html>
