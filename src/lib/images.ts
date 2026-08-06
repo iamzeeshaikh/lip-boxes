@@ -8,8 +8,13 @@
  */
 import type { ImageMetadata } from 'astro';
 
+/*
+ * The `!` pattern excludes macOS AppleDouble sidecars (`._foo.png`) that
+ * exFAT volumes create alongside real files; without it a sidecar would be
+ * imported as an image and break the build.
+ */
 const registry = import.meta.glob<{ default: ImageMetadata }>(
-  '/src/assets/products/**/*.png',
+  ['/src/assets/products/**/*.png', '!**/._*'],
   { eager: true },
 );
 

@@ -22,7 +22,7 @@ const href = `/${product.slug}/`;
   <a class="p-card__media" href={href} tabindex="-1" aria-hidden="true">
     <Image
       src={img}
-      alt=""
+      alt={hero.alt || product.name}
       widths={[320, 480, 640]}
       sizes={compact
         ? '(min-width: 62rem) 22vw, (min-width: 40rem) 44vw, 88vw'

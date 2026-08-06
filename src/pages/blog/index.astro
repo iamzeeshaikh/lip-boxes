@@ -74,7 +74,7 @@ const [lead, ...rest] = blogPosts;
         <a class="lead-post__media" href={`/blog/${lead.slug}/`} tabindex="-1" aria-hidden="true">
           <Image
             src={productImage(lead.heroFrom.slug, lead.heroFrom.file)}
-            alt=""
+            alt={lead.heroFrom.alt || lead.title}
             widths={[480, 720, 960]}
             sizes="(min-width: 62rem) 30rem, (min-width: 40rem) 50vw, 90vw"
             loading="eager"
@@ -113,7 +113,7 @@ const [lead, ...rest] = blogPosts;
               <a class="archive__media" href={`/blog/${post.slug}/`} tabindex="-1" aria-hidden="true">
                 <Image
                   src={productImage(post.heroFrom.slug, post.heroFrom.file)}
-                  alt=""
+                  alt={post.heroFrom.alt || post.title}
                   widths={[220, 360]}
                   sizes="(min-width: 48rem) 11rem, 30vw"
                   loading="lazy"

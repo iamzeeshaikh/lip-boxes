@@ -160,7 +160,31 @@ const captions = resolved.map((image) => image.caption ?? image.alt);
       captions = [];
     }
 
+    /*
+     * Hidden panels have `display: none`, so their lazy-loaded images never
+     * intersect the viewport and would only start downloading on the first
+     * click. Warming flips them to eager (at low fetch priority) once the
+     * page is idle — and immediately on pointer intent — so every swap is
+     * instant.
+     */
+    const warmed = new Set<number>();
+    function warm(index: number) {
+      if (warmed.has(index)) return;
+      warmed.add(index);
+      const panel = panels[index];
+      if (!panel) return;
+      for (const img of panel.querySelectorAll('img')) {
+        if (img.loading !== 'lazy') continue;
+        img.fetchPriority = 'low';
+        img.loading = 'eager';
+      }
+    }
+    function warmAll() {
+      panels.forEach((_, i) => warm(i));
+    }
+
     function show(index: number) {
+      warm(index);
       panels.forEach((panel, i) => {
         panel.hidden = i !== index;
       });
@@ -172,6 +196,16 @@ const captions = resolved.map((image) => image.caption ?? image.alt);
 
     thumbs.forEach((thumb, i) => {
       thumb.addEventListener('click', () => show(i));
+      thumb.addEventListener('pointerenter', () => warm(i));
+      thumb.addEventListener('touchstart', () => warm(i), { passive: true });
     });
+
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(warmAll, { timeout: 3000 });
+    } else if (document.readyState === 'complete') {
+      setTimeout(warmAll, 300);
+    } else {
+      window.addEventListener('load', () => setTimeout(warmAll, 300), { once: true });
+    }
   }
 </script>
