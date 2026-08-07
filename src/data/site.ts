@@ -39,7 +39,7 @@ export const site = {
   email: 'info@lipboxes.com',
   phone: null as string | null,
   phoneDisplay: null as string | null,
-  whatsapp: null as string | null,
+  whatsapp: '+1 503-358-0443' as string | null,
   /** Postal address. Leave `null` until a real address is confirmed. */
   address: null as null | {
     street: string;

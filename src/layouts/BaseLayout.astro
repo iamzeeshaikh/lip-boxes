@@ -3,6 +3,7 @@ import '../styles/global.css';
 import Seo from '../components/Seo.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import WhatsAppButton from '../components/WhatsAppButton.astro';
 import { site } from '../data/site';
 
 interface Props {
@@ -45,6 +46,7 @@ const { schema = [], ...seo } = Astro.props;
       <slot />
     </main>
     <Footer />
+    <WhatsAppButton />
     {/* ZeeOps live chat. Loaded last and deferred so it never blocks render;
         its origin is allow-listed in the CSP in vercel.json. Conversations land
         in the dashboard at chat.zeeops.dev under the `lipboxes` site. */}
