@@ -45,7 +45,7 @@ export const resource: Resource = {
         'A dieline is a flat engineering drawing of a folding carton before it becomes a box. It shows every panel laid out in one plane, with every place the board will be cut, creased or perforated marked as a separate line type.',
         'It serves two audiences at once. For your designer it is the map that says where each panel begins and ends, so artwork lands on the right face. For the converter it is the specification from which a physical cutting tool is made.',
         'That dual role is why a dieline is not decorative and cannot be approximated. The same file drives both the artwork and the steel that cuts the board, so a line moved by a millimetre in the design file is a millimetre of difference in the finished carton.',
-        'This guide explains what the lines mean and how the tool is made. What we need in a file you send us is a separate question, answered in the <a href="/artwork-guidelines/">artwork requirements</a>.',
+        'This guide explains what the lines mean and how the tool is made. What we need in a file you send us is a separate question, answered in the <a href="/artwork-guidelines/">artwork requirements for printing</a>.',
       ],
     },
     {

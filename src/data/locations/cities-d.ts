@@ -58,8 +58,8 @@ export const seattle: Location = {
       navLabel: 'Refill specification',
       body: [
         'The refill pack is the one customers judge on waste, because they receive it repeatedly and see the accumulation in a way a single retail purchase never produces.',
-        'Practically that means the lightest secondary packaging that protects the product in transit: a plain or varnish-finished carton rather than a laminated one, a <a href="/resources/choosing-packaging-inserts/">paperboard insert</a> rather than foam, and no window film. Each of those keeps the pack in a single material stream.',
-        'It also means resisting the instinct to make every refill an experience. A brand that ships a premium unboxing twelve times a year is generating twelve times the waste for a customer who chose refill specifically to avoid it. The material trade-offs are set out on our <a href="/materials/">materials page</a>.',
+        'Practically that means the lightest secondary packaging that protects the product in transit: a plain or varnish-finished carton rather than a laminated one, a <a href="/resources/choosing-packaging-inserts/">choosing paperboard packaging inserts</a> rather than foam, and no window film. Each of those keeps the pack in a single material stream.',
+        'It also means resisting the instinct to make every refill an experience. A brand that ships a premium unboxing twelve times a year is generating twelve times the waste for a customer who chose refill specifically to avoid it. The material trade-offs are set out on our <a href="/materials/">board and material options</a>.',
       ],
     },
   ],
@@ -141,11 +141,11 @@ export const denver: Location = {
       intro: 'Six things worth specifying deliberately because they get tested in the meeting.',
       items: [
         'A synthetic label face stock, since paper labels absorb oil and water and lift at the edges',
-        'A <a href="/finishes/">laminate</a> or varnish over the print, because bare digital print scuffs in a pocket within weeks',
+        'A <a href="/finishes/">lamination and finish options</a> or varnish over the print, because bare digital print scuffs in a pocket within weeks',
         'A cap with positive retention, since a cap that works loose in a pack is a returned product',
         'A tube diameter that can be operated with cold hands or gloves',
         'Legible type at the size it will actually be read, often outdoors in poor light',
-        'A <a href="/hang-tab-lip-balm-boxes/">hanging pack</a>, since most outdoor retailers merchandise small items on pegs',
+        'A <a href="/hang-tab-lip-balm-boxes/">hang tab lip balm boxes</a>, since most outdoor retailers merchandise small items on pegs',
       ],
       outro:
         'The label stock is the one most often specified wrong. Uncoated paper looks right for a natural brand and fails the first time the product is used as intended.',
@@ -254,8 +254,8 @@ export const washingtonDc: Location = {
       heading: 'Specifying for this channel',
       navLabel: 'Specification',
       body: [
-        'The specification that suits institutional retail is usually restrained rather than expensive: a good board weight, a matte or soft-touch finish, a single foil or <a href="/finishes/">spot UV</a> detail, and typography given room to work.',
-        'What tends not to suit it is heavy decoration. <a href="/holographic-lip-gloss-boxes/">Holographic board</a>, glitter and busy full-coverage artwork read as promotional, and promotional is the opposite of what these stores are curating for.',
+        'The specification that suits institutional retail is usually restrained rather than expensive: a good board weight, a matte or soft-touch finish, a single foil or <a href="/finishes/">spot UV finish options</a> detail, and typography given room to work.',
+        'What tends not to suit it is heavy decoration. <a href="/holographic-lip-gloss-boxes/">Holographic board stock</a>, glitter and busy full-coverage artwork read as promotional, and promotional is the opposite of what these stores are curating for.',
         'Where a product is positioned as a gift, a sleeve and tray or a small rigid box is worth considering, because the opening moment carries the value. Both are viable at the modest quantities this channel orders, as covered on our <a href="/rigid-lipstick-boxes/">sleeve, tray and rigid options</a>.',
       ],
     },
@@ -337,10 +337,10 @@ export const nashville: Location = {
       navLabel: 'Travel durability',
       intro: 'Six specification choices that matter once a pack goes in a suitcase.',
       items: [
-        'Enough <a href="/materials/">board weight</a> that the carton does not crease under other luggage',
+        'Enough <a href="/materials/">board weights and thicknesses</a> that the carton does not crease under other luggage',
         'A base construction that holds when the pack is compressed, which a plain tuck flap may not',
         'An insert, so the product does not move and mark the printed interior',
-        'A <a href="/finishes/">laminate</a> rather than a varnish, since a scuffed pack arrives looking secondhand',
+        'A <a href="/finishes/">lamination and finish options</a> rather than a varnish, since a scuffed pack arrives looking secondhand',
         'A proportion that packs flat rather than one that has to stand upright',
         'A closure that stays closed, because a carton that opens in a bag loses its contents',
       ],
@@ -438,9 +438,9 @@ export const boston: Location = {
       items: [
         'A lighter board where the contents are light, since 16pt reads fine on a small carton',
         'Two spot colours rather than four-colour process, which can look more deliberate rather than less',
-        'Varnish instead of <a href="/finishes/">laminate</a>, which also keeps the pack in one material stream',
+        'Varnish instead of <a href="/finishes/">lamination and finish options</a>, which also keeps the pack in one material stream',
         'A printed swatch instead of a die-cut window, removing a pass and a material',
-        'One <a href="/resources/packaging-dieline-guide/">die line</a> across a range so the tooling is paid once',
+        'One <a href="/resources/packaging-dieline-guide/">guide to packaging die lines</a> across a range so the tooling is paid once',
         'A larger single production run timed to cover two terms, released in stages',
       ],
       outro:

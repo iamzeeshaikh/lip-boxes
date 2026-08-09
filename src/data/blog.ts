@@ -64,7 +64,7 @@ const posts: BlogPost[] = [
         body: [
           'Board and finish are often discussed together, but the board decision comes first because it constrains what the finish can do. Coated white board carries saturated colour and fine gradients. Kraft mutes everything and will flatten the differences between six shades. Black-through board is worth the premium on a dark carton because it keeps every cut edge dark.',
           'Weight follows the pack rather than the look: 16pt to 18pt for a single slim tube, 22pt or more for duos and for glass. A tall carton in light board bows visibly on a shelf.',
-          'Only then choose the coating. Matte lamination with spot UV on the swatch is the most reliable premium combination at a mid-market price, and a comparison of the coatings sits on our <a href="/finishes/">finishing reference</a>.',
+          'Only then choose the coating. Matte lamination with spot UV on the swatch is the most reliable premium combination at a mid-market price, and a comparison of the coatings sits on our <a href="/finishes/">finishing and coating reference</a>.',
         ],
       },
       {

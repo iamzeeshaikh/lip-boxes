@@ -192,7 +192,7 @@ export const product: Product = {
       body: [
         'Assembled tubes are checked for concentricity, cap retention and base disc travel. A tube out of round will not take a cap consistently, and a disc that binds ruins the customer\'s first use, so both are sampled through the run rather than only at the start.',
         'Store tubes and filled stock cool and dry. Kraft absorbs moisture, and paperboard is more heat-sensitive than plastic, so a pallet left against a warm wall will show it before a plastic one would.',
-        'Tubes arrive assembled and capped, nested in counted cases. They are light but bulky, so freight is charged on volume rather than weight and consolidating into fewer larger shipments costs materially less, as set out on the <a href="/shipping-information/">delivery page</a>.',
+        'Tubes arrive assembled and capped, nested in counted cases. They are light but bulky, so freight is charged on volume rather than weight and consolidating into fewer larger shipments costs materially less, as set out on the <a href="/shipping-information/">shipping and delivery information</a>.',
       ],
     },
   ],

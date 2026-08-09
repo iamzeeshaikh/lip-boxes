@@ -130,7 +130,7 @@ export const product: Product = {
         'Clear film patches in PET or PLA where a window shows the patch shape',
       ],
       outro:
-        'Uncoated board is worth considering here in a way it is not for gloss: a treatment product benefits from reading as calm rather than shiny, and uncoated stock does that without any finishing cost. The stock comparison sits on the <a href="/materials/">materials page</a>.',
+        'Uncoated board is worth considering here in a way it is not for gloss: a treatment product benefits from reading as calm rather than shiny, and uncoated stock does that without any finishing cost. The stock comparison sits on the <a href="/materials/">board and material options</a>.',
     },
     {
       type: 'prose',
@@ -211,7 +211,7 @@ export const product: Product = {
       navLabel: 'Quality & delivery',
       body: [
         'The checks specific to this format are cavity fit and base strength. A cavity that is a millimetre generous lets a sachet stack shift and crease; a cavity that is a millimetre tight makes the box difficult to fill. Sample cartons are packed with actual product where you can supply it, because a fit that works on paper sometimes does not work with a slightly pillowed sachet.',
-        'Cartons ship flat and glued in counted cases. Where the pack is going to a filler or a co-packer, send their receiving requirements so the case count and labelling suit their intake process. Freight details sit on the <a href="/shipping-information/">shipping page</a>.',
+        'Cartons ship flat and glued in counted cases. Where the pack is going to a filler or a co-packer, send their receiving requirements so the case count and labelling suit their intake process. Freight details sit on the <a href="/shipping-information/">shipping and delivery information</a>.',
         'On disposal, plain and varnished paperboard is widely recycled. A film window patch and any plastic lamination are separate materials the consumer has to deal with. For this category, where buyers often care about material choices, an uncoated board with a printed patch illustration rather than a window keeps the whole carton in one stream.',
       ],
     },

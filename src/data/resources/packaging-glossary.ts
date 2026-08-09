@@ -68,7 +68,7 @@ export const resource: Resource = {
         ['Rigid box', 'A set-up box of thick greyboard wrapped in paper', 'Ships assembled, not flat; different cost bracket'],
       ],
       outro:
-        'How these are made and why flaps sit where they do is covered in our <a href="/resources/packaging-dieline-guide/">dieline guide</a>.',
+        'How these are made and why flaps sit where they do is covered in our <a href="/resources/packaging-dieline-guide/">guide to packaging die lines</a>.',
     },
     {
       type: 'compare',
@@ -91,7 +91,7 @@ export const resource: Resource = {
         ['Liner', 'The barrier coating inside a paperboard tube', 'Decides whether oil migrates into the board'],
       ],
       outro:
-        'Which grade suits which product, and what each does to your print, is on the <a href="/materials/">materials page</a>.',
+        'Which grade suits which product, and what each does to your print, is on the <a href="/materials/">board and material options</a>.',
     },
     {
       type: 'compare',
@@ -140,7 +140,7 @@ export const resource: Resource = {
         ['Window patch', 'Clear film applied behind a die-cut aperture', 'Adds a second material and a production pass'],
       ],
       outro:
-        'What each does on different boards, with the cost and disposal trade-offs, is on the <a href="/finishes/">finishes page</a>.',
+        'What each does on different boards, with the cost and disposal trade-offs, is on the <a href="/finishes/">finish and coating options</a>.',
     },
     {
       type: 'compare',

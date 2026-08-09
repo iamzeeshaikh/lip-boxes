@@ -30,7 +30,7 @@ export const newYork: Location = {
       body: [
         'New York concentrates prestige beauty retail more than anywhere else in the country, and brands selling into it run into something that does not apply in independent or online channels: the account has a packaging specification, and it is not a suggestion.',
         'Those documents typically cover carton dimensions within a tolerance, barcode format and placement, case counts, pallet configuration, labelling on the outer case, and sometimes material restrictions. Some specify testing requirements before a first delivery.',
-        'The important consequence is timing. A retailer specification received after a <a href="/resources/packaging-dieline-guide/">die line</a> is approved usually means a new die. Received before, it costs nothing to build to.',
+        'The important consequence is timing. A retailer specification received after a <a href="/resources/packaging-dieline-guide/">guide to packaging die lines</a> is approved usually means a new die. Received before, it costs nothing to build to.',
       ],
     },
     {
@@ -57,7 +57,7 @@ export const newYork: Location = {
       heading: 'Where prestige packaging actually spends money',
       navLabel: 'Presentation',
       body: [
-        'Prestige lip packaging tends to spend on three things: <a href="/materials/">board weight</a>, a finish that reads at close range, and an insert that presents the product when the pack opens.',
+        'Prestige lip packaging tends to spend on three things: <a href="/materials/">board weights and thicknesses</a>, a finish that reads at close range, and an insert that presents the product when the pack opens.',
         'Board weight is the cheapest of the three and does the most. A 24pt carton feels considerably more substantial than an 18pt one at almost no unit cost difference, and it is the first thing a customer notices when they pick it up.',
         'The finish that most reliably signals prestige is soft-touch lamination with a hot foil detail, and it works because the two do different jobs: the laminate changes how the pack feels, the foil changes how it looks. Where the opening moment matters, that is where <a href="/rigid-lipstick-boxes/">wrapped rigid construction</a> starts to justify its cost.',
       ],
@@ -130,7 +130,7 @@ export const pennsylvania: Location = {
       body: [
         'A large share of Pennsylvania lip packaging enquiries come from private label producers and brands supplying pharmacy and value retail. Both operate on margins where a cent per unit is a real number.',
         'That reverses the usual specification conversation. Instead of choosing a finish and finding the cost, the cost target comes first and the specification is built to fit inside it. It is a more disciplined way to work and it produces different answers.',
-        'The decisions that matter most at this end are <a href="/materials/">board weight</a>, colour count and whether the job carries any finishing pass at all. Those three account for most of the difference between a carton at one price and the same carton at another.',
+        'The decisions that matter most at this end are <a href="/materials/">board weights and thicknesses</a>, colour count and whether the job carries any finishing pass at all. Those three account for most of the difference between a carton at one price and the same carton at another.',
       ],
     },
     {
@@ -158,7 +158,7 @@ export const pennsylvania: Location = {
       heading: 'Running one structure across several brands',
       navLabel: 'Private label',
       body: [
-        'Private label economics work when the structural specification is fixed and only the artwork changes. The <a href="/resources/packaging-dieline-guide/">die line</a>, the structural sample and the fit testing are then amortised across every brand using that format rather than repeated for each.',
+        'Private label economics work when the structural specification is fixed and only the artwork changes. The <a href="/resources/packaging-dieline-guide/">guide to packaging die lines</a>, the structural sample and the fit testing are then amortised across every brand using that format rather than repeated for each.',
         'That means resisting the temptation to let each customer brand tweak the carton. A two millimetre change for one account creates a second die and destroys the shared economics.',
         'We hold approved die lines and colour standards against a programme, so any brand within it can be reordered without repeating setup. How that is structured is covered on our <a href="/custom-lip-care-packaging/">bulk and private label page</a>.',
       ],
@@ -230,7 +230,7 @@ export const newJersey: Location = {
       body: [
         'New Jersey has a long-established cosmetics and personal care manufacturing base, and the buyers who come out of it tend to work differently from an independent brand. Specifications are documented, artwork carries version numbers, and approvals are recorded rather than agreed in a call.',
         'That is easier to supply, not harder, provided the process is respected. The friction comes when a supplier treats an approval informally in an organisation that treats it formally.',
-        'Practically it means every <a href="/resources/packaging-dieline-guide/">die line</a> and proof approval is confirmed in writing, artwork revisions are named and logged, and any change after approval is quoted as a change rather than absorbed silently.',
+        'Practically it means every <a href="/resources/packaging-dieline-guide/">guide to packaging die lines</a> and proof approval is confirmed in writing, artwork revisions are named and logged, and any change after approval is quoted as a change rather than absorbed silently.',
       ],
     },
     {
@@ -258,7 +258,7 @@ export const newJersey: Location = {
       body: [
         'Where a brand has a regulatory reviewer, the useful thing is to run their review in parallel with structural sampling rather than after it.',
         'The two stages have no dependency on each other: a reviewer can read copy while a plain structural sample is being cut. Sequencing them adds weeks for no reason, and it also risks the worse outcome where copy changes after a proof has been approved, which means new plates.',
-        'We print the file that is approved and do not review its regulatory content. What we will do is make sure the reviewer sees the laid-out artwork rather than only the copy in a document, because size and legibility only become apparent once it is set. The panel constraints are covered in our <a href="/resources/cosmetic-packaging-label-requirements/">labelling guide</a>.',
+        'We print the file that is approved and do not review its regulatory content. What we will do is make sure the reviewer sees the laid-out artwork rather than only the copy in a document, because size and legibility only become apparent once it is set. The panel constraints are covered in our <a href="/resources/cosmetic-packaging-label-requirements/">cosmetic labelling requirements guide</a>.',
       ],
     },
   ],
@@ -456,7 +456,7 @@ export const maryland: Location = {
       body: [
         'The efficient structure for a promotional programme is one tube stock, one label size, one cutting die, and as many printed label designs as you have clients.',
         'That way the container cost is fixed and predictable, the tooling is paid once, and each new client is a label print rather than a packaging project. Digital label printing carries no plate charge per design, so six clients at 2,000 each costs close to one client at 12,000.',
-        'It also makes reorders fast, because you can produce more labels against tube stock you already hold rather than waiting on container lead time. The label formats available are set out on our <a href="/lip-balm-labels/">label reference</a>.',
+        'It also makes reorders fast, because you can produce more labels against tube stock you already hold rather than waiting on container lead time. The label formats available are set out on our <a href="/lip-balm-labels/">lip balm label options</a>.',
       ],
     },
   ],
@@ -526,7 +526,7 @@ export const virginia: Location = {
       body: [
         'Virginia has a heavy concentration of e-commerce and fulfilment activity, and brands based there tend to sell a larger share online than in physical retail. That changes what packaging has to do.',
         'A shelf pack competes at three feet under store lighting. A mailer pack is unseen until it arrives, then judged at arm\'s length in someone\'s hallway. The first needs a strong front panel; the second needs to survive a parcel network and look considered when it opens.',
-        'The most common failure is treating the retail carton as the shipping container. A folding carton posted loose arrives crushed, and no amount of <a href="/materials/">board weight</a> fixes it. It is secondary packaging, and it needs something around it.',
+        'The most common failure is treating the retail carton as the shipping container. A folding carton posted loose arrives crushed, and no amount of <a href="/materials/">board weights and thicknesses</a> fixes it. It is secondary packaging, and it needs something around it.',
       ],
     },
     {

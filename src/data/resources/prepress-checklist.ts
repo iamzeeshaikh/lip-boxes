@@ -42,7 +42,7 @@ export const resource: Resource = {
       heading: 'How to use this checklist',
       navLabel: 'How to use it',
       body: [
-        'This is a working list to run against a finished file, not a description of file requirements. What we need in a submitted file — formats, bleed values, colour space — is set out separately in the <a href="/artwork-guidelines/">artwork requirements</a>. This page is the practical pass you make just before you send it.',
+        'This is a working list to run against a finished file, not a description of file requirements. What we need in a submitted file — formats, bleed values, colour space — is set out separately in the <a href="/artwork-guidelines/">artwork requirements for printing</a>. This page is the practical pass you make just before you send it.',
         'Run the four groups in order. Each one assumes the previous has passed, so checking type before checking separations wastes time when a colour problem later forces a type change anyway.',
         'Allow half an hour. Almost every proof cycle we have seen wasted was caused by something on this list, and a proof cycle costs days.',
       ],
@@ -125,7 +125,7 @@ export const resource: Resource = {
         'Layer names use plain words such as "foil gold" rather than abbreviations',
       ],
       outro:
-        'An unnamed extra layer gets interpreted rather than followed, and that costs a proof cycle. What each finish does physically is covered on the <a href="/finishes/">coatings page</a>.',
+        'An unnamed extra layer gets interpreted rather than followed, and that costs a proof cycle. What each finish does physically is covered on the <a href="/finishes/">coating and finish options</a>.',
     },
     {
       type: 'compare',

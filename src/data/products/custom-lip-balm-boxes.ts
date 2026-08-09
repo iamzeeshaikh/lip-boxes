@@ -52,7 +52,7 @@ export const product: Product = {
       body: [
         'A lip balm tube is small, cylindrical and easy to lose on a shelf. The carton around it does three jobs at once: it stops the tube rolling, it gives you a flat printable surface for your brand and ingredient panel, and it holds the product upright wherever it is merchandised. Get the internal dimensions wrong by two millimetres and the tube rattles; get them tight and the carton splits at the glue seam during filling.',
         'Every box we quote is cut from a fresh die line built around the tube you are actually filling. Send the outside diameter and the capped height, or post a sample to us, and the structural drawing is drawn to suit. That is the difference between a carton that closes cleanly on a hand-filling line and one that has to be forced.',
-        'Most lip balm brands start with a straight tuck end or reverse tuck end carton because both ship flat, assemble by hand in a few seconds and cost the least per unit. If you need the box to hang on a peg hook instead of sitting on a shelf, a <a href="/hang-tab-lip-balm-boxes/">lip balm box with a built-in euro hang tab</a> uses the same board and printing but adds a die-cut slot to the top panel.',
+        'Most lip balm brands start with a straight tuck end or reverse tuck end carton because both ship flat, assemble by hand in a few seconds and cost the least per unit. If you need the box to hang on a peg hook instead of sitting on a shelf, a <a href="/hang-tab-lip-balm-boxes/">lip balm box with a euro hang tab</a> uses the same board and printing but adds a die-cut slot to the top panel.',
       ],
     },
     {

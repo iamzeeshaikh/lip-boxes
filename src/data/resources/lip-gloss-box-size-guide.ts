@@ -101,7 +101,7 @@ export const resource: Resource = {
       body: [
         'A carton five inches tall on a one inch square base has a high centre of mass and very little to resist a knock. On a shelf, in a shopper basket, or on a shipping conveyor, it tips.',
         'The temptation is to cut the base to the tube diameter exactly, which minimises board cost. That is the wrong optimisation on this format. A base 2 to 3 mm wider than the minimum costs almost nothing in material and makes the difference between a pack that stands and one that spends its shelf life lying down.',
-        'If the product is merchandised standing rather than in a tray, say so when you request the die line. The structural drawing can be proportioned for it, and the base style can move from a simple tuck flap to a snap-lock so the carton cannot open downward when lifted. Those base options are compared on our <a href="/box-styles/">structural reference</a>.',
+        'If the product is merchandised standing rather than in a tray, say so when you request the die line. The structural drawing can be proportioned for it, and the base style can move from a simple tuck flap to a snap-lock so the carton cannot open downward when lifted. Those base options are compared on our <a href="/box-styles/">box style reference</a>.',
       ],
     },
     {

@@ -44,7 +44,7 @@ export const resource: Resource = {
       body: [
         'This is a practical orientation to the kinds of information cosmetic packaging carries and where each part conventionally sits. It exists because packaging decisions and labelling decisions constrain each other: a carton panel that is too small for the required copy is a packaging problem discovered too late.',
         'It is not legal or regulatory advice, and it should not be relied on as a compliance checklist. Requirements differ by product type, by ingredient, by claim and by the market you sell into, and they change. A product that is a cosmetic in one market may be regulated differently in another, and a single claim can move a product from one category to another.',
-        'Verify your specific requirements with a qualified regulatory or compliance professional before approving artwork. We print the file you approve and do not review its regulatory content, as stated in our <a href="/terms-and-conditions/">terms</a>.',
+        'Verify your specific requirements with a qualified regulatory or compliance professional before approving artwork. We print the file you approve and do not review its regulatory content, as stated in our <a href="/terms-and-conditions/">our terms and conditions</a>.',
       ],
     },
     {

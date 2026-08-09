@@ -148,7 +148,7 @@ export const product: Product = {
       body: [
         'Build the file to the supplied die line at 300 dpi in CMYK, with fonts outlined and 3 mm bleed. Then add the layers this substrate needs: an opaque white layer wherever a colour must read normally, and separate 100% black vector layers for any foil, spot UV or emboss areas.',
         'Name those layers explicitly. On a job with holographic board, opaque white, holo foil and spot UV, an unlabelled file leads to the wrong interpretation and a wasted proof cycle.',
-        'Ask for a proof on the actual holographic stock rather than a digital simulation. No screen and no white-paper proof shows how ink behaves over a reflective base, and this is the one substrate where an approved on-screen proof genuinely does not predict the printed result. General file setup requirements are on the <a href="/artwork-guidelines/">artwork page</a>.',
+        'Ask for a proof on the actual holographic stock rather than a digital simulation. No screen and no white-paper proof shows how ink behaves over a reflective base, and this is the one substrate where an approved on-screen proof genuinely does not predict the printed result. General file setup requirements are on the <a href="/artwork-guidelines/">artwork setup guidelines</a>.',
       ],
     },
     {

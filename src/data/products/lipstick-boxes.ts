@@ -161,7 +161,7 @@ export const product: Product = {
       body: [
         'A lipstick case is dense for its size, particularly a metal-weighted one. In a loose carton it moves under its own inertia every time the shipping case is handled, and repeated movement marks the case finish and scuffs the printed interior of the box.',
         'For anything above an entry price point, a folded paperboard collar at the base costs very little and stops it. For duos and trios a partition is not optional: lacquered and foiled cases scratch each other, and a set arriving marked defeats the point of the pack.',
-        'Quote the insert with the carton rather than separately. An insert sourced on its own arrives a millimetre out, is discovered during packing, and leaves you choosing between forcing it and reordering. The full range of options sits on the <a href="/box-styles/">structural reference</a>.',
+        'Quote the insert with the carton rather than separately. An insert sourced on its own arrives a millimetre out, is discovered during packing, and leaves you choosing between forcing it and reordering. The full range of options sits on the <a href="/box-styles/">box style reference</a>.',
       ],
     },
     {
@@ -172,7 +172,7 @@ export const product: Product = {
       body: [
         'Lipstick sits at a higher price point than most lip care, and the board is a meaningful part of how the pack is judged before it is opened. SBS folding boxboard from 18pt to 24pt is the standard. Heavier 24pt to 28pt is chosen where the pack needs to feel substantial in the hand.',
         'Two specialty boards earn their premium in this category. Black-through board, coloured throughout the pulp, keeps cut edges dark on a deep range. Metallised board puts a mirror base under the ink, though it is not compatible with paper recycling.',
-        'On finishing, soft-touch lamination is the treatment most associated with premium colour cosmetics, and matte lamination with a hot foil logo is the combination that appears most often on shelf. Both are covered on the <a href="/finishes/">coatings page</a>.',
+        'On finishing, soft-touch lamination is the treatment most associated with premium colour cosmetics, and matte lamination with a hot foil logo is the combination that appears most often on shelf. Both are covered on the <a href="/finishes/">coating and finish options</a>.',
       ],
     },
     {

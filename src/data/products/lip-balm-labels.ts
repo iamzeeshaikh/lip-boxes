@@ -183,7 +183,7 @@ export const product: Product = {
       body: [
         'Printed labels are checked for colour against the approved proof, for cut registration against the artwork, and for clean release from the liner. Registration is the failure customers notice, because a die drifting by half a millimetre leaves a visible white sliver along one edge of every label on the roll.',
         'Store label stock flat, cool and out of sunlight, and use it within a reasonable period. Adhesive performance changes with age and heat, and a roll that has sat near a warehouse ceiling through a summer will not run the way a fresh one does.',
-        'On disposal, paper-faced labels are compatible with paper recycling once separated from the container. Synthetic BOPP is not, and if the label stays on the tube it affects how the whole pack is handled. That trade-off between durability and end-of-life is worth weighing deliberately, and the material notes on the <a href="/materials/">stock reference</a> set out the same logic for board.',
+        'On disposal, paper-faced labels are compatible with paper recycling once separated from the container. Synthetic BOPP is not, and if the label stays on the tube it affects how the whole pack is handled. That trade-off between durability and end-of-life is worth weighing deliberately, and the material notes on the <a href="/materials/">board and material options</a> set out the same logic for board.',
       ],
     },
   ],

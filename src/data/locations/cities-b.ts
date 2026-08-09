@@ -41,7 +41,7 @@ export const philadelphia: Location = {
       intro: 'Six things to have ready before the first account asks, rather than after.',
       items: [
         'A barcode, registered to you rather than borrowed, printed on a flat panel with clear space',
-        'A full <a href="/resources/cosmetic-packaging-label-requirements/">ingredient declaration</a> that is actually legible at final size',
+        'A full <a href="/resources/cosmetic-packaging-label-requirements/">cosmetic ingredient labelling rules</a> that is actually legible at final size',
         'A case count a small shop can order without taking months of stock',
         'Consistent packaging between batches, which hand-cut labels do not deliver',
         'A wholesale price that survives a retail margin, which constrains packaging cost',
@@ -157,7 +157,7 @@ export const sanAntonio: Location = {
       body: [
         'Write both language versions of every required element before any design work begins, then count the characters. That number, not a layout instinct, tells you whether the container you have chosen can carry the copy.',
         'It is also worth deciding which language leads on the principal display panel, since that is a positioning decision rather than a packaging one and it affects how the front is laid out.',
-        'Have both versions reviewed by a qualified compliance professional, not just translated. Requirements vary by product and market, and a translation that reads correctly is not the same as copy that meets a requirement. The panel arithmetic is set out in our <a href="/resources/cosmetic-packaging-label-requirements/">labelling guide</a>.',
+        'Have both versions reviewed by a qualified compliance professional, not just translated. Requirements vary by product and market, and a translation that reads correctly is not the same as copy that meets a requirement. The panel arithmetic is set out in our <a href="/resources/cosmetic-packaging-label-requirements/">cosmetic labelling requirements guide</a>.',
       ],
     },
   ],
@@ -255,7 +255,7 @@ export const sanDiego: Location = {
       navLabel: 'Outdoor retail',
       body: [
         'Beyond the regulated content, the channel imposes its own requirements. Surf shops, dive stores and outdoor retailers merchandise small items on pegs and spinner racks rather than beauty fixtures.',
-        'That means a hanging pack, and it means a finish that tolerates sun exposure in a shop with large windows and constant handling by browsing customers. A <a href="/finishes/">laminate</a> holds up considerably better than bare print with a varnish.',
+        'That means a hanging pack, and it means a finish that tolerates sun exposure in a shop with large windows and constant handling by browsing customers. A <a href="/finishes/">lamination and finish options</a> holds up considerably better than bare print with a varnish.',
         'It also favours durable container formats. A plastic twist-up gives more thermal protection than paperboard, which matters for a product likely to spend time in a beach bag. Our <a href="/hang-tab-lip-balm-boxes/">hang tab carton options</a> covers the tab engineering.',
       ],
     },

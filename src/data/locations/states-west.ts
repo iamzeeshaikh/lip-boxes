@@ -100,7 +100,7 @@ export const california: Location = {
       items: [
         'Slim lipstick cartons for multi-shade colour ranges, usually on one die line',
         'Tall gloss cartons for wand applicators, where assembled height catches people out',
-        'Holographic and <a href="/holographic-lip-gloss-boxes/">metallised board</a> for limited editions and creator collaborations',
+        'Holographic and <a href="/holographic-lip-gloss-boxes/">metallised board stock options</a> for limited editions and creator collaborations',
         'Rigid boxes for press kits and influencer seeding, at genuinely small quantities',
         'Kraft and uncoated stocks for clean beauty positioning in coastal markets',
         'Printed mailers for direct-to-consumer, since a folding carton posted loose arrives crushed',
@@ -202,7 +202,7 @@ export const washington: Location = {
       heading: 'Why Washington enquiries look different',
       navLabel: 'The market',
       body: [
-        'A packaging enquiry from Washington more often opens with a question about material than about price. Buyers here regularly ask what the liner in a <a href="/paper-lip-balm-tubes/">paperboard tube</a> is made of, whether a laminate can be recycled, and what a supplier means by compostable.',
+        'A packaging enquiry from Washington more often opens with a question about material than about price. Buyers here regularly ask what the liner in a <a href="/paper-lip-balm-tubes/">paper lip balm tubes</a> is made of, whether a laminate can be recycled, and what a supplier means by compostable.',
         'That is a useful pressure to work under. It rewards suppliers who can answer precisely and exposes ones who cannot, and it pushes specifications toward choices that hold up to inspection rather than choices that sound good on a website.',
         'The practical effect on packaging is a preference for uncoated and varnished stocks over laminates, paperboard containers over plastic, and printed swatches over film windows, all of which keep a pack closer to a single material stream.',
       ],
@@ -423,7 +423,7 @@ export const arizona: Location = {
       intro:
         'Weighted toward products sold in outdoor, pharmacy and convenience channels.',
       items: [
-        '<a href="/hang-tab-lip-balm-boxes/">Hang tab</a> cartons for pharmacy and convenience peg fixtures, which move a lot of lip balm here',
+        '<a href="/hang-tab-lip-balm-boxes/">Hang tab lip balm boxes</a> cartons for pharmacy and convenience peg fixtures, which move a lot of lip balm here',
         'Plastic twist-up tubes with printed wrap labels, for heat resistance',
         'Outer cartons carrying the full panel where an SPF claim makes the tube band insufficient',
         'Laminated rather than varnish-only finishes on packs handled repeatedly in store',
@@ -438,7 +438,7 @@ export const arizona: Location = {
       navLabel: 'Ordering',
       body: [
         'Packaging is manufactured to order and shipped to Arizona addresses through a nationwide service. There is no Arizona facility, no local stock and no local collection point.',
-        'One practical note on delivery here. If your receiving area is not climate controlled, ask for the consignment to be scheduled rather than left, and move <a href="/lip-balm-labels/">label stock</a> indoors promptly. Label rolls are the component most affected by sitting in a hot receiving bay.',
+        'One practical note on delivery here. If your receiving area is not climate controlled, ask for the consignment to be scheduled rather than left, and move <a href="/lip-balm-labels/">lip balm label stock</a> indoors promptly. Label rolls are the component most affected by sitting in a hot receiving bay.',
         'Storage guidance for each format is set out in our <a href="/shipping-information/">storage and transit notes</a>, and it is worth passing to whoever receives the pallet rather than keeping it in the purchasing file.',
       ],
     },
@@ -542,7 +542,7 @@ export const colorado: Location = {
       navLabel: 'Small batches',
       body: [
         'A lot of Colorado enquiries are for quantities that suppliers with high minimums will not quote. That is worth addressing directly rather than around.',
-        'Plain kraft push-up tubes are the format that stays viable at genuinely small volumes, because an unprinted tube carries no plate cost, no <a href="/artwork-guidelines/">artwork approval</a> and no proofing cycle. The only setup is the diameter tooling, and that carries across every future order in that size. A maker filling a few hundred units a month can order sensibly.',
+        'Plain kraft push-up tubes are the format that stays viable at genuinely small volumes, because an unprinted tube carries no plate cost, no <a href="/artwork-guidelines/">artwork approval guidelines</a> and no proofing cycle. The only setup is the diameter tooling, and that carries across every future order in that size. A maker filling a few hundred units a month can order sensibly.',
         'Printed cartons are harder at that scale, because the die and the plates have to be absorbed somewhere. Digital printing avoids the plate charge, which helps, but the die remains. Where budget is tight, applying a printed label to a plain tube usually reaches the shelf for less than a printed carton does, as set out on our <a href="/cardboard-lip-balm-tubes/">kraft tube page</a>.',
       ],
     },

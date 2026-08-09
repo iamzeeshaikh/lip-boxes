@@ -167,7 +167,7 @@ export const product: Product = {
       body: [
         'Each component has its own template and its own constraints. A carton is a folding die line with creases. A label is a flat cut with a tight safe area. A rolled tube is a rectangle whose width is the circumference plus a seam overlap, and anything crossing that seam shows a step.',
         'The practical method is one master brand sheet with the fixed elements — logo lockup, brand colours as named spot references, the legal panel copy — and then three layouts built onto the supplied templates from that single source. Fix the spot colour references once and reuse them, rather than letting each component pick its own build.',
-        'We supply all three templates together with the variable zones marked. File requirements are the same across them and are set out on the <a href="/artwork-guidelines/">artwork page</a>.',
+        'We supply all three templates together with the variable zones marked. File requirements are the same across them and are set out on the <a href="/artwork-guidelines/">artwork setup guidelines</a>.',
       ],
     },
     {
@@ -217,7 +217,7 @@ export const product: Product = {
       body: [
         'The check that matters on a set is cross-component consistency rather than each item passing on its own. A carton and a label can both sit within tolerance against their individual proofs and still look wrong beside each other. So finished components are compared side by side under daylight, not only against their own references.',
         'Each item also gets its standard checks: colour against proof, dimensions on the first sheets, glue and fold on cartons, cut registration and liner release on labels, concentricity and cap retention on tubes.',
-        'Components ship together where the formats allow it. Cartons and labels travel flat and are charged on weight; assembled tubes are bulky and charged on volume, so a mixed consignment is usually cheaper as one shipment than as three, as set out on the <a href="/shipping-information/">delivery page</a>.',
+        'Components ship together where the formats allow it. Cartons and labels travel flat and are charged on weight; assembled tubes are bulky and charged on volume, so a mixed consignment is usually cheaper as one shipment than as three, as set out on the <a href="/shipping-information/">shipping and delivery information</a>.',
       ],
     },
   ],

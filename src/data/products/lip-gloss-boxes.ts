@@ -204,7 +204,7 @@ export const product: Product = {
       body: [
         'Because these cartons are tall and narrow, the checks that matter most are squareness and crease accuracy. A crease that is out by half a millimetre on a three-inch panel produces a carton that leans, and a leaning carton on a shelf reads as a manufacturing fault to a shopper. Sample cartons are stood up and checked visually as well as measured.',
         'Paperboard is widely recycled in United States municipal streams. A film window patch and a plastic lamination are separate materials that a consumer has to deal with, and metallised board is not paper-recyclable. Where end-of-life matters, an uncoated or varnish-finished board with a printed swatch instead of a window keeps the pack in one stream.',
-        'Production time depends on whether the job includes window patching, foil or spot UV, each of which is an additional pass. We confirm the schedule in writing with the quote, and the bands we work to are set out on the <a href="/turnaround-time/">turnaround page</a>.',
+        'Production time depends on whether the job includes window patching, foil or spot UV, each of which is an additional pass. We confirm the schedule in writing with the quote, and the bands we work to are set out on the <a href="/turnaround-time/">production turnaround times</a>.',
       ],
     },
   ],
