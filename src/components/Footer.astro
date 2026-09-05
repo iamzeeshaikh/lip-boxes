@@ -37,7 +37,7 @@ const year = new Date().getFullYear();
             site.whatsapp && (
               <li>
                 <a
-                  href={`https://wa.me/${site.whatsapp.replace(/[^0-9]/g, '')}`}
+                  href={`https://wa.me/${site.whatsapp.replace(/[^0-9]/g, '')}?text=${encodeURIComponent('Hi Lip Boxes! I need more info about Lip Boxes https://lipboxes.com/')}`}
                   rel="noopener noreferrer"
                   target="_blank"
                 >
