@@ -37,16 +37,19 @@ const { schema = [], ...seo } = Astro.props;
          from a bundled script because this site's CSP has no 'unsafe-inline'. -->
     <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-8NDZWF2DDD"></script>
     <script>
-      const w = window as unknown as { dataLayer: unknown[] };
+      const w = window as unknown as { dataLayer: unknown[]; gtag?: (...args: unknown[]) => void };
       w.dataLayer = w.dataLayer || [];
       /* gtag.js reads the arguments object back out of the queue, so it is
          pushed verbatim; the cast only gives it a call signature. */
       const gtag = function () {
         w.dataLayer.push(arguments);
       } as (...args: unknown[]) => void;
+      /* Exposed globally so /ga4-events.js can send the conversion events. */
+      w.gtag = gtag;
       gtag('js', new Date());
       gtag('config', 'G-8NDZWF2DDD');
     </script>
+    <script is:inline defer src="/ga4-events.js"></script>
     {
       schema.map((graph) => (
         <script type="application/ld+json" set:html={JSON.stringify(graph)} is:inline />
