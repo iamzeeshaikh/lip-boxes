@@ -33,6 +33,20 @@ const { schema = [], ...seo } = Astro.props;
 <html lang={site.lang}>
   <head>
     <Seo {...seo} />
+    <!-- Google Analytics 4. The external tag is inline-exempt; the config runs
+         from a bundled script because this site's CSP has no 'unsafe-inline'. -->
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-8NDZWF2DDD"></script>
+    <script>
+      const w = window as unknown as { dataLayer: unknown[] };
+      w.dataLayer = w.dataLayer || [];
+      /* gtag.js reads the arguments object back out of the queue, so it is
+         pushed verbatim; the cast only gives it a call signature. */
+      const gtag = function () {
+        w.dataLayer.push(arguments);
+      } as (...args: unknown[]) => void;
+      gtag('js', new Date());
+      gtag('config', 'G-8NDZWF2DDD');
+    </script>
     {
       schema.map((graph) => (
         <script type="application/ld+json" set:html={JSON.stringify(graph)} is:inline />
