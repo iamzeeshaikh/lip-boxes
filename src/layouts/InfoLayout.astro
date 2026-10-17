@@ -1,4 +1,6 @@
 ---
+import FaqList from '../components/FaqList.astro';
+import { newExtras, extraHeading } from '../lib/page-faqs';
 import BaseLayout from './BaseLayout.astro';
 import PageHero from '../components/PageHero.astro';
 import QuoteCta from '../components/QuoteCta.astro';
@@ -58,13 +60,16 @@ const {
 } = Astro.props;
 
 const crumbs: Crumb[] = [{ name: 'Home', path: '/' }, { name: h1 }];
+// questions written for this route that the page does not already show
+const extraFaqList = newExtras(path, faqs ?? []);
+const schemaFaqs = [...(faqs ?? []), ...extraFaqList];
 
 const schema = graph(
   organizationSchema(),
   websiteSchema(),
   webPageSchema({ path, name: h1, description, type: pageType }),
   breadcrumbSchema(crumbs),
-  ...(faqs && faqs.length > 0 ? [faqSchema(faqs, path)] : []),
+  ...(schemaFaqs.length > 0 ? [faqSchema(schemaFaqs, path)] : []),
   ...extraSchema,
 );
 ---
@@ -84,6 +89,14 @@ const schema = graph(
       <slot />
     </div>
   </div>
+
+  {extraFaqList.length > 0 && (
+    <div class="section">
+      <div class="wrap wrap--narrow">
+        <FaqList faqs={extraFaqList} heading={extraHeading(path)} level={3} />
+      </div>
+    </div>
+  )}
 
   <QuoteCta
     heading={ctaHeading}

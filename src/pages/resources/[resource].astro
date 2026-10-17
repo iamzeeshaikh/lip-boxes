@@ -1,4 +1,5 @@
 ---
+import { withExtras } from '../../lib/page-faqs';
 import type { GetStaticPaths } from 'astro';
 import { Image, getImage } from 'astro:assets';
 import BaseLayout from '../../layouts/BaseLayout.astro';
@@ -88,7 +89,7 @@ const schema = graph(
   }),
   breadcrumbSchema(crumbs),
   articleSchema,
-  ...(resource.faqs && resource.faqs.length > 0 ? [faqSchema(resource.faqs, path)] : []),
+  ...(withExtras(path, resource.faqs ?? []).length > 0 ? [faqSchema(withExtras(path, resource.faqs ?? []), path)] : []),
 );
 
 const contents = resource.sections.map((section) => ({
@@ -179,7 +180,7 @@ const updatedLabel = new Date(`${resource.updated}T00:00:00Z`).toLocaleDateStrin
       <nav aria-labelledby="r-toc-heading">
         <ol class="r-toc__list">
           {contents.map((item) => <li><a href={`#${item.id}`}>{item.label}</a></li>)}
-          {resource.faqs && resource.faqs.length > 0 && (
+          {withExtras(path, resource.faqs ?? []).length > 0 && (
             <li><a href="#faqs">Questions</a></li>
           )}
           <li><a href="#quote">Get a price</a></li>
@@ -191,12 +192,12 @@ const updatedLabel = new Date(`${resource.updated}T00:00:00Z`).toLocaleDateStrin
       <ContentBlocks blocks={resource.sections} slug={resource.hero.slug} />
 
       {
-        resource.faqs && resource.faqs.length > 0 && (
+        withExtras(path, resource.faqs ?? []).length > 0 && (
           <section class="r-section" id="faqs" aria-labelledby="r-faqs-heading">
             <h2 class="r-section__heading" id="r-faqs-heading">
               {resource.title}: common questions
             </h2>
-            <FaqList faqs={resource.faqs} level={3} />
+            <FaqList faqs={withExtras(path, resource.faqs ?? [])} level={3} />
           </section>
         )
       }

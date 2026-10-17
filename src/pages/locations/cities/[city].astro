@@ -1,4 +1,5 @@
 ---
+import { withExtras } from '../../../lib/page-faqs';
 import type { GetStaticPaths } from 'astro';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import PageHero from '../../../components/PageHero.astro';
@@ -56,7 +57,7 @@ const schema = graph(
     description: location.metaDescription,
   }),
   breadcrumbSchema(crumbs),
-  faqSchema(location.faqs, path),
+  faqSchema(withExtras(path, location.faqs), path),
 );
 
 /*
@@ -147,7 +148,7 @@ const nextHeading = pick([
 
       <section class="city-section" id="faqs" aria-labelledby="city-faqs-heading">
         <h2 class="city-section__heading" id="city-faqs-heading">{faqHeading}</h2>
-        <FaqList faqs={location.faqs} level={3} />
+        <FaqList faqs={withExtras(path, location.faqs)} level={3} />
       </section>
 
       <p class="city-note">

@@ -29,7 +29,7 @@ const QTag = `h${level}` as 'h2' | 'h3';
               </svg>
             </span>
           </summary>
-          <div class="faq__a"><p>{faq.a}</p></div>
+          <div class="faq__a"><p set:html={faq.a} /></div>
         </details>
       ))
     }

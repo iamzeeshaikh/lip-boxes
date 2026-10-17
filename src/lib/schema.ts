@@ -209,7 +209,7 @@ export function faqSchema(faqs: { q: string; a: string }[], pageUrl: string) {
     mainEntity: faqs.map((faq) => ({
       '@type': 'Question',
       name: faq.q,
-      acceptedAnswer: { '@type': 'Answer', text: faq.a },
+      acceptedAnswer: { '@type': 'Answer', text: faq.a.replace(/<[^>]+>/g, '') },
     })),
   };
 }

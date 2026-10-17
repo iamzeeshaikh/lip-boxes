@@ -1,0 +1,17 @@
+---
+// A FAQ block plus its FAQPage node, for pages that had no FAQs of their own.
+import FaqList from './FaqList.astro';
+import { newExtras, extraHeading } from '../lib/page-faqs';
+import { faqSchema } from '../lib/schema';
+const route = Astro.url.pathname;
+const faqs = newExtras(route);
+const json = JSON.stringify({ '@context': 'https://schema.org', ...faqSchema(faqs, route) }).replace(/</g, '\\u003c');
+---
+{faqs.length > 0 && (
+  <div class="section">
+    <div class="wrap wrap--narrow">
+      <FaqList faqs={faqs} heading={extraHeading(route)} level={3} />
+    </div>
+    <script type="application/ld+json" is:inline set:html={json} />
+  </div>
+)}

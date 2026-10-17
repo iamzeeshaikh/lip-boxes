@@ -1,4 +1,5 @@
 ---
+import { withExtras } from '../../lib/page-faqs';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHero from '../../components/PageHero.astro';
 import FaqList from '../../components/FaqList.astro';
@@ -62,7 +63,7 @@ const schema = graph(
     type: 'CollectionPage',
   }),
   breadcrumbSchema(crumbs),
-  faqSchema(faqs, path),
+  faqSchema(withExtras(path, faqs), path),
 );
 ---
 
@@ -177,7 +178,7 @@ const schema = graph(
   <section class="section" aria-labelledby="loc-faqs-heading">
     <div class="wrap wrap--narrow">
       <h2 id="loc-faqs-heading">Questions about supply and delivery</h2>
-      <FaqList faqs={faqs} level={3} />
+      <FaqList faqs={withExtras(path, faqs)} level={3} />
     </div>
   </section>
 

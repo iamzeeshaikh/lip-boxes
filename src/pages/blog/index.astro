@@ -1,4 +1,5 @@
 ---
+import ExtraFaqs from '../../components/ExtraFaqs.astro';
 import { Image } from 'astro:assets';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHero from '../../components/PageHero.astro';
@@ -154,6 +155,7 @@ const [lead, ...rest] = blogPosts;
     heading="Have a packaging question these do not answer?"
     body="Send it with your enquiry. Questions that come up repeatedly tend to become the next article."
   />
+  <ExtraFaqs />
 </BaseLayout>
 
 <style>
