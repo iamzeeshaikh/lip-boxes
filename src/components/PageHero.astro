@@ -3,84 +3,88 @@ import Breadcrumbs from './Breadcrumbs.astro';
 import type { Crumb } from '../lib/schema';
 
 interface Props {
-  eyebrow?: string;
   h1: string;
   lead?: string;
   crumbs: Crumb[];
-  /** Optional supporting points shown as a short row under the lead. */
+  /** Optional supporting points shown as a short ruled row under the lead. */
   points?: string[];
 }
 
-const { eyebrow, h1, lead, crumbs, points } = Astro.props;
+const { h1, lead, crumbs, points } = Astro.props;
 ---
 
-<div class="page-hero">
-  <div class="wrap">
-    <Breadcrumbs crumbs={crumbs} tone="warm" />
-    <div class="page-hero__body">
-      {eyebrow && <span class="eyebrow">{eyebrow}</span>}
-      <h1>{h1}</h1>
-      {lead && <p class="lead page-hero__lead">{lead}</p>}
-      {
-        points && points.length > 0 && (
-          <ul class="page-hero__points">
-            {points.map((point) => <li>{point}</li>)}
-          </ul>
-        )
-      }
-    </div>
+<div class="vx-mast">
+  <Breadcrumbs crumbs={crumbs} />
+  <div class="vx-mast__body">
+    <h1>{h1}</h1>
+    {lead && <p class="vx-lede vx-mast__lead">{lead}</p>}
   </div>
+  {
+    points && points.length > 0 && (
+      <ul class="vx-mast__points">
+        {points.map((point) => <li>{point}</li>)}
+      </ul>
+    )
+  }
 </div>
 
 <style>
-  .page-hero {
-    background:
-      radial-gradient(
-        120% 100% at 88% 0%,
-        color-mix(in srgb, var(--rose-soft) 60%, transparent) 0%,
-        transparent 62%
-      ),
-      var(--paper-warm);
-    border-bottom: 1px solid var(--line);
-    padding-block: var(--sp-5) var(--sp-7);
+  .vx-mast {
+    padding: 22px var(--gut) 40px;
+    max-width: var(--wrap);
+    margin-inline: auto;
+    width: 100%;
   }
-  .page-hero__body {
-    margin-top: var(--sp-5);
-    max-width: 46rem;
+  .vx-mast__body {
+    display: grid;
+    gap: 18px 20px;
+    align-items: end;
+    margin-top: 26px;
+    padding-bottom: 26px;
+    border-bottom: 1px solid var(--vx-rule);
   }
-  .page-hero h1 {
-    margin-bottom: var(--sp-4);
+  .vx-mast h1 {
+    margin: 0;
+    font-size: clamp(2.6rem, 1.6rem + 3.4vw, 5.2rem);
+    max-width: 20ch;
   }
-  .page-hero__lead {
-    margin-bottom: 0;
+  .vx-mast__lead {
+    margin: 0;
+    max-width: 58ch;
   }
-  .page-hero__points {
+  @media (min-width: 62rem) {
+    .vx-mast__body {
+      grid-template-columns: 7fr 5fr;
+    }
+  }
+  .vx-mast__points {
     list-style: none;
-    margin: var(--sp-5) 0 0;
+    margin: 0;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--sp-2) var(--sp-5);
-    font-size: var(--step--1);
-    color: var(--ink-soft);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
+    gap: 0 20px;
   }
-  .page-hero__points li {
-    position: relative;
-    padding-left: 1rem;
+  .vx-mast__points li {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--vx-rule-lt);
+    font-size: 0.94rem;
+    color: var(--vx-ink-2);
   }
-  .page-hero__points li::before {
+  .vx-mast__points li::before {
     content: '';
-    position: absolute;
-    left: 0;
-    top: 0.62em;
-    width: 5px;
-    height: 5px;
-    border-radius: 50%;
-    background: var(--rose);
+    display: inline-block;
+    width: 10px;
+    height: 2px;
+    margin: 0 10px 4px 0;
+    background: var(--vx-accent);
   }
-  @media (min-width: 60rem) {
-    .page-hero {
-      padding-block: var(--sp-6) var(--sp-8);
+  @media (max-width: 860px) {
+    .vx-mast {
+      padding-bottom: 28px;
+    }
+    .vx-mast h1 {
+      font-size: 2.6rem;
     }
   }
 </style>

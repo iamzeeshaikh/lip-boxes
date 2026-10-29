@@ -106,7 +106,6 @@ const nextHeading = pick([
   schema={[schema]}
 >
   <PageHero
-    eyebrow={`${location.name}, ${location.stateCode}`}
     h1={location.h1}
     lead={location.deck}
     crumbs={crumbs}
@@ -114,11 +113,11 @@ const nextHeading = pick([
   />
 
   <div class="city-lead">
-    <div class="wrap">
+    <div class="vx-frame">
       <div class="city-lead__row">
         <div class="city-lead__aside">
           <p class="city-lead__angle">{location.cardDescription}</p>
-          <a class="btn btn--primary" href="#quote">
+          <a class="vx-btn vx-btn--red" href="#quote">
             {`Get a price for ${location.name}`}
             <Icon name="arrow-right" size={18} />
           </a>
@@ -130,7 +129,7 @@ const nextHeading = pick([
     </div>
   </div>
 
-  <div class="wrap city-body">
+  <div class="vx-frame city-body">
     <article class="city-article">
       {
         parent && (
@@ -175,11 +174,10 @@ const nextHeading = pick([
 
   {
     related.length > 0 && (
-      <section class="section" aria-labelledby="city-products-heading">
-        <div class="wrap">
-          <span class="eyebrow">Formats that fit this market</span>
+      <section class="vx-band" aria-labelledby="city-products-heading">
+        <div class="vx-frame">
           <h2 id="city-products-heading">{productsHeading}</h2>
-          <div class="grid grid--products city-products">
+          <div class="vx-tiles vx-tiles--range city-products">
             {related.map((product) => <ProductCard product={product} compact />)}
           </div>
         </div>
@@ -187,8 +185,8 @@ const nextHeading = pick([
     )
   }
 
-  <section class="section section--warm" aria-labelledby="city-nearby-heading">
-    <div class="wrap">
+  <section class="vx-band vx-band--grey" aria-labelledby="city-nearby-heading">
+    <div class="vx-frame">
       <h2 id="city-nearby-heading">{nextHeading}</h2>
       <div class="city-next">
         {
@@ -221,8 +219,7 @@ const nextHeading = pick([
 
 <style>
   .city-lead {
-    background: var(--paper-warm);
-    padding-bottom: var(--sp-7);
+    padding-bottom: var(--sp-4);
   }
   .city-lead__row {
     display: grid;
@@ -231,7 +228,7 @@ const nextHeading = pick([
   }
   @media (min-width: 48rem) {
     .city-lead__row {
-      grid-template-columns: minmax(0, 26rem) minmax(0, 1fr);
+      grid-template-columns: minmax(0, 1fr);
       gap: var(--sp-6);
     }
   }
@@ -239,37 +236,36 @@ const nextHeading = pick([
     min-width: 0;
   }
   .city-lead__angle {
-    font-size: var(--step-1);
+    font: 500 1.6rem/1.2 var(--vx-head);
+    max-width: 40ch;
     line-height: 1.5;
-    color: var(--ink);
+    color: var(--vx-ink);
     margin-bottom: var(--sp-4);
     text-wrap: balance;
   }
   .city-lead__note {
     margin: var(--sp-3) 0 0;
     font-size: var(--step--1);
-    color: var(--ink-muted);
+    color: var(--vx-mute-c);
   }
   .city-body {
     padding-block: var(--sp-7);
   }
   .city-article {
-    max-width: 46rem;
-    margin-inline: auto;
+    max-width: 62rem;
     min-width: 0;
   }
   .city-parent {
-    padding: var(--sp-3) var(--sp-4);
-    background: var(--paper-warm);
-    border-left: 3px solid var(--rose);
-    border-radius: var(--radius-sm);
+    padding: var(--sp-2) var(--sp-4);
+    border-left: 3px solid var(--vx-accent);
+    border-radius: var(--vx-r);
     font-size: var(--step--1);
-    color: var(--ink-soft);
+    color: var(--vx-ink-2);
     margin-bottom: var(--sp-5);
   }
   .city-section {
     padding-block: var(--sp-6);
-    border-top: 1px solid var(--line);
+    border-top: 1px solid var(--vx-rule-lt);
     scroll-margin-top: 6rem;
   }
   .city-section__heading {
@@ -279,10 +275,10 @@ const nextHeading = pick([
   .city-note {
     margin-top: var(--sp-6);
     padding: var(--sp-4);
-    background: var(--paper-warm);
-    border-radius: var(--radius-sm);
+    background: var(--vx-grey);
+    border-radius: var(--vx-r);
     font-size: var(--step--1);
-    color: var(--ink-soft);
+    color: var(--vx-ink-2);
     line-height: 1.6;
   }
   .city-products {
@@ -307,36 +303,34 @@ const nextHeading = pick([
     display: block;
     min-width: 0;
     padding: var(--sp-4);
-    background: var(--white);
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
+    background: var(--vx-white);
+    border: 1px solid var(--vx-rule-lt);
+    border-radius: var(--vx-r);
     text-decoration: none;
     transition: border-color 0.18s var(--ease);
   }
   .city-next__card:hover {
-    border-color: var(--plum);
+    border-color: var(--vx-accent);
   }
   .city-next__label {
     display: block;
-    font-size: 0.7rem;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    color: var(--ink-muted);
+    font-size: 0.82rem;
+    color: var(--vx-accent);
     margin-bottom: 0.3rem;
   }
   .city-next__title {
     display: block;
     font-weight: 600;
-    color: var(--ink);
+    color: var(--vx-ink);
     margin-bottom: 0.2rem;
   }
   .city-next__card:hover .city-next__title {
-    color: var(--plum);
+    color: var(--vx-accent);
   }
   .city-next__text {
     display: block;
     font-size: var(--step--1);
-    color: var(--ink-muted);
+    color: var(--vx-mute-c);
     line-height: 1.5;
   }
 </style>

@@ -18,8 +18,8 @@ const img = productImage(product.slug, hero.file);
 const href = `/${product.slug}/`;
 ---
 
-<article class:list={['card', 'p-card', compact && 'p-card--compact']}>
-  <a class="p-card__media" href={href} tabindex="-1" aria-hidden="true">
+<article class:list={['vx-card', compact && 'vx-card--compact']}>
+  <a class="vx-card__media" href={href} tabindex="-1" aria-hidden="true">
     <Image
       src={img}
       alt={hero.alt || product.name}
@@ -30,18 +30,18 @@ const href = `/${product.slug}/`;
       loading={eager ? 'eager' : 'lazy'}
       fetchpriority={eager ? 'high' : 'auto'}
       decoding={eager ? 'sync' : 'async'}
-      class="p-card__img"
+      class="vx-card__img"
       width={480}
       height={480}
     />
   </a>
-  <div class="p-card__body">
-    <h3 class="p-card__title">
+  <div class="vx-card__body">
+    <h3 class="vx-card__title">
       <a href={href}>{product.name}</a>
     </h3>
-    {!compact && <p class="p-card__desc">{product.cardDescription}</p>}
-    <p class="p-card__meta">
-      <span class="p-card__cta">
+    {!compact && <p class="vx-card__desc">{product.cardDescription}</p>}
+    <p class="vx-card__meta">
+      <span class="vx-card__cta">
         View specification
         <Icon name="arrow-right" size={15} />
       </span>
@@ -50,84 +50,71 @@ const href = `/${product.slug}/`;
 </article>
 
 <style>
-  .p-card {
+  .vx-card {
     position: relative;
+    display: flex;
+    flex-direction: column;
   }
-  .p-card__media {
+  .vx-card__media {
     display: block;
-    background: var(--paper-warm);
+    background: var(--vx-grey);
     aspect-ratio: 1 / 1;
     overflow: hidden;
+    margin-bottom: 12px;
   }
-  .p-card__img {
+  .vx-card__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.4s var(--ease);
+    transition: opacity 0.2s;
   }
-  .p-card:hover .p-card__img {
-    transform: scale(1.03);
+  .vx-card:hover .vx-card__img {
+    opacity: 0.88;
   }
-  .p-card__body {
+  .vx-card__body {
     display: flex;
     flex-direction: column;
     flex: 1;
-    padding: var(--sp-4) var(--sp-4) var(--sp-5);
   }
-  .p-card__title {
-    font-size: var(--step-1);
-    margin: 0 0 var(--sp-2);
-    line-height: 1.25;
+  .vx-card__title {
+    font-size: 1.4rem;
+    margin: 0 0 6px;
+    line-height: 1.1;
   }
-  .p-card__title a {
+  .vx-card__title a {
     display: inline-block;
-    /* The ::after overlay makes the whole card clickable; this keeps the
-       anchor's own box at the 24px minimum as well. */
     min-height: 1.5rem;
-    color: var(--ink);
+    color: var(--vx-ink);
     text-decoration: none;
   }
   /* The title link covers the card, so the whole card is one target. */
-  .p-card__title a::after {
+  .vx-card__title a::after {
     content: '';
     position: absolute;
     inset: 0;
   }
-  .p-card:hover .p-card__title a {
-    color: var(--plum);
+  .vx-card:hover .vx-card__title a {
+    color: var(--vx-accent);
   }
-  .p-card__desc {
-    font-size: var(--step--1);
-    color: var(--ink-muted);
-    line-height: 1.55;
-    margin: 0 0 var(--sp-4);
+  .vx-card__desc {
+    font-size: 0.9rem;
+    color: #444;
+    line-height: 1.5;
+    margin: 0 0 10px;
   }
-  .p-card__meta {
+  .vx-card__meta {
     margin: auto 0 0;
   }
-  .p-card__cta {
+  .vx-card__cta {
     display: inline-flex;
     align-items: center;
     gap: 0.35rem;
-    font-size: var(--step--1);
+    font-size: 0.875rem;
     font-weight: 600;
-    color: var(--plum);
+    color: var(--vx-ink);
+    border-bottom: 1px solid var(--vx-accent);
   }
-  .p-card:hover .p-card__cta {
-    color: var(--rose);
-  }
-  .p-card--compact .p-card__body {
-    padding: var(--sp-3) var(--sp-4) var(--sp-4);
-  }
-  .p-card--compact .p-card__title {
-    font-size: var(--step-0);
-    font-family: var(--font-body);
-    font-weight: 600;
-    letter-spacing: 0;
-  }
-  @media (prefers-reduced-motion: reduce) {
-    .p-card:hover .p-card__img {
-      transform: none;
-    }
+  .vx-card--compact .vx-card__title {
+    font-size: 1.2rem;
   }
 </style>

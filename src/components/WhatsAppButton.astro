@@ -6,7 +6,7 @@
 ---
 <a
   href="https://api.whatsapp.com/send/?phone=15034614788&text=Hi+Lip+Boxes%21+I+need+more+info+about+Lip+Boxes+https%3A%2F%2Flipboxes.com%2F&type=phone_number&app_absent=0"
-  class="whatsapp-float"
+  class="vx-wa"
   target="_blank"
   rel="noopener noreferrer"
   aria-label="Chat with us on WhatsApp"
@@ -18,34 +18,34 @@
 </a>
 
 <style>
-  .whatsapp-float {
+  .vx-wa {
     position: fixed;
-    bottom: 1.5rem;
-    left: 1.5rem;
+    bottom: 20px;
+    left: 20px;
     z-index: 9999;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 56px;
-    height: 56px;
+    display: grid;
+    place-items: center;
+    width: 58px;
+    height: 58px;
     border-radius: 50%;
     background: #25d366;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.15s;
   }
-  .whatsapp-float:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  .vx-wa:hover {
+    background: #1ebe5a;
   }
-  .whatsapp-float svg {
+  .vx-wa svg {
     width: 30px;
     height: 30px;
     fill: #fff;
   }
-  @media (max-width: 640px) {
-    .whatsapp-float {
-      bottom: 1rem;
-      left: 1rem;
+  @media (max-width: 860px) {
+    .vx-wa {
+      width: 54px;
+      height: 54px;
+      bottom: 16px;
+      left: 16px;
     }
   }
 </style>

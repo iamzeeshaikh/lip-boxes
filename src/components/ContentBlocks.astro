@@ -44,14 +44,14 @@ const iconMap: Record<string, IconName> = {
       <h2 id={`${block.id}-heading`} class="block__heading">{block.heading}</h2>
 
       {block.type === 'prose' && (
-        <div class="prose">
+        <div class="vx-copy">
           {block.body.map((paragraph) => <p set:html={paragraph} />)}
         </div>
       )}
 
       {block.type === 'features' && (
         <>
-          {block.intro && <p class="block__intro measure">{block.intro}</p>}
+          {block.intro && <p class="block__intro vx-measure">{block.intro}</p>}
           <ul class="feature-grid">
             {block.items.map((item) => (
               <li class="feature">
@@ -68,7 +68,7 @@ const iconMap: Record<string, IconName> = {
 
       {block.type === 'list' && (
         <>
-          {block.intro && <p class="block__intro measure">{block.intro}</p>}
+          {block.intro && <p class="block__intro vx-measure">{block.intro}</p>}
           <ul class="check-list">
             {block.items.map((item) => (
               <li>
@@ -77,13 +77,13 @@ const iconMap: Record<string, IconName> = {
               </li>
             ))}
           </ul>
-          {block.outro && <p class="block__outro measure" set:html={block.outro} />}
+          {block.outro && <p class="block__outro vx-measure" set:html={block.outro} />}
         </>
       )}
 
       {block.type === 'split' && (
         <div class:list={['split', block.imageSide === 'left' && 'split--flip']}>
-          <div class="split__text prose">
+          <div class="split__text vx-copy">
             {block.body.map((paragraph) => <p set:html={paragraph} />)}
           </div>
           <figure class="split__media">
@@ -103,11 +103,11 @@ const iconMap: Record<string, IconName> = {
 
       {block.type === 'steps' && (
         <>
-          {block.intro && <p class="block__intro measure">{block.intro}</p>}
+          {block.intro && <p class="block__intro vx-measure">{block.intro}</p>}
           <ol class="steps">
             {block.steps.map((step, i) => (
               <li class="step">
-                <span class="step__num" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
+                <span class="step__num" aria-hidden="true">{i + 1}</span>
                 <div>
                   <h3 class="step__title">{step.title}</h3>
                   <p class="step__text">{step.text}</p>
@@ -120,8 +120,8 @@ const iconMap: Record<string, IconName> = {
 
       {block.type === 'compare' && (
         <>
-          {block.intro && <p class="block__intro measure">{block.intro}</p>}
-          <div class="table-scroll">
+          {block.intro && <p class="block__intro vx-measure">{block.intro}</p>}
+          <div class="vx-table">
             <table>
               <thead>
                 <tr>
@@ -141,7 +141,7 @@ const iconMap: Record<string, IconName> = {
               </tbody>
             </table>
           </div>
-          {block.outro && <p class="block__outro measure" set:html={block.outro} />}
+          {block.outro && <p class="block__outro vx-measure" set:html={block.outro} />}
         </>
       )}
     </section>
@@ -151,7 +151,7 @@ const iconMap: Record<string, IconName> = {
 <style>
   .block {
     padding-block: var(--sp-6);
-    border-top: 1px solid var(--line);
+    border-top: 1px solid var(--vx-rule);
     scroll-margin-top: 6rem;
   }
   .block:first-child {
@@ -159,16 +159,16 @@ const iconMap: Record<string, IconName> = {
     padding-top: 0;
   }
   .block__heading {
-    font-size: var(--step-2);
+    font-size: var(--step-3);
     margin-bottom: var(--sp-4);
   }
   .block__intro {
-    color: var(--ink-soft);
+    color: var(--vx-ink-2);
     margin-bottom: var(--sp-5);
   }
   .block__outro {
     margin-top: var(--sp-5);
-    color: var(--ink-soft);
+    color: var(--vx-ink-2);
     font-size: var(--step--1);
   }
 
@@ -183,28 +183,18 @@ const iconMap: Record<string, IconName> = {
   }
   .feature {
     padding-top: var(--sp-3);
-    border-top: 2px solid var(--rose-soft);
+    border-top: 3px solid var(--vx-accent);
   }
   .feature__icon {
-    display: grid;
-    place-items: center;
-    width: 2rem;
-    height: 2rem;
-    margin-bottom: var(--sp-3);
-    border-radius: var(--radius-sm);
-    background: var(--paper-blush);
-    color: var(--plum);
+    display: none;
   }
   .feature__title {
-    font-family: var(--font-body);
-    font-size: var(--step-0);
-    font-weight: 600;
-    letter-spacing: 0;
+    font-size: 1.35rem;
     margin: 0 0 var(--sp-2);
   }
   .feature__text {
     font-size: var(--step--1);
-    color: var(--ink-soft);
+    color: var(--vx-ink-2);
     line-height: 1.6;
     margin: 0;
   }
@@ -229,13 +219,13 @@ const iconMap: Record<string, IconName> = {
     gap: 0.6rem;
     font-size: var(--step--1);
     line-height: 1.6;
-    color: var(--ink-soft);
+    color: var(--vx-ink-2);
   }
   /* :global — the class lands on an <Icon> component's <svg>. */
   :global(.check-list__tick) {
     flex-shrink: 0;
     margin-top: 0.22em;
-    color: var(--rose);
+    color: var(--vx-accent);
   }
 
   /* --- Split --- */
@@ -261,10 +251,8 @@ const iconMap: Record<string, IconName> = {
   }
   .split__media {
     margin: 0;
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
     overflow: hidden;
-    background: var(--paper-warm);
+    background: var(--vx-grey);
   }
   .split__media img {
     width: 100%;
@@ -286,7 +274,7 @@ const iconMap: Record<string, IconName> = {
     display: flex;
     gap: var(--sp-4);
     padding-bottom: var(--sp-4);
-    border-bottom: 1px solid var(--line);
+    border-bottom: 1px solid var(--vx-rule-lt);
   }
   .step:last-child {
     border-bottom: 0;
@@ -294,24 +282,17 @@ const iconMap: Record<string, IconName> = {
   }
   .step__num {
     flex-shrink: 0;
-    font-family: var(--font-display);
-    font-size: var(--step-1);
-    font-weight: 600;
-    color: var(--rose);
-    line-height: 1.2;
-    min-width: 2rem;
-    font-variation-settings: 'SOFT' 0, 'WONK' 1, 'opsz' 24;
+    font: 300 3.4rem/0.9 var(--vx-head);
+    color: var(--vx-accent);
+    min-width: 3rem;
   }
   .step__title {
-    font-family: var(--font-body);
-    font-size: var(--step-0);
-    font-weight: 600;
-    letter-spacing: 0;
+    font-size: 1.35rem;
     margin: 0 0 var(--sp-1);
   }
   .step__text {
     font-size: var(--step--1);
-    color: var(--ink-soft);
+    color: var(--vx-ink-2);
     line-height: 1.6;
     margin: 0;
     max-width: var(--measure);

@@ -100,7 +100,7 @@ const publishedLabel = new Date(`${post.published}T09:00:00Z`).toLocaleDateStrin
   schema={[schema]}
 >
   <div class="a-top">
-    <div class="wrap wrap--narrow">
+    <div class="vx-frame vx-frame--slim">
       <Breadcrumbs crumbs={crumbs} tone="warm" />
       <p class="a-meta">
         <time datetime={post.published}>{publishedLabel}</time>
@@ -110,12 +110,12 @@ const publishedLabel = new Date(`${post.published}T09:00:00Z`).toLocaleDateStrin
         <span>{site.name}</span>
       </p>
       <h1>{post.h1}</h1>
-      <p class="lead a-deck">{post.deck}</p>
+      <p class="vx-lede a-deck">{post.deck}</p>
     </div>
   </div>
 
   <figure class="a-hero">
-    <div class="wrap">
+    <div class="vx-frame">
       <Image
         src={heroSource}
         alt={post.heroFrom.alt}
@@ -131,7 +131,7 @@ const publishedLabel = new Date(`${post.published}T09:00:00Z`).toLocaleDateStrin
     </div>
   </figure>
 
-  <div class="wrap a-body">
+  <div class="vx-frame a-body">
     <aside class="a-toc" aria-labelledby="a-toc-heading">
       <h2 class="a-toc__heading" id="a-toc-heading">Contents</h2>
       <nav aria-labelledby="a-toc-heading">
@@ -141,7 +141,7 @@ const publishedLabel = new Date(`${post.published}T09:00:00Z`).toLocaleDateStrin
       </nav>
     </aside>
 
-    <article class="a-article prose">
+    <article class="a-article vx-copy">
       {
         post.sections.map((section) => (
           <section id={section.id} class="a-section">
@@ -156,7 +156,7 @@ const publishedLabel = new Date(`${post.published}T09:00:00Z`).toLocaleDateStrin
             }
             {
               section.table && (
-                <div class="table-scroll a-table">
+                <div class="vx-table a-table">
                   <table>
                     <thead>
                       <tr>{section.table.columns.map((column) => <th scope="col">{column}</th>)}</tr>
@@ -192,11 +192,10 @@ const publishedLabel = new Date(`${post.published}T09:00:00Z`).toLocaleDateStrin
 
   {
     related.length > 0 && (
-      <section class="section section--warm" aria-labelledby="a-related-heading">
-        <div class="wrap">
-          <span class="eyebrow">Products in this article</span>
+      <section class="vx-band vx-band--grey" aria-labelledby="a-related-heading">
+        <div class="vx-frame">
           <h2 id="a-related-heading">Packaging covered above</h2>
-          <div class="grid grid--products a-related">
+          <div class="vx-tiles vx-tiles--range a-related">
             {related.map((product) => <ProductCard product={product} compact />)}
           </div>
         </div>
@@ -210,13 +209,7 @@ const publishedLabel = new Date(`${post.published}T09:00:00Z`).toLocaleDateStrin
 
 <style>
   .a-top {
-    background:
-      radial-gradient(
-        120% 100% at 90% 0%,
-        color-mix(in srgb, var(--rose-soft) 55%, transparent) 0%,
-        transparent 62%
-      ),
-      var(--paper-warm);
+    background: var(--vx-white);
     padding-block: var(--sp-5) var(--sp-7);
   }
   .a-meta {
@@ -226,7 +219,7 @@ const publishedLabel = new Date(`${post.published}T09:00:00Z`).toLocaleDateStrin
     gap: 0.5rem;
     margin: var(--sp-5) 0 var(--sp-4);
     font-size: var(--step--1);
-    color: var(--ink-muted);
+    color: var(--vx-mute-c);
   }
   .a-top h1 {
     font-size: var(--step-4);
@@ -239,16 +232,13 @@ const publishedLabel = new Date(`${post.published}T09:00:00Z`).toLocaleDateStrin
 
   .a-hero {
     margin: 0;
-    background: var(--paper-warm);
-    padding-bottom: var(--sp-7);
+    padding-bottom: var(--sp-6);
   }
   .a-hero__img {
     width: 100%;
     height: auto;
     aspect-ratio: 4 / 3;
     object-fit: cover;
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
   }
   @media (min-width: 48rem) {
     .a-hero__img {
@@ -279,12 +269,12 @@ const publishedLabel = new Date(`${post.published}T09:00:00Z`).toLocaleDateStrin
     }
   }
   .a-toc__heading {
-    font-family: var(--font-body);
-    font-size: var(--step--1);
-    font-weight: 600;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    color: var(--ink-muted);
+    font-family: var(--vx-head);
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--vx-ink);
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--vx-rule);
     margin-bottom: var(--sp-3);
   }
   .a-toc__list {
@@ -292,21 +282,21 @@ const publishedLabel = new Date(`${post.published}T09:00:00Z`).toLocaleDateStrin
     margin: 0;
     padding: 0;
     counter-reset: toc;
-    border-left: 1px solid var(--line);
+    border-left: 1px solid var(--vx-rule-lt);
   }
   .a-toc__list a {
     display: block;
     padding: 0.35rem 0 0.35rem 0.85rem;
     font-size: var(--step--1);
-    color: var(--ink-soft);
+    color: var(--vx-ink-2);
     text-decoration: none;
     border-left: 2px solid transparent;
     margin-left: -1px;
     line-height: 1.45;
   }
   .a-toc__list a:hover {
-    color: var(--plum);
-    border-left-color: var(--rose);
+    color: var(--vx-accent);
+    border-left-color: var(--vx-accent);
   }
 
   .a-article {
@@ -327,7 +317,7 @@ const publishedLabel = new Date(`${post.published}T09:00:00Z`).toLocaleDateStrin
   }
   .a-list li {
     margin-bottom: var(--sp-2);
-    color: var(--ink-soft);
+    color: var(--vx-ink-2);
   }
   .a-table {
     margin-block: var(--sp-5);
@@ -335,9 +325,9 @@ const publishedLabel = new Date(`${post.published}T09:00:00Z`).toLocaleDateStrin
   .a-footer {
     margin-top: var(--sp-7);
     padding-top: var(--sp-5);
-    border-top: 1px solid var(--line);
+    border-top: 1px solid var(--vx-rule-lt);
     font-size: var(--step--1);
-    color: var(--ink-muted);
+    color: var(--vx-mute-c);
   }
   .a-related {
     margin-top: var(--sp-5);

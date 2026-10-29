@@ -276,10 +276,10 @@ console.log('\nJavaScript disabled');
     navLinks: document.querySelectorAll('nav a[href^="/"]').length,
     formAction: document.querySelector('form[data-quote-form]')?.getAttribute('action') ?? '',
     formMethod: document.querySelector('form[data-quote-form]')?.getAttribute('method') ?? '',
-    galleryImages: document.querySelectorAll('.gallery img').length,
+    galleryImages: document.querySelectorAll('.vx-gal img').length,
     specRows: document.querySelectorAll('#specification tbody tr').length,
-    faqs: document.querySelectorAll('.faq').length,
-    firstFaqOpen: document.querySelector('.faq')?.hasAttribute('open') ?? false,
+    faqs: document.querySelectorAll('.vx-qa').length,
+    firstFaqOpen: document.querySelector('.vx-qa')?.hasAttribute('open') ?? false,
     jsonLd: document.querySelectorAll('script[type="application/ld+json"]').length,
   }));
 
@@ -296,8 +296,8 @@ console.log('\nJavaScript disabled');
 
   await page.goto(`${BASE}/products/`, { waitUntil: 'domcontentloaded' });
   const directory = await page.evaluate(() => ({
-    cards: document.querySelectorAll('.p-card').length,
-    links: [...document.querySelectorAll('.p-card__title a')].map((a) => a.getAttribute('href')),
+    cards: document.querySelectorAll('.vx-card').length,
+    links: [...document.querySelectorAll('.vx-card__title a')].map((a) => a.getAttribute('href')),
   }));
   const expectedProducts = fs
     .readdirSync(path.join(process.cwd(), 'src/data/products'))
@@ -321,7 +321,7 @@ console.log('\nReduced motion');
   await page.goto(`${BASE}/`, { waitUntil: 'networkidle0' });
   const durations = await page.evaluate(() => {
     const values = new Set();
-    for (const el of document.querySelectorAll('a.btn, .p-card__img, html')) {
+    for (const el of document.querySelectorAll('a.vx-btn, .vx-card__img, html')) {
       const style = getComputedStyle(el);
       values.add(style.transitionDuration);
       values.add(style.animationDuration);

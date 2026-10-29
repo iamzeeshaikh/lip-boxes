@@ -10,6 +10,7 @@ import ContentBlocks from '../components/ContentBlocks.astro';
 import FaqList from '../components/FaqList.astro';
 import ProductCard from '../components/ProductCard.astro';
 import QuoteCta from '../components/QuoteCta.astro';
+import DesignYourLipBox from '../components/DesignYourLipBox.astro';
 import Icon from '../components/Icon.astro';
 import { products, getProduct, hasReviews } from '../data/products';
 import { productImage, publicImageUrl, publicSocialUrl } from '../lib/images';
@@ -116,16 +117,16 @@ const showReviews = hasReviews(product.reviews);
   ogType="product"
   preloadImage={lcpAsset.src}
   preloadImageSrcset={lcpAsset.srcSet.attribute}
-  preloadImageSizes="(min-width: 62rem) 32rem, (min-width: 40rem) 60vw, 90vw"
+  preloadImageSizes="(min-width: 62rem) 46vw, 92vw"
   preloadImageType="image/avif"
   schema={[schema]}
 >
-  <div class="p-top">
-    <div class="wrap">
-      <Breadcrumbs crumbs={crumbs} tone="warm" />
+  <div class="vx-ptop">
+    <div class="vx-frame">
+      <Breadcrumbs crumbs={crumbs} />
 
-      <div class="p-hero">
-        <div class="p-hero__gallery">
+      <div class="vx-phero">
+        <div class="vx-phero__gallery">
           <ProductGallery
             slug={product.slug}
             images={product.images}
@@ -133,40 +134,38 @@ const showReviews = hasReviews(product.reviews);
           />
         </div>
 
-        <div class="p-hero__intro">
-          <p class="p-hero__group">{product.group} packaging</p>
+        <div class="vx-phero__intro">
           <h1>{product.h1}</h1>
-          <p class="lead p-hero__lead">{product.valueProp}</p>
+          <p class="vx-lede vx-phero__lead">{product.valueProp}</p>
 
-          <ul class="p-hero__highlights">
+          <ul class="vx-phero__highlights">
             {
               product.highlights.map((highlight) => (
                 <li>
-                  <Icon name="check" size={17} class="p-hero__tick" />
                   <span>{highlight}</span>
                 </li>
               ))
             }
           </ul>
 
-          <div class="price-note">
-            <p class="price-note__line" data-boilerplate>{site.startingPriceStatement}</p>
-            <p class="price-note__sub" data-boilerplate>
+          <div class="vx-pnote">
+            <p class="vx-pnote__line" data-boilerplate>{site.startingPriceStatement}</p>
+            <p class="vx-pnote__sub" data-boilerplate>
               The starting figure applies to qualifying large-volume custom
               orders. It is not a fixed price for every quantity, and your
               written quote will state the actual unit price for your job.
             </p>
           </div>
 
-          <div class="btn-row p-hero__actions">
-            <a href="#quick-quote" class="btn btn--primary">
+          <div class="vx-btns vx-phero__actions">
+            <a href="#quick-quote" class="vx-btn vx-btn--red">
               Request a Quote
               <Icon name="arrow-right" size={18} />
             </a>
-            <a href="/sample-kit/" class="btn btn--secondary">Request a sample</a>
+            <a href="/sample-kit/" class="vx-arrow">Request a sample</a>
           </div>
 
-          <p class="p-hero__contact">
+          <p class="vx-phero__contact">
             <a href={`mailto:${site.email}`}>{site.email}</a>
             {site.phone && <> &middot; <a href={`tel:${site.phone}`}>{site.phoneDisplay ?? site.phone}</a></>}
           </p>
@@ -175,11 +174,13 @@ const showReviews = hasReviews(product.reviews);
     </div>
   </div>
 
-  <div class="wrap p-body">
-    <aside class="p-contents" aria-labelledby="contents-heading">
-      <h2 class="p-contents__heading" id="contents-heading">On this page</h2>
+  <DesignYourLipBox product={product} />
+
+  <div class="vx-frame vx-pbody">
+    <aside class="vx-ptoc" aria-labelledby="contents-heading">
+      <h2 class="vx-ptoc__heading" id="contents-heading">On this page</h2>
       <nav aria-labelledby="contents-heading">
-        <ul class="p-contents__list">
+        <ul class="vx-ptoc__list">
           {contents.map((item) => <li><a href={`#${item.id}`}>{item.label}</a></li>)}
           <li><a href="#specification">Specification</a></li>
           <li><a href="#faqs">Questions</a></li>
@@ -187,8 +188,8 @@ const showReviews = hasReviews(product.reviews);
       </nav>
     </aside>
 
-    <div class="p-main">
-      <div class="p-quote">
+    <div class="vx-pmain">
+      <div class="vx-pquote">
         <ShortQuoteForm product={product.name} heading={formHeading} />
       </div>
 
@@ -198,11 +199,11 @@ const showReviews = hasReviews(product.reviews);
         <h2 class="block__h" id="specification-heading">
           {product.name} specification
         </h2>
-        <p class="block__intro measure" data-boilerplate>
+        <p class="block__intro vx-measure" data-boilerplate>
           A summary of what can be specified on this product. Anything marked as
           quoted or made to order is confirmed in writing before production.
         </p>
-        <div class="table-scroll">
+        <div class="vx-table">
           <table>
             <caption>Specification summary for {product.name.toLowerCase()}.</caption>
             <tbody>
@@ -257,7 +258,7 @@ const showReviews = hasReviews(product.reviews);
         <h2 class="block__h" id="faqs-heading">
           {product.name}: common questions
         </h2>
-        <p class="block__intro measure" data-boilerplate>
+        <p class="block__intro vx-measure" data-boilerplate>
           Answers to the questions we are asked most often about this product.
           If yours is not here, put it in the enquiry form and we will answer it
           directly.
@@ -269,15 +270,16 @@ const showReviews = hasReviews(product.reviews);
 
   {
     related.length > 0 && (
-      <section class="section section--warm" aria-labelledby="related-heading">
-        <div class="wrap">
-          <span class="eyebrow">Related packaging</span>
-          <h2 id="related-heading">{relatedHeading}</h2>
-          <p class="measure text-muted related__intro" data-boilerplate>
-            Each of these is quoted from the same enquiry, so a range can be
-            produced on one specification and one schedule.
-          </p>
-          <div class="grid grid--products">
+      <section class="vx-band" aria-labelledby="related-heading">
+        <div class="vx-frame">
+          <div class="vx-sechead">
+            <h2 id="related-heading">{relatedHeading}</h2>
+            <p class="related__intro" data-boilerplate>
+              Each of these is quoted from the same enquiry, so a range can be
+              produced on one specification and one schedule.
+            </p>
+          </div>
+          <div class="vx-tiles vx-tiles--range">
             {related.map((item) => <ProductCard product={item} compact />)}
           </div>
         </div>
@@ -293,170 +295,165 @@ const showReviews = hasReviews(product.reviews);
 </BaseLayout>
 
 <style>
-  .p-top {
-    background:
-      radial-gradient(
-        110% 90% at 92% 0%,
-        color-mix(in srgb, var(--rose-soft) 55%, transparent) 0%,
-        transparent 60%
-      ),
-      var(--paper-warm);
-    border-bottom: 1px solid var(--line);
-    padding-block: var(--sp-5) var(--sp-7);
+  .vx-ptop {
+    padding: 22px 0 56px;
   }
-
-  .p-hero {
+  .vx-phero {
     display: grid;
     gap: var(--sp-6);
-    margin-top: var(--sp-5);
+    margin-top: 26px;
   }
   @media (min-width: 62rem) {
-    .p-hero {
-      grid-template-columns: minmax(20rem, 32rem) 1fr;
-      gap: var(--sp-8);
+    .vx-phero {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 20px;
       align-items: start;
     }
+    .vx-phero__gallery {
+      grid-column: 1 / 7;
+    }
+    .vx-phero__intro {
+      grid-column: 7 / 13;
+      position: sticky;
+      top: 100px;
+    }
   }
-
-  .p-hero__group {
-    font-size: var(--step--1);
-    font-weight: 600;
-    letter-spacing: 0.11em;
-    text-transform: uppercase;
-    color: var(--rose);
-    margin-bottom: var(--sp-3);
+  .vx-phero__gallery,
+  .vx-phero__intro {
+    min-width: 0;
   }
-  .p-hero h1 {
-    font-size: var(--step-4);
-    margin-bottom: var(--sp-4);
+  .vx-phero h1 {
+    font-size: clamp(2.5rem, 1.4rem + 3.2vw, 4.6rem);
+    line-height: 0.95;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--vx-rule);
   }
-  .p-hero__lead {
+  .vx-phero__lead {
     margin-bottom: var(--sp-5);
-    max-width: 44ch;
+    max-width: 52ch;
   }
-  .p-hero__highlights {
+  .vx-phero__highlights {
     list-style: none;
     margin: 0 0 var(--sp-5);
     padding: 0;
-    display: grid;
-    gap: var(--sp-2);
+    border-top: 1px solid var(--vx-rule-lt);
   }
-  .p-hero__highlights li {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.6rem;
-    font-size: var(--step--1);
-    line-height: 1.55;
-    color: var(--ink-soft);
+  .vx-phero__highlights li {
+    padding: 10px 0 10px 24px;
+    position: relative;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: var(--vx-ink-2);
+    border-bottom: 1px solid var(--vx-rule-lt);
   }
-  /* :global — the class lands on an <Icon> component's <svg>. */
-  :global(.p-hero__tick) {
-    flex-shrink: 0;
-    margin-top: 0.2em;
-    color: var(--rose);
+  .vx-phero__highlights li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 1.15em;
+    width: 12px;
+    height: 2px;
+    background: var(--vx-accent);
   }
 
-  .price-note {
-    background: var(--white);
-    border: 1px solid var(--line);
-    border-left: 3px solid var(--gold);
-    border-radius: var(--radius-sm);
-    padding: var(--sp-4);
+  .vx-pnote {
+    border-left: 3px solid var(--vx-accent);
+    padding: 4px 0 4px 16px;
     margin-bottom: var(--sp-5);
   }
-  .price-note__line {
+  .vx-pnote__line {
     font-weight: 600;
     margin: 0 0 var(--sp-2);
     line-height: 1.5;
   }
-  .price-note__sub {
-    font-size: var(--step--1);
-    color: var(--ink-muted);
+  .vx-pnote__sub {
+    font-size: 0.875rem;
+    color: var(--vx-mute-c);
     margin: 0;
     line-height: 1.55;
   }
 
-  .p-hero__actions {
+  .vx-phero__actions {
     margin-bottom: var(--sp-4);
   }
-  .p-hero__contact {
-    font-size: var(--step--1);
-    color: var(--ink-muted);
+  .vx-phero__contact {
+    font-size: 0.875rem;
+    color: var(--vx-mute-c);
     margin: 0;
   }
 
   /* --- Body --- */
-  .p-body {
+  .vx-pbody {
     display: grid;
     gap: var(--sp-6);
-    padding-block: var(--sp-7);
+    padding-block: var(--sp-8) var(--sp-7);
   }
   @media (min-width: 68rem) {
-    .p-body {
-      grid-template-columns: 13rem 1fr;
-      gap: var(--sp-8);
+    .vx-pbody {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 20px;
       align-items: start;
+    }
+    .vx-ptoc {
+      grid-column: 1 / 4;
+    }
+    .vx-pmain {
+      grid-column: 4 / 13;
     }
   }
 
-  .p-contents {
+  .vx-ptoc {
     display: none;
   }
   @media (min-width: 68rem) {
-    .p-contents {
+    .vx-ptoc {
       display: block;
       position: sticky;
-      top: 5.5rem;
+      top: 100px;
+      padding-right: 40px;
     }
   }
-  .p-contents__heading {
-    font-family: var(--font-body);
-    font-size: var(--step--1);
-    font-weight: 600;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    color: var(--ink-muted);
-    margin-bottom: var(--sp-3);
+  .vx-ptoc__heading {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid var(--vx-rule);
   }
-  .p-contents__list {
+  .vx-ptoc__list {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: grid;
-    gap: 1px;
-    border-left: 1px solid var(--line);
   }
-  .p-contents__list a {
+  .vx-ptoc__list a {
     display: block;
-    padding: 0.35rem 0 0.35rem 0.85rem;
-    font-size: var(--step--1);
-    color: var(--ink-soft);
+    padding: 8px 0;
+    font-size: 0.94rem;
+    color: var(--vx-ink-2);
     text-decoration: none;
-    border-left: 2px solid transparent;
-    margin-left: -1px;
-    line-height: 1.45;
+    border-bottom: 1px solid var(--vx-rule-lt);
+    line-height: 1.4;
   }
-  .p-contents__list a:hover {
-    color: var(--plum);
-    border-left-color: var(--rose);
+  .vx-ptoc__list a:hover {
+    color: var(--vx-accent);
   }
 
-  .p-quote {
+  .vx-pquote {
     margin-bottom: var(--sp-7);
     scroll-margin-top: 6rem;
   }
 
-  .p-main .block {
+  .vx-pmain .block {
     padding-block: var(--sp-6);
-    border-top: 1px solid var(--line);
+    border-top: 1px solid var(--vx-rule);
     scroll-margin-top: 6rem;
   }
   .block__h {
-    font-size: var(--step-2);
+    font-size: var(--step-3);
     margin-bottom: var(--sp-4);
   }
   .block__intro {
-    color: var(--ink-soft);
+    color: var(--vx-ink-2);
     margin-bottom: var(--sp-5);
   }
 
@@ -473,14 +470,12 @@ const showReviews = hasReviews(product.reviews);
     gap: var(--sp-4);
   }
   .review {
-    background: var(--white);
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
-    padding: var(--sp-4);
+    border-top: 1px solid var(--vx-rule);
+    padding: var(--sp-4) 0 0;
   }
   .review__rating {
     font-weight: 600;
-    color: var(--plum);
+    color: var(--vx-accent);
     margin-bottom: var(--sp-2);
   }
   .review__body {
@@ -488,11 +483,7 @@ const showReviews = hasReviews(product.reviews);
   }
   .review__meta {
     font-size: var(--step--1);
-    color: var(--ink-muted);
+    color: var(--vx-mute-c);
     margin: 0;
-  }
-
-  .related__intro {
-    margin-bottom: var(--sp-5);
   }
 </style>

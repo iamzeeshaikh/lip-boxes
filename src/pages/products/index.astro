@@ -3,6 +3,7 @@ import ExtraFaqs from '../../components/ExtraFaqs.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PageHero from '../../components/PageHero.astro';
 import ProductCard from '../../components/ProductCard.astro';
+import DesignYourLipBox from '../../components/DesignYourLipBox.astro';
 import QuoteCta from '../../components/QuoteCta.astro';
 import { indexableProducts, productGroups, productsInGroup } from '../../data/products';
 import { publicSocialUrl } from '../../lib/images';
@@ -66,7 +67,6 @@ let cardIndex = 0;
   schema={[schema]}
 >
   <PageHero
-    eyebrow="Product directory"
     h1="Custom Lip Packaging Products"
     lead="Eleven made-to-order formats, grouped by the product they hold. Every one is cut to your dimensions, printed to your artwork and quoted rather than sold from a price list."
     crumbs={crumbs}
@@ -77,9 +77,9 @@ let cardIndex = 0;
     ]}
   />
 
-  <div class="section">
-    <div class="wrap">
-      <p class="measure directory__intro">
+  <div class="vx-band">
+    <div class="vx-frame">
+      <p class="vx-measure directory__intro">
         Groups below are for navigation only — each product has its own page and
         there are no category URLs to work through. If you are packaging a whole
         range rather than one item, the bulk and private label route is usually
@@ -98,7 +98,7 @@ let cardIndex = 0;
                 </h2>
                 <p class="group__blurb">{group.blurb}</p>
               </div>
-              <div class="grid grid--products">
+              <div class="vx-tiles vx-tiles--range">
                 {items.map((product) => {
                   const eager = cardIndex < 4;
                   cardIndex += 1;
@@ -148,6 +148,8 @@ let cardIndex = 0;
     </div>
   </div>
 
+  <DesignYourLipBox />
+
   <QuoteCta
     heading="Not sure which format fits your product?"
     body="Describe the container you fill and how it is sold. We will tell you which formats work, which do not, and what each would cost at your quantity."
@@ -157,24 +159,26 @@ let cardIndex = 0;
 
 <style>
   .directory__intro {
-    color: var(--ink-soft);
+    color: var(--vx-ink-2);
     margin-bottom: var(--sp-7);
   }
   .group + .group {
     margin-top: var(--sp-8);
-    padding-top: var(--sp-7);
-    border-top: 1px solid var(--line);
+  }
+  .group__head {
+    padding-top: 18px;
+    border-top: 1px solid var(--vx-rule);
   }
   .group__head {
     margin-bottom: var(--sp-5);
   }
   .group__head h2 {
-    font-size: var(--step-2);
+    font-size: var(--step-3);
     margin-bottom: var(--sp-2);
   }
   .group__blurb {
     font-size: var(--step--1);
-    color: var(--ink-muted);
+    color: var(--vx-mute-c);
     max-width: 52ch;
     margin: 0;
   }
@@ -193,7 +197,7 @@ let cardIndex = 0;
   }
   .ref-list li {
     padding-top: var(--sp-3);
-    border-top: 1px solid var(--line);
+    border-top: 1px solid var(--vx-rule-lt);
   }
   .ref-list a {
     display: block;
@@ -203,7 +207,7 @@ let cardIndex = 0;
   .ref-list span {
     display: block;
     font-size: var(--step--1);
-    color: var(--ink-muted);
+    color: var(--vx-mute-c);
     line-height: 1.55;
   }
 </style>

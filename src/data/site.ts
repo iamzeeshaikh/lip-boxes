@@ -60,6 +60,17 @@ export const site = {
   /** Business hours shown on /contact/. Kept generic until confirmed. */
   supportHours: 'Monday to Friday, 9:00 AM to 6:00 PM Eastern Time',
 
+  /**
+   * Online pack offer shown as the red "Order online" band. The band renders
+   * nothing while `price` is null, so no invented price can reach the page.
+   * Set a real price (e.g. '49.00') and a real ordering URL to switch it on.
+   */
+  orderPack: {
+    qty: 100,
+    price: null as string | null,
+    href: '/request-a-quote/' as string,
+  },
+
   /** Maximum accepted artwork upload size, in megabytes. */
   uploadLimitMb: 10,
 

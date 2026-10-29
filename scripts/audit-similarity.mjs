@@ -108,9 +108,12 @@ function stripChrome(html) {
     .replace(/<p\b[^>]*\bdata-boilerplate\b[^>]*>[\s\S]*?<\/p>/gi, ' ');
 
   for (const className of [
-    'quote-cta',
-    'quick-quote',
-    'p-card',
+    'vx-close',
+    'vx-qq',
+    'vx-card',
+    'vx-studio',
+    'vx-range',
+    'vx-notes',
     // Image captions belong to the photograph, not the page. The same product
     // shot legitimately appears on more than one market page.
     'm-figure__caption',

@@ -31,10 +31,10 @@ const accept =
   '.pdf,.ai,.eps,.psd,.svg,.png,.jpg,.jpeg,.doc,.docx';
 ---
 
-<section class="quick-quote" id={id} aria-labelledby={`${id}-heading`}>
-  <div class="quick-quote__head">
-    <h2 class="quick-quote__heading" id={`${id}-heading`}>{heading}</h2>
-    <p class="quick-quote__sub">
+<section class="vx-qq" id={id} aria-labelledby={`${id}-heading`}>
+  <div class="vx-qq__head">
+    <h2 class="vx-qq__heading" id={`${id}-heading`}>{heading}</h2>
+    <p class="vx-qq__sub">
       {
         sub ??
           'Four fields. We reply with a written price for your quantity, or with the questions we need answered first.'
@@ -42,7 +42,7 @@ const accept =
     </p>
   </div>
 
-  <form class="qform" method="post" action="/api/quote/" enctype="multipart/form-data" novalidate data-quote-form>
+  <form class="vx-qf" method="post" action="/api/quote/" enctype="multipart/form-data" novalidate data-quote-form>
     <input type="hidden" name="formType" value="short" />
     <input type="hidden" name="product" value={product} />
     <input type="hidden" name="pageUrl" value={Astro.url.href} data-page-url />
@@ -51,12 +51,12 @@ const accept =
     <input type="hidden" name="submittedAt" value="" data-submitted-at />
 
     <!-- Honeypot: hidden from users, checked on the server. -->
-    <div class="qform__trap" aria-hidden="true">
+    <div class="vx-qf__trap" aria-hidden="true">
       <label for={`${id}-company-website`}>Company website</label>
       <input type="text" id={`${id}-company-website`} name="companyWebsite" tabindex="-1" autocomplete="off" />
     </div>
 
-    <div class="qform__grid">
+    <div class="vx-qf__grid">
       <div class="field">
         <label for={`${id}-name`}>Name <span class="req" aria-hidden="true">*</span></label>
         <input type="text" id={`${id}-name`} name="name" required autocomplete="name" maxlength="120" aria-describedby={`${id}-name-error`} />
@@ -106,44 +106,44 @@ const accept =
       </div>
     </div>
 
-    <div class="qform__foot">
-      <button type="submit" class="btn btn--primary" data-submit>
+    <div class="vx-qf__foot">
+      <button type="submit" class="vx-btn vx-btn--red" data-submit>
         <span data-submit-label>Send enquiry</span>
         <Icon name="arrow-right" size={18} />
       </button>
-      <p class="qform__alt">
+      <p class="vx-qf__alt">
         Need to specify materials, finishes and dates? Use the
         <a href="/request-a-quote/">full quote request form</a>.
       </p>
     </div>
 
-    <p class="qform__status" role="status" aria-live="polite" data-status hidden></p>
+    <p class="vx-qf__status" role="status" aria-live="polite" data-status hidden></p>
   </form>
 </section>
 
 <style>
-  .quick-quote {
-    background: var(--white);
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
+  .vx-qq {
+    background: var(--vx-grey);
+    border-top: 3px solid var(--vx-ink);
     padding: var(--sp-5);
+    scroll-margin-top: 100px;
   }
   @media (min-width: 40rem) {
-    .quick-quote {
+    .vx-qq {
       padding: var(--sp-6);
     }
   }
-  .quick-quote__heading {
-    font-size: var(--step-2);
+  .vx-qq__heading {
+    font-size: var(--step-3);
     margin-bottom: var(--sp-2);
   }
-  .quick-quote__sub {
+  .vx-qq__sub {
     font-size: var(--step--1);
-    color: var(--ink-muted);
+    color: var(--vx-mute-c);
     margin-bottom: var(--sp-5);
     max-width: 46ch;
   }
-  .qform__trap {
+  .vx-qf__trap {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -151,44 +151,43 @@ const accept =
     clip-path: inset(50%);
     white-space: nowrap;
   }
-  .qform__grid {
+  .vx-qf__grid {
     display: grid;
     gap: var(--sp-4);
   }
   @media (min-width: 34rem) {
-    .qform__grid {
+    .vx-qf__grid {
       grid-template-columns: 1fr 1fr;
     }
     .field--full {
       grid-column: 1 / -1;
     }
   }
-  .qform__foot {
+  .vx-qf__foot {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: var(--sp-3) var(--sp-5);
     margin-top: var(--sp-5);
   }
-  .qform__alt {
+  .vx-qf__alt {
     font-size: var(--step--1);
-    color: var(--ink-muted);
+    color: var(--vx-mute-c);
     margin: 0;
   }
-  .qform__status {
+  .vx-qf__status {
     margin: var(--sp-4) 0 0;
     padding: var(--sp-3) var(--sp-4);
-    border-radius: var(--radius);
     font-size: var(--step--1);
-    border: 1px solid var(--line);
-    background: var(--paper-warm);
+    border-left: 3px solid var(--vx-accent);
+    background: var(--vx-white);
   }
-  .qform__status[data-tone='success'] {
+  .vx-qf__status[data-tone='success'] {
     border-color: #7a9a6e;
     background: #f0f6ec;
     color: #2f4a26;
   }
-  .qform__status[data-tone='error'] {
+  .vx-qf__status[data-tone='error'] {
     border-color: #b4636a;
     background: #fbeef0;
     color: #7a2731;

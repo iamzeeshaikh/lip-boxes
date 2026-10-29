@@ -1,0 +1,668 @@
+---
+/**
+ * "Design Your Lip Box": a photo-based order builder that ends in the standard
+ * quick quote submission. It posts to the same /api/quote/ endpoint with the
+ * same fields as ShortQuoteForm (formType "short"); the chosen format, pack,
+ * finish and quantity are written into the message before it is sent, and the
+ * logo a visitor adds for the preview travels as the artwork attachment.
+ */
+import { getImage } from 'astro:assets';
+import { site } from '../data/site';
+import { getProduct } from '../data/products';
+import { productImage } from '../lib/images';
+import type { Product } from '../data/types';
+import '../styles/forms.css';
+
+interface Props {
+  /** On a product page the first step offers that product's own photos. */
+  product?: Product;
+  id?: string;
+}
+
+const { product, id = 'design' } = Astro.props;
+
+/** A few words from the photo caption, e.g. "Reverse tuck end carton". */
+function shortLabel(caption: string | undefined, i: number): string {
+  if (!caption) return `Style ${i + 1}`;
+  const clause = caption
+    .split(/,| with | sharing | sized | on | in | for | printed | shown | running | where | supplied | finished | applied | revealing | picked | used /)[0]
+    .replace(/\.$/, '')
+    .replace(/^(A|The) /, '');
+  const words = clause.split(' ').slice(0, 4).join(' ');
+  return words.charAt(0).toUpperCase() + words.slice(1);
+}
+
+type Option = { value: string; label: string; slug: string; file: string; product?: string };
+
+const formatOptions: Option[] = product
+  ? product.images.slice(0, 6).map((image, i) => ({
+      value: `${product.name}: ${shortLabel(image.caption, i)}`,
+      label: shortLabel(image.caption, i),
+      slug: product.slug,
+      file: image.file,
+      product: product.name,
+    }))
+  : [
+      { value: 'Lip balm box', label: 'Lip balm box', slug: 'custom-lip-balm-boxes', file: 'custom-lip-balm-box-slim-tuck-end.png' },
+      { value: 'Lipstick box', label: 'Lipstick box', slug: 'custom-lipstick-boxes', file: 'custom-lipstick-box-reverse-tuck-end.png' },
+      { value: 'Lip gloss box', label: 'Lip gloss box', slug: 'lip-gloss-boxes', file: 'lip-gloss-box-tall-slim-carton.png' },
+      { value: 'Paper lip balm tube', label: 'Paper tube', slug: 'paper-lip-balm-tubes', file: 'paper-lip-balm-tube-printed-kraft.png' },
+      { value: 'Rigid lipstick box', label: 'Rigid gift box', slug: 'rigid-lipstick-boxes', file: 'rigid-lipstick-box-magnetic-closure.png' },
+      { value: 'Hang tab lipstick box', label: 'Hang tab box', slug: 'hang-tab-lipstick-boxes', file: 'hang-tab-lipstick-box-window-cutout.png' },
+    ].map((o) => ({ ...o, product: getProduct(o.slug)?.name }));
+
+const packOptions: Option[] = [
+  { value: 'Single carton', label: 'Single carton', slug: 'lipstick-boxes', file: 'lipstick-box-single-shade-carton.png' },
+  { value: 'Three-pack', label: 'Three-pack', slug: 'hang-tab-lipstick-boxes', file: 'hang-tab-lipstick-box-three-pack.png' },
+  { value: 'Multipack tray', label: 'Multipack tray', slug: 'custom-lip-balm-boxes', file: 'custom-lip-balm-box-multipack-tray.png' },
+  { value: 'Counter display', label: 'Counter display', slug: 'custom-lip-balm-boxes', file: 'custom-lip-balm-box-counter-display.png' },
+];
+
+const finishOptions: Option[] = [
+  { value: 'Soft-touch matte', label: 'Soft-touch matte', slug: 'lipstick-boxes', file: 'lipstick-boxes-matte-dark-range.png' },
+  { value: 'Gloss lamination', label: 'Gloss', slug: 'lip-gloss-boxes', file: 'lip-gloss-box-straight-tuck-end.png' },
+  { value: 'Foil stamping', label: 'Foil stamping', slug: 'lip-balm-packaging', file: 'lip-balm-packaging-foil-stamped-carton.png' },
+  { value: 'Holographic board', label: 'Holographic', slug: 'holographic-lip-gloss-boxes', file: 'holographic-lip-gloss-box-rainbow-foil.png' },
+  { value: 'Natural kraft', label: 'Natural kraft', slug: 'cardboard-lip-balm-tubes', file: 'cardboard-lip-balm-tube-kraft-range.png' },
+];
+
+const quantities = ['500', '1,000', '2,500', '5,000', '10,000+'];
+
+async function render(options: Option[], withFull = false) {
+  return Promise.all(
+    options.map(async (o) => {
+      const src = productImage(o.slug, o.file);
+      const thumb = await getImage({ src, width: 320, height: 320, format: 'webp', fit: 'cover' });
+      const full = withFull
+        ? await getImage({ src, width: 800, height: 800, format: 'webp', fit: 'cover' })
+        : null;
+      return { ...o, thumb: thumb.src, full: full?.src };
+    }),
+  );
+}
+
+const formats = await render(formatOptions, true);
+const packs = await render(packOptions);
+const finishes = await render(finishOptions);
+
+const startIndex = product ? 0 : 1;
+const start = formats[startIndex];
+const accept = '.pdf,.ai,.eps,.psd,.svg,.png,.jpg,.jpeg,.doc,.docx';
+const f = (name: string) => `${id}-${name}`;
+const formatStepLabel = product ? 'Style' : 'Format';
+---
+
+<section class="vx-studio" id={id} aria-labelledby={f('heading')}>
+  <div class="vx-studio__head">
+    <h2 id={f('heading')}>Design Your Lip Box</h2>
+    <p>
+      Build your order in four steps: pick the {formatStepLabel.toLowerCase()}, the pack,
+      the finish and the quantity, then add your logo to see it on the box. Your
+      choices go straight onto the quote request, so you do not have to type them
+      out again.
+    </p>
+  </div>
+
+  <form
+    class="vx-studio__grid"
+    method="post"
+    action="/api/quote/"
+    enctype="multipart/form-data"
+    novalidate
+    data-quote-form
+    data-studio
+  >
+    <input type="hidden" name="formType" value="short" />
+    <input type="hidden" name="product" value={start.product ?? ''} data-studio-product />
+    <input type="hidden" name="pageUrl" value={Astro.url.href} data-page-url />
+    <input type="hidden" name="submittedAt" value="" data-submitted-at />
+    <div class="vx-studio__trap" aria-hidden="true">
+      <label for={f('company-website')}>Company website</label>
+      <input type="text" id={f('company-website')} name="companyWebsite" tabindex="-1" autocomplete="off" />
+    </div>
+
+    <div class="vx-studio__preview">
+      <div class="vx-preview">
+        <img
+          src={start.full}
+          alt={`Selected: ${start.label.toLowerCase()}`}
+          width="800"
+          height="800"
+          loading="lazy"
+          decoding="async"
+          data-studio-img
+        />
+        <img class="vx-preview__logo" alt="Your logo" width="200" height="200" hidden data-studio-logo />
+      </div>
+      <dl class="vx-summary">
+        <div><dt>{formatStepLabel}</dt><dd data-sum="format">{start.label}</dd></div>
+        <div><dt>Pack</dt><dd data-sum="pack">{packs[0].label}</dd></div>
+        <div><dt>Finish</dt><dd data-sum="finish">{finishes[0].label}</dd></div>
+        <div><dt>Quantity</dt><dd data-sum="qty">1,000</dd></div>
+      </dl>
+      <div class="field vx-upload">
+        <label for={f('artwork')}>Add your logo to the preview <span class="field__optional">(optional)</span></label>
+        <input type="file" id={f('artwork')} name="artwork" accept={accept} aria-describedby={`${f('artwork-hint')} ${f('artwork-error')}`} data-studio-file />
+        <p class="field__hint" id={f('artwork-hint')}>
+          PNG, JPG or SVG shows on the box. PDF, AI, EPS, PSD and DOC files are sent
+          with your request. Up to {site.uploadLimitMb} MB.
+        </p>
+        <p class="field__error" id={f('artwork-error')} data-error hidden></p>
+      </div>
+    </div>
+
+    <div class="vx-studio__steps">
+      <fieldset class="vx-step">
+        <legend><span class="vx-step__n" aria-hidden="true">1</span> {formatStepLabel}</legend>
+        <div class="vx-opts vx-opts--6">
+          {
+            formats.map((o, i) => (
+              <label class="vx-opt">
+                <input
+                  type="radio"
+                  name="studioFormat"
+                  value={o.value}
+                  data-label={o.label}
+                  data-img={o.full}
+                  data-product={o.product}
+                  checked={i === startIndex}
+                />
+                <img src={o.thumb} alt="" width="320" height="320" loading="lazy" decoding="async" />
+                <span>{o.label}</span>
+              </label>
+            ))
+          }
+        </div>
+      </fieldset>
+
+      <fieldset class="vx-step">
+        <legend><span class="vx-step__n" aria-hidden="true">2</span> Size and pack</legend>
+        <p class="vx-step__note">
+          Every carton is cut to the container you fill. Send its height and
+          diameter with the request, or post us a sample.
+        </p>
+        <div class="vx-opts vx-opts--4">
+          {
+            packs.map((o, i) => (
+              <label class="vx-opt">
+                <input type="radio" name="studioPack" value={o.value} data-label={o.label} checked={i === 0} />
+                <img src={o.thumb} alt="" width="320" height="320" loading="lazy" decoding="async" />
+                <span>{o.label}</span>
+              </label>
+            ))
+          }
+        </div>
+      </fieldset>
+
+      <fieldset class="vx-step">
+        <legend><span class="vx-step__n" aria-hidden="true">3</span> Finish</legend>
+        <div class="vx-opts vx-opts--5">
+          {
+            finishes.map((o, i) => (
+              <label class="vx-opt">
+                <input type="radio" name="studioFinish" value={o.value} data-label={o.label} checked={i === 0} />
+                <img src={o.thumb} alt="" width="320" height="320" loading="lazy" decoding="async" />
+                <span>{o.label}</span>
+              </label>
+            ))
+          }
+        </div>
+      </fieldset>
+
+      <fieldset class="vx-step">
+        <legend><span class="vx-step__n" aria-hidden="true">4</span> Quantity</legend>
+        <div class="vx-qty">
+          {
+            quantities.map((q) => (
+              <label>
+                <input type="radio" name="studioQty" value={q} data-label={q} checked={q === '1,000'} />
+                <span>{q}</span>
+              </label>
+            ))
+          }
+        </div>
+        <p class="vx-step__note">
+          Your quote is priced at this quantity and at the next volume break, so
+          you can see where a saving would sit.
+        </p>
+      </fieldset>
+
+      <div class="vx-send">
+        <div class="field">
+          <label for={f('name')}>Name <span class="req" aria-hidden="true">*</span></label>
+          <input type="text" id={f('name')} name="name" required autocomplete="name" maxlength="120" aria-describedby={f('name-error')} />
+          <p class="field__error" id={f('name-error')} data-error hidden></p>
+        </div>
+        <div class="field">
+          <label for={f('email')}>Email <span class="req" aria-hidden="true">*</span></label>
+          <input type="email" id={f('email')} name="email" required autocomplete="email" maxlength="180" inputmode="email" aria-describedby={f('email-error')} />
+          <p class="field__error" id={f('email-error')} data-error hidden></p>
+        </div>
+        <div class="field">
+          <label for={f('phone')}>Phone <span class="req" aria-hidden="true">*</span></label>
+          <input type="tel" id={f('phone')} name="phone" required autocomplete="tel" maxlength="40" inputmode="tel" aria-describedby={f('phone-error')} />
+          <p class="field__error" id={f('phone-error')} data-error hidden></p>
+        </div>
+        <div class="field">
+          <label for={f('message')}>Container size or notes <span class="field__optional">(optional)</span></label>
+          <textarea id={f('message')} name="message" rows="2" maxlength="3500" placeholder="e.g. 0.15 oz stick, 16 mm across, 68 mm tall" aria-describedby={f('message-error')} data-studio-notes></textarea>
+          <p class="field__error" id={f('message-error')} data-error hidden></p>
+        </div>
+        <div class="field field--consent vx-send__wide">
+          <label class="consent">
+            <input type="checkbox" name="consent" value="yes" required aria-describedby={f('consent-error')} />
+            <span>
+              I agree that Lip Boxes may use these details to reply to my inquiry,
+              as described in <a href="/privacy-policy/">our privacy policy</a>.
+            </span>
+          </label>
+          <p class="field__error" id={f('consent-error')} data-error hidden></p>
+        </div>
+        <button type="submit" class="vx-btn vx-btn--red vx-send__btn" data-submit>
+          <span data-submit-label>Request a Quote</span>
+        </button>
+      </div>
+      <p class="vx-send__status" role="status" aria-live="polite" data-status hidden></p>
+    </div>
+  </form>
+</section>
+
+<style>
+  .vx-studio {
+    background: var(--vx-ink);
+    color: #fff;
+    padding: 64px var(--gut) 72px;
+    scroll-margin-top: 80px;
+  }
+  .vx-studio__head {
+    display: grid;
+    gap: 14px 20px;
+    align-items: end;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #444;
+    margin-bottom: 36px;
+  }
+  .vx-studio__head h2 {
+    margin: 0;
+    font-size: clamp(2.6rem, 1.6rem + 3.6vw, 5rem);
+    text-transform: uppercase;
+    line-height: 0.95;
+    color: #fff;
+  }
+  .vx-studio__head p {
+    color: #cfcfcf;
+    max-width: 58ch;
+    margin: 0;
+  }
+  @media (min-width: 62rem) {
+    .vx-studio__head {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .vx-studio__trap {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .vx-studio__grid {
+    display: grid;
+    grid-template-columns: 5fr 7fr;
+    gap: 44px;
+    align-items: start;
+  }
+  .vx-studio__grid > * {
+    min-width: 0;
+  }
+  .vx-studio__preview {
+    position: sticky;
+    top: 96px;
+  }
+  .vx-preview {
+    position: relative;
+    background: #fff;
+    aspect-ratio: 1;
+    overflow: hidden;
+  }
+  .vx-preview > img:first-child {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .vx-preview__logo {
+    position: absolute;
+    left: 50%;
+    top: 44%;
+    width: 26%;
+    max-height: 22%;
+    object-fit: contain;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: multiply;
+  }
+  .vx-summary {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin: 0;
+    border-bottom: 1px solid #444;
+  }
+  .vx-summary div {
+    padding: 14px 12px 14px 0;
+    border-top: 1px solid #444;
+  }
+  .vx-summary dt {
+    font-size: 12.5px;
+    color: #9a9a9a;
+  }
+  .vx-summary dd {
+    margin: 2px 0 0;
+    font: 500 18px/1.2 var(--vx-head);
+  }
+  .vx-upload {
+    margin-top: 16px;
+    padding: 16px;
+    border: 1px dashed #6a6a6a;
+  }
+  .vx-studio :global(.field > label),
+  .vx-studio :global(.consent) {
+    color: #e6e6e6;
+  }
+  .vx-studio :global(.field__hint),
+  .vx-studio :global(.field__optional) {
+    color: #a8a8a8;
+  }
+  .vx-studio :global(.field__error) {
+    color: #ff8a98;
+  }
+  .vx-studio :global(.consent a) {
+    color: #fff;
+  }
+  .vx-upload input[type='file'] {
+    background: #141414;
+    color: #ddd;
+    border-color: #555;
+  }
+
+  .vx-step {
+    border: 0;
+    margin: 0 0 30px;
+    padding: 0;
+    min-width: 0;
+  }
+  .vx-step legend {
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    padding: 0;
+    margin-bottom: 14px;
+    font: 500 26px/1 var(--vx-head);
+    color: #fff;
+  }
+  .vx-step__n {
+    font: 300 46px/1 var(--vx-head);
+    color: var(--vx-accent);
+  }
+  .vx-step__note {
+    font-size: 14px;
+    color: #bdbdbd;
+    margin: -4px 0 14px;
+    max-width: 62ch;
+  }
+  .vx-qty + .vx-step__note {
+    margin: 12px 0 0;
+  }
+  .vx-opts {
+    display: grid;
+    gap: 12px;
+  }
+  .vx-opts--6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+  .vx-opts--5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  .vx-opts--4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .vx-opt {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    background: #1c1c1c;
+    outline: 1px solid #333;
+    transition: outline-color 0.15s;
+  }
+  .vx-opt input,
+  .vx-qty input {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    cursor: pointer;
+  }
+  .vx-qty label {
+    position: relative;
+  }
+  .vx-opt img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+  .vx-opt span {
+    display: block;
+    padding: 8px 8px 9px;
+    font-size: 13.5px;
+    font-weight: 500;
+    line-height: 1.25;
+  }
+  .vx-opt:hover {
+    outline-color: #888;
+  }
+  .vx-opt:has(input:checked) {
+    outline: 2px solid var(--vx-accent);
+  }
+  .vx-opt:has(input:checked) span {
+    background: var(--vx-accent);
+  }
+  .vx-opt:has(input:focus-visible) {
+    outline: 2px solid #fff;
+  }
+  .vx-qty {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    border: 1px solid #555;
+  }
+  .vx-qty label {
+    cursor: pointer;
+  }
+  .vx-qty label + label span {
+    border-left: 1px solid #555;
+  }
+  .vx-qty span {
+    display: block;
+    text-align: center;
+    padding: 14px 4px;
+    font: 500 20px/1 var(--vx-head);
+  }
+  .vx-qty label:hover span {
+    background: #222;
+  }
+  .vx-qty input:checked + span {
+    background: var(--vx-accent);
+  }
+  .vx-qty input:focus-visible + span {
+    outline: 2px solid #fff;
+    outline-offset: -2px;
+  }
+  .vx-send {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    padding-top: 24px;
+    border-top: 1px solid #444;
+  }
+  .vx-send :global(input[type='text']),
+  .vx-send :global(input[type='email']),
+  .vx-send :global(input[type='tel']),
+  .vx-send :global(textarea) {
+    background: #141414;
+    color: #fff;
+    border-color: #555;
+  }
+  .vx-send :global(textarea) {
+    min-height: 2.875rem;
+  }
+  .vx-send :global(.field) {
+    align-content: start;
+  }
+  .vx-send__wide {
+    grid-column: 1 / -1;
+  }
+  .vx-send__btn {
+    grid-column: 1 / -1;
+    justify-self: start;
+    min-width: 240px;
+  }
+  .vx-send__status {
+    margin: 14px 0 0;
+    padding: 12px 16px;
+    font-size: 14px;
+    background: #fff;
+    color: var(--vx-ink);
+    border-left: 3px solid var(--vx-accent);
+  }
+  .vx-send__status[data-tone='success'] {
+    border-left-color: #2f7a3a;
+  }
+
+  @media (max-width: 1180px) {
+    .vx-studio__grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+    .vx-opts--6,
+    .vx-opts--5 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+  @media (max-width: 860px) {
+    .vx-studio {
+      padding: 44px var(--gut) 48px;
+    }
+    .vx-studio__head h2 {
+      font-size: 2.6rem;
+    }
+    .vx-studio__grid {
+      grid-template-columns: 1fr;
+    }
+    .vx-studio__preview {
+      position: static;
+    }
+    .vx-summary {
+      grid-template-columns: 1fr 1fr;
+    }
+    .vx-opts--4 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .vx-opts {
+      gap: 10px;
+    }
+    .vx-opt span {
+      font-size: 12.5px;
+    }
+    .vx-qty {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .vx-qty label:nth-child(4) span {
+      border-left: 0;
+    }
+    .vx-qty label:nth-child(n + 4) span {
+      border-top: 1px solid #555;
+    }
+    .vx-send {
+      grid-template-columns: 1fr;
+    }
+    .vx-send__btn {
+      width: 100%;
+    }
+  }
+</style>
+
+<script>
+  import { initQuoteForms } from '../scripts/quote-form';
+
+  const MARK = 'Notes (Design Your Lip Box):';
+
+  for (const form of document.querySelectorAll<HTMLFormElement>('[data-studio]')) {
+    const img = form.querySelector<HTMLImageElement>('[data-studio-img]');
+    const logo = form.querySelector<HTMLImageElement>('[data-studio-logo]');
+    const file = form.querySelector<HTMLInputElement>('[data-studio-file]');
+    const productField = form.querySelector<HTMLInputElement>('[data-studio-product]');
+    const notes = form.querySelector<HTMLTextAreaElement>('[data-studio-notes]');
+    const sums: Record<string, string> = {
+      studioFormat: 'format',
+      studioPack: 'pack',
+      studioFinish: 'finish',
+      studioQty: 'qty',
+    };
+
+    form.addEventListener('change', (event) => {
+      const t = event.target as HTMLInputElement;
+      if (t.type !== 'radio' || !(t.name in sums)) return;
+      const out = form.querySelector<HTMLElement>(`[data-sum="${sums[t.name]}"]`);
+      if (out) out.textContent = t.dataset.label ?? t.value;
+      if (t.name === 'studioFormat') {
+        if (img && t.dataset.img) {
+          img.src = t.dataset.img;
+          img.alt = `Selected: ${(t.dataset.label ?? t.value).toLowerCase()}`;
+        }
+        if (productField && t.dataset.product) productField.value = t.dataset.product;
+      }
+    });
+
+    file?.addEventListener('change', () => {
+      const chosen = file.files?.[0];
+      if (!logo) return;
+      if (!chosen || !/^image\/(png|jpeg|svg\+xml)$/.test(chosen.type)) {
+        logo.hidden = true;
+        logo.removeAttribute('src');
+        return;
+      }
+      const reader = new FileReader();
+      reader.onload = () => {
+        logo.src = String(reader.result);
+        logo.hidden = false;
+      };
+      reader.readAsDataURL(chosen);
+    });
+
+    /*
+     * Runs in the capture phase on the document, so it fills the message
+     * before the shared quote-form handler validates and sends it.
+     */
+    document.addEventListener(
+      'submit',
+      (event) => {
+        if (event.target !== form || !notes) return;
+        const own = notes.value.includes(MARK)
+          ? notes.value.slice(notes.value.indexOf(MARK) + MARK.length).replace(/^\s+/, '')
+          : notes.value.replace(/^\s+/, '');
+        const pick = (name: string) =>
+          form.querySelector<HTMLInputElement>(`input[name="${name}"]:checked`)?.value ?? '';
+        const lines = [
+          `${form.querySelector('[data-sum="format"]')?.closest('div')?.querySelector('dt')?.textContent ?? 'Format'}: ${pick('studioFormat')}`,
+          `Pack: ${pick('studioPack')}`,
+          `Finish: ${pick('studioFinish')}`,
+          `Quantity: ${pick('studioQty')}`,
+        ];
+        notes.value = `${lines.join('\n')}\n${MARK}\n${own}`.trim();
+      },
+      true,
+    );
+  }
+
+  initQuoteForms();
+</script>

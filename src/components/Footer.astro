@@ -1,215 +1,205 @@
 ---
 import { footerNav, legalNav } from '../data/nav';
 import { site, sameAs } from '../data/site';
-import Icon from './Icon.astro';
+import LogoMark from './LogoMark.astro';
 
 const year = new Date().getFullYear();
 ---
 
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="site-footer__top">
-      <div class="site-footer__intro">
-        <a href="/" class="footer-brand" aria-label="Lip Boxes home">Lip Boxes</a>
-        <p class="site-footer__blurb">
-          Custom printed packaging for lip balm, lipstick, lip gloss and lip care
-          brands in the United States. Every order is quoted to your dimensions,
-          material and quantity.
-        </p>
-        <ul class="footer-contact">
-          <li>
-            <a href={`mailto:${site.email}`}>
-              <Icon name="mail" size={17} />
-              {site.email}
-            </a>
-          </li>
-          {
-            site.phone && (
-              <li>
-                <a href={`tel:${site.phone}`}>
-                  <Icon name="phone" size={17} />
-                  {site.phoneDisplay ?? site.phone}
-                </a>
-              </li>
-            )
-          }
-          {
-            site.whatsapp && (
-              <li>
-                <a
-                  href={`https://wa.me/${site.whatsapp.replace(/[^0-9]/g, '')}?text=${encodeURIComponent('Hi Lip Boxes! I need more info about Lip Boxes https://lipboxes.com/')}`}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <Icon name="phone" size={17} />
-                  WhatsApp
-                </a>
-              </li>
-            )
-          }
-        </ul>
-        <a href="/request-a-quote/" class="btn btn--onink">Request a Quote</a>
-      </div>
-
-      <nav class="site-footer__nav" aria-label="Footer">
-        {
-          footerNav.map((group) => (
-            <div class="footer-col">
-              <h2 class="footer-col__heading">{group.heading}</h2>
-              <ul class="footer-col__list">
-                {group.links.map((link) => (
-                  <li><a href={link.href}>{link.label}</a></li>
-                ))}
-              </ul>
-            </div>
-          ))
-        }
-      </nav>
-    </div>
-
-    <div class="site-footer__bottom">
-      <p class="site-footer__legal">
-        &copy; {year} {site.name}. Pricing shown is a starting unit price for
-        qualifying large-volume custom orders.
-      </p>
-      <ul class="footer-legal-nav">
-        {legalNav.map((link) => <li><a href={link.href}>{link.label}</a></li>)}
-        <li><a href="/sitemap.xml">Sitemap</a></li>
-      </ul>
+<footer class="vx-foot">
+  <div class="vx-foot__brand">
+    <a href="/" class="vx-foot__logo" aria-label="Lip Boxes home">
+      <LogoMark class="vx-foot__mark" />
+      <span>Lip Boxes</span>
+    </a>
+    <p class="vx-foot__blurb">
+      Custom printed packaging for lip balm, lipstick, lip gloss and lip care
+      brands in the United States. Every order is quoted to your dimensions,
+      material and quantity.
+    </p>
+    <ul class="vx-foot__contact">
+      <li>
+        <a href={`mailto:${site.email}`}>{site.email}</a>
+      </li>
       {
-        sameAs.length > 0 && (
-          <ul class="footer-social">
-            {sameAs.map((url) => (
-              <li>
-                <a href={url} rel="me noopener noreferrer" target="_blank">
-                  {new URL(url).hostname.replace('www.', '')}
-                </a>
-              </li>
-            ))}
-          </ul>
+        site.phone && (
+          <li>
+            <a href={`tel:${site.phone}`}>{site.phoneDisplay ?? site.phone}</a>
+          </li>
         )
       }
-    </div>
+      {
+        site.whatsapp && (
+          <li>
+            <a
+              href={`https://wa.me/${site.whatsapp.replace(/[^0-9]/g, '')}?text=${encodeURIComponent('Hi Lip Boxes! I need more info about Lip Boxes https://lipboxes.com/')}`}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              WhatsApp
+            </a>
+          </li>
+        )
+      }
+    </ul>
+    <a href="/request-a-quote/" class="vx-btn vx-btn--red">Request a Quote</a>
+  </div>
+
+  <nav class="vx-foot__cols" aria-label="Footer">
+    {
+      footerNav.map((group) => (
+        <div class="vx-foot__col">
+          <h2 class="vx-foot__h">{group.heading}</h2>
+          <ul>
+            {group.links.map((link) => (
+              <li><a href={link.href}>{link.label}</a></li>
+            ))}
+          </ul>
+        </div>
+      ))
+    }
+  </nav>
+
+  <div class="vx-foot__legal">
+    <p>
+      &copy; {year} {site.name}. Pricing shown is a starting unit price for
+      qualifying large-volume custom orders.
+    </p>
+    <ul>
+      {legalNav.map((link) => <li><a href={link.href}>{link.label}</a></li>)}
+      <li><a href="/sitemap.xml">Sitemap</a></li>
+    </ul>
+    {
+      sameAs.length > 0 && (
+        <ul>
+          {sameAs.map((url) => (
+            <li>
+              <a href={url} rel="me noopener noreferrer" target="_blank">
+                {new URL(url).hostname.replace('www.', '')}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )
+    }
   </div>
 </footer>
 
 <style>
-  .site-footer {
-    background: var(--plum-deep);
-    color: color-mix(in srgb, var(--paper-warm) 82%, transparent);
-    padding-block: var(--sp-8) var(--sp-5);
+  .vx-foot {
     margin-top: auto;
-    font-size: var(--step--1);
+    background: var(--vx-ink);
+    color: #d6d6d6;
+    padding: 64px var(--gut) 28px;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 20px;
+    font-size: 14.5px;
   }
-  .site-footer a:not(.btn) {
-    color: color-mix(in srgb, var(--paper-warm) 88%, transparent);
+  .vx-foot a {
+    color: #d6d6d6;
     text-decoration: none;
   }
-  .site-footer a:not(.btn):hover {
-    color: var(--white);
+  .vx-foot a:hover {
+    color: #fff;
     text-decoration: underline;
-    text-underline-offset: 0.18em;
   }
-
-  .site-footer__top {
+  .vx-foot ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .vx-foot__brand {
+    grid-column: 1 / 4;
+  }
+  .vx-foot__logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    font: 600 26px/1 var(--vx-head);
+    color: #fff !important;
+    text-decoration: none !important;
+  }
+  .vx-foot__logo :global(.vx-foot__mark) {
+    width: 36px;
+    height: 36px;
+    outline: 1px solid #444;
+  }
+  .vx-foot__blurb {
+    margin: 16px 0;
+    max-width: 40ch;
+  }
+  .vx-foot__contact {
+    margin-bottom: 20px !important;
+  }
+  .vx-foot__contact li {
+    padding: 3px 0;
+  }
+  .vx-foot__contact a {
+    color: #fff;
+  }
+  .vx-foot .vx-btn {
+    color: #fff;
+    text-decoration: none;
+  }
+  .vx-foot__cols {
+    grid-column: 5 / 13;
     display: grid;
-    gap: var(--sp-7);
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 20px;
   }
-  @media (min-width: 60rem) {
-    .site-footer__top {
-      grid-template-columns: minmax(16rem, 21rem) 1fr;
-      gap: var(--sp-8);
+  .vx-foot__h {
+    font-size: 18px;
+    color: #fff;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #444;
+  }
+  .vx-foot__col a {
+    display: block;
+    padding: 4px 0;
+    line-height: 1.35;
+  }
+  .vx-foot__legal {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px 22px;
+    margin-top: 40px;
+    padding-top: 18px;
+    border-top: 1px solid #444;
+    font-size: 13px;
+    color: #9a9a9a;
+  }
+  .vx-foot__legal p {
+    margin: 0;
+  }
+  .vx-foot__legal ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 22px;
+  }
+  .vx-foot__legal a {
+    color: #bdbdbd;
+  }
+  @media (max-width: 1180px) {
+    .vx-foot__brand,
+    .vx-foot__cols {
+      grid-column: 1 / -1;
+    }
+    .vx-foot__cols {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 28px 20px;
     }
   }
-
-  .footer-brand {
-    font-family: var(--font-display);
-    font-size: 1.5rem;
-    font-weight: 600;
-    letter-spacing: -0.02em;
-    color: var(--white) !important;
-    text-decoration: none !important;
-    display: inline-block;
-    margin-bottom: var(--sp-3);
-    font-variation-settings: 'SOFT' 0, 'WONK' 1, 'opsz' 28;
-  }
-  .site-footer__blurb {
-    max-width: 34ch;
-    line-height: 1.6;
-    margin-bottom: var(--sp-4);
-  }
-  .footer-contact {
-    list-style: none;
-    margin: 0 0 var(--sp-5);
-    padding: 0;
-    display: grid;
-    gap: var(--sp-2);
-  }
-  .footer-contact a {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.45rem;
-    min-height: 1.9rem;
-  }
-
-  .site-footer__nav {
-    display: grid;
-    gap: var(--sp-6) var(--sp-5);
-    grid-template-columns: repeat(auto-fit, minmax(min(11rem, 100%), 1fr));
-  }
-  .footer-col__heading {
-    font-family: var(--font-body);
-    font-size: var(--step--1);
-    font-weight: 600;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    color: var(--gold-soft);
-    margin: 0 0 var(--sp-3);
-  }
-  .footer-col__list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    gap: 0.45rem;
-  }
-  .footer-col__list a {
-    line-height: 1.45;
-    display: inline-flex;
-    align-items: center;
-    /* Keeps the tap target at 24px on touch screens. */
-    min-height: 1.5rem;
-    padding-block: 0.15rem;
-  }
-
-  .site-footer__bottom {
-    margin-top: var(--sp-7);
-    padding-top: var(--sp-5);
-    border-top: 1px solid rgb(255 255 255 / 0.14);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--sp-3) var(--sp-5);
-  }
-  .site-footer__legal {
-    margin: 0;
-    max-width: 60ch;
-    opacity: 0.82;
-  }
-  .footer-legal-nav,
-  .footer-social {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--sp-4);
-  }
-  .footer-legal-nav a,
-  .footer-social a {
-    display: inline-flex;
-    align-items: center;
-    min-height: 1.5rem;
+  @media (max-width: 640px) {
+    .vx-foot {
+      padding: 48px var(--gut) 96px;
+    }
+    .vx-foot__cols {
+      grid-template-columns: 1fr 1fr;
+      gap: 28px 16px;
+    }
   }
 </style>

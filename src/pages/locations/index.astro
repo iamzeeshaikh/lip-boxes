@@ -74,7 +74,6 @@ const schema = graph(
   schema={[schema]}
 >
   <PageHero
-    eyebrow="Locations"
     h1="Lip Packaging Across the United States"
     lead="Forty market guides: what retailers in each place ask for, how the season runs there, and which packaging formats fit."
     crumbs={crumbs}
@@ -85,8 +84,8 @@ const schema = graph(
     ]}
   />
 
-  <section class="section" aria-labelledby="loc-intro-heading">
-    <div class="wrap wrap--narrow">
+  <section class="vx-band" aria-labelledby="loc-intro-heading">
+    <div class="vx-frame vx-frame--slim">
       <h2 id="loc-intro-heading">What these pages are, and what they are not</h2>
       <p>
         Packaging requirements shift by market, and not for vague reasons. A brand
@@ -118,9 +117,8 @@ const schema = graph(
     </div>
   </section>
 
-  <section class="section" aria-labelledby="loc-states-heading">
-    <div class="wrap">
-      <span class="eyebrow">By state</span>
+  <section class="vx-band" aria-labelledby="loc-states-heading">
+    <div class="vx-frame">
       <h2 id="loc-states-heading">State guides</h2>
       <p class="loc-lede">
         Twenty states, grouped by region for navigation only. Each page covers the
@@ -148,9 +146,8 @@ const schema = graph(
     </div>
   </section>
 
-  <section class="section section--warm" aria-labelledby="loc-cities-heading">
-    <div class="wrap">
-      <span class="eyebrow">By city</span>
+  <section class="vx-band vx-band--grey" aria-labelledby="loc-cities-heading">
+    <div class="vx-frame">
       <h2 id="loc-cities-heading">City guides</h2>
       <p class="loc-lede">
         Twenty cities, each narrower than its state page and built around one
@@ -175,8 +172,8 @@ const schema = graph(
     </div>
   </section>
 
-  <section class="section" aria-labelledby="loc-faqs-heading">
-    <div class="wrap wrap--narrow">
+  <section class="vx-band" aria-labelledby="loc-faqs-heading">
+    <div class="vx-frame vx-frame--slim">
       <h2 id="loc-faqs-heading">Questions about supply and delivery</h2>
       <FaqList faqs={withExtras(path, faqs)} level={3} />
     </div>
@@ -191,11 +188,11 @@ const schema = graph(
 <style>
   .loc-disclosure {
     padding: var(--sp-4);
-    background: var(--paper-warm);
-    border-left: 3px solid var(--gold);
-    border-radius: var(--radius-sm);
+    background: var(--vx-grey);
+    border-left: 3px solid var(--vx-accent);
+    border-radius: var(--vx-r);
     font-size: var(--step--1);
-    color: var(--ink-soft);
+    color: var(--vx-ink-2);
     line-height: 1.65;
   }
   .loc-lede {
@@ -206,12 +203,12 @@ const schema = graph(
     margin-bottom: var(--sp-6);
   }
   .loc-region__heading {
-    font-family: var(--font-body);
-    font-size: var(--step--1);
-    font-weight: 600;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    color: var(--ink-muted);
+    font-family: var(--vx-head);
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--vx-ink);
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--vx-rule);
     margin-bottom: var(--sp-3);
   }
   .loc-grid {
@@ -236,26 +233,26 @@ const schema = graph(
     height: 100%;
     min-width: 0;
     padding: var(--sp-4);
-    background: var(--white);
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
+    background: var(--vx-white);
+    border: 1px solid var(--vx-rule-lt);
+    border-radius: var(--vx-r);
     text-decoration: none;
     transition:
       border-color 0.18s var(--ease),
       transform 0.18s var(--ease);
   }
   .loc-grid a:hover {
-    border-color: var(--plum);
+    border-color: var(--vx-accent);
     transform: translateY(-2px);
   }
   .loc-grid__name {
     display: block;
     font-weight: 600;
-    color: var(--ink);
+    color: var(--vx-ink);
     margin-bottom: 0.25rem;
   }
   .loc-grid a:hover .loc-grid__name {
-    color: var(--plum);
+    color: var(--vx-accent);
   }
   .loc-grid__state {
     display: inline-block;
@@ -263,16 +260,16 @@ const schema = graph(
     font-size: 0.68rem;
     font-weight: 600;
     letter-spacing: 0.06em;
-    color: var(--plum-deep);
-    background: var(--rose-soft);
-    border-radius: var(--radius-sm);
+    color: var(--vx-black);
+    background: var(--vx-grey);
+    border-radius: var(--vx-r);
     padding: 0.08rem 0.35rem;
     vertical-align: 0.1em;
   }
   .loc-grid__angle {
     display: block;
     font-size: var(--step--1);
-    color: var(--ink-muted);
+    color: var(--vx-mute-c);
     line-height: 1.5;
   }
 </style>

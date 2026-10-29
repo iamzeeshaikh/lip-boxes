@@ -16,14 +16,14 @@ const Tag = `h${level}` as 'h2' | 'h3';
 
 <section class="info-section" id={id} aria-labelledby={`${id}-heading`}>
   <Tag id={`${id}-heading`} class="info-section__heading">{heading}</Tag>
-  {intro && <p class="info-section__intro measure" set:html={intro} />}
+  {intro && <p class="info-section__intro vx-measure" set:html={intro} />}
   <slot />
 </section>
 
 <style>
   .info-section {
     padding-block: var(--sp-6);
-    border-top: 1px solid var(--line);
+    border-top: 1px solid var(--vx-rule-lt);
     scroll-margin-top: 6rem;
   }
   .info-section:first-of-type {
@@ -35,7 +35,7 @@ const Tag = `h${level}` as 'h2' | 'h3';
     margin-bottom: var(--sp-4);
   }
   .info-section__intro {
-    color: var(--ink-soft);
+    color: var(--vx-ink-2);
     margin-bottom: var(--sp-5);
   }
 </style>

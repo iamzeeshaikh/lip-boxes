@@ -8,28 +8,34 @@ interface Props {
   /** Heading level for each question. */
   level?: 2 | 3;
   id?: string;
+  /** Heading in a left column, questions on the right (wide screens only). */
+  split?: boolean;
 }
 
-const { faqs, heading, intro, level = 3, id } = Astro.props;
+const { faqs, heading, intro, level = 3, id, split = false } = Astro.props;
 const QTag = `h${level}` as 'h2' | 'h3';
 ---
 
-<div class="faqs" id={id}>
-  {heading && <h2 class="faqs__heading">{heading}</h2>}
-  {intro && <p class="faqs__intro measure">{intro}</p>}
-  <div class="faqs__list">
+<div class:list={['vx-faqs', split && 'vx-faqs--split']} id={id}>
+  {(heading || intro) && (
+    <div class="vx-faqs__side">
+      {heading && <h2 class="vx-faqs__heading">{heading}</h2>}
+      {intro && <p class="vx-faqs__intro vx-measure">{intro}</p>}
+    </div>
+  )}
+  <div class="vx-faqs__list">
     {
       faqs.map((faq, i) => (
-        <details class="faq" open={i === 0}>
-          <summary class="faq__summary">
-            <QTag class="faq__q">{faq.q}</QTag>
-            <span class="faq__icon" aria-hidden="true">
-              <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
-                <path d="M3 8h10" /><path class="faq__icon-v" d="M8 3v10" />
+        <details class="vx-qa" open={i === 0}>
+          <summary class="vx-qa__summary">
+            <QTag class="vx-qa__q">{faq.q}</QTag>
+            <span class="vx-qa__icon" aria-hidden="true">
+              <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round">
+                <path d="M3 8h10" /><path class="vx-qa__icon-v" d="M8 3v10" />
               </svg>
             </span>
           </summary>
-          <div class="faq__a"><p set:html={faq.a} /></div>
+          <div class="vx-qa__a"><p set:html={faq.a} /></div>
         </details>
       ))
     }
@@ -37,73 +43,91 @@ const QTag = `h${level}` as 'h2' | 'h3';
 </div>
 
 <style>
-  .faqs__heading {
+  @media (min-width: 62rem) {
+    .vx-faqs--split {
+      display: grid;
+      grid-template-columns: 4fr 7fr;
+      gap: 20px 6%;
+      align-items: start;
+    }
+    .vx-faqs--split .vx-faqs__side {
+      position: sticky;
+      top: 100px;
+    }
+  }
+  .vx-faqs--split .vx-faqs__heading {
+    font-size: clamp(2rem, 1.4rem + 2vw, 3.4rem);
+  }
+  .vx-faqs__heading {
     margin-bottom: var(--sp-3);
   }
-  .faqs__intro {
+  .vx-faqs__intro {
     margin-bottom: var(--sp-5);
-    color: var(--ink-soft);
+    color: var(--vx-ink-2);
   }
-  .faqs__list {
-    border-top: 1px solid var(--line);
+  .vx-faqs__list {
+    border-top: 1px solid var(--vx-rule);
   }
-  .faq {
-    border-bottom: 1px solid var(--line);
+  .vx-qa {
+    border-bottom: 1px solid var(--vx-rule);
   }
-  .faq__summary {
+  .vx-qa__summary {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: var(--sp-4);
-    padding: var(--sp-4) 0;
+    gap: 24px;
+    padding: 20px 0;
     cursor: pointer;
     list-style: none;
-    min-height: 3rem;
   }
-  .faq__summary::-webkit-details-marker {
+  .vx-qa__summary::-webkit-details-marker {
     display: none;
   }
-  .faq__summary:hover .faq__q {
-    color: var(--plum);
+  .vx-qa__summary:hover .vx-qa__q {
+    color: var(--vx-accent);
   }
-  .faq__q {
-    font-family: var(--font-body);
-    font-size: var(--step-0);
-    font-weight: 600;
-    line-height: 1.45;
-    letter-spacing: 0;
+  .vx-qa__q {
+    font: 500 1.3rem/1.25 var(--vx-head);
     margin: 0;
-    color: var(--ink);
-    transition: color 0.15s var(--ease);
+    color: var(--vx-ink);
+    transition: color 0.15s;
   }
-  .faq__icon {
+  .vx-qa__icon {
     flex-shrink: 0;
     display: grid;
     place-items: center;
-    width: 1.6rem;
-    height: 1.6rem;
-    margin-top: 0.1rem;
-    border: 1px solid var(--line-strong);
-    border-radius: 50%;
-    color: var(--plum);
-    transition: background-color 0.15s var(--ease);
+    width: 1.5rem;
+    height: 1.5rem;
+    color: var(--vx-accent);
   }
-  .faq[open] .faq__icon {
-    background: var(--paper-warm);
+  .vx-qa__icon svg {
+    width: 22px;
+    height: 22px;
   }
-  .faq[open] .faq__icon-v {
+  .vx-qa[open] .vx-qa__icon-v {
     display: none;
   }
-  .faq__a {
-    padding: 0 0 var(--sp-5);
-    max-width: var(--measure);
-    color: var(--ink-soft);
+  .vx-qa__a {
+    padding: 0 48px 22px 0;
+    max-width: 78ch;
+    color: var(--vx-ink-2);
   }
-  .faq__a p {
+  .vx-qa__a p {
     margin: 0;
   }
-  .faq__summary:focus-visible {
-    outline: 2px solid var(--plum);
+  .vx-qa__summary:focus-visible {
+    outline: 2px solid var(--vx-accent);
     outline-offset: 2px;
+  }
+  @media (max-width: 860px) {
+    .vx-qa__q {
+      font-size: 1.15rem;
+    }
+    .vx-qa__summary {
+      padding: 16px 0;
+    }
+    .vx-qa__a {
+      padding-right: 0;
+    }
   }
 </style>

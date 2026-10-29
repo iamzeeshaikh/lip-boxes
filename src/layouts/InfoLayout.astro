@@ -20,7 +20,6 @@ interface Props {
   title: string;
   description: string;
   h1: string;
-  eyebrow: string;
   lead: string;
   points?: string[];
   ogTitle?: string;
@@ -44,7 +43,6 @@ const {
   title,
   description,
   h1,
-  eyebrow,
   lead,
   points,
   ogTitle,
@@ -82,18 +80,18 @@ const schema = graph(
   ogDescription={ogDescription}
   schema={[schema]}
 >
-  <PageHero eyebrow={eyebrow} h1={h1} lead={lead} crumbs={crumbs} points={points} />
+  <PageHero h1={h1} lead={lead} crumbs={crumbs} points={points} />
 
-  <div class="section">
-    <div class:list={['wrap', narrow && 'wrap--narrow']}>
+  <div class="vx-band">
+    <div class:list={['vx-frame', narrow && 'vx-frame--slim']}>
       <slot />
     </div>
   </div>
 
   {extraFaqList.length > 0 && (
-    <div class="section">
-      <div class="wrap wrap--narrow">
-        <FaqList faqs={extraFaqList} heading={extraHeading(path)} level={3} />
+    <div class="vx-band vx-band--grey">
+      <div class="vx-frame">
+        <FaqList faqs={extraFaqList} heading={extraHeading(path)} level={3} split />
       </div>
     </div>
   )}

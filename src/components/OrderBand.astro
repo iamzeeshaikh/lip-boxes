@@ -1,0 +1,106 @@
+---
+/**
+ * Red "Order online" band. Driven by `site.orderPack`; while the price is null
+ * the component renders nothing at all.
+ */
+import { Image } from 'astro:assets';
+import { site } from '../data/site';
+import { productImage } from '../lib/images';
+
+const pack = site.orderPack;
+const qty = pack.qty.toLocaleString('en-US');
+const photo = productImage('lipstick-boxes', 'lipstick-box-single-shade-carton.png');
+---
+
+{
+  pack.price && (
+    <section class="vx-order" aria-labelledby="order-heading">
+      <div class="vx-order__photo">
+        <Image
+          src={photo}
+          alt="Printed lipstick carton beside a pink lipstick"
+          widths={[400, 700]}
+          sizes="(min-width: 62rem) 30vw, 90vw"
+          width={700}
+          height={700}
+          loading="lazy"
+        />
+      </div>
+      <div class="vx-order__copy">
+        <h2 id="order-heading">Order {qty} boxes online</h2>
+      </div>
+      <div class="vx-order__box">
+        <p class="vx-order__line">
+          {qty} boxes <span class="vx-order__price">${pack.price}</span>
+        </p>
+        <a class="vx-btn vx-btn--red vx-btn--block" href={pack.href}>
+          Order Now
+        </a>
+      </div>
+    </section>
+  )
+}
+
+<style>
+  .vx-order {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 20px 32px;
+    align-items: center;
+    margin: 40px var(--gut) 0;
+    padding: 44px;
+    background: var(--vx-accent);
+    color: #fff;
+  }
+  .vx-order__photo {
+    grid-column: 1 / 5;
+  }
+  .vx-order__photo :global(img) {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+  .vx-order__copy {
+    grid-column: 5 / 9;
+  }
+  .vx-order__copy h2 {
+    font-size: clamp(2.1rem, 1.4rem + 2vw, 3.4rem);
+    text-transform: uppercase;
+    line-height: 0.95;
+    color: #fff;
+  }
+  .vx-order__box {
+    grid-column: 9 / 13;
+    background: #fff;
+    color: var(--vx-ink);
+    padding: 28px;
+  }
+  .vx-order__line {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    font-size: 17px;
+    margin-bottom: 18px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--vx-rule);
+  }
+  .vx-order__price {
+    font: 600 26px/1 var(--vx-head);
+    color: var(--vx-accent);
+    white-space: nowrap;
+  }
+  @media (max-width: 860px) {
+    .vx-order {
+      grid-template-columns: 1fr;
+      padding: 22px 16px;
+    }
+    .vx-order__photo,
+    .vx-order__copy,
+    .vx-order__box {
+      grid-column: 1 / -1;
+    }
+    .vx-order__photo :global(img) {
+      aspect-ratio: 4 / 3;
+    }
+  }
+</style>

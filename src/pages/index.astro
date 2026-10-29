@@ -1,11 +1,12 @@
 ---
 import ExtraFaqs from '../components/ExtraFaqs.astro';
-import { Picture, getImage } from 'astro:assets';
+import { Picture, Image, getImage } from 'astro:assets';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import ProductCard from '../components/ProductCard.astro';
 import QuoteCta from '../components/QuoteCta.astro';
+import DesignYourLipBox from '../components/DesignYourLipBox.astro';
+import OrderBand from '../components/OrderBand.astro';
 import Icon from '../components/Icon.astro';
-import { indexableProducts, getProduct } from '../data/products';
+import { indexableProducts, productGroups } from '../data/products';
 import { blogPosts } from '../data/blog';
 import { productImage, publicSocialUrl } from '../lib/images';
 import { site } from '../data/site';
@@ -16,25 +17,12 @@ import {
   webPageSchema,
 } from '../lib/schema';
 
-const featuredSlugs = [
-  'custom-lip-balm-boxes',
-  'custom-lipstick-boxes',
-  'lip-gloss-boxes',
-  'paper-lip-balm-tubes',
-  'rigid-lipstick-boxes',
-  'holographic-lip-gloss-boxes',
-  'hang-tab-lip-balm-boxes',
-  'custom-lip-mask-boxes',
-];
-const featured = featuredSlugs
-  .map((slug) => getProduct(slug))
-  .filter((p): p is NonNullable<typeof p> => Boolean(p));
-
 const heroSource = productImage(
   'lipstick-boxes',
   'lipstick-boxes-nude-collection.png',
 );
-/* Preload the exact AVIF candidate set the <Picture> above will offer. */
+const heroSizes = '(min-width: 62rem) 40vw, 92vw';
+/* Preload the exact AVIF candidate set the <Picture> below will offer. */
 const heroAsset = await getImage({
   src: heroSource,
   widths: [480, 720, 960],
@@ -58,24 +46,135 @@ const schema = graph(
 
 const capabilities = [
   {
-    icon: 'ruler' as const,
     title: 'Made to your dimensions',
     text: 'Every die line is drawn around the tube, bullet or sachet you actually fill. Send measurements or post us a sample.',
   },
   {
-    icon: 'layers' as const,
     title: 'Eleven lip formats',
     text: 'Cartons, paper tubes, labels, hanging packs, rigid gift boxes and bulk programmes, all quoted from one enquiry.',
   },
   {
-    icon: 'sparkle' as const,
     title: 'Finishing chosen for the product',
     text: 'Soft-touch, foil, spot UV, holographic board and emboss, specified against your board rather than sold as a package.',
   },
   {
-    icon: 'shield' as const,
     title: 'Checked before it ships',
     text: 'Colour against the approved proof, dimensions on the first sheets, and a glue and fold test on finished cartons.',
+  },
+];
+
+/* Hero collage: four supporting photographs around the lead image. */
+const collage = [
+  {
+    cls: 'b',
+    img: productImage('custom-lip-care-packaging', 'custom-lip-care-packaging-shade-family.png'),
+    alt: 'Four lipstick cartons in red, coral, pink and nude, each printed with a different pair of lips',
+    caption: 'One die line, four shades: only the printed panel changes',
+  },
+  {
+    cls: 'c',
+    img: productImage('lipstick-boxes', 'lipstick-boxes-matte-dark-range.png'),
+    alt: 'Matte dark lipstick boxes stacked on white steps beside their lipstick cases',
+    caption: 'Matte lipstick range',
+  },
+  {
+    cls: 'd',
+    img: productImage('hang-tab-lipstick-boxes', 'hang-tab-lipstick-box-three-pack.png'),
+    alt: 'Red three-pack lipstick box with a window, shown beside three matte red lipsticks',
+    caption: 'Three-pack with window',
+  },
+  {
+    cls: 'e',
+    img: productImage('lip-gloss-boxes', 'lip-gloss-box-tall-slim-carton.png'),
+    alt: 'Tall slim black and white lip gloss carton beside a red gloss wand',
+    caption: 'Tall gloss carton',
+  },
+];
+
+/* Format row, one photograph per lip format. */
+const formats = [
+  {
+    href: '/custom-lip-balm-boxes/',
+    name: 'Lip balm',
+    text: 'Cartons for 0.15 oz sticks through to 0.5 oz twist tubes, tins and pots.',
+    img: productImage('lip-balm-packaging', 'lip-balm-packaging-blush-pink-cartons.png'),
+    alt: 'Blush pink lip balm cartons standing beside a pink balm stick',
+  },
+  {
+    href: '/lipstick-boxes/',
+    name: 'Lipstick',
+    text: 'Folding and rigid boxes built around bullet cases and shade ranges.',
+    img: productImage('lipstick-boxes', 'lipstick-box-slim-printed-carton.png'),
+    alt: 'Slim printed lipstick carton beside a black lipstick',
+  },
+  {
+    href: '/lip-gloss-boxes/',
+    name: 'Lip gloss',
+    text: 'Tall cartons for wand applicators, printed or iridescent.',
+    img: productImage('lip-gloss-boxes', 'lip-gloss-box-soft-pink-set.png'),
+    alt: 'Soft pink lip gloss cartons with matching gloss tubes',
+  },
+  {
+    href: '/paper-lip-balm-tubes/',
+    name: 'Paper tubes',
+    text: 'Rolled paperboard push-up tubes, kraft or fully printed.',
+    img: productImage('paper-lip-balm-tubes', 'paper-lip-balm-tube-natural-kraft-open.png'),
+    alt: 'Open natural kraft paper lip balm tube with its cap beside it',
+  },
+  {
+    href: '/custom-lip-balm-labels/',
+    name: 'Labels',
+    text: 'Wraps, cap seals, tin tops and tamper bands.',
+    img: productImage('lip-balm-labels', 'lip-balm-label-die-cut-wraps.png'),
+    alt: 'Die-cut lip balm wrap labels printed with red lips',
+  },
+];
+
+/* The full range, grouped by format with a lead photograph per group. */
+const blurb = (name: string) => productGroups.find((g) => g.name === name)?.blurb ?? '';
+const rangeGroups = [
+  { title: 'Lip Balm', text: blurb('Lip Balm'), groups: ['Lip Balm'], wide: true },
+  { title: 'Lipstick', text: blurb('Lipstick'), groups: ['Lipstick'], wide: false },
+  {
+    title: 'Lip Gloss & Lip Care',
+    text: `${blurb('Lip Gloss')} ${blurb('Lip Care')}`,
+    groups: ['Lip Gloss', 'Lip Care'],
+    wide: false,
+  },
+].map((g) => ({
+  ...g,
+  items: indexableProducts.filter((p) => g.groups.includes(p.group)),
+}));
+
+/* Specification spread: one photograph per reference page. */
+const specs = [
+  {
+    href: '/materials/',
+    title: 'Materials',
+    text: 'Board grades and weights, and what each one does to your print and your strength.',
+    img: productImage('cardboard-lip-balm-tubes', 'cardboard-lip-balm-tube-kraft-range.png'),
+    alt: 'Three unbleached kraft cardboard lip balm tubes',
+  },
+  {
+    href: '/printing-options/',
+    title: 'Printing options',
+    text: 'Digital, offset litho, flexo and screen, and the quantity where each becomes economical.',
+    img: productImage('custom-lipstick-boxes', 'custom-lipstick-box-floral-print.png'),
+    alt: 'Floral printed custom lipstick boxes, one standing and one lying flat',
+  },
+  {
+    href: '/finishes/',
+    title: 'Finishes',
+    text: 'Lamination, foil, spot UV and emboss, with the trade-offs each carries on cost and disposal.',
+    img: productImage('lip-balm-packaging', 'lip-balm-packaging-foil-stamped-carton.png'),
+    alt: 'Foil stamped lip balm carton on a round stone plinth',
+  },
+  {
+    href: '/box-styles/',
+    title: 'Box styles',
+    text: 'Tuck ends, auto-bottoms, sleeves, trays and rigid constructions, and which pack each suits.',
+    img: productImage('rigid-lipstick-boxes', 'rigid-lipstick-box-magnetic-closure.png'),
+    alt: 'White rigid lipstick box with a magnetic lid open on a magenta lipstick',
   },
 ];
 ---
@@ -90,473 +189,840 @@ const capabilities = [
   ogImageAlt="A collection of printed nude lipstick boxes with matching lipstick cases"
   preloadImage={heroAsset.src}
   preloadImageSrcset={heroAsset.srcSet.attribute}
-  preloadImageSizes="(min-width: 66rem) 34rem, (min-width: 40rem) 60vw, 90vw"
+  preloadImageSizes={heroSizes}
   preloadImageType="image/avif"
   schema={[schema]}
 >
-  <section class="hero" aria-labelledby="hero-heading">
-    <div class="wrap hero__inner">
-      <div class="hero__text">
-        <p class="hero__eyebrow">Custom lip product packaging &middot; United States</p>
-        <h1 id="hero-heading">
-          Packaging built around the lip product you already make
-        </h1>
-        <p class="lead hero__lead">
-          Printed cartons, paper tubes, wrap labels and rigid boxes for lip balm,
-          lipstick, lip gloss and lip care ranges. Nothing comes from a catalogue
-          of fixed sizes — the die line is drawn around your container.
-        </p>
-        <div class="btn-row hero__actions">
-          <a href="/request-a-quote/" class="btn btn--primary">
-            Request a Quote
-            <Icon name="arrow-right" size={18} />
+  <section class="vx-cover" aria-labelledby="hero-heading">
+    <figure class="vx-cover__a">
+      <Picture
+        src={heroSource}
+        alt="Printed nude and terracotta lipstick boxes arranged with matching lipstick cases"
+        formats={['avif']}
+        fallbackFormat="webp"
+        widths={[480, 720, 960]}
+        sizes={heroSizes}
+        loading="eager"
+        fetchpriority="high"
+        decoding="sync"
+        width={960}
+        height={960}
+      />
+      <figcaption>A shade collection: nude and terracotta cartons cut to their lipstick cases</figcaption>
+    </figure>
+
+    <div class="vx-cover__text">
+      <h1 id="hero-heading">
+        Packaging built around the lip product you already make
+      </h1>
+      <p class="vx-cover__lead">
+        Printed cartons, paper tubes, wrap labels and rigid boxes for lip balm,
+        lipstick, lip gloss and lip care ranges. Nothing comes from a catalogue
+        of fixed sizes — the die line is drawn around your container.
+      </p>
+    </div>
+
+    {
+      collage.map((item) => (
+        <figure class={`vx-cover__${item.cls}`}>
+          <Image
+            src={item.img}
+            alt={item.alt}
+            widths={[320, 480, 720]}
+            sizes="(min-width: 62rem) 26vw, 46vw"
+            loading="eager"
+            decoding="async"
+            width={720}
+            height={720}
+          />
+          <figcaption>{item.caption}</figcaption>
+        </figure>
+      ))
+    }
+
+    <div class="vx-cover__act">
+      <div class="vx-btns">
+        <a href="/request-a-quote/" class="vx-btn vx-btn--red">
+          Request a Quote
+          <Icon name="arrow-right" size={18} />
+        </a>
+        <a href="/products/" class="vx-arrow">See all products</a>
+      </div>
+      <p class="vx-cover__price" data-boilerplate>{site.startingPriceStatement}</p>
+    </div>
+  </section>
+
+  <section class="vx-caps" aria-labelledby="capabilities-heading">
+    <h2 id="capabilities-heading" class="visually-hidden">How we work</h2>
+    <ul>
+      {
+        capabilities.map((item) => (
+          <li>
+            <h3>{item.title}</h3>
+            <p>{item.text}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="vx-formats" aria-labelledby="formats-heading">
+    <div class="vx-sechead">
+      <h2 id="formats-heading">Shop by lip format</h2>
+      <p>
+        Cartons, paper tubes, labels, hanging packs, rigid gift boxes and bulk
+        programs. Send one inquiry for a whole range and every piece comes back
+        on the same written quote.
+      </p>
+    </div>
+    <ul class="vx-formats__row">
+      {
+        formats.map((item) => (
+          <li>
+            <a href={item.href}>
+              <Image
+                src={item.img}
+                alt={item.alt}
+                widths={[320, 480, 640]}
+                sizes="(min-width: 62rem) 19vw, 46vw"
+                loading="lazy"
+                decoding="async"
+                width={640}
+                height={640}
+              />
+              <b>{item.name}</b>
+              <span>{item.text}</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <DesignYourLipBox />
+
+  <section class="vx-range" id="range" aria-labelledby="products-heading">
+    <div class="vx-sechead">
+      <h2 id="products-heading">Packaging for every lip format</h2>
+      <p class="vx-sechead__note">
+        {indexableProducts.length} products, each quoted to your specification.
+        A full directory with descriptions is on the{' '}
+        <a href="/products/">our full product range</a>.
+      </p>
+    </div>
+
+    {
+      rangeGroups.map((group) => (
+        <div class="vx-range__group">
+          <div class="vx-range__label">
+            <h3>{group.title}</h3>
+            <p>{group.text}</p>
+          </div>
+          <div class:list={['vx-range__grid', group.wide && 'vx-range__grid--wide']}>
+            {group.items.map((product, i) => (
+              <a class:list={['vx-rcard', i === 0 && 'vx-rcard--lead']} href={`/${product.slug}/`}>
+                <Image
+                  src={productImage(product.slug, product.images[0].file)}
+                  alt={product.images[0].alt || product.name}
+                  widths={i === 0 ? [480, 720, 960] : [320, 480]}
+                  sizes={i === 0 ? '(min-width: 62rem) 30vw, 92vw' : '(min-width: 62rem) 15vw, 46vw'}
+                  loading="lazy"
+                  decoding="async"
+                  width={i === 0 ? 960 : 480}
+                  height={i === 0 ? 960 : 480}
+                />
+                <h4>{product.name}</h4>
+                <p>{product.cardDescription}</p>
+              </a>
+            ))}
+          </div>
+        </div>
+      ))
+    }
+  </section>
+
+  <OrderBand />
+
+  <section class="vx-steps" aria-labelledby="process-heading">
+    <div class="vx-sechead">
+      <h2 id="process-heading">Five stages, and nothing prints unsigned</h2>
+      <p>
+        The same sequence applies whether you are ordering 500 cartons or
+        running a twelve-product range. Full detail sits on the
+        <a href="/how-to-order/">how to place an order</a>.
+      </p>
+    </div>
+    <ol class="vx-steps__list">
+      <li>
+        <span class="vx-steps__num" aria-hidden="true">1</span>
+        <h3>Send your specification</h3>
+        <p>Dimensions or a sample container, quantity, and anything you know about material and finish.</p>
+      </li>
+      <li>
+        <span class="vx-steps__num" aria-hidden="true">2</span>
+        <h3>Get a written quote</h3>
+        <p>Priced at your quantity and at the next volume break, so you can see where the saving sits.</p>
+      </li>
+      <li>
+        <span class="vx-steps__num" aria-hidden="true">3</span>
+        <h3>Approve die line and proof</h3>
+        <p>A structural drawing, then a colour proof on the actual stock. Both need written sign-off.</p>
+      </li>
+      <li>
+        <span class="vx-steps__num" aria-hidden="true">4</span>
+        <h3>Production and inspection</h3>
+        <p>Print, finish, die-cut, glue, then colour, dimension and fold checks before packing.</p>
+      </li>
+      <li>
+        <span class="vx-steps__num" aria-hidden="true">5</span>
+        <h3>Dispatch</h3>
+        <p>Packed to your case count, palletised where appropriate, released with tracking.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section class="vx-spread" aria-labelledby="spec-heading">
+    <div class="vx-spread__intro">
+      <h2 id="spec-heading">Decide the details before you commit</h2>
+      <p>
+        Four reference pages covering the choices that change what your
+        packaging costs and how it looks.
+      </p>
+    </div>
+    <div class="vx-spread__grid">
+      {
+        specs.map((item, i) => (
+          <a class:list={['vx-fin', i === 0 && 'vx-fin--tall']} href={item.href}>
+            <Image
+              src={item.img}
+              alt={item.alt}
+              widths={i === 0 ? [480, 720, 960] : [320, 480, 640]}
+              sizes={i === 0 ? '(min-width: 62rem) 32vw, 92vw' : '(min-width: 62rem) 16vw, 46vw'}
+              loading="lazy"
+              decoding="async"
+              width={i === 0 ? 960 : 640}
+              height={i === 0 ? 960 : 640}
+            />
+            <h3>{item.title}</h3>
+            <p>{item.text}</p>
           </a>
-          <a href="/products/" class="btn btn--secondary">See all products</a>
-        </div>
-        <p class="hero__price" data-boilerplate>{site.startingPriceStatement}</p>
-      </div>
-
-      <div class="hero__media">
-        <Picture
-          src={heroSource}
-          alt="Printed nude and terracotta lipstick boxes arranged with matching lipstick cases"
-          formats={['avif']}
-          fallbackFormat="webp"
-          widths={[480, 720, 960]}
-          sizes="(min-width: 66rem) 34rem, (min-width: 40rem) 60vw, 90vw"
-          loading="eager"
-          fetchpriority="high"
-          decoding="sync"
-          width={960}
-          height={960}
-          class="hero__img"
-        />
-      </div>
+        ))
+      }
     </div>
   </section>
 
-  <section class="section section--tight" aria-labelledby="capabilities-heading">
-    <div class="wrap">
-      <h2 id="capabilities-heading" class="visually-hidden">How we work</h2>
-      <ul class="cap-grid">
-        {
-          capabilities.map((item) => (
-            <li class="cap">
-              <span class="cap__icon" aria-hidden="true">
-                <Icon name={item.icon} size={20} />
-              </span>
-              <h3 class="cap__title">{item.title}</h3>
-              <p class="cap__text">{item.text}</p>
-            </li>
-          ))
-        }
-      </ul>
+  <section class="vx-notes" aria-labelledby="blog-heading">
+    <div class="vx-sechead">
+      <h2 id="blog-heading">Practical notes on lip packaging</h2>
+      <p class="vx-sechead__note">
+        <a href="/blog/">All articles</a>
+      </p>
     </div>
+    <ul class="vx-notes__list">
+      {
+        latest.map((post) => (
+          <li>
+            <Image
+              src={productImage(post.heroFrom.slug, post.heroFrom.file)}
+              alt={post.heroFrom.alt}
+              widths={[480, 720]}
+              sizes="(min-width: 62rem) 31vw, 92vw"
+              loading="lazy"
+              decoding="async"
+              width={720}
+              height={480}
+            />
+            <p class="vx-notes__meta">
+              <time datetime={post.published}>
+                {new Date(post.published).toLocaleDateString('en-US', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric',
+                })}
+              </time>
+              <span aria-hidden="true"> &middot; </span>
+              {post.readingMinutes} min read
+            </p>
+            <h3>
+              <a href={`/blog/${post.slug}/`}>{post.title}</a>
+            </h3>
+            <p>{post.deck}</p>
+          </li>
+        ))
+      }
+    </ul>
   </section>
 
-  <section class="section section--warm" aria-labelledby="products-heading">
-    <div class="wrap">
-      <div class="sec-head">
-        <div>
-          <span class="eyebrow">What we make</span>
-          <h2 id="products-heading">Packaging for every lip format</h2>
-        </div>
-        <p class="sec-head__note">
-          {indexableProducts.length} products, each quoted to your specification.
-          A full directory with descriptions is on the
-          <a href="/products/">our full product range</a>.
-        </p>
-      </div>
-      <div class="grid grid--products">
-        {featured.map((product, i) => <ProductCard product={product} eager={i < 4} />)}
-      </div>
-    </div>
-  </section>
-
-  <section class="section" aria-labelledby="process-heading">
-    <div class="wrap process">
-      <div class="process__intro">
-        <span class="eyebrow">How ordering works</span>
-        <h2 id="process-heading">Five stages, and nothing prints unsigned</h2>
-        <p class="text-muted">
-          The same sequence applies whether you are ordering 500 cartons or
-          running a twelve-product range. Full detail sits on the
-          <a href="/how-to-order/">how to place an order</a>.
-        </p>
-      </div>
-      <ol class="process__steps">
-        <li>
-          <span class="process__num" aria-hidden="true">01</span>
-          <h3>Send your specification</h3>
-          <p>Dimensions or a sample container, quantity, and anything you know about material and finish.</p>
-        </li>
-        <li>
-          <span class="process__num" aria-hidden="true">02</span>
-          <h3>Get a written quote</h3>
-          <p>Priced at your quantity and at the next volume break, so you can see where the saving sits.</p>
-        </li>
-        <li>
-          <span class="process__num" aria-hidden="true">03</span>
-          <h3>Approve die line and proof</h3>
-          <p>A structural drawing, then a colour proof on the actual stock. Both need written sign-off.</p>
-        </li>
-        <li>
-          <span class="process__num" aria-hidden="true">04</span>
-          <h3>Production and inspection</h3>
-          <p>Print, finish, die-cut, glue, then colour, dimension and fold checks before packing.</p>
-        </li>
-        <li>
-          <span class="process__num" aria-hidden="true">05</span>
-          <h3>Dispatch</h3>
-          <p>Packed to your case count, palletised where appropriate, released with tracking.</p>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="section section--blush" aria-labelledby="spec-heading">
-    <div class="wrap">
-      <div class="sec-head">
-        <div>
-          <span class="eyebrow">Specification</span>
-          <h2 id="spec-heading">Decide the details before you commit</h2>
-        </div>
-        <p class="sec-head__note">
-          Four reference pages covering the choices that change what your
-          packaging costs and how it looks.
-        </p>
-      </div>
-      <div class="grid grid--2 spec-grid">
-        <a class="spec-card" href="/materials/">
-          <Icon name="layers" size={22} />
-          <h3>Materials</h3>
-          <p>Board grades and weights, and what each one does to your print and your strength.</p>
-        </a>
-        <a class="spec-card" href="/printing-options/">
-          <Icon name="palette" size={22} />
-          <h3>Printing options</h3>
-          <p>Digital, offset litho, flexo and screen, and the quantity where each becomes economical.</p>
-        </a>
-        <a class="spec-card" href="/finishes/">
-          <Icon name="sparkle" size={22} />
-          <h3>Finishes</h3>
-          <p>Lamination, foil, spot UV and emboss, with the trade-offs each carries on cost and disposal.</p>
-        </a>
-        <a class="spec-card" href="/box-styles/">
-          <Icon name="box" size={22} />
-          <h3>Box styles</h3>
-          <p>Tuck ends, auto-bottoms, sleeves, trays and rigid constructions, and which pack each suits.</p>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" aria-labelledby="blog-heading">
-    <div class="wrap">
-      <div class="sec-head">
-        <div>
-          <span class="eyebrow">From the blog</span>
-          <h2 id="blog-heading">Practical notes on lip packaging</h2>
-        </div>
-        <p class="sec-head__note">
-          <a href="/blog/">All articles</a>
-        </p>
-      </div>
-      <ul class="post-list">
-        {
-          latest.map((post) => (
-            <li class="post-item">
-              <p class="post-item__meta">
-                <time datetime={post.published}>
-                  {new Date(post.published).toLocaleDateString('en-US', {
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric',
-                  })}
-                </time>
-                <span aria-hidden="true"> &middot; </span>
-                {post.readingMinutes} min read
-              </p>
-              <h3 class="post-item__title">
-                <a href={`/blog/${post.slug}/`}>{post.title}</a>
-              </h3>
-              <p class="post-item__deck">{post.deck}</p>
-            </li>
-          ))
-        }
-      </ul>
-    </div>
-  </section>
-
-  <QuoteCta />
   <ExtraFaqs />
+  <QuoteCta />
 </BaseLayout>
 
 <style>
-  /* --- Hero --- */
-  .hero {
-    background:
-      radial-gradient(
-        90% 80% at 85% 10%,
-        color-mix(in srgb, var(--rose-soft) 70%, transparent) 0%,
-        transparent 65%
-      ),
-      var(--paper-warm);
-    border-bottom: 1px solid var(--line);
-    padding-block: var(--sp-7);
-  }
-  .hero__inner {
+  /* --- Hero collage --- */
+  .vx-cover {
     display: grid;
-    gap: var(--sp-6);
-    align-items: center;
-  }
-  @media (min-width: 66rem) {
-    .hero {
-      padding-block: var(--sp-9);
-    }
-    .hero__inner {
-      grid-template-columns: 1fr minmax(20rem, 34rem);
-      gap: var(--sp-8);
-    }
-  }
-  .hero__eyebrow {
-    font-size: var(--step--1);
-    font-weight: 600;
-    letter-spacing: 0.11em;
-    text-transform: uppercase;
-    color: var(--rose);
-    margin-bottom: var(--sp-4);
-  }
-  .hero h1 {
-    max-width: 22ch;
-    margin-bottom: var(--sp-5);
-  }
-  .hero__lead {
-    max-width: 48ch;
-    margin-bottom: var(--sp-6);
-  }
-  .hero__actions {
-    margin-bottom: var(--sp-5);
-  }
-  .hero__price {
-    font-size: var(--step--1);
-    color: var(--ink-muted);
-    max-width: 52ch;
-    padding-top: var(--sp-4);
-    border-top: 1px solid var(--line-strong);
-    margin: 0;
-  }
-  .hero__media {
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
-    overflow: hidden;
-    background: var(--white);
-  }
-  .hero__img {
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 22px 20px;
+    padding: 34px var(--gut) 56px;
+    max-width: var(--wrap);
+    margin-inline: auto;
     width: 100%;
-    height: auto;
-    aspect-ratio: 1 / 1;
+  }
+  .vx-cover figure {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    margin: 0;
+  }
+  .vx-cover figure :global(img) {
+    width: 100%;
     object-fit: cover;
+    background: var(--vx-grey);
   }
-
-  /* --- Capability row --- */
-  .cap-grid {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    gap: var(--sp-5);
-    grid-template-columns: repeat(auto-fit, minmax(min(14rem, 100%), 1fr));
+  .vx-cover figcaption {
+    margin-top: 8px;
+    padding-top: 6px;
+    font-size: 12.5px;
+    line-height: 1.4;
+    color: var(--vx-mute-c);
+    border-top: 1px solid var(--vx-rule-lt);
   }
-  .cap {
-    padding-top: var(--sp-3);
-    border-top: 2px solid var(--rose-soft);
+  .vx-cover__a {
+    grid-column: 1 / 6;
+    grid-row: 1 / 4;
   }
-  .cap__icon {
-    display: grid;
-    place-items: center;
-    width: 2.25rem;
-    height: 2.25rem;
-    margin-bottom: var(--sp-3);
-    border-radius: var(--radius-sm);
-    background: var(--paper-blush);
-    color: var(--plum);
+  .vx-cover__a :global(picture) {
+    display: contents;
   }
-  .cap__title {
-    font-family: var(--font-body);
-    font-size: var(--step-0);
-    font-weight: 600;
-    letter-spacing: 0;
-    margin-bottom: var(--sp-2);
+  .vx-cover__a :global(img) {
+    flex: 1 1 0;
+    min-height: 0;
+    height: 100%;
   }
-  .cap__text {
-    font-size: var(--step--1);
-    color: var(--ink-soft);
-    line-height: 1.6;
-    margin: 0;
+  .vx-cover__text {
+    grid-column: 6 / 13;
+    grid-row: 1;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--vx-rule);
   }
-
-  /* --- Section headers --- */
-  .sec-head {
-    display: grid;
-    gap: var(--sp-3);
-    margin-bottom: var(--sp-6);
+  .vx-cover h1 {
+    font-size: clamp(2.9rem, 6.1vw, 5.75rem);
+    line-height: 0.94;
+    margin-bottom: 22px;
   }
-  @media (min-width: 54rem) {
-    .sec-head {
-      grid-template-columns: 1fr auto;
-      align-items: end;
-      gap: var(--sp-6);
-    }
-    .sec-head__note {
-      text-align: right;
-    }
-  }
-  .sec-head h2 {
-    margin-bottom: 0;
-  }
-  .sec-head__note {
-    font-size: var(--step--1);
-    color: var(--ink-muted);
-    max-width: 34ch;
-    margin: 0;
+  .vx-cover__lead {
+    font-size: 18px;
     line-height: 1.55;
+    max-width: 56ch;
+    color: #222;
+    margin-bottom: 8px;
+  }
+  .vx-cover__b {
+    grid-column: 6 / 10;
+    grid-row: 2;
+  }
+  .vx-cover__b :global(img) {
+    aspect-ratio: 16 / 10;
+  }
+  .vx-cover__c {
+    grid-column: 10 / 13;
+    grid-row: 2;
+  }
+  .vx-cover__c :global(img) {
+    flex: 1 1 0;
+    min-height: 0;
+    height: 100%;
+  }
+  .vx-cover__d {
+    grid-column: 6 / 8;
+    grid-row: 3;
+  }
+  .vx-cover__e {
+    grid-column: 8 / 10;
+    grid-row: 3;
+  }
+  .vx-cover__d :global(img),
+  .vx-cover__e :global(img) {
+    aspect-ratio: 1;
+  }
+  .vx-cover__act {
+    grid-column: 10 / 13;
+    grid-row: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+  .vx-cover__price {
+    font-size: 14px;
+    color: #333;
+    padding-top: 14px;
+    border-top: 1px solid var(--vx-rule);
+    margin: 0;
   }
 
-  /* --- Process --- */
-  .process {
-    display: grid;
-    gap: var(--sp-6);
+  /* --- Capabilities row --- */
+  .vx-caps {
+    padding: 0 var(--gut) 64px;
+    max-width: var(--wrap);
+    margin-inline: auto;
+    width: 100%;
   }
-  @media (min-width: 62rem) {
-    .process {
-      grid-template-columns: minmax(16rem, 22rem) 1fr;
-      gap: var(--sp-8);
-      align-items: start;
-    }
-    .process__intro {
-      position: sticky;
-      top: 6rem;
-    }
-  }
-  .process__intro p {
-    max-width: 34ch;
-    font-size: var(--step--1);
-  }
-  .process__steps {
+  .vx-caps ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: grid;
-    gap: var(--sp-4);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
   }
-  @media (min-width: 46rem) {
-    .process__steps {
+  .vx-caps li {
+    padding-top: 14px;
+    border-top: 3px solid var(--vx-accent);
+  }
+  .vx-caps h3 {
+    font-size: 1.45rem;
+    margin-bottom: 8px;
+  }
+  .vx-caps p {
+    font-size: 0.94rem;
+    color: #444;
+  }
+
+  /* --- Formats --- */
+  .vx-formats,
+  .vx-range,
+  .vx-steps,
+  .vx-notes {
+    padding: 0 var(--gut) 72px;
+    max-width: var(--wrap);
+    margin-inline: auto;
+    width: 100%;
+  }
+  .vx-formats__row {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 20px;
+  }
+  .vx-formats__row a {
+    display: block;
+    text-decoration: none;
+    color: var(--vx-ink);
+  }
+  .vx-formats__row :global(img) {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    margin-bottom: 12px;
+    transition: opacity 0.2s;
+  }
+  .vx-formats__row a:hover :global(img) {
+    opacity: 0.88;
+  }
+  .vx-formats__row b {
+    display: block;
+    font: 500 26px/1.1 var(--vx-head);
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--vx-rule);
+    margin-bottom: 8px;
+  }
+  .vx-formats__row a:hover b {
+    color: var(--vx-accent);
+  }
+  .vx-formats__row span {
+    display: block;
+    font-size: 14.5px;
+    color: #444;
+    line-height: 1.5;
+  }
+
+  /* --- Range --- */
+  .vx-range {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  .vx-range__group {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 20px;
+    padding: 26px 0 44px;
+    border-top: 1px solid var(--vx-rule);
+  }
+  .vx-range__group:first-of-type {
+    border-top: 0;
+  }
+  .vx-range__label {
+    grid-column: 1 / 3;
+  }
+  .vx-range__label h3 {
+    font-size: 2.1rem;
+    margin-bottom: 10px;
+  }
+  .vx-range__label p {
+    font-size: 14.5px;
+    color: #444;
+  }
+  .vx-range__grid {
+    grid-column: 3 / 13;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 28px 20px;
+  }
+  .vx-range__grid--wide .vx-rcard--lead {
+    grid-row: span 2;
+  }
+  .vx-rcard {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--vx-ink);
+  }
+  .vx-rcard :global(img) {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    background: var(--vx-grey);
+    margin-bottom: 12px;
+    transition: opacity 0.2s;
+  }
+  .vx-rcard--lead {
+    grid-column: span 2;
+  }
+  .vx-rcard--lead :global(img) {
+    aspect-ratio: auto;
+    flex: 1 1 0;
+    min-height: 220px;
+    height: 100%;
+  }
+  .vx-rcard h4 {
+    font-size: 1.35rem;
+    font-weight: 500;
+    margin-bottom: 6px;
+  }
+  .vx-rcard p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #444;
+    margin: 0;
+  }
+  .vx-rcard--lead h4 {
+    font-size: 1.9rem;
+  }
+  .vx-rcard:hover :global(img) {
+    opacity: 0.88;
+  }
+  .vx-rcard:hover h4 {
+    color: var(--vx-accent);
+  }
+
+  /* --- Steps --- */
+  .vx-steps {
+    padding-top: 88px;
+    padding-bottom: 80px;
+  }
+  .vx-steps__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 20px;
+  }
+  .vx-steps__list li {
+    border-top: 1px solid var(--vx-rule);
+    padding-top: 10px;
+  }
+  .vx-steps__num {
+    display: block;
+    font: 300 150px/0.85 var(--vx-head);
+    color: var(--vx-accent);
+    margin-bottom: 22px;
+    letter-spacing: -0.04em;
+  }
+  .vx-steps__list h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  .vx-steps__list p {
+    font-size: 15px;
+    color: #333;
+    max-width: 36ch;
+  }
+
+  /* --- Specification spread --- */
+  .vx-spread {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: 20px;
+    max-width: calc(var(--wrap) - 2 * var(--gut));
+    width: calc(100% - 2 * var(--gut));
+    margin: 0 auto;
+    padding: 56px 0 80px;
+    border-top: 1px solid var(--vx-rule);
+  }
+  .vx-spread__intro {
+    grid-column: 1 / 5;
+    padding-right: 20px;
+  }
+  .vx-spread__intro h2 {
+    margin-bottom: 18px;
+  }
+  .vx-spread__intro p {
+    color: #333;
+  }
+  .vx-spread__grid {
+    grid-column: 5 / 13;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px 20px;
+  }
+  .vx-fin {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--vx-ink);
+  }
+  .vx-fin :global(img) {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  .vx-fin--tall {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+  }
+  .vx-fin--tall :global(img) {
+    aspect-ratio: auto;
+    flex: 1 1 0;
+    min-height: 0;
+  }
+  .vx-fin h3 {
+    font-size: 1.3rem;
+    margin-bottom: 4px;
+  }
+  .vx-fin--tall h3 {
+    font-size: 1.8rem;
+  }
+  .vx-fin p {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.45;
+    margin: 0;
+  }
+  .vx-fin:hover h3 {
+    color: var(--vx-accent);
+  }
+
+  /* --- Blog notes --- */
+  .vx-notes {
+    padding-top: 24px;
+  }
+  .vx-notes__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px 20px;
+  }
+  .vx-notes__list :global(img) {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    margin-bottom: 14px;
+  }
+  .vx-notes__meta {
+    font-size: 13px;
+    color: var(--vx-mute-c);
+    margin-bottom: 6px;
+  }
+  .vx-notes__list h3 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+  .vx-notes__list h3 a {
+    text-decoration: none;
+  }
+  .vx-notes__list p:last-child {
+    font-size: 14.5px;
+    color: #444;
+  }
+
+  /* ---------- responsive ---------- */
+  @media (max-width: 1180px) {
+    .vx-range__label,
+    .vx-range__grid {
+      grid-column: 1 / -1;
+    }
+    .vx-steps__list {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .vx-caps ul {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .vx-spread__intro,
+    .vx-spread__grid {
+      grid-column: 1 / -1;
+    }
+  }
+  @media (max-width: 860px) {
+    .vx-cover {
       grid-template-columns: 1fr 1fr;
-      gap: var(--sp-5);
+      gap: 14px 12px;
+      padding: 20px var(--gut) 40px;
     }
-  }
-  .process__steps li {
-    padding-top: var(--sp-3);
-    border-top: 1px solid var(--line);
-  }
-  .process__num {
-    display: block;
-    font-family: var(--font-display);
-    font-size: var(--step-1);
-    font-weight: 600;
-    color: var(--rose);
-    margin-bottom: var(--sp-2);
-    font-variation-settings: 'SOFT' 0, 'WONK' 1, 'opsz' 24;
-  }
-  .process__steps h3 {
-    font-family: var(--font-body);
-    font-size: var(--step-0);
-    font-weight: 600;
-    letter-spacing: 0;
-    margin-bottom: var(--sp-2);
-  }
-  .process__steps p {
-    font-size: var(--step--1);
-    color: var(--ink-soft);
-    line-height: 1.6;
-    margin: 0;
-  }
-
-  /* --- Specification cards --- */
-  .spec-grid {
-    gap: var(--sp-4);
-  }
-  .spec-card {
-    display: block;
-    padding: var(--sp-5);
-    background: var(--white);
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
-    text-decoration: none;
-    color: var(--ink);
-    transition: border-color 0.18s var(--ease), box-shadow 0.18s var(--ease);
-  }
-  .spec-card:hover {
-    border-color: var(--plum);
-    box-shadow: var(--shadow-sm);
-    color: var(--ink);
-  }
-  .spec-card svg {
-    color: var(--plum);
-    margin-bottom: var(--sp-3);
-  }
-  .spec-card h3 {
-    font-size: var(--step-1);
-    margin-bottom: var(--sp-2);
-  }
-  .spec-card:hover h3 {
-    color: var(--plum);
-  }
-  .spec-card p {
-    font-size: var(--step--1);
-    color: var(--ink-soft);
-    line-height: 1.6;
-    margin: 0;
-    max-width: 42ch;
-  }
-
-  /* --- Blog list --- */
-  .post-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    gap: var(--sp-5);
-    grid-template-columns: repeat(auto-fit, minmax(min(17rem, 100%), 1fr));
-  }
-  .post-item {
-    padding-top: var(--sp-4);
-    border-top: 1px solid var(--line);
-  }
-  .post-item__meta {
-    font-size: var(--step--1);
-    color: var(--ink-muted);
-    margin-bottom: var(--sp-2);
-  }
-  .post-item__title {
-    font-size: var(--step-1);
-    margin-bottom: var(--sp-2);
-    line-height: 1.3;
-  }
-  .post-item__title a {
-    color: var(--ink);
-    text-decoration: none;
-  }
-  .post-item__title a:hover {
-    color: var(--plum);
-    text-decoration: underline;
-    text-underline-offset: 0.16em;
-  }
-  .post-item__deck {
-    font-size: var(--step--1);
-    color: var(--ink-soft);
-    line-height: 1.6;
-    margin: 0;
+    .vx-cover__text {
+      grid-column: 1 / -1;
+      grid-row: auto;
+      order: 1;
+    }
+    .vx-cover h1 {
+      font-size: 2.75rem;
+      margin-bottom: 14px;
+    }
+    .vx-cover__lead {
+      font-size: 16px;
+    }
+    .vx-cover__a {
+      grid-column: 1 / -1;
+      grid-row: auto;
+      order: 2;
+    }
+    .vx-cover__a :global(img) {
+      aspect-ratio: 1;
+      height: auto;
+      flex: none;
+    }
+    .vx-cover__act {
+      grid-column: 1 / -1;
+      grid-row: auto;
+      order: 3;
+    }
+    .vx-cover__b,
+    .vx-cover__d {
+      grid-column: 1 / 2;
+      grid-row: auto;
+    }
+    .vx-cover__c,
+    .vx-cover__e {
+      grid-column: 2 / 3;
+      grid-row: auto;
+    }
+    .vx-cover__b {
+      order: 4;
+    }
+    .vx-cover__c {
+      order: 5;
+    }
+    .vx-cover__d {
+      order: 6;
+    }
+    .vx-cover__e {
+      order: 7;
+    }
+    .vx-cover__b :global(img),
+    .vx-cover__c :global(img) {
+      aspect-ratio: 1;
+      height: auto;
+      flex: none;
+    }
+    .vx-cover figcaption {
+      font-size: 11.5px;
+    }
+    .vx-caps ul {
+      grid-template-columns: 1fr;
+    }
+    .vx-formats__row {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px 12px;
+    }
+    .vx-formats__row li:first-child {
+      grid-column: 1 / -1;
+    }
+    .vx-formats__row li:first-child :global(img) {
+      aspect-ratio: 4 / 3;
+    }
+    .vx-formats__row :global(img) {
+      aspect-ratio: 1;
+    }
+    .vx-formats__row b {
+      font-size: 22px;
+    }
+    .vx-range {
+      padding-top: 56px;
+    }
+    .vx-range__group {
+      grid-template-columns: 1fr;
+      padding-bottom: 32px;
+    }
+    .vx-range__grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 22px 12px;
+    }
+    .vx-range__grid--wide .vx-rcard--lead {
+      grid-row: auto;
+    }
+    .vx-rcard--lead :global(img) {
+      aspect-ratio: 4 / 3;
+      flex: none;
+      height: auto;
+      min-height: 0;
+    }
+    .vx-rcard h4 {
+      font-size: 1.2rem;
+    }
+    .vx-rcard--lead h4 {
+      font-size: 1.5rem;
+    }
+    .vx-rcard p {
+      font-size: 13.5px;
+    }
+    .vx-range__grid > .vx-rcard:nth-child(even):last-child {
+      grid-column: 1 / -1;
+    }
+    .vx-range__grid > .vx-rcard:nth-child(even):last-child :global(img) {
+      aspect-ratio: 16 / 9;
+    }
+    .vx-steps {
+      padding-top: 60px;
+      padding-bottom: 48px;
+    }
+    .vx-steps__list {
+      grid-template-columns: 1fr 1fr;
+      gap: 28px 14px;
+    }
+    .vx-steps__num {
+      font-size: 96px;
+      margin-bottom: 12px;
+    }
+    .vx-steps__list h3 {
+      font-size: 1.35rem;
+    }
+    .vx-steps__list p {
+      font-size: 14px;
+    }
+    .vx-spread {
+      padding: 44px 0 56px;
+    }
+    .vx-spread__grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px 12px;
+    }
+    .vx-fin--tall {
+      grid-column: 1 / -1;
+      grid-row: auto;
+    }
+    .vx-fin--tall :global(img) {
+      aspect-ratio: 4 / 3;
+      flex: none;
+    }
+    .vx-notes__list {
+      grid-template-columns: 1fr;
+    }
   }
 </style>

@@ -42,18 +42,17 @@ const accept = '.pdf,.ai,.eps,.psd,.svg,.png,.jpg,.jpeg,.doc,.docx';
   schema={[schema]}
 >
   <PageHero
-    eyebrow="Quote request"
     h1="Request a Quote"
     lead="The more of this you can fill in, the closer the first reply is to a final price. Anything you do not know yet can be left blank — we will ask about it rather than guess."
     crumbs={crumbs}
     points={['Written quote, not a range', 'Priced at two quantities', 'Artwork upload supported']}
   />
 
-  <div class="section">
-    <div class="wrap quote-page">
+  <div class="vx-band">
+    <div class="vx-frame quote-page">
       <div class="quote-page__form">
         <form
-          class="qform qform--full"
+          class="vx-qf vx-qf--full"
           method="post"
           action="/api/quote/"
           enctype="multipart/form-data"
@@ -64,14 +63,14 @@ const accept = '.pdf,.ai,.eps,.psd,.svg,.png,.jpg,.jpeg,.doc,.docx';
           <input type="hidden" name="pageUrl" value={Astro.url.href} data-page-url />
 
           <!-- Honeypot: hidden from users, checked on the server. -->
-          <div class="qform__trap" aria-hidden="true">
+          <div class="vx-qf__trap" aria-hidden="true">
             <label for="full-company-website">Company website</label>
             <input type="text" id="full-company-website" name="companyWebsite" tabindex="-1" autocomplete="off" />
           </div>
 
-          <fieldset class="qform__set">
+          <fieldset class="vx-qf__set">
             <legend>Your details</legend>
-            <div class="qform__grid">
+            <div class="vx-qf__grid">
               <div class="field">
                 <label for="q-name">Name <span class="req" aria-hidden="true">*</span></label>
                 <input type="text" id="q-name" name="name" required autocomplete="name" maxlength="120" aria-describedby="q-name-error" />
@@ -95,13 +94,13 @@ const accept = '.pdf,.ai,.eps,.psd,.svg,.png,.jpg,.jpeg,.doc,.docx';
             </div>
           </fieldset>
 
-          <fieldset class="qform__set">
+          <fieldset class="vx-qf__set">
             <legend>The packaging</legend>
             <p class="fieldset-note">
               If you are quoting several products, name the main one here and list
               the rest in the additional details field.
             </p>
-            <div class="qform__grid">
+            <div class="vx-qf__grid">
               <div class="field">
                 <label for="q-product">Product</label>
                 <select id="q-product" name="product" aria-describedby="q-product-error">
@@ -143,14 +142,14 @@ const accept = '.pdf,.ai,.eps,.psd,.svg,.png,.jpg,.jpeg,.doc,.docx';
             </div>
           </fieldset>
 
-          <fieldset class="qform__set">
+          <fieldset class="vx-qf__set">
             <legend>Specification</legend>
             <p class="fieldset-note">
               Leave anything blank that you would rather we recommended. Our guide to
               <a href="/materials/">board and material options</a> covers the choices if you
               want to decide first.
             </p>
-            <div class="qform__grid">
+            <div class="vx-qf__grid">
               <div class="field">
                 <label for="q-material">Material preference</label>
                 <input type="text" id="q-material" name="material" maxlength="200" aria-describedby="q-material-hint" />
@@ -187,9 +186,9 @@ const accept = '.pdf,.ai,.eps,.psd,.svg,.png,.jpg,.jpeg,.doc,.docx';
             </div>
           </fieldset>
 
-          <fieldset class="qform__set">
+          <fieldset class="vx-qf__set">
             <legend>Delivery</legend>
-            <div class="qform__grid">
+            <div class="vx-qf__grid">
               <div class="field">
                 <label for="q-date">Required delivery date</label>
                 <input type="date" id="q-date" name="deliveryDate" aria-describedby="q-date-hint" />
@@ -208,9 +207,9 @@ const accept = '.pdf,.ai,.eps,.psd,.svg,.png,.jpg,.jpeg,.doc,.docx';
             </div>
           </fieldset>
 
-          <fieldset class="qform__set">
+          <fieldset class="vx-qf__set">
             <legend>Anything else</legend>
-            <div class="qform__grid">
+            <div class="vx-qf__grid">
               <div class="field field--full">
                 <label for="q-message">Additional details <span class="req" aria-hidden="true">*</span></label>
                 <textarea id="q-message" name="message" rows="6" required maxlength="4000" aria-describedby="q-message-hint q-message-error"></textarea>
@@ -246,17 +245,17 @@ const accept = '.pdf,.ai,.eps,.psd,.svg,.png,.jpg,.jpeg,.doc,.docx';
             </div>
           </fieldset>
 
-          <div class="qform__foot">
-            <button type="submit" class="btn btn--primary" data-submit>
+          <div class="vx-qf__foot">
+            <button type="submit" class="vx-btn vx-btn--red" data-submit>
               <span data-submit-label>Send quote request</span>
               <Icon name="arrow-right" size={18} />
             </button>
-            <p class="qform__alt">
+            <p class="vx-qf__alt">
               Or email <a href={`mailto:${site.email}`}>{site.email}</a>.
             </p>
           </div>
 
-          <p class="qform__status" role="status" aria-live="polite" data-status hidden></p>
+          <p class="vx-qf__status" role="status" aria-live="polite" data-status hidden></p>
         </form>
       </div>
 
@@ -327,18 +326,18 @@ const accept = '.pdf,.ai,.eps,.psd,.svg,.png,.jpg,.jpeg,.doc,.docx';
     }
   }
 
-  .qform--full {
-    background: var(--white);
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
+  .vx-qf--full {
+    background: var(--vx-white);
+    border: 1px solid var(--vx-rule-lt);
+    border-radius: var(--vx-r);
     padding: var(--sp-5);
   }
   @media (min-width: 40rem) {
-    .qform--full {
+    .vx-qf--full {
       padding: var(--sp-6);
     }
   }
-  .qform__trap {
+  .vx-qf__trap {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -346,56 +345,56 @@ const accept = '.pdf,.ai,.eps,.psd,.svg,.png,.jpg,.jpeg,.doc,.docx';
     clip-path: inset(50%);
     white-space: nowrap;
   }
-  .qform__set + .qform__set {
+  .vx-qf__set + .vx-qf__set {
     margin-top: var(--sp-6);
   }
-  .qform__set + .qform__set::before {
+  .vx-qf__set + .vx-qf__set::before {
     content: '';
     display: block;
     height: 1px;
-    background: var(--line);
+    background: var(--vx-rule-lt);
     margin-bottom: var(--sp-6);
   }
-  .qform__grid {
+  .vx-qf__grid {
     display: grid;
     gap: var(--sp-4);
   }
   @media (min-width: 34rem) {
-    .qform__grid {
+    .vx-qf__grid {
       grid-template-columns: 1fr 1fr;
     }
     .field--full {
       grid-column: 1 / -1;
     }
   }
-  .qform__foot {
+  .vx-qf__foot {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: var(--sp-3) var(--sp-5);
     margin-top: var(--sp-6);
     padding-top: var(--sp-5);
-    border-top: 1px solid var(--line);
+    border-top: 1px solid var(--vx-rule-lt);
   }
-  .qform__alt {
+  .vx-qf__alt {
     font-size: var(--step--1);
-    color: var(--ink-muted);
+    color: var(--vx-mute-c);
     margin: 0;
   }
-  .qform__status {
+  .vx-qf__status {
     margin: var(--sp-4) 0 0;
     padding: var(--sp-3) var(--sp-4);
-    border-radius: var(--radius);
+    border-radius: var(--vx-r);
     font-size: var(--step--1);
-    border: 1px solid var(--line);
-    background: var(--paper-warm);
+    border: 1px solid var(--vx-rule-lt);
+    background: var(--vx-grey);
   }
-  .qform__status[data-tone='success'] {
+  .vx-qf__status[data-tone='success'] {
     border-color: #7a9a6e;
     background: #f0f6ec;
     color: #2f4a26;
   }
-  .qform__status[data-tone='error'] {
+  .vx-qf__status[data-tone='error'] {
     border-color: #b4636a;
     background: #fbeef0;
     color: #7a2731;
@@ -410,33 +409,33 @@ const accept = '.pdf,.ai,.eps,.psd,.svg,.png,.jpg,.jpeg,.doc,.docx';
     margin: 0 0 var(--sp-6);
     padding-left: 1.25rem;
     font-size: var(--step--1);
-    color: var(--ink-soft);
+    color: var(--vx-ink-2);
   }
   .side-steps li {
     margin-bottom: var(--sp-3);
     line-height: 1.6;
   }
   .side-steps strong {
-    color: var(--ink);
+    color: var(--vx-ink);
   }
   .side-price,
   .side-block {
     padding: var(--sp-4);
-    border-radius: var(--radius-sm);
+    border-radius: var(--vx-r);
     font-size: var(--step--1);
     margin-bottom: var(--sp-4);
   }
   .side-price {
-    background: var(--paper-warm);
-    border-left: 3px solid var(--gold);
+    background: var(--vx-grey);
+    border-left: 3px solid var(--vx-accent);
   }
   .side-block {
-    background: var(--white);
-    border: 1px solid var(--line);
+    background: var(--vx-white);
+    border: 1px solid var(--vx-rule-lt);
   }
   .side-price h3,
   .side-block h3 {
-    font-family: var(--font-body);
+    font-family: var(--vx-body);
     font-size: var(--step-0);
     font-weight: 600;
     letter-spacing: 0;
@@ -444,7 +443,7 @@ const accept = '.pdf,.ai,.eps,.psd,.svg,.png,.jpg,.jpeg,.doc,.docx';
   }
   .side-price p,
   .side-block p {
-    color: var(--ink-soft);
+    color: var(--vx-ink-2);
     line-height: 1.6;
     margin-bottom: var(--sp-2);
   }
@@ -453,7 +452,7 @@ const accept = '.pdf,.ai,.eps,.psd,.svg,.png,.jpg,.jpeg,.doc,.docx';
     margin-bottom: 0;
   }
   .side-price__note {
-    color: var(--ink-muted) !important;
+    color: var(--vx-mute-c) !important;
   }
 </style>
 

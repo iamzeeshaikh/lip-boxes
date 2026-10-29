@@ -9,15 +9,15 @@
 .field > label {
   font-size: var(--step--1);
   font-weight: 600;
-  color: var(--ink);
+  color: var(--vx-ink);
   line-height: 1.4;
 }
 .field__optional {
   font-weight: 400;
-  color: var(--ink-muted);
+  color: var(--vx-mute-c);
 }
 .req {
-  color: var(--rose);
+  color: var(--vx-accent);
 }
 
 .field input[type='text'],
@@ -33,10 +33,10 @@
   padding: 0.6rem 0.75rem;
   font: inherit;
   font-size: var(--step-0);
-  color: var(--ink);
-  background: var(--white);
-  border: 1px solid var(--line-strong);
-  border-radius: var(--radius-sm);
+  color: var(--vx-ink);
+  background: var(--vx-white);
+  border: 1px solid var(--vx-rule);
+  border-radius: var(--vx-r);
   transition: border-color 0.15s var(--ease), box-shadow 0.15s var(--ease);
 }
 .field textarea {
@@ -53,12 +53,12 @@
   padding-right: 2.25rem;
 }
 .field :is(input, select, textarea):hover {
-  border-color: var(--ink-muted);
+  border-color: var(--vx-mute-c);
 }
 .field :is(input, select, textarea):focus-visible {
   outline: none;
-  border-color: var(--plum);
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--plum) 18%, transparent);
+  border-color: var(--vx-accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--vx-accent) 18%, transparent);
 }
 .field :is(input, select, textarea)[aria-invalid='true'] {
   border-color: #b4636a;
@@ -68,9 +68,9 @@
   min-height: 2.875rem;
   font-size: var(--step--1);
   padding: 0.55rem;
-  background: var(--paper-warm);
-  border: 1px dashed var(--line-strong);
-  border-radius: var(--radius-sm);
+  background: var(--vx-grey);
+  border: 1px dashed var(--vx-rule);
+  border-radius: var(--vx-r);
   cursor: pointer;
 }
 .field input[type='file']::file-selector-button {
@@ -78,16 +78,16 @@
   font-weight: 600;
   margin-right: 0.75rem;
   padding: 0.4rem 0.8rem;
-  color: var(--plum);
-  background: var(--white);
-  border: 1px solid var(--line-strong);
-  border-radius: var(--radius-sm);
+  color: var(--vx-accent);
+  background: var(--vx-white);
+  border: 1px solid var(--vx-rule);
+  border-radius: var(--vx-r);
   cursor: pointer;
 }
 
 .field__hint {
   font-size: var(--step--1);
-  color: var(--ink-muted);
+  color: var(--vx-mute-c);
   margin: 0;
   line-height: 1.45;
 }
@@ -115,7 +115,7 @@
   margin-top: 0.1rem;
   font-size: 0.7rem;
   font-weight: 700;
-  color: var(--white);
+  color: var(--vx-white);
   background: #a2323e;
   border-radius: 50%;
 }
@@ -127,7 +127,7 @@
   font-size: var(--step--1);
   font-weight: 400;
   line-height: 1.55;
-  color: var(--ink-soft);
+  color: var(--vx-ink-2);
   cursor: pointer;
 }
 .consent input[type='checkbox'] {
@@ -136,7 +136,7 @@
   width: 1.5rem;
   height: 1.5rem;
   margin-top: 0.05rem;
-  accent-color: var(--plum);
+  accent-color: var(--vx-accent);
   cursor: pointer;
 }
 
@@ -146,17 +146,17 @@ fieldset {
   margin: 0;
 }
 legend {
-  font-family: var(--font-display);
+  font-family: var(--vx-head);
   font-size: var(--step-1);
   font-weight: 600;
   letter-spacing: -0.01em;
   padding: 0;
   margin-bottom: var(--sp-2);
-  color: var(--ink);
+  color: var(--vx-ink);
 }
 .fieldset-note {
   font-size: var(--step--1);
-  color: var(--ink-muted);
+  color: var(--vx-mute-c);
   margin: 0 0 var(--sp-4);
   max-width: 56ch;
 }

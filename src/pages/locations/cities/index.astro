@@ -45,15 +45,14 @@ const rows = indexableCities;
   schema={[schema]}
 >
   <PageHero
-    eyebrow="Locations"
     h1="Lip Packaging by City"
     lead="Twenty markets, each covered through the single buying pattern that most affects how packaging is specified there."
     crumbs={crumbs}
     points={[`${indexableCities.length} cities covered`, 'One pattern per page', 'Shipped nationwide']}
   />
 
-  <section class="section" aria-labelledby="ci-intro-heading">
-    <div class="wrap wrap--narrow">
+  <section class="vx-band" aria-labelledby="ci-intro-heading">
+    <div class="vx-frame vx-frame--slim">
       <h2 id="ci-intro-heading">Narrower than a state page, on purpose</h2>
       <p>
         A state page describes a market broadly. A city page picks the one thing
@@ -74,9 +73,8 @@ const rows = indexableCities;
     </div>
   </section>
 
-  <section class="section section--warm" aria-labelledby="ci-list-heading">
-    <div class="wrap">
-      <span class="eyebrow">Directory</span>
+  <section class="vx-band vx-band--grey" aria-labelledby="ci-list-heading">
+    <div class="vx-frame">
       <h2 id="ci-list-heading">All twenty city guides</h2>
       <ul class="ci-list">
         {
@@ -108,11 +106,11 @@ const rows = indexableCities;
 <style>
   .ci-note {
     padding: var(--sp-4);
-    background: var(--paper-warm);
-    border-left: 3px solid var(--gold);
-    border-radius: var(--radius-sm);
+    background: var(--vx-grey);
+    border-left: 3px solid var(--vx-accent);
+    border-radius: var(--vx-r);
     font-size: var(--step--1);
-    color: var(--ink-soft);
+    color: var(--vx-ink-2);
     line-height: 1.65;
   }
   .ci-list {
@@ -137,9 +135,9 @@ const rows = indexableCities;
     display: flex;
     flex-direction: column;
     padding: var(--sp-5);
-    background: var(--white);
-    border: 1px solid var(--line);
-    border-radius: var(--radius);
+    background: var(--vx-white);
+    border: 1px solid var(--vx-rule-lt);
+    border-radius: var(--vx-r);
   }
   .ci-card__title {
     font-size: var(--step-1);
@@ -147,14 +145,14 @@ const rows = indexableCities;
   }
   .ci-card__title a {
     text-decoration: none;
-    color: var(--ink);
+    color: var(--vx-ink);
   }
   .ci-card__title a:hover {
-    color: var(--plum);
+    color: var(--vx-accent);
   }
   .ci-card__where {
     font-size: var(--step--1);
-    color: var(--ink-muted);
+    color: var(--vx-mute-c);
     margin-bottom: var(--sp-3);
   }
   .ci-card__code {
@@ -163,24 +161,22 @@ const rows = indexableCities;
     font-size: 0.68rem;
     font-weight: 600;
     letter-spacing: 0.06em;
-    color: var(--plum-deep);
-    background: var(--rose-soft);
-    border-radius: var(--radius-sm);
+    color: var(--vx-black);
+    background: var(--vx-grey);
+    border-radius: var(--vx-r);
     padding: 0.08rem 0.35rem;
   }
   .ci-card__text {
     font-size: var(--step--1);
-    color: var(--ink-soft);
+    color: var(--vx-ink-2);
     line-height: 1.6;
     margin-bottom: var(--sp-3);
   }
   .ci-card__angle {
     margin: auto 0 0;
     padding-top: var(--sp-3);
-    border-top: 1px solid var(--line);
-    font-size: 0.72rem;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
-    color: var(--ink-muted);
+    border-top: 1px solid var(--vx-rule-lt);
+    font-size: 0.82rem;
+    color: var(--vx-accent);
   }
 </style>

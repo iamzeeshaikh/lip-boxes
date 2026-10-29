@@ -132,10 +132,12 @@ function stripByClass(html, className) {
  * measured as a failure; card anchors are reported separately as context.
  */
 const CARD_CLASSES = [
-  'p-card',
-  'quote-cta',
-  'quote-band',
-  'quick-quote',
+  'vx-card',
+  'vx-close',
+  'vx-qband',
+  'vx-qq',
+  'vx-studio',
+  'vx-range',
   'city-next',
   'loc-region-card',
   'loc-grid',

@@ -297,7 +297,7 @@ for (const page of pages) {
     // Paragraphs that are part of a repeated component (a form's alternative
     // route, an article footer, a section note) are template chrome rather than
     // editorial copy, so their anchors are not held to the variation rule.
-    if (/class="[^"]*(qform__alt|a-footer|a-footer__nav|sec-head__note|feed-note|nf__note|channel__)/.test(paragraph)) {
+    if (/class="[^"]*(vx-qf__alt|a-footer|a-footer__nav|vx-sechead__note|feed-note|nf__note|channel__)/.test(paragraph)) {
       continue;
     }
     for (const link of internalLinks(paragraph)) {
@@ -355,7 +355,7 @@ for (const page of pages) {
   const sections = [...body.matchAll(/<section\b[\s\S]*?<\/section>/gi)].map((m) => m[0]);
   for (const section of sections) {
     if (
-      /class="[^"]*(grid--products|info-cards|channels|ref-list|nf__list|ty__links|ty__cards|ty__steps|post-list|archive|kv|footer-col|spec-grid)/.test(
+      /class="[^"]*(vx-tiles--range|vx-boxes|channels|ref-list|nf__list|ty__links|ty__cards|ty__steps|post-list|archive|vx-pairs|vx-foot__col|vx-spread__grid|vx-range__grid|vx-formats__row|vx-caps|vx-notes__list|vx-opts)/.test(
         section,
       )
     ) {

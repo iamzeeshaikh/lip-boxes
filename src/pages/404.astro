@@ -18,20 +18,20 @@ const popular = indexableProducts.slice(0, 6);
   noindex
 >
   <div class="nf">
-    <div class="wrap wrap--narrow nf__inner">
+    <div class="vx-frame vx-frame--slim nf__inner">
       <p class="nf__code" aria-hidden="true">404</p>
       <h1>This page could not be found</h1>
-      <p class="lead nf__lead">
+      <p class="vx-lede nf__lead">
         The address may have changed, or the link that brought you here may be out
         of date. The routes below cover almost everything on the site.
       </p>
 
-      <div class="btn-row nf__actions">
-        <a href="/products/" class="btn btn--primary">
+      <div class="vx-btns nf__actions">
+        <a href="/products/" class="vx-btn vx-btn--red">
           Browse all products
           <Icon name="arrow-right" size={18} />
         </a>
-        <a href="/request-a-quote/" class="btn btn--secondary">Request a Quote</a>
+        <a href="/request-a-quote/" class="vx-btn vx-btn--line">Request a Quote</a>
       </div>
 
       <h2 class="nf__heading">Product pages</h2>
@@ -60,23 +60,16 @@ const popular = indexableProducts.slice(0, 6);
 <style>
   .nf {
     padding-block: var(--sp-8) var(--sp-9);
-    background:
-      radial-gradient(
-        100% 90% at 90% 0%,
-        color-mix(in srgb, var(--rose-soft) 55%, transparent) 0%,
-        transparent 60%
-      ),
-      var(--paper);
+    background: var(--vx-white);
     flex: 1;
   }
   .nf__code {
-    font-family: var(--font-display);
-    font-size: clamp(3rem, 8vw, 5rem);
-    font-weight: 600;
-    line-height: 1;
-    color: var(--rose-soft);
+    font-family: var(--vx-head);
+    font-size: clamp(6rem, 16vw, 12rem);
+    font-weight: 300;
+    line-height: 0.85;
+    color: var(--vx-accent);
     margin-bottom: var(--sp-3);
-    font-variation-settings: 'SOFT' 0, 'WONK' 1, 'opsz' 72;
   }
   .nf h1 {
     font-size: var(--step-4);
@@ -90,12 +83,12 @@ const popular = indexableProducts.slice(0, 6);
     margin-bottom: var(--sp-8);
   }
   .nf__heading {
-    font-family: var(--font-body);
-    font-size: var(--step--1);
-    font-weight: 600;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    color: var(--ink-muted);
+    font-family: var(--vx-head);
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--vx-ink);
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--vx-rule);
     margin-bottom: var(--sp-3);
   }
   .nf__list {
@@ -104,7 +97,7 @@ const popular = indexableProducts.slice(0, 6);
     padding: 0;
     display: grid;
     gap: var(--sp-2) var(--sp-5);
-    border-top: 1px solid var(--line);
+    border-top: 1px solid var(--vx-rule-lt);
     padding-top: var(--sp-4);
   }
   @media (min-width: 40rem) {
@@ -114,8 +107,8 @@ const popular = indexableProducts.slice(0, 6);
   }
   .nf__note {
     font-size: var(--step--1);
-    color: var(--ink-muted);
+    color: var(--vx-mute-c);
     padding-top: var(--sp-5);
-    border-top: 1px solid var(--line);
+    border-top: 1px solid var(--vx-rule-lt);
   }
 </style>
