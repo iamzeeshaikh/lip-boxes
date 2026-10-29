@@ -32,6 +32,12 @@ function escapeXml(value: string): string {
     .replace(/'/g, '&apos;');
 }
 
+// Every page was rebuilt on 2026-10-29 (new layout, plus the photo picker on the
+// homepage, category and product pages), so no page reports an earlier date.
+const SITE_REBUILT = '2026-10-29';
+const lastmodOf = (entry: { lastmod?: string }) =>
+  !entry.lastmod || entry.lastmod < SITE_REBUILT ? SITE_REBUILT : entry.lastmod;
+
 export const GET: APIRoute = async () => {
   const entries: Entry[] = [];
 
@@ -77,7 +83,7 @@ export const GET: APIRoute = async () => {
 ${entries
   .map(
     (entry) => `  <url>
-    <loc>${escapeXml(entry.loc)}</loc>${entry.lastmod ? `\n    <lastmod>${entry.lastmod}</lastmod>` : ''}${
+    <loc>${escapeXml(entry.loc)}</loc>\n    <lastmod>${lastmodOf(entry)}</lastmod>${
       entry.images
         ?.map(
           (image) => `\n    <image:image>
