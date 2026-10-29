@@ -81,7 +81,7 @@ export const newYorkCity: Location = {
     },
     {
       q: 'Can you ship to a Manhattan studio address?',
-      a: 'Yes. Flag it as a non-dock address at quoting stage so the service level is priced correctly. A pallet arriving at a building without a liftgate arranged is the most common avoidable delivery problem in dense city centres.',
+      a: 'Yes. Flag it as a non-dock address at quoting stage so the service level is priced correctly. A pallet arriving at a building without a liftgate arranged is the most common avoidable delivery problem in dense city centers.',
     },
     {
       q: 'Is rigid packaging worth it for city boutiques?',
@@ -128,7 +128,7 @@ export const losAngeles: Location = {
       navLabel: 'The market',
       body: [
         'Product launches run out of Los Angeles are frequently built around seeding: a few hundred units sent to creators, press and stylists ahead of general availability, packaged specifically to be opened in front of a camera.',
-        'That is a genuinely different brief from the retail pack. It is not competing on a shelf, it does not need a barcode, and its job is to be interesting for the ninety seconds someone films opening it. Retail packaging optimised for unit cost rarely does that well.',
+        'That is a genuinely different brief from the retail pack. It is not competing on a shelf, it does not need a barcode, and its job is to be interesting for the ninety seconds someone films opening it. Retail packaging optimized for unit cost rarely does that well.',
         'The efficient approach is to treat them as two products from the start: a retail carton at volume, and a seeding pack at a few hundred, using the same brand elements but a different construction.',
       ],
     },
@@ -145,7 +145,7 @@ export const losAngeles: Location = {
         ['Cost driver', 'Hand assembly and materials', 'Print process and board'],
         ['Barcode', 'Not needed', 'Required, with clear flat space'],
         ['Interior', 'Printed, with a card or tissue', 'Usually plain'],
-        ['What it optimises for', 'The moment it is opened on camera', 'Cost per unit and shelf visibility'],
+        ['What it optimizes for', 'The moment it is opened on camera', 'Cost per unit and shelf visibility'],
       ],
       outro:
         'Rigid construction suits the seeding pack precisely because its setup cost is low relative to unit cost, which makes a run of a few hundred practical.',
@@ -158,7 +158,7 @@ export const losAngeles: Location = {
       body: [
         'A pack opened on camera is judged under uncontrolled lighting at close range, which flatters some finishes and destroys others.',
         'Magnetic closures read well because the closing action is audible and visible. Printed interiors and insert cards give the video somewhere to go after the lid opens. Foil and holographic surfaces move as the camera moves.',
-        'What works less well: soft-touch lamination photographs as flat grey despite feeling expensive, fine embossing disappears at phone resolution, and high-gloss laminate throws a ring light straight back into the lens. The construction options are set out on our <a href="/rigid-lipstick-boxes/">rigid boxes built for press packs</a>.',
+        'What works less well: soft-touch lamination photographs as flat gray despite feeling expensive, fine embossing disappears at phone resolution, and high-gloss laminate throws a ring light straight back into the lens. The construction options are set out on our <a href="/rigid-lipstick-boxes/">rigid boxes built for press packs</a>.',
       ],
     },
   ],
@@ -169,7 +169,7 @@ export const losAngeles: Location = {
     },
     {
       q: 'Should the seeding pack match the retail pack?',
-      a: 'Share the brand elements, not the construction. They have different jobs: the retail carton optimises for cost and shelf visibility, the seeding pack optimises for the moment it is opened on camera. Treating them as one compromises both.',
+      a: 'Share the brand elements, not the construction. They have different jobs: the retail carton optimizes for cost and shelf visibility, the seeding pack optimizes for the moment it is opened on camera. Treating them as one compromises both.',
     },
     {
       q: 'Which finishes film well?',
@@ -177,7 +177,7 @@ export const losAngeles: Location = {
     },
     {
       q: 'Which finishes film badly?',
-      a: 'Soft-touch lamination photographs as flat grey despite feeling expensive in the hand. Fine embossing disappears at phone resolution. High-gloss laminate reflects a ring light straight back into the lens.',
+      a: 'Soft-touch lamination photographs as flat gray despite feeling expensive in the hand. Fine embossing disappears at phone resolution. High-gloss laminate reflects a ring light straight back into the lens.',
     },
     {
       q: 'Does a seeding pack need a barcode?',
@@ -185,11 +185,11 @@ export const losAngeles: Location = {
     },
     {
       q: 'Can you ship seeding kits to multiple addresses?',
-      a: 'We supply the packaging to your address or your fulfilment partner. Distribution to individual recipients is handled by you or by a PR fulfilment service, which is the usual arrangement for seeding programmes.',
+      a: 'We supply the packaging to your address or your fulfillment partner. Distribution to individual recipients is handled by you or by a PR fulfillment service, which is the usual arrangement for seeding programs.',
     },
     {
       q: 'How is this different from the California page?',
-      a: 'The California page covers shade range economics and packaging a colour line across the state. This page is about the seeding and press packaging that LA launches are specifically built around, which is a separate production run.',
+      a: 'The California page covers shade range economics and packaging a color line across the state. This page is about the seeding and press packaging that LA launches are specifically built around, which is a separate production run.',
     },
     {
       q: 'Is there anywhere in Los Angeles I can collect an order from?',
@@ -240,10 +240,10 @@ export const chicago: Location = {
       intro: 'Three different objects, frequently confused with each other.',
       items: [
         'A plain structural sample: cut and creased in the specified board, no print. Shows proportion and fit, not appearance',
-        'A printed proof: shows colour on the actual stock. Flat, so it shows nothing about the object',
+        'A printed proof: shows color on the actual stock. Flat, so it shows nothing about the object',
         'A production-standard sample: printed, finished and assembled. The only one that represents the finished pack',
         'A white rigid sample: unprinted but assembled, showing lid fit, magnet strength and the opening action',
-        'Material swatches: how a board or <a href="/finishes/">lamination and finish options</a> feels, useful early when the specification is still open',
+        'Material swatches: how a board or <a href="/finishes/">laminate finish option</a> feels, useful early when the specification is still open',
         'A mocked-up shelf set: several units together, which is what a buyer is actually deciding about',
       ],
       outro:
@@ -256,7 +256,7 @@ export const chicago: Location = {
       navLabel: 'Sample timing',
       body: [
         'The tension is that a production-standard sample requires the specification to be settled, and a buyer meeting often happens before you want to settle it.',
-        'The workable sequence is to fix the structure early, produce a plain structural sample, and use a printed proof alongside it so the buyer can see both the object and the colour even though they are separate pieces. It is not as persuasive as a finished pack but it is far better than a render.',
+        'The workable sequence is to fix the structure early, produce a plain structural sample, and use a printed proof alongside it so the buyer can see both the object and the color even though they are separate pieces. It is not as persuasive as a finished pack but it is far better than a render.',
         'Where a listing depends on the meeting, it is usually worth committing to the specification and producing a small number of finished samples. The sequence is covered in <a href="/how-to-order/">the sampling and approval steps</a>.',
       ],
     },
@@ -268,10 +268,10 @@ export const chicago: Location = {
     },
     {
       q: 'What is the difference between a proof and a sample?',
-      a: 'A proof confirms colour and is usually flat, so it shows nothing about the object. A structural sample confirms fit and proportion but carries no print. Only a production-standard sample shows both together.',
+      a: 'A proof confirms color and is usually flat, so it shows nothing about the object. A structural sample confirms fit and proportion but carries no print. Only a production-standard sample shows both together.',
     },
     {
-      q: 'Can I get samples before finalising the specification?',
+      q: 'Can I get samples before finalizing the specification?',
       a: 'A plain structural sample, yes, at any point after the die line is drawn. A production-standard sample requires the specification to be settled, because it is made the way the run will be made.',
     },
     {
@@ -338,9 +338,9 @@ export const houston: Location = {
       navLabel: 'Deep ranges',
       intro: 'Six decisions that make twenty shades viable rather than prohibitive.',
       items: [
-        'One <a href="/resources/packaging-dieline-guide/">guide to packaging die lines</a>, one board and one finish across every shade without exception',
+        'One <a href="/resources/packaging-dieline-guide/">shared packaging die line</a>, one board and one finish across every shade without exception',
         'Digital printing at launch quantities, since there is no plate charge per design',
-        'Spot Pantone for each swatch, because process colour drift is visible across a wide range',
+        'Spot Pantone for each swatch, because process color drift is visible across a wide range',
         'A locked artwork template where only the swatch and shade name change',
         'Ganged litho printing once per-shade volumes justify plates',
         'A reorder plan, since deep ranges reorder unevenly and single-shade reorders are common',
@@ -383,7 +383,7 @@ export const houston: Location = {
     },
     {
       q: 'When should I switch from digital to litho printing?',
-      a: 'When the per-shade quantity justifies the plates, which depends on the colour count. Send both the total and the per-shade split and we will quote both processes so the crossover is visible rather than assumed.',
+      a: 'When the per-shade quantity justifies the plates, which depends on the color count. Send both the total and the per-shade split and we will quote both processes so the crossover is visible rather than assumed.',
     },
     {
       q: 'Is this page not just the Texas page again?',
@@ -491,7 +491,7 @@ export const phoenix: Location = {
     {
       q: 'Is stock held locally in Phoenix?',
       a:
-        'No stock is held in Phoenix or anywhere else. Packaging is made against a confirmed order, which is why sizes and finishes are open rather than fixed to a catalogue.',
+        'No stock is held in Phoenix or anywhere else. Packaging is made against a confirmed order, which is why sizes and finishes are open rather than fixed to a catalog.',
     },
   ],
 };

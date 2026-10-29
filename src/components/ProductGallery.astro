@@ -150,7 +150,7 @@ const captions = resolved.map((image) => image.caption ?? image.alt);
     const caption = gallery.querySelector<HTMLElement>('[data-caption]');
     if (thumbs.length < 2) continue;
 
-    // Captions are authored per image in the product data and serialised into
+    // Captions are authored per image in the product data and serialized into
     // the markup, so the client script never generates its own text.
     let captions: string[] = [];
     try {

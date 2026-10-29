@@ -13,16 +13,16 @@ export const product: Product = {
   ],
   seoTitle: 'Rigid Lipstick Boxes | Magnetic and Drawer Gift Boxes',
   metaDescription:
-    'Rigid lipstick boxes with magnetic lids, drawer sleeves or lift-off tops. Wrapped greyboard, foil detail and fitted inserts.',
+    'Rigid lipstick boxes with magnetic lids, drawer sleeves or lift-off tops. Wrapped grayboard, foil detail and fitted inserts.',
   ogTitle: 'Rigid Lipstick Boxes for Gift and Luxury Ranges',
   ogDescription:
-    'Wrapped greyboard boxes with magnetic, drawer or lift-off construction and fitted trays for single and multi-shade sets.',
+    'Wrapped grayboard boxes with magnetic, drawer or lift-off construction and fitted trays for single and multi-shade sets.',
   valueProp:
-    'Wrapped greyboard boxes that hold their shape permanently, built for gift sets, limited editions and lipstick at a luxury price point.',
+    'Wrapped grayboard boxes that hold their shape permanently, built for gift sets, limited editions and lipstick at a luxury price point.',
   cardDescription:
     'Set-up rigid boxes in magnetic, drawer and lift-off lid formats, wrapped in printed or specialty paper with fitted trays.',
   highlights: [
-    'Greyboard core wrapped in printed or specialty paper',
+    'Grayboard core wrapped in printed or specialty paper',
     'Magnetic closure, drawer and sleeve, or lift-off lid construction',
     'Fitted trays that hold a single bullet or a full shade set',
   ],
@@ -50,7 +50,7 @@ export const product: Product = {
       heading: 'When a rigid box is the right call',
       navLabel: 'Overview',
       body: [
-        'A rigid box is made from thick greyboard cut to size, assembled into a permanent shape, and wrapped in printed or specialty paper. Unlike a folding carton it does not ship flat and does not fold, which makes it more expensive to produce and to freight. What you get in return is a box that keeps its exact shape indefinitely, opens with weight and resistance, and gets kept rather than discarded.',
+        'A rigid box is made from thick grayboard cut to size, assembled into a permanent shape, and wrapped in printed or specialty paper. Unlike a folding carton it does not ship flat and does not fold, which makes it more expensive to produce and to freight. What you get in return is a box that keeps its exact shape indefinitely, opens with weight and resistance, and gets kept rather than discarded.',
         'For everyday lipstick sold at a mid-market price, that cost is difficult to justify, and a well-finished folding carton does the job. Rigid construction earns its place on limited editions, holiday gift sets, influencer and press kits, and any lipstick priced high enough that the unboxing forms part of what the customer is buying.',
         'If the run is large and the price point is mainstream, the same visual ambition can often be reached with a soft-touch laminated folding carton at a fraction of the unit cost. Our <a href="/custom-lipstick-boxes/">printed folding cartons for lipstick</a> cover that route.',
       ],
@@ -78,7 +78,7 @@ export const product: Product = {
         },
         {
           title: 'Shoulder neck box',
-          text: 'A lid and base separated by a visible collar, allowing a contrasting colour or material in the gap.',
+          text: 'A lid and base separated by a visible collar, allowing a contrasting color or material in the gap.',
         },
         {
           title: 'Hinged flip-top',
@@ -102,7 +102,7 @@ export const product: Product = {
       imageSide: 'left',
       body: [
         'In a rigid box the insert does as much work as the outer shell. It holds the lipstick at the angle you choose, keeps it from moving in transit, and controls what the customer sees in the first second after the lid lifts.',
-        'The common options are a die-cut card platform, a foam pad wrapped in printed or coloured paper, a moulded pulp tray, an EVA or flocked plastic tray, and a satin or velvet-lined recess. Card and moulded pulp keep the pack closer to a single material stream. Flocked plastic and satin give the deepest luxury read but add materials that will not recycle with the board.',
+        'The common options are a die-cut card platform, a foam pad wrapped in printed or colored paper, a molded pulp tray, an EVA or flocked plastic tray, and a satin or velvet-lined recess. Card and molded pulp keep the pack closer to a single material stream. Flocked plastic and satin give the deepest luxury read but add materials that will not recycle with the board.',
         'Multi-shade sets need a partitioned tray so cases cannot touch. Lacquered and foiled lipstick cases mark each other easily, and a set that arrives scratched undoes everything the box was meant to achieve.',
       ],
     },
@@ -114,15 +114,15 @@ export const product: Product = {
       intro:
         'A rigid box is a sandwich: a structural core, a decorative outer wrap and usually an inner lining. Each layer is specified separately.',
       items: [
-        'Greyboard core from 1.5 mm to 3 mm, selected against box size and the weight it carries',
-        'Printed art paper wrap for full-colour designs and photographic artwork',
+        'Grayboard core from 1.5 mm to 3 mm, selected against box size and the weight it carries',
+        'Printed art paper wrap for full-color designs and photographic artwork',
         'Uncoated and textured specialty papers, including laid, felt and linen-embossed finishes',
-        'Coloured fine papers where a solid, deep colour matters more than printed detail',
+        'Colored fine papers where a solid, deep color matters more than printed detail',
         'Leatherette and paper-backed cloth wraps for the highest presentation level',
-        'Inner linings in printed paper, coloured paper, satin, velvet or flocked material',
+        'Inner linings in printed paper, colored paper, satin, velvet or flocked material',
       ],
       outro:
-        'Textured wraps take foil beautifully and printed halftones poorly, so specialty papers usually pair with foil or emboss rather than with photographic artwork. The behaviour of each surface is set out on the <a href="/finishes/">finishing and surface treatment page</a>.',
+        'Textured wraps take foil beautifully and printed halftones poorly, so specialty papers usually pair with foil or emboss rather than with photographic artwork. The behavior of each surface is set out on the <a href="/finishes/">finishing and surface treatment page</a>.',
     },
     {
       type: 'prose',
@@ -131,7 +131,7 @@ export const product: Product = {
       navLabel: 'Decoration',
       body: [
         'The wrap is printed flat and then applied to the assembled box, which means artwork has to allow for the turn-in at every edge and for the way the paper stretches slightly as it is wrapped. Elements placed exactly on a corner will not land exactly on the corner, so designs for rigid boxes tend to keep detail away from the edges.',
-        'Foil stamping and embossing are applied to the wrap after printing and before assembly, and both are extremely well suited to this format because the greyboard beneath gives a firm surface to press against. A deep emboss on a rigid box holds far more definition than the same emboss on a thin folding carton.',
+        'Foil stamping and embossing are applied to the wrap after printing and before assembly, and both are extremely well suited to this format because the grayboard beneath gives a firm surface to press against. A deep emboss on a rigid box holds far more definition than the same emboss on a thin folding carton.',
         'Screen printing is an option for a single heavy solid or a thick opaque white on a dark wrap, where offset ink alone would look thin. Spot UV, soft-touch lamination and matte varnish are all available on printed art paper wraps.',
       ],
     },
@@ -141,7 +141,7 @@ export const product: Product = {
       heading: 'Sizing, wall thickness and shipping weight',
       navLabel: 'Sizing & weight',
       body: [
-        'Rigid boxes are quoted from internal dimensions, and the wall thickness is added outside them. A 2 mm greyboard wall plus wrap adds roughly 2.5 mm to each side, so an internal cavity of 40 mm becomes an external box of about 45 mm. That matters if the box has to fit an existing shipper or a retail fixture.',
+        'Rigid boxes are quoted from internal dimensions, and the wall thickness is added outside them. A 2 mm grayboard wall plus wrap adds roughly 2.5 mm to each side, so an internal cavity of 40 mm becomes an external box of about 45 mm. That matters if the box has to fit an existing shipper or a retail fixture.',
         'These boxes are noticeably heavier than folding cartons of the same size, which affects both your outbound shipping cost and your carbon footprint per unit. For an e-commerce brand shipping single units, the difference over thousands of orders is real. It is a legitimate reason to reserve rigid construction for gift and limited-edition lines.',
         'They also ship to you assembled, so inbound freight is charged on volume. Ordering in fewer, larger consignments makes a material difference to delivered cost. Freight handling is covered on the <a href="/shipping-information/">shipping and delivery page</a>.',
       ],
@@ -152,8 +152,8 @@ export const product: Product = {
       heading: 'Artwork for wrapped construction',
       navLabel: 'Artwork',
       body: [
-        'We supply a flat wrap template showing the panel positions, the turn-in allowance at each edge and the corner relief cuts. Build to that template, in CMYK plus spot colours, at 300 dpi, with fonts outlined. Foil and emboss areas go on separate 100% black vector layers.',
-        'Keep type and logos at least 5 mm inside any edge or fold line. Wrapping tolerance on a rigid box is wider than die-cutting tolerance on a carton, and a logo placed tight to a corner will look off-centre on some units even when production is within specification.',
+        'We supply a flat wrap template showing the panel positions, the turn-in allowance at each edge and the corner relief cuts. Build to that template, in CMYK plus spot colors, at 300 dpi, with fonts outlined. Foil and emboss areas go on separate 100% black vector layers.',
+        'Keep type and logos at least 5 mm inside any edge or fold line. Wrapping tolerance on a rigid box is wider than die-cutting tolerance on a carton, and a logo placed tight to a corner will look off-center on some units even when production is within specification.',
         'For a lid and base construction, the lid and base are separate wraps and are printed separately, so any artwork intended to align across the join needs an explicit tolerance built in. Where alignment is critical, a band or a ribbon across the join is a more reliable design solution than trying to register two wraps precisely.',
       ],
     },
@@ -163,8 +163,8 @@ export const product: Product = {
       heading: 'Quantity, hand assembly and price',
       navLabel: 'Quantity & pricing',
       body: [
-        'Rigid boxes involve substantial hand work: wrapping, corner finishing, magnet setting and insert fitting are all partly manual. That changes the cost curve. Unlike folding cartons, where doubling the quantity cuts the unit price sharply, rigid box pricing flattens out sooner because labour scales with volume rather than being spread across it.',
-        'Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity. Rigid construction sits well above that entry figure in practice, because the greyboard, the wrap, the assembly labour and the insert are all additional to a printed sheet. Treat the starting price as the floor for the simplest products on this site, not as an indication for this one.',
+        'Rigid boxes involve substantial hand work: wrapping, corner finishing, magnet setting and insert fitting are all partly manual. That changes the cost curve. Unlike folding cartons, where doubling the quantity cuts the unit price sharply, rigid box pricing flattens out sooner because labor scales with volume rather than being spread across it.',
+        'Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity. Rigid construction sits well above that entry figure in practice, because the grayboard, the wrap, the assembly labor and the insert are all additional to a printed sheet. Treat the starting price as the floor for the simplest products on this site, not as an indication for this one.',
         'Because setup is lower relative to unit cost, rigid boxes are viable at genuinely small quantities. A limited edition of 500 is a normal order here in a way it would not be for a foiled litho carton.',
       ],
     },
@@ -180,7 +180,7 @@ export const product: Product = {
         },
         {
           title: 'Construction and materials',
-          text: 'We propose a construction, greyboard thickness, wrap material and insert type against your price point and quantity.',
+          text: 'We propose a construction, grayboard thickness, wrap material and insert type against your price point and quantity.',
         },
         {
           title: 'White sample',
@@ -203,18 +203,18 @@ export const product: Product = {
       navLabel: 'Quality',
       body: [
         'Rigid boxes are inspected individually rather than sampled, because hand assembly produces unit-to-unit variation that machine die-cutting does not. The checks are corner sharpness, wrap alignment, lid-to-base fit, magnet closing force and insert seating. A lid that fits too tightly is as much a defect as one that fits too loosely.',
-        'On disposal: greyboard and a paper wrap are compatible with paper recycling once any magnets are removed, and the magnets are the main obstacle since they are steel or neodymium set into the board. Ribbon, satin lining, flocked trays and foam are all separate materials. If you want a rigid box that stays in one stream, specify a paper wrap without lamination, a card insert, and a construction that closes without magnets.',
+        'On disposal: grayboard and a paper wrap are compatible with paper recycling once any magnets are removed, and the magnets are the main obstacle since they are steel or neodymium set into the board. Ribbon, satin lining, flocked trays and foam are all separate materials. If you want a rigid box that stays in one stream, specify a paper wrap without lamination, a card insert, and a construction that closes without magnets.',
         'We will describe accurately what a given specification is made of rather than applying a general environmental claim to the format.',
       ],
     },
   ],
   specs: [
-    { label: 'Product type', value: 'Set-up rigid box for lipstick and lip colour sets' },
+    { label: 'Product type', value: 'Set-up rigid box for lipstick and lip color sets' },
     { label: 'Constructions', value: 'Magnetic book box, drawer and sleeve, two-piece lid and base, shoulder neck, hinged flip-top, book style' },
-    { label: 'Core material', value: 'Greyboard 1.5 mm to 3 mm, selected against size and contents weight' },
-    { label: 'Wrap materials', value: 'Printed art paper, textured specialty paper, coloured fine paper, leatherette, paper-backed cloth' },
-    { label: 'Linings', value: 'Printed paper, coloured paper, satin, velvet, flocked material' },
-    { label: 'Inserts', value: 'Die-cut card platform, wrapped foam, moulded pulp, EVA, flocked plastic tray' },
+    { label: 'Core material', value: 'Grayboard 1.5 mm to 3 mm, selected against size and contents weight' },
+    { label: 'Wrap materials', value: 'Printed art paper, textured specialty paper, colored fine paper, leatherette, paper-backed cloth' },
+    { label: 'Linings', value: 'Printed paper, colored paper, satin, velvet, flocked material' },
+    { label: 'Inserts', value: 'Die-cut card platform, wrapped foam, molded pulp, EVA, flocked plastic tray' },
     { label: 'Decoration', value: 'Offset print, hot foil stamping, emboss, deboss, screen print, spot UV, soft-touch lamination' },
     { label: 'Extras', value: 'Ribbon pulls, fitted mirrors, magnets, elastic retainers, printed inner cards' },
     { label: 'Sizing', value: 'Quoted from internal dimensions; wall and wrap add approximately 2.5 mm per side' },
@@ -226,7 +226,7 @@ export const product: Product = {
   faqs: [
     {
       q: 'How much more does a rigid box cost than a folding carton?',
-      a: 'Enough that the two are not really substitutes. A rigid box adds greyboard, a separate wrap, hand assembly and usually an insert. The gap narrows at small quantities, where a folding carton is carrying plate and die charges across few units, and widens considerably at high volume.',
+      a: 'Enough that the two are not really substitutes. A rigid box adds grayboard, a separate wrap, hand assembly and usually an insert. The gap narrows at small quantities, where a folding carton is carrying plate and die charges across few units, and widens considerably at high volume.',
     },
     {
       q: 'Do rigid boxes ship flat?',
@@ -246,11 +246,11 @@ export const product: Product = {
     },
     {
       q: 'Will my photographic artwork print well on a textured wrap?',
-      a: 'Not as well as on smooth art paper. Texture breaks up halftone dots and softens fine detail. Textured stocks are at their strongest with foil, emboss and solid colour. If the design depends on a photograph, use a smooth coated wrap and add texture through an emboss instead.',
+      a: 'Not as well as on smooth art paper. Texture breaks up halftone dots and softens fine detail. Textured stocks are at their strongest with foil, emboss and solid color. If the design depends on a photograph, use a smooth coated wrap and add texture through an emboss instead.',
     },
     {
       q: 'How accurate is artwork alignment across a lid and base?',
-      a: 'Less accurate than on a folding carton, because lid and base are wrapped separately by hand. Designs that need a continuous image across the join will show some variation. A deliberate band, ribbon or colour break at the join is the reliable way to handle it.',
+      a: 'Less accurate than on a folding carton, because lid and base are wrapped separately by hand. Designs that need a continuous image across the join will show some variation. A deliberate band, ribbon or color break at the join is the reliable way to handle it.',
     },
     {
       q: 'Can a rigid box hold a full shade collection?',
@@ -258,7 +258,7 @@ export const product: Product = {
     },
     {
       q: 'Are magnetic boxes recyclable?',
-      a: 'The greyboard and paper wrap are compatible with paper recycling, but the magnets are steel or neodymium and have to come out first, which most consumers will not do. If recyclability is a priority, ask for a construction that closes with a tuck flap or a ribbon instead of magnets.',
+      a: 'The grayboard and paper wrap are compatible with paper recycling, but the magnets are steel or neodymium and have to come out first, which most consumers will not do. If recyclability is a priority, ask for a construction that closes with a tuck flap or a ribbon instead of magnets.',
     },
     {
       q: 'Why do you recommend a white sample first?',
@@ -270,7 +270,7 @@ export const product: Product = {
     },
     {
       q: 'How are assembled boxes protected in transit to me?',
-      a: 'They are packed with separation between units, because assembled boxes with foil, soft-touch or coloured wraps mark each other under pressure. Individual polybags or interleaving sheets are standard, and the case count is set so the bottom layer is not crushed.',
+      a: 'They are packed with separation between units, because assembled boxes with foil, soft-touch or colored wraps mark each other under pressure. Individual polybags or interleaving sheets are standard, and the case count is set so the bottom layer is not crushed.',
     },
   ],
   related: ['custom-lipstick-boxes', 'hang-tab-lipstick-boxes', 'holographic-lip-gloss-boxes', 'custom-lip-mask-boxes'],

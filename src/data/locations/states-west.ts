@@ -39,7 +39,7 @@ export const california: Location = {
       heading: 'What the California beauty market asks of packaging',
       navLabel: 'The market',
       body: [
-        'California concentrates more of the beauty supply chain than anywhere else in the United States. Contract fillers cluster around Los Angeles and Orange County, ingredient suppliers sit alongside them, and a very large number of independent colour cosmetic brands operate within driving distance of both.',
+        'California concentrates more of the beauty supply chain than anywhere else in the United States. Contract fillers cluster around Los Angeles and Orange County, ingredient suppliers sit alongside them, and a very large number of independent color cosmetic brands operate within driving distance of both.',
         'That density changes how packaging gets specified. Brands here iterate faster, launch shade ranges more often, and are more likely to have a second product in development before the first has shipped. Packaging that cannot accommodate a twelve-shade range on one die line becomes a constraint quickly.',
         'It also means buyers are comparing more suppliers than in most markets. The questions we get from California tend to be more specific than average: not "what does a box cost" but "what does a spot Pantone add per unit at 4,000 across nine shades".',
       ],
@@ -51,10 +51,10 @@ export const california: Location = {
       navLabel: 'Who buys',
       icon: 'layers',
       intro:
-        'Four buyer types make up most California enquiries, and each wants something different from the same product.',
+        'Four buyer types make up most California inquiries, and each wants something different from the same product.',
       items: [
         {
-          title: 'Independent colour cosmetic brands',
+          title: 'Independent color cosmetic brands',
           text: 'Usually launching a shade range rather than a single product. The priority is one die line across all shades and a swatch that reproduces consistently between reorders.',
         },
         {
@@ -63,7 +63,7 @@ export const california: Location = {
         },
         {
           title: 'Clean and natural lip care',
-          text: 'Concentrated in the Bay Area and coastal markets. Material choices drive the specification, and claims wording gets scrutinised more closely than elsewhere.',
+          text: 'Concentrated in the Bay Area and coastal markets. Material choices drive the specification, and claims wording gets scrutinized more closely than elsewhere.',
         },
         {
           title: 'Creator and celebrity lines',
@@ -74,7 +74,7 @@ export const california: Location = {
           text: 'Small quantities, frequent reorders, and a preference for packaging that reads as professional rather than mass market.',
         },
         {
-          title: 'Subscription and sampling programmes',
+          title: 'Subscription and sampling programs',
           text: 'High volumes of a simple carton, where unit cost and consistent case counts matter more than finishing.',
         },
       ],
@@ -85,9 +85,9 @@ export const california: Location = {
       heading: 'Packaging a shade range without paying twelve times',
       navLabel: 'Shade ranges',
       body: [
-        'The most common California brief is a colour range: eight, twelve, sometimes twenty shades launching together. Handled badly it is twelve separate packaging projects. Handled properly it is one.',
+        'The most common California brief is a color range: eight, twelve, sometimes twenty shades launching together. Handled badly it is twelve separate packaging projects. Handled properly it is one.',
         'The mechanism is a single die line, a single board and a single finish across every shade, with only the printed panel changing. On digital printing there is no plate charge per design at all, which makes a wide shallow range affordable at launch quantities. At higher per-shade volumes the shades gang onto shared litho sheets and share the make-ready.',
-        'The one thing worth spending on is the swatch. Specify it as a spot Pantone rather than a process build, because process colour drifts between runs and a customer comparing a nude against one bought six months ago will see it. Our page on <a href="/custom-lipstick-boxes/">printed cartons built around a bullet case</a> covers how that works across a range.',
+        'The one thing worth spending on is the swatch. Specify it as a spot Pantone rather than a process build, because process color drifts between runs and a customer comparing a nude against one bought six months ago will see it. Our page on <a href="/custom-lipstick-boxes/">printed cartons built around a bullet case</a> covers how that works across a range.',
       ],
     },
     {
@@ -96,11 +96,11 @@ export const california: Location = {
       heading: 'Formats that come up most often here',
       navLabel: 'Formats',
       intro:
-        'Not an exhaustive list, but these account for the majority of California enquiries.',
+        'Not an exhaustive list, but these account for the majority of California inquiries.',
       items: [
-        'Slim lipstick cartons for multi-shade colour ranges, usually on one die line',
+        'Slim lipstick cartons for multi-shade color ranges, usually on one die line',
         'Tall gloss cartons for wand applicators, where assembled height catches people out',
-        'Holographic and <a href="/holographic-lip-gloss-boxes/">metallised board stock options</a> for limited editions and creator collaborations',
+        'Holographic and <a href="/holographic-lip-gloss-boxes/">metallized board stocks</a> for limited editions and creator collaborations',
         'Rigid boxes for press kits and influencer seeding, at genuinely small quantities',
         'Kraft and uncoated stocks for clean beauty positioning in coastal markets',
         'Printed mailers for direct-to-consumer, since a folding carton posted loose arrives crushed',
@@ -113,8 +113,8 @@ export const california: Location = {
       navLabel: 'Ordering',
       body: [
         'Lip Boxes manufactures to order and ships to addresses across California through a nationwide custom-order service. There is no California office, warehouse or local pickup point, and no claim to a same-day or local service.',
-        'What that means in practice is that a California order runs on the same process as anywhere else: dimensions or a physical sample, a written quote, a die line and structural sample to approve, a colour proof, then production and freight to your address or your filler.',
-        'If you are shipping to a contract filler rather than to yourself, send their receiving hours, appointment requirements and case labelling rules with the order. Refused deliveries at Southern California co-packers are avoidable and expensive.',
+        'What that means in practice is that a California order runs on the same process as anywhere else: dimensions or a physical sample, a written quote, a die line and structural sample to approve, a color proof, then production and freight to your address or your filler.',
+        'If you are shipping to a contract filler rather than to yourself, send their receiving hours, appointment requirements and case labeling rules with the order. Refused deliveries at Southern California co-packers are avoidable and expensive.',
       ],
     },
     {
@@ -133,11 +133,11 @@ export const california: Location = {
     {
       q: 'Is stock held locally in California?',
       a:
-        'No stock is held in California or anywhere else. Packaging is made against a confirmed order, which is why sizes and finishes are open rather than fixed to a catalogue.',
+        'No stock is held in California or anywhere else. Packaging is made against a confirmed order, which is why sizes and finishes are open rather than fixed to a catalog.',
     },
     {
       q: 'Can you ship directly to my contract filler in Southern California?',
-      a: 'Yes, and it is common given how many fillers operate there. Send their receiving hours, whether deliveries need a booked appointment, their reference number and any case labelling requirements. A refused delivery at a co-packer is expensive and almost always avoidable.',
+      a: 'Yes, and it is common given how many fillers operate there. Send their receiving hours, whether deliveries need a booked appointment, their reference number and any case labeling requirements. A refused delivery at a co-packer is expensive and almost always avoidable.',
     },
     {
       q: 'How do I package a twelve-shade range affordably?',
@@ -145,7 +145,7 @@ export const california: Location = {
     },
     {
       q: 'Why does my nude shade swatch look different between orders?',
-      a: 'Because it was almost certainly specified as a four-colour process build, which drifts within normal tolerance between runs. Specifying the swatch as a spot Pantone fixes it, at the cost of an extra ink station.',
+      a: 'Because it was almost certainly specified as a four-color process build, which drifts within normal tolerance between runs. Specifying the swatch as a spot Pantone fixes it, at the cost of an extra ink station.',
     },
     {
       q: 'Can you produce small quantities for influencer seeding?',
@@ -185,24 +185,24 @@ export const washington: Location = {
   ],
   seoTitle: 'Custom Lip Boxes in Washington | Packaging Supply',
   metaDescription:
-    'Lip packaging for Washington brands, with material choices suited to a market where disposal claims are scrutinised.',
+    'Lip packaging for Washington brands, with material choices suited to a market where disposal claims are scrutinized.',
   ogTitle: 'Custom Lip Packaging for Washington Brands',
   ogDescription:
     'Cartons, paperboard tubes and labels for a market where material choices and claim wording get read closely.',
   h1: 'Custom Lip Boxes in Washington',
   deck: 'Washington buyers ask harder questions about materials than most, and the answers have to hold up.',
   cardDescription:
-    'A market where recyclability and claim wording are scrutinised, and specifications are chosen accordingly.',
+    'A market where recyclability and claim wording are scrutinized, and specifications are chosen accordingly.',
   marketAngle: 'Material scrutiny and defensible disposal claims',
   related: ['paper-lip-balm-tubes', 'cardboard-lip-balm-tubes', 'custom-lip-balm-boxes'],
   sections: [
     {
       type: 'prose',
       id: 'market',
-      heading: 'Why Washington enquiries look different',
+      heading: 'Why Washington inquiries look different',
       navLabel: 'The market',
       body: [
-        'A packaging enquiry from Washington more often opens with a question about material than about price. Buyers here regularly ask what the liner in a <a href="/paper-lip-balm-tubes/">paper lip balm tubes</a> is made of, whether a laminate can be recycled, and what a supplier means by compostable.',
+        'A packaging inquiry from Washington more often opens with a question about material than about price. Buyers here regularly ask what the liner in a <a href="/paper-lip-balm-tubes/">paper lip balm tubes</a> is made of, whether a laminate can be recycled, and what a supplier means by compostable.',
         'That is a useful pressure to work under. It rewards suppliers who can answer precisely and exposes ones who cannot, and it pushes specifications toward choices that hold up to inspection rather than choices that sound good on a website.',
         'The practical effect on packaging is a preference for uncoated and varnished stocks over laminates, paperboard containers over plastic, and printed swatches over film windows, all of which keep a pack closer to a single material stream.',
       ],
@@ -220,7 +220,7 @@ export const washington: Location = {
           'Varnish instead of laminate',
           'Carton stays in the paper stream',
           'Less scuff resistance on a handled pack',
-          'Paperboard, widely accepted in kerbside paper recycling',
+          'Paperboard, widely accepted in curbside paper recycling',
         ],
         [
           'Printed swatch instead of a window',
@@ -237,24 +237,24 @@ export const washington: Location = {
         [
           'Paperboard cap',
           'Removes the last plastic part of a tube',
-          'Slightly less positive closure than moulded plastic',
+          'Slightly less positive closure than molded plastic',
           'Genuinely plastic-free, if the liner supports it',
         ],
         [
           'Uncoated kraft board',
           'No coating, natural surface',
-          'Muted colour, no true white without underprint',
+          'Muted color, no true white without underprint',
           'Unbleached; state recycled content only if evidenced',
         ],
         [
-          'Metallised or holographic board',
+          'Metallized or holographic board',
           'A striking shelf effect',
           'Not compatible with paper recycling',
           'Say so plainly rather than implying otherwise',
         ],
       ],
       outro:
-        'The last row is the one worth being direct about. Metallised board is not recyclable in a paper stream, and describing it otherwise is the kind of claim that gets a brand challenged.',
+        'The last row is the one worth being direct about. Metallized board is not recyclable in a paper stream, and describing it otherwise is the kind of claim that gets a brand challenged.',
     },
     {
       type: 'prose',
@@ -273,12 +273,12 @@ export const washington: Location = {
       heading: 'What Washington brands order',
       navLabel: 'Formats',
       intro:
-        'Weighted toward lip care and balm rather than colour cosmetics, which is the reverse of the California pattern.',
+        'Weighted toward lip care and balm rather than color cosmetics, which is the reverse of the California pattern.',
       items: [
         'Paperboard push-up tubes, both printed and plain kraft for small batches',
         'Uncoated or varnish-finished cartons rather than laminated ones',
         'Wrap labels on paper stocks where the product is protected by an outer carton',
-        'Refill-friendly formats for retailers running refill programmes',
+        'Refill-friendly formats for retailers running refill programs',
         'Counter display units for independent grocery and apothecary retail',
         'Simple mailers for direct-to-consumer, printed rather than laminated',
       ],
@@ -298,7 +298,7 @@ export const washington: Location = {
   faqs: [
     {
       q: 'Are your paperboard tubes recyclable?',
-      a: 'The board is paper. The liner is a coating, and whether a specific grade is accepted in kerbside paper recycling varies by material and by municipality. We will tell you which liner is quoted on your job so you can describe it precisely rather than generally.',
+      a: 'The board is paper. The liner is a coating, and whether a specific grade is accepted in curbside paper recycling varies by material and by municipality. We will tell you which liner is quoted on your job so you can describe it precisely rather than generally.',
     },
     {
       q: 'Can I call a paperboard tube compostable?',
@@ -318,7 +318,7 @@ export const washington: Location = {
     },
     {
       q: 'Do you offer refill-friendly packaging?',
-      a: 'We supply lighter secondary cartons for refill units sold without an outer case, where the pack has to protect but not present. Tell us how the refill programme works and the specification is built around that rather than around a standard retail carton.',
+      a: 'We supply lighter secondary cartons for refill units sold without an outer case, where the pack has to protect but not present. Tell us how the refill program works and the specification is built around that rather than around a standard retail carton.',
     },
     {
       q: 'Can I come and see samples in Washington?',
@@ -411,7 +411,7 @@ export const arizona: Location = {
       navLabel: 'SPF products',
       body: [
         'Arizona has a higher share of sun-care lip products than most markets, and an SPF claim changes the packaging brief in one important way.',
-        'In the United States, a lip product carrying an SPF claim is regulated differently from a plain cosmetic, and the labelling has its own panel requirements. That is a compliance question for your reviewer rather than a packaging one, but it has a direct packaging consequence: the panel copy is longer, and a tube band that held a cosmetic declaration may not hold a drug facts panel.',
+        'In the United States, a lip product carrying an SPF claim is regulated differently from a plain cosmetic, and the labeling has its own panel requirements. That is a compliance question for your reviewer rather than a packaging one, but it has a direct packaging consequence: the panel copy is longer, and a tube band that held a cosmetic declaration may not hold a drug facts panel.',
         'Plan for that before choosing the container. The usual answers are an outer carton carrying the panel, or a peel-back label on the tube. Both are structural decisions, and both are cheaper to design in than to retrofit.',
       ],
     },
@@ -423,7 +423,7 @@ export const arizona: Location = {
       intro:
         'Weighted toward products sold in outdoor, pharmacy and convenience channels.',
       items: [
-        '<a href="/hang-tab-lip-balm-boxes/">Hang tab lip balm boxes</a> cartons for pharmacy and convenience peg fixtures, which move a lot of lip balm here',
+        '<a href="/hang-tab-lip-balm-boxes/">Hang tab lip balm</a> cartons for pharmacy and convenience peg fixtures, which move a lot of lip balm here',
         'Plastic twist-up tubes with printed wrap labels, for heat resistance',
         'Outer cartons carrying the full panel where an SPF claim makes the tube band insufficient',
         'Laminated rather than varnish-only finishes on packs handled repeatedly in store',
@@ -454,7 +454,7 @@ export const arizona: Location = {
     },
     {
       q: 'Does an SPF claim change my packaging?',
-      a: 'It changes the labelling requirements, which usually changes the packaging. The panel copy is longer than a plain cosmetic declaration, so a tube band that was sufficient may not be. Plan for an outer carton or a peel-back label before choosing the container.',
+      a: 'It changes the labeling requirements, which usually changes the packaging. The panel copy is longer than a plain cosmetic declaration, so a tube band that was sufficient may not be. Plan for an outer carton or a peel-back label before choosing the container.',
     },
     {
       q: 'Should I choose laminate or varnish here?',
@@ -512,7 +512,7 @@ export const colorado: Location = {
       heading: 'What Colorado lip care tends to be',
       navLabel: 'The market',
       body: [
-        'The lip products that come out of Colorado skew away from colour cosmetics and toward balm, salve and treatment. Outdoor and sport brands extend into lip care because their customers already carry a balm. Apothecary and herbal makers sell through independent grocery, outdoor retail and farmers markets.',
+        'The lip products that come out of Colorado skew away from color cosmetics and toward balm, salve and treatment. Outdoor and sport brands extend into lip care because their customers already carry a balm. Apothecary and herbal makers sell through independent grocery, outdoor retail and farmers markets.',
         'Both routes share a retail context that is unlike mass market. Shelf space is in independent stores where the buyer knows the product, packaging is judged at close range rather than at three feet, and a pack that looks mass-produced can work against the brand.',
         'That pushes specifications toward unbleached and uncoated stocks, restrained printing, and formats that read as made rather than manufactured.',
       ],
@@ -541,7 +541,7 @@ export const colorado: Location = {
       heading: 'Ordering at small-batch quantities',
       navLabel: 'Small batches',
       body: [
-        'A lot of Colorado enquiries are for quantities that suppliers with high minimums will not quote. That is worth addressing directly rather than around.',
+        'A lot of Colorado inquiries are for quantities that suppliers with high minimums will not quote. That is worth addressing directly rather than around.',
         'Plain kraft push-up tubes are the format that stays viable at genuinely small volumes, because an unprinted tube carries no plate cost, no <a href="/artwork-guidelines/">artwork approval guidelines</a> and no proofing cycle. The only setup is the diameter tooling, and that carries across every future order in that size. A maker filling a few hundred units a month can order sensibly.',
         'Printed cartons are harder at that scale, because the die and the plates have to be absorbed somewhere. Digital printing avoids the plate charge, which helps, but the die remains. Where budget is tight, applying a printed label to a plain tube usually reaches the shelf for less than a printed carton does, as set out on our <a href="/cardboard-lip-balm-tubes/">kraft tube page</a>.',
       ],
@@ -573,7 +573,7 @@ export const colorado: Location = {
     },
     {
       q: 'Can you pack to a small case count?',
-      a: 'Yes. Tell us the count that suits your retailers and we pack to it. Building a case count into the production plan costs nothing; repacking finished stock afterwards costs labour and risks damage.',
+      a: 'Yes. Tell us the count that suits your retailers and we pack to it. Building a case count into the production plan costs nothing; repacking finished stock afterwards costs labor and risks damage.',
     },
     {
       q: 'Does dry air affect paperboard?',
@@ -585,7 +585,7 @@ export const colorado: Location = {
     },
     {
       q: 'Do you offer counter display units?',
-      a: 'Yes, in printed E-flute corrugated. They ship flat, fold into an angled display and are useful for independents that have no dedicated shelf for a new brand. Producing them alongside your cartons keeps the colours matching.',
+      a: 'Yes, in printed E-flute corrugated. They ship flat, fold into an angled display and are useful for independents that have no dedicated shelf for a new brand. Producing them alongside your cartons keeps the colors matching.',
     },
     {
       q: 'Should I treat this as a local Colorado supplier?',

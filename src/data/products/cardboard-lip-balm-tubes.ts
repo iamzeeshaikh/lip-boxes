@@ -3,7 +3,7 @@ import type { Product } from '../types';
 /*
  * Sibling of /paper-lip-balm-tubes/. This page covers the unbleached kraft
  * construction bought for low-waste and small-batch lines; the paper tube page
- * covers the same format decorated with full-colour print at higher volumes.
+ * covers the same format decorated with full-color print at higher volumes.
  * The two cross-link so a buyer lands on whichever matches their intent.
  */
 export const product: Product = {
@@ -24,12 +24,12 @@ export const product: Product = {
   ogDescription:
     'Natural unbleached paperboard tubes with a push-up base and a paper cap, supplied plain or with a simple applied label.',
   valueProp:
-    'Unbleached kraft tubes with a push-up base and a paper cap, bought plain or wrap-labelled by small-batch and low-waste balm makers.',
+    'Unbleached kraft tubes with a push-up base and a paper cap, bought plain or wrap-labeled by small-batch and low-waste balm makers.',
   cardDescription:
-    'Natural kraft push-up tubes with no bleaching and no plastic component, suited to handmade batches and refill programmes.',
+    'Natural kraft push-up tubes with no bleaching and no plastic component, suited to handmade batches and refill programs.',
   highlights: [
     'Unbleached kraft body, base disc and cap',
-    'Supplied plain for your own labels, or wrap-labelled',
+    'Supplied plain for your own labels, or wrap-labeled',
     'Practical at genuinely small batch quantities',
   ],
   images: [
@@ -45,17 +45,17 @@ export const product: Product = {
     },
     {
       file: 'cardboard-lip-balm-tube-kraft-range.png',
-      alt: 'Three natural kraft lip balm tubes printed in one colour, standing in a row on a grey surface',
-      caption: 'Single-colour print applied straight onto the unbleached board.',
+      alt: 'Three natural kraft lip balm tubes printed in one color, standing in a row on a gray surface',
+      caption: 'Single-color print applied straight onto the unbleached board.',
     },
     {
       file: 'cardboard-lip-balm-tube-illustrated-kraft.png',
       alt: 'Kraft lip balm tubes with a printed illustration, one open showing the balm inside',
-      caption: 'Illustration printed directly onto kraft, with the fibre still visible.',
+      caption: 'Illustration printed directly onto kraft, with the fiber still visible.',
     },
     {
       file: 'cardboard-lip-balm-tube-floral-print.png',
-      alt: 'Two cardboard lip balm tubes with floral artwork lying at an angle on a grey background',
+      alt: 'Two cardboard lip balm tubes with floral artwork lying at an angle on a gray background',
       caption: 'Fuller coverage artwork on the same kraft construction.',
     },
   ],
@@ -68,7 +68,7 @@ export const product: Product = {
       body: [
         'A cardboard lip balm tube is a rolled paperboard cylinder with a disc in the base that pushes the balm up as it is turned. There is no threaded plastic elevator, no plastic barrel and, when the cap is paperboard too, no plastic anywhere in the pack.',
         'The buyers for this format are consistent. Handmade and farmers-market makers who fill in batches of a few hundred. Refill and zero-waste retailers who cannot stock a plastic barrel. Herbal and apothecary brands whose customers would read a glossy plastic tube as off-brand. In all three cases the unbleached kraft surface is the point rather than a compromise.',
-        'That is the difference between this page and our <a href="/paper-lip-balm-tubes/">printed paperboard tube page</a>, which covers the same construction decorated with full-colour artwork for larger retail runs. Same tube, different finish and different order size.',
+        'That is the difference between this page and our <a href="/paper-lip-balm-tubes/">printed paperboard tube page</a>, which covers the same construction decorated with full-color artwork for larger retail runs. Same tube, different finish and different order size.',
       ],
     },
     {
@@ -79,7 +79,7 @@ export const product: Product = {
       intro:
         'Four components, and the one that decides whether the pack works is the liner rather than anything you can see.',
       items: [
-        'Outer ply in unbleached kraft, showing natural fibre and colour variation between batches',
+        'Outer ply in unbleached kraft, showing natural fiber and color variation between batches',
         'Structural middle ply that gives the tube its rigidity',
         'Inner liner that keeps oil out of the board',
         'Base disc that travels up the tube as it is pushed',
@@ -92,7 +92,7 @@ export const product: Product = {
     {
       type: 'split',
       id: 'decoration',
-      heading: 'Plain, labelled or printed',
+      heading: 'Plain, labeled or printed',
       navLabel: 'Decoration',
       image: {
         file: 'cardboard-lip-balm-tube-wrap-labels.png',
@@ -102,7 +102,7 @@ export const product: Product = {
       body: [
         'Plain tubes are the cheapest way in and the most common first order. You buy the tube bare and apply your own label, which means you can change scent names, batch numbers and even branding without reordering tubes.',
         'Applied wrap labels are the same idea done to a higher standard: printed labels supplied with the tubes, ready to apply. This is the route most small brands settle on, because one tube stock plus several printed labels runs a whole range from a single tooling cost.',
-        'Direct print onto kraft is available in one or two spot colours. It looks the most considered and removes the label as a separate component, but it fixes the design into the tube order. Where you want that on a larger scale, our label options are set out on the <a href="/lip-balm-labels/">lip balm label formats page</a>.',
+        'Direct print onto kraft is available in one or two spot colors. It looks the most considered and removes the label as a separate component, but it fixes the design into the tube order. Where you want that on a larger scale, our label options are set out on the <a href="/lip-balm-labels/">lip balm label formats page</a>.',
       ],
     },
     {
@@ -153,7 +153,7 @@ export const product: Product = {
       body: [
         'Brands buy this format for an environmental story, which makes it the format where wording matters most. Two things are worth checking with any supplier before you print a claim.',
         'First, the cap. A paperboard body with a plastic cap is still mostly plastic-free by weight, but it is not a plastic-free pack, and some suppliers describe it as one. Ours are paperboard as standard; confirm it on your quote.',
-        'Second, the liner. It is a coating rather than a separate sleeve, and whether a given grade is accepted in kerbside paper recycling varies by material and by municipality. We will tell you exactly which liner is quoted so you can describe it precisely rather than reaching for a general claim. Compostability in particular should not be claimed without evidence for the specific liner.',
+        'Second, the liner. It is a coating rather than a separate sleeve, and whether a given grade is accepted in curbside paper recycling varies by material and by municipality. We will tell you exactly which liner is quoted so you can describe it precisely rather than reaching for a general claim. Compostability in particular should not be claimed without evidence for the specific liner.',
       ],
     },
     {
@@ -168,15 +168,15 @@ export const product: Product = {
         },
         {
           title: 'Request a sample tube',
-          text: 'An unprinted tube in the proposed diameter lets you test fill behaviour and base travel before committing.',
+          text: 'An unprinted tube in the proposed diameter lets you test fill behavior and base travel before committing.',
         },
         {
           title: 'Choose the finish',
-          text: 'Plain for your own labels, supplied wrap labels, or one to two colours printed directly onto the kraft.',
+          text: 'Plain for your own labels, supplied wrap labels, or one to two colors printed directly onto the kraft.',
         },
         {
           title: 'Approve, if printing',
-          text: 'A proof on the actual kraft board, since ink reads warmer and darker on unbleached fibre than on screen.',
+          text: 'A proof on the actual kraft board, since ink reads warmer and darker on unbleached fiber than on screen.',
         },
         {
           title: 'Production and dispatch',
@@ -203,7 +203,7 @@ export const product: Product = {
     { label: 'Common capacities', value: '0.15 oz, 0.3 oz, 0.5 oz, 1 oz; other sizes tooled to order' },
     { label: 'Typical diameter', value: 'From approximately 0.65 in for a standard stick' },
     { label: 'Liner options', value: 'Grease-resistant standard and heavy-barrier grades' },
-    { label: 'Decoration', value: 'Plain, applied wrap label, or one to two spot colours printed direct' },
+    { label: 'Decoration', value: 'Plain, applied wrap label, or one to two spot colors printed direct' },
     { label: 'Tamper evidence', value: 'Printed paper seal band or shrink band across the cap join' },
     { label: 'Small batches', value: 'Plain tubes carry no plate, artwork or proofing cost' },
     { label: 'Tooling', value: 'Charged once per diameter and reused on every reorder in that size' },
@@ -214,14 +214,14 @@ export const product: Product = {
   faqs: [
     {
       q: 'Is a cardboard tube the same thing as a paper tube?',
-      a: 'The construction is the same rolled paperboard push-up format, and buyers use both names. We separate the two pages by finish: this one covers unbleached kraft bought plain or lightly decorated, and the paper tube page covers the same build with full-colour print for larger retail runs.',
+      a: 'The construction is the same rolled paperboard push-up format, and buyers use both names. We separate the two pages by finish: this one covers unbleached kraft bought plain or lightly decorated, and the paper tube page covers the same build with full-color print for larger retail runs.',
     },
     {
       q: 'Can I buy plain tubes and put my own labels on?',
       a: 'Yes, and it is the most common first order. A bare tube carries no plate cost, no artwork approval and no proofing cycle, so you can start small and change scent names or branding whenever you like without reordering tubes.',
     },
     {
-      q: 'Will the kraft colour be identical every time?',
+      q: 'Will the kraft color be identical every time?',
       a: 'No. Kraft is unbleached, so shade varies slightly between mill batches. On a natural product most brands treat that as part of the character. If you need every unit to match exactly, a white-lined board is the more predictable substrate.',
     },
     {
@@ -242,7 +242,7 @@ export const product: Product = {
     },
     {
       q: 'Can I print directly onto the kraft instead of using a label?',
-      a: 'Yes, in one or two spot colours. Ink sits into the unbleached fibre, so everything reads warmer and darker than on screen and there is no true white without an opaque underprint. Ask for a proof on the actual board before you sign off.',
+      a: 'Yes, in one or two spot colors. Ink sits into the unbleached fiber, so everything reads warmer and darker than on screen and there is no true white without an opaque underprint. Ask for a proof on the actual board before you sign off.',
     },
     {
       q: 'Will the balm push back down after it is raised?',

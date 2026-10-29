@@ -35,7 +35,7 @@ export const product: Product = {
     {
       file: 'custom-lipstick-box-floral-print.png',
       alt: 'Two floral printed lipstick boxes, one standing and one lying flat on an olive background',
-      caption: 'Full-colour floral print on coated white board.',
+      caption: 'Full-color floral print on coated white board.',
     },
     {
       file: 'custom-lipstick-box-metallic-foil.png',
@@ -51,7 +51,7 @@ export const product: Product = {
       navLabel: 'Overview',
       body: [
         'Lipstick cases vary far more than lip balm tubes do. A slim metal bullet, a weighted magnetic case and a chunky square resin barrel might all hold the same 3.5 g of product and need three completely different cartons. There is no standard lipstick box size, and quoting from a generic one is how brands end up with cases that rattle or boxes that split.',
-        'The measurement that matters is the case at its widest point, with the cap fitted, plus its total height. Magnetic cases sometimes sit slightly proud at the join and that extra fraction of a millimetre is enough to bind a tight carton. Sending a physical sample is the most dependable route.',
+        'The measurement that matters is the case at its widest point, with the cap fitted, plus its total height. Magnetic cases sometimes sit slightly proud at the join and that extra fraction of a millimeter is enough to bind a tight carton. Sending a physical sample is the most dependable route.',
         'Once the dimensions are fixed, the carton style is mostly a merchandising decision. A straight tuck end suits shelf display and boxed e-commerce. A hanging version works on peg fixtures, and <a href="/hang-tab-lipstick-boxes/">lipstick cartons cut with a peg hook tab</a> use the same board with a die-cut slot added.',
       ],
     },
@@ -101,7 +101,7 @@ export const product: Product = {
       body: [
         'A lipstick case is heavier than most cosmetic primaries of its size, particularly the metal-weighted ones. Dropped inside a loose carton it will move under its own inertia, and repeated movement in transit marks both the case and the inside of the box.',
         'A folded paperboard collar or a die-cut platform holds the case at the base so it cannot slide. For duos and trios, a partition insert stops the cases knocking together, which matters more than it sounds when the cases have a lacquered or foiled finish that scratches.',
-        'Where the opening moment carries the brand, a moulded pulp tray or a foam-backed platform seats the lipstick at an angle so it presents itself as the lid lifts. That level of build usually belongs with a <a href="/rigid-lipstick-boxes/">rigid lipstick box with a magnetic lid</a> rather than a folding carton, but both are quoted from the same enquiry.',
+        'Where the opening moment carries the brand, a molded pulp tray or a foam-backed platform seats the lipstick at an angle so it presents itself as the lid lifts. That level of build usually belongs with a <a href="/rigid-lipstick-boxes/">rigid lipstick box with a magnetic lid</a> rather than a folding carton, but both are quoted from the same inquiry.',
       ],
     },
     {
@@ -112,12 +112,12 @@ export const product: Product = {
       intro:
         'Lipstick sits at a higher price point than most lip care, and the board is a meaningful part of how the pack is judged before it is opened.',
       items: [
-        'SBS folding boxboard, 18pt to 24pt, the standard for full-colour cosmetic cartons',
+        'SBS folding boxboard, 18pt to 24pt, the standard for full-color cosmetic cartons',
         'Heavier 24pt to 28pt board where the pack must feel substantial in the hand',
-        'Metallised board with a mirror silver or gold face beneath the print',
-        'Black-through board, coloured in the pulp so cut edges stay black',
+        'Metallized board with a mirror silver or gold face beneath the print',
+        'Black-through board, colored in the pulp so cut edges stay black',
         'Textured and laid papers laminated to board for a tactile premium surface',
-        'Recycled greyback board where recycled content matters more than a white reverse',
+        'Recycled grayback board where recycled content matters more than a white reverse',
       ],
       outro:
         'Black-through board is worth knowing about: on a standard white board with a printed black exterior, every cut edge shows a thin white line, which is very visible on a dark carton.',
@@ -128,9 +128,9 @@ export const product: Product = {
       heading: 'Printing a shade range accurately',
       navLabel: 'Printing',
       body: [
-        'The specific challenge with lipstick packaging is that the carton often shows a swatch of the shade inside, and shoppers compare that swatch against the product. A four-colour process build drifts between print runs; a spot Pantone does not. Brands that run a shade range across repeat orders usually specify each swatch as a spot colour and accept the extra ink station.',
+        'The specific challenge with lipstick packaging is that the carton often shows a swatch of the shade inside, and shoppers compare that swatch against the product. A four-color process build drifts between print runs; a spot Pantone does not. Brands that run a shade range across repeat orders usually specify each swatch as a spot color and accept the extra ink station.',
         'Offset litho holds fine detail and delivers the lowest unit cost once quantities pass a couple of thousand. Digital printing makes sense for a launch range where you want twelve shades at modest quantities each, since there are no plate charges per design. Both are available, and the crossover point moves with the number of shades.',
-        'Colour on a metallised board behaves differently again, because the reflective base shows through translucent inks. Ask for a proof on the actual stock before signing off if the artwork uses metallic effects.',
+        'Color on a metallized board behaves differently again, because the reflective base shows through translucent inks. Ask for a proof on the actual stock before signing off if the artwork uses metallic effects.',
       ],
     },
     {
@@ -142,11 +142,11 @@ export const product: Product = {
       items: [
         {
           title: 'Soft-touch lamination',
-          text: 'The finish most associated with premium colour cosmetics. Velvety, slightly warm, and it makes a mid-priced pack feel considerably more expensive.',
+          text: 'The finish most associated with premium color cosmetics. Velvety, slightly warm, and it makes a mid-priced pack feel considerably more expensive.',
         },
         {
           title: 'Hot foil stamping',
-          text: 'Gold, silver, rose gold, copper and coloured foils, pressed with heat and pressure. Reads as genuinely metallic in a way printed metallic ink does not.',
+          text: 'Gold, silver, rose gold, copper and colored foils, pressed with heat and pressure. Reads as genuinely metallic in a way printed metallic ink does not.',
         },
         {
           title: 'Spot UV over matte',
@@ -172,7 +172,7 @@ export const product: Product = {
       heading: 'Artwork, shade naming and regulated copy',
       navLabel: 'Artwork',
       body: [
-        'Build files to the supplied die line, in CMYK plus any spot colours, at 300 dpi, with 3 mm bleed and fonts outlined. Keep live copy 4 mm inside the trim. Foil, emboss and spot UV each need their own 100% black vector layer, named clearly, so the finishing plates can be made from them.',
+        'Build files to the supplied die line, in CMYK plus any spot colors, at 300 dpi, with 3 mm bleed and fonts outlined. Keep live copy 4 mm inside the trim. Foil, emboss and spot UV each need their own 100% black vector layer, named clearly, so the finishing plates can be made from them.',
         'A lipstick carton usually carries more copy than a lip balm one: shade name, shade number, finish descriptor, net weight, ingredient declaration and often a batch panel. Plan the panel allocation before designing rather than fitting the legal copy into what is left over.',
         'Where a range shares one die line, keep every fixed element in exactly the same position across all shades and change only the swatch and the shade name. It looks intentional on shelf and it makes proofing twelve variants a manageable task instead of twelve separate reviews. The file setup detail sits on the <a href="/artwork-guidelines/">artwork specification page</a>.',
       ],
@@ -184,8 +184,8 @@ export const product: Product = {
       navLabel: 'Quantity & pricing',
       body: [
         'Lipstick ranges create an awkward quantity problem: you may want 20,000 cartons in total but only 1,600 of each shade. Digital printing solves it at moderate volumes. At higher volumes, ganging several shades onto one litho sheet keeps the plate cost shared while retaining offset quality.',
-        'Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity. A plain single-colour carton at high volume approaches that figure; a soft-touch laminated carton with foil, an insert and twelve shade variants sits well above it.',
-        'Tell us the shade count and the per-shade quantity in the enquiry, not just the total. It changes which process we quote and can materially change the price.',
+        'Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity. A plain single-color carton at high volume approaches that figure; a soft-touch laminated carton with foil, an insert and twelve shade variants sits well above it.',
+        'Tell us the shade count and the per-shade quantity in the inquiry, not just the total. It changes which process we quote and can materially change the price.',
       ],
     },
     {
@@ -207,7 +207,7 @@ export const product: Product = {
           text: 'A plain cut-and-creased sample confirms the case fits and the insert holds before any printing happens.',
         },
         {
-          title: 'Colour proof per shade',
+          title: 'Color proof per shade',
           text: 'Every shade variant is proofed. Written approval on all of them releases the run.',
         },
         {
@@ -222,8 +222,8 @@ export const product: Product = {
       heading: 'Quality control, materials and turnaround',
       navLabel: 'Quality & lead time',
       body: [
-        'Colour consistency across a shade range is the check that matters most here. Each variant is measured against its approved proof, and where shades are close to each other they are compared side by side rather than individually, because a shopper will see them next to one another on the shelf.',
-        'Paperboard cartons are widely accepted in US paper recycling. Soft-touch and gloss laminates are plastic films and complicate that, so where end-of-life matters, a varnish finish on an uncoated or lightly coated board keeps the pack in one stream. Metallised board is not paper-recyclable and should not be described as though it were.',
+        'Color consistency across a shade range is the check that matters most here. Each variant is measured against its approved proof, and where shades are close to each other they are compared side by side rather than individually, because a shopper will see them next to one another on the shelf.',
+        'Paperboard cartons are widely accepted in US paper recycling. Soft-touch and gloss laminates are plastic films and complicate that, so where end-of-life matters, a varnish finish on an uncoated or lightly coated board keeps the pack in one stream. Metallized board is not paper-recyclable and should not be described as though it were.',
         'Production time varies with the finishing. Foil, emboss and soft-touch each add a pass. We confirm a schedule in writing with the quote, and current bands are published on the <a href="/turnaround-time/">lead time page</a>.',
       ],
     },
@@ -232,11 +232,11 @@ export const product: Product = {
     { label: 'Product type', value: 'Custom printed folding carton for lipstick and liquid lipstick' },
     { label: 'Sizing', value: 'Built to your bullet case dimensions or to a supplied sample' },
     { label: 'Typical single-bullet footprint', value: 'Approximately 0.9–1.2 in square, 3–3.5 in tall' },
-    { label: 'Materials', value: 'SBS 18–28pt, metallised board, black-through board, textured laminated papers, recycled board' },
+    { label: 'Materials', value: 'SBS 18–28pt, metallized board, black-through board, textured laminated papers, recycled board' },
     { label: 'Printing', value: 'Offset litho and digital; CMYK plus spot Pantone for shade swatches' },
     { label: 'Finishes', value: 'Soft-touch, matte and gloss lamination, hot foil, spot UV, emboss, deboss, pearlescent ink' },
     { label: 'Structural styles', value: 'Straight tuck end, reverse tuck end, seal end, auto-bottom, sleeve and tray' },
-    { label: 'Inserts', value: 'Paperboard collar, die-cut platform, partition for duo and trio packs, moulded pulp' },
+    { label: 'Inserts', value: 'Paperboard collar, die-cut platform, partition for duo and trio packs, molded pulp' },
     { label: 'Windows', value: 'Die-cut with optional clear film patch' },
     { label: 'Range support', value: 'One die line across multiple shades; per-shade artwork variants' },
     { label: 'Artwork format', value: 'PDF, AI, EPS at 300 dpi, 3 mm bleed, separate vector layers for foil and emboss' },
@@ -258,11 +258,11 @@ export const product: Product = {
     },
     {
       q: 'How do I keep the shade swatch on the box matching the lipstick?',
-      a: 'Specify the swatch as a spot Pantone rather than a CMYK build. Process colour drifts between runs within normal tolerance, which is enough to make a nude look different from the one a customer bought last month. A spot colour reproduces the same way every time.',
+      a: 'Specify the swatch as a spot Pantone rather than a CMYK build. Process color drifts between runs within normal tolerance, which is enough to make a nude look different from the one a customer bought last month. A spot color reproduces the same way every time.',
     },
     {
       q: 'What is black-through board and do I need it?',
-      a: 'It is board coloured black throughout rather than printed black on a white base. You need it if your carton is dark, because on standard board every die-cut and creased edge shows a thin white line. On a black soft-touch pack that line is the first thing people notice.',
+      a: 'It is board colored black throughout rather than printed black on a white base. You need it if your carton is dark, because on standard board every die-cut and creased edge shows a thin white line. On a black soft-touch pack that line is the first thing people notice.',
     },
     {
       q: 'Should I add an insert to a single lipstick box?',
@@ -278,7 +278,7 @@ export const product: Product = {
     },
     {
       q: 'Do you supply the insert as well as the box?',
-      a: 'Yes, both are quoted and produced together. Supplying them from one source means the insert is made to the same die line and tested in the actual carton, rather than being sourced separately and found to be a millimetre out during packing.',
+      a: 'Yes, both are quoted and produced together. Supplying them from one source means the insert is made to the same die line and tested in the actual carton, rather than being sourced separately and found to be a millimeter out during packing.',
     },
     {
       q: 'How much copy will actually fit on a slim lipstick carton?',
@@ -286,7 +286,7 @@ export const product: Product = {
     },
     {
       q: 'Are laminated lipstick cartons recyclable?',
-      a: 'Paperboard is widely recycled in the United States, but a plastic laminate film complicates that and metallised board is not paper-recyclable at all. If end-of-life is a priority, a varnish on uncoated or lightly coated board keeps the pack in a single stream. We will tell you exactly what is on your specification.',
+      a: 'Paperboard is widely recycled in the United States, but a plastic laminate film complicates that and metallized board is not paper-recyclable at all. If end-of-life is a priority, a varnish on uncoated or lightly coated board keeps the pack in a single stream. We will tell you exactly what is on your specification.',
     },
     {
       q: 'Can I reorder a single shade from a range later?',

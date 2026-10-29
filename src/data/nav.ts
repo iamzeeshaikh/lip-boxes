@@ -24,9 +24,9 @@ export const primaryNav: { label: string; href?: string; children?: NavLink[] }[
       { href: '/rigid-lipstick-boxes/', label: 'Rigid Lipstick Boxes', note: 'Magnetic and drawer gift boxes' },
       { href: '/hang-tab-lipstick-boxes/', label: 'Hang Tab Lipstick Boxes', note: 'Window peg display cartons' },
       { href: '/lip-gloss-boxes/', label: 'Lip Gloss Boxes', note: 'Tall cartons for wand tubes' },
-      { href: '/holographic-lip-gloss-boxes/', label: 'Holographic Lip Gloss Boxes', note: 'Iridescent metallised board' },
+      { href: '/holographic-lip-gloss-boxes/', label: 'Holographic Lip Gloss Boxes', note: 'Iridescent metallized board' },
       { href: '/custom-lip-mask-boxes/', label: 'Custom Lip Mask Boxes', note: 'Hydrogel patch packaging' },
-      { href: '/custom-lip-care-packaging/', label: 'Custom Lip Care Packaging', note: 'Bulk and private label programmes' },
+      { href: '/custom-lip-care-packaging/', label: 'Custom Lip Care Packaging', note: 'Bulk and private label programs' },
     ],
   },
   {

@@ -113,7 +113,7 @@ export const product: Product = {
       },
       imageSide: 'right',
       body: [
-        'Lipstick cases vary far more than lip balm tubes. A slim aluminium bullet, a weighted magnetic case and a square resin barrel can all hold 3.5 g and need three different cartons. Any supplier quoting from a standard size is guessing.',
+        'Lipstick cases vary far more than lip balm tubes. A slim aluminum bullet, a weighted magnetic case and a square resin barrel can all hold 3.5 g and need three different cartons. Any supplier quoting from a standard size is guessing.',
         'Take three measurements: width at the widest point with the cap fitted, depth at that same point, and total height with the cap seated. On tapered cases the widest point is often below the cap rather than at it.',
         'For orientation only, a single-bullet carton commonly falls between 0.9 and 1.2 inches square and 3 to 3.5 inches tall. Treat that as the range you will land in, not the size to order. A physical sample removes the guesswork entirely, because supplier drawings frequently omit the tolerances that matter.',
       ],
@@ -132,7 +132,7 @@ export const product: Product = {
           text: 'Same carton size, board and finish across every shade, with only the printed panel changing. This is the single largest cost lever available.',
         },
         {
-          title: 'Spot colour for the swatch',
+          title: 'Spot color for the swatch',
           text: 'A process build drifts between print runs. A spot Pantone reproduces identically, which matters when a customer compares a nude against the one they bought last season.',
         },
         {
@@ -141,7 +141,7 @@ export const product: Product = {
         },
         {
           title: 'Ganged printing at volume',
-          text: 'Several shades printed together on one press sheet share the make-ready. Only possible if the specification is standardised.',
+          text: 'Several shades printed together on one press sheet share the make-ready. Only possible if the specification is standardized.',
         },
         {
           title: 'Locked artwork positions',
@@ -161,18 +161,18 @@ export const product: Product = {
       body: [
         'A lipstick case is dense for its size, particularly a metal-weighted one. In a loose carton it moves under its own inertia every time the shipping case is handled, and repeated movement marks the case finish and scuffs the printed interior of the box.',
         'For anything above an entry price point, a folded paperboard collar at the base costs very little and stops it. For duos and trios a partition is not optional: lacquered and foiled cases scratch each other, and a set arriving marked defeats the point of the pack.',
-        'Quote the insert with the carton rather than separately. An insert sourced on its own arrives a millimetre out, is discovered during packing, and leaves you choosing between forcing it and reordering. The full range of options sits on the <a href="/box-styles/">box style reference</a>.',
+        'Quote the insert with the carton rather than separately. An insert sourced on its own arrives a millimeter out, is discovered during packing, and leaves you choosing between forcing it and reordering. The full range of options sits on the <a href="/box-styles/">box style reference</a>.',
       ],
     },
     {
       type: 'prose',
       id: 'materials-finishes',
-      heading: 'Board and finish for a colour cosmetic',
+      heading: 'Board and finish for a color cosmetic',
       navLabel: 'Board & finish',
       body: [
         'Lipstick sits at a higher price point than most lip care, and the board is a meaningful part of how the pack is judged before it is opened. SBS folding boxboard from 18pt to 24pt is the standard. Heavier 24pt to 28pt is chosen where the pack needs to feel substantial in the hand.',
-        'Two specialty boards earn their premium in this category. Black-through board, coloured throughout the pulp, keeps cut edges dark on a deep range. Metallised board puts a mirror base under the ink, though it is not compatible with paper recycling.',
-        'On finishing, soft-touch lamination is the treatment most associated with premium colour cosmetics, and matte lamination with a hot foil logo is the combination that appears most often on shelf. Both are covered on the <a href="/finishes/">coating and finish options</a>.',
+        'Two specialty boards earn their premium in this category. Black-through board, colored throughout the pulp, keeps cut edges dark on a deep range. Metallized board puts a mirror base under the ink, though it is not compatible with paper recycling.',
+        'On finishing, soft-touch lamination is the treatment most associated with premium color cosmetics, and matte lamination with a hot foil logo is the combination that appears most often on shelf. Both are covered on the <a href="/finishes/">coating and finish options</a>.',
       ],
     },
     {
@@ -193,8 +193,8 @@ export const product: Product = {
       navLabel: 'Quantity & pricing',
       body: [
         'Lipstick ranges create an awkward quantity problem: you may want 20,000 cartons in total but only 1,600 of each shade. Which process suits that depends entirely on the split, which is why the shade count matters as much as the total.',
-        'Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity. A plain single-colour carton at high volume approaches that figure; a soft-touch carton with foil, an insert and twelve shade variants sits well above it.',
-        'Send both numbers with any enquiry: the total, and the quantity per shade. It changes which press we quote and can move the price materially.',
+        'Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity. A plain single-color carton at high volume approaches that figure; a soft-touch carton with foil, an insert and twelve shade variants sits well above it.',
+        'Send both numbers with any inquiry: the total, and the quantity per shade. It changes which press we quote and can move the price materially.',
       ],
     },
     {
@@ -221,22 +221,22 @@ export const product: Product = {
         },
         {
           title: 'Approve die line, then proof',
-          text: 'Structure first, colour second. Nothing prints without both signed off in writing.',
+          text: 'Structure first, color second. Nothing prints without both signed off in writing.',
         },
       ],
     },
   ],
   specs: [
     { label: 'Product type', value: 'Lipstick packaging across folding, rigid, hang tab and multi-shade constructions' },
-    { label: 'Sizing', value: 'Built to your bullet case; no standard catalogue size exists' },
+    { label: 'Sizing', value: 'Built to your bullet case; no standard catalog size exists' },
     { label: 'Typical single-bullet footprint', value: 'Approximately 0.9–1.2 in square, 3–3.5 in tall' },
     { label: 'Measurements needed', value: 'Width and depth at the widest capped point, plus total capped height' },
-    { label: 'Folding carton board', value: 'SBS 18–28pt; black-through for dark ranges; metallised for limited editions' },
-    { label: 'Rigid construction', value: 'Greyboard 1.5–3 mm wrapped in printed or specialty paper' },
+    { label: 'Folding carton board', value: 'SBS 18–28pt; black-through for dark ranges; metallized for limited editions' },
+    { label: 'Rigid construction', value: 'Grayboard 1.5–3 mm wrapped in printed or specialty paper' },
     { label: 'Printing', value: 'Offset litho and digital; spot Pantone recommended for shade swatches' },
     { label: 'Finishes', value: 'Soft-touch, matte and gloss lamination, hot foil, spot UV, emboss' },
     { label: 'Inserts', value: 'Base collar, die-cut platform, partition for duos and trios, fitted tray for rigid' },
-    { label: 'Range support', value: 'One die line across all shades; ganged printing where the specification is standardised' },
+    { label: 'Range support', value: 'One die line across all shades; ganged printing where the specification is standardized' },
     { label: 'Barcode area', value: 'Minimum 1.5 in clear flat width, not crossing a crease' },
     { label: 'Starting unit price', value: 'From $0.30 per piece on qualifying large-volume orders' },
     { label: 'Ordering', value: 'Quote based; send total quantity and quantity per shade' },
@@ -260,7 +260,7 @@ export const product: Product = {
     },
     {
       q: 'Why does my dark carton show white lines at the edges?',
-      a: 'Because standard board is white in the middle. Printing it dark on the outside leaves every die-cut edge and crease showing a thin white line. Black-through board is coloured throughout the pulp and avoids it. On a deep range it is usually worth the premium.',
+      a: 'Because standard board is white in the middle. Printing it dark on the outside leaves every die-cut edge and crease showing a thin white line. Black-through board is colored throughout the pulp and avoids it. On a deep range it is usually worth the premium.',
     },
     {
       q: 'Do I need an insert for a single lipstick?',
@@ -272,19 +272,19 @@ export const product: Product = {
     },
     {
       q: 'Can I mix constructions across one range?',
-      a: 'Yes, and it is common: folding cartons for the core shades and a rigid box for the gift set. Keep the board family and the brand colours shared so the range still reads as one line when the items sit next to each other.',
+      a: 'Yes, and it is common: folding cartons for the core shades and a rigid box for the gift set. Keep the board family and the brand colors shared so the range still reads as one line when the items sit next to each other.',
     },
     {
       q: 'What does a rigid box actually add?',
-      a: 'Weight, a permanent shape and an opening action. It also adds hand assembly, a greyboard core, a separate wrap and volume-based freight, because it does not ship flat. Justified for gifting and limited editions, hard to justify for everyday retail.',
+      a: 'Weight, a permanent shape and an opening action. It also adds hand assembly, a grayboard core, a separate wrap and volume-based freight, because it does not ship flat. Justified for gifting and limited editions, hard to justify for everyday retail.',
     },
     {
       q: 'How do I keep the shade swatch matching the lipstick?',
-      a: 'Specify the swatch as a spot Pantone rather than a four-colour build. Process colour drifts within normal tolerance between runs, which is enough to make a nude look different from the one a customer bought six months ago.',
+      a: 'Specify the swatch as a spot Pantone rather than a four-color build. Process color drifts within normal tolerance between runs, which is enough to make a nude look different from the one a customer bought six months ago.',
     },
     {
       q: 'Can I get a sample before committing?',
-      a: 'Yes, and the useful one at this stage is a plain structural sample: cut and creased in the specified board so you can check your case actually fits with the right clearance. Colour proofs come later, once the structure is approved.',
+      a: 'Yes, and the useful one at this stage is a plain structural sample: cut and creased in the specified board so you can check your case actually fits with the right clearance. Color proofs come later, once the structure is approved.',
     },
     {
       q: 'What should I send to get an accurate quote?',

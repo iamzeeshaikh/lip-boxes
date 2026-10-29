@@ -22,7 +22,7 @@ export const product: Product = {
   cardDescription:
     'Folding cartons for standard 0.15 oz sticks through to 0.5 oz twist tubes, plus multipack trays and counter display units.',
   highlights: [
-    'Sized to your filled tube, not to a fixed catalogue size',
+    'Sized to your filled tube, not to a fixed catalog size',
     'Paperboard, kraft and coated stocks from lightweight to sturdy',
     'Single-tube, multipack and retail display formats',
   ],
@@ -50,7 +50,7 @@ export const product: Product = {
       heading: 'What a custom lip balm box has to do',
       navLabel: 'Overview',
       body: [
-        'A lip balm tube is small, cylindrical and easy to lose on a shelf. The carton around it does three jobs at once: it stops the tube rolling, it gives you a flat printable surface for your brand and ingredient panel, and it holds the product upright wherever it is merchandised. Get the internal dimensions wrong by two millimetres and the tube rattles; get them tight and the carton splits at the glue seam during filling.',
+        'A lip balm tube is small, cylindrical and easy to lose on a shelf. The carton around it does three jobs at once: it stops the tube rolling, it gives you a flat printable surface for your brand and ingredient panel, and it holds the product upright wherever it is merchandised. Get the internal dimensions wrong by two millimeters and the tube rattles; get them tight and the carton splits at the glue seam during filling.',
         'Every box we quote is cut from a fresh die line built around the tube you are actually filling. Send the outside diameter and the capped height, or post a sample to us, and the structural drawing is drawn to suit. That is the difference between a carton that closes cleanly on a hand-filling line and one that has to be forced.',
         'Most lip balm brands start with a straight tuck end or reverse tuck end carton because both ship flat, assemble by hand in a few seconds and cost the least per unit. If you need the box to hang on a peg hook instead of sitting on a shelf, a <a href="/hang-tab-lip-balm-boxes/">lip balm box with a euro hang tab</a> uses the same board and printing but adds a die-cut slot to the top panel.',
       ],
@@ -114,12 +114,12 @@ export const product: Product = {
       intro:
         'Board choice changes how the carton feels in the hand, how sharp the print looks and how well the box survives a shipping journey.',
       items: [
-        'SBS folding boxboard, 14pt to 24pt, with a bright white coated face for full-colour print',
-        'Kraft board, 14pt to 24pt, uncoated with a natural brown surface and visible fibre',
-        'Recycled greyback board where a recycled content claim matters more than a white reverse',
+        'SBS folding boxboard, 14pt to 24pt, with a bright white coated face for full-color print',
+        'Kraft board, 14pt to 24pt, uncoated with a natural brown surface and visible fiber',
+        'Recycled grayback board where a recycled content claim matters more than a white reverse',
         'Coated one side board for cost-sensitive high-volume runs',
         'Corrugated E-flute for counter display units and heavier multipack trays',
-        'Rigid greyboard wrapped in printed paper for premium gift sets',
+        'Rigid grayboard wrapped in printed paper for premium gift sets',
       ],
       outro:
         'Lighter board keeps freight cost down on large runs, heavier board holds a crisper edge on a retail shelf. If you are weighing the trade-off, the <a href="/materials/">comparison of packaging board weights and finishes</a> sets out where each one performs.',
@@ -130,7 +130,7 @@ export const product: Product = {
       heading: 'Printing options for lip balm cartons',
       navLabel: 'Printing',
       intro:
-        'Which process suits you depends almost entirely on how many boxes you are ordering and how many colours the artwork uses.',
+        'Which process suits you depends almost entirely on how many boxes you are ordering and how many colors the artwork uses.',
       columns: ['Process', 'Works well at', 'Strengths', 'Watch for'],
       rows: [
         [
@@ -148,18 +148,18 @@ export const product: Product = {
         [
           'Flexo',
           'Very high volume on kraft',
-          'Efficient on uncoated board and simple spot-colour designs',
+          'Efficient on uncoated board and simple spot-color designs',
           'Fine gradients and small reverse-out type lose definition',
         ],
         [
           'Spot Pantone',
           'Any quantity',
-          'Holds one exact brand colour consistently across repeat orders',
-          'Photographic imagery still needs a four-colour build alongside it',
+          'Holds one exact brand color consistently across repeat orders',
+          'Photographic imagery still needs a four-color build alongside it',
         ],
       ],
       outro:
-        'Colour behaves differently on kraft than on coated white board, so we send a print-ready proof for approval before the run starts.',
+        'Color behaves differently on kraft than on coated white board, so we send a print-ready proof for approval before the run starts.',
     },
     {
       type: 'features',
@@ -176,7 +176,7 @@ export const product: Product = {
         },
         {
           title: 'Gloss lamination',
-          text: 'Deepens colour saturation and shrugs off scuffing. A practical choice for bright fruit or seasonal ranges.',
+          text: 'Deepens color saturation and shrugs off scuffing. A practical choice for bright fruit or seasonal ranges.',
         },
         {
           title: 'Soft-touch lamination',
@@ -184,7 +184,7 @@ export const product: Product = {
         },
         {
           title: 'Foil stamping',
-          text: 'Metallic foil pressed into the board in gold, silver, rose gold or a coloured foil. Most effective on a logo or a thin frame rather than large solid areas.',
+          text: 'Metallic foil pressed into the board in gold, silver, rose gold or a colored foil. Most effective on a logo or a thin frame rather than large solid areas.',
         },
         {
           title: 'Spot UV',
@@ -204,7 +204,7 @@ export const product: Product = {
       body: [
         'Straight tuck end is the default for a single tube: both flaps tuck from the same side, so the front panel stays uninterrupted for artwork. Reverse tuck end costs the same and closes from opposite sides, which some hand-filling lines prefer. Seal end cartons glue closed on the packing line and suit high-volume co-packers.',
         'For anything heavier than a single stick, look at auto-bottom or snap-lock bases. Both lock into a flat base as the carton is opened, which means a four-tube multipack will not drop its contents when it is lifted from the bottom. The full range of closures is set out alongside their die lines on the <a href="/box-styles/">guide to carton closures and base styles</a>.',
-        'Inserts are worth the extra cost as soon as the box holds more than one item. A folded paperboard partition is the lightest option and keeps tubes from knocking together. Die-cut card platforms hold a tin or a jar in a fixed position. Moulded pulp trays suit gift sets where the presentation on opening matters. Foam inserts are available but are rarely the right answer for a product this light.',
+        'Inserts are worth the extra cost as soon as the box holds more than one item. A folded paperboard partition is the lightest option and keeps tubes from knocking together. Die-cut card platforms hold a tin or a jar in a fixed position. Molded pulp trays suit gift sets where the presentation on opening matters. Foam inserts are available but are rarely the right answer for a product this light.',
       ],
     },
     {
@@ -215,7 +215,7 @@ export const product: Product = {
       body: [
         'Supply artwork as a print-ready PDF, AI or EPS file at 300 dpi with fonts outlined and images in CMYK. Add 3 mm of bleed on every edge and keep live text at least 4 mm inside the trim line, because a folding carton is cut and creased in one pass and small drifts are normal.',
         'Cosmetic packaging also has to carry regulated information. In the United States that means an ingredient declaration in descending order, net contents, and the name and place of business of the responsible party. If your balm carries an SPF claim, the drug facts panel has its own layout rules. We print what you supply and do not review compliance on your behalf, so have those panels checked before the file is approved.',
-        'If you do not have print-ready files yet, send a sketch, a competitor reference or a rough layout with your quote request. Our studio can build the die line and lay your elements onto it. Detailed file preparation notes, including how we handle spot colours and foil layers, are set out in the <a href="/artwork-guidelines/">artwork preparation notes for folding cartons</a>.',
+        'If you do not have print-ready files yet, send a sketch, a competitor reference or a rough layout with your quote request. Our studio can build the die line and lay your elements onto it. Detailed file preparation notes, including how we handle spot colors and foil layers, are set out in the <a href="/artwork-guidelines/">artwork preparation notes for folding cartons</a>.',
       ],
     },
     {
@@ -225,7 +225,7 @@ export const product: Product = {
       navLabel: 'Quantity & pricing',
       body: [
         'Lip balm cartons are quoted per project rather than from a price list, because a 500-unit digital run and a 100,000-unit litho run are different pieces of work. Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity. That figure is a starting unit price for qualifying high-volume custom orders, not a fixed rate for every quantity.',
-        'The largest single lever on unit price is quantity, because setup, plates and die charges are spread across the run. Moving from 1,000 to 10,000 units typically cuts the per-box cost substantially even before any specification changes. After quantity, the biggest factors are board weight, the number of print colours, and whether the job carries foil, spot UV or an insert.',
+        'The largest single lever on unit price is quantity, because setup, plates and die charges are spread across the run. Moving from 1,000 to 10,000 units typically cuts the per-box cost substantially even before any specification changes. After quantity, the biggest factors are board weight, the number of print colors, and whether the job carries foil, spot UV or an insert.',
         'Wholesale and private label orders are welcome, including repeat scheduled releases against a single approved die line. Once a die is cut and a proof is signed off, reorders skip most of the setup work. Tell us in the quote request if you expect to reorder on a cycle so the tooling is quoted with that in mind.',
       ],
     },
@@ -246,7 +246,7 @@ export const product: Product = {
         },
         {
           title: 'Approve the die line and proof',
-          text: 'A structural drawing and a printed or digital colour proof go out for written approval. Nothing runs until you sign it off.',
+          text: 'A structural drawing and a printed or digital color proof go out for written approval. Nothing runs until you sign it off.',
         },
         {
           title: 'Production',
@@ -264,8 +264,8 @@ export const product: Product = {
       heading: 'Quality control and material responsibility',
       navLabel: 'Quality',
       body: [
-        'Every run is checked at three points: a press-side colour check against the approved proof, a dimensional check on the first die-cut sheets, and a glue and fold test on finished cartons pulled from the line. Because lip balm boxes are small, a die that drifts shows up quickly in the tuck fit, which is why the fold test matters more here than on a large carton.',
-        'On the material side, folding boxboard and kraft board are both widely recycled through standard US kerbside paper streams once any laminate film is accounted for. If recyclability is a priority, an uncoated or varnish-only finish keeps the carton in a single material stream, and soy or vegetable-based inks are available on request. We will confirm what a specific stock carries in the way of certification at quoting stage rather than making a general claim here.',
+        'Every run is checked at three points: a press-side color check against the approved proof, a dimensional check on the first die-cut sheets, and a glue and fold test on finished cartons pulled from the line. Because lip balm boxes are small, a die that drifts shows up quickly in the tuck fit, which is why the fold test matters more here than on a large carton.',
+        'On the material side, folding boxboard and kraft board are both widely recycled through standard US curbside paper streams once any laminate film is accounted for. If recyclability is a priority, an uncoated or varnish-only finish keeps the carton in a single material stream, and soy or vegetable-based inks are available on request. We will confirm what a specific stock carries in the way of certification at quoting stage rather than making a general claim here.',
       ],
     },
     {
@@ -283,21 +283,21 @@ export const product: Product = {
     { label: 'Product type', value: 'Custom printed folding carton for lip balm' },
     { label: 'Sizing', value: 'Made to your dimensions or to a supplied sample tube' },
     { label: 'Common single-tube footprint', value: 'Approximately 0.8–1 in square, 2.75–3.25 in tall' },
-    { label: 'Materials', value: 'SBS folding boxboard, kraft board, recycled board, E-flute, rigid greyboard' },
+    { label: 'Materials', value: 'SBS folding boxboard, kraft board, recycled board, E-flute, rigid grayboard' },
     { label: 'Board weights', value: '14pt to 24pt paperboard; heavier substrates on request' },
     { label: 'Printing', value: 'Digital, offset litho, flexo; CMYK and spot Pantone' },
     { label: 'Finishes', value: 'Matte, gloss and soft-touch lamination, spot UV, foil stamp, emboss, deboss' },
     { label: 'Structural styles', value: 'Straight tuck end, reverse tuck end, seal end, auto-bottom, snap-lock, tray and lid' },
-    { label: 'Inserts', value: 'Paperboard partitions, die-cut platforms, moulded pulp trays' },
+    { label: 'Inserts', value: 'Paperboard partitions, die-cut platforms, molded pulp trays' },
     { label: 'Windows', value: 'Die-cut window with optional clear film patch' },
     { label: 'Artwork formats', value: 'PDF, AI, EPS, PSD at 300 dpi with 3 mm bleed' },
     { label: 'Starting unit price', value: 'From $0.30 per piece on qualifying large-volume orders' },
-    { label: 'Ordering', value: 'Quote based; no fixed catalogue pricing' },
+    { label: 'Ordering', value: 'Quote based; no fixed catalog pricing' },
   ],
   faqs: [
     {
       q: 'What dimensions should I give you for a lip balm box?',
-      a: 'Send internal length, width and depth in inches or millimetres if you have them. If not, measure the outside diameter of the filled tube and its height with the cap on, and tell us which of the two you measured. We add the running clearance and the allowance for board thickness ourselves and return a die line for you to check.',
+      a: 'Send internal length, width and depth in inches or millimeters if you have them. If not, measure the outside diameter of the filled tube and its height with the cap on, and tell us which of the two you measured. We add the running clearance and the allowance for board thickness ourselves and return a die line for you to check.',
     },
     {
       q: 'Can you make a box for a tube I already buy from another supplier?',
@@ -316,7 +316,7 @@ export const product: Product = {
       a: 'For one 0.15 oz stick, 14pt to 18pt paperboard is usually enough to hold its shape through retail handling. Move to 20pt or 24pt if the carton is taller than about three inches, holds more than one tube, or will be shipped loose to consumers rather than inside a shipper case.',
     },
     {
-      q: 'Can I have a window so the tube colour shows through?',
+      q: 'Can I have a window so the tube color shows through?',
       a: 'Yes. A window is die-cut into the panel you choose and can be left open or covered with a clear film patch. A film patch keeps dust out and stiffens the panel slightly, which is worth having if the window is large. Windows do add a step to production, so allow for it in your schedule.',
     },
     {
@@ -325,19 +325,19 @@ export const product: Product = {
     },
     {
       q: 'Can I order a multipack box and a single box together?',
-      a: 'Yes. They are separate die lines and separate print jobs, but they can run in the same order and ship together. Running them at the same time also keeps the colour consistent between the two, which is harder to guarantee if you order them months apart.',
+      a: 'Yes. They are separate die lines and separate print jobs, but they can run in the same order and ship together. Running them at the same time also keeps the color consistent between the two, which is harder to guarantee if you order them months apart.',
     },
     {
-      q: 'Will kraft board print my brand colours accurately?',
-      a: 'Kraft is an uncoated brown substrate, so ink sits into the fibre and colours shift warmer and darker than they appear on white board. Pale tints and bright whites do not reproduce at all without a white underprint. If exact colour matching matters, ask for a proof on the actual kraft stock before you commit.',
+      q: 'Will kraft board print my brand colors accurately?',
+      a: 'Kraft is an uncoated brown substrate, so ink sits into the fiber and colors shift warmer and darker than they appear on white board. Pale tints and bright whites do not reproduce at all without a white underprint. If exact color matching matters, ask for a proof on the actual kraft stock before you commit.',
     },
     {
       q: 'Can I get a sample before ordering a full run?',
-      a: 'A plain unprinted die-cut sample confirms that the carton fits your tube, and a printed sample confirms colour and finish. Which of the two is appropriate depends on what you are checking. Request one through the sample kit page and tell us what you need to verify.',
+      a: 'A plain unprinted die-cut sample confirms that the carton fits your tube, and a printed sample confirms color and finish. Which of the two is appropriate depends on what you are checking. Request one through the sample kit page and tell us what you need to verify.',
     },
     {
       q: 'How should the boxes be packed for shipping to my filler?',
-      a: 'Cartons are supplied flat, glued along one seam, bundled in counted stacks and cased or palletised. Tell us the case count your filling operation prefers and we will pack to it. If the boxes are going straight to a third-party co-packer, send their receiving requirements with the order.',
+      a: 'Cartons are supplied flat, glued along one seam, bundled in counted stacks and cased or palletized. Tell us the case count your filling operation prefers and we will pack to it. If the boxes are going straight to a third-party co-packer, send their receiving requirements with the order.',
     },
     {
       q: 'Can I reorder the same box later without redoing the setup?',

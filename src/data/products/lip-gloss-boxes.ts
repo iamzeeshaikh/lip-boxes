@@ -13,10 +13,10 @@ export const product: Product = {
   ],
   seoTitle: 'Lip Gloss Boxes | Custom Printed Gloss Cartons',
   metaDescription:
-    'Custom lip gloss boxes sized to your tube and wand. Tall slim cartons, full-colour print, matte or gloss finish.',
+    'Custom lip gloss boxes sized to your tube and wand. Tall slim cartons, full-color print, matte or gloss finish.',
   ogTitle: 'Lip Gloss Boxes Built for Wand Applicators',
   ogDescription:
-    'Tall slim cartons cut to your gloss tube and doe-foot wand, printed in full colour with insert and window options.',
+    'Tall slim cartons cut to your gloss tube and doe-foot wand, printed in full color with insert and window options.',
   valueProp:
     'Tall slim cartons cut to the height of your gloss tube with the wand fully seated, so the cap never fouls the closing flap.',
   cardDescription:
@@ -24,7 +24,7 @@ export const product: Product = {
   highlights: [
     'Height allowance for the wand and cap, not just the tube body',
     'Slim footprint that suits shelf, drawer and e-commerce packing',
-    'Full-colour print with matte, gloss or spot UV finishing',
+    'Full-color print with matte, gloss or spot UV finishing',
   ],
   images: [
     {
@@ -112,17 +112,17 @@ export const product: Product = {
       heading: 'Board and stock',
       navLabel: 'Materials',
       intro:
-        'Gloss is usually a colour-led product, and the board has to carry saturated print without going flat.',
+        'Gloss is usually a color-led product, and the board has to carry saturated print without going flat.',
       items: [
-        'SBS coated white board, 16pt to 22pt, the standard for saturated full-colour gloss packaging',
+        'SBS coated white board, 16pt to 22pt, the standard for saturated full-color gloss packaging',
         'Heavier 24pt board for duo and trio cartons or for glass tubes',
-        'Metallised board where the artwork uses a mirror or iridescent base',
+        'Metallized board where the artwork uses a mirror or iridescent base',
         'Black-through board for dark cartons so the cut edges stay black',
-        'Kraft board for natural and clean-beauty gloss ranges, accepting muted colour reproduction',
-        'Recycled greyback board where recycled content is the priority',
+        'Kraft board for natural and clean-beauty gloss ranges, accepting muted color reproduction',
+        'Recycled grayback board where recycled content is the priority',
       ],
       outro:
-        'For iridescent and rainbow effects across the whole carton rather than a printed area, look at <a href="/holographic-lip-gloss-boxes/">holographic gloss cartons on metallised board</a>, which use a different substrate entirely.',
+        'For iridescent and rainbow effects across the whole carton rather than a printed area, look at <a href="/holographic-lip-gloss-boxes/">holographic gloss cartons on metallized board</a>, which use a different substrate entirely.',
     },
     {
       type: 'prose',
@@ -130,7 +130,7 @@ export const product: Product = {
       heading: 'Printing and finishing',
       navLabel: 'Print & finish',
       body: [
-        'Gloss packaging usually needs to communicate a shade and a finish at once: how pigmented it is, and whether it is shimmer, cream or clear. Photographic swatches on the carton do that better than flat colour blocks, and photographic reproduction is where offset litho earns its keep at volume. Digital printing handles moderate quantities and multi-shade ranges without plate charges.',
+        'Gloss packaging usually needs to communicate a shade and a finish at once: how pigmented it is, and whether it is shimmer, cream or clear. Photographic swatches on the carton do that better than flat color blocks, and photographic reproduction is where offset litho earns its keep at volume. Digital printing handles moderate quantities and multi-shade ranges without plate charges.',
         'On finishing, there is a reasonable argument for matching the coating to the product: a matte laminated carton for a matte liquid lipstick, a gloss laminate for a high-shine gloss. It is a small signal and customers read it without noticing they have.',
         'Spot UV over matte is the most cost-effective way to suggest shine on a carton, applied over the droplet or swatch artwork. Foil works well on the logo. Both are covered in more depth on the <a href="/printing-options/">printing and press options page</a>.',
       ],
@@ -154,7 +154,7 @@ export const product: Product = {
       body: [
         'A tall narrow front panel is a good canvas for a vertical logo lockup and a poor one for horizontal type. Most gloss cartons end up setting the brand name vertically, and that is worth designing for deliberately rather than running into during layout.',
         'Panel width also constrains the ingredient declaration, which for a gloss can be long. If it does not fit legibly at 5 pt or above, the usual answers are a folded leaflet inside the carton or a peel-back label on the tube.',
-        'Supply artwork as PDF, AI or EPS at 300 dpi with 3 mm bleed, fonts outlined, in CMYK plus any spot colours, built to the supplied die line. Spot UV and foil each need a separate 100% black vector layer. Full requirements are on the <a href="/artwork-guidelines/">file preparation page</a>.',
+        'Supply artwork as PDF, AI or EPS at 300 dpi with 3 mm bleed, fonts outlined, in CMYK plus any spot colors, built to the supplied die line. Spot UV and foil each need a separate 100% black vector layer. Full requirements are on the <a href="/artwork-guidelines/">file preparation page</a>.',
       ],
     },
     {
@@ -188,7 +188,7 @@ export const product: Product = {
         },
         {
           title: 'Proof each shade',
-          text: 'Colour proofs for every variant on the specified board. Written approval releases the run.',
+          text: 'Color proofs for every variant on the specified board. Written approval releases the run.',
         },
         {
           title: 'Print, finish and dispatch',
@@ -202,8 +202,8 @@ export const product: Product = {
       heading: 'Quality control, materials and lead time',
       navLabel: 'Quality',
       body: [
-        'Because these cartons are tall and narrow, the checks that matter most are squareness and crease accuracy. A crease that is out by half a millimetre on a three-inch panel produces a carton that leans, and a leaning carton on a shelf reads as a manufacturing fault to a shopper. Sample cartons are stood up and checked visually as well as measured.',
-        'Paperboard is widely recycled in United States municipal streams. A film window patch and a plastic lamination are separate materials that a consumer has to deal with, and metallised board is not paper-recyclable. Where end-of-life matters, an uncoated or varnish-finished board with a printed swatch instead of a window keeps the pack in one stream.',
+        'Because these cartons are tall and narrow, the checks that matter most are squareness and crease accuracy. A crease that is out by half a millimeter on a three-inch panel produces a carton that leans, and a leaning carton on a shelf reads as a manufacturing fault to a shopper. Sample cartons are stood up and checked visually as well as measured.',
+        'Paperboard is widely recycled in United States municipal streams. A film window patch and a plastic lamination are separate materials that a consumer has to deal with, and metallized board is not paper-recyclable. Where end-of-life matters, an uncoated or varnish-finished board with a printed swatch instead of a window keeps the pack in one stream.',
         'Production time depends on whether the job includes window patching, foil or spot UV, each of which is an additional pass. We confirm the schedule in writing with the quote, and the bands we work to are set out on the <a href="/turnaround-time/">production turnaround times</a>.',
       ],
     },
@@ -212,7 +212,7 @@ export const product: Product = {
     { label: 'Product type', value: 'Custom printed folding carton for lip gloss' },
     { label: 'Sizing', value: 'Built to your capped tube height and widest diameter, or to a supplied sample' },
     { label: 'Applicator types', value: 'Doe-foot wand, squeeze tube, roller ball, click pen' },
-    { label: 'Materials', value: 'Coated white SBS 16–24pt, metallised board, black-through board, kraft, recycled greyback' },
+    { label: 'Materials', value: 'Coated white SBS 16–24pt, metallized board, black-through board, kraft, recycled grayback' },
     { label: 'Structural styles', value: 'Straight tuck end, reverse tuck end, seal end, snap-lock and auto-bottom bases' },
     { label: 'Inserts', value: 'Base collar, partition for duo and trio packs, die-cut platform for mixed sets' },
     { label: 'Windows', value: 'Vertical slot or shaped cut with clear film patch recommended' },
@@ -238,10 +238,10 @@ export const product: Product = {
     },
     {
       q: 'Will a tall narrow box tip over on a shelf?',
-      a: 'It can if the base footprint is minimal. We size the base with that in mind rather than cutting it to the tube diameter exactly. If your product is merchandised standing rather than in a tray, say so at enquiry stage so the proportions account for it.',
+      a: 'It can if the base footprint is minimal. We size the base with that in mind rather than cutting it to the tube diameter exactly. If your product is merchandised standing rather than in a tray, say so at inquiry stage so the proportions account for it.',
     },
     {
-      q: 'Can I show the gloss colour through a window?',
+      q: 'Can I show the gloss color through a window?',
       a: 'Yes, and it works particularly well because most gloss tubes are transparent. A narrow vertical window down the front panel reveals the reservoir. Use a clear film patch rather than an open cut, since a tall open slot removes a lot of stiffness from a slim panel.',
     },
     {
@@ -254,7 +254,7 @@ export const product: Product = {
     },
     {
       q: 'Can the inside of the carton be printed?',
-      a: 'Yes. It is printed as part of the same sheet, on the reverse, and it is a low-cost detail that shows at the moment of opening. A contrasting colour or a short message on the inner panel costs an extra pass rather than an extra material.',
+      a: 'Yes. It is printed as part of the same sheet, on the reverse, and it is a low-cost detail that shows at the moment of opening. A contrasting color or a short message on the inner panel costs an extra pass rather than an extra material.',
     },
     {
       q: 'Where does the ingredient list go if it will not fit?',

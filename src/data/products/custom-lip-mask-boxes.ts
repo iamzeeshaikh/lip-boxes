@@ -120,13 +120,13 @@ export const product: Product = {
       heading: 'Board and material choices',
       navLabel: 'Materials',
       intro:
-        'Lip masks sit in a treatment category rather than a colour one, and the material choices tend to follow skincare conventions rather than cosmetic ones.',
+        'Lip masks sit in a treatment category rather than a color one, and the material choices tend to follow skincare conventions rather than cosmetic ones.',
       items: [
-        'SBS coated white board, 16pt to 24pt, for clean full-colour print and clinical clarity',
+        'SBS coated white board, 16pt to 24pt, for clean full-color print and clinical clarity',
         'Uncoated and textured board where the range positions as natural or spa-oriented',
-        'Kraft board for low-waste positioning, accepting muted colour reproduction',
+        'Kraft board for low-waste positioning, accepting muted color reproduction',
         'E-flute corrugated for mailer boxes shipping direct to consumers',
-        'Recycled greyback board where recycled content is a stated priority',
+        'Recycled grayback board where recycled content is a stated priority',
         'Clear film patches in PET or PLA where a window shows the patch shape',
       ],
       outro:
@@ -149,7 +149,7 @@ export const product: Product = {
       heading: 'Printing, finishing and treatment-category cues',
       navLabel: 'Print & finish',
       body: [
-        'Treatment products are judged partly on how credible the pack looks, and legibility contributes to that more than decoration does. A clean full-colour print on white board with well-set type reads as trustworthy. Heavy foil and glitter can push a treatment product toward looking like a novelty, which is not always the intention.',
+        'Treatment products are judged partly on how credible the pack looks, and legibility contributes to that more than decoration does. A clean full-color print on white board with well-set type reads as trustworthy. Heavy foil and glitter can push a treatment product toward looking like a novelty, which is not always the intention.',
         'Soft-touch lamination is the finish that suits this category most naturally, because it reads as considered rather than flashy. Matte lamination with a spot UV on the logo achieves something similar at a lower cost.',
         'Where the mask is positioned as a gift or a self-care treat rather than a treatment, foil and pearlescent inks come back into play. The finishing options and how each behaves on different boards are set out on the <a href="/finishes/">coatings and finishing page</a>.',
       ],
@@ -173,7 +173,7 @@ export const product: Product = {
       body: [
         'Patch count changes the carton, so a five-patch box and a twenty-patch box are separate die lines and separate quotes even though the artwork family is shared. If you plan to launch several counts, quote them together so the artwork and proofing work is done once.',
         'Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity. A single-dose carton is small and sits close to that entry figure at volume. A twenty-patch box with a window patch and a die-cut tray sits well above it, since it uses considerably more board and more production steps.',
-        'For subscription and direct-to-consumer programmes, tell us the monthly volume rather than the annual total. It affects whether we quote per release or as a scheduled call-off against one production run.',
+        'For subscription and direct-to-consumer programs, tell us the monthly volume rather than the annual total. It affects whether we quote per release or as a scheduled call-off against one production run.',
       ],
     },
     {
@@ -196,7 +196,7 @@ export const product: Product = {
         },
         {
           title: 'Proof and approval',
-          text: 'A colour proof on the specified board, with the window cut in place, for written sign-off.',
+          text: 'A color proof on the specified board, with the window cut in place, for written sign-off.',
         },
         {
           title: 'Production and dispatch',
@@ -210,8 +210,8 @@ export const product: Product = {
       heading: 'Quality control, delivery and disposal',
       navLabel: 'Quality & delivery',
       body: [
-        'The checks specific to this format are cavity fit and base strength. A cavity that is a millimetre generous lets a sachet stack shift and crease; a cavity that is a millimetre tight makes the box difficult to fill. Sample cartons are packed with actual product where you can supply it, because a fit that works on paper sometimes does not work with a slightly pillowed sachet.',
-        'Cartons ship flat and glued in counted cases. Where the pack is going to a filler or a co-packer, send their receiving requirements so the case count and labelling suit their intake process. Freight details sit on the <a href="/shipping-information/">shipping and delivery information</a>.',
+        'The checks specific to this format are cavity fit and base strength. A cavity that is a millimeter generous lets a sachet stack shift and crease; a cavity that is a millimeter tight makes the box difficult to fill. Sample cartons are packed with actual product where you can supply it, because a fit that works on paper sometimes does not work with a slightly pillowed sachet.',
+        'Cartons ship flat and glued in counted cases. Where the pack is going to a filler or a co-packer, send their receiving requirements so the case count and labeling suit their intake process. Freight details sit on the <a href="/shipping-information/">shipping and delivery information</a>.',
         'On disposal, plain and varnished paperboard is widely recycled. A film window patch and any plastic lamination are separate materials the consumer has to deal with. For this category, where buyers often care about material choices, an uncoated board with a printed patch illustration rather than a window keeps the whole carton in one stream.',
       ],
     },
@@ -221,7 +221,7 @@ export const product: Product = {
     { label: 'Formats', value: 'Single sachet, patch multipacks, loose patch trays, jar and tube sleeping masks, mailer boxes' },
     { label: 'Proportion', value: 'Flat and wide for patches; upright with a base collar for jars and tubes' },
     { label: 'Multipack counts', value: 'Quoted to your sachet dimensions and stack height; die line differs per count' },
-    { label: 'Materials', value: 'Coated white SBS 16–24pt, uncoated and textured board, kraft, E-flute corrugated, recycled greyback' },
+    { label: 'Materials', value: 'Coated white SBS 16–24pt, uncoated and textured board, kraft, E-flute corrugated, recycled grayback' },
     { label: 'Windows', value: 'Rectangular or patch-shaped die cut, with PET or PLA film patch' },
     { label: 'Inserts', value: 'Die-cut patch tray, base collar for jars, partition for mixed sets' },
     { label: 'Printing', value: 'Offset litho and digital; CMYK plus spot Pantone' },
@@ -242,7 +242,7 @@ export const product: Product = {
     },
     {
       q: 'Can I show the patch through a window?',
-      a: 'Yes, and it is one of the strongest options available in lip packaging, because a lip-shaped patch explains the product without a single word. Cut the window to roughly the patch outline or use a simple rectangle with the patch centred behind it, and cover it with a clear film patch.',
+      a: 'Yes, and it is one of the strongest options available in lip packaging, because a lip-shaped patch explains the product without a single word. Cut the window to roughly the patch outline or use a simple rectangle with the patch centerd behind it, and cover it with a clear film patch.',
     },
     {
       q: 'Does a window risk drying the patch out?',
@@ -270,14 +270,14 @@ export const product: Product = {
     },
     {
       q: 'Is a photographic image of a wet hydrogel patch difficult to print?',
-      a: 'Yes, more than most product photography. The highlights on a wet gel surface blow out easily and pink tones shift noticeably between substrates. Ask for a printed proof rather than approving on screen, and consider a spot colour for the patch tone if it is central to the design.',
+      a: 'Yes, more than most product photography. The highlights on a wet gel surface blow out easily and pink tones shift noticeably between substrates. Ask for a printed proof rather than approving on screen, and consider a spot color for the patch tone if it is central to the design.',
     },
     {
       q: 'Which finish suits a treatment product?',
       a: 'Soft-touch or matte lamination reads as considered and credible, which is what a treatment claim needs. Heavy foil and glitter can make a treatment product look like a novelty. If the mask is positioned as a gift rather than a treatment, that changes and foil becomes appropriate.',
     },
     {
-      q: 'Can you supply printed mailer boxes for a subscription programme?',
+      q: 'Can you supply printed mailer boxes for a subscription program?',
       a: 'Yes, in printed E-flute corrugated, along with printed tissue and insert cards if you want them. For subscription work, tell us the monthly volume rather than the annual total, since that determines whether we quote per release or as scheduled call-offs against one production run.',
     },
   ],

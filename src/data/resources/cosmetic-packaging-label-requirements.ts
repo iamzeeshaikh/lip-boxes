@@ -42,7 +42,7 @@ export const resource: Resource = {
       heading: 'What this guide is, and what it is not',
       navLabel: 'Scope',
       body: [
-        'This is a practical orientation to the kinds of information cosmetic packaging carries and where each part conventionally sits. It exists because packaging decisions and labelling decisions constrain each other: a carton panel that is too small for the required copy is a packaging problem discovered too late.',
+        'This is a practical orientation to the kinds of information cosmetic packaging carries and where each part conventionally sits. It exists because packaging decisions and labeling decisions constrain each other: a carton panel that is too small for the required copy is a packaging problem discovered too late.',
         'It is not legal or regulatory advice, and it should not be relied on as a compliance checklist. Requirements differ by product type, by ingredient, by claim and by the market you sell into, and they change. A product that is a cosmetic in one market may be regulated differently in another, and a single claim can move a product from one category to another.',
         'Verify your specific requirements with a qualified regulatory or compliance professional before approving artwork. We print the file you approve and do not review its regulatory content, as stated in our <a href="/terms-and-conditions/">our terms and conditions</a>.',
       ],
@@ -53,7 +53,7 @@ export const resource: Resource = {
       heading: 'Which panel carries what',
       navLabel: 'Panel map',
       intro:
-        'Cosmetic labelling conventionally divides a package into two areas. Knowing which is which is the first step in planning artwork.',
+        'Cosmetic labeling conventionally divides a package into two areas. Knowing which is which is the first step in planning artwork.',
       columns: ['Panel', 'What it is', 'Typically carries', 'Design consequence'],
       rows: [
         [
@@ -92,7 +92,7 @@ export const resource: Resource = {
       intro:
         'Not every item applies to every product. Which do is a question for your compliance reviewer.',
       items: [
-        'Product identity — what the product is, in terms a buyer would recognise',
+        'Product identity — what the product is, in terms a buyer would recognize',
         'Net quantity of contents, commonly expressed in both metric and US customary units',
         'Ingredient declaration, listed in descending order of predominance',
         'Name and place of business of the manufacturer, packer or distributor',
@@ -102,7 +102,7 @@ export const resource: Resource = {
         'Batch or lot identification, allowing a specific production run to be traced',
       ],
       outro:
-        'Products making certain claims can fall under additional regimes with their own panel formats. An SPF claim is the common example in lip care, and it changes the labelling requirements substantially.',
+        'Products making certain claims can fall under additional regimes with their own panel formats. An SPF claim is the common example in lip care, and it changes the labeling requirements substantially.',
     },
     {
       type: 'prose',
@@ -111,8 +111,8 @@ export const resource: Resource = {
       navLabel: 'Ingredient order',
       body: [
         'Ingredients are conventionally listed in descending order of predominance by weight, so the ingredient present in the greatest quantity appears first.',
-        'Below a threshold concentration, ingredients may be listed in any order after those above it. Colour additives are conventionally listed separately at the end rather than in weight order, which is why a lipstick declaration often has a distinct colour block after the main list.',
-        'For a shade range this has a practical packaging consequence. If the only difference between shades is the colour additive, the main declaration may be identical across the range with only the colour block changing. That allows one artwork template with a small variable zone, which is far cheaper to proof across twelve shades than twelve independent layouts.',
+        'Below a threshold concentration, ingredients may be listed in any order after those above it. Color additives are conventionally listed separately at the end rather than in weight order, which is why a lipstick declaration often has a distinct color block after the main list.',
+        'For a shade range this has a practical packaging consequence. If the only difference between shades is the color additive, the main declaration may be identical across the range with only the color block changing. That allows one artwork template with a small variable zone, which is far cheaper to proof across twelve shades than twelve independent layouts.',
         'Confirm the specific treatment with your reviewer. The point here is the packaging one: find out early whether your shades share a declaration, because it determines how the artwork is structured.',
       ],
     },
@@ -123,7 +123,7 @@ export const resource: Resource = {
       navLabel: 'The space problem',
       body: [
         'Lip products have the worst ratio of required copy to available surface in cosmetics. A lip balm tube offers a band roughly an inch and a half tall around a curved surface. A slim lipstick carton offers panels about an inch wide.',
-        'Legibility falls away sharply below about 5 pt, and sooner on uncoated kraft where ink spreads into the fibre and on a curved surface where type disappears around the circumference. Setting a full declaration at 4 pt to make it fit produces copy nobody can read, which serves neither the customer nor the purpose of the requirement.',
+        'Legibility falls away sharply below about 5 pt, and sooner on uncoated kraft where ink spreads into the fiber and on a curved surface where type disappears around the circumference. Setting a full declaration at 4 pt to make it fit produces copy nobody can read, which serves neither the customer nor the purpose of the requirement.',
         'This is why the space question belongs in the packaging plan rather than in the artwork stage. Deciding that the tube carries brand and the carton carries the declaration is a structural decision, and it changes whether you need a carton at all.',
       ],
     },
@@ -188,7 +188,7 @@ export const resource: Resource = {
       navLabel: 'Timing',
       body: [
         'In parallel with structural sampling, and always before proof approval.',
-        'The reason is mechanical rather than legal. Once a colour proof is approved, the production run is manufactured against it. A copy change after that point means new plates and a new run, and on a litho job with foil that is a substantial cost for what may be a two-word amendment.',
+        'The reason is mechanical rather than legal. Once a color proof is approved, the production run is manufactured against it. A copy change after that point means new plates and a new run, and on a litho job with foil that is a substantial cost for what may be a two-word amendment.',
         'Running the review while structural samples are being made costs nothing in schedule, because those stages have no dependency on each other. This is one of several stages that can run in parallel, as set out in our <a href="/resources/lip-product-packaging-guide/">launch planning guide</a>.',
       ],
     },
@@ -204,11 +204,11 @@ export const resource: Resource = {
     },
     {
       q: 'In what order are ingredients listed?',
-      a: 'Conventionally in descending order of predominance by weight. Below a threshold concentration the order becomes flexible, and colour additives are usually listed separately at the end, which is why lipstick declarations often carry a distinct colour block.',
+      a: 'Conventionally in descending order of predominance by weight. Below a threshold concentration the order becomes flexible, and color additives are usually listed separately at the end, which is why lipstick declarations often carry a distinct color block.',
     },
     {
       q: 'Do all shades in a range need different label copy?',
-      a: 'Often only the colour block differs, with the main declaration identical across shades. Confirm this with your reviewer early, because it determines whether you can use one artwork template with a small variable zone rather than twelve independent layouts.',
+      a: 'Often only the color block differs, with the main declaration identical across shades. Confirm this with your reviewer early, because it determines whether you can use one artwork template with a small variable zone rather than twelve independent layouts.',
     },
     {
       q: 'How small can the ingredient list be?',
@@ -223,8 +223,8 @@ export const resource: Resource = {
       a: 'A label with a hinged second layer that opens to reveal additional printed copy underneath. It roughly doubles the available area on the container itself, which keeps a product self-contained where there is no outer carton.',
     },
     {
-      q: 'Does an SPF claim change the labelling?',
-      a: 'In the United States it can move the product into a different regulatory category with its own panel requirements. It is the most common example in lip care of a claim changing the labelling regime, and it needs specific professional review rather than a general assumption.',
+      q: 'Does an SPF claim change the labeling?',
+      a: 'In the United States it can move the product into a different regulatory category with its own panel requirements. It is the most common example in lip care of a claim changing the labeling regime, and it needs specific professional review rather than a general assumption.',
     },
     {
       q: 'When should the compliance review happen?',

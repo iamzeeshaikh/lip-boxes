@@ -99,8 +99,8 @@ export const resource: Resource = {
       heading: 'Base footprint and why a slim carton tips',
       navLabel: 'Base stability',
       body: [
-        'A carton five inches tall on a one inch square base has a high centre of mass and very little to resist a knock. On a shelf, in a shopper basket, or on a shipping conveyor, it tips.',
-        'The temptation is to cut the base to the tube diameter exactly, which minimises board cost. That is the wrong optimisation on this format. A base 2 to 3 mm wider than the minimum costs almost nothing in material and makes the difference between a pack that stands and one that spends its shelf life lying down.',
+        'A carton five inches tall on a one inch square base has a high center of mass and very little to resist a knock. On a shelf, in a shopper basket, or on a shipping conveyor, it tips.',
+        'The temptation is to cut the base to the tube diameter exactly, which minimizes board cost. That is the wrong optimization on this format. A base 2 to 3 mm wider than the minimum costs almost nothing in material and makes the difference between a pack that stands and one that spends its shelf life lying down.',
         'If the product is merchandised standing rather than in a tray, say so when you request the die line. The structural drawing can be proportioned for it, and the base style can move from a simple tuck flap to a snap-lock so the carton cannot open downward when lifted. Those base options are compared on our <a href="/box-styles/">box style reference</a>.',
       ],
     },
@@ -150,8 +150,8 @@ export const resource: Resource = {
           text: 'Tapered tubes are widest at the shoulder or base. Sweep the whole body to find the true maximum.',
         },
         {
-          title: 'Minimising the base',
-          text: 'A base cut to the tube diameter makes a tall carton tip. Two or three extra millimetres cost almost nothing.',
+          title: 'Minimizing the base',
+          text: 'A base cut to the tube diameter makes a tall carton tip. Two or three extra millimeters cost almost nothing.',
         },
         {
           title: 'Treating glass like plastic',
@@ -170,12 +170,12 @@ export const resource: Resource = {
     {
       type: 'prose',
       id: 'what-to-send',
-      heading: 'What to send with your enquiry',
+      heading: 'What to send with your inquiry',
       navLabel: 'Requesting a quote',
       body: [
         'Send one assembled tube if you can. Filled is better than empty, because a filled tube sits at its true weight and the collar can be sized to hold it.',
         'If you are sending numbers instead, send the assembled height, the widest diameter and where on the body that maximum sits, the base diameter, and whether the tube is glass or plastic. Say how the product is merchandised, because standing display changes the base proportion.',
-        'For a shade range, confirm that every shade ships in the same tube mould. Gloss ranges sometimes mix a clear tube for shimmer shades with a frosted one for creams, and those can differ enough to need separate cartons. Details of the format itself are on our <a href="/lip-gloss-boxes/">gloss carton page</a>.',
+        'For a shade range, confirm that every shade ships in the same tube mold. Gloss ranges sometimes mix a clear tube for shimmer shades with a frosted one for creams, and those can differ enough to need separate cartons. Details of the format itself are on our <a href="/lip-gloss-boxes/">gloss carton page</a>.',
       ],
     },
   ],
@@ -190,7 +190,7 @@ export const resource: Resource = {
     },
     {
       q: 'How wide should the base be on a tall gloss carton?',
-      a: 'Two to three millimetres wider than the minimum needed to hold the tube. Cutting the base to the tube diameter exactly saves a negligible amount of board and produces a carton that tips on a shelf or in a basket.',
+      a: 'Two to three millimeters wider than the minimum needed to hold the tube. Cutting the base to the tube diameter exactly saves a negligible amount of board and produces a carton that tips on a shelf or in a basket.',
     },
     {
       q: 'Does a glass gloss tube need a different carton?',
@@ -206,7 +206,7 @@ export const resource: Resource = {
     },
     {
       q: 'Do all shades in a gloss range use the same carton?',
-      a: 'Only if they ship in the same tube mould. Some ranges use a clear tube for shimmer shades and a frosted one for creams, and those can differ enough to need separate die lines. Confirm it before committing to one carton.',
+      a: 'Only if they ship in the same tube mold. Some ranges use a clear tube for shimmer shades and a frosted one for creams, and those can differ enough to need separate die lines. Confirm it before committing to one carton.',
     },
     {
       q: 'How much clearance does a gloss tube need?',

@@ -16,26 +16,26 @@ export const product: Product = {
     'Custom paper lip balm tubes in kraft or printed board. Push-up base, 0.15 to 0.5 oz capacities, printed to your artwork.',
   ogTitle: 'Paper Lip Balm Tubes, Printed and Push-Up',
   ogDescription:
-    'Plastic-free paperboard tubes for balm sticks. Kraft or full-colour print, twist-up or push-up base, made to your capacity.',
+    'Plastic-free paperboard tubes for balm sticks. Kraft or full-color print, twist-up or push-up base, made to your capacity.',
   valueProp:
-    'Plastic-free paperboard tubes with a push-up base, printed in kraft or full colour and made to the fill capacity your formula needs.',
+    'Plastic-free paperboard tubes with a push-up base, printed in kraft or full color and made to the fill capacity your formula needs.',
   cardDescription:
     'Rolled paperboard tubes with a push-up disc base, supplied kraft or fully printed, for balm sticks that avoid plastic entirely.',
   highlights: [
     'Rigid rolled paperboard, no plastic component in the tube body',
     'Push-up base disc raises the balm as the base is turned or pushed',
-    'Kraft, printed wrap or full-colour label finishes',
+    'Kraft, printed wrap or full-color label finishes',
   ],
   images: [
     {
       file: 'paper-lip-balm-tube-printed-kraft.png',
       alt: 'Two printed kraft paper lip balm tubes in terracotta and cream standing upright with their caps removed',
-      caption: 'Two-colour print applied directly to the kraft board.',
+      caption: 'Two-color print applied directly to the kraft board.',
     },
     {
       file: 'paper-lip-balm-tube-teal-printed.png',
       alt: 'Two teal printed paper lip balm tubes lying at an angle, one showing the open push-up chamber',
-      caption: 'Full-colour print with a matte varnish over the body.',
+      caption: 'Full-color print with a matte varnish over the body.',
     },
     {
       file: 'paper-lip-balm-tube-full-colour-print.png',
@@ -54,8 +54,8 @@ export const product: Product = {
     },
     {
       file: 'paper-lip-balm-tube-magenta-print.png',
-      alt: 'Two magenta printed paper lip balm tubes lying on a grey surface, one with its cap removed',
-      caption: 'Saturated single-colour coverage across the whole body.',
+      alt: 'Two magenta printed paper lip balm tubes lying on a gray surface, one with its cap removed',
+      caption: 'Saturated single-color coverage across the whole body.',
     },
   ],
   blocks: [
@@ -67,7 +67,7 @@ export const product: Product = {
       body: [
         'A paper lip balm tube is a rolled paperboard cylinder with a friction-fit cap and a disc in the base that pushes the balm upward as it is turned or pressed. There is no plastic mechanism inside, which is the whole point of the format for brands moving away from petroleum-based packaging. The trade-off is that a paper tube behaves differently from a plastic twist-up, and both you and your customers need to know that before launch.',
         'The body is usually a three-layer construction: an outer printed or kraft ply, a structural middle ply, and an inner liner that sits against the balm. The liner is what stops oil migrating into the board and darkening it. Ask about liner specification early, because a balm high in liquid oils needs more barrier than a firm beeswax formula does.',
-        'This page covers the format decorated: printed in full colour or in spot colours for retail lines. The same construction supplied plain or in unbleached kraft for small-batch work is covered separately, because the buying decision and the order size are different.',
+        'This page covers the format decorated: printed in full color or in spot colors for retail lines. The same construction supplied plain or in unbleached kraft for small-batch work is covered separately, because the buying decision and the order size are different.',
       ],
     },
     {
@@ -81,7 +81,7 @@ export const product: Product = {
       rows: [
         ['Mechanism', 'Push-up disc in the base, moved by hand', 'Threaded screw elevator'],
         ['Retraction', 'The balm cannot be wound back down', 'Winds up and down freely'],
-        ['Heat behaviour', 'Softened balm can seep into the board if left in a hot car', 'Contained by the plastic barrel'],
+        ['Heat behavior', 'Softened balm can seep into the board if left in a hot car', 'Contained by the plastic barrel'],
         ['Surface', 'Prints directly, no separate label needed', 'Usually needs a printed wrap label'],
         ['Disposal', 'Paper stream once the liner is accounted for', 'Mixed plastic, rarely recycled in practice'],
         ['Feel', 'Warm, matte, textured', 'Smooth, uniform, glossy'],
@@ -118,7 +118,7 @@ export const product: Product = {
       },
       imageSide: 'left',
       body: [
-        'The outer ply is either natural kraft, which shows fibre and prints warm, or a white-lined board that carries bright full-colour artwork. Kraft is the more common choice because the format already signals a low-waste product and the brown body reinforces that read.',
+        'The outer ply is either natural kraft, which shows fiber and prints warm, or a white-lined board that carries bright full-color artwork. Kraft is the more common choice because the format already signals a low-waste product and the brown body reinforces that read.',
         'The inner liner is the specification that most affects performance. A standard grease-resistant liner handles firm beeswax and butter formulas. Balms that are high in liquid oils, or that are poured warm and stay soft, need a heavier barrier. Tell us the fill temperature and the oil content in your quote request so the right liner goes into the build.',
         'Base discs are supplied in matching board. Caps are paperboard as standard, and a paper cap is what keeps the tube fully plastic-free — check before assuming, because some suppliers pair a paper body with a plastic cap and still describe the pack as plastic-free.',
       ],
@@ -134,11 +134,11 @@ export const product: Product = {
       items: [
         {
           title: 'Direct print to kraft',
-          text: 'One or two spot colours printed straight onto the brown board. Cheapest at volume and the most honest look for an unbleached pack.',
+          text: 'One or two spot colors printed straight onto the brown board. Cheapest at volume and the most honest look for an unbleached pack.',
         },
         {
-          title: 'Full-colour on white board',
-          text: 'CMYK process print for photographic or illustrated artwork. Colours hold their intended values because the substrate is white.',
+          title: 'Full-color on white board',
+          text: 'CMYK process print for photographic or illustrated artwork. Colors hold their intended values because the substrate is white.',
         },
         {
           title: 'Printed wrap label',
@@ -166,13 +166,13 @@ export const product: Product = {
       body: [
         'Tube artwork is supplied as a flat rectangle that becomes a cylinder. The critical measurement is circumference, not width, and there is an overlap where the two edges meet. Any element that crosses the seam will show a small step, so logos and legal panels should sit clear of it.',
         'Text also curves away from the viewer. Anything longer than about a third of the circumference becomes hard to read from a single angle, which is why ingredient panels on tubes are usually set in a narrow column rather than across the full wrap. Type below 6 pt is difficult to hold cleanly on uncoated kraft.',
-        'We supply a flat template with the seam position, the safe area and the wrap allowance marked before you start laying out. The general file requirements for resolution, colour space and bleed are the same as for cartons and are set out in the <a href="/artwork-guidelines/">file setup requirements for print</a>.',
+        'We supply a flat template with the seam position, the safe area and the wrap allowance marked before you start laying out. The general file requirements for resolution, color space and bleed are the same as for cartons and are set out in the <a href="/artwork-guidelines/">file setup requirements for print</a>.',
       ],
     },
     {
       type: 'prose',
       id: 'filling',
-      heading: 'Filling, sealing and shelf behaviour',
+      heading: 'Filling, sealing and shelf behavior',
       navLabel: 'Filling',
       body: [
         'Paper tubes are filled from the top with the base disc already seated. Pour temperature matters more than it does with plastic: too hot and the balm soaks into the liner edge, too cool and it sets before it levels. Most fillers settle on a pour a few degrees above set point and let the tubes cool upright and undisturbed.',
@@ -187,14 +187,14 @@ export const product: Product = {
       navLabel: 'Quantity & pricing',
       body: [
         'Paper tubes are tooled to a diameter, so the first order in a new diameter carries a setup that repeat orders in that same diameter do not. Sticking to one diameter across a range of shades keeps your costs down considerably, with the artwork doing the differentiating.',
-        'Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity. On this format the specific drivers are tube diameter and height, the liner grade, the number of print colours and whether the cap is printed as well as the body. A short first run in a new diameter will sit above the starting figure.',
+        'Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity. On this format the specific drivers are tube diameter and height, the liner grade, the number of print colors and whether the cap is printed as well as the body. A short first run in a new diameter will sit above the starting figure.',
         'Wholesale and repeat scheduled orders are quoted against a held specification, so a brand running four scents on one tube size can reorder any of them without repeating setup work.',
       ],
     },
     {
       type: 'steps',
       id: 'process',
-      heading: 'From enquiry to delivered tubes',
+      heading: 'From inquiry to delivered tubes',
       navLabel: 'Ordering',
       steps: [
         {
@@ -207,7 +207,7 @@ export const product: Product = {
         },
         {
           title: 'Approve print proof',
-          text: 'A proof on the actual board shows how the colours read on kraft or white. Written approval releases the run.',
+          text: 'A proof on the actual board shows how the colors read on kraft or white. Written approval releases the run.',
         },
         {
           title: 'Production and assembly',
@@ -248,7 +248,7 @@ export const product: Product = {
     { label: 'Outer materials', value: 'Natural kraft or white-lined paperboard' },
     { label: 'Liner options', value: 'Grease-resistant standard and heavy-barrier grades' },
     { label: 'Caps', value: 'Paperboard as standard; specify if a different material is required' },
-    { label: 'Printing', value: 'Spot colour direct to kraft, CMYK on white board, applied wrap label' },
+    { label: 'Printing', value: 'Spot color direct to kraft, CMYK on white board, applied wrap label' },
     { label: 'Decoration', value: 'Matte or satin varnish, foil stamp, deboss' },
     { label: 'Tamper evidence', value: 'Printed paper seal or shrink band around the cap join' },
     { label: 'Artwork format', value: 'Flat wrap template supplied; PDF, AI or EPS at 300 dpi' },
@@ -262,7 +262,7 @@ export const product: Product = {
     },
     {
       q: 'Will the oil in my balm soak into the cardboard?',
-      a: 'Not through a correctly specified liner. Migration happens when the liner grade is too light for a high-oil formula, or when the balm is poured hot enough to wick past the liner edge. Send your oil percentage and pour temperature with the enquiry and the liner is matched to it.',
+      a: 'Not through a correctly specified liner. Migration happens when the liner grade is too light for a high-oil formula, or when the balm is poured hot enough to wick past the liner edge. Send your oil percentage and pour temperature with the inquiry and the liner is matched to it.',
     },
     {
       q: 'Are these tubes completely plastic-free?',
@@ -274,7 +274,7 @@ export const product: Product = {
     },
     {
       q: 'Can I print the cap as well as the body?',
-      a: 'Yes. Caps are printed as a separate component, most often in a single spot colour or in a solid that matches the body. A printed cap adds a step and a cost, so many brands leave the cap in plain kraft and put the artwork budget into the body.',
+      a: 'Yes. Caps are printed as a separate component, most often in a single spot color or in a solid that matches the body. A printed cap adds a step and a cost, so many brands leave the cap in plain kraft and put the artwork budget into the body.',
     },
     {
       q: 'How do I know which diameter to order?',
@@ -294,7 +294,7 @@ export const product: Product = {
     },
     {
       q: 'Can you match a specific Pantone on kraft board?',
-      a: 'Approximately, not exactly. Ink on unbleached kraft picks up the brown of the substrate, so every colour reads warmer and darker than the Pantone chip. A white underprint gets closer but changes the uncoated look. Ask for a proof on the actual board before signing off if the colour is central to your brand.',
+      a: 'Approximately, not exactly. Ink on unbleached kraft picks up the brown of the substrate, so every color reads warmer and darker than the Pantone chip. A white underprint gets closer but changes the uncoated look. Ask for a proof on the actual board before signing off if the color is central to your brand.',
     },
     {
       q: 'How are the tubes packed for shipping?',
@@ -302,7 +302,7 @@ export const product: Product = {
     },
     {
       q: 'Can I get a sample tube to test my formula in?',
-      a: 'Yes, and it is worth doing before a first run. An unprinted sample in the proposed diameter lets you check fill behaviour, set-up time and how the base disc travels once the balm has hardened. Request one through the sample kit page and say which capacity you want to test.',
+      a: 'Yes, and it is worth doing before a first run. An unprinted sample in the proposed diameter lets you check fill behavior, set-up time and how the base disc travels once the balm has hardened. Request one through the sample kit page and say which capacity you want to test.',
     },
   ],
   related: ['custom-lip-balm-boxes', 'custom-lip-balm-labels', 'hang-tab-lip-balm-boxes', 'custom-lip-care-packaging'],

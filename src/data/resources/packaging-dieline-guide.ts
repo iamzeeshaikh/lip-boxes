@@ -44,7 +44,7 @@ export const resource: Resource = {
       body: [
         'A dieline is a flat engineering drawing of a folding carton before it becomes a box. It shows every panel laid out in one plane, with every place the board will be cut, creased or perforated marked as a separate line type.',
         'It serves two audiences at once. For your designer it is the map that says where each panel begins and ends, so artwork lands on the right face. For the converter it is the specification from which a physical cutting tool is made.',
-        'That dual role is why a dieline is not decorative and cannot be approximated. The same file drives both the artwork and the steel that cuts the board, so a line moved by a millimetre in the design file is a millimetre of difference in the finished carton.',
+        'That dual role is why a dieline is not decorative and cannot be approximated. The same file drives both the artwork and the steel that cuts the board, so a line moved by a millimeter in the design file is a millimeter of difference in the finished carton.',
         'This guide explains what the lines mean and how the tool is made. What we need in a file you send us is a separate question, answered in the <a href="/artwork-guidelines/">artwork requirements for printing</a>.',
       ],
     },
@@ -54,7 +54,7 @@ export const resource: Resource = {
       heading: 'The line types and what each one does',
       navLabel: 'Line types',
       intro:
-        'Every dieline uses these conventions. Colours vary between suppliers; the meanings do not.',
+        'Every dieline uses these conventions. Colors vary between suppliers; the meanings do not.',
       columns: ['Line', 'Usually drawn as', 'What the machine does', 'Common error'],
       rows: [
         ['Cut', 'Solid line', 'Steel rule cuts fully through the board', 'Artwork stopping exactly on it instead of bleeding past'],
@@ -62,7 +62,7 @@ export const resource: Resource = {
         ['Perforation', 'Dash-dot line', 'Intermittent cuts so the board tears cleanly by hand', 'Using it where a full cut was intended'],
         ['Bleed', 'Outer offset line', 'Nothing; it marks where artwork must extend to', 'Building artwork only to the cut line'],
         ['Safe area', 'Inner offset line', 'Nothing; it marks where live copy must stay inside', 'Placing legal type outside it'],
-        ['Glue flap', 'Labelled panel', 'Receives adhesive and bonds to the opposite panel', 'Printing important artwork on it'],
+        ['Glue flap', 'Labeled panel', 'Receives adhesive and bonds to the opposite panel', 'Printing important artwork on it'],
         ['Window', 'Solid line, own layer', 'Cut out, then patched with film if specified', 'Merging it with the main cut layer'],
       ],
       outro:
@@ -97,13 +97,13 @@ export const resource: Resource = {
       heading: 'Grain direction, and why it matters',
       navLabel: 'Grain direction',
       intro:
-        'Paperboard fibres align during manufacture, which gives the sheet a grain. It affects the finished carton in ways that are invisible on a drawing.',
+        'Paperboard fibers align during manufacture, which gives the sheet a grain. It affects the finished carton in ways that are invisible on a drawing.',
       items: [
         'Board folds cleanly along the grain and cracks across it, so creases are laid out to run with the grain wherever possible',
         'A carton creased against the grain shows a rough, feathered fold, most visible on dark or heavily inked panels',
         'Grain runs the long way on most sheets, which constrains how many cartons fit and therefore the material cost',
         'A tall narrow carton and a wide flat one from the same sheet may have different grain relationships to their creases',
-        'Coated boards crack more readily across the grain than uncoated, because the coating has no fibre to flex with',
+        'Coated boards crack more readily across the grain than uncoated, because the coating has no fiber to flex with',
         'On heavier boards the effect is more pronounced, which is why a 24pt carton is more sensitive to layout than an 18pt one',
       ],
       outro:
@@ -128,7 +128,7 @@ export const resource: Resource = {
         },
         {
           title: 'Extend artwork into the bleed',
-          text: 'Any colour or image reaching an edge must continue past the cut line into the bleed area, or a white sliver appears on some units.',
+          text: 'Any color or image reaching an edge must continue past the cut line into the bleed area, or a white sliver appears on some units.',
         },
         {
           title: 'Respect the safe area',
@@ -163,7 +163,7 @@ export const resource: Resource = {
       body: [
         'Any change to a cut or crease position needs a new die. That includes changing a dimension, adding or moving a window, changing the tab shape on a hanging carton, and switching from a tuck base to a snap-lock.',
         'What does not need a new die: changing the artwork, changing the board weight within a small range, changing the coating, adding or removing foil, and changing the print process. All of those run on the existing tool.',
-        'This is why the die line approval is treated as a separate written sign-off from the colour proof. It is the point at which the structure becomes fixed, and the structure is the expensive thing to change. <a href="/how-to-order/">The approval stages of an order</a> set out the sequence around it.',
+        'This is why the die line approval is treated as a separate written sign-off from the color proof. It is the point at which the structure becomes fixed, and the structure is the expensive thing to change. <a href="/how-to-order/">The approval stages of an order</a> set out the sequence around it.',
       ],
     },
   ],
@@ -190,7 +190,7 @@ export const resource: Resource = {
     },
     {
       q: 'What is grain direction and does it affect my carton?',
-      a: 'Paperboard fibres align during manufacture. Board folds cleanly along the grain and cracks across it, so creases are laid out to run with the grain. It occasionally explains why a supplier proposes a slightly different proportion.',
+      a: 'Paperboard fibers align during manufacture. Board folds cleanly along the grain and cracks across it, so creases are laid out to run with the grain. It occasionally explains why a supplier proposes a slightly different proportion.',
     },
     {
       q: 'Do I need a new die if I change the board weight?',

@@ -42,7 +42,7 @@ export const resource: Resource = {
       heading: 'Why lipstick cases vary so much',
       navLabel: 'Why cases vary',
       body: [
-        'A lip balm tube is a commodity with a handful of common formats. A lipstick case is a design object, and manufacturers treat it as one. Slim aluminium, weighted zamak, square resin, magnetic closure, twist closure, refillable shell — all of them can hold the same 3.5 g of product in completely different envelopes.',
+        'A lip balm tube is a commodity with a handful of common formats. A lipstick case is a design object, and manufacturers treat it as one. Slim aluminum, weighted zamak, square resin, magnetic closure, twist closure, refillable shell — all of them can hold the same 3.5 g of product in completely different envelopes.',
         'The practical consequence is that the phrase "standard lipstick box" has no useful meaning. Cartons for a single bullet cluster loosely between 0.9 and 1.2 inches square and 3 to 3.5 inches tall, and within that range the specific number is entirely dictated by your case.',
         'This guide covers how to measure one properly, what gets added, and how the maths changes for duos, trios and collection trays. The construction choices that follow from those dimensions are set out on our <a href="/lipstick-boxes/">comparison of lipstick box constructions</a>.',
       ],
@@ -69,7 +69,7 @@ export const resource: Resource = {
         },
         {
           title: 'Weight of one filled unit',
-          text: 'Weighted metal cases can be three times the mass of a slim aluminium one, and that decides board weight and whether an insert is needed.',
+          text: 'Weighted metal cases can be three times the mass of a slim aluminum one, and that decides board weight and whether an insert is needed.',
         },
       ],
     },
@@ -94,7 +94,7 @@ export const resource: Resource = {
         'Weight drives board choice and insert decisions more than size does.',
       columns: ['Case type', 'Typical filled weight', 'Carton board', 'Insert'],
       rows: [
-        ['Slim aluminium bullet', '12–18 g', '18pt sufficient', 'Optional above entry price point'],
+        ['Slim aluminum bullet', '12–18 g', '18pt sufficient', 'Optional above entry price point'],
         ['Standard plastic bullet', '15–22 g', '18pt sufficient', 'Collar recommended'],
         ['Weighted zamak or metal', '35–60 g', '22–24pt', 'Collar or platform, not optional'],
         ['Magnetic closure case', '30–55 g', '22–24pt', 'Platform, and measure ten units first'],
@@ -112,7 +112,7 @@ export const resource: Resource = {
       navLabel: 'Clearance',
       body: [
         'Lipstick cartons typically carry 0.5 to 1 mm of running clearance per axis, at the lower end for machine-fed lines and the upper end for hand packing.',
-        'Two additions catch people out. A lacquered or soft-touch coated case measures larger than a bare one, sometimes by two or three tenths of a millimetre on each surface. And a case with a printed or foiled wrap adds that material thickness too.',
+        'Two additions catch people out. A lacquered or soft-touch coated case measures larger than a bare one, sometimes by two or three tenths of a millimeter on each surface. And a case with a printed or foiled wrap adds that material thickness too.',
         'On height, remember that tuck flaps fold inward and consume a little of the internal space. On a 3 inch carton in 24pt board with a double tuck, that is small but real, and it is the difference between a cap seating cleanly and a flap that will not close flat.',
       ],
     },
@@ -175,7 +175,7 @@ export const resource: Resource = {
         },
         {
           title: 'Assuming a range shares one size',
-          text: 'If shades ship in different case moulds, they need different cartons. Confirm before committing to one die.',
+          text: 'If shades ship in different case molds, they need different cartons. Confirm before committing to one die.',
         },
       ],
     },
@@ -207,7 +207,7 @@ export const resource: Resource = {
     },
     {
       q: 'Can one carton serve a twelve-shade range?',
-      a: 'Only if every shade ships in the same case mould. That is usually true within one range and frequently false across a relaunch. Confirm it before committing to a single die line, because a mid-range case change means a second one.',
+      a: 'Only if every shade ships in the same case mold. That is usually true within one range and frequently false across a relaunch. Confirm it before committing to a single die line, because a mid-range case change means a second one.',
     },
     {
       q: 'What if my ingredient list will not fit on the carton?',
@@ -215,7 +215,7 @@ export const resource: Resource = {
     },
     {
       q: 'Should I send a case sample or dimensions?',
-      a: 'A sample, whenever possible. It captures lacquer thickness, magnetic seating and mould variation that no drawing records. Send it assembled and filled, exactly as it will be packed.',
+      a: 'A sample, whenever possible. It captures lacquer thickness, magnetic seating and mold variation that no drawing records. Send it assembled and filled, exactly as it will be packed.',
     },
   ],
   related: ['custom-lipstick-boxes', 'rigid-lipstick-boxes', 'hang-tab-lipstick-boxes'],

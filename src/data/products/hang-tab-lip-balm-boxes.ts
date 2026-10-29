@@ -34,7 +34,7 @@ export const product: Product = {
     },
     {
       file: 'hang-tab-lip-balm-boxes-on-pegboard.png',
-      alt: 'Six coloured hang tab lip balm boxes hanging in a row from hooks on a white pegboard display',
+      alt: 'Six colored hang tab lip balm boxes hanging in a row from hooks on a white pegboard display',
       caption: 'A shade range merchandised on a standard pegboard hook.',
     },
     {
@@ -143,7 +143,7 @@ export const product: Product = {
         'Whether a barcode has to appear in a fixed position for shelf scanning',
       ],
       outro:
-        'If you have a retailer packaging specification, send it with your enquiry. Many chains publish exact tab dimensions and tolerances, and matching them at design stage avoids a rejected delivery later.',
+        'If you have a retailer packaging specification, send it with your inquiry. Many chains publish exact tab dimensions and tolerances, and matching them at design stage avoids a rejected delivery later.',
     },
     {
       type: 'prose',
@@ -151,7 +151,7 @@ export const product: Product = {
       heading: 'Board and printing choices',
       navLabel: 'Board & print',
       body: [
-        'Kraft board reads honestly for natural and low-waste ranges, and the brown surface photographs well against the bright colours common in lip care. It does, however, mute every printed colour, so a shade range printed on kraft will look more uniform than it does on white board.',
+        'Kraft board reads honestly for natural and low-waste ranges, and the brown surface photographs well against the bright colors common in lip care. It does, however, mute every printed color, so a shade range printed on kraft will look more uniform than it does on white board.',
         'Coated white board is the choice when the shade differences between products have to be obvious at arm\'s length on a peg. It also supports the fine gradients that tinted balm ranges tend to use.',
         'On weight: 18pt handles a single tube, 20pt to 24pt suits two or more, and E-flute corrugated is available where the pack is unusually large or is being shipped loose. The differences between these stocks in practice are set out in the <a href="/materials/">overview of board grades and thicknesses</a>.',
       ],
@@ -170,12 +170,12 @@ export const product: Product = {
     {
       type: 'prose',
       id: 'quantity-pricing',
-      heading: 'Quantity, retail programmes and price',
+      heading: 'Quantity, retail programs and price',
       navLabel: 'Quantity & pricing',
       body: [
         'A hanging carton costs marginally more than the equivalent plain carton, because the tab adds die complexity and sometimes a heavier board. That difference narrows quickly with quantity, since the die is a one-time charge.',
         'Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity. On this product the added variables are tab reinforcement, window film and board weight, all of which move the figure.',
-        'If you are entering a retail programme with a fixed launch date, tell us the ship-by date at quoting stage rather than at ordering stage. Retail programmes usually involve a fixed pack count per case and a specific pallet configuration, and both are easier to build into the quote than to add afterwards.',
+        'If you are entering a retail program with a fixed launch date, tell us the ship-by date at quoting stage rather than at ordering stage. Retail programs usually involve a fixed pack count per case and a specific pallet configuration, and both are easier to build into the quote than to add afterwards.',
       ],
     },
     {
@@ -198,7 +198,7 @@ export const product: Product = {
         },
         {
           title: 'Print proof approval',
-          text: 'Colour proof on the specified board, with the tab and window positions shown in place.',
+          text: 'Color proof on the specified board, with the tab and window positions shown in place.',
         },
         {
           title: 'Production and case packing',
@@ -212,8 +212,8 @@ export const product: Product = {
       heading: 'Quality control, delivery and material handling',
       navLabel: 'Quality & delivery',
       body: [
-        'Beyond the usual colour and dimension checks, hanging cartons get a tab inspection: the die cut is measured for position and cleanliness, and sample packs are hung at packed weight to confirm the tab holds without deforming. A ragged tab cut is visible to a shopper at arm\'s length, so cut quality is checked rather than assumed.',
-        'Cartons ship flat and glued, in counted cases. Where a retail programme specifies a case count or a pallet pattern, we pack to that specification. Freight arrangements are covered on the <a href="/shipping-information/">delivery information page</a>.',
+        'Beyond the usual color and dimension checks, hanging cartons get a tab inspection: the die cut is measured for position and cleanliness, and sample packs are hung at packed weight to confirm the tab holds without deforming. A ragged tab cut is visible to a shopper at arm\'s length, so cut quality is checked rather than assumed.',
+        'Cartons ship flat and glued, in counted cases. Where a retail program specifies a case count or a pallet pattern, we pack to that specification. Freight arrangements are covered on the <a href="/shipping-information/">delivery information page</a>.',
         'Because the tab is board rather than an applied plastic hook, the finished pack stays in one material stream at disposal, assuming the finish chosen does not add a laminate. A varnish rather than a laminate keeps that simpler.',
       ],
     },
@@ -224,7 +224,7 @@ export const product: Product = {
     { label: 'Hook compatibility', value: 'Standard retail peg hooks, typically 3–6 mm diameter' },
     { label: 'Capacity', value: 'Single tube through to multipacks; tab specified against packed weight' },
     { label: 'Board weights', value: '18pt for single tube, 20–24pt for multipacks, E-flute for larger packs' },
-    { label: 'Materials', value: 'Kraft board, coated white SBS, recycled greyback, E-flute corrugated' },
+    { label: 'Materials', value: 'Kraft board, coated white SBS, recycled grayback, E-flute corrugated' },
     { label: 'Windows', value: 'Die-cut with optional clear film patch' },
     { label: 'Printing', value: 'Digital, offset litho and flexo; CMYK and spot Pantone' },
     { label: 'Finishes', value: 'Matte, gloss and soft-touch lamination, varnish, spot UV, foil stamp' },
@@ -248,11 +248,11 @@ export const product: Product = {
     },
     {
       q: 'Does the tab have to be at the top of the box?',
-      a: 'Almost always, yes, because the pack hangs vertically and the balance point sits over the hook. A tab positioned off-centre or on a side panel makes the pack hang crooked, which looks careless on a full peg and encourages shoppers to reach past it.',
+      a: 'Almost always, yes, because the pack hangs vertically and the balance point sits over the hook. A tab positioned off-center or on a side panel makes the pack hang crooked, which looks careless on a full peg and encourages shoppers to reach past it.',
     },
     {
       q: 'Will a hang tab work on kraft board?',
-      a: 'Yes. Kraft is perfectly capable structurally. The consideration is visual rather than physical: the die-cut edge of a kraft tab shows raw brown fibre, which suits a natural range and looks unfinished on a glossy one.',
+      a: 'Yes. Kraft is perfectly capable structurally. The consideration is visual rather than physical: the die-cut edge of a kraft tab shows raw brown fiber, which suits a natural range and looks unfinished on a glossy one.',
     },
     {
       q: 'Do I need a separate SKU for hanging and shelf versions?',

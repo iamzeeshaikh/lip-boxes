@@ -88,7 +88,7 @@ export interface Location {
   cardDescription: string;
   /**
    * The specific characteristic of this market that the page is built around.
-   * Used in the directory and as the page's organising idea.
+   * Used in the directory and as the page's organizing idea.
    */
   marketAngle: string;
 

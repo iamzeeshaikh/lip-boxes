@@ -1,6 +1,6 @@
 /**
  * POST /api/quote/ — receives both the short product form and the full quote
- * form, validates and sanitises everything server-side, then delivers by SMTP.
+ * form, validates and sanitizes everything server-side, then delivers by SMTP.
  *
  * Runs server-side only. It never reports success unless the SMTP server
  * accepted the message, and it returns generic errors to the browser while
@@ -30,10 +30,10 @@ import { checkRateLimit, clientKey } from '../../lib/server/rate-limit';
 export const prerender = false;
 
 const GENERIC_FAILURE =
-  'Your enquiry could not be sent right now. Please try again in a moment, or email us directly.';
+  'Your inquiry could not be sent right now. Please try again in a moment, or email us directly.';
 
 const SUCCESS =
-  'Thanks — your enquiry has reached us. We reply to quote requests in the order they arrive.';
+  'Thanks — your inquiry has reached us. We reply to quote requests in the order they arrive.';
 
 /** Fields collected by the long form, in the order they appear in the email. */
 const LONG_FIELDS: { name: string; label: string; max?: number }[] = [
@@ -63,7 +63,7 @@ function json(body: unknown, status = 200, headers: Record<string, string> = {})
 
 /** Renders a self-contained result page for submissions made without JS. */
 function htmlResult(ok: boolean, message: string, status: number) {
-  const title = ok ? 'Enquiry sent' : 'Enquiry not sent';
+  const title = ok ? 'Inquiry sent' : 'Inquiry not sent';
   return new Response(
     `<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -106,7 +106,7 @@ function respond(
   const wantsJson = (request.headers.get('accept') ?? '').includes('application/json');
   if (wantsJson) return json({ ok, message, fieldErrors }, status, headers);
   // Without JavaScript, follow POST/redirect/GET so a refresh cannot resubmit
-  // the enquiry. Failures still render inline, because there is nowhere useful
+  // the inquiry. Failures still render inline, because there is nowhere useful
   // to redirect an error to.
   if (ok) {
     return new Response(null, {
@@ -126,7 +126,7 @@ export const POST: APIRoute = async ({ request }) => {
     return respond(
       request,
       false,
-      'That is several enquiries in a short time. Please wait a few minutes before sending another, or email us directly.',
+      'That is several inquiries in a short time. Please wait a few minutes before sending another, or email us directly.',
       429,
       undefined,
       { 'retry-after': String(limit.retryAfterSeconds) },
@@ -173,7 +173,7 @@ export const POST: APIRoute = async ({ request }) => {
     fieldErrors.message = 'Please add a short message so we know what to quote.';
   }
   if (consent !== 'yes') {
-    fieldErrors.consent = 'Please tick the consent box so we can reply to your enquiry.';
+    fieldErrors.consent = 'Please tick the consent box so we can reply to your inquiry.';
   }
 
   /* ---------------------------------------------------------------- *

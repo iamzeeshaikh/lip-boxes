@@ -42,9 +42,9 @@ export const resource: Resource = {
       heading: 'Why there is no standard lip balm box size',
       navLabel: 'No standard size',
       body: [
-        'Lip balm tubes look interchangeable and are not. A 0.15 oz oval stick and a 0.15 oz round stick hold the same product and have different footprints. Two suppliers selling the same nominal capacity often differ by a millimetre or more across the cap, which is enough to turn a snug carton into one that has to be forced.',
+        'Lip balm tubes look interchangeable and are not. A 0.15 oz oval stick and a 0.15 oz round stick hold the same product and have different footprints. Two suppliers selling the same nominal capacity often differ by a millimeter or more across the cap, which is enough to turn a snug carton into one that has to be forced.',
         'So the useful question is not "what size is a lip balm box" but "what does my tube measure, and what gets added to that". This guide answers the second question. Everything below assumes you have a filled, capped tube in front of you.',
-        'If your product is a paperboard push-up tube rather than a plastic twist-up, the same method applies but the clearance is slightly different, because paperboard has more surface friction than moulded plastic.',
+        'If your product is a paperboard push-up tube rather than a plastic twist-up, the same method applies but the clearance is slightly different, because paperboard has more surface friction than molded plastic.',
       ],
     },
     {
@@ -102,8 +102,8 @@ export const resource: Resource = {
       body: [
         'Three things sit between your tube measurement and the finished carton dimension, and a quote that ignores any of them produces a box that binds.',
         'The first is running clearance: the gap that lets the tube drop in and lift out without friction. On a plastic twist-up this is usually around 0.5 to 1 mm on each axis. On a paperboard push-up tube it is nearer 1 to 1.5 mm, because kraft against kraft grips in a way plastic against board does not.',
-        'The second is board thickness at the closing flaps. Tuck flaps fold into the carton, so the internal height available is slightly less than the external height. On 18pt board that is a fraction of a millimetre, but on 24pt with a double-thickness tuck it becomes noticeable on a short carton.',
-        'The third is the label, if there is one. A wrap label adds its own thickness to the tube diameter, and a carton drawn around a bare tube will be tight once the labelled tube goes in. Always measure the tube as it will actually be packed. Our page on <a href="/custom-lip-balm-boxes/">cartons cut to a filled balm tube</a> covers how that die line is drawn.',
+        'The second is board thickness at the closing flaps. Tuck flaps fold into the carton, so the internal height available is slightly less than the external height. On 18pt board that is a fraction of a millimeter, but on 24pt with a double-thickness tuck it becomes noticeable on a short carton.',
+        'The third is the label, if there is one. A wrap label adds its own thickness to the tube diameter, and a carton drawn around a bare tube will be tight once the labeled tube goes in. Always measure the tube as it will actually be packed. Our page on <a href="/custom-lip-balm-boxes/">cartons cut to a filled balm tube</a> covers how that die line is drawn.',
       ],
     },
     {
@@ -151,11 +151,11 @@ export const resource: Resource = {
         },
         {
           title: 'Working from a supplier drawing',
-          text: 'Drawings show nominal dimensions and often omit moulding tolerances, cap seat variation and lacquer thickness.',
+          text: 'Drawings show nominal dimensions and often omit molding tolerances, cap seat variation and lacquer thickness.',
         },
         {
           title: 'Forgetting the label',
-          text: 'A wrap label adds real thickness. Measure a labelled tube, or say explicitly that the measurement is of a bare one.',
+          text: 'A wrap label adds real thickness. Measure a labeled tube, or say explicitly that the measurement is of a bare one.',
         },
         {
           title: 'Confusing internal and external',
@@ -177,8 +177,8 @@ export const resource: Resource = {
       heading: 'What to send when you request a die line',
       navLabel: 'Requesting a die line',
       body: [
-        'The shortest route to a correct die line is a physical sample. Post one filled, capped and labelled unit exactly as it will be packed, and the structural drawing is measured from the real thing rather than from a description.',
-        'If you cannot send one, send all four measurements from the top of this guide, say whether they are of a bare or labelled tube, and say whether the pack is hand filled or machine filled. Add the tube count and layout if it is a multipack.',
+        'The shortest route to a correct die line is a physical sample. Post one filled, capped and labeled unit exactly as it will be packed, and the structural drawing is measured from the real thing rather than from a description.',
+        'If you cannot send one, send all four measurements from the top of this guide, say whether they are of a bare or labeled tube, and say whether the pack is hand filled or machine filled. Add the tube count and layout if it is a multipack.',
         'You will get back a die line to check before anything prints. Ask for a plain cut-and-creased sample as well, and test it with your actual product before approving. That step costs a few days and prevents the one failure that cannot be recovered: a run of cartons that does not fit.',
       ],
     },
@@ -198,7 +198,7 @@ export const resource: Resource = {
     },
     {
       q: 'Does a wrap label change the carton size?',
-      a: 'Yes, and it is a common oversight. The label adds its own thickness to the tube diameter, so a carton drawn around a bare tube will be tight once the labelled tube goes in. Measure the tube as it will actually be packed.',
+      a: 'Yes, and it is a common oversight. The label adds its own thickness to the tube diameter, so a carton drawn around a bare tube will be tight once the labeled tube goes in. Measure the tube as it will actually be packed.',
     },
     {
       q: 'How do I size a box for a lip balm tin?',

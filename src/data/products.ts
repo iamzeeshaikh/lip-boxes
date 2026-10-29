@@ -56,7 +56,7 @@ export const productGroups: { name: Product['group']; blurb: string }[] = [
   },
   {
     name: 'Lip Care',
-    blurb: 'Treatment formats and bulk programmes covering a whole range.',
+    blurb: 'Treatment formats and bulk programs covering a whole range.',
   },
 ];
 

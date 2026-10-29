@@ -136,7 +136,7 @@ export const resource: Resource = {
         ],
       ],
       outro:
-        'If you are packaging several of these at once, specifying them as one programme is materially cheaper than sourcing each separately. That is covered on our page for <a href="/custom-lip-care-packaging/">bulk and private label programmes</a>.',
+        'If you are packaging several of these at once, specifying them as one program is materially cheaper than sourcing each separately. That is covered on our page for <a href="/custom-lip-care-packaging/">bulk and private label programs</a>.',
     },
     {
       type: 'prose',
@@ -145,7 +145,7 @@ export const resource: Resource = {
       navLabel: 'Primary container',
       body: [
         'Lock this before anything else, and lock it properly: a named supplier, a confirmed lead time, and physical samples in your hand.',
-        'The trap is treating the container as interchangeable because two options have the same nominal capacity. They rarely have the same dimensions, and a difference of half a millimetre is enough to invalidate a die line. Nominal capacity is a marketing figure; the envelope is what packaging is built around.',
+        'The trap is treating the container as interchangeable because two options have the same nominal capacity. They rarely have the same dimensions, and a difference of half a millimeter is enough to invalidate a die line. Nominal capacity is a marketing figure; the envelope is what packaging is built around.',
         'Two secondary questions belong here as well. Does the container itself carry decoration, or is it a blank that gets a label? And does your formula suit the material — a soft, oil-heavy balm behaves very differently in a paperboard tube than in a plastic barrel.',
       ],
     },
@@ -157,7 +157,7 @@ export const resource: Resource = {
       body: [
         'This determines the carton construction more completely than any design preference, and it is settled by facts rather than taste.',
         'Peg and clip-strip retail needs a hanging tab, and the tab has to be engineered against the packed weight rather than added as a die-cut afterthought. Shelf retail needs a base that keeps the pack upright and a front panel that reads at arm\'s length. E-commerce needs a pack that survives a mailer and looks considered when the mailer opens. Gifting needs an opening action, which is where rigid construction earns its cost.',
-        'A product sold in two channels usually needs two cartons. That is a real cost, and quoting both at the same time is considerably cheaper than adding the second six months later, because the artwork and colour standard are already established.',
+        'A product sold in two channels usually needs two cartons. That is a real cost, and quoting both at the same time is considerably cheaper than adding the second six months later, because the artwork and color standard are already established.',
       ],
     },
     {
@@ -168,7 +168,7 @@ export const resource: Resource = {
       body: [
         'Two numbers, not one: the total, and the split across shades or scents. A launch of twelve shades at 1,500 each is a different manufacturing job from three shades at 6,000 each, even though both total 18,000.',
         'Below roughly two thousand units per design, digital printing avoids plate charges entirely and a wide shallow range becomes affordable. Above it, offset litho takes over and shades can be ganged onto shared sheets, which is where most of the saving on a multi-shade launch comes from.',
-        'This matters at this point in the sequence because it constrains what the artwork can afford. A design with six spot colours is reasonable on a long litho run and disproportionately expensive on a short one. Deciding the quantity before the design is what keeps the two compatible.',
+        'This matters at this point in the sequence because it constrains what the artwork can afford. A design with six spot colors is reasonable on a long litho run and disproportionately expensive on a short one. Deciding the quantity before the design is what keeps the two compatible.',
       ],
     },
     {
@@ -217,7 +217,7 @@ export const resource: Resource = {
         },
         {
           title: 'Label artwork, alongside carton artwork',
-          text: 'Both build from the same brand sheet. Doing them together keeps the colour references identical.',
+          text: 'Both build from the same brand sheet. Doing them together keeps the color references identical.',
         },
         {
           title: 'Freight quotes, once dimensions exist',
@@ -244,7 +244,7 @@ export const resource: Resource = {
     },
     {
       q: 'How early do I need to know my quantity?',
-      a: 'Before artwork begins. Quantity decides the print process, and the print process decides what the artwork can affordably do. A six spot colour design is reasonable on a long run and disproportionately expensive on a short one.',
+      a: 'Before artwork begins. Quantity decides the print process, and the print process decides what the artwork can affordably do. A six spot color design is reasonable on a long run and disproportionately expensive on a short one.',
     },
     {
       q: 'Do I need a carton if my tube is already printed?',
@@ -272,7 +272,7 @@ export const resource: Resource = {
     },
     {
       q: 'What if I am launching several lip products at once?',
-      a: 'Treat it as one programme rather than several orders. Fixing one board family, one finish and one ink set across everything lets the material be bought once, lets die lines share press sheets, and produces a range that actually looks like a range.',
+      a: 'Treat it as one program rather than several orders. Fixing one board family, one finish and one ink set across everything lets the material be bought once, lets die lines share press sheets, and produces a range that actually looks like a range.',
     },
   ],
   related: ['custom-lip-care-packaging', 'lip-balm-packaging', 'custom-lip-balm-boxes'],

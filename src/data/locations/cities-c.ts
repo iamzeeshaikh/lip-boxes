@@ -42,10 +42,10 @@ export const jacksonville: Location = {
       items: [
         'Cartons and labels ship flat and travel economically; combining them is almost always worthwhile',
         'Assembled tubes and rigid boxes are charged on volume, so they benefit most from consolidation',
-        '<a href="/lip-balm-labels/">Label stock options</a> has a practical shelf life, so do not consolidate more than you will use',
+        '<a href="/lip-balm-labels/">Lip balm label stock</a> has a practical shelf life, so do not consolidate more than you will use',
         'Board absorbs humidity, so consolidating only helps if storage is dry and off the floor',
         'Different components may have different lead times, so the slowest sets the shipment date',
-        'A <a href="/how-to-order/">scheduled call-off ordering</a> achieves the same freight saving without holding everything at once',
+        'A <a href="/how-to-order/">scheduled call-off order</a> achieves the same freight saving without holding everything at once',
       ],
       outro:
         'The call-off option is worth pricing against straight consolidation. It holds the volume price without requiring you to store the whole quantity.',
@@ -85,7 +85,7 @@ export const jacksonville: Location = {
     },
     {
       q: 'Can you hold stock and release it in stages?',
-      a: 'Yes, through a scheduled call-off agreed per programme. Storage terms are set at quoting stage rather than assumed, so raise it with the enquiry rather than after production.',
+      a: 'Yes, through a scheduled call-off agreed per program. Storage terms are set at quoting stage rather than assumed, so raise it with the inquiry rather than after production.',
     },
     {
       q: 'How does this differ from your Florida page?',
@@ -144,7 +144,7 @@ export const fortWorth: Location = {
         'Use digital label printing, which has no plate charge and can be reordered quickly',
         'Hold container and carton stock across events, since only the label becomes obsolete',
         'Agree a reorder lead time before the window, so a fast top-up is possible',
-        'Keep one <a href="/resources/packaging-dieline-guide/">guide to packaging die lines</a> across events so the tooling is never repeated',
+        'Keep one <a href="/resources/packaging-dieline-guide/">shared packaging die line</a> across events so the tooling is never repeated',
       ],
       outro:
         'The principle throughout is to put whatever expires onto the cheapest, fastest component to reproduce, which is almost always the label.',
@@ -180,7 +180,7 @@ export const fortWorth: Location = {
     },
     {
       q: 'How much should I order for a short window?',
-      a: 'That is a judgement about your own sell-through rather than a packaging question, but structuring the order so only the label is event-specific reduces the cost of getting it wrong in either direction.',
+      a: 'That is a judgment about your own sell-through rather than a packaging question, but structuring the order so only the label is event-specific reduces the cost of getting it wrong in either direction.',
     },
     {
       q: 'Can one carton serve several different events?',
@@ -216,7 +216,7 @@ export const columbus: Location = {
   h1: 'Custom Lip Boxes in Columbus',
   deck: 'A store pilot is a measurement exercise, and packaging that changes mid-test makes the results unreadable.',
   cardDescription:
-    'Retail pilots where packaging is a variable under test, and consistency matters more than optimisation.',
+    'Retail pilots where packaging is a variable under test, and consistency matters more than optimization.',
   marketAngle: 'Retail pilots and keeping results readable',
   related: ['custom-lip-balm-boxes', 'hang-tab-lip-balm-boxes', 'custom-lipstick-boxes'],
   sections: [
@@ -227,7 +227,7 @@ export const columbus: Location = {
       navLabel: 'The market',
       body: [
         'Columbus is used for retail pilots frequently enough that brands here often run packaging as part of a controlled test rather than simply producing it.',
-        'That imposes a discipline most packaging projects lack. If you change the pack halfway through a pilot, you cannot attribute the result. If two test stores get different case counts, you cannot compare them. If a reprint drifts in colour, the later units are not the same product.',
+        'That imposes a discipline most packaging projects lack. If you change the pack halfway through a pilot, you cannot attribute the result. If two test stores get different case counts, you cannot compare them. If a reprint drifts in color, the later units are not the same product.',
         'The requirement is consistency for the duration of the test, which affects the specification more than it affects the design.',
       ],
     },
@@ -239,10 +239,10 @@ export const columbus: Location = {
       intro: 'Six choices that keep test results attributable.',
       items: [
         'Produce the entire pilot quantity in one run, so there is no batch-to-batch variation',
-        'Specify <a href="/printing-options/">spot colour printing options</a> rather than process, so a mid-test reprint would still match',
+        'Specify <a href="/printing-options/">spot color printing</a> rather than process, so a mid-test reprint would still match',
         'Use one case count across every test store, so sell-through is comparable',
         'Retain the approved proof, so any question about drift can be settled against a reference',
-        'Fix the structure before the pilot rather than optimising during it',
+        'Fix the structure before the pilot rather than optimizing during it',
         'Record the specification alongside the results, since a later rollout has to reproduce it',
       ],
       outro:
@@ -263,11 +263,11 @@ export const columbus: Location = {
   faqs: [
     {
       q: 'Should I produce a pilot quantity in one run?',
-      a: 'Yes. Splitting it across runs introduces batch-to-batch variation in board shade and colour, which means later units are not quite the same product and the results become harder to attribute.',
+      a: 'Yes. Splitting it across runs introduces batch-to-batch variation in board shade and color, which means later units are not quite the same product and the results become harder to attribute.',
     },
     {
-      q: 'Why specify spot colour for a pilot?',
-      a: 'So that if you need a mid-test reprint, it matches. Process colour drifts within tolerance between runs, which is enough to make the second batch visibly different from the first in a test where consistency is the point.',
+      q: 'Why specify spot color for a pilot?',
+      a: 'So that if you need a mid-test reprint, it matches. Process color drifts within tolerance between runs, which is enough to make the second batch visibly different from the first in a test where consistency is the point.',
     },
     {
       q: 'Can I test two carton designs?',
@@ -283,7 +283,7 @@ export const columbus: Location = {
     },
     {
       q: 'What should I record about the packaging?',
-      a: 'The full specification: board grade and weight, print process, colours by name, finish and construction. Successful pilots sometimes cannot be reproduced at scale because nobody wrote down what was actually tested.',
+      a: 'The full specification: board grade and weight, print process, colors by name, finish and construction. Successful pilots sometimes cannot be reproduced at scale because nobody wrote down what was actually tested.',
     },
     {
       q: 'How does this differ from your Ohio page?',
@@ -292,7 +292,7 @@ export const columbus: Location = {
     {
       q: 'Is stock held locally in Columbus?',
       a:
-        'No stock is held in Columbus or anywhere else. Packaging is made against a confirmed order, which is why sizes and finishes are open rather than fixed to a catalogue.',
+        'No stock is held in Columbus or anywhere else. Packaging is made against a confirmed order, which is why sizes and finishes are open rather than fixed to a catalog.',
     },
   ],
 };
@@ -308,14 +308,14 @@ export const charlotte: Location = {
   secondaryKeywords: ['Charlotte beauty packaging', 'corporate gifting packaging', 'client gift lip products'],
   seoTitle: 'Custom Lip Boxes in Charlotte | Packaging Supply',
   metaDescription:
-    'Lip packaging for Charlotte brands and corporate gifting programmes, where presentation carries most of the perceived value.',
+    'Lip packaging for Charlotte brands and corporate gifting programs, where presentation carries most of the perceived value.',
   ogTitle: 'Custom Lip Packaging for Charlotte',
   ogDescription:
-    'Gift-standard packaging for corporate programmes, where the pack is most of what the recipient sees.',
+    'Gift-standard packaging for corporate programs, where the pack is most of what the recipient sees.',
   h1: 'Custom Lip Boxes in Charlotte',
   deck: 'In corporate gifting the packaging is most of the perceived value, because the recipient did not choose the product.',
   cardDescription:
-    'Corporate gifting programmes, where the recipient did not choose the product and the pack carries the value.',
+    'Corporate gifting programs, where the recipient did not choose the product and the pack carries the value.',
   marketAngle: 'Corporate gifting and perceived value',
   related: ['rigid-lipstick-boxes', 'lip-balm-packaging', 'custom-lipstick-boxes'],
   sections: [
@@ -341,7 +341,7 @@ export const charlotte: Location = {
         ['Packaging share of budget', 'Kept low to protect margin', 'Higher; it carries the perceived value'],
         ['Barcode', 'Required', 'Not needed, freeing a panel'],
         ['Construction', 'Folding carton for cost', 'Rigid or sleeve and tray for the opening'],
-        ['Branding', 'The product brand', 'Often the gifting organisation instead'],
+        ['Branding', 'The product brand', 'Often the gifting organization instead'],
         ['Quantity', 'Large, ongoing', 'Fixed, one-off, date-driven'],
         ['Insert', 'Protection first', 'Presentation first, protection second'],
       ],
@@ -355,8 +355,8 @@ export const charlotte: Location = {
       navLabel: 'Practicalities',
       body: [
         'Quantities are usually fixed and modest, which suits rigid construction well: its setup cost is low relative to unit cost, so a few hundred is a normal order rather than an awkward one.',
-        'Dates are usually fixed too, tied to an event or a year end. Tell us the date at enquiry stage rather than order stage, since the route to a tight schedule is normally choosing a process and finishing that suit it.',
-        'And the product still needs its ingredient declaration even though it is not sold, which organisations ordering gifting for the first time frequently overlook. Have the copy reviewed before approving artwork. The construction options are on our <a href="/rigid-lipstick-boxes/">rigid gift box formats</a>.',
+        'Dates are usually fixed too, tied to an event or a year end. Tell us the date at inquiry stage rather than order stage, since the route to a tight schedule is normally choosing a process and finishing that suit it.',
+        'And the product still needs its ingredient declaration even though it is not sold, which organizations ordering gifting for the first time frequently overlook. Have the copy reviewed before approving artwork. The construction options are on our <a href="/rigid-lipstick-boxes/">rigid gift box formats</a>.',
       ],
     },
   ],
@@ -371,11 +371,11 @@ export const charlotte: Location = {
     },
     {
       q: 'Whose brand should appear on the pack?',
-      a: 'That is a decision to make before artwork begins, because it changes the structure entirely. Corporate gifting often leads with the gifting organisation rather than the product brand, which affects panel allocation and hierarchy.',
+      a: 'That is a decision to make before artwork begins, because it changes the structure entirely. Corporate gifting often leads with the gifting organization rather than the product brand, which affects panel allocation and hierarchy.',
     },
     {
       q: 'Does a gift product still need an ingredient declaration?',
-      a: 'It is still a cosmetic, so the same labelling considerations apply as for a retail product. Organisations ordering gifting for the first time frequently overlook this. Have the copy reviewed before approving artwork.',
+      a: 'It is still a cosmetic, so the same labeling considerations apply as for a retail product. Organizations ordering gifting for the first time frequently overlook this. Have the copy reviewed before approving artwork.',
     },
     {
       q: 'Does a gift pack need a barcode?',
@@ -383,7 +383,7 @@ export const charlotte: Location = {
     },
     {
       q: 'Can a run be timed to a fixed handover date?',
-      a: 'Usually, if the conversation starts early. Tell us the date at enquiry stage. The route to a tight schedule is normally choosing a print process and finishing that suit it rather than expediting an elaborate specification.',
+      a: 'Usually, if the conversation starts early. Tell us the date at inquiry stage. The route to a tight schedule is normally choosing a print process and finishing that suit it rather than expediting an elaborate specification.',
     },
     {
       q: 'How does this differ from your North Carolina page?',
@@ -415,7 +415,7 @@ export const indianapolis: Location = {
   h1: 'Custom Lip Boxes in Indianapolis',
   deck: 'When a third party holds your stock, their intake rules decide whether a delivery is accepted at all.',
   cardDescription:
-    'Third-party logistics, where intake requirements govern packing, labelling and pallet configuration.',
+    'Third-party logistics, where intake requirements govern packing, labeling and pallet configuration.',
   marketAngle: 'Third-party logistics intake requirements',
   related: ['custom-lip-care-packaging', 'lip-balm-packaging', 'custom-lip-balm-boxes'],
   sections: [
@@ -426,7 +426,7 @@ export const indianapolis: Location = {
       navLabel: 'The market',
       body: [
         'Indianapolis hosts a large amount of third-party logistics capacity, and many brands operating there never physically handle their own packaging: it goes from the converter to a 3PL and from there to customers.',
-        'That introduces a party with its own rules. A 3PL is optimised for throughput, and anything that slows intake gets rejected rather than accommodated. Their requirements are not preferences.',
+        'That introduces a party with its own rules. A 3PL is optimized for throughput, and anything that slows intake gets rejected rather than accommodated. Their requirements are not preferences.',
         'The good news is that they are all knowable in advance and all cheap to build in. The bad news is that finding them out at the receiving dock is expensive and delays every order downstream.',
       ],
     },
@@ -446,7 +446,7 @@ export const indianapolis: Location = {
         'Any restrictions on case dimensions or weight for manual handling',
       ],
       outro:
-        'The mixed-SKU question catches people out. A 3PL that only accepts single-SKU pallets changes how a multi-product order has to be packed and palletised.',
+        'The mixed-SKU question catches people out. A 3PL that only accepts single-SKU pallets changes how a multi-product order has to be packed and palletized.',
     },
     {
       type: 'prose',
@@ -456,7 +456,7 @@ export const indianapolis: Location = {
       body: [
         'A refused delivery at a 3PL is more expensive than the redelivery charge suggests, because the stock is not in the system and every order depending on it waits.',
         'The usual causes are mundane: no appointment booked, a missing reference number, case labels in the wrong format, or a pallet over the height limit. All are avoidable with information that takes minutes to gather.',
-        'Send the requirements with your order rather than after the pallet is on the road. Building them into the production plan costs nothing; repacking finished goods to meet a requirement discovered late costs labour and risks damage. <a href="/shipping-information/">How freight and delivery are quoted</a> is set out separately.',
+        'Send the requirements with your order rather than after the pallet is on the road. Building them into the production plan costs nothing; repacking finished goods to meet a requirement discovered late costs labor and risks damage. <a href="/shipping-information/">How freight and delivery are quoted</a> is set out separately.',
       ],
     },
   ],
@@ -467,7 +467,7 @@ export const indianapolis: Location = {
     },
     {
       q: 'Why does the mixed-SKU question matter?',
-      a: 'Because a 3PL that only accepts single-SKU pallets changes how a multi-product order has to be packed and palletised. It affects the number of pallets and therefore the freight cost, so it needs knowing before production.',
+      a: 'Because a 3PL that only accepts single-SKU pallets changes how a multi-product order has to be packed and palletized. It affects the number of pallets and therefore the freight cost, so it needs knowing before production.',
     },
     {
       q: 'What happens if a 3PL refuses a delivery?',
@@ -475,7 +475,7 @@ export const indianapolis: Location = {
     },
     {
       q: 'Can you apply case labels to a 3PL specification?',
-      a: 'Yes, to your specification including barcode symbology and placement. Send the requirement with the order, since case labelling discovered at goods-in becomes a repacking job rather than a printing one.',
+      a: 'Yes, to your specification including barcode symbology and placement. Send the requirement with the order, since case labeling discovered at goods-in becomes a repacking job rather than a printing one.',
     },
     {
       q: 'Do inner packs help with 3PL picking?',
@@ -483,7 +483,7 @@ export const indianapolis: Location = {
     },
     {
       q: 'Can you ship directly to a 3PL rather than to me?',
-      a: 'Yes, and it is the normal arrangement. Send their address, receiving requirements and reference number with the order, and the consignment is prepared and labelled to their specification.',
+      a: 'Yes, and it is the normal arrangement. Send their address, receiving requirements and reference number with the order, and the consignment is prepared and labeled to their specification.',
     },
     {
       q: 'How does this differ from your Indiana page?',

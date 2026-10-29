@@ -16,9 +16,9 @@ export const product: Product = {
     'Custom lip balm labels printed on waterproof stock and die cut to your tube size. Sheets or rolls, matte, gloss or kraft.',
   ogTitle: 'Custom Lip Balm Labels, Cut to Your Tube',
   ogDescription:
-    'Waterproof wrap labels for lip balm tubes and tins, printed in full colour and supplied on sheets or rolls.',
+    'Waterproof wrap labels for lip balm tubes and tins, printed in full color and supplied on sheets or rolls.',
   valueProp:
-    'Waterproof wrap labels die cut to your tube diameter, printed in full colour and supplied on sheets or on rolls for applicator use.',
+    'Waterproof wrap labels die cut to your tube diameter, printed in full color and supplied on sheets or on rolls for applicator use.',
   cardDescription:
     'Printed wrap labels and die-cut stickers for lip balm tubes, tins and jars, on waterproof synthetic or uncoated paper stock.',
   highlights: [
@@ -30,16 +30,16 @@ export const product: Product = {
     {
       file: 'custom-lip-balm-label-minimal-two-colour.png',
       alt: 'Two lip balm tubes in white and black next to a printed vanilla lip balm label showing an ingredient panel',
-      caption: 'Two-colour label with a full ingredient declaration panel.',
+      caption: 'Two-color label with a full ingredient declaration panel.',
     },
     {
       file: 'custom-lip-balm-label-watercolour-print.png',
-      alt: 'Pink watercolour lip balm label next to a matching wrapped lip balm tube on a bright background',
-      caption: 'Full-colour print on a gloss synthetic stock.',
+      alt: 'Pink watercolor lip balm label next to a matching wrapped lip balm tube on a bright background',
+      caption: 'Full-color print on a gloss synthetic stock.',
     },
     {
       file: 'custom-lip-balm-label-roll-format.png',
-      alt: 'Roll of printed lip balm labels unwinding beside a labelled blue lip balm tube and a lip scrub jar',
+      alt: 'Roll of printed lip balm labels unwinding beside a labeled blue lip balm tube and a lip scrub jar',
       caption: 'Roll format supplied for automatic label applicators.',
     },
   ],
@@ -52,7 +52,7 @@ export const product: Product = {
       body: [
         'A lip balm label has a harder job than its size suggests. It wraps around a curved surface with almost no flat area, it sits against a product that is oily by definition, it lives in a pocket or a handbag where it is rubbed constantly, and it has to carry a legally required ingredient list in a space barely larger than a postage stamp.',
         'That combination rules out ordinary paper sticker stock for most brands. Synthetic label materials handle the oil and the abrasion; uncoated paper is chosen when the matte, natural look outweighs durability. Both are printed here, and which one is right depends on where your product is sold and how it is carried.',
-        'Labels are the fastest way to change a range. One blank tube stock plus five printed labels gives you five products without five sets of tooling, which is why brands running seasonal flavours usually label rather than print the container. If you would rather print the container itself, our <a href="/paper-lip-balm-tubes/">directly printed paperboard balm tubes</a> take artwork onto the body.',
+        'Labels are the fastest way to change a range. One blank tube stock plus five printed labels gives you five products without five sets of tooling, which is why brands running seasonal flavors usually label rather than print the container. If you would rather print the container itself, our <a href="/paper-lip-balm-tubes/">directly printed paperboard balm tubes</a> take artwork onto the body.',
       ],
     },
     {
@@ -98,10 +98,10 @@ export const product: Product = {
       columns: ['Stock', 'Oil and water resistance', 'Look', 'Suits'],
       rows: [
         ['White BOPP synthetic', 'High', 'Clean, slightly plastic, bright whites', 'Everyday retail balm, gym and outdoor ranges'],
-        ['Clear BOPP', 'High', 'No-label look on a coloured tube', 'Brands showing the container colour through'],
-        ['Metallised polyester', 'High', 'Silver or gold base under the ink', 'Limited editions and holiday sets'],
+        ['Clear BOPP', 'High', 'No-label look on a colored tube', 'Brands showing the container color through'],
+        ['Metallized polyester', 'High', 'Silver or gold base under the ink', 'Limited editions and holiday sets'],
         ['Uncoated kraft paper', 'Low without a varnish', 'Natural, matte, fibrous', 'Handmade and low-waste positioning'],
-        ['Coated white paper', 'Moderate with lamination', 'Sharp full-colour print, warm not stark', 'Boxed products where the tube is protected'],
+        ['Coated white paper', 'Moderate with lamination', 'Sharp full-color print, warm not stark', 'Boxed products where the tube is protected'],
         ['Textured felt paper', 'Low', 'Tactile, premium, absorbs ink softly', 'Gift sets and boxed presentation only'],
       ],
       outro:
@@ -114,7 +114,7 @@ export const product: Product = {
       navLabel: 'Sizing',
       image: {
         file: 'custom-lip-balm-label-watercolour-print.png',
-        alt: 'Printed watercolour lip balm label laid flat beside the matching wrapped tube',
+        alt: 'Printed watercolor lip balm label laid flat beside the matching wrapped tube',
       },
       imageSide: 'right',
       body: [
@@ -129,9 +129,9 @@ export const product: Product = {
       heading: 'Printing, finishing and adhesives',
       navLabel: 'Print & adhesive',
       body: [
-        'Digital label printing suits the quantities most lip balm brands actually order, handles variable data such as batch or shade names without a plate change, and lets you run several designs in one job. Flexo printing takes over at high volumes and holds solid spot colours with excellent consistency. Both support foil and spot varnish as finishing passes.',
+        'Digital label printing suits the quantities most lip balm brands actually order, handles variable data such as batch or shade names without a plate change, and lets you run several designs in one job. Flexo printing takes over at high volumes and holds solid spot colors with excellent consistency. Both support foil and spot varnish as finishing passes.',
         'Over-print options are matte lamination, gloss lamination, matte or gloss varnish, spot UV, and cold or hot foil. On a product carried in a pocket, lamination earns its cost quickly; a bare digital print will scuff at the seam within weeks.',
-        'Adhesive selection is quietly important. A permanent acrylic adhesive is standard and holds well on plastic, paperboard and metal. Cold-applied products, tins that go in a fridge, or containers with a very low surface energy plastic can all need a specific adhesive, so tell us the container material in the enquiry. A summary of coatings and their behaviour appears on the <a href="/finishes/">page covering print finishes and coatings</a>.',
+        'Adhesive selection is quietly important. A permanent acrylic adhesive is standard and holds well on plastic, paperboard and metal. Cold-applied products, tins that go in a fridge, or containers with a very low surface energy plastic can all need a specific adhesive, so tell us the container material in the inquiry. A summary of coatings and their behavior appears on the <a href="/finishes/">page covering print finishes and coatings</a>.',
       ],
     },
     {
@@ -141,7 +141,7 @@ export const product: Product = {
       navLabel: 'Artwork',
       body: [
         'Supply artwork as vector PDF, AI or EPS with fonts outlined, or as a 300 dpi PSD if the design is image-based. Build the file to the cutting template, allow bleed to the trim on all four sides, and keep critical copy at least 2 mm inside the cut line, because a rotary die on a small label has real tolerance.',
-        'The ingredient declaration is the hardest part of a lip balm label. US cosmetic labelling requires ingredients in descending order of predominance, the net quantity of contents, and the responsible party name and address. Setting that copy below about 5 pt on a curved surface makes it genuinely difficult to read, so brands often move it to a peel-back panel or to the outer carton instead.',
+        'The ingredient declaration is the hardest part of a lip balm label. US cosmetic labeling requires ingredients in descending order of predominance, the net quantity of contents, and the responsible party name and address. Setting that copy below about 5 pt on a curved surface makes it genuinely difficult to read, so brands often move it to a peel-back panel or to the outer carton instead.',
         'We print the file you approve and do not audit its regulatory content. If your balm carries an SPF claim it is regulated as an over-the-counter drug in the United States and the panel requirements change, so have the layout reviewed before proof approval.',
       ],
     },
@@ -152,7 +152,7 @@ export const product: Product = {
       navLabel: 'Application',
       body: [
         'Labels come on sheets or on rolls, and the choice follows how you apply them. Sheets suit hand application in small batches and are easier to store. Rolls are required for any semi-automatic or automatic applicator, and the roll has to be wound in the direction your machine expects, with a specified core diameter and unwind position.',
-        'If you are ordering rolls, send the applicator make and model with the enquiry. Getting the unwind direction wrong makes an entire roll unusable on the line even though the labels themselves are correct.',
+        'If you are ordering rolls, send the applicator make and model with the inquiry. Getting the unwind direction wrong makes an entire roll unusable on the line even though the labels themselves are correct.',
         'For hand application, a label with a die-cut tab is noticeably faster to place than a plain rectangle, and a slightly wider matrix around each label makes them easier to lift from the liner.',
       ],
     },
@@ -163,7 +163,7 @@ export const product: Product = {
       navLabel: 'Quantity & pricing',
       body: [
         'Labels are the one product on this site where running many designs costs little more than running one, provided they share a size and a stock. A digital run of six scents at 2,000 each is priced close to a single design at 12,000, because the cutting die and the material are shared.',
-        'Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity. Labels sit at the lower end of that range on plain paper stocks at volume, and above it on metallised material with foil and lamination.',
+        'Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity. Labels sit at the lower end of that range on plain paper stocks at volume, and above it on metallized material with foil and lamination.',
         'One cutting die serves every reorder at that size, so keeping your range on a single label footprint pays back over time. Wholesale quantities and standing reorder schedules are quoted against a held specification.',
       ],
     },
@@ -173,7 +173,7 @@ export const product: Product = {
       heading: 'Quality control and storage',
       navLabel: 'Quality',
       body: [
-        'Printed labels are checked for colour against the approved proof, for cut registration against the printed artwork, and for release from the liner. Registration is the failure most often noticed by customers, because a die that drifts by half a millimetre puts a visible white sliver along one edge of every label on the roll.',
+        'Printed labels are checked for color against the approved proof, for cut registration against the printed artwork, and for release from the liner. Registration is the failure most often noticed by customers, because a die that drifts by half a millimeter puts a visible white sliver along one edge of every label on the roll.',
         'Store label stock flat, cool and out of sunlight, and use it within a reasonable period. Adhesive performance changes with age and with extremes of temperature, and a roll that has sat in a hot store room will not apply the way a fresh one does.',
         'Paper-faced labels are compatible with paper recycling once separated from the container. Synthetic BOPP labels are not, and if the label stays on the tube it affects how the whole pack is disposed of. That is a genuine trade-off between durability and end-of-life, and worth weighing rather than assuming.',
       ],
@@ -198,7 +198,7 @@ export const product: Product = {
         },
         {
           title: 'Proof and approve',
-          text: 'A digital or printed proof confirms colour, cut position and that small type is legible at final size.',
+          text: 'A digital or printed proof confirms color, cut position and that small type is legible at final size.',
         },
         {
           title: 'Print and dispatch',
@@ -211,7 +211,7 @@ export const product: Product = {
     { label: 'Product type', value: 'Custom printed pressure-sensitive labels for lip care containers' },
     { label: 'Formats', value: 'Full wrap, die-cut wrap with tab, cap seal, tin top, tamper band, peel-back panel' },
     { label: 'Typical wrap size', value: 'Approximately 2 x 1.5 in for a standard 0.15 oz stick; cut to your tube' },
-    { label: 'Face stocks', value: 'White BOPP, clear BOPP, metallised polyester, kraft paper, coated paper, textured felt' },
+    { label: 'Face stocks', value: 'White BOPP, clear BOPP, metallized polyester, kraft paper, coated paper, textured felt' },
     { label: 'Printing', value: 'Digital and flexo; CMYK and spot Pantone' },
     { label: 'Finishing', value: 'Matte or gloss lamination, varnish, spot UV, hot and cold foil' },
     { label: 'Adhesive', value: 'Permanent acrylic as standard; alternatives specified against container material' },
@@ -232,7 +232,7 @@ export const product: Product = {
       a: 'You need the circumference, not the diameter, plus the usable height between the cap seat and the base flange. Wrap a strip of paper around the tube, mark where it meets, and measure that length flat. Add about an eighth of an inch for the overlap, or send us a sample and we will do it.',
     },
     {
-      q: 'Can I run several flavours in one label order?',
+      q: 'Can I run several flavors in one label order?',
       a: 'Yes, and it is usually the most economical approach. If every design shares one size and one stock, they run together on the same die and the same material, so six designs at 2,000 each is priced close to one design at 12,000.',
     },
     {
@@ -240,8 +240,8 @@ export const product: Product = {
       a: 'Sheets if you apply by hand, rolls if you use any kind of applicator. Roll orders need the core diameter, the maximum outside diameter your machine takes, and the unwind direction. Send us the applicator model and we will set the winding to match it.',
     },
     {
-      q: 'Can I get a no-label look on a coloured tube?',
-      a: 'Yes, using a clear BOPP stock so the tube colour shows through the unprinted areas. Bear in mind that ink on clear film is translucent, so light colours and whites need a white underprint layer or they will disappear against a dark container.',
+      q: 'Can I get a no-label look on a colored tube?',
+      a: 'Yes, using a clear BOPP stock so the tube color shows through the unprinted areas. Bear in mind that ink on clear film is translucent, so light colors and whites need a white underprint layer or they will disappear against a dark container.',
     },
     {
       q: 'How small can the ingredient text go?',
@@ -268,7 +268,7 @@ export const product: Product = {
       a: 'Kept flat, cool and out of direct sun, label stock holds its adhesive properties for a long period. Heat is the main enemy. A roll stored near a warehouse ceiling in summer can develop adhesive ooze at the edges and become difficult to run through an applicator.',
     },
     {
-      q: 'Can you match the label colour to my printed box?',
+      q: 'Can you match the label color to my printed box?',
       a: 'We can get close, and we run them together where possible. Exact matching between a label film and a paperboard carton is not achievable because the two substrates absorb and reflect ink differently. Specifying a spot Pantone on both, rather than a CMYK build, narrows the gap considerably.',
     },
   ],

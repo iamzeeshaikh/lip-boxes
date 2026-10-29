@@ -41,8 +41,7 @@ const quoteHref = product
       <a href={ctaSecondaryHref} class="vx-arrow">{ctaSecondaryLabel}</a>
     </div>
     <p class="vx-close__contact">
-      Or email
-      <a href={`mailto:${site.email}`}>{site.email}</a>
+      Or email <a href={`mailto:${site.email}`}>{site.email}</a>
       {site.phone && <> or call <a href={`tel:${site.phone}`}>{site.phoneDisplay ?? site.phone}</a></>}
     </p>
   </div>

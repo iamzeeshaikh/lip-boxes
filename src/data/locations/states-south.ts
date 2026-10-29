@@ -11,7 +11,7 @@ export const texas: Location = {
   secondaryKeywords: ['Texas cosmetic packaging', 'lipstick boxes Texas', 'wholesale lip packaging Texas'],
   seoTitle: 'Custom Lip Boxes in Texas | Packaging Supply',
   metaDescription:
-    'Lip packaging for Texas brands across five major metros, from independent lines to multi-state wholesale programmes.',
+    'Lip packaging for Texas brands across five major metros, from independent lines to multi-state wholesale programs.',
   ogTitle: 'Custom Lip Packaging for Texas Brands',
   ogDescription:
     'Cartons, tubes and labels for a state large enough that distribution shapes the packaging decision.',
@@ -46,7 +46,7 @@ export const texas: Location = {
         },
         {
           title: 'Private label operations',
-          text: 'Producing under several brand names from one structural specification, where the <a href="/resources/packaging-dieline-guide/">guide to packaging die lines</a> is amortised across all of them.',
+          text: 'Producing under several brand names from one structural specification, where the <a href="/resources/packaging-dieline-guide/">shared packaging die line</a> is amortized across all of them.',
         },
         {
           title: 'Salon and med-spa retail lines',
@@ -61,7 +61,7 @@ export const texas: Location = {
           text: 'High volumes of simple hanging packs, where tab strength and case count matter more than finishing.',
         },
         {
-          title: 'Event and promotional programmes',
+          title: 'Event and promotional programs',
           text: 'Short runs against fixed dates, where schedule certainty outweighs specification ambition.',
         },
       ],
@@ -74,7 +74,7 @@ export const texas: Location = {
       body: [
         'A meaningful share of Texas lip products carry copy in both English and Spanish, and that is a packaging constraint rather than a translation task.',
         'A bilingual ingredient declaration and directions can roughly double the copy that has to fit on a panel already too small for one language. Shrinking type is not the answer, because legibility falls off sharply below about 5 pt and disappears entirely on a curved tube surface.',
-        'The workable solutions are structural: move the declaration to an outer carton, use a peel-back multi-panel label on the container, or include a folded leaflet. All three are cheaper than a larger carton, and all three are decisions to make before design begins rather than after. The panel arithmetic is set out in our <a href="/resources/cosmetic-packaging-label-requirements/">cosmetic labelling requirements guide</a>.',
+        'The workable solutions are structural: move the declaration to an outer carton, use a peel-back multi-panel label on the container, or include a folded leaflet. All three are cheaper than a larger carton, and all three are decisions to make before design begins rather than after. The panel arithmetic is set out in our <a href="/resources/cosmetic-packaging-label-requirements/">cosmetic labeling requirements guide</a>.',
       ],
     },
     {
@@ -86,13 +86,13 @@ export const texas: Location = {
       items: [
         'A case count that a single independent store can order without taking six months of stock',
         'An inner pack quantity, so a case can be split without opening individual cartons',
-        'A <a href="/shipping-information/">pallet and shipping information</a>, if any account receives on pallets rather than by parcel',
-        'Case labelling that identifies the SKU without opening the case',
+        'A <a href="/shipping-information/">pallet and shipping specification</a>, if any account receives on pallets rather than by parcel',
+        'Case labeling that identifies the SKU without opening the case',
         'A call-off schedule, so the volume price is held without warehousing everything at once',
         'Whether any account requires a specific barcode format on the outer case',
       ],
       outro:
-        'Building these into the production plan costs nothing. Repacking finished stock to suit an account discovered later costs labour and risks damage.',
+        'Building these into the production plan costs nothing. Repacking finished stock to suit an account discovered later costs labor and risks damage.',
     },
   ],
   faqs: [
@@ -109,12 +109,12 @@ export const texas: Location = {
       a: 'Usually you do not. A bilingual declaration roughly doubles the copy, and a tube band cannot carry it legibly. Move the declaration to an outer carton, use a peel-back label, or include a folded leaflet — all structural decisions to make before design.',
     },
     {
-      q: 'Do you supply private label programmes running several brands?',
-      a: 'Yes. When the structural specification stays fixed and only the artwork changes, the die line and structural sample are amortised across every brand using that format. We hold approved die lines and colour standards against the programme for reorders.',
+      q: 'Do you supply private label programs running several brands?',
+      a: 'Yes. When the structural specification stays fixed and only the artwork changes, the die line and structural sample are amortized across every brand using that format. We hold approved die lines and color standards against the program for reorders.',
     },
     {
       q: 'Can you build to a set pallet pattern?',
-      a: 'Yes. Send the pattern, the maximum pallet height and any labelling requirements with the order. Where an account publishes a receiving specification, matching it at production costs nothing and prevents a refused delivery.',
+      a: 'Yes. Send the pattern, the maximum pallet height and any labeling requirements with the order. Where an account publishes a receiving specification, matching it at production costs nothing and prevents a refused delivery.',
     },
     {
       q: 'How does freight work across Texas?',
@@ -205,7 +205,7 @@ export const florida: Location = {
         '<a href="/rigid-lipstick-boxes/">Sleeve and tray</a> constructions, which read as more considered than a tuck end',
         'Small rigid boxes for higher price points, viable at modest quantities',
         'Printed bands or belly wraps that turn two singles into a set without new tooling',
-        'Holographic and <a href="/holographic-lip-gloss-boxes/">metallised board stock options</a> for limited editions and seasonal ranges',
+        'Holographic and <a href="/holographic-lip-gloss-boxes/">metallized board stocks</a> for limited editions and seasonal ranges',
         'Window cartons where the shade itself is the selling point',
       ],
       outro:
@@ -266,7 +266,7 @@ export const georgia: Location = {
   h1: 'Custom Lip Boxes in Georgia',
   deck: 'Georgia has one of the most active independent lip gloss scenes in the country, and it moves fast.',
   cardDescription:
-    'A market built on independent gloss and colour brands launching quickly at modest quantities.',
+    'A market built on independent gloss and color brands launching quickly at modest quantities.',
   marketAngle: 'Independent gloss brands and short launch cycles',
   related: ['lip-gloss-boxes', 'holographic-lip-gloss-boxes', 'custom-lipstick-boxes'],
   sections: [
@@ -276,7 +276,7 @@ export const georgia: Location = {
       heading: 'A market built on independent launches',
       navLabel: 'The market',
       body: [
-        'Atlanta supports an unusually large number of independent lip gloss and colour brands, many of them founded and run by a single person, selling primarily online and through pop-up and event retail.',
+        'Atlanta supports an unusually large number of independent lip gloss and color brands, many of them founded and run by a single person, selling primarily online and through pop-up and event retail.',
         'The packaging requirements that follow are specific. Quantities are modest, often a few hundred to a few thousand per shade. Launch cycles are short, sometimes tied to a content schedule rather than a retail calendar. And the pack has to photograph well, because most of the selling happens on a screen before anything reaches a customer.',
         'That combination favours digital printing, one <a href="/resources/packaging-dieline-guide/">guide to packaging die lines</a> across a range, and finishes that read on camera rather than only in the hand.',
       ],
@@ -288,8 +288,8 @@ export const georgia: Location = {
       navLabel: 'On camera',
       body: [
         'Packaging for a brand that sells mostly through images has a requirement most retail packaging does not: it has to survive being photographed under uncontrolled lighting by someone with a phone.',
-        'Some finishes help. Holographic and metallised board shifts colour as the camera moves, which reads as movement in video. <a href="/finishes/">Spot UV finish options</a> over matte creates contrast that a camera picks up more reliably than a subtle emboss does. Foil catches light in a way that photographs as genuinely metallic.',
-        'Some finishes work against you. Soft-touch lamination feels expensive and photographs as flat grey. Very fine embossing disappears entirely at phone resolution. And a high-gloss laminate reflects the ring light straight back into the lens. Our <a href="/holographic-lip-gloss-boxes/">iridescent gloss carton page</a> covers what actually changes under light.',
+        'Some finishes help. Holographic and metallized board shifts color as the camera moves, which reads as movement in video. <a href="/finishes/">Spot UV finish options</a> over matte creates contrast that a camera picks up more reliably than a subtle emboss does. Foil catches light in a way that photographs as genuinely metallic.',
+        'Some finishes work against you. Soft-touch lamination feels expensive and photographs as flat gray. Very fine embossing disappears entirely at phone resolution. And a high-gloss laminate reflects the ring light straight back into the lens. Our <a href="/holographic-lip-gloss-boxes/">iridescent gloss carton page</a> covers what actually changes under light.',
       ],
     },
     {
@@ -302,7 +302,7 @@ export const georgia: Location = {
         'Digital printing, which carries no plate charge per design and suits a wide shallow shade range',
         'One die line across every shade, so the tooling is paid once rather than per variant',
         'A shared board and finish, so the whole range can be produced in one window',
-        'Spot colour only where it earns it, usually the shade swatch and nothing else',
+        'Spot color only where it earns it, usually the shade swatch and nothing else',
         'Holographic foil on a logo rather than full holographic board, which is a material premium on every unit',
         'A reorder plan, since a second run against held tooling costs far less than the first',
       ],
@@ -328,11 +328,11 @@ export const georgia: Location = {
     },
     {
       q: 'Which finishes photograph most reliably?',
-      a: 'Holographic and metallised board, because they shift under movement and read well in video. Spot UV over matte gives contrast a phone camera picks up. Foil photographs as genuinely metallic in a way printed metallic ink does not.',
+      a: 'Holographic and metallized board, because they shift under movement and read well in video. Spot UV over matte gives contrast a phone camera picks up. Foil photographs as genuinely metallic in a way printed metallic ink does not.',
     },
     {
       q: 'Which finishes photograph badly?',
-      a: 'Soft-touch lamination, which feels expensive and photographs as flat grey. Very fine embossing, which disappears at phone resolution. And high-gloss laminate, which reflects a ring light straight back into the lens.',
+      a: 'Soft-touch lamination, which feels expensive and photographs as flat gray. Very fine embossing, which disappears at phone resolution. And high-gloss laminate, which reflects a ring light straight back into the lens.',
     },
     {
       q: 'Is full holographic board affordable at small quantities?',
@@ -388,7 +388,7 @@ export const northCarolina: Location = {
       body: [
         'North Carolina has more contract cosmetic manufacturing capacity than most states, and that changes who is actually specifying the packaging.',
         'When a brand fills its own product by hand, the packaging brief comes from the brand. When a contract manufacturer fills it on an automated line, the line imposes constraints that override preferences: how the carton is fed, whether it is glued shut by a sealer, what case count the packing station expects, and how the pallet is built.',
-        'Those constraints are not negotiable and they are cheap to accommodate if they arrive with the enquiry. They are expensive to accommodate afterwards, because most of them affect the <a href="/resources/packaging-dieline-guide/">guide to packaging die lines</a>.',
+        'Those constraints are not negotiable and they are cheap to accommodate if they arrive with the inquiry. They are expensive to accommodate afterwards, because most of them affect the <a href="/resources/packaging-dieline-guide/">guide to packaging die lines</a>.',
       ],
     },
     {
@@ -396,14 +396,14 @@ export const northCarolina: Location = {
       id: 'line-requirements',
       heading: 'What a filling line needs to tell us',
       navLabel: 'Line requirements',
-      intro: 'Send these with the enquiry and the die line is drawn correctly the first time.',
+      intro: 'Send these with the inquiry and the die line is drawn correctly the first time.',
       items: [
         'Whether cartons are erected by hand or by machine, which changes the base construction',
-        'Whether the carton is closed by tuck or glued shut on a sealer, which decides seal end versus <a href="/box-styles/">tuck end box styles</a>',
+        'Whether the carton is closed by tuck or glued shut on a sealer, which decides seal end versus <a href="/box-styles/">a tuck end closure</a>',
         'The carton feed orientation the magazine expects',
         'Units per case and whether an inner pack is required',
         'Pallet pattern, maximum height and whether pallets are stretch wrapped',
-        'Any case labelling or barcode format the packing station applies',
+        'Any case labeling or barcode format the packing station applies',
         'Whether cartons are supplied flat or pre-erected',
       ],
       outro:
@@ -417,7 +417,7 @@ export const northCarolina: Location = {
       body: [
         'The common failure on a contract-filled project is that the brand approves the artwork and the filler then finds the structure does not suit their line. Both were doing their job; nobody was holding both sets of requirements.',
         'The straightforward fix is to get the filler into the specification conversation before the die line is approved, not after. A ten minute call about carton feed and closure is enough, and it happens once.',
-        'It is also worth agreeing who approves what. Structure is usually the filler\'s call; artwork and colour are the brand\'s. Writing that down prevents the situation where a die line sits unapproved because each party assumed the other owned it. <a href="/how-to-order/">Who signs off what, and when</a> is set out in the ordering steps.',
+        'It is also worth agreeing who approves what. Structure is usually the filler\'s call; artwork and color are the brand\'s. Writing that down prevents the situation where a die line sits unapproved because each party assumed the other owned it. <a href="/how-to-order/">Who signs off what, and when</a> is set out in the ordering steps.',
       ],
     },
     {
@@ -426,7 +426,7 @@ export const northCarolina: Location = {
       heading: 'Delivering to a contract manufacturer',
       navLabel: 'Delivery',
       body: [
-        'Manufacturing sites have stricter intake requirements than a brand warehouse, and they enforce them. Send the filler\'s receiving hours, appointment booking process, purchase order reference and case labelling rules with the order.',
+        'Manufacturing sites have stricter intake requirements than a brand warehouse, and they enforce them. Send the filler\'s receiving hours, appointment booking process, purchase order reference and case labeling rules with the order.',
         'A refused delivery at a contract manufacturer is a genuine problem: the goods go back, the fill slot is missed, and the next available slot may be weeks out. It is entirely avoidable with information that takes minutes to gather.',
         'Packaging is manufactured to order and shipped to North Carolina addresses through a nationwide service. There is no local facility or held stock.',
       ],
@@ -435,7 +435,7 @@ export const northCarolina: Location = {
   faqs: [
     {
       q: 'What does my contract filler need to tell you?',
-      a: 'Whether cartons are erected by hand or machine, whether they are tucked or glued shut, the feed orientation, units per case, pallet pattern and any case labelling requirements. Most of those affect the die line, so they need to arrive before it is drawn.',
+      a: 'Whether cartons are erected by hand or machine, whether they are tucked or glued shut, the feed orientation, units per case, pallet pattern and any case labeling requirements. Most of those affect the die line, so they need to arrive before it is drawn.',
     },
     {
       q: 'What is the difference between a tuck end and a seal end for a filling line?',
@@ -451,11 +451,11 @@ export const northCarolina: Location = {
     },
     {
       q: 'What happens if a delivery is refused at a manufacturing site?',
-      a: 'The goods go back, the fill slot is missed and the next available slot may be weeks out. It is avoidable: send the receiving hours, appointment process, purchase order reference and case labelling rules with the order.',
+      a: 'The goods go back, the fill slot is missed and the next available slot may be weeks out. It is avoidable: send the receiving hours, appointment process, purchase order reference and case labeling rules with the order.',
     },
     {
       q: 'Will you match our pallet configuration?',
-      a: 'Yes. Send the pattern, maximum height and whether pallets are stretch wrapped. Building it into the production plan costs nothing; repacking finished stock to meet a specification discovered later costs labour and risks damage.',
+      a: 'Yes. Send the pattern, maximum height and whether pallets are stretch wrapped. Building it into the production plan costs nothing; repacking finished stock to meet a specification discovered later costs labor and risks damage.',
     },
     {
       q: 'Do you work directly with contract manufacturers?',
@@ -480,14 +480,14 @@ export const tennessee: Location = {
   secondaryKeywords: ['Tennessee cosmetic packaging', 'Nashville lip packaging', 'merchandise lip balm packaging'],
   seoTitle: 'Custom Lip Boxes in Tennessee | Packaging Supply',
   metaDescription:
-    'Lip packaging for Tennessee brands, including merchandise, tour retail and gift programmes built to fixed release dates.',
+    'Lip packaging for Tennessee brands, including merchandise, tour retail and gift programs built to fixed release dates.',
   ogTitle: 'Custom Lip Packaging for Tennessee Brands',
   ogDescription:
-    'Cartons and labels for merchandise, tour retail and gift programmes where the date is fixed before the design is.',
+    'Cartons and labels for merchandise, tour retail and gift programs where the date is fixed before the design is.',
   h1: 'Custom Lip Boxes in Tennessee',
   deck: 'A lot of Tennessee lip packaging is merchandise, which means the date is fixed before the design is.',
   cardDescription:
-    'Merchandise, tour retail and gift programmes where a fixed date drives every packaging decision.',
+    'Merchandise, tour retail and gift programs where a fixed date drives every packaging decision.',
   marketAngle: 'Merchandise and date-driven production',
   related: ['custom-lip-balm-boxes', 'custom-lip-balm-labels', 'lip-balm-packaging'],
   sections: [
@@ -497,7 +497,7 @@ export const tennessee: Location = {
       heading: 'Packaging where the deadline comes first',
       navLabel: 'The market',
       body: [
-        'Tennessee produces an unusual amount of lip product as merchandise: tour and venue retail, brand collaborations, festival and event programmes, and gift ranges tied to a season.',
+        'Tennessee produces an unusual amount of lip product as merchandise: tour and venue retail, brand collaborations, festival and event programs, and gift ranges tied to a season.',
         'The defining characteristic is that the date is fixed before anything else. A tour starts when it starts. A festival happens on its dates. That reverses the normal packaging sequence, where the specification is chosen and the schedule follows.',
         'Working backwards from a fixed date is entirely possible. It requires making a small number of decisions early and accepting that some specification options are off the table, which is a better outcome than finding it out at proof stage.',
       ],

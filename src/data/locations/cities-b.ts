@@ -41,11 +41,11 @@ export const philadelphia: Location = {
       intro: 'Six things to have ready before the first account asks, rather than after.',
       items: [
         'A barcode, registered to you rather than borrowed, printed on a flat panel with clear space',
-        'A full <a href="/resources/cosmetic-packaging-label-requirements/">cosmetic ingredient labelling rules</a> that is actually legible at final size',
+        'A full <a href="/resources/cosmetic-packaging-label-requirements/">cosmetic ingredient declaration</a> that is actually legible at final size',
         'A case count a small shop can order without taking months of stock',
         'Consistent packaging between batches, which hand-cut labels do not deliver',
         'A wholesale price that survives a retail margin, which constrains packaging cost',
-        'Enough stock to fulfil a reorder, since the second order usually comes faster than expected',
+        'Enough stock to fulfill a reorder, since the second order usually comes faster than expected',
       ],
       outro:
         'The barcode is the one that stops a sale outright. Everything else can be worked around briefly; a product that cannot be scanned cannot be sold.',
@@ -157,7 +157,7 @@ export const sanAntonio: Location = {
       body: [
         'Write both language versions of every required element before any design work begins, then count the characters. That number, not a layout instinct, tells you whether the container you have chosen can carry the copy.',
         'It is also worth deciding which language leads on the principal display panel, since that is a positioning decision rather than a packaging one and it affects how the front is laid out.',
-        'Have both versions reviewed by a qualified compliance professional, not just translated. Requirements vary by product and market, and a translation that reads correctly is not the same as copy that meets a requirement. The panel arithmetic is set out in our <a href="/resources/cosmetic-packaging-label-requirements/">cosmetic labelling requirements guide</a>.',
+        'Have both versions reviewed by a qualified compliance professional, not just translated. Requirements vary by product and market, and a translation that reads correctly is not the same as copy that meets a requirement. The panel arithmetic is set out in our <a href="/resources/cosmetic-packaging-label-requirements/">cosmetic labeling requirements guide</a>.',
       ],
     },
   ],
@@ -227,7 +227,7 @@ export const sanDiego: Location = {
       navLabel: 'The market',
       body: [
         'A high proportion of lip products developed in San Diego carry a sun protection claim, driven by an outdoor market and year-round conditions.',
-        'That claim has a packaging consequence most brands meet late. In the United States, a lip product making an SPF claim is regulated differently from a plain cosmetic and its labelling carries additional required panel content in a prescribed format.',
+        'That claim has a packaging consequence most brands meet late. In the United States, a lip product making an SPF claim is regulated differently from a plain cosmetic and its labeling carries additional required panel content in a prescribed format.',
         'The copy is longer than a cosmetic declaration, and the format is less flexible. A tube band that comfortably held a cosmetic ingredient list often cannot hold the required panel, which means the container choice has to account for it before it is made.',
       ],
     },
@@ -270,7 +270,7 @@ export const sanDiego: Location = {
       a: 'Often not legibly. A tube band that comfortably held a cosmetic ingredient declaration frequently cannot hold the required panel. Plan for an outer carton or a peel-back label before choosing the container rather than after.',
     },
     {
-      q: 'Do you advise on SPF labelling requirements?',
+      q: 'Do you advise on SPF labeling requirements?',
       a: 'No. We print the file you approve and do not review regulatory content. Get the required panel content from a qualified reviewer, laid out rather than as a list, so you can measure the area it actually needs.',
     },
     {
@@ -353,7 +353,7 @@ export const dallas: Location = {
       heading: 'Producing samples ahead of production',
       navLabel: 'Sample timing',
       body: [
-        'The scheduling problem is that a production-standard sample requires the specification to be finalised, and market dates arrive before most brands want to finalise anything.',
+        'The scheduling problem is that a production-standard sample requires the specification to be finalized, and market dates arrive before most brands want to finalize anything.',
         'The practical route is to lock the structure early and produce a small quantity to production standard for the market, accepting that the unit cost on that small run is high. It is a selling cost rather than a production cost, and it is small against the orders it writes.',
         'It also means the die is already cut when the orders come in, which shortens the path from written order to delivery considerably. <a href="/how-to-order/">How an order runs from quote to delivery</a> is set out separately.',
       ],
@@ -425,7 +425,7 @@ export const austin: Location = {
       navLabel: 'The market',
       body: [
         'Austin has a dense concentration of direct-to-consumer brands, including subscription and replenishment models. That changes the packaging calculation in a way retail brands never face.',
-        'A retail brand ships packaging once, in bulk, to a distribution centre. A direct brand ships it individually, on every order, usually at its own cost or at a cost the customer is sensitive to. Every gram and every cubic inch is a recurring expense rather than a one-time one.',
+        'A retail brand ships packaging once, in bulk, to a distribution center. A direct brand ships it individually, on every order, usually at its own cost or at a cost the customer is sensitive to. Every gram and every cubic inch is a recurring expense rather than a one-time one.',
         'That inverts some conventional advice. Heavier board signals quality on a shelf and costs money on every parcel. A larger carton has more design area and pushes you into the next parcel rate band.',
       ],
     },
@@ -466,7 +466,7 @@ export const austin: Location = {
     },
     {
       q: 'How do parcel rate bands affect my packaging?',
-      a: 'Carriers price in dimensional bands, so a pack fractionally over a threshold costs more on every single order for the life of the product. Check your mailer dimensions against your carrier bands before finalising the carton size.',
+      a: 'Carriers price in dimensional bands, so a pack fractionally over a threshold costs more on every single order for the life of the product. Check your mailer dimensions against your carrier bands before finalizing the carton size.',
     },
     {
       q: 'Is interior printing worth it for direct selling?',

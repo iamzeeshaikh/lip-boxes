@@ -12,11 +12,11 @@ const faqs: Faq[] = [
   },
   {
     q: 'How much bleed do you need?',
-    a: 'Three millimetres beyond every trimmed edge, with the artwork continuing into that area rather than stopping at the trim line. Artwork that stops exactly at the trim will show a white sliver on some units, because cutting and creasing both have real tolerance.',
+    a: 'Three millimeters beyond every trimmed edge, with the artwork continuing into that area rather than stopping at the trim line. Artwork that stops exactly at the trim will show a white sliver on some units, because cutting and creasing both have real tolerance.',
   },
   {
     q: 'How far inside the trim should text sit?',
-    a: 'At least 4 mm on a folding carton and 2 mm on a label. Type placed tight to the trim looks off-centre on some units even when production is comfortably within tolerance, and on a small pack that is very noticeable.',
+    a: 'At least 4 mm on a folding carton and 2 mm on a label. Type placed tight to the trim looks off-center on some units even when production is comfortably within tolerance, and on a small pack that is very noticeable.',
   },
   {
     q: 'Do you supply a die line before I design?',
@@ -24,11 +24,11 @@ const faqs: Faq[] = [
   },
   {
     q: 'How should foil and spot UV be supplied?',
-    a: 'Each as its own vector layer drawn in 100% black and named for what it is, such as "foil gold" or "spot UV gloss". They are separate tools rather than colours. Where two overlap, say in the file or the email which one sits on top.',
+    a: 'Each as its own vector layer drawn in 100% black and named for what it is, such as "foil gold" or "spot UV gloss". They are separate tools rather than colors. Where two overlap, say in the file or the email which one sits on top.',
   },
   {
     q: 'When do I need an opaque white layer?',
-    a: 'Whenever the stock is kraft, metallised, holographic or black-through and something needs to read as white or as a true light colour. On those substrates an unprinted area is the substrate, not white. The white layer is drawn as its own named layer in the shape of whatever needs it.',
+    a: 'Whenever the stock is kraft, metallized, holographic or black-through and something needs to read as white or as a true light color. On those substrates an unprinted area is the substrate, not white. The white layer is drawn as its own named layer in the shape of whatever needs it.',
   },
   {
     q: 'What resolution do raster images need?',
@@ -52,7 +52,7 @@ const faqs: Faq[] = [
   },
   {
     q: 'Can you build the artwork if I only have a rough idea?',
-    a: 'Our studio can lay your elements onto the die line and set the legal panels from copy you supply. Send a sketch, a competitor reference or a rough layout with your enquiry. What we cannot do is write your ingredient declaration or verify your claims.',
+    a: 'Our studio can lay your elements onto the die line and set the legal panels from copy you supply. Send a sketch, a competitor reference or a rough layout with your inquiry. What we cannot do is write your ingredient declaration or verify your claims.',
   },
 ];
 ---
@@ -60,15 +60,15 @@ const faqs: Faq[] = [
 <InfoLayout
   path="/artwork-guidelines/"
   title="Artwork Guidelines | Print File Setup | Lip Boxes"
-  description="File formats, bleed, safe areas, colour space and named finishing layers for print-ready lip packaging artwork, plus what we do not check."
+  description="File formats, bleed, safe areas, color space and named finishing layers for print-ready lip packaging artwork, plus what we do not check."
   h1="Artwork Guidelines"
   lead="Files built to these requirements go to print without a wasted proof cycle. Almost every delay we see comes from one of five things, and all five are avoidable."
   ogTitle="How to Prepare Print-Ready Packaging Artwork"
-  ogDescription="Formats, bleed, safe areas, colour space, black builds and finishing layers for lip packaging files."
+  ogDescription="Formats, bleed, safe areas, color space, black builds and finishing layers for lip packaging files."
   points={['File specification', 'Finishing layers', 'What we do not check']}
   faqs={faqs}
   ctaHeading="Send your file for a free preflight check"
-  ctaBody="Attach artwork to your enquiry and we will tell you what needs changing before anything is quoted for production, rather than after."
+  ctaBody="Attach artwork to your inquiry and we will tell you what needs changing before anything is quoted for production, rather than after."
 >
   <InfoSection
     id="die-line"
@@ -85,8 +85,7 @@ const faqs: Faq[] = [
       The same principle applies to labels and rolled tubes, with a different
       template. A tube template is a rectangle whose width is the circumference
       plus a seam overlap, not a folding die line, so any element crossing the seam
-      will show a small step. Details for that format are on the
-      <a href="/paper-lip-balm-tubes/">paperboard tube page</a>.
+      will show a small step. Details for that format are on the <a href="/paper-lip-balm-tubes/">paperboard tube page</a>.
     </p>
   </InfoSection>
 
@@ -101,9 +100,9 @@ const faqs: Faq[] = [
       rows={[
         ['Format', 'Print-ready PDF, or AI / EPS with links embedded; PSD at final size for image-led work', 'Vector paths are needed for die lines and finishing tools'],
         ['Resolution', '300 dpi at final size for all raster content', 'Upscaling a low-resolution image does not recover detail'],
-        ['Colour space', 'CMYK, plus named spot colours from the appropriate Pantone library', 'RGB converts unpredictably; spot colours must be named to be mixed'],
+        ['Color space', 'CMYK, plus named spot colors from the appropriate Pantone library', 'RGB converts unpredictably; spot colors must be named to be mixed'],
         ['Bleed', '3 mm beyond every trimmed edge, artwork continuing into it', 'Cutting and creasing both have tolerance'],
-        ['Safe area', '4 mm inside trim on cartons, 2 mm inside cut on labels', 'Keeps type from looking off-centre on outer units'],
+        ['Safe area', '4 mm inside trim on cartons, 2 mm inside cut on labels', 'Keeps type from looking off-center on outer units'],
         ['Fonts', 'Outlined, or supplied with the file', 'Missing fonts substitute silently'],
         ['Black', '100% K for small type, rich black build for large solids', 'Small type stays sharp; large solids do not look washed out'],
         ['Overprint', 'Set deliberately and flagged, not left at defaults', 'Unintended overprint can drop white type entirely'],
@@ -115,7 +114,7 @@ const faqs: Faq[] = [
   <InfoSection
     id="finishing-layers"
     heading="Finishing needs its own layers"
-    intro="Foil, spot UV, embossing and opaque white are not colours. Each is a separate plate or metal tool, made from a separate layer."
+    intro="Foil, spot UV, embossing and opaque white are not colors. Each is a separate plate or metal tool, made from a separate layer."
   >
     <ul class="vx-ul">
       <li>Draw each in 100% black, as vector paths, on its own layer.</li>
@@ -126,8 +125,7 @@ const faqs: Faq[] = [
     </ul>
     <p class="vx-note">
       An unnamed extra layer gets interpreted rather than followed, and that costs
-      a proof cycle. What each finish does physically is covered on the
-      <a href="/finishes/">page on coatings and surface treatments</a>.
+      a proof cycle. What each finish does physically is covered on the <a href="/finishes/">page on coatings and surface treatments</a>.
     </p>
   </InfoSection>
 
@@ -165,8 +163,7 @@ const faqs: Faq[] = [
     <p class="vx-measure">
       Where a design runs across many variants, keep every fixed element in exactly
       the same position and change only the variable zone. Twelve shades then
-      review as one standard plus twelve checks, which is how
-      <a href="/custom-lip-care-packaging/">multi-SKU packaging programmes</a> stay
+      review as one standard plus twelve checks, which is how <a href="/custom-lip-care-packaging/">multi-SKU packaging programs</a> stay
       manageable.
     </p>
   </InfoSection>
@@ -181,7 +178,7 @@ const faqs: Faq[] = [
       <li><strong>Bleed extends past every trim edge</strong>, with no artwork stopping at the trim.</li>
       <li>
         <strong>Separations preview shows exactly the plates you intended</strong>,
-        with no stray spot colours and finishing layers correctly named.
+        with no stray spot colors and finishing layers correctly named.
       </li>
       <li>
         <strong>Barcode sits on a flat panel</strong> with clear space and does not

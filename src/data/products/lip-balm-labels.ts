@@ -41,11 +41,11 @@ export const product: Product = {
     {
       file: 'lip-balm-label-kraft-uncoated.png',
       alt: 'Kraft paper lip balm label printed in black beside a matching kraft-wrapped tube on marble',
-      caption: 'Uncoated kraft stock, printed in a single colour.',
+      caption: 'Uncoated kraft stock, printed in a single color.',
     },
     {
       file: 'lip-balm-label-roll-and-jar-set.png',
-      alt: 'Roll of printed lip balm labels unwinding beside a labelled blue tube and a lip scrub jar',
+      alt: 'Roll of printed lip balm labels unwinding beside a labeled blue tube and a lip scrub jar',
       caption: 'Roll format supplied alongside matching jar and tin labels.',
     },
   ],
@@ -122,10 +122,10 @@ export const product: Product = {
       columns: ['Stock', 'Oil and water', 'Look', 'Carried where'],
       rows: [
         ['White BOPP synthetic', 'High', 'Clean, bright whites, slightly plastic', 'Pocket, handbag, gym bag, outdoors'],
-        ['Clear BOPP', 'High', 'No-label look on a coloured container', 'Anywhere; needs a white underprint for pale colours'],
-        ['Metallised polyester', 'High', 'Silver or gold base beneath the ink', 'Limited editions and holiday sets'],
-        ['Uncoated kraft paper', 'Low unless varnished', 'Natural, matte, visible fibre', 'Inside an outer carton, or on a shelf product'],
-        ['Coated white paper', 'Moderate with lamination', 'Sharp full colour, warmer than film', 'Boxed products where the tube is protected'],
+        ['Clear BOPP', 'High', 'No-label look on a colored container', 'Anywhere; needs a white underprint for pale colors'],
+        ['Metallized polyester', 'High', 'Silver or gold base beneath the ink', 'Limited editions and holiday sets'],
+        ['Uncoated kraft paper', 'Low unless varnished', 'Natural, matte, visible fiber', 'Inside an outer carton, or on a shelf product'],
+        ['Coated white paper', 'Moderate with lamination', 'Sharp full color, warmer than film', 'Boxed products where the tube is protected'],
         ['Textured felt paper', 'Low', 'Tactile and premium, absorbs ink softly', 'Gift sets and boxed presentation only'],
       ],
       outro:
@@ -149,7 +149,7 @@ export const product: Product = {
       navLabel: 'Legal copy',
       body: [
         'A cosmetic sold in the United States needs an ingredient declaration in descending order of predominance, the net quantity of contents, and the name and place of business of the responsible party. On a lip balm tube that has to fit into a band about an inch and a half tall.',
-        'Legibility falls off sharply below about 5 pt, and sooner on uncoated kraft where ink spreads into the fibre. Rather than shrinking the type further, the practical answers are a peel-back panel, moving the declaration to an outer carton, or a small folded leaflet inside the box.',
+        'Legibility falls off sharply below about 5 pt, and sooner on uncoated kraft where ink spreads into the fiber. Rather than shrinking the type further, the practical answers are a peel-back panel, moving the declaration to an outer carton, or a small folded leaflet inside the box.',
         'If your balm carries an SPF claim it is regulated as an over-the-counter drug in the United States and the drug facts panel has its own layout rules. We print what you approve and do not review compliance, so have that copy checked first.',
       ],
     },
@@ -171,7 +171,7 @@ export const product: Product = {
       navLabel: 'Quantity & pricing',
       body: [
         'Labels are the one product on this site where running several designs costs little more than running one, provided they share a size and a stock. The cutting die and the material are shared, so six scents at 2,000 each is priced close to a single design at 12,000.',
-        'Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity. Plain paper stocks at volume sit at the lower end of that range; metallised material with foil and lamination sits well above it.',
+        'Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity. Plain paper stocks at volume sit at the lower end of that range; metallized material with foil and lamination sits well above it.',
         'One cutting die serves every reorder at that size, so keeping a whole range on a single label footprint pays back steadily. That is worth deciding before the first order rather than after the third.',
       ],
     },
@@ -181,7 +181,7 @@ export const product: Product = {
       heading: 'Quality control and storage',
       navLabel: 'Quality',
       body: [
-        'Printed labels are checked for colour against the approved proof, for cut registration against the artwork, and for clean release from the liner. Registration is the failure customers notice, because a die drifting by half a millimetre leaves a visible white sliver along one edge of every label on the roll.',
+        'Printed labels are checked for color against the approved proof, for cut registration against the artwork, and for clean release from the liner. Registration is the failure customers notice, because a die drifting by half a millimeter leaves a visible white sliver along one edge of every label on the roll.',
         'Store label stock flat, cool and out of sunlight, and use it within a reasonable period. Adhesive performance changes with age and heat, and a roll that has sat near a warehouse ceiling through a summer will not run the way a fresh one does.',
         'On disposal, paper-faced labels are compatible with paper recycling once separated from the container. Synthetic BOPP is not, and if the label stays on the tube it affects how the whole pack is handled. That trade-off between durability and end-of-life is worth weighing deliberately, and the material notes on the <a href="/materials/">board and material options</a> set out the same logic for board.',
       ],
@@ -192,7 +192,7 @@ export const product: Product = {
     { label: 'Formats', value: 'Full wrap, die-cut wrap with tab, cap seal, base seal, tin top, tamper band, peel-back panel' },
     { label: 'Typical wrap size', value: 'Approximately 2 x 1.5 in for a standard 0.15 oz stick; cut to your container' },
     { label: 'Sizing method', value: 'Circumference plus overlap, and the usable band between cap seat and base flange' },
-    { label: 'Face stocks', value: 'White BOPP, clear BOPP, metallised polyester, uncoated kraft, coated paper, textured felt' },
+    { label: 'Face stocks', value: 'White BOPP, clear BOPP, metallized polyester, uncoated kraft, coated paper, textured felt' },
     { label: 'Finishing', value: 'Matte or gloss lamination, varnish, spot UV, hot and cold foil' },
     { label: 'Adhesive', value: 'Permanent acrylic as standard; specified against container material and storage' },
     { label: 'Supply format', value: 'Sheets, or rolls wound to your applicator core size and unwind direction' },
@@ -225,7 +225,7 @@ export const product: Product = {
     },
     {
       q: 'Which stock gives a no-label look?',
-      a: 'Yes, using a clear BOPP stock so the container colour shows through the unprinted areas. Remember that ink on clear film is translucent, so pale colours and whites need a white underprint layer or they will disappear against a dark container.',
+      a: 'Yes, using a clear BOPP stock so the container color shows through the unprinted areas. Remember that ink on clear film is translucent, so pale colors and whites need a white underprint layer or they will disappear against a dark container.',
     },
     {
       q: 'Should I order sheets or rolls?',

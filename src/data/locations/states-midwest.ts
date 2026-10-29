@@ -29,7 +29,7 @@ export const illinois: Location = {
       navLabel: 'The market',
       body: [
         'Several large retail and drug chains run buying operations out of the Chicago area, and brands supplying them work to a planogram reset calendar rather than to their own launch plans.',
-        'A reset date is fixed months ahead and does not move. Packaging that is not in the distribution centre by the cutoff misses the window entirely, and the next one may be six months out. That makes schedule certainty more valuable than specification ambition.',
+        'A reset date is fixed months ahead and does not move. Packaging that is not in the distribution center by the cutoff misses the window entirely, and the next one may be six months out. That makes schedule certainty more valuable than specification ambition.',
         'It also means the specification is partly written for you. Fixture depth constrains pack depth, peg spacing constrains width, and the chain\'s vendor manual usually governs case count, barcode format and pallet configuration.',
       ],
     },
@@ -40,7 +40,7 @@ export const illinois: Location = {
       navLabel: 'Fixture constraints',
       intro: 'Six measurements to get from the account before a die line is drawn.',
       items: [
-        '<a href="/hang-tab-lip-balm-boxes/">Peg hook hang tab boxes</a> diameter and spacing, which sets the tab type and the maximum pack width',
+        '<a href="/hang-tab-lip-balm-boxes/">Peg hook diameter and spacing</a>, which sets the tab type and the maximum pack width',
         'Fixture depth, since the pack must clear the one hanging in front of it',
         'Shelf height where the product sits on a shelf rather than a peg',
         'Required barcode format and its position on the pack and on the outer case',
@@ -65,7 +65,7 @@ export const illinois: Location = {
   faqs: [
     {
       q: 'What is a planogram reset and why does it matter?',
-      a: 'A scheduled date when a retailer rebuilds a fixture and new products go on shelf. The date is fixed months ahead and does not move, so packaging that misses the distribution centre cutoff misses the window, and the next one may be six months out.',
+      a: 'A scheduled date when a retailer rebuilds a fixture and new products go on shelf. The date is fixed months ahead and does not move, so packaging that misses the distribution center cutoff misses the window, and the next one may be six months out.',
     },
     {
       q: 'What do I need from the retailer before you draw a die line?',
@@ -81,7 +81,7 @@ export const illinois: Location = {
     },
     {
       q: 'Can you pack to a chain vendor manual?',
-      a: 'Yes. Send the manual in full rather than the section someone quoted at you. Case counts, inner packs, case labelling and pallet patterns are all built into the production plan at no extra cost when they arrive at quoting stage.',
+      a: 'Yes. Send the manual in full rather than the section someone quoted at you. Case counts, inner packs, case labeling and pallet patterns are all built into the production plan at no extra cost when they arrive at quoting stage.',
     },
     {
       q: 'Does the outer case need its own barcode?',
@@ -89,12 +89,12 @@ export const illinois: Location = {
     },
     {
       q: 'How far ahead should I start for a reset?',
-      a: 'Earlier than you think, because the gating item is usually your own approvals rather than production. Tell us the reset date at enquiry stage and we will work back from it and say plainly whether it is achievable.',
+      a: 'Earlier than you think, because the gating item is usually your own approvals rather than production. Tell us the reset date at inquiry stage and we will work back from it and say plainly whether it is achievable.',
     },
     {
       q: 'Is stock held locally in Illinois?',
       a:
-        'No stock is held in Illinois or anywhere else. Packaging is made against a confirmed order, which is why sizes and finishes are open rather than fixed to a catalogue.',
+        'No stock is held in Illinois or anywhere else. Packaging is made against a confirmed order, which is why sizes and finishes are open rather than fixed to a catalog.',
     },
   ],
 };
@@ -128,7 +128,7 @@ export const ohio: Location = {
       navLabel: 'The market',
       body: [
         'Ohio metros are used as test markets more than most, because their demographics track national averages reasonably well. That gives packaging a specific requirement: it has to work at a few thousand units and again at a few hundred thousand without being redesigned in between.',
-        'The trap is optimising the test run for cost. A specification chosen purely to make a 3,000-unit trial cheap often cannot scale — a digital-only design with no plate consideration, a board that is not economically available in volume, or a construction that suits hand packing but not an automated line.',
+        'The trap is optimizing the test run for cost. A specification chosen purely to make a 3,000-unit trial cheap often cannot scale — a digital-only design with no plate consideration, a board that is not economically available in volume, or a construction that suits hand packing but not an automated line.',
         'The better approach is to design for the rollout and accept a slightly higher unit cost on the trial. The trial is small by definition, so the extra cost is small in absolute terms, and it removes a redesign from the critical path if the test succeeds.',
       ],
     },
@@ -143,12 +143,12 @@ export const ohio: Location = {
         ['Die line', 'Same either way; carries forward', 'Same die serves both'],
         ['Print process', 'Digital, no plates', 'Litho; artwork must suit both'],
         ['Board grade', 'Whatever is on hand', 'Confirm it is available at volume'],
-        ['Colour build', 'Process is fine at small scale', 'Spot colours for consistency across runs'],
+        ['Color build', 'Process is fine at small scale', 'Spot colors for consistency across runs'],
         ['Base construction', 'Tuck base for hand packing', 'Auto-bottom or seal end for a line'],
         ['Case count', 'Whatever suits a small shipment', 'What the retailer or filler requires'],
       ],
       outro:
-        'The two rows that catch people are colour build and base construction. Both are cheap to get right at trial stage and expensive to change once the artwork is signed off.',
+        'The two rows that catch people are color build and base construction. Both are cheap to get right at trial stage and expensive to change once the artwork is signed off.',
     },
     {
       type: 'prose',
@@ -169,7 +169,7 @@ export const ohio: Location = {
     },
     {
       q: 'What does not carry forward from a trial to a rollout?',
-      a: 'A colour build specified as four-colour process, which drifts between runs and should be a spot colour if consistency matters. And a tuck base chosen for hand packing, which will not suit an automated line at volume.',
+      a: 'A color build specified as four-color process, which drifts between runs and should be a spot color if consistency matters. And a tuck base chosen for hand packing, which will not suit an automated line at volume.',
     },
     {
       q: 'Does the die line carry forward?',
@@ -189,7 +189,7 @@ export const ohio: Location = {
     },
     {
       q: 'Can the same artwork run digital then litho?',
-      a: 'Usually, but it has to be built with both in mind. Spot colour handling and total ink coverage differ between the processes, so a file designed only for digital sometimes needs adjustment before a litho run.',
+      a: 'Usually, but it has to be built with both in mind. Spot color handling and total ink coverage differ between the processes, so a file designed only for digital sometimes needs adjustment before a litho run.',
     },
     {
       q: 'Can I come and see samples in Ohio?',
@@ -254,7 +254,7 @@ export const michigan: Location = {
       heading: 'What sells into a winter market',
       navLabel: 'Formats',
       body: [
-        'Cold-weather lip care skews toward repair and protection formats rather than colour: heavier balms, medicated formats, and multipacks bought as consumables rather than as a single considered purchase.',
+        'Cold-weather lip care skews toward repair and protection formats rather than color: heavier balms, medicated formats, and multipacks bought as consumables rather than as a single considered purchase.',
         'Multipacks matter more here than in most markets, because a customer buying for a household in November buys several. That favours tray formats and banded pairs over singles, and it changes the carton proportion.',
         'Hanging packs also perform, because a lot of winter lip balm sells through pharmacy and convenience at the checkout rather than from a beauty fixture. The tab geometry has to be specified against the packed weight of a multipack rather than a single stick, as covered on our <a href="/hang-tab-lip-balm-boxes/">hanging cartons for checkout fixtures</a>.',
       ],
@@ -267,7 +267,7 @@ export const michigan: Location = {
     },
     {
       q: 'Does a call-off cost more than a single delivery?',
-      a: 'The goods are priced on the full run, so the unit price is the volume price. There are storage terms to agree and additional deliveries to pay for, both of which are set per programme and are usually less than the cost of ordering in small batches.',
+      a: 'The goods are priced on the full run, so the unit price is the volume price. There are storage terms to agree and additional deliveries to pay for, both of which are set per program and are usually less than the cost of ordering in small batches.',
     },
     {
       q: 'How long can packaging be held before use?',
@@ -313,7 +313,7 @@ export const indiana: Location = {
   ogDescription:
     'Cartons packed to the case counts and pallet patterns a distribution operation actually needs.',
   h1: 'Custom Lip Boxes in Indiana',
-  deck: 'Indiana sits on the country\'s distribution crossroads, and packaging here is judged partly on how it palletises.',
+  deck: 'Indiana sits on the country\'s distribution crossroads, and packaging here is judged partly on how it palletizes.',
   cardDescription:
     'Distribution-led supply, where case efficiency and pallet configuration are part of the specification.',
   marketAngle: 'Case pack efficiency and pallet configuration',
@@ -337,16 +337,16 @@ export const indiana: Location = {
       navLabel: 'Case planning',
       intro: 'Seven questions that determine how efficiently your product ships.',
       items: [
-        'What case dimensions your operation or your accounts standardise on',
+        'What case dimensions your operation or your accounts standardize on',
         'How many units fit that case with your carton dimensions, and whether a small change improves it',
         'Whether an inner pack is needed so cases can be split without opening cartons',
         'How many cases fit a pallet layer, and how many layers to the maximum height',
         'Whether pallets are stretch wrapped, strapped or slip sheeted',
-        'What case labelling is required, including any barcode format',
-        'Whether the same case works for both retail accounts and direct fulfilment',
+        'What case labeling is required, including any barcode format',
+        'Whether the same case works for both retail accounts and direct fulfillment',
       ],
       outro:
-        'The second question is the one worth actually running the numbers on. Occasionally a two millimetre reduction in carton width adds a whole column to the case.',
+        'The second question is the one worth actually running the numbers on. Occasionally a two millimeter reduction in carton width adds a whole column to the case.',
     },
     {
       type: 'prose',
@@ -356,7 +356,7 @@ export const indiana: Location = {
       body: [
         'Freight on packaging and on finished goods is charged on whichever is greater, weight or volume. For lip products, which are light, volume almost always governs.',
         'That means the number of units per pallet is the number that determines your shipping cost per unit, not the weight of the product. A configuration that fits ten percent more units per pallet reduces freight per unit by roughly ten percent on every shipment, permanently.',
-        'It is worth an hour of arithmetic at specification stage. Send us your standard case dimensions and pallet constraints with the enquiry and the carton can be proportioned with them in mind, rather than the case being worked out around a carton already committed to. Delivery detail is on our <a href="/shipping-information/">pallet and freight information</a>.',
+        'It is worth an hour of arithmetic at specification stage. Send us your standard case dimensions and pallet constraints with the inquiry and the carton can be proportioned with them in mind, rather than the case being worked out around a carton already committed to. Delivery detail is on our <a href="/shipping-information/">pallet and freight information</a>.',
       ],
     },
   ],
@@ -367,7 +367,7 @@ export const indiana: Location = {
     },
     {
       q: 'Should I send you my case dimensions?',
-      a: 'Yes, with the enquiry. The carton can then be proportioned to fit your standard case efficiently, rather than the case being worked out around a carton already committed to. It costs nothing at that stage.',
+      a: 'Yes, with the inquiry. The carton can then be proportioned to fit your standard case efficiently, rather than the case being worked out around a carton already committed to. It costs nothing at that stage.',
     },
     {
       q: 'What is an inner pack and do I need one?',
@@ -375,19 +375,19 @@ export const indiana: Location = {
     },
     {
       q: 'Can you pack to a specific pallet pattern?',
-      a: 'Yes. Send the pattern, maximum height and whether pallets are stretch wrapped, strapped or slip sheeted. Building it into the production plan costs nothing; repacking finished stock afterwards costs labour and risks damage.',
+      a: 'Yes. Send the pattern, maximum height and whether pallets are stretch wrapped, strapped or slip sheeted. Building it into the production plan costs nothing; repacking finished stock afterwards costs labor and risks damage.',
     },
     {
-      q: 'Do you supply case labelling?',
+      q: 'Do you supply case labeling?',
       a: 'Yes, to your specification, including barcode format where an account requires one on the outer case. Send the requirement with the order, since a case barcode discovered at goods-in becomes a repacking job.',
     },
     {
-      q: 'Can one case configuration serve retail and direct fulfilment?',
-      a: 'Sometimes, but they often want different things: retail accounts want a case count matched to their replenishment, fulfilment centres want efficient pallets. Where they conflict, an inner pack usually resolves it.',
+      q: 'Can one case configuration serve retail and direct fulfillment?',
+      a: 'Sometimes, but they often want different things: retail accounts want a case count matched to their replenishment, fulfillment centers want efficient pallets. Where they conflict, an inner pack usually resolves it.',
     },
     {
       q: 'Is it worth changing a carton size to improve case fit?',
-      a: 'Occasionally, yes. If a two millimetre reduction adds a column to the case, that is a permanent freight saving on every shipment. It is only worth doing before the die line is cut, which is why it should be raised early.',
+      a: 'Occasionally, yes. If a two millimeter reduction adds a column to the case, that is a permanent freight saving on every shipment. It is only worth doing before the die line is cut, which is why it should be raised early.',
     },
     {
       q: 'Should I treat this as a local Indiana supplier?',
@@ -407,14 +407,14 @@ export const missouri: Location = {
   secondaryKeywords: ['Missouri cosmetic packaging', 'regional chain packaging', 'Midwest lip packaging'],
   seoTitle: 'Custom Lip Boxes in Missouri | Packaging Supply',
   metaDescription:
-    'Lip packaging for Missouri brands supplying regional chains, where colour consistency across long reorder runs matters most.',
+    'Lip packaging for Missouri brands supplying regional chains, where color consistency across long reorder runs matters most.',
   ogTitle: 'Custom Lip Packaging for Missouri Brands',
   ogDescription:
     'Cartons specified for long shelf tenure with regional chains, where the same pack has to reproduce for years.',
   h1: 'Custom Lip Boxes in Missouri',
   deck: 'Regional chain listings last, which makes reproducing the same pack for years the real requirement.',
   cardDescription:
-    'Regional chain supply, where a listing lasts and colour consistency across reorders is the priority.',
+    'Regional chain supply, where a listing lasts and color consistency across reorders is the priority.',
   marketAngle: 'Long shelf tenure and reorder consistency',
   related: ['custom-lip-balm-boxes', 'hang-tab-lip-balm-boxes', 'custom-lip-balm-labels'],
   sections: [
@@ -425,8 +425,8 @@ export const missouri: Location = {
       navLabel: 'The market',
       body: [
         'Regional grocery and drug chains across Missouri tend to keep a listing longer than national accounts do. A product that earns shelf space can hold it for years, with reorders every few months.',
-        'That shifts the packaging priority. A national launch optimises for impact at the reset; a long regional listing optimises for reproducing the same pack, indistinguishably, across a dozen reorders spread over several years.',
-        'The failure mode is drift. Board shade moves slightly between mill batches, process colour moves within tolerance between runs, and a <a href="/finishes/">lamination and finish options</a> supplier changes. Individually each is within specification. Together, across three years, the pack on the shelf stops matching the one the buyer approved.',
+        'That shifts the packaging priority. A national launch optimizes for impact at the reset; a long regional listing optimizes for reproducing the same pack, indistinguishably, across a dozen reorders spread over several years.',
+        'The failure mode is drift. Board shade moves slightly between mill batches, process color moves within tolerance between runs, and a <a href="/finishes/">lamination and finish options</a> supplier changes. Individually each is within specification. Together, across three years, the pack on the shelf stops matching the one the buyer approved.',
       ],
     },
     {
@@ -436,10 +436,10 @@ export const missouri: Location = {
       navLabel: 'Consistency',
       intro: 'Six choices that keep a pack reproducing the same way over a long listing.',
       items: [
-        'Spot Pantone for brand colours and any shade swatch, rather than a process build that drifts',
+        'Spot Pantone for brand colors and any shade swatch, rather than a process build that drifts',
         'A coated white board rather than kraft or recycled, both of which vary more between batches',
         'A retained approved proof, held as the reference every reorder is measured against',
-        'A held <a href="/resources/packaging-dieline-guide/">guide to packaging die lines</a>, so the structure is identical rather than redrawn',
+        'A held <a href="/resources/packaging-dieline-guide/">die line on file</a>, so the structure is identical rather than redrawn',
         'One named laminate or varnish specification rather than "matte finish"',
         'Reorders quoted against the held specification rather than re-specified each time',
       ],
@@ -461,11 +461,11 @@ export const missouri: Location = {
   faqs: [
     {
       q: 'How do I keep a pack looking identical across years of reorders?',
-      a: 'Specify spot Pantone rather than process builds for brand colours, use a coated white board that varies less between batches than kraft or recycled, and make sure the approved proof is retained as the physical reference every reorder is measured against.',
+      a: 'Specify spot Pantone rather than process builds for brand colors, use a coated white board that varies less between batches than kraft or recycled, and make sure the approved proof is retained as the physical reference every reorder is measured against.',
     },
     {
       q: 'Why does my pack look slightly different each reorder?',
-      a: 'Usually drift: board shade moves between mill batches, process colour moves within tolerance between runs, and coating specifications get loosely described. Each is within specification individually; together over time they become visible.',
+      a: 'Usually drift: board shade moves between mill batches, process color moves within tolerance between runs, and coating specifications get loosely described. Each is within specification individually; together over time they become visible.',
     },
     {
       q: 'Do you retain the approved proof?',
@@ -477,7 +477,7 @@ export const missouri: Location = {
     },
     {
       q: 'Should I tell you the listing is long term?',
-      a: 'Yes, at the first quote. A specification chosen for a one-off run differs from one chosen for years of reorders, particularly around colour build and board grade, and knowing changes what gets recommended.',
+      a: 'Yes, at the first quote. A specification chosen for a one-off run differs from one chosen for years of reorders, particularly around color build and board grade, and knowing changes what gets recommended.',
     },
     {
       q: 'Is kraft board a problem for consistency?',

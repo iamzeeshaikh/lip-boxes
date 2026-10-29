@@ -63,7 +63,7 @@ function validateField(field: HTMLElement): string | null {
 
   if (field instanceof HTMLInputElement && field.type === 'checkbox') {
     if (field.required && !field.checked) {
-      return 'Please tick this box so we can reply to your enquiry.';
+      return 'Please tick this box so we can reply to your inquiry.';
     }
     return null;
   }
@@ -118,14 +118,14 @@ function clearStatus(form: HTMLFormElement) {
   delete status.dataset.tone;
 }
 
-let initialised = false;
+let initialized = false;
 
 export function initQuoteForms() {
-  if (initialised) return;
-  initialised = true;
+  if (initialized) return;
+  initialized = true;
 
   for (const form of document.querySelectorAll<HTMLFormElement>('[data-quote-form]')) {
-    // Record the page the enquiry came from, in case the form is rendered on
+    // Record the page the inquiry came from, in case the form is rendered on
     // a route that differs from the value baked in at build time.
     const pageUrlField = form.querySelector<HTMLInputElement>('[data-page-url]');
     if (pageUrlField) pageUrlField.value = window.location.href;
@@ -201,7 +201,7 @@ export function initQuoteForms() {
           showStatus(
             form,
             'success',
-            payload.message ?? 'Thanks — your enquiry has been sent.',
+            payload.message ?? 'Thanks — your inquiry has been sent.',
           );
           window.location.assign(SUCCESS_PAGE);
           return;
@@ -222,13 +222,13 @@ export function initQuoteForms() {
           form,
           'error',
           payload?.message ??
-            'Your enquiry could not be sent. Please try again, or email us directly.',
+            'Your inquiry could not be sent. Please try again, or email us directly.',
         );
       } catch {
         showStatus(
           form,
           'error',
-          'Your enquiry could not be sent — the connection failed. Please try again, or email us directly.',
+          'Your inquiry could not be sent — the connection failed. Please try again, or email us directly.',
         );
       } finally {
         submitting = false;

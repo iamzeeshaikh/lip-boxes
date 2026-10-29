@@ -55,7 +55,7 @@ export const product: Product = {
       heading: 'Where hanging lipstick packs sell',
       navLabel: 'Overview',
       body: [
-        'Colour cosmetics move a great deal of volume through fixtures that are not shelves: pegboard walls in beauty supply stores, clip strips at pharmacy checkouts, slatwall in gift retail and spinner racks in convenience. Every one of those needs a pack that hangs, and a plain lipstick carton cannot.',
+        'Color cosmetics move a great deal of volume through fixtures that are not shelves: pegboard walls in beauty supply stores, clip strips at pharmacy checkouts, slatwall in gift retail and spinner racks in convenience. Every one of those needs a pack that hangs, and a plain lipstick carton cannot.',
         'The other thing these fixtures have in common is that the shopper is looking at a wall of similar packs from three feet away. A window that shows the actual bullet case, and often the shade itself, does more at that distance than any amount of printed description. That is why the hanging lipstick carton is nearly always a window carton too.',
         'Combining both features on one small panel is the engineering problem. Cutting a large window immediately below a hanging slot removes material from precisely the area carrying the load, and a carton designed without allowing for that will elongate around the hook. If your product is going onto shelves rather than pegs, a plain <a href="/custom-lipstick-boxes/">printed lipstick carton without a tab</a> is the simpler and cheaper choice.',
       ],
@@ -119,7 +119,7 @@ export const product: Product = {
       body: [
         'Cartons are cut to your bullet case, measured at the widest point with the cap fitted, plus total height and the space the tab needs above it. Send a sample case if you can, because magnetic and weighted cases often measure slightly larger than their drawings.',
         'Peg fixtures also set their own constraints. The pack has to clear the pack in front of it on the same hook, which means depth matters as much as width. Hook diameter is usually between 3 and 6 mm, and the slot has to suit it.',
-        'Many retail chains publish a packaging specification covering tab dimensions, barcode position, case counts and pallet patterns. If you have one, send it with the enquiry. Matching it at design stage is straightforward; resolving a mismatch after production is not.',
+        'Many retail chains publish a packaging specification covering tab dimensions, barcode position, case counts and pallet patterns. If you have one, send it with the inquiry. Matching it at design stage is straightforward; resolving a mismatch after production is not.',
       ],
     },
     {
@@ -130,11 +130,11 @@ export const product: Product = {
       intro:
         'On a peg wall your pack is compared instantly against everything around it, and board choice affects that comparison more than it does on a shelf.',
       items: [
-        'Coated white SBS, 18pt to 24pt, for bright full-colour print and clear shade differentiation',
+        'Coated white SBS, 18pt to 24pt, for bright full-color print and clear shade differentiation',
         'Heavier 24pt board where the carton holds two or more cases',
-        'Kraft board for natural and clean-beauty positioning, accepting that colours read muted',
+        'Kraft board for natural and clean-beauty positioning, accepting that colors read muted',
         'Black-through board for dark cartons, so cut edges and the window rim stay black',
-        'Metallised board for limited editions, though it is not compatible with paper recycling',
+        'Metallized board for limited editions, though it is not compatible with paper recycling',
         'Clear film patches in PET or PLA depending on the disposal route you prefer',
       ],
       outro:
@@ -159,18 +159,18 @@ export const product: Product = {
       body: [
         'The panel has to hold a hanging slot, a window, a brand mark, a shade name, a net weight, and a barcode somewhere. Work out that allocation before any design happens, because on a carton this size there is no spare room to find later.',
         'The top inch is partly hidden by the hook and by the pack hanging in front, so nothing critical goes there. The window position should show the part of the case that identifies the shade, which on most bullets is the base rather than the cap.',
-        'Supply artwork as PDF, AI or EPS at 300 dpi, in CMYK plus spot colours, with 3 mm bleed and fonts outlined, built to the die line we send. Window and tab cut lines are marked on the die line as separate layers, and full file requirements are on the <a href="/artwork-guidelines/">artwork guidelines page</a>.',
+        'Supply artwork as PDF, AI or EPS at 300 dpi, in CMYK plus spot colors, with 3 mm bleed and fonts outlined, built to the die line we send. Window and tab cut lines are marked on the die line as separate layers, and full file requirements are on the <a href="/artwork-guidelines/">artwork guidelines page</a>.',
       ],
     },
     {
       type: 'prose',
       id: 'quantity-pricing',
-      heading: 'Quantity, retail programmes and unit price',
+      heading: 'Quantity, retail programs and unit price',
       navLabel: 'Quantity & pricing',
       body: [
         'This carton carries more production steps than a plain box: a more complex die, a window patch application, sometimes a tab reinforcement and a heavier board. Each adds to the unit price, and each is spread more thinly as quantity rises.',
         'Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity. A window patch and a reinforced tab both sit above that entry figure, so expect your quote to reflect the specification rather than the floor price.',
-        'Retail programmes usually specify a case count and a pallet configuration. Send those with the enquiry so packing is quoted correctly, and tell us the ship-by date if a planogram reset is driving the schedule.',
+        'Retail programs usually specify a case count and a pallet configuration. Send those with the inquiry so packing is quoted correctly, and tell us the ship-by date if a planogram reset is driving the schedule.',
       ],
     },
     {
@@ -193,7 +193,7 @@ export const product: Product = {
         },
         {
           title: 'Proof approval',
-          text: 'Colour proof on the specified board showing the window and tab cuts in position, for written sign-off.',
+          text: 'Color proof on the specified board showing the window and tab cuts in position, for written sign-off.',
         },
         {
           title: 'Production and case packing',
@@ -208,7 +208,7 @@ export const product: Product = {
       navLabel: 'Quality & delivery',
       body: [
         'Three checks are specific to this product. The window patch is inspected for adhesion and for clarity, since a hazy or lifting patch is immediately visible at eye level. The tab cut is measured for position and edge quality. And sample packs are hung at packed weight to confirm the panel does not deform around the slot.',
-        'Cartons ship flat and glued in counted cases, with the case count set to your retail programme where one exists. Packed hanging cartons should be cased upright so the tabs are not crushed, and we will allow for how you case-pack if you tell us.',
+        'Cartons ship flat and glued in counted cases, with the case count set to your retail program where one exists. Packed hanging cartons should be cased upright so the tabs are not crushed, and we will allow for how you case-pack if you tell us.',
         'A film window means the finished pack is two materials rather than one. PET patches are common and widely accepted; a PLA patch is available where you prefer a bio-based film. Either way the consumer has to separate the patch from the board for clean recycling, and that is worth stating honestly on pack rather than implying the whole carton goes in the paper bin.',
       ],
     },
@@ -220,7 +220,7 @@ export const product: Product = {
     { label: 'Window film', value: 'PET or PLA clear patch, or left open' },
     { label: 'Capacity', value: 'Single bullet, duo and three-pack; tab specified against packed weight' },
     { label: 'Board weights', value: '18pt single case, 22–24pt for windows and multipacks' },
-    { label: 'Materials', value: 'Coated white SBS, kraft board, black-through board, metallised board' },
+    { label: 'Materials', value: 'Coated white SBS, kraft board, black-through board, metallized board' },
     { label: 'Printing', value: 'Offset litho and digital; CMYK plus spot Pantone shade swatches' },
     { label: 'Finishes', value: 'Gloss, matte and soft-touch lamination, spot UV, foil stamp, emboss' },
     { label: 'Hook compatibility', value: 'Standard retail peg hooks, typically 3–6 mm diameter' },
@@ -239,7 +239,7 @@ export const product: Product = {
     },
     {
       q: 'Which part of the lipstick should the window show?',
-      a: 'Whatever identifies the shade, which on most bullet cases is the base rather than the cap. Shoppers on a peg wall are matching a colour, so a window showing a plain black cap tells them nothing. If the case does not show the shade anywhere, print a swatch instead of cutting a window.',
+      a: 'Whatever identifies the shade, which on most bullet cases is the base rather than the cap. Shoppers on a peg wall are matching a color, so a window showing a plain black cap tells them nothing. If the case does not show the shade anywhere, print a swatch instead of cutting a window.',
     },
     {
       q: 'How heavy can a three-pack hanging carton be?',
@@ -255,11 +255,11 @@ export const product: Product = {
     },
     {
       q: 'Can you match a retailer packaging specification?',
-      a: 'Yes, and send it at enquiry stage. Chains publish exact tab dimensions, tolerances, barcode positions and case counts. Building to that specification from the start costs nothing extra; correcting a rejected delivery costs a great deal.',
+      a: 'Yes, and send it at inquiry stage. Chains publish exact tab dimensions, tolerances, barcode positions and case counts. Building to that specification from the start costs nothing extra; correcting a rejected delivery costs a great deal.',
     },
     {
       q: 'Is kraft board a sensible choice for a peg fixture?',
-      a: 'It depends what is next to you. Kraft reads as natural and stands out against a wall of glossy packs, which is an advantage. But kraft mutes every printed colour, so if your range relies on shoppers distinguishing between six shades at three feet, coated white board serves you better.',
+      a: 'It depends what is next to you. Kraft reads as natural and stands out against a wall of glossy packs, which is an advantage. But kraft mutes every printed color, so if your range relies on shoppers distinguishing between six shades at three feet, coated white board serves you better.',
     },
     {
       q: 'Does the window weaken the carton for shipping too?',

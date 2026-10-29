@@ -29,7 +29,7 @@ export const newYork: Location = {
       navLabel: 'The market',
       body: [
         'New York concentrates prestige beauty retail more than anywhere else in the country, and brands selling into it run into something that does not apply in independent or online channels: the account has a packaging specification, and it is not a suggestion.',
-        'Those documents typically cover carton dimensions within a tolerance, barcode format and placement, case counts, pallet configuration, labelling on the outer case, and sometimes material restrictions. Some specify testing requirements before a first delivery.',
+        'Those documents typically cover carton dimensions within a tolerance, barcode format and placement, case counts, pallet configuration, labeling on the outer case, and sometimes material restrictions. Some specify testing requirements before a first delivery.',
         'The important consequence is timing. A retailer specification received after a <a href="/resources/packaging-dieline-guide/">guide to packaging die lines</a> is approved usually means a new die. Received before, it costs nothing to build to.',
       ],
     },
@@ -49,7 +49,7 @@ export const newYork: Location = {
         'The delivery window, since a planogram reset date is fixed',
       ],
       outro:
-        'Send the manual with your enquiry. Reading it at quoting stage is far cheaper than meeting a clause at delivery.',
+        'Send the manual with your inquiry. Reading it at quoting stage is far cheaper than meeting a clause at delivery.',
     },
     {
       type: 'prose',
@@ -66,7 +66,7 @@ export const newYork: Location = {
   faqs: [
     {
       q: 'What is a retailer packaging specification?',
-      a: 'A document from the account setting carton tolerances, barcode format and placement, case counts, pallet configuration and outer case labelling. Some also specify material restrictions or testing. It is a requirement rather than a guideline.',
+      a: 'A document from the account setting carton tolerances, barcode format and placement, case counts, pallet configuration and outer case labeling. Some also specify material restrictions or testing. It is a requirement rather than a guideline.',
     },
     {
       q: 'When do I need to send you the retailer manual?',
@@ -90,7 +90,7 @@ export const newYork: Location = {
     },
     {
       q: 'Can you meet a planogram reset date?',
-      a: 'We confirm a production window in writing with the quote and will say plainly whether a date is achievable. Reset dates are fixed, so tell us the date at enquiry stage rather than at order stage.',
+      a: 'We confirm a production window in writing with the quote and will say plainly whether a date is achievable. Reset dates are fixed, so tell us the date at inquiry stage rather than at order stage.',
     },
     {
       q: 'Is there anywhere in New York I can collect an order from?',
@@ -128,9 +128,9 @@ export const pennsylvania: Location = {
       heading: 'Packaging where unit cost governs',
       navLabel: 'The market',
       body: [
-        'A large share of Pennsylvania lip packaging enquiries come from private label producers and brands supplying pharmacy and value retail. Both operate on margins where a cent per unit is a real number.',
+        'A large share of Pennsylvania lip packaging inquiries come from private label producers and brands supplying pharmacy and value retail. Both operate on margins where a cent per unit is a real number.',
         'That reverses the usual specification conversation. Instead of choosing a finish and finding the cost, the cost target comes first and the specification is built to fit inside it. It is a more disciplined way to work and it produces different answers.',
-        'The decisions that matter most at this end are <a href="/materials/">board weights and thicknesses</a>, colour count and whether the job carries any finishing pass at all. Those three account for most of the difference between a carton at one price and the same carton at another.',
+        'The decisions that matter most at this end are <a href="/materials/">board weights and thicknesses</a>, color count and whether the job carries any finishing pass at all. Those three account for most of the difference between a carton at one price and the same carton at another.',
       ],
     },
     {
@@ -142,9 +142,9 @@ export const pennsylvania: Location = {
       columns: ['Decision', 'Direction', 'Trade-off'],
       rows: [
         ['Quantity and call-off scheduling', 'Largest single lever', 'Warehousing, unless a call-off is used'],
-        ['Ganging several SKUs on one sheet', 'Large on multi-SKU programmes', 'Requires a standardised specification'],
-        ['Two spot colours instead of four-colour process', 'Meaningful', 'No photographic imagery'],
-        ['Recycled greyback instead of coated SBS', 'Meaningful', 'Grey shows inside the open carton'],
+        ['Ganging several SKUs on one sheet', 'Large on multi-SKU programs', 'Requires a standardized specification'],
+        ['Two spot colors instead of four-color process', 'Meaningful', 'No photographic imagery'],
+        ['Recycled grayback instead of coated SBS', 'Meaningful', 'Gray shows inside the open carton'],
         ['Varnish instead of laminate', 'Moderate', 'Less scuff resistance in handling'],
         ['16pt instead of 18pt board', 'Small', 'Pack feels lighter; only viable on light contents'],
         ['Removing a window patch', 'Moderate', 'Shopper cannot see the product'],
@@ -158,16 +158,16 @@ export const pennsylvania: Location = {
       heading: 'Running one structure across several brands',
       navLabel: 'Private label',
       body: [
-        'Private label economics work when the structural specification is fixed and only the artwork changes. The <a href="/resources/packaging-dieline-guide/">guide to packaging die lines</a>, the structural sample and the fit testing are then amortised across every brand using that format rather than repeated for each.',
-        'That means resisting the temptation to let each customer brand tweak the carton. A two millimetre change for one account creates a second die and destroys the shared economics.',
-        'We hold approved die lines and colour standards against a programme, so any brand within it can be reordered without repeating setup. How that is structured is covered on our <a href="/custom-lip-care-packaging/">bulk and private label page</a>.',
+        'Private label economics work when the structural specification is fixed and only the artwork changes. The <a href="/resources/packaging-dieline-guide/">guide to packaging die lines</a>, the structural sample and the fit testing are then amortized across every brand using that format rather than repeated for each.',
+        'That means resisting the temptation to let each customer brand tweak the carton. A two millimeter change for one account creates a second die and destroys the shared economics.',
+        'We hold approved die lines and color standards against a program, so any brand within it can be reordered without repeating setup. How that is structured is covered on our <a href="/custom-lip-care-packaging/">bulk and private label page</a>.',
       ],
     },
   ],
   faqs: [
     {
       q: 'How do I hit a specific unit cost target?',
-      a: 'Give us the target with the enquiry rather than asking for a price first. We build the specification to fit inside it and tell you what it costs you in board weight, colour count or finishing, so the trade-off is visible rather than implied.',
+      a: 'Give us the target with the inquiry rather than asking for a price first. We build the specification to fit inside it and tell you what it costs you in board weight, color count or finishing, so the trade-off is visible rather than implied.',
     },
     {
       q: 'What is the cheapest meaningful cost reduction?',
@@ -175,19 +175,19 @@ export const pennsylvania: Location = {
     },
     {
       q: 'Can several private label brands share one carton structure?',
-      a: 'Yes, and it is where private label economics come from. The die line, structural sample and fit testing are amortised across every brand using the format. Resist per-account structural tweaks, since each one creates a second die.',
+      a: 'Yes, and it is where private label economics come from. The die line, structural sample and fit testing are amortized across every brand using the format. Resist per-account structural tweaks, since each one creates a second die.',
     },
     {
-      q: 'Is recycled greyback board a false economy?',
-      a: 'No, if the carton is not routinely seen open. It has a white printing face and a grey reverse, so it prints well and costs less. The grey shows on the inside, which matters on a gift item and not on a pharmacy peg pack.',
+      q: 'Is recycled grayback board a false economy?',
+      a: 'No, if the carton is not routinely seen open. It has a white printing face and a gray reverse, so it prints well and costs less. The gray shows on the inside, which matters on a gift item and not on a pharmacy peg pack.',
     },
     {
       q: 'How light can the board go?',
-      a: '16pt is workable for a single lightweight item inside a shipper, and 14pt starts to feel thin at a shelf edge. On a hanging pack the tab carries concentrated load, so board weight is not the place to economise.',
+      a: '16pt is workable for a single lightweight item inside a shipper, and 14pt starts to feel thin at a shelf edge. On a hanging pack the tab carries concentrated load, so board weight is not the place to economize.',
     },
     {
       q: 'Do you hold tooling for repeat private label orders?',
-      a: 'Yes. Approved die lines and colour standards are held against the programme, so any brand within it can be reordered without repeating setup. Reorders are priced on print and material at whatever quantity you need.',
+      a: 'Yes. Approved die lines and color standards are held against the program, so any brand within it can be reordered without repeating setup. Reorders are priced on print and material at whatever quantity you need.',
     },
     {
       q: 'What suits the pharmacy channel specifically?',
@@ -229,7 +229,7 @@ export const newJersey: Location = {
       navLabel: 'The market',
       body: [
         'New Jersey has a long-established cosmetics and personal care manufacturing base, and the buyers who come out of it tend to work differently from an independent brand. Specifications are documented, artwork carries version numbers, and approvals are recorded rather than agreed in a call.',
-        'That is easier to supply, not harder, provided the process is respected. The friction comes when a supplier treats an approval informally in an organisation that treats it formally.',
+        'That is easier to supply, not harder, provided the process is respected. The friction comes when a supplier treats an approval informally in an organization that treats it formally.',
         'Practically it means every <a href="/resources/packaging-dieline-guide/">guide to packaging die lines</a> and proof approval is confirmed in writing, artwork revisions are named and logged, and any change after approval is quoted as a change rather than absorbed silently.',
       ],
     },
@@ -238,7 +238,7 @@ export const newJersey: Location = {
       id: 'version-control',
       heading: 'Artwork version control that works',
       navLabel: 'Version control',
-      intro: 'On a programme with several SKUs in circulation, an outdated file being approved is the most common serious error.',
+      intro: 'On a program with several SKUs in circulation, an outdated file being approved is the most common serious error.',
       items: [
         'Every file named with the SKU code, die line reference and revision number',
         'One named person on your side owning the master file list',
@@ -258,7 +258,7 @@ export const newJersey: Location = {
       body: [
         'Where a brand has a regulatory reviewer, the useful thing is to run their review in parallel with structural sampling rather than after it.',
         'The two stages have no dependency on each other: a reviewer can read copy while a plain structural sample is being cut. Sequencing them adds weeks for no reason, and it also risks the worse outcome where copy changes after a proof has been approved, which means new plates.',
-        'We print the file that is approved and do not review its regulatory content. What we will do is make sure the reviewer sees the laid-out artwork rather than only the copy in a document, because size and legibility only become apparent once it is set. The panel constraints are covered in our <a href="/resources/cosmetic-packaging-label-requirements/">cosmetic labelling requirements guide</a>.',
+        'We print the file that is approved and do not review its regulatory content. What we will do is make sure the reviewer sees the laid-out artwork rather than only the copy in a document, because size and legibility only become apparent once it is set. The panel constraints are covered in our <a href="/resources/cosmetic-packaging-label-requirements/">cosmetic labeling requirements guide</a>.',
       ],
     },
   ],
@@ -269,7 +269,7 @@ export const newJersey: Location = {
     },
     {
       q: 'How should artwork revisions be named?',
-      a: 'SKU code, die line reference and revision number in the filename, incremented on every change however small. On a programme with several files in circulation, an outdated version being approved is the most common serious error.',
+      a: 'SKU code, die line reference and revision number in the filename, incremented on every change however small. On a program with several files in circulation, an outdated version being approved is the most common serious error.',
     },
     {
       q: 'Can regulatory review run alongside sampling?',
@@ -289,7 +289,7 @@ export const newJersey: Location = {
     },
     {
       q: 'Can you supply specification documentation for our files?',
-      a: 'Yes. The quote states board grade and weight, print process, colours, finishing and construction, and the die line carries the reference number those documents cite.',
+      a: 'Yes. The quote states board grade and weight, print process, colors, finishing and construction, and the die line carries the reference number those documents cite.',
     },
     {
       q: 'Where does a New Jersey order actually ship from?',
@@ -328,7 +328,7 @@ export const massachusetts: Location = {
       navLabel: 'The market',
       body: [
         'Massachusetts produces a disproportionate number of treatment-positioned lip products: repair balms, medicated formats, lip masks and clinically framed lip care, often connected to the region\'s life sciences and dermatology base.',
-        'A treatment product has an unusual packaging problem. Decoration that would help a colour cosmetic actively works against it. Heavy foil, glitter and iridescent board make a treatment claim look like a novelty, and buyers read that as a signal about the formula.',
+        'A treatment product has an unusual packaging problem. Decoration that would help a color cosmetic actively works against it. Heavy foil, glitter and iridescent board make a treatment claim look like a novelty, and buyers read that as a signal about the formula.',
         'The packaging that supports a treatment claim is restrained: clean typography, generous white space, a finish that reads as considered rather than showy, and enough panel area to carry the directions and cautions legibly.',
       ],
     },
@@ -341,7 +341,7 @@ export const massachusetts: Location = {
       items: [
         'Soft-touch or matte lamination rather than gloss, which reads as considered rather than promotional',
         'Coated white board, since clinical positioning depends on clean whites reproducing accurately',
-        'A single restrained accent colour rather than a full palette',
+        'A single restrained accent color rather than a full palette',
         'Type set at a size that can actually be read, which means allowing panel area for it',
         'A window only where showing the product genuinely informs, as with a lip mask patch',
         'Directions and wear time given their own panel rather than squeezed into a margin',
@@ -388,12 +388,12 @@ export const massachusetts: Location = {
     },
     {
       q: 'What board suits a clinical white pack?',
-      a: 'Coated white SBS, because clean whites depend on a bright, coated substrate. Kraft and recycled greyback both shift the white and will undermine a clinical look regardless of how the artwork is designed.',
+      a: 'Coated white SBS, because clean whites depend on a bright, coated substrate. Kraft and recycled grayback both shift the white and will undermine a clinical look regardless of how the artwork is designed.',
     },
     {
       q: 'Is stock held locally in Massachusetts?',
       a:
-        'No stock is held in Massachusetts or anywhere else. Packaging is made against a confirmed order, which is why sizes and finishes are open rather than fixed to a catalogue.',
+        'No stock is held in Massachusetts or anywhere else. Packaging is made against a confirmed order, which is why sizes and finishes are open rather than fixed to a catalog.',
     },
   ],
 };
@@ -408,15 +408,15 @@ export const maryland: Location = {
   secondaryKeywords: ['Maryland cosmetic packaging', 'corporate gift lip balm', 'promotional lip packaging Maryland'],
   seoTitle: 'Custom Lip Boxes in Maryland | Packaging Supply',
   metaDescription:
-    'Lip packaging for Maryland brands and corporate gifting programmes, including branded, promotional and event-driven runs.',
+    'Lip packaging for Maryland brands and corporate gifting programs, including branded, promotional and event-driven runs.',
   ogTitle: 'Custom Lip Packaging for Maryland',
   ogDescription:
-    'Cartons and labels for retail brands and for corporate, conference and promotional lip balm programmes.',
+    'Cartons and labels for retail brands and for corporate, conference and promotional lip balm programs.',
   h1: 'Custom Lip Boxes in Maryland',
   deck: 'A significant share of Maryland lip packaging is promotional rather than retail, and that changes everything about the brief.',
   cardDescription:
-    'Corporate gifting, conference and promotional programmes alongside conventional retail brands.',
-  marketAngle: 'Corporate gifting and promotional programmes',
+    'Corporate gifting, conference and promotional programs alongside conventional retail brands.',
+  marketAngle: 'Corporate gifting and promotional programs',
   related: ['custom-lip-balm-labels', 'custom-lip-balm-boxes', 'lip-balm-packaging'],
   sections: [
     {
@@ -426,7 +426,7 @@ export const maryland: Location = {
       navLabel: 'The market',
       body: [
         'Maryland and the surrounding corridor generate a lot of promotional lip balm: conference giveaways, corporate gifting, institutional welcome packs and event merchandise. It is a genuinely different product from retail lip care even when the balm inside is identical.',
-        'Promotional packs are not sold, so there is no shelf to compete on and no price point to defend. What matters instead is that the recipient\'s organisation is identifiable, the unit cost is predictable, and the quantity arrives by a date.',
+        'Promotional packs are not sold, so there is no shelf to compete on and no price point to defend. What matters instead is that the recipient\'s organization is identifiable, the unit cost is predictable, and the quantity arrives by a date.',
         'That usually means the packaging is simpler than a retail equivalent and the label carries more of the work, because a logo on a wrap label is faster and cheaper to change per client than a printed carton.',
       ],
     },
@@ -446,7 +446,7 @@ export const maryland: Location = {
         ['What drives cost', 'Label changes and quantity per client', 'Board, finish and shade count'],
       ],
       outro:
-        'The row worth attention is legal copy. A promotional lip balm is still a cosmetic and still needs its declaration, which surprises organisations ordering one for the first time.',
+        'The row worth attention is legal copy. A promotional lip balm is still a cosmetic and still needs its declaration, which surprises organizations ordering one for the first time.',
     },
     {
       type: 'prose',
@@ -454,7 +454,7 @@ export const maryland: Location = {
       heading: 'Running many logos from one tube stock',
       navLabel: 'Multiple clients',
       body: [
-        'The efficient structure for a promotional programme is one tube stock, one label size, one cutting die, and as many printed label designs as you have clients.',
+        'The efficient structure for a promotional program is one tube stock, one label size, one cutting die, and as many printed label designs as you have clients.',
         'That way the container cost is fixed and predictable, the tooling is paid once, and each new client is a label print rather than a packaging project. Digital label printing carries no plate charge per design, so six clients at 2,000 each costs close to one client at 12,000.',
         'It also makes reorders fast, because you can produce more labels against tube stock you already hold rather than waiting on container lead time. The label formats available are set out on our <a href="/lip-balm-labels/">lip balm label options</a>.',
       ],
@@ -463,10 +463,10 @@ export const maryland: Location = {
   faqs: [
     {
       q: 'Does a promotional lip balm still need an ingredient declaration?',
-      a: 'It is still a cosmetic, so the same labelling considerations apply as for a retail product. Organisations ordering promotional lip balm for the first time frequently overlook this. Have the copy checked by a qualified reviewer before approving artwork.',
+      a: 'It is still a cosmetic, so the same labeling considerations apply as for a retail product. Organizations ordering promotional lip balm for the first time frequently overlook this. Have the copy checked by a qualified reviewer before approving artwork.',
     },
     {
-      q: 'What is the most efficient structure for a promotional programme?',
+      q: 'What is the most efficient structure for a promotional program?',
       a: 'One tube stock, one label size, one cutting die, and a separate printed label design per client. The container cost stays fixed, the tooling is paid once, and each new client becomes a label print rather than a packaging project.',
     },
     {
@@ -504,18 +504,18 @@ export const virginia: Location = {
   state: 'Virginia',
   stateCode: 'VA',
   primaryKeyword: 'custom lip boxes in Virginia',
-  secondaryKeywords: ['Virginia cosmetic packaging', 'ecommerce lip packaging Virginia', 'fulfilment centre packaging'],
+  secondaryKeywords: ['Virginia cosmetic packaging', 'ecommerce lip packaging Virginia', 'fulfillment center packaging'],
   seoTitle: 'Custom Lip Boxes in Virginia | Packaging Supply',
   metaDescription:
-    'Lip packaging for Virginia brands selling online, with the shipper, void fill and fulfilment requirements that this entails.',
+    'Lip packaging for Virginia brands selling online, with the shipper, void fill and fulfillment requirements that this entails.',
   ogTitle: 'Custom Lip Packaging for Virginia Brands',
   ogDescription:
-    'Cartons and mailers specified for direct-to-consumer fulfilment rather than for a retail shelf.',
+    'Cartons and mailers specified for direct-to-consumer fulfillment rather than for a retail shelf.',
   h1: 'Custom Lip Boxes in Virginia',
   deck: 'Virginia brands sell online more than most, and packaging for a mailer is a different problem from packaging for a shelf.',
   cardDescription:
-    'Direct-to-consumer fulfilment, where the shipper matters as much as the carton inside it.',
-  marketAngle: 'Direct-to-consumer fulfilment and shipper specification',
+    'Direct-to-consumer fulfillment, where the shipper matters as much as the carton inside it.',
+  marketAngle: 'Direct-to-consumer fulfillment and shipper specification',
   related: ['custom-lip-mask-boxes', 'lip-balm-packaging', 'custom-lip-balm-boxes'],
   sections: [
     {
@@ -524,7 +524,7 @@ export const virginia: Location = {
       heading: 'Packaging for a mailer, not a shelf',
       navLabel: 'The market',
       body: [
-        'Virginia has a heavy concentration of e-commerce and fulfilment activity, and brands based there tend to sell a larger share online than in physical retail. That changes what packaging has to do.',
+        'Virginia has a heavy concentration of e-commerce and fulfillment activity, and brands based there tend to sell a larger share online than in physical retail. That changes what packaging has to do.',
         'A shelf pack competes at three feet under store lighting. A mailer pack is unseen until it arrives, then judged at arm\'s length in someone\'s hallway. The first needs a strong front panel; the second needs to survive a parcel network and look considered when it opens.',
         'The most common failure is treating the retail carton as the shipping container. A folding carton posted loose arrives crushed, and no amount of <a href="/materials/">board weights and thicknesses</a> fixes it. It is secondary packaging, and it needs something around it.',
       ],
@@ -550,12 +550,12 @@ export const virginia: Location = {
     {
       type: 'prose',
       id: 'fulfilment',
-      heading: 'If a third party fulfils for you',
-      navLabel: 'Third party fulfilment',
+      heading: 'If a third party fulfills for you',
+      navLabel: 'Third party fulfillment',
       body: [
-        'Fulfilment centres have their own intake requirements and they enforce them, so send them with the order rather than after the pallet arrives.',
-        'The usual items are receiving hours and appointment booking, a purchase order or reference number that must appear on paperwork and often on each case, case labelling with a barcode in a specified format, and maximum pallet height and weight.',
-        'A refused delivery at a fulfilment centre delays every order downstream of it, which makes it more costly than the redelivery charge suggests. Gathering the requirements takes minutes, and our <a href="/shipping-information/">receiving and delivery notes</a> list what to ask for.',
+        'Fulfillment centers have their own intake requirements and they enforce them, so send them with the order rather than after the pallet arrives.',
+        'The usual items are receiving hours and appointment booking, a purchase order or reference number that must appear on paperwork and often on each case, case labeling with a barcode in a specified format, and maximum pallet height and weight.',
+        'A refused delivery at a fulfillment center delays every order downstream of it, which makes it more costly than the redelivery charge suggests. Gathering the requirements takes minutes, and our <a href="/shipping-information/">receiving and delivery notes</a> list what to ask for.',
       ],
     },
   ],
@@ -574,19 +574,19 @@ export const virginia: Location = {
     },
     {
       q: 'How do parcel dimensions affect my cost?',
-      a: 'Carriers price in bands, so being fractionally over a threshold adds cost on every single order. Check your mailer dimensions against your carrier\'s bands before finalising, because a few millimetres can matter more than the board grade.',
+      a: 'Carriers price in bands, so being fractionally over a threshold adds cost on every single order. Check your mailer dimensions against your carrier\'s bands before finalizing, because a few millimeters can matter more than the board grade.',
     },
     {
-      q: 'What does a fulfilment centre need from a delivery?',
-      a: 'Receiving hours and appointment booking, a purchase order or reference number on the paperwork and often on each case, case labelling with a specified barcode format, and maximum pallet height and weight. Send these with the order.',
+      q: 'What does a fulfillment center need from a delivery?',
+      a: 'Receiving hours and appointment booking, a purchase order or reference number on the paperwork and often on each case, case labeling with a specified barcode format, and maximum pallet height and weight. Send these with the order.',
     },
     {
-      q: 'What happens if a fulfilment centre refuses a delivery?',
-      a: 'It delays every order downstream of it, which is more costly than the redelivery charge alone. It is avoidable with information that takes minutes to gather from the fulfilment provider.',
+      q: 'What happens if a fulfillment center refuses a delivery?',
+      a: 'It delays every order downstream of it, which is more costly than the redelivery charge alone. It is avoidable with information that takes minutes to gather from the fulfillment provider.',
     },
     {
       q: 'Can you supply printed mailers as well as cartons?',
-      a: 'Yes, in printed E-flute corrugated, along with printed tissue and insert cards. Producing them alongside the cartons is the only reliable way to keep the colours matching between the outer and inner packaging.',
+      a: 'Yes, in printed E-flute corrugated, along with printed tissue and insert cards. Producing them alongside the cartons is the only reliable way to keep the colors matching between the outer and inner packaging.',
     },
     {
       q: 'Do you have staff on the ground in Virginia?',

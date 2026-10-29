@@ -89,9 +89,9 @@ export const resource: Resource = {
       items: [
         'Quantity — the largest single lever, because it divides every one-time cost',
         'Print process — digital versus offset, which is itself decided by quantity and design count',
-        'Number of print colours, and whether an opaque white underprint is needed',
+        'Number of print colors, and whether an opaque white underprint is needed',
         'Foil or embossing, which add both tooling and a production pass',
-        'Board weight and grade, including specialty stocks like black-through or metallised',
+        'Board weight and grade, including specialty stocks like black-through or metallized',
         'Laminate versus varnish, which is a material and a converting pass',
         'Inserts, which are a second die and often a second production run',
         'Window patching, which is an extra machine pass and a second material',
@@ -111,7 +111,7 @@ export const resource: Resource = {
         'All of these are available at your current quantity.',
       items: [
         {
-          title: 'Standardise across a range',
+          title: 'Standardize across a range',
           text: 'Several products on one board, one ink set and one finish can share press sheets, splitting the make-ready. On a multi-SKU launch this is frequently the biggest saving available.',
         },
         {
@@ -123,7 +123,7 @@ export const resource: Resource = {
           text: 'Moving from laminate to varnish, or removing a spot UV pass, often saves more than trimming board weight and is less visible to the customer.',
         },
         {
-          title: 'Use a spot colour instead of foil',
+          title: 'Use a spot color instead of foil',
           text: 'A metallic or pearlescent ink covers large areas at a fraction of foil cost. Reserve foil for small areas where it genuinely reads as metal.',
         },
         {
@@ -144,7 +144,7 @@ export const resource: Resource = {
       body: [
         'Every packaging supplier publishes an entry figure, and it is worth understanding what one is. Ours is stated on every product page: price starts from $0.30 per piece for large-volume orders, with final pricing depending on size, material, printing, and quantity.',
         'A figure like that describes the simplest possible specification at the highest volume: plain board, a straightforward print, no foil, no insert, no window. It is a floor for comparison between suppliers, not a quote.',
-        'When comparing two suppliers, compare specifications rather than headline numbers. Ask which board weight, how many colours, whether tooling is included, whether an insert is in the price, and whether freight is separate. A quote that looks 20% cheaper very often has one of those answers different.',
+        'When comparing two suppliers, compare specifications rather than headline numbers. Ask which board weight, how many colors, whether tooling is included, whether an insert is in the price, and whether freight is separate. A quote that looks 20% cheaper very often has one of those answers different.',
       ],
     },
     {
@@ -177,7 +177,7 @@ export const resource: Resource = {
     },
     {
       q: 'What is the single biggest lever on packaging price?',
-      a: 'Quantity, because it divides every one-time cost. After that it is the print process, then the number of colours, then whether the job carries foil or embossing, both of which add tooling and a production pass.',
+      a: 'Quantity, because it divides every one-time cost. After that it is the print process, then the number of colors, then whether the job carries foil or embossing, both of which add tooling and a production pass.',
     },
     {
       q: 'Is it worth increasing my order to hit a lower unit price?',
@@ -189,7 +189,7 @@ export const resource: Resource = {
     },
     {
       q: 'Why do two suppliers quote such different prices for the same box?',
-      a: 'Almost always because the specifications differ. Board weight, colour count, laminate versus varnish, whether tooling and inserts are included, and whether freight is separate all move the number. Compare specifications, not headline figures.',
+      a: 'Almost always because the specifications differ. Board weight, color count, laminate versus varnish, whether tooling and inserts are included, and whether freight is separate all move the number. Compare specifications, not headline figures.',
     },
     {
       q: 'What does a starting price like $0.30 per piece actually mean?',
@@ -197,7 +197,7 @@ export const resource: Resource = {
     },
     {
       q: 'Can I reduce cost without changing quantity?',
-      a: 'Yes, in several ways: standardise the specification across a range so items share press sheets, drop one production pass, use a metallic ink instead of foil on large areas, or consolidate freight on bulky items charged by volume.',
+      a: 'Yes, in several ways: standardize the specification across a range so items share press sheets, drop one production pass, use a metallic ink instead of foil on large areas, or consolidate freight on bulky items charged by volume.',
     },
     {
       q: 'Which costs get forgotten most often?',
@@ -205,7 +205,7 @@ export const resource: Resource = {
     },
     {
       q: 'Why is rigid construction so much more expensive?',
-      a: 'Because it adds a greyboard core, a separate wrap and substantial hand assembly, and it ships assembled rather than flat. Labour scales with volume rather than being spread across it, so the cost curve flattens far earlier than for folding cartons.',
+      a: 'Because it adds a grayboard core, a separate wrap and substantial hand assembly, and it ships assembled rather than flat. Labor scales with volume rather than being spread across it, so the cost curve flattens far earlier than for folding cartons.',
     },
   ],
   related: ['custom-lip-care-packaging', 'custom-lip-balm-boxes', 'rigid-lipstick-boxes'],

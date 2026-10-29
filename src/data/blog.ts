@@ -32,7 +32,7 @@ const posts: BlogPost[] = [
         heading: 'Start with the tube, not the box',
         id: 'start-with-the-tube',
         body: [
-          'Almost every packaging problem on a gloss launch traces back to the same mistake: the carton was designed before the tube was finalised. A gloss tube is mostly applicator, and swapping a 10 ml doe-foot for an 8 ml one changes the carton height even though the fill difference sounds trivial.',
+          'Almost every packaging problem on a gloss launch traces back to the same mistake: the carton was designed before the tube was finalized. A gloss tube is mostly applicator, and swapping a 10 ml doe-foot for an 8 ml one changes the carton height even though the fill difference sounds trivial.',
           'Lock the primary container first. Order samples of the actual tube you intend to fill, in the actual cap, and measure it capped and upright from base to the top of the cap. That single measurement drives the carton, the shipper, the case count and the pallet quantity.',
           'If you are still choosing between two tubes, get cartons quoted against both. The cost difference is usually small and it tells you something useful about which tube is cheaper to package, which is a real factor that often gets ignored at sampling stage.',
         ],
@@ -50,19 +50,19 @@ const posts: BlogPost[] = [
         heading: 'Decide whether the shade shows',
         id: 'shade-visibility',
         body: [
-          'Gloss is bought on colour, so the shopper needs to see it. There are three ways to give them that, and they cost very different amounts.',
+          'Gloss is bought on color, so the shopper needs to see it. There are three ways to give them that, and they cost very different amounts.',
         ],
         list: [
           'A die-cut window with a clear film patch, showing the actual product through the tube wall. Most convincing, adds a production pass and a second material.',
           'A printed swatch specified as a spot Pantone, which reproduces identically on every run. Cheapest and the most consistent across reorders.',
-          'A photographic swatch on a model or an applicator smear, which conveys finish as well as colour but drifts between print runs unless carefully managed.',
+          'A photographic swatch on a model or an applicator smear, which conveys finish as well as color but drifts between print runs unless carefully managed.',
         ],
       },
       {
         heading: 'Choose the board before the finish',
         id: 'board-before-finish',
         body: [
-          'Board and finish are often discussed together, but the board decision comes first because it constrains what the finish can do. Coated white board carries saturated colour and fine gradients. Kraft mutes everything and will flatten the differences between six shades. Black-through board is worth the premium on a dark carton because it keeps every cut edge dark.',
+          'Board and finish are often discussed together, but the board decision comes first because it constrains what the finish can do. Coated white board carries saturated color and fine gradients. Kraft mutes everything and will flatten the differences between six shades. Black-through board is worth the premium on a dark carton because it keeps every cut edge dark.',
           'Weight follows the pack rather than the look: 16pt to 18pt for a single slim tube, 22pt or more for duos and for glass. A tall carton in light board bows visibly on a shelf.',
           'Only then choose the coating. Matte lamination with spot UV on the swatch is the most reliable premium combination at a mid-market price, and a comparison of the coatings sits on our <a href="/finishes/">finishing and coating reference</a>.',
         ],
@@ -84,13 +84,13 @@ const posts: BlogPost[] = [
         table: {
           columns: ['Stage', 'Decision', 'Why it comes here'],
           rows: [
-            ['1', 'Finalise the tube and cap', 'Everything downstream is measured from it'],
+            ['1', 'Finalize the tube and cap', 'Everything downstream is measured from it'],
             ['2', 'Confirm shade count and per-shade quantity', 'Determines the print process quoted'],
             ['3', 'Choose how the shade is shown', 'Window, spot swatch or photography changes the die and the passes'],
             ['4', 'Select board grade and weight', 'Constrains what the finish can achieve'],
             ['5', 'Select coating and any foil or spot UV', 'Now a proof will actually be representative'],
             ['6', 'Add insert, leaflet and shipper', 'Costs that are cheap to include and expensive to retrofit'],
-            ['7', 'Approve die line, then proof each shade', 'Structure before colour, always'],
+            ['7', 'Approve die line, then proof each shade', 'Structure before color, always'],
           ],
         },
       },
@@ -120,7 +120,7 @@ const posts: BlogPost[] = [
         id: 'four-grades',
         body: [
           'Lip balm cartons are made from one of four board families, and the choice between them is usually settled by two questions: does the print need to be bright, and does the pack need a recycled or unbleached story.',
-          'SBS folding boxboard is bleached, coated on the print side and bright white underneath the ink. It is the default for full-colour cosmetic cartons because colours reproduce close to their intended values. Kraft board is unbleached, uncoated and brown, so it prints warm and dark and cannot produce a true white without an opaque underprint. Recycled greyback board has a white printing face over a grey reverse. Rigid greyboard with a printed wrap is a different construction entirely and belongs to gift packaging.',
+          'SBS folding boxboard is bleached, coated on the print side and bright white underneath the ink. It is the default for full-color cosmetic cartons because colors reproduce close to their intended values. Kraft board is unbleached, uncoated and brown, so it prints warm and dark and cannot produce a true white without an opaque underprint. Recycled grayback board has a white printing face over a gray reverse. Rigid grayboard with a printed wrap is a different construction entirely and belongs to gift packaging.',
         ],
       },
       {
@@ -130,12 +130,12 @@ const posts: BlogPost[] = [
           'This is where most surprises happen. The same artwork file produces genuinely different results on these four surfaces.',
         ],
         table: {
-          columns: ['Board', 'Colour accuracy', 'Fine detail', 'True white'],
+          columns: ['Board', 'Color accuracy', 'Fine detail', 'True white'],
           rows: [
             ['SBS coated', 'Close to proof', 'Holds small type and fine halftones', 'Yes, unprinted board'],
             ['Kraft uncoated', 'Warmer and darker throughout', 'Softens below about 7 pt', 'Only with an opaque white underprint'],
-            ['Recycled greyback', 'Good on the coated face', 'Slightly softer than SBS', 'Near white, marginally duller'],
-            ['Printed wrap on greyboard', 'Same as the wrap stock used', 'Very good on smooth art paper', 'Yes on a coated wrap'],
+            ['Recycled grayback', 'Good on the coated face', 'Slightly softer than SBS', 'Near white, marginally duller'],
+            ['Printed wrap on grayboard', 'Same as the wrap stock used', 'Very good on smooth art paper', 'Yes on a coated wrap'],
           ],
         },
       },
@@ -153,15 +153,15 @@ const posts: BlogPost[] = [
         id: 'cost',
         body: [
           'Material is a smaller share of a folding carton\'s cost than most people assume, particularly at low volumes where setup and tooling dominate. At high volumes it becomes significant.',
-          'Broadly: recycled greyback is the least expensive per sheet, SBS sits in the middle, kraft is comparable to SBS or slightly above depending on the grade, and rigid construction is in a different bracket altogether because of the greyboard, the wrap and the hand assembly.',
-          'The more useful cost question is which grade lets you avoid a production pass. A design that works on kraft with two spot colours and a varnish is cheaper than the same design on SBS with four-colour process and a laminate, and the difference is larger than the board itself.',
+          'Broadly: recycled grayback is the least expensive per sheet, SBS sits in the middle, kraft is comparable to SBS or slightly above depending on the grade, and rigid construction is in a different bracket altogether because of the grayboard, the wrap and the hand assembly.',
+          'The more useful cost question is which grade lets you avoid a production pass. A design that works on kraft with two spot colors and a varnish is cheaper than the same design on SBS with four-color process and a laminate, and the difference is larger than the board itself.',
         ],
       },
       {
         heading: 'Disposal, and being accurate about it',
         id: 'disposal',
         body: [
-          'All four paperboard grades are compatible with standard US kerbside paper recycling in their plain or varnished state. What complicates that is what goes on top: a plastic laminate film, a metallised layer or a film window patch all mean the consumer has to separate materials, and metallised board is not paper-recyclable at all.',
+          'All four paperboard grades are compatible with standard US curbside paper recycling in their plain or varnished state. What complicates that is what goes on top: a plastic laminate film, a metallized layer or a film window patch all mean the consumer has to separate materials, and metallized board is not paper-recyclable at all.',
           'If end-of-life is central to your positioning, the specification that keeps things simplest is an uncoated or varnish-only board with a printed swatch instead of a window. That is a genuine constraint on how the pack can look, and it is worth deciding deliberately rather than finding it out after artwork.',
           'Recycled content is a separate question from recyclability, and the two get conflated frequently. Ask a supplier what percentage of post-consumer content a specific stock carries rather than accepting a general claim, and only state on pack what you can substantiate.',
         ],
@@ -170,7 +170,7 @@ const posts: BlogPost[] = [
         heading: 'Choosing quickly',
         id: 'choosing',
         body: [
-          'If the range depends on shoppers distinguishing bright colours at arm\'s length, use coated SBS. If the product is positioned as natural, unbleached or low-waste, use kraft and accept muted colour. If you need a cost floor at volume and a white reverse does not matter, use recycled greyback. If the pack is a gift and the opening moment is part of what you are selling, look at rigid construction and expect a different price bracket.',
+          'If the range depends on shoppers distinguishing bright colors at arm\'s length, use coated SBS. If the product is positioned as natural, unbleached or low-waste, use kraft and accept muted color. If you need a cost floor at volume and a white reverse does not matter, use recycled grayback. If the pack is a gift and the opening moment is part of what you are selling, look at rigid construction and expect a different price bracket.',
           'Whatever you choose, ask for a printed proof on the actual stock. Board is the one variable that a screen proof cannot represent.',
         ],
       },
@@ -199,7 +199,7 @@ const posts: BlogPost[] = [
         heading: 'There is no standard lipstick box size',
         id: 'no-standard-size',
         body: [
-          'Lipstick cases vary far more than lip balm tubes. A slim aluminium bullet, a weighted magnetic case and a square resin barrel can all hold 3.5 g of product and need three different cartons. Any supplier quoting from a standard size is guessing.',
+          'Lipstick cases vary far more than lip balm tubes. A slim aluminum bullet, a weighted magnetic case and a square resin barrel can all hold 3.5 g of product and need three different cartons. Any supplier quoting from a standard size is guessing.',
           'For orientation rather than specification: a single-bullet carton commonly falls between 0.9 and 1.2 inches square and 3 to 3.5 inches tall. Treat that as the range you will land in, not the size to order.',
         ],
       },
@@ -271,7 +271,7 @@ const posts: BlogPost[] = [
       'Digital, offset litho, flexo and screen printing compared for cosmetic cartons, with the quantity where each makes sense.',
     published: '2026-03-24',
     deck:
-      'Which press suits your quantity, your colour count and your substrate.',
+      'Which press suits your quantity, your color count and your substrate.',
     readingMinutes: 9,
     heroFrom: {
       slug: 'lipstick-boxes',
@@ -285,7 +285,7 @@ const posts: BlogPost[] = [
         id: 'quantity-decides',
         body: [
           'The honest answer to which printing method suits your packaging is that all the mainstream processes produce commercially acceptable cosmetic cartons. What separates them is where their costs sit.',
-          'Digital printing has no plate charge, so its setup cost is close to zero and its unit cost stays roughly flat as quantity rises. Offset litho charges plates once per design but its unit cost falls steeply with volume. Plot those two curves and they cross, usually somewhere between one and three thousand units depending on the colour count and the finishing.',
+          'Digital printing has no plate charge, so its setup cost is close to zero and its unit cost stays roughly flat as quantity rises. Offset litho charges plates once per design but its unit cost falls steeply with volume. Plot those two curves and they cross, usually somewhere between one and three thousand units depending on the color count and the finishing.',
           'That crossover is the whole decision for most brands. Below it, digital. Above it, litho.',
         ],
       },
@@ -293,32 +293,32 @@ const posts: BlogPost[] = [
         heading: 'The four processes side by side',
         id: 'processes',
         body: [
-          'Each has a substrate and a colour profile it suits, quite apart from the economics.',
+          'Each has a substrate and a color profile it suits, quite apart from the economics.',
         ],
         table: {
           columns: ['Process', 'Economic at', 'Strongest on', 'Weakest on'],
           rows: [
             ['Digital', 'Under roughly 2,000 units', 'Multiple designs, variable data, fast turnaround', 'Unit cost at high volume; very large solid areas'],
             ['Offset litho', '2,000 units upward', 'Fine halftones, small type, widest stock range', 'Small runs, where plate cost dominates'],
-            ['Flexo', 'Very high volume', 'Uncoated kraft, simple spot-colour work, labels', 'Fine gradients and small reverse-out type'],
+            ['Flexo', 'Very high volume', 'Uncoated kraft, simple spot-color work, labels', 'Fine gradients and small reverse-out type'],
             ['Screen', 'Any quantity, as an added pass', 'Heavy opaque ink, thick white on dark stock', 'Photographic detail; slow as a primary process'],
           ],
         },
       },
       {
-        heading: 'Spot colour or process build',
+        heading: 'Spot color or process build',
         id: 'spot-vs-process',
         body: [
-          'A four-colour process build recreates a colour from cyan, magenta, yellow and black. It drifts within normal tolerance between runs, which is invisible on a photograph and very visible on a flat brand colour or a shade swatch.',
+          'A four-color process build recreates a color from cyan, magenta, yellow and black. It drifts within normal tolerance between runs, which is invisible on a photograph and very visible on a flat brand color or a shade swatch.',
           'A spot Pantone is a pre-mixed ink. It costs an extra ink station but reproduces identically every time. For cosmetic packaging, where a customer may compare a nude swatch against the one they bought six months ago, that consistency is worth paying for.',
-          'Most cosmetic cartons end up as process plus one or two spots: process for imagery, spots for the brand colour and the swatch. The <a href="/printing-options/">press options page</a> sets out what each combination involves.',
+          'Most cosmetic cartons end up as process plus one or two spots: process for imagery, spots for the brand color and the swatch. The <a href="/printing-options/">press options page</a> sets out what each combination involves.',
         ],
       },
       {
         heading: 'Printing on difficult substrates',
         id: 'difficult-substrates',
         body: [
-          'Three substrates behave in ways that catch designers out. Uncoated kraft absorbs ink into the fibre, so everything reads warmer and darker, and there is no true white without an opaque underprint. Metallised and holographic board reflects through translucent process inks, turning pale colours metallic. Black-through board avoids white cut edges but its surface is darker to print onto.',
+          'Three substrates behave in ways that catch designers out. Uncoated kraft absorbs ink into the fiber, so everything reads warmer and darker, and there is no true white without an opaque underprint. Metallized and holographic board reflects through translucent process inks, turning pale colors metallic. Black-through board avoids white cut edges but its surface is darker to print onto.',
           'In all three cases an opaque white layer, printed first in the areas that need to read normally, is the standard fix. It is an extra ink station and it has to be built into the artwork as its own named layer rather than requested at proof stage.',
         ],
       },
@@ -327,15 +327,15 @@ const posts: BlogPost[] = [
         id: 'ganging',
         body: [
           'When several different cartons share a board, an ink set and a finish, they can be printed together on one press sheet. They then share the plates, the make-ready and the press time.',
-          'On a multi-SKU range this is frequently the largest single cost saving available, and it is only accessible if the specification is standardised. It is the practical reason to resist letting each product in a range pick its own board and laminate.',
+          'On a multi-SKU range this is frequently the largest single cost saving available, and it is only accessible if the specification is standardized. It is the practical reason to resist letting each product in a range pick its own board and laminate.',
         ],
       },
       {
         heading: 'What to ask for at proof stage',
         id: 'proofing',
         body: [
-          'Ask for a printed proof on the actual stock, not a screen proof, whenever the substrate is kraft, metallised, holographic or black-through, or whenever a spot colour is central to the brand. On plain coated white board a calibrated digital proof is usually sufficient.',
-          'Check three things on any proof: that the spot colours match their references under daylight rather than office lighting, that the smallest type is legible at final size, and that any shade swatch reads correctly next to the actual product. Approve in writing, and keep the approved proof — it is the reference the production run is measured against.',
+          'Ask for a printed proof on the actual stock, not a screen proof, whenever the substrate is kraft, metallized, holographic or black-through, or whenever a spot color is central to the brand. On plain coated white board a calibrated digital proof is usually sufficient.',
+          'Check three things on any proof: that the spot colors match their references under daylight rather than office lighting, that the smallest type is legible at final size, and that any shade swatch reads correctly next to the actual product. Approve in writing, and keep the approved proof — it is the reference the production run is measured against.',
         ],
       },
     ],
@@ -347,7 +347,7 @@ const posts: BlogPost[] = [
     h1: 'How to Prepare Artwork for Custom Lip Boxes',
     seoTitle: 'How to Prepare Artwork for Custom Lip Boxes',
     metaDescription:
-      'A file checklist for lip packaging artwork: die lines, bleed, safe areas, colour builds and named finishing layers.',
+      'A file checklist for lip packaging artwork: die lines, bleed, safe areas, color builds and named finishing layers.',
     published: '2026-04-07',
     deck:
       'A file checklist that gets artwork through to print without a proof cycle wasted.',
@@ -377,7 +377,7 @@ const posts: BlogPost[] = [
         list: [
           'Format: print-ready PDF, or native AI or EPS with all links embedded. PSD is acceptable for image-led designs at full size.',
           'Resolution: 300 dpi at final size for all raster content. Upscaling a 72 dpi web image does not recover detail.',
-          'Colour space: CMYK for process work, plus named spot colours from the Pantone solid coated or uncoated library as appropriate to the stock.',
+          'Color space: CMYK for process work, plus named spot colors from the Pantone solid coated or uncoated library as appropriate to the stock.',
           'Bleed: 3 mm beyond every trimmed edge, with artwork continuing into it rather than stopping at the trim.',
           'Safe area: keep live text and logos at least 4 mm inside the trim on cartons and 2 mm inside the cut on labels.',
           'Fonts: outlined, or supplied alongside the file. Missing fonts substitute silently and the substitution is not always obvious on a proof.',
@@ -388,9 +388,9 @@ const posts: BlogPost[] = [
         heading: 'Finishing needs its own layers',
         id: 'finishing-layers',
         body: [
-          'Foil, spot UV, embossing and opaque white are not colours. Each is a separate plate or tool, and each needs its own vector layer drawn in 100% black, named for what it is.',
+          'Foil, spot UV, embossing and opaque white are not colors. Each is a separate plate or tool, and each needs its own vector layer drawn in 100% black, named for what it is.',
           'An unnamed extra layer gets interpreted rather than followed, and that costs a proof cycle. Name them explicitly: "foil gold", "spot UV gloss", "emboss", "opaque white". Where two overlap, say which sits on top.',
-          'Opaque white deserves particular attention on kraft, metallised and holographic stock. Anything that must read as white, or as a true light colour, needs white printed underneath it. On holographic board an unprinted area is holographic, not white.',
+          'Opaque white deserves particular attention on kraft, metallized and holographic stock. Anything that must read as white, or as a true light color, needs white printed underneath it. On holographic board an unprinted area is holographic, not white.',
         ],
       },
       {
@@ -406,7 +406,7 @@ const posts: BlogPost[] = [
         heading: 'Small type on small packaging',
         id: 'small-type',
         body: [
-          'Lip packaging is small and the legal copy is long, which puts constant pressure on type size. Legibility falls off sharply below about 5 pt, and sooner on uncoated kraft where ink spreads into the fibre.',
+          'Lip packaging is small and the legal copy is long, which puts constant pressure on type size. Legibility falls off sharply below about 5 pt, and sooner on uncoated kraft where ink spreads into the fiber.',
           'Rather than shrinking type further, the practical answers are a folded leaflet inside the carton, a peel-back multi-panel label on the container, or moving the declaration from the primary to the secondary pack. All three are cheaper than a pack that a customer cannot read.',
         ],
       },
@@ -414,7 +414,7 @@ const posts: BlogPost[] = [
         heading: 'Before you send the file',
         id: 'final-checks',
         body: [
-          'Five checks catch most problems. Confirm the die line layer is present and unmoved. Confirm bleed extends past every trim edge. Open the separations preview and confirm you have exactly the plates you intended, with no stray spot colours. Confirm the barcode sits on a flat panel with clear space and does not cross a crease. And view the file at 100% to check the smallest type.',
+          'Five checks catch most problems. Confirm the die line layer is present and unmoved. Confirm bleed extends past every trim edge. Open the separations preview and confirm you have exactly the plates you intended, with no stray spot colors. Confirm the barcode sits on a flat panel with clear space and does not cross a crease. And view the file at 100% to check the smallest type.',
           'Name the file with the product, the die line reference and a revision number. On a multi-SKU range, an outdated file being approved is a more common failure than any production error.',
         ],
       },
@@ -549,7 +549,7 @@ const posts: BlogPost[] = [
             ['Folded paperboard collar', 'Holds the base, stops sliding', 'Lowest', 'Paper stream with the carton'],
             ['Die-cut card platform', 'Fixes position precisely', 'Low', 'Paper stream with the carton'],
             ['Paperboard partition', 'Separates multiple items', 'Low', 'Paper stream with the carton'],
-            ['Moulded pulp tray', 'Good all-round cushioning', 'Moderate', 'Paper stream, though often not kerbside'],
+            ['Molded pulp tray', 'Good all-round cushioning', 'Moderate', 'Paper stream, though often not curbside'],
             ['Wrapped foam pad', 'High, conforms to shape', 'Moderate', 'Foam must be separated'],
             ['EVA or flocked plastic tray', 'Highest, most premium feel', 'Highest', 'Not paper-recyclable'],
           ],
@@ -559,7 +559,7 @@ const posts: BlogPost[] = [
         heading: 'Design the insert with the carton, not after it',
         id: 'design-together',
         body: [
-          'An insert sourced separately from the carton is the classic false economy. It arrives a millimetre out, it is discovered during packing, and the choice is between forcing it and reordering.',
+          'An insert sourced separately from the carton is the classic false economy. It arrives a millimeter out, it is discovered during packing, and the choice is between forcing it and reordering.',
           'Quoting both together means the insert is drawn to the same die line and tested in the actual carton before production. It also means one supplier owns the fit, which matters when something needs adjusting.',
           'Ask for a structural sample with the insert in place and your actual product inside it. That is the only test that tells you whether the fit works, and it is much cheaper than finding out on a full run.',
         ],
@@ -632,7 +632,7 @@ const posts: BlogPost[] = [
         heading: 'The specification moves the curve as much as quantity',
         id: 'specification',
         body: [
-          'Quantity is the largest single lever, but it is not the only one. Each of these shifts the whole curve upward: a heavier board, an extra spot colour, a laminate instead of a varnish, a foil pass, a spot UV pass, a window film patch, an insert, and any hand assembly.',
+          'Quantity is the largest single lever, but it is not the only one. Each of these shifts the whole curve upward: a heavier board, an extra spot color, a laminate instead of a varnish, a foil pass, a spot UV pass, a window film patch, an insert, and any hand assembly.',
           'Foil and emboss are worth singling out because they add both a fixed cost, the tooling, and a per-unit cost, the extra pass. They are therefore disproportionately expensive at low volumes and much more reasonable at high ones.',
         ],
       },
@@ -640,9 +640,9 @@ const posts: BlogPost[] = [
         heading: 'Three ways to get a better unit price without ordering more',
         id: 'without-more-volume',
         body: [
-          'Standardise across a range. Several products sharing one board, one ink set and one finish can be ganged onto shared press sheets, so they split the make-ready. On a multi-SKU launch this is frequently the biggest saving on the table.',
+          'Standardize across a range. Several products sharing one board, one ink set and one finish can be ganged onto shared press sheets, so they split the make-ready. On a multi-SKU launch this is frequently the biggest saving on the table.',
           'Reorder against held tooling. Once a die is cut and a proof approved, a repeat order carries no die or proofing charge. Telling a supplier at quoting stage that you expect to reorder on a cycle changes how the tooling is quoted.',
-          'Use a scheduled call-off. Produce the full quantity in one run to hold the volume price, then take delivery against a schedule so you are not warehousing a year of stock at once. This is how most <a href="/custom-lip-care-packaging/">bulk programmes across a whole lip range</a> are structured.',
+          'Use a scheduled call-off. Produce the full quantity in one run to hold the volume price, then take delivery against a schedule so you are not warehousing a year of stock at once. This is how most <a href="/custom-lip-care-packaging/">bulk programs across a whole lip range</a> are structured.',
         ],
       },
       {

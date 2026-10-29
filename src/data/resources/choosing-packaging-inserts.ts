@@ -94,15 +94,15 @@ export const resource: Resource = {
           'Paper stream with the carton',
         ],
         [
-          'Moulded pulp tray',
-          'A formed fibre tray with recesses for each item',
+          'Molded pulp tray',
+          'A formed fiber tray with recesses for each item',
           'Good all-round cushioning and location',
           'Moderate; needs its own tooling',
-          'Paper stream, though often not kerbside',
+          'Paper stream, though often not curbside',
         ],
         [
           'Wrapped foam pad',
-          'Foam cut to shape and covered in printed or coloured paper',
+          'Foam cut to shape and covered in printed or colored paper',
           'High; conforms and absorbs shock',
           'Moderate',
           'Foam must be separated by the consumer',
@@ -152,11 +152,11 @@ export const resource: Resource = {
       items: [
         {
           title: 'Quote it with the carton',
-          text: 'An insert sourced separately arrives a millimetre out, is found during packing, and leaves you choosing between forcing it and reordering.',
+          text: 'An insert sourced separately arrives a millimeter out, is found during packing, and leaves you choosing between forcing it and reordering.',
         },
         {
           title: 'Give the packed weight',
-          text: 'Not the empty container weight. The filled, capped, labelled weight is what determines whether restraint or cushioning is needed.',
+          text: 'Not the empty container weight. The filled, capped, labeled weight is what determines whether restraint or cushioning is needed.',
         },
         {
           title: 'Say how it is assembled',
@@ -164,7 +164,7 @@ export const resource: Resource = {
         },
         {
           title: 'Test with real product',
-          text: 'Ask for a structural sample with the insert fitted and your actual container inside. A fit that works on paper sometimes does not with a labelled tube.',
+          text: 'Ask for a structural sample with the insert fitted and your actual container inside. A fit that works on paper sometimes does not with a labeled tube.',
         },
         {
           title: 'Shake it',
@@ -184,7 +184,7 @@ export const resource: Resource = {
       body: [
         'A paperboard insert is a second die and a second run of a much simpler shape, so it carries a one-time tooling cost and a small per-unit cost. On a reasonable volume it is one of the cheapest line items in a packaging specification.',
         'Set that against what it prevents. A single shipment of marked product costs more in replacement, freight and customer goodwill than the insert across an entire run. That is the calculation, and it is rarely close.',
-        'Where inserts genuinely get expensive is at the premium end: moulded pulp carries its own tooling, and flocked thermoformed trays are a different manufacturing process with a different cost base. Those are presentation decisions rather than protection ones, and they belong with <a href="/rigid-lipstick-boxes/">rigid gift construction</a> where the opening is part of what you are selling.',
+        'Where inserts genuinely get expensive is at the premium end: molded pulp carries its own tooling, and flocked thermoformed trays are a different manufacturing process with a different cost base. Those are presentation decisions rather than protection ones, and they belong with <a href="/rigid-lipstick-boxes/">rigid gift construction</a> where the opening is part of what you are selling.',
       ],
     },
   ],
@@ -219,7 +219,7 @@ export const resource: Resource = {
     },
     {
       q: 'Which inserts keep the pack in one material stream?',
-      a: 'Folded collars, die-cut platforms and paperboard partitions all go into the paper stream with the carton. Moulded pulp is paper but often not accepted kerbside. Foam and flocked plastic trays have to be separated by the consumer.',
+      a: 'Folded collars, die-cut platforms and paperboard partitions all go into the paper stream with the carton. Molded pulp is paper but often not accepted curbside. Foam and flocked plastic trays have to be separated by the consumer.',
     },
     {
       q: 'Does an insert slow down packing?',

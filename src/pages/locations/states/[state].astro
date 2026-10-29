@@ -45,7 +45,7 @@ const crumbs: Crumb[] = [
 
 const cities = citiesInState(location.slug);
 const region = stateRegions.find((group) => group.states.includes(location.slug))?.region;
-const neighbours = region
+const neighbors = region
   ? statesInRegion(region).filter((state) => state.slug !== location.slug)
   : [];
 const related = location.related
@@ -113,7 +113,7 @@ const regionHeading = pick([
   `Other ${region?.toLowerCase()} markets`,
   `Nearby states with their own guide`,
   `Where else in the ${region?.toLowerCase()} we cover`,
-  `Compare this with neighbouring states`,
+  `Compare this with neighboring states`,
 ]);
 const openingBlocks = location.sections.slice(0, 1);
 const remainingBlocks = location.sections.slice(1);
@@ -221,12 +221,12 @@ const remainingBlocks = location.sections.slice(1);
   }
 
   {
-    neighbours.length > 0 && (
+    neighbors.length > 0 && (
       <section class="vx-band" aria-labelledby="loc-region-heading">
         <div class="vx-frame">
           <h2 id="loc-region-heading">{regionHeading}</h2>
           <div class="loc-region-grid">
-            {neighbours.map((state) => (
+            {neighbors.map((state) => (
               <a class="loc-region-card" href={locationUrl(state)}>
                 <span class="loc-region-card__name">
                   {state.name}

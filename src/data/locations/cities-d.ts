@@ -18,8 +18,8 @@ export const seattle: Location = {
   h1: 'Custom Lip Boxes in Seattle',
   deck: 'Refill models change what secondary packaging is for, and most packaging advice assumes it is disposable.',
   cardDescription:
-    'Refill and reuse programmes, where the outer pack is kept and the refill packaging is minimal.',
-  marketAngle: 'Refill and reuse programme packaging',
+    'Refill and reuse programs, where the outer pack is kept and the refill packaging is minimal.',
+  marketAngle: 'Refill and reuse program packaging',
   related: ['cardboard-lip-balm-tubes', 'paper-lip-balm-tubes', 'lip-balm-packaging'],
   sections: [
     {
@@ -28,9 +28,9 @@ export const seattle: Location = {
       heading: 'Packaging that is meant to be kept',
       navLabel: 'The market',
       body: [
-        'Seattle supports a comparatively high number of refill and reuse programmes in personal care, from in-store refill stations to mail-back and replenishment models.',
-        'That inverts a basic assumption. Conventional packaging is designed to be opened once and discarded, so it optimises for a single unboxing. Refill packaging has two different jobs: a durable primary pack the customer keeps, and a minimal refill pack that arrives repeatedly and should generate as little waste as possible.',
-        'Very little standard packaging advice accounts for that, and applying retail thinking to a refill programme usually produces the wrong specification on both halves.',
+        'Seattle supports a comparatively high number of refill and reuse programs in personal care, from in-store refill stations to mail-back and replenishment models.',
+        'That inverts a basic assumption. Conventional packaging is designed to be opened once and discarded, so it optimizes for a single unboxing. Refill packaging has two different jobs: a durable primary pack the customer keeps, and a minimal refill pack that arrives repeatedly and should generate as little waste as possible.',
+        'Very little standard packaging advice accounts for that, and applying retail thinking to a refill program usually produces the wrong specification on both halves.',
       ],
     },
     {
@@ -85,12 +85,12 @@ export const seattle: Location = {
       a: 'Yes, and specifying them together is better than sourcing them separately, because the refill has to fit the keeper precisely and the two are easier to align when drawn from one die line set.',
     },
     {
-      q: 'Do refill programmes need different case counts?',
+      q: 'Do refill programs need different case counts?',
       a: 'Often, because keeper packs sell once and refills sell repeatedly, so they move at very different rates. Two case counts rather than one usually reflects that better and reduces the stock imbalance.',
     },
     {
       q: 'How does this differ from your Washington page?',
-      a: 'The Washington page covers material scrutiny and writing disposal claims you can defend across the state. This page is about the specific structure a refill programme needs, which is two packs with opposite requirements.',
+      a: 'The Washington page covers material scrutiny and writing disposal claims you can defend across the state. This page is about the specific structure a refill program needs, which is two packs with opposite requirements.',
     },
     {
       q: 'Should I treat this as a local Seattle supplier?',
@@ -141,11 +141,11 @@ export const denver: Location = {
       intro: 'Six things worth specifying deliberately because they get tested in the meeting.',
       items: [
         'A synthetic label face stock, since paper labels absorb oil and water and lift at the edges',
-        'A <a href="/finishes/">lamination and finish options</a> or varnish over the print, because bare digital print scuffs in a pocket within weeks',
+        'A <a href="/finishes/">laminate or varnish finish</a> over the print, because bare digital print scuffs in a pocket within weeks',
         'A cap with positive retention, since a cap that works loose in a pack is a returned product',
         'A tube diameter that can be operated with cold hands or gloves',
         'Legible type at the size it will actually be read, often outdoors in poor light',
-        'A <a href="/hang-tab-lip-balm-boxes/">hang tab lip balm boxes</a>, since most outdoor retailers merchandise small items on pegs',
+        'A <a href="/hang-tab-lip-balm-boxes/">carton with a hang tab</a>, since most outdoor retailers merchandise small items on pegs',
       ],
       outro:
         'The label stock is the one most often specified wrong. Uncoated paper looks right for a natural brand and fails the first time the product is used as intended.',
@@ -287,7 +287,7 @@ export const washingtonDc: Location = {
     },
     {
       q: 'How long do institutional listings usually run?',
-      a: 'Longer than seasonal retail, often years. That makes reorder consistency important: specify spot colours rather than process builds, and make sure the approved proof is retained as the reference for every reorder.',
+      a: 'Longer than seasonal retail, often years. That makes reorder consistency important: specify spot colors rather than process builds, and make sure the approved proof is retained as the reference for every reorder.',
     },
     {
       q: 'Is there anywhere in Washington, D.C. I can collect an order from?',
@@ -337,10 +337,10 @@ export const nashville: Location = {
       navLabel: 'Travel durability',
       intro: 'Six specification choices that matter once a pack goes in a suitcase.',
       items: [
-        'Enough <a href="/materials/">board weights and thicknesses</a> that the carton does not crease under other luggage',
+        'Enough <a href="/materials/">board weight and thickness</a> that the carton does not crease under other luggage',
         'A base construction that holds when the pack is compressed, which a plain tuck flap may not',
         'An insert, so the product does not move and mark the printed interior',
-        'A <a href="/finishes/">lamination and finish options</a> rather than a varnish, since a scuffed pack arrives looking secondhand',
+        'A <a href="/finishes/">protective laminate finish</a> rather than a varnish, since a scuffed pack arrives looking secondhand',
         'A proportion that packs flat rather than one that has to stand upright',
         'A closure that stays closed, because a carton that opens in a bag loses its contents',
       ],
@@ -437,14 +437,14 @@ export const boston: Location = {
       intro: 'Six ways to reduce packaging cost without the pack looking cheap.',
       items: [
         'A lighter board where the contents are light, since 16pt reads fine on a small carton',
-        'Two spot colours rather than four-colour process, which can look more deliberate rather than less',
-        'Varnish instead of <a href="/finishes/">lamination and finish options</a>, which also keeps the pack in one material stream',
+        'Two spot colors rather than four-color process, which can look more deliberate rather than less',
+        'Varnish instead of <a href="/finishes/">a laminated finish</a>, which also keeps the pack in one material stream',
         'A printed swatch instead of a die-cut window, removing a pass and a material',
-        'One <a href="/resources/packaging-dieline-guide/">guide to packaging die lines</a> across a range so the tooling is paid once',
+        'One <a href="/resources/packaging-dieline-guide/">shared packaging die line</a> across a range so the tooling is paid once',
         'A larger single production run timed to cover two terms, released in stages',
       ],
       outro:
-        'Two spot colours on a good board frequently looks better than a four-colour design on a cheap one, so this is not simply a trade-off against appearance.',
+        'Two spot colors on a good board frequently looks better than a four-color design on a cheap one, so this is not simply a trade-off against appearance.',
     },
     {
       type: 'prose',
@@ -461,7 +461,7 @@ export const boston: Location = {
   faqs: [
     {
       q: 'How do I reduce packaging cost without it looking cheap?',
-      a: 'Two spot colours on a good board frequently looks more deliberate than four-colour process on a cheap one. Combine that with a varnish rather than a laminate and a printed swatch rather than a window, and the saving is real without a visible drop.',
+      a: 'Two spot colors on a good board frequently looks more deliberate than four-color process on a cheap one. Combine that with a varnish rather than a laminate and a printed swatch rather than a window, and the saving is real without a visible drop.',
     },
     {
       q: 'When should I order for an academic-year market?',
@@ -477,7 +477,7 @@ export const boston: Location = {
     },
     {
       q: 'Is a window worth the cost on a value product?',
-      a: 'Usually not. A window adds a die-cut, a film patch and a production pass. A printed swatch specified as a spot colour communicates the shade almost as well for a fraction of the cost.',
+      a: 'Usually not. A window adds a die-cut, a film patch and a production pass. A printed swatch specified as a spot color communicates the shade almost as well for a fraction of the cost.',
     },
     {
       q: 'Does shelf position change between terms here?',
