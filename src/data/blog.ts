@@ -652,7 +652,7 @@ const posts: BlogPost[] = [
         body: [
           'Ask for pricing at your quantity and at the next volume break. That one request tells you where you are on the curve and whether a small increase would pay for itself.',
           'Ask which costs are one-time. If a supplier separates setup from unit cost, you can see immediately what a reorder will cost and whether the specification or the volume is driving your price.',
-          'And treat any headline starting price as what it is: the figure for the simplest specification at the highest volume. It is a useful floor for comparison, not a quote.',
+          'And read any published price for exactly what it covers. Ours is 100 boxes for $30.00 ($0.30 each) with free shipping; a different size, finish or quantity is priced on its own terms, so compare like with like.',
         ],
       },
     ],
