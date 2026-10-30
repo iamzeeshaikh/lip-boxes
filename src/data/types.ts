@@ -130,6 +130,8 @@ export interface ReviewData {
 
 /* ------------------------------------------------------------------ */
 
+export type PackUnit = 'boxes' | 'labels' | 'tubes';
+
 export interface Product {
   slug: string;
   /** Exact H1 text. Contains the primary keyword. */
@@ -156,6 +158,12 @@ export interface Product {
   highlights: string[];
 
   images: ProductImage[];
+  /**
+   * What the online pack of 100 contains, as a plural noun: "boxes", "labels"
+   * or "tubes". Every surface that describes the pack (price line, order band,
+   * checkout, order emails, Merchant feed) reads it through src/data/order.ts.
+   */
+  packUnit: PackUnit;
   /** Index of the gallery image used for Open Graph. Defaults to 0. */
   ogImageIndex?: number;
 

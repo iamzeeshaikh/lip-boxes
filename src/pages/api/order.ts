@@ -17,6 +17,7 @@ import {
   SHIP_COUNTRIES,
   COD_COUNTRIES,
   ORDER_CATALOG,
+  ORDER_UNITS,
   SHIPPING,
   PRODUCTION_TEXT,
   transitFor,
@@ -149,6 +150,7 @@ export const POST: APIRoute = async ({ request }) => {
       name: ORDER_CATALOG[l.slug],
       url: `${site.url}/${l.slug}/`,
       qty: l.packs * PACK_QTY,
+      unit: ORDER_UNITS[l.slug],
       total: l.packs * PACK_PRICE,
     }));
   if (!lines.length) return json(422, { ok: false, error: 'Your order is empty' });
@@ -180,12 +182,12 @@ export const POST: APIRoute = async ({ request }) => {
     method.id === 'cod'
       ? 'Cash on delivery: the customer pays when the order arrives'
       : `${method.name}: send the invoice after the customer approves the proof`;
-  const itemText = lines.map((l) => `- ${l.name}: ${l.qty.toLocaleString('en-US')} boxes, ${money(l.total)}`).join('\n');
+  const itemText = lines.map((l) => `- ${l.name}: ${l.qty.toLocaleString('en-US')} ${l.unit}, ${money(l.total)}`).join('\n');
   const td = 'style="padding:6px 12px;border-bottom:1px solid #e5e7eb"';
   const itemHtml = `<table style="font-family:Arial,sans-serif;border-collapse:collapse">${lines
     .map(
       (l) =>
-        `<tr><td ${td}><a href="${l.url}">${esc(l.name)}</a></td><td ${td}>${l.qty.toLocaleString('en-US')} boxes</td><td ${td} align="right">${money(l.total)}</td></tr>`,
+        `<tr><td ${td}><a href="${l.url}">${esc(l.name)}</a></td><td ${td}>${l.qty.toLocaleString('en-US')} ${l.unit}</td><td ${td} align="right">${money(l.total)}</td></tr>`,
     )
     .join('')}<tr><td ${td}>Shipping</td><td ${td}></td><td ${td} align="right">Free</td></tr><tr><th align="left" ${td}>Total</th><td ${td}></td><th ${td} align="right">${money(total)}</th></tr></table>`;
   const office = [

@@ -25,12 +25,12 @@ export const site = {
   shortDescription:
     'Custom printed boxes, cartons, paper tubes and labels for lip balm, lipstick, lip gloss and lip care brands across the United States.',
 
-  /** Unit price of the online 100-box pack ($30.00 / 100). */
+  /** Unit price of the online pack of 100 ($30.00 / 100). */
   startingPrice: '0.30',
   /** Date through which the advertised starting price is honored. */
   priceValidUntil: '2027-08-04',
   startingPriceStatement:
-    '100 boxes: $30.00 ($0.30 each), with free shipping to the US, UK, Canada and Australia. Larger or custom runs are quoted on size, material, printing and quantity.',
+    'Every style is $30.00 for a pack of 100 ($0.30 each), with free shipping to the US, UK, Canada and Australia. Larger or custom runs are quoted on size, material, printing and quantity.',
 
   /* ---------------------------------------------------------------------- *
    * Contact details, confirmed by the owner on 2026-10-30.                   *

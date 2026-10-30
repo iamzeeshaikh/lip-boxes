@@ -1,7 +1,8 @@
 /**
  * Google Merchant feed, built from the same product data and the same
  * src/data/order.ts constants as the product pages, their Offer JSON-LD, the
- * checkout and /api/order: one item per product page, 100 boxes for $30.00,
+ * checkout and /api/order: one item per product page, 100 boxes, labels or tubes
+ * (Product.packUnit) for $30.00,
  * free shipping to the US, UK, Canada and Australia with handling and transit
  * times. Image links are the same stable WebP files the product JSON-LD lists,
  * in the same order.
@@ -9,7 +10,7 @@
 import type { APIRoute } from 'astro';
 import { indexableProducts } from '../data/products';
 import { publicImageUrl } from '../lib/images';
-import { SITE, BRAND, PACK_QTY, PACK_PRICE_TEXT, UNIT_PRICE_TEXT, SHIPPING, feedId } from '../data/order';
+import { SITE, BRAND, PACK_QTY, PACK_PRICE_TEXT, UNIT_PRICE_TEXT, SHIPPING, feedId, unitOf } from '../data/order';
 
 export const prerender = true;
 
@@ -19,13 +20,19 @@ const x = (s: unknown) =>
     (c) => ({ '<': '&lt;', '>': '&gt;', '&': '&amp;', "'": '&apos;', '"': '&quot;' })[c] as string,
   );
 
+// "Lip Balm Labels, Pack of 100"; "Lip Balm Packaging, Pack of 100 Boxes".
+const feedTitle = (name: string, unit: string) =>
+  name.toLowerCase().endsWith(unit)
+    ? `${name}, Pack of ${PACK_QTY}`
+    : `${name}, Pack of ${PACK_QTY} ${unit[0].toUpperCase()}${unit.slice(1)}`;
+
 export const GET: APIRoute = () => {
   const items = indexableProducts.map((p) => {
     const imgs = p.images.slice(0, 11).map((image) => SITE + encodeURI(publicImageUrl(p.slug, image.file)));
     return `  <item>
     <g:id>${x(feedId(p.slug))}</g:id>
-    <title>${x(`${p.name}, Pack of ${PACK_QTY}`)}</title>
-    <description>${x(`${p.metaDescription} Sold online in packs of ${PACK_QTY} boxes ($${UNIT_PRICE_TEXT} each), printed full color to your artwork after you approve a proof.`)}</description>
+    <title>${x(feedTitle(p.name, unitOf(p)))}</title>
+    <description>${x(`${p.metaDescription} Sold online in packs of ${PACK_QTY} ${unitOf(p)} ($${UNIT_PRICE_TEXT} each), printed full color to your artwork after you approve a proof.`)}</description>
     <link>${SITE}/${x(p.slug)}/</link>
     <g:image_link>${x(imgs[0])}</g:image_link>${imgs
       .slice(1)

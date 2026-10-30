@@ -13,7 +13,7 @@ import QuoteCta from '../components/QuoteCta.astro';
 import DesignYourLipBox from '../components/DesignYourLipBox.astro';
 import Icon from '../components/Icon.astro';
 import OrderBand from '../components/OrderBand.astro';
-import { PRICE_LINE, SHIP_LINE, PRODUCTION_TEXT, PACK_QTY } from '../data/order';
+import { priceLineFor, unitOf, SHIP_LINE, PRODUCTION_TEXT, PACK_QTY } from '../data/order';
 import { products, getProduct, hasReviews } from '../data/products';
 import { productImage, publicImageUrl, publicSocialUrl } from '../lib/images';
 import { site } from '../data/site';
@@ -151,7 +151,7 @@ const showReviews = hasReviews(product.reviews);
           </ul>
 
           <div class="vx-pnote">
-            <p class="vx-pnote__line" data-boilerplate>{PRICE_LINE}</p>
+            <p class="vx-pnote__line" data-boilerplate>{priceLineFor(unitOf(product))}</p>
             <p class="vx-pnote__sub" data-boilerplate>
               {SHIP_LINE}. Production takes {PRODUCTION_TEXT} after you approve
               the proof. Larger or custom runs are quoted to your size, material,
@@ -164,7 +164,7 @@ const showReviews = hasReviews(product.reviews);
               Request a Quote
               <Icon name="arrow-right" size={18} />
             </a>
-            <a href="#order" class="vx-arrow">Order {PACK_QTY} online</a>
+            <a href="#order" class="vx-arrow">Order {PACK_QTY} {unitOf(product)} online</a>
             <a href="/sample-kit/" class="vx-arrow">Request a sample</a>
           </div>
 

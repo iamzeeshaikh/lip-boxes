@@ -294,4 +294,5 @@ export const product: Product = {
   related: ['custom-lipstick-boxes', 'rigid-lipstick-boxes', 'hang-tab-lipstick-boxes', 'lip-gloss-boxes'],
   order: 8,
   group: 'Lipstick',
+  packUnit: 'boxes',
 };

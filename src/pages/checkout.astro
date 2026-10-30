@@ -13,12 +13,14 @@ import {
   PACK_QTY,
   PACK_PRICE,
   MAX_PACKS,
-  PRICE_LINE,
+  money,
+  UNIT_PRICE_TEXT,
   SHIP_COUNTRIES,
   SHIP_LINE,
   PAYMENT_METHODS,
   COD_COUNTRIES,
   ORDER_CATALOG,
+  ORDER_UNITS,
   PRODUCTION_TEXT,
   TRANSIT_US_TEXT,
   TRANSIT_INTL_TEXT,
@@ -28,6 +30,7 @@ import '../styles/forms.css';
 
 const cfg = JSON.stringify({
   catalog: ORDER_CATALOG,
+  units: ORDER_UNITS,
   pack: PACK_PRICE,
   qty: PACK_QTY,
   max: MAX_PACKS,
@@ -37,7 +40,7 @@ const cfg = JSON.stringify({
 
 <BaseLayout
   title="Checkout | Order Lip Boxes Online | Lip Boxes"
-  description={`Order custom lip boxes online: ${PACK_QTY} boxes for $${PACK_PRICE.toFixed(2)} with free shipping to the US, UK, Canada and Australia.`}
+  description={`Order custom lip packaging online: a pack of ${PACK_QTY} for $${PACK_PRICE.toFixed(2)} with free shipping to the US, UK, Canada and Australia.`}
   path="/checkout/"
   noindex
 >
@@ -45,7 +48,7 @@ const cfg = JSON.stringify({
     <div class="vx-frame">
       <h1>Checkout</h1>
       <p>
-        {PRICE_LINE}. {SHIP_LINE}. Nothing is printed or charged until you approve
+        Every style is {money(PACK_PRICE)} for a pack of {PACK_QTY} (${UNIT_PRICE_TEXT} each). {SHIP_LINE}. Nothing is printed or charged until you approve
         a proof of your artwork.
       </p>
     </div>
@@ -134,7 +137,7 @@ const cfg = JSON.stringify({
 </BaseLayout>
 
 <script>
-  type Cfg = { catalog: Record<string, string>; pack: number; qty: number; max: number; cod: string[] };
+  type Cfg = { catalog: Record<string, string>; units: Record<string, string>; pack: number; qty: number; max: number; cod: string[] };
   const KEY = 'lb-cart';
   const LOADED = Date.now();
   const form = document.getElementById('co-form') as HTMLFormElement | null;
@@ -185,7 +188,7 @@ const cfg = JSON.stringify({
           total += sum;
           let opts = '';
           for (let n = 1; n <= C.max; n++)
-            opts += `<option value="${n}"${n === l.packs ? ' selected' : ''}>${(n * C.qty).toLocaleString('en-US')} boxes</option>`;
+            opts += `<option value="${n}"${n === l.packs ? ' selected' : ''}>${(n * C.qty).toLocaleString('en-US')} ${C.units[l.slug] || 'boxes'}</option>`;
           return `<tr><td><a data-slug="${esc(l.slug)}">${esc(name)}</a><br><select data-i="${i}" aria-label="Quantity for ${esc(name)}">${opts}</select> <button type="button" data-rm="${i}" class="co-rm">Remove</button></td><td class="r">${money(sum)}</td></tr>`;
         })
         .join('');

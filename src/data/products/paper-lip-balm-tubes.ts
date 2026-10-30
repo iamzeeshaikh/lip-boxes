@@ -252,7 +252,7 @@ export const product: Product = {
     { label: 'Decoration', value: 'Matte or satin varnish, foil stamp, deboss' },
     { label: 'Tamper evidence', value: 'Printed paper seal or shrink band around the cap join' },
     { label: 'Artwork format', value: 'Flat wrap template supplied; PDF, AI or EPS at 300 dpi' },
-    { label: 'Online price', value: '100 boxes: $30.00 ($0.30 each), free shipping to the US, UK, Canada and Australia' },
+    { label: 'Online price', value: '100 tubes: $30.00 ($0.30 each), free shipping to the US, UK, Canada and Australia' },
     { label: 'Ordering', value: 'Order 100 online, or get a quote for larger runs; tooled per diameter' },
   ],
   faqs: [
@@ -308,4 +308,5 @@ export const product: Product = {
   related: ['custom-lip-balm-boxes', 'custom-lip-balm-labels', 'hang-tab-lip-balm-boxes', 'custom-lip-care-packaging'],
   order: 4,
   group: 'Lip Balm',
+  packUnit: 'tubes',
 };

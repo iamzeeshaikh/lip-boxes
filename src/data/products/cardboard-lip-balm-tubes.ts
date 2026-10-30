@@ -208,7 +208,7 @@ export const product: Product = {
     { label: 'Small batches', value: 'Plain tubes carry no plate, artwork or proofing cost' },
     { label: 'Tooling', value: 'Charged once per diameter and reused on every reorder in that size' },
     { label: 'Claims', value: 'Cap material and liner grade confirmed in writing on the quote' },
-    { label: 'Online price', value: '100 boxes: $30.00 ($0.30 each), free shipping to the US, UK, Canada and Australia' },
+    { label: 'Online price', value: '100 tubes: $30.00 ($0.30 each), free shipping to the US, UK, Canada and Australia' },
     { label: 'Ordering', value: 'Order 100 online, or get a quote for larger runs; sample tube recommended before a first run' },
   ],
   faqs: [
@@ -264,4 +264,5 @@ export const product: Product = {
   related: ['paper-lip-balm-tubes', 'lip-balm-labels', 'custom-lip-balm-boxes', 'lip-balm-packaging'],
   order: 5,
   group: 'Lip Balm',
+  packUnit: 'tubes',
 };

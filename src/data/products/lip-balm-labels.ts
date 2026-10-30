@@ -199,7 +199,7 @@ export const product: Product = {
     { label: 'Shapes', value: 'Rectangle, rounded corner, oval, circle and custom die-cut outlines' },
     { label: 'Minimum legible type', value: 'Around 5 pt on film; larger on uncoated kraft' },
     { label: 'Multiple designs', value: 'Share one die and one material at no proportional cost increase' },
-    { label: 'Online price', value: '100 boxes: $30.00 ($0.30 each), free shipping to the US, UK, Canada and Australia' },
+    { label: 'Online price', value: '100 labels: $30.00 ($0.30 each), free shipping to the US, UK, Canada and Australia' },
     { label: 'Ordering', value: 'Order 100 online; larger runs quoted on size, stock, finish and quantity' },
   ],
   faqs: [
@@ -255,4 +255,5 @@ export const product: Product = {
   related: ['custom-lip-balm-labels', 'cardboard-lip-balm-tubes', 'paper-lip-balm-tubes', 'lip-balm-packaging'],
   order: 7,
   group: 'Lip Balm',
+  packUnit: 'labels',
 };

@@ -18,6 +18,7 @@
  */
 import { products } from './products';
 import { site } from './site';
+import type { PackUnit, Product } from './types';
 
 export const SITE = site.url;
 export const BRAND = site.name;
@@ -29,8 +30,15 @@ export const CURRENCY = 'USD';
 export const money = (n: number) => `$${n.toFixed(2)}`;
 export const PACK_PRICE_TEXT = PACK_PRICE.toFixed(2);
 export const UNIT_PRICE_TEXT = (PACK_PRICE / PACK_QTY).toFixed(2);
-/** The one price line every product page shows: "100 boxes: $30.00 ($0.30 each)". */
-export const PRICE_LINE = `${PACK_QTY} boxes: ${money(PACK_PRICE)} ($${UNIT_PRICE_TEXT} each)`;
+/** What a pack holds for one product: "boxes", "labels" or "tubes" (Product.packUnit). */
+export const unitOf = (p: Pick<Product, 'packUnit'> | undefined): PackUnit => p?.packUnit ?? 'boxes';
+/** One product's price line: "100 labels: $30.00 ($0.30 each)". */
+export const priceLineFor = (unit: PackUnit) =>
+  `${PACK_QTY} ${unit}: ${money(PACK_PRICE)} ($${UNIT_PRICE_TEXT} each)`;
+/** Site-wide line for pages about the lip box range as a whole: "100 boxes: $30.00 ($0.30 each)". */
+export const PRICE_LINE = priceLineFor('boxes');
+/** Site-wide line that fits every style, labels and tubes included. */
+export const PACK_LINE = `${money(PACK_PRICE)} for a pack of ${PACK_QTY} ($${UNIT_PRICE_TEXT} each)`;
 
 /** Days are business days. Handling = production after proof approval. */
 export const SHIPPING = {
@@ -78,7 +86,7 @@ export const PAYMENT_METHODS = [
     id: 'cod',
     name: 'Cash on delivery',
     detail:
-      'Nothing up front. You pay the order total when your boxes are delivered. Available for US and Canadian addresses only.',
+      'Nothing up front. You pay the order total when your order is delivered. Available for US and Canadian addresses only.',
   },
 ] as const;
 
@@ -91,6 +99,11 @@ export const PAYMENT_LINE =
 /** slug -> product name, for the checkout and the server-side re-pricing. */
 export const ORDER_CATALOG: Record<string, string> = Object.fromEntries(
   products.map((p) => [p.slug, p.name]),
+);
+
+/** slug -> pack unit, so checkout lines and order emails say labels, tubes or boxes. */
+export const ORDER_UNITS: Record<string, PackUnit> = Object.fromEntries(
+  products.map((p) => [p.slug, unitOf(p)]),
 );
 
 /** Merchant item id, within Google's 50-character limit. */

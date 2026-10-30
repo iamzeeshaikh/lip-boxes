@@ -347,4 +347,5 @@ export const product: Product = {
   related: ['hang-tab-lip-balm-boxes', 'paper-lip-balm-tubes', 'custom-lip-balm-labels', 'custom-lip-care-packaging'],
   order: 1,
   group: 'Lip Balm',
+  packUnit: 'boxes',
 };

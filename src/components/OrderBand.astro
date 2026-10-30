@@ -18,7 +18,8 @@ import {
   PACK_QTY,
   PACK_PRICE,
   MAX_PACKS,
-  PRICE_LINE,
+  priceLineFor,
+  unitOf,
   SHIP_LINE,
   PRODUCTION_TEXT,
   TRANSIT_US_TEXT,
@@ -35,6 +36,9 @@ interface Props {
 
 const { product, defaultSlug = 'lipstick-boxes', id = 'order' } = Astro.props;
 const qty = PACK_QTY.toLocaleString('en-US');
+// The pack noun follows the product (labels, tubes or boxes). Without a product
+// it follows the style picked in the select, starting from the default style.
+const unit = unitOf(product ?? products.find((p) => p.slug === defaultSlug));
 const photo = product
   ? productImage(product.slug, product.images[0].file)
   : productImage('lipstick-boxes', 'lipstick-box-single-shade-carton.png');
@@ -57,7 +61,7 @@ const headingId = `${id}-heading`;
     />
   </div>
   <div class="vx-order__copy">
-    <h2 id={headingId}>Order {qty} boxes online</h2>
+    <h2 id={headingId}>Order {qty} <span data-ob-unit>{unit}</span> online</h2>
     <p class="vx-order__lede">
       {product ? product.name : 'Any style'} in a pack of {qty}, printed full color
       to your artwork after you approve a proof. Larger runs, other sizes and
@@ -73,9 +77,9 @@ const headingId = `${id}-heading`;
     data-qty={PACK_QTY}
   >
     <p class="vx-order__line">
-      {qty} boxes <span class="vx-order__price">{money(PACK_PRICE)}</span>
+      {qty} <span data-ob-unit>{unit}</span> <span class="vx-order__price">{money(PACK_PRICE)}</span>
     </p>
-    <p class="vx-order__each">{PRICE_LINE}</p>
+    <p class="vx-order__each" data-ob-line>{priceLineFor(unit)}</p>
     <ul class="vx-order__spec">
       {
         product ? (
@@ -87,7 +91,7 @@ const headingId = `${id}-heading`;
             <label for={`${id}-style`}>Style</label>
             <select id={`${id}-style`} name="add" class="vx-order__select">
               {products.map((p) => (
-                <option value={p.slug} selected={p.slug === defaultSlug}>
+                <option value={p.slug} selected={p.slug === defaultSlug} data-unit={unitOf(p)}>
                   {p.name}
                 </option>
               ))}
@@ -110,7 +114,7 @@ const headingId = `${id}-heading`;
         <button type="button" aria-label="One pack more" data-ob-plus>+</button>
       </div>
       <p class="vx-order__units">
-        <span data-ob-units>{qty}</span> boxes · <span data-ob-total>{money(PACK_PRICE)}</span>
+        <span data-ob-units>{qty}</span> <span data-ob-unit>{unit}</span> · <span data-ob-total>{money(PACK_PRICE)}</span>
       </p>
     </div>
     <button type="submit" class="vx-btn vx-btn--red vx-btn--block">Order Now</button>
@@ -136,6 +140,13 @@ const headingId = `${id}-heading`;
       if (total) total.textContent = `$${(n * pack).toFixed(2)}`;
       if (packs) packs.value = String(n);
     };
+    const pick = form.querySelector<HTMLSelectElement>('select[name="add"]');
+    const line = form.closest('.vx-order')?.querySelector<HTMLElement>('[data-ob-line]');
+    pick?.addEventListener('change', () => {
+      const u = pick.selectedOptions[0]?.dataset.unit || 'boxes';
+      form.closest('.vx-order')?.querySelectorAll<HTMLElement>('[data-ob-unit]').forEach((el) => (el.textContent = u));
+      if (line) line.textContent = line.textContent!.replace(/^(\S+) \S+:/, `$1 ${u}:`);
+    });
     form.querySelector('[data-ob-minus]')?.addEventListener('click', () => set(n - 1));
     form.querySelector('[data-ob-plus]')?.addEventListener('click', () => set(n + 1));
     form.addEventListener('submit', () => {

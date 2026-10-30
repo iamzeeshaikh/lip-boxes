@@ -276,4 +276,5 @@ export const product: Product = {
   related: ['custom-lip-balm-boxes', 'custom-lipstick-boxes', 'lip-gloss-boxes', 'custom-lip-mask-boxes'],
   order: 15,
   group: 'Lip Care',
+  packUnit: 'boxes',
 };

@@ -4,7 +4,7 @@ import InfoSection from '../components/InfoSection.astro';
 import FaqList from '../components/FaqList.astro';
 import { site } from '../data/site';
 import {
-  PRICE_LINE,
+  PACK_LINE,
   PACK_QTY,
   PRODUCTION_TEXT,
   TRANSIT_US_TEXT,
@@ -32,11 +32,11 @@ const groups: { id: string; heading: string; intro: string; faqs: Faq[] }[] = [
       },
       {
         q: 'What does the $30.00 online price include?',
-        a: `${PRICE_LINE}: a pack of ${PACK_QTY} in the style you choose, printed full color to your artwork after you approve a proof, with free shipping to the US, UK, Canada and Australia. Pay by PayPal invoice or bank transfer after proof approval, or cash on delivery in the US and Canada. Foil, inserts, special sizes and larger runs are quoted, and your written quote states the actual unit price for that job.`,
+        a: `${PACK_LINE}: boxes, labels or tubes in the style you choose, printed full color to your artwork after you approve a proof, with free shipping to the US, UK, Canada and Australia. Pay by PayPal invoice or bank transfer after proof approval, or cash on delivery in the US and Canada. Foil, inserts, special sizes and larger runs are quoted, and your written quote states the actual unit price for that job.`,
       },
       {
         q: 'Is there a minimum order quantity?',
-        a: 'Online orders start at one pack of 100 boxes. For quoted work it depends on the print process and finishing: offset litho, foil and embossing carry setup costs that need volume to make sense. Tell us the quantity you actually want and we will quote it.',
+        a: 'Online orders start at one pack of 100. For quoted work it depends on the print process and finishing: offset litho, foil and embossing carry setup costs that need volume to make sense. Tell us the quantity you actually want and we will quote it.',
       },
       {
         q: 'Can I get a price without sending dimensions?',
@@ -127,7 +127,7 @@ const groups: { id: string; heading: string; intro: string; faqs: Faq[] }[] = [
     faqs: [
       {
         q: 'Do you hold stock of standard boxes?',
-        a: 'No. Every item is manufactured to order, printed to your artwork, which is the reason the guidance on this site is as specific as it is. The online 100-box pack goes into production when you approve the proof and is made in 5–7 business days.',
+        a: 'No. Every item is manufactured to order, printed to your artwork, which is the reason the guidance on this site is as specific as it is. The online pack of 100 goes into production when you approve the proof and is made in 5–7 business days.',
       },
       {
         q: 'Do you fill or assemble product?',
