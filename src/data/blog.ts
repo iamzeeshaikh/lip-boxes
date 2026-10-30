@@ -583,6 +583,7 @@ const posts: BlogPost[] = [
     metaDescription:
       'Why packaging unit prices fall so steeply with volume, which costs are fixed, and where the real breakpoints sit.',
     published: '2026-06-02',
+    updated: '2026-10-30',
     deck:
       'Where the money actually goes in a packaging quote, and why 10,000 costs far less than ten times 1,000.',
     readingMinutes: 8,

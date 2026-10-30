@@ -1,0 +1,93 @@
+---
+/**
+ * Shown after /api/order accepts an order. noindex, and kept out of the sitemap.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+import { PAYMENT_METHODS, PRODUCTION_TEXT, TRANSIT_US_TEXT, TRANSIT_INTL_TEXT } from '../data/order';
+
+const pay = JSON.stringify(Object.fromEntries(PAYMENT_METHODS.map((m) => [m.id, m.detail])));
+---
+
+<BaseLayout
+  title="Order Received | Thank You | Lip Boxes"
+  description="Your lip box order has been received. We email a proof of your artwork before anything is printed."
+  path="/order-confirmed/"
+  noindex
+>
+  <section class="oc-head">
+    <div class="vx-frame">
+      <h1>Order received</h1>
+      <p>Thank you. Your order is with our team, and a copy is on its way to your inbox.</p>
+    </div>
+  </section>
+
+  <section class="vx-frame vx-frame--slim oc" data-pay={pay}>
+    <p data-ref hidden>Your order number: <strong data-ref-value></strong></p>
+    <h2>What happens next</h2>
+    <ol>
+      <li>We check your artwork and email you a proof.</li>
+      <li>You approve the proof or ask for changes. Nothing is printed before you approve.</li>
+      <li data-pay-line>{PAYMENT_METHODS[0].detail}</li>
+      <li>
+        Production takes {PRODUCTION_TEXT}. Shipping is free and takes {TRANSIT_US_TEXT} in
+        the US and {TRANSIT_INTL_TEXT} to the UK, Canada and Australia.
+      </li>
+    </ol>
+    <p class="oc-small">
+      Questions? Call <a href={`tel:${site.phone}`}>{site.phoneDisplay}</a> or email{' '}
+      <a href={`mailto:${site.email}`}>{site.email}</a> with your order number.
+    </p>
+    <p><a class="vx-btn vx-btn--red" href="/">Back to home</a></p>
+  </section>
+</BaseLayout>
+
+<script>
+  const root = document.querySelector('[data-pay]') as HTMLElement | null;
+  if (root) {
+    const pay = JSON.parse(root.dataset.pay || '{}') as Record<string, string>;
+    const q = new URLSearchParams(location.search);
+    const ref = q.get('ref');
+    const p = q.get('pay');
+    if (ref) {
+      const r = root.querySelector('[data-ref]') as HTMLElement;
+      (r.querySelector('[data-ref-value]') as HTMLElement).textContent = ref;
+      r.hidden = false;
+    }
+    if (p && pay[p]) (root.querySelector('[data-pay-line]') as HTMLElement).textContent = pay[p];
+  }
+</script>
+
+<style>
+  .oc-head {
+    padding: clamp(48px, 6vw, 88px) 0;
+    background: var(--vx-ink);
+  }
+  .oc-head h1 {
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .oc-head p {
+    margin-block-start: 12px;
+    color: #d6d6d6;
+    font-size: 17px;
+  }
+  .oc {
+    padding-block: 40px 72px;
+    line-height: 1.7;
+  }
+  .oc h2 {
+    margin-block: 20px 10px;
+  }
+  .oc ol {
+    padding-left: 22px;
+    color: var(--vx-ink-2);
+  }
+  .oc li {
+    margin-bottom: 8px;
+  }
+  .oc-small {
+    margin-block: 20px;
+    color: var(--vx-mute-c);
+  }
+</style>

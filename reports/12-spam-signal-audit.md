@@ -1,6 +1,6 @@
 # Spam-signal audit
 
-Generated from `dist/client`. 96 indexable pages checked against the patterns search engines penalise: keyword stuffing, thin content, doorway duplication, hidden text, link stuffing and auto-generation tells.
+Generated from `dist/client`. 97 indexable pages checked against the patterns search engines penalise: keyword stuffing, thin content, doorway duplication, hidden text, link stuffing and auto-generation tells.
 
 ## Thresholds
 
@@ -16,11 +16,29 @@ Generated from `dist/client`. 96 indexable pages checked against the patterns se
 
 No hard failures.
 
-**6 warning(s)** — worth reading, not blocking:
+**24 warning(s)** — worth reading, not blocking:
 
-- /blog/ — 359 body words
+- / — possible hidden text: opacity: 0 on text
+- /cardboard-lip-balm-tubes/ — possible hidden text: opacity: 0 on text
+- /custom-lip-balm-boxes/ — possible hidden text: opacity: 0 on text
+- /custom-lip-balm-labels/ — possible hidden text: opacity: 0 on text
+- /custom-lip-care-packaging/ — possible hidden text: opacity: 0 on text
+- /custom-lip-mask-boxes/ — possible hidden text: opacity: 0 on text
+- /custom-lipstick-boxes/ — possible hidden text: opacity: 0 on text
+- /hang-tab-lip-balm-boxes/ — possible hidden text: opacity: 0 on text
+- /hang-tab-lipstick-boxes/ — possible hidden text: opacity: 0 on text
+- /holographic-lip-gloss-boxes/ — possible hidden text: opacity: 0 on text
+- /lip-balm-labels/ — possible hidden text: opacity: 0 on text
+- /lip-balm-packaging/ — possible hidden text: opacity: 0 on text
+- /lip-gloss-boxes/ — possible hidden text: opacity: 0 on text
+- /lipstick-boxes/ — possible hidden text: opacity: 0 on text
+- /paper-lip-balm-tubes/ — possible hidden text: opacity: 0 on text
+- /products/ — possible hidden text: opacity: 0 on text
+- /rigid-lipstick-boxes/ — possible hidden text: opacity: 0 on text
+- Prose anchor "request a quote" -> /request-a-quote/ repeated on 17 pages
 - Prose anchor "request a sample" -> /sample-kit/ repeated on 15 pages
 - Guide pages — heading pattern "· this page" appears on 10 of 10 pages
+- Product pages — heading pattern "· 100 boxes online" appears on 15 of 15 pages
 - Product pages — heading pattern "· this page" appears on 15 of 15 pages
 - Product pages — heading pattern "· · · · specification" appears on 8 of 15 pages
 - Product pages — heading pattern "· · · ·: common questions" appears on 8 of 15 pages
@@ -29,114 +47,115 @@ No hard failures.
 
 | Family | Pages | Avg body words | Avg keyword density | Avg shared sentences | Avg links/100 words |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| Blog | 8 | 784 | 0.00% | 4.7% | 1.2 |
-| City | 20 | 989 | 1.08% | 3.9% | 1.1 |
-| Guide | 10 | 1873 | 0.95% | 4.6% | 0.6 |
-| Location hub | 3 | 783 | 0.00% | 0.0% | 4.7 |
-| Product | 15 | 2603 | 0.90% | 7.4% | 0.5 |
-| State | 20 | 1086 | 0.97% | 3.4% | 1.3 |
-| Static | 20 | 912 | 0.00% | 2.5% | 1.3 |
+| Blog | 8 | 1296 | 0.00% | 4.4% | 0.7 |
+| City | 20 | 1094 | 0.98% | 6.4% | 1.1 |
+| Guide | 10 | 1983 | 0.94% | 4.9% | 0.6 |
+| Location hub | 3 | 1202 | 0.00% | 2.9% | 3.1 |
+| Product | 15 | 2729 | 0.98% | 8.3% | 0.5 |
+| State | 20 | 1222 | 0.85% | 2.9% | 1.2 |
+| Static | 21 | 1332 | 0.00% | 3.6% | 0.7 |
 
 ## Every page
 
 | URL | Family | Body words | Primary keyword | Times used | Density | Shared prose | Shared incl. cards | Links/100 words |
 | --- | --- | ---: | --- | ---: | ---: | ---: | ---: | ---: |
-| / | Static | 772 | — | 0 | 0.00% | 4% | 30% | 3.9 |
-| /about/ | Static | 731 | — | 0 | 0.00% | 0% | 8% | 0.5 |
-| /artwork-guidelines/ | Static | 1589 | — | 0 | 0.00% | 5% | 9% | 0.3 |
-| /blog/ | Static | 359 | — | 0 | 0.00% | 0% | 25% | 5.3 |
-| /blog/how-packaging-quantity-affects-unit-pricing/ | Blog | 801 | — | 0 | 0.00% | 0% | 11% | 1.1 |
-| /blog/how-to-choose-packaging-for-a-lip-gloss-line/ | Blog | 883 | — | 0 | 0.00% | 0% | 10% | 1.1 |
-| /blog/how-to-prepare-artwork-for-custom-lip-boxes/ | Blog | 867 | — | 0 | 0.00% | 11% | 18% | 1.0 |
-| /blog/lip-balm-box-materials-compared/ | Blog | 863 | — | 0 | 0.00% | 0% | 11% | 1.0 |
-| /blog/lipstick-packaging-sizes-and-structural-options/ | Blog | 719 | — | 0 | 0.00% | 19% | 29% | 1.3 |
-| /blog/packaging-inserts-for-lipstick-and-lip-gloss-products/ | Blog | 647 | — | 0 | 0.00% | 0% | 13% | 1.4 |
-| /blog/paper-lip-balm-tubes-and-their-packaging-requirements/ | Blog | 739 | — | 0 | 0.00% | 0% | 11% | 1.2 |
-| /blog/printing-methods-for-cosmetic-packaging/ | Blog | 755 | — | 0 | 0.00% | 7% | 18% | 1.2 |
-| /box-styles/ | Static | 1100 | — | 0 | 0.00% | 2% | 9% | 0.4 |
-| /cardboard-lip-balm-tubes/ | Product | 2315 | cardboard lip balm tubes | 6 | 1.04% | 7% | 10% | 0.6 |
-| /contact/ | Static | 548 | — | 0 | 0.00% | 4% | 13% | 1.3 |
-| /custom-lip-balm-boxes/ | Product | 3232 | custom lip balm boxes | 6 | 0.74% | 6% | 8% | 0.5 |
-| /custom-lip-balm-labels/ | Product | 2684 | custom lip balm labels | 6 | 0.89% | 9% | 12% | 0.4 |
-| /custom-lip-care-packaging/ | Product | 2600 | custom lip care packaging | 6 | 0.92% | 7% | 10% | 0.5 |
-| /custom-lip-mask-boxes/ | Product | 2633 | custom lip mask boxes | 6 | 0.91% | 6% | 9% | 0.5 |
-| /custom-lipstick-boxes/ | Product | 2593 | custom lipstick boxes | 6 | 0.69% | 8% | 10% | 0.5 |
-| /custom-packaging/ | Static | 902 | — | 0 | 0.00% | 2% | 9% | 0.6 |
-| /faqs/ | Static | 1399 | — | 0 | 0.00% | 7% | 8% | 0.2 |
-| /finishes/ | Static | 1080 | — | 0 | 0.00% | 9% | 14% | 0.5 |
-| /hang-tab-lip-balm-boxes/ | Product | 2618 | hang tab lip balm boxes | 6 | 1.15% | 6% | 9% | 0.5 |
-| /hang-tab-lipstick-boxes/ | Product | 2670 | hang tab lipstick boxes | 6 | 0.90% | 6% | 9% | 0.5 |
-| /holographic-lip-gloss-boxes/ | Product | 2568 | holographic lip gloss boxes | 6 | 0.93% | 7% | 10% | 0.5 |
-| /how-to-order/ | Static | 798 | — | 0 | 0.00% | 0% | 7% | 0.5 |
-| /lip-balm-labels/ | Product | 2391 | lip balm labels | 7 | 0.88% | 10% | 13% | 0.5 |
-| /lip-balm-packaging/ | Product | 2348 | lip balm packaging | 9 | 1.15% | 8% | 12% | 0.6 |
-| /lip-gloss-boxes/ | Product | 2611 | lip gloss boxes | 7 | 0.80% | 6% | 9% | 0.5 |
-| /lipstick-boxes/ | Product | 2339 | lipstick boxes | 11 | 0.94% | 14% | 16% | 0.6 |
-| /locations/ | Location hub | 919 | — | 0 | 0.00% | 0% | 9% | 5.1 |
-| /locations/cities/ | Location hub | 698 | — | 0 | 0.00% | 0% | 9% | 3.3 |
-| /locations/cities/austin/ | City | 1020 | custom lip boxes in Austin | 2 | 0.98% | 4% | 4% | 1.4 |
-| /locations/cities/boston/ | City | 977 | custom lip boxes in Boston | 2 | 1.02% | 5% | 2% | 1.0 |
-| /locations/cities/charlotte/ | City | 959 | custom lip boxes in Charlotte | 2 | 1.04% | 5% | 5% | 1.0 |
-| /locations/cities/chicago/ | City | 975 | custom lip boxes in Chicago | 2 | 1.03% | 2% | 2% | 1.1 |
-| /locations/cities/columbus/ | City | 943 | custom lip boxes in Columbus | 2 | 1.06% | 5% | 5% | 1.2 |
-| /locations/cities/dallas/ | City | 1013 | custom lip boxes in Dallas | 2 | 0.99% | 7% | 5% | 1.4 |
-| /locations/cities/denver/ | City | 1018 | custom lip boxes in Denver | 2 | 0.98% | 3% | 2% | 1.0 |
-| /locations/cities/fort-worth/ | City | 1015 | custom lip boxes in Fort Worth | 2 | 1.18% | 2% | 2% | 1.4 |
-| /locations/cities/houston/ | City | 1030 | custom lip boxes in Houston | 2 | 0.97% | 5% | 4% | 1.4 |
-| /locations/cities/indianapolis/ | City | 939 | custom lip boxes in Indianapolis | 2 | 1.06% | 2% | 2% | 1.1 |
-| /locations/cities/jacksonville/ | City | 935 | custom lip boxes in Jacksonville | 2 | 1.07% | 5% | 2% | 1.0 |
-| /locations/cities/los-angeles/ | City | 998 | custom lip boxes in Los Angeles | 2 | 1.20% | 2% | 2% | 1.1 |
-| /locations/cities/nashville/ | City | 972 | custom lip boxes in Nashville | 2 | 1.03% | 3% | 2% | 1.0 |
-| /locations/cities/new-york-city/ | City | 1025 | custom lip boxes in New York City | 2 | 1.37% | 2% | 2% | 1.0 |
-| /locations/cities/philadelphia/ | City | 1009 | custom lip boxes in Philadelphia | 2 | 0.99% | 5% | 2% | 1.0 |
-| /locations/cities/phoenix/ | City | 1045 | custom lip boxes in Phoenix | 2 | 0.96% | 4% | 4% | 1.1 |
-| /locations/cities/san-antonio/ | City | 1043 | custom lip boxes in San Antonio | 2 | 1.15% | 4% | 4% | 1.3 |
-| /locations/cities/san-diego/ | City | 1020 | custom lip boxes in San Diego | 2 | 1.18% | 5% | 5% | 1.2 |
-| /locations/cities/seattle/ | City | 948 | custom lip boxes in Seattle | 2 | 1.05% | 5% | 5% | 1.2 |
-| /locations/cities/washington-dc/ | City | 892 | custom lip boxes in Washington, D.C. | 2 | 1.35% | 3% | 3% | 1.1 |
-| /locations/states/ | Location hub | 733 | — | 0 | 0.00% | 0% | 10% | 5.7 |
-| /locations/states/arizona/ | State | 1255 | custom lip boxes in Arizona | 2 | 0.80% | 2% | 2% | 1.0 |
-| /locations/states/california/ | State | 1536 | custom lip boxes in California | 2 | 0.65% | 3% | 3% | 0.9 |
-| /locations/states/colorado/ | State | 1165 | custom lip boxes in Colorado | 2 | 0.86% | 4% | 4% | 1.1 |
-| /locations/states/florida/ | State | 1140 | custom lip boxes in Florida | 2 | 0.88% | 3% | 2% | 1.3 |
-| /locations/states/georgia/ | State | 1146 | custom lip boxes in Georgia | 2 | 0.87% | 2% | 2% | 1.4 |
-| /locations/states/illinois/ | State | 978 | custom lip boxes in Illinois | 2 | 1.02% | 5% | 4% | 1.3 |
-| /locations/states/indiana/ | State | 972 | custom lip boxes in Indiana | 2 | 1.03% | 5% | 5% | 1.4 |
-| /locations/states/maryland/ | State | 1003 | custom lip boxes in Maryland | 2 | 1.00% | 5% | 5% | 1.4 |
-| /locations/states/massachusetts/ | State | 937 | custom lip boxes in Massachusetts | 2 | 1.07% | 6% | 5% | 1.3 |
-| /locations/states/michigan/ | State | 1013 | custom lip boxes in Michigan | 2 | 0.99% | 3% | 2% | 1.4 |
-| /locations/states/missouri/ | State | 965 | custom lip boxes in Missouri | 2 | 1.04% | 3% | 3% | 1.3 |
-| /locations/states/new-jersey/ | State | 936 | custom lip boxes in New Jersey | 2 | 1.28% | 3% | 3% | 1.3 |
-| /locations/states/new-york/ | State | 953 | custom lip boxes in New York | 2 | 1.26% | 3% | 3% | 1.5 |
-| /locations/states/north-carolina/ | State | 1149 | custom lip boxes in North Carolina | 2 | 1.04% | 2% | 2% | 1.4 |
-| /locations/states/ohio/ | State | 1033 | custom lip boxes in Ohio | 2 | 0.97% | 3% | 2% | 1.3 |
-| /locations/states/pennsylvania/ | State | 962 | custom lip boxes in Pennsylvania | 2 | 1.04% | 3% | 2% | 1.5 |
-| /locations/states/tennessee/ | State | 1146 | custom lip boxes in Tennessee | 2 | 0.87% | 2% | 2% | 1.3 |
-| /locations/states/texas/ | State | 1183 | custom lip boxes in Texas | 2 | 0.85% | 6% | 6% | 1.6 |
-| /locations/states/virginia/ | State | 979 | custom lip boxes in Virginia | 2 | 1.02% | 5% | 5% | 1.5 |
-| /locations/states/washington/ | State | 1269 | custom lip boxes in Washington | 2 | 0.79% | 2% | 2% | 0.9 |
-| /materials/ | Static | 1131 | — | 0 | 0.00% | 0% | 8% | 0.4 |
-| /paper-lip-balm-tubes/ | Product | 2769 | paper lip balm tubes | 6 | 0.87% | 6% | 9% | 0.5 |
-| /printing-options/ | Static | 1046 | — | 0 | 0.00% | 5% | 12% | 0.7 |
-| /privacy-policy/ | Static | 1184 | — | 0 | 0.00% | 1% | 6% | 0.2 |
-| /products/ | Static | 683 | — | 0 | 0.00% | 0% | 26% | 5.6 |
-| /request-a-quote/ | Static | 232 | — | 0 | 0.00% | 8% | 8% | 0.4 |
-| /resources/ | Static | 657 | — | 0 | 0.00% | 0% | 9% | 3.3 |
-| /resources/choosing-packaging-inserts/ | Guide | 1796 | packaging inserts | 6 | 0.67% | 5% | 5% | 0.6 |
-| /resources/cosmetic-packaging-label-requirements/ | Guide | 1980 | cosmetic packaging label requirements | 6 | 1.21% | 4% | 4% | 0.6 |
-| /resources/custom-packaging-cost-guide/ | Guide | 1827 | custom packaging cost | 6 | 0.99% | 4% | 3% | 0.5 |
-| /resources/lip-balm-box-size-guide/ | Guide | 2055 | lip balm box size | 8 | 1.56% | 3% | 2% | 0.5 |
-| /resources/lip-gloss-box-size-guide/ | Guide | 1886 | lip gloss box size | 6 | 1.27% | 5% | 3% | 0.6 |
-| /resources/lip-product-packaging-guide/ | Guide | 2084 | lip product packaging | 6 | 0.86% | 3% | 3% | 0.5 |
-| /resources/lipstick-box-size-guide/ | Guide | 1851 | lipstick box size | 6 | 0.97% | 4% | 2% | 0.6 |
-| /resources/packaging-dieline-guide/ | Guide | 2028 | packaging dieline | 6 | 0.59% | 3% | 3% | 0.5 |
-| /resources/packaging-glossary/ | Guide | 1576 | packaging glossary | 5 | 0.63% | 8% | 7% | 0.9 |
-| /resources/prepress-checklist/ | Guide | 1647 | prepress checklist | 6 | 0.73% | 7% | 7% | 0.7 |
-| /rigid-lipstick-boxes/ | Product | 2667 | rigid lipstick boxes | 6 | 0.67% | 6% | 9% | 0.5 |
-| /sample-kit/ | Static | 931 | — | 0 | 0.00% | 0% | 4% | 0.6 |
-| /shipping-information/ | Static | 901 | — | 0 | 0.00% | 0% | 6% | 0.6 |
-| /terms-and-conditions/ | Static | 1338 | — | 0 | 0.00% | 1% | 5% | 0.4 |
-| /turnaround-time/ | Static | 866 | — | 0 | 0.00% | 0% | 7% | 0.5 |
+| / | Static | 1704 | — | 0 | 0.00% | 5% | 14% | 2.1 |
+| /about/ | Static | 1346 | — | 0 | 0.00% | 2% | 6% | 0.3 |
+| /artwork-guidelines/ | Static | 1623 | — | 0 | 0.00% | 8% | 11% | 0.3 |
+| /blog/ | Static | 857 | — | 0 | 0.00% | 3% | 10% | 2.2 |
+| /blog/how-packaging-quantity-affects-unit-pricing/ | Blog | 1321 | — | 0 | 0.00% | 2% | 6% | 0.7 |
+| /blog/how-to-choose-packaging-for-a-lip-gloss-line/ | Blog | 1413 | — | 0 | 0.00% | 2% | 6% | 0.7 |
+| /blog/how-to-prepare-artwork-for-custom-lip-boxes/ | Blog | 1400 | — | 0 | 0.00% | 10% | 13% | 0.6 |
+| /blog/lip-balm-box-materials-compared/ | Blog | 1375 | — | 0 | 0.00% | 2% | 6% | 0.7 |
+| /blog/lipstick-packaging-sizes-and-structural-options/ | Blog | 1220 | — | 0 | 0.00% | 13% | 17% | 0.7 |
+| /blog/packaging-inserts-for-lipstick-and-lip-gloss-products/ | Blog | 1156 | — | 0 | 0.00% | 2% | 7% | 0.8 |
+| /blog/paper-lip-balm-tubes-and-their-packaging-requirements/ | Blog | 1253 | — | 0 | 0.00% | 2% | 6% | 0.7 |
+| /blog/printing-methods-for-cosmetic-packaging/ | Blog | 1233 | — | 0 | 0.00% | 5% | 10% | 0.7 |
+| /box-styles/ | Static | 1601 | — | 0 | 0.00% | 3% | 6% | 0.2 |
+| /cardboard-lip-balm-tubes/ | Product | 2433 | cardboard lip balm tubes | 7 | 1.15% | 8% | 14% | 0.6 |
+| /contact/ | Static | 1030 | — | 0 | 0.00% | 3% | 8% | 0.7 |
+| /custom-lip-balm-boxes/ | Product | 3369 | custom lip balm boxes | 7 | 0.83% | 6% | 11% | 0.5 |
+| /custom-lip-balm-labels/ | Product | 2808 | custom lip balm labels | 7 | 1.00% | 11% | 16% | 0.5 |
+| /custom-lip-care-packaging/ | Product | 2726 | custom lip care packaging | 7 | 1.03% | 7% | 13% | 0.6 |
+| /custom-lip-mask-boxes/ | Product | 2758 | custom lip mask boxes | 7 | 1.02% | 7% | 13% | 0.5 |
+| /custom-lipstick-boxes/ | Product | 2737 | custom lipstick boxes | 7 | 0.77% | 9% | 14% | 0.5 |
+| /custom-packaging/ | Static | 1428 | — | 0 | 0.00% | 3% | 7% | 0.4 |
+| /faqs/ | Static | 1493 | — | 0 | 0.00% | 6% | 10% | 0.2 |
+| /finishes/ | Static | 1558 | — | 0 | 0.00% | 7% | 10% | 0.3 |
+| /hang-tab-lip-balm-boxes/ | Product | 2752 | hang tab lip balm boxes | 7 | 1.27% | 7% | 13% | 0.5 |
+| /hang-tab-lipstick-boxes/ | Product | 2791 | hang tab lipstick boxes | 7 | 1.00% | 7% | 12% | 0.5 |
+| /holographic-lip-gloss-boxes/ | Product | 2689 | holographic lip gloss boxes | 7 | 1.04% | 7% | 14% | 0.5 |
+| /how-to-order/ | Static | 1297 | — | 0 | 0.00% | 1% | 6% | 0.3 |
+| /lip-balm-labels/ | Product | 2518 | lip balm labels | 8 | 0.95% | 12% | 18% | 0.5 |
+| /lip-balm-packaging/ | Product | 2456 | lip balm packaging | 9 | 1.10% | 8% | 14% | 0.6 |
+| /lip-gloss-boxes/ | Product | 2753 | lip gloss boxes | 8 | 0.87% | 8% | 13% | 0.5 |
+| /lipstick-boxes/ | Product | 2474 | lipstick boxes | 12 | 0.97% | 15% | 20% | 0.6 |
+| /locations/ | Location hub | 1157 | — | 0 | 0.00% | 2% | 9% | 4.1 |
+| /locations/cities/ | Location hub | 1142 | — | 0 | 0.00% | 3% | 5% | 2.0 |
+| /locations/cities/austin/ | City | 1124 | custom lip boxes in Austin | 2 | 0.89% | 7% | 7% | 1.2 |
+| /locations/cities/boston/ | City | 1084 | custom lip boxes in Boston | 2 | 0.92% | 6% | 4% | 1.1 |
+| /locations/cities/charlotte/ | City | 1056 | custom lip boxes in Charlotte | 2 | 0.95% | 6% | 6% | 0.9 |
+| /locations/cities/chicago/ | City | 1076 | custom lip boxes in Chicago | 2 | 0.93% | 6% | 6% | 1.1 |
+| /locations/cities/columbus/ | City | 1052 | custom lip boxes in Columbus | 2 | 0.95% | 6% | 6% | 1.1 |
+| /locations/cities/dallas/ | City | 1111 | custom lip boxes in Dallas | 2 | 0.90% | 10% | 8% | 1.3 |
+| /locations/cities/denver/ | City | 1126 | custom lip boxes in Denver | 2 | 0.89% | 4% | 4% | 1.1 |
+| /locations/cities/fort-worth/ | City | 1115 | custom lip boxes in Fort Worth | 2 | 1.08% | 6% | 6% | 1.3 |
+| /locations/cities/houston/ | City | 1131 | custom lip boxes in Houston | 2 | 0.88% | 8% | 8% | 1.3 |
+| /locations/cities/indianapolis/ | City | 1043 | custom lip boxes in Indianapolis | 2 | 0.96% | 4% | 4% | 1.0 |
+| /locations/cities/jacksonville/ | City | 1056 | custom lip boxes in Jacksonville | 2 | 0.95% | 6% | 4% | 1.0 |
+| /locations/cities/los-angeles/ | City | 1098 | custom lip boxes in Los Angeles | 2 | 1.09% | 6% | 6% | 1.0 |
+| /locations/cities/nashville/ | City | 1081 | custom lip boxes in Nashville | 2 | 0.93% | 4% | 4% | 1.1 |
+| /locations/cities/new-york-city/ | City | 1141 | custom lip boxes in New York City | 2 | 1.23% | 4% | 4% | 0.9 |
+| /locations/cities/philadelphia/ | City | 1112 | custom lip boxes in Philadelphia | 2 | 0.90% | 6% | 4% | 1.0 |
+| /locations/cities/phoenix/ | City | 1149 | custom lip boxes in Phoenix | 2 | 0.87% | 7% | 7% | 1.0 |
+| /locations/cities/san-antonio/ | City | 1145 | custom lip boxes in San Antonio | 2 | 1.05% | 8% | 7% | 1.2 |
+| /locations/cities/san-diego/ | City | 1122 | custom lip boxes in San Diego | 2 | 1.07% | 8% | 8% | 1.1 |
+| /locations/cities/seattle/ | City | 1053 | custom lip boxes in Seattle | 2 | 0.95% | 6% | 6% | 1.0 |
+| /locations/cities/washington-dc/ | City | 995 | custom lip boxes in Washington, D.C. | 2 | 1.21% | 8% | 7% | 1.0 |
+| /locations/states/ | Location hub | 1308 | — | 0 | 0.00% | 3% | 5% | 3.2 |
+| /locations/states/arizona/ | State | 1403 | custom lip boxes in Arizona | 2 | 0.71% | 2% | 2% | 1.0 |
+| /locations/states/california/ | State | 1602 | custom lip boxes in California | 2 | 0.62% | 3% | 3% | 0.9 |
+| /locations/states/colorado/ | State | 1302 | custom lip boxes in Colorado | 2 | 0.77% | 3% | 3% | 1.0 |
+| /locations/states/florida/ | State | 1275 | custom lip boxes in Florida | 2 | 0.78% | 2% | 2% | 1.3 |
+| /locations/states/georgia/ | State | 1290 | custom lip boxes in Georgia | 2 | 0.78% | 2% | 2% | 1.2 |
+| /locations/states/illinois/ | State | 1109 | custom lip boxes in Illinois | 2 | 0.90% | 4% | 4% | 1.3 |
+| /locations/states/indiana/ | State | 1134 | custom lip boxes in Indiana | 2 | 0.88% | 4% | 4% | 1.2 |
+| /locations/states/maryland/ | State | 1136 | custom lip boxes in Maryland | 2 | 0.88% | 5% | 4% | 1.2 |
+| /locations/states/massachusetts/ | State | 1070 | custom lip boxes in Massachusetts | 2 | 0.93% | 5% | 5% | 1.1 |
+| /locations/states/michigan/ | State | 1151 | custom lip boxes in Michigan | 2 | 0.87% | 2% | 2% | 1.2 |
+| /locations/states/missouri/ | State | 1108 | custom lip boxes in Missouri | 2 | 0.90% | 2% | 2% | 1.3 |
+| /locations/states/new-jersey/ | State | 1074 | custom lip boxes in New Jersey | 2 | 1.12% | 3% | 2% | 1.1 |
+| /locations/states/new-york/ | State | 1089 | custom lip boxes in New York | 2 | 1.10% | 2% | 2% | 1.3 |
+| /locations/states/north-carolina/ | State | 1286 | custom lip boxes in North Carolina | 2 | 0.93% | 2% | 2% | 1.3 |
+| /locations/states/ohio/ | State | 1164 | custom lip boxes in Ohio | 2 | 0.86% | 2% | 2% | 1.1 |
+| /locations/states/pennsylvania/ | State | 1101 | custom lip boxes in Pennsylvania | 2 | 0.91% | 2% | 2% | 1.3 |
+| /locations/states/tennessee/ | State | 1282 | custom lip boxes in Tennessee | 2 | 0.78% | 2% | 2% | 1.2 |
+| /locations/states/texas/ | State | 1324 | custom lip boxes in Texas | 2 | 0.76% | 5% | 5% | 1.6 |
+| /locations/states/virginia/ | State | 1118 | custom lip boxes in Virginia | 2 | 0.89% | 4% | 4% | 1.3 |
+| /locations/states/washington/ | State | 1420 | custom lip boxes in Washington | 2 | 0.70% | 2% | 2% | 0.8 |
+| /materials/ | Static | 1719 | — | 0 | 0.00% | 3% | 7% | 0.3 |
+| /paper-lip-balm-tubes/ | Product | 2910 | paper lip balm tubes | 7 | 0.96% | 8% | 13% | 0.5 |
+| /printing-options/ | Static | 1613 | — | 0 | 0.00% | 4% | 8% | 0.4 |
+| /privacy-policy/ | Static | 1385 | — | 0 | 0.00% | 3% | 6% | 0.1 |
+| /products/ | Static | 1278 | — | 0 | 0.00% | 2% | 13% | 3.0 |
+| /refund-and-return-policy/ | Static | 748 | — | 0 | 0.00% | 5% | 12% | 0.5 |
+| /request-a-quote/ | Static | 746 | — | 0 | 0.00% | 5% | 5% | 0.1 |
+| /resources/ | Static | 1152 | — | 0 | 0.00% | 2% | 5% | 1.9 |
+| /resources/choosing-packaging-inserts/ | Guide | 1869 | packaging inserts | 6 | 0.64% | 5% | 5% | 0.6 |
+| /resources/cosmetic-packaging-label-requirements/ | Guide | 1998 | cosmetic packaging label requirements | 6 | 1.20% | 5% | 5% | 0.6 |
+| /resources/custom-packaging-cost-guide/ | Guide | 1933 | custom packaging cost | 6 | 0.93% | 6% | 5% | 0.5 |
+| /resources/lip-balm-box-size-guide/ | Guide | 2124 | lip balm box size | 8 | 1.51% | 3% | 3% | 0.5 |
+| /resources/lip-gloss-box-size-guide/ | Guide | 1956 | lip gloss box size | 6 | 1.23% | 4% | 4% | 0.6 |
+| /resources/lip-product-packaging-guide/ | Guide | 2153 | lip product packaging | 7 | 0.98% | 4% | 4% | 0.5 |
+| /resources/lipstick-box-size-guide/ | Guide | 1919 | lipstick box size | 6 | 0.94% | 4% | 3% | 0.6 |
+| /resources/packaging-dieline-guide/ | Guide | 2096 | packaging dieline | 6 | 0.57% | 4% | 4% | 0.5 |
+| /resources/packaging-glossary/ | Guide | 2065 | packaging glossary | 7 | 0.68% | 5% | 5% | 0.7 |
+| /resources/prepress-checklist/ | Guide | 1717 | prepress checklist | 6 | 0.70% | 8% | 8% | 0.6 |
+| /rigid-lipstick-boxes/ | Product | 2768 | rigid lipstick boxes | 7 | 0.76% | 7% | 13% | 0.5 |
+| /sample-kit/ | Static | 1448 | — | 0 | 0.00% | 1% | 4% | 0.4 |
+| /shipping-information/ | Static | 1120 | — | 0 | 0.00% | 4% | 8% | 0.4 |
+| /terms-and-conditions/ | Static | 1450 | — | 0 | 0.00% | 4% | 7% | 0.4 |
+| /turnaround-time/ | Static | 1373 | — | 0 | 0.00% | 1% | 5% | 0.3 |
 
 ## Anchors in running prose
 
@@ -144,17 +163,21 @@ Card titles, breadcrumbs and contents lists are excluded here. A card whose titl
 
 | Anchor text | Target | Pages | Exact keyword match |
 | --- | --- | ---: | --- |
+| request a quote | /request-a-quote/ | 17 | no |
 | request a sample | /sample-kit/ | 15 | no |
-| die line | /resources/packaging-dieline-guide/ | 7 | no |
+| guide to packaging die lines | /resources/packaging-dieline-guide/ | 8 | no |
+| board and material options | /materials/ | 7 | no |
 | texas tx distribution across multiple metros and wholesale case planning | /locations/states/texas/ | 6 | no |
 | georgia ga independent gloss brands and short launch cycles | /locations/states/georgia/ | 6 | no |
 | north carolina nc contract manufacturing and automated line requirements | /locations/states/north-carolina/ | 6 | no |
 | tennessee tn merchandise and date-driven production | /locations/states/tennessee/ | 6 | no |
-| virginia va direct-to-consumer fulfilment and shipper specification | /locations/states/virginia/ | 6 | no |
-| maryland md corporate gifting and promotional programmes | /locations/states/maryland/ | 6 | no |
+| virginia va direct-to-consumer fulfillment and shipper specification | /locations/states/virginia/ | 6 | no |
+| maryland md corporate gifting and promotional programs | /locations/states/maryland/ | 6 | no |
 | florida fl resort and tourism retail, and humidity in storage | /locations/states/florida/ | 6 | no |
-| artwork guidelines | /artwork-guidelines/ | 5 | no |
-| materials page | /materials/ | 4 | no |
+| artwork guidelines for print files | /artwork-guidelines/ | 5 | no |
+| lip packaging across texas | /locations/states/texas/ | 5 | no |
+| shipping and delivery information | /shipping-information/ | 4 | no |
+| shared packaging die line | /resources/packaging-dieline-guide/ | 4 | no |
 | ohio oh test market runs that have to scale | /locations/states/ohio/ | 4 | no |
 | michigan mi seasonal demand and call-off ordering | /locations/states/michigan/ | 4 | no |
 | indiana in case pack efficiency and pallet configuration | /locations/states/indiana/ | 4 | no |
@@ -164,11 +187,7 @@ Card titles, breadcrumbs and contents lists are excluded here. A card whose titl
 | packaging glossary a supplier used a term i do not know. what does it mean? | /resources/packaging-glossary/ | 4 | no |
 | choosing packaging inserts does my product need an insert, and which type should i specify? | /resources/choosing-packaging-inserts/ | 4 | no |
 | packaging dieline guide what is a dieline, what do the lines on it mean, and how is one made? | /resources/packaging-dieline-guide/ | 4 | no |
-| delivery page | /shipping-information/ | 3 | no |
 | lead time page | /turnaround-time/ | 3 | no |
-| artwork page | /artwork-guidelines/ | 3 | no |
-| coatings page | /finishes/ | 3 | no |
-| laminate | /finishes/ | 3 | no |
 
 ## Card and listing anchors, for context
 
@@ -176,24 +195,24 @@ These are navigational. They are listed so the numbers above are not read in iso
 
 | Anchor text | Target | Pages |
 | --- | --- | ---: |
-|  | /custom-lip-balm-boxes/ | 45 |
-| custom lip balm boxes | /custom-lip-balm-boxes/ | 45 |
-| see sample options | /sample-kit/ | 44 |
-| request a quote | /request-a-quote/ | 30 |
-|  | /custom-lipstick-boxes/ | 27 |
-| custom lipstick boxes | /custom-lipstick-boxes/ | 27 |
+| request a quote | /request-a-quote/ | 46 |
+| see sample options | /sample-kit/ | 45 |
+|  | /custom-lip-balm-boxes/ | 44 |
+| custom lip balm boxes | /custom-lip-balm-boxes/ | 44 |
+|  | /custom-lipstick-boxes/ | 26 |
+| custom lipstick boxes | /custom-lipstick-boxes/ | 26 |
 |  | /custom-lip-care-packaging/ | 25 |
 | custom lip care packaging | /custom-lip-care-packaging/ | 25 |
-|  | /hang-tab-lip-balm-boxes/ | 20 |
-| hang tab lip balm boxes | /hang-tab-lip-balm-boxes/ | 20 |
 | directory all city pages twenty us markets, each written around one buying pattern | /locations/cities/ | 20 |
-|  | /lip-gloss-boxes/ | 19 |
-| lip gloss boxes | /lip-gloss-boxes/ | 19 |
 |  | /custom-lip-balm-labels/ | 19 |
 | custom lip balm labels | /custom-lip-balm-labels/ | 19 |
-|  | /rigid-lipstick-boxes/ | 18 |
-| rigid lipstick boxes | /rigid-lipstick-boxes/ | 18 |
+|  | /hang-tab-lip-balm-boxes/ | 19 |
+| hang tab lip balm boxes | /hang-tab-lip-balm-boxes/ | 19 |
+|  | /lip-gloss-boxes/ | 18 |
+| lip gloss boxes | /lip-gloss-boxes/ | 18 |
+|  | /rigid-lipstick-boxes/ | 17 |
+| rigid lipstick boxes | /rigid-lipstick-boxes/ | 17 |
 |  | /lip-balm-packaging/ | 17 |
 | lip balm packaging | /lip-balm-packaging/ | 17 |
-|  | /paper-lip-balm-tubes/ | 16 |
+|  | /paper-lip-balm-tubes/ | 15 |
 

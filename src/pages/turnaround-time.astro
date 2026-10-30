@@ -2,41 +2,43 @@
 import InfoLayout from '../layouts/InfoLayout.astro';
 import InfoSection from '../components/InfoSection.astro';
 import SpecTable from '../components/SpecTable.astro';
+import { PRODUCTION_TEXT, TRANSIT_US_TEXT, TRANSIT_INTL_TEXT } from '../data/order';
 ---
 
 <InfoLayout
   path="/turnaround-time/"
   title="Turnaround Time | Packaging Production Lead Times"
-  description="What affects packaging lead times, which stages you control, and how we confirm a production window in writing."
+  description="Production takes 5–7 business days after proof approval. What affects lead times, which stages you control and how to save time."
   h1="Turnaround Time"
-  lead="We confirm a production window in writing with every quote rather than publishing a fixed figure, because the honest answer depends on your specification and on how quickly approvals come back."
+  lead="Production takes 5–7 business days after you approve the proof. Delivery then takes 5–7 business days in the US and 7–10 to the UK, Canada and Australia. How quickly approvals come back decides when that clock starts."
   ogTitle="Packaging Lead Times and What Affects Them"
-  ogDescription="The stages that make up a packaging lead time, which you control, and how to compress a schedule safely."
-  points={['Confirmed per order', 'Stages you control', 'Rush options where possible']}
+  ogDescription="Production in 5–7 business days after proof approval, the stages that make up a lead time, which you control, and how to compress a schedule safely."
+  points={[`Production ${PRODUCTION_TEXT}`, 'Stages you control', 'Rush options where possible']}
   ctaHeading="Working to a fixed launch date?"
   ctaBody="Tell us the date at inquiry stage rather than at order stage. It changes which print process and finishing we would recommend, and there is usually a route that works."
 >
   <InfoSection
     id="why-no-fixed-number"
-    heading="Why we do not publish a single lead time"
-    intro="A number on a website that does not apply to your job is worse than no number at all."
+    heading="Our standard production time"
+    intro={`Production takes ${PRODUCTION_TEXT} after you approve the proof.`}
   >
     <p class="vx-measure">
-      A digitally printed carton with a varnish finish moves through production
-      quickly. The same carton in offset litho with foil stamping, spot UV and a
-      die-cut insert involves several additional passes, and a rigid box adds hand
-      assembly on top. Those are genuinely different schedules.
+      That is the window for the online 100-box pack and for most quoted runs.
+      A quoted run with extra passes, such as offset litho with foil stamping,
+      spot UV and a die-cut insert, or a rigid box with hand assembly, gets its own
+      production window confirmed in writing on the quote before you commit.
     </p>
     <p class="vx-measure">
-      More importantly, a large part of most lead times sits on the customer side:
-      die line approval, artwork supply and proof sign-off. A job where proofs come
-      back the same day finishes noticeably sooner than an identical job where they
-      take a fortnight, and no supplier can quote around that.
+      The clock starts at proof approval, so a large part of every lead time sits
+      on the customer side: die line approval, artwork supply and proof sign-off. A
+      job where proofs come back the same day finishes noticeably sooner than an
+      identical job where they take two weeks.
     </p>
     <p class="vx-note">
-      <strong>What we do commit to:</strong> a written production window with your
-      quote, and an updated one if the specification changes. If a date slips on our
-      side you will hear it from us rather than finding out later.
+      <strong>What we commit to:</strong> production in {PRODUCTION_TEXT} after proof
+      approval, or the written window on your quote, and an update straight away if
+      the specification changes. If a date slips on our side you will hear it from
+      us rather than finding out later.
     </p>
   </InfoSection>
 
@@ -127,14 +129,13 @@ import SpecTable from '../components/SpecTable.astro';
   <InfoSection
     id="delivery"
     heading="Transit time is separate"
-    intro="Production time and delivery time are two different things, and they are quoted separately."
+    intro="Production time and delivery time are two different things, and we state them separately."
   >
     <p class="vx-measure">
-      A production window ends when the goods leave, not when they arrive. Transit
-      depends on the destination, the freight method and the volume of the
-      consignment, and rolled tubes and rigid boxes are bulky enough that volume
-      rather than weight drives the cost. How freight is arranged and quoted is set
-      out on the <a href="/shipping-information/">shipping and delivery information</a>.
+      A production window ends when the goods leave, not when they arrive. Shipping
+      is free, and delivery takes {TRANSIT_US_TEXT} in the United States and
+      {TRANSIT_INTL_TEXT} to the United Kingdom, Canada and Australia. How
+      shipments are packed and received is set out on the <a href="/shipping-information/">shipping and delivery information</a>.
     </p>
   </InfoSection>
 </InfoLayout>

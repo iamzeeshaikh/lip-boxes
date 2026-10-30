@@ -28,7 +28,7 @@ export const resource: Resource = {
     'Written for buyers rather than printers',
     'Cross-referenced to the pages that go deeper',
   ],
-  updated: '2026-07-30',
+  updated: '2026-10-30',
   readingMinutes: 11,
   hero: {
     slug: 'paper-lip-balm-tubes',
@@ -44,7 +44,7 @@ export const resource: Resource = {
       body: [
         'Alphabetical glossaries are useful when you already know the word. This one is grouped by where you encounter the term, because most people arrive here holding a quote or a proof and wondering what one line on it means.',
         'Five groups: structure, materials, printing, finishing, and ordering. Terms that could sit in two places appear where a buyer is most likely to first meet them.',
-        'Definitions are written for someone buying packaging rather than someone making it, so they favour practical consequence over technical precision.',
+        'Definitions are written for someone buying packaging rather than someone making it, so they favor practical consequence over technical precision.',
       ],
     },
     {
@@ -159,7 +159,7 @@ export const resource: Resource = {
         ['Call-off', 'Producing in one run and delivering in stages', 'Holds the volume price without warehousing everything'],
         ['Case count', 'Units packed per shipping case', 'Set it to suit your filling line or your retailer'],
         ['Dimensional weight', 'Freight charged on volume rather than mass', 'Why bulky light items cost more to ship than expected'],
-        ['Lead time', 'Time from approval to goods leaving', 'Does not include transit, which is quoted separately'],
+        ['Lead time', 'Time from approval to goods leaving', 'Does not include transit, which is stated separately'],
         ['Variance', 'Delivered quantity differing slightly from ordered', 'Print runs are not exact; the tolerance is stated on the quote'],
       ],
       outro:
@@ -177,7 +177,7 @@ export const resource: Resource = {
         'Lamination is a plastic film; varnish is a coating. They look similar and behave completely differently at disposal',
         'Foil is real metal leaf; metallic ink contains metallic particles. Foil reflects, ink shimmers',
         'A proof confirms color; a structural sample confirms fit. Approving one does not approve the other',
-        'Lead time is production only. Transit is separate and quoted separately',
+        'Lead time is production only. Transit is separate and stated separately',
         'Recycled content and recyclability are different claims, and a board can have one without the other',
       ],
       outro:

@@ -256,7 +256,7 @@ export const sanDiego: Location = {
       body: [
         'Beyond the regulated content, the channel imposes its own requirements. Surf shops, dive stores and outdoor retailers merchandise small items on pegs and spinner racks rather than beauty fixtures.',
         'That means a hanging pack, and it means a finish that tolerates sun exposure in a shop with large windows and constant handling by browsing customers. A <a href="/finishes/">lamination and finish options</a> holds up considerably better than bare print with a varnish.',
-        'It also favours durable container formats. A plastic twist-up gives more thermal protection than paperboard, which matters for a product likely to spend time in a beach bag. Our <a href="/hang-tab-lip-balm-boxes/">hang tab carton options</a> covers the tab engineering.',
+        'It also favors durable container formats. A plastic twist-up gives more thermal protection than paperboard, which matters for a product likely to spend time in a beach bag. Our <a href="/hang-tab-lip-balm-boxes/">hang tab carton options</a> covers the tab engineering.',
       ],
     },
   ],

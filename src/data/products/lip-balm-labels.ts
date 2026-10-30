@@ -171,7 +171,7 @@ export const product: Product = {
       navLabel: 'Quantity & pricing',
       body: [
         'Labels are the one product on this site where running several designs costs little more than running one, provided they share a size and a stock. The cutting die and the material are shared, so six scents at 2,000 each is priced close to a single design at 12,000.',
-        'Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity. Plain paper stocks at volume sit at the lower end of that range; metallized material with foil and lamination sits well above it.',
+        'Online, a pack of 100 costs $30.00 ($0.30 each) with free shipping to the US, UK, Canada and Australia. Larger runs are quoted on size, material, printing and quantity: plain paper stocks at volume are the most economical, and metallized material with foil and lamination costs more.',
         'One cutting die serves every reorder at that size, so keeping a whole range on a single label footprint pays back steadily. That is worth deciding before the first order rather than after the third.',
       ],
     },
@@ -199,8 +199,8 @@ export const product: Product = {
     { label: 'Shapes', value: 'Rectangle, rounded corner, oval, circle and custom die-cut outlines' },
     { label: 'Minimum legible type', value: 'Around 5 pt on film; larger on uncoated kraft' },
     { label: 'Multiple designs', value: 'Share one die and one material at no proportional cost increase' },
-    { label: 'Starting unit price', value: 'From $0.30 per piece on qualifying large-volume orders' },
-    { label: 'Ordering', value: 'Quote based on size, stock, finish and quantity' },
+    { label: 'Online price', value: '100 boxes: $30.00 ($0.30 each), free shipping to the US, UK, Canada and Australia' },
+    { label: 'Ordering', value: 'Order 100 online; larger runs quoted on size, stock, finish and quantity' },
   ],
   faqs: [
     {

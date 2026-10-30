@@ -5,29 +5,29 @@ import { site } from '../data/site';
 
 /*
  * Written to describe what this site actually does. It claims no certifications
- * and names no third-party processors that are not in use. Company registration
- * details and a postal address are marked as pending rather than invented.
+ * and names no third-party processors that are not in use.
  */
-const effective = 'July 30, 2026';
+const effective = 'October 30, 2026';
+const addr = site.address!;
 ---
 
 <InfoLayout
   path="/privacy-policy/"
   title="Privacy Policy | How We Handle Your Data | Lip Boxes"
-  description="What information Lip Boxes collects through its quote forms, how it is used, how long it is kept and your choices."
+  description="What information Lip Boxes collects through its quote forms, checkout and chat, how it is used, how long it is kept and your choices."
   h1="Privacy Policy"
   lead="This policy describes what this website collects, why, and what happens to it. It reflects how the site is actually built rather than covering features we do not have."
   narrow
-  points={[`Effective ${effective}`, 'No advertising trackers', 'No data sold']}
+  points={[`Effective ${effective}`, 'No advertising pixels', 'No data sold']}
   ctaHeading="Question about your data?"
   ctaBody="Email us and say what you would like to know, correct or have deleted. We will confirm what we hold and act on it."
 >
   <InfoSection id="summary" heading="The short version">
     <ul class="vx-ul">
-      <li>We collect only what you type into a quote form, plus any file you choose to attach.</li>
-      <li>We use it to reply to your enquiry and prepare a quote. Nothing else.</li>
-      <li>We do not sell or rent your information, and we do not run advertising or analytics trackers on this site.</li>
-      <li>Form submissions are delivered to us by email over an encrypted connection.</li>
+      <li>We collect what you type into a quote form, the checkout or the chat, plus any file you choose to attach.</li>
+      <li>We use it to reply to your inquiry, prepare a quote and fulfill your order. Nothing else.</li>
+      <li>We do not sell or rent your information, and we do not run advertising pixels on this site. We use Google Analytics and Microsoft Clarity to see how the site is used.</li>
+      <li>Form and order submissions are delivered to us by email over an encrypted connection.</li>
       <li>You can ask us what we hold, ask for a correction, or ask us to delete it.</li>
     </ul>
   </InfoSection>
@@ -38,10 +38,9 @@ const effective = 'July 30, 2026';
     intro="Lip Boxes operates the website at lipboxes.com and is responsible for the information submitted through it."
   >
     <p>
-      Enquiries about this policy go to
-      <a href={`mailto:${site.email}`}>{site.email}</a>. Registered company
-      details and a postal address will be added here once they are confirmed for
-      publication; until then, email is the route that reaches us.
+      Questions about this policy go to <a href={`mailto:${site.email}`}>{site.email}</a>,
+      by phone to <a href={`tel:${site.phone}`}>{site.phoneDisplay}</a>, or by mail to
+      Lip Boxes, {addr.street}, {addr.city}, {addr.region} {addr.postalCode}, USA.
     </p>
   </InfoSection>
 
@@ -63,12 +62,21 @@ const effective = 'July 30, 2026';
         status, required delivery date and shipping destination.
       </li>
       <li>
+        <strong>Checkout:</strong> your name, email address, phone number, company
+        (optional), shipping address, chosen payment method, the products and
+        quantities ordered, and any notes.
+      </li>
+      <li>
+        <strong>Live chat:</strong> the messages you type into the chat window and
+        any contact details you choose to share there.
+      </li>
+      <li>
         <strong>An optional file</strong> you attach — artwork, a reference image or
         a specification document.
       </li>
       <li>
-        <strong>A consent record</strong>, since both forms require you to tick a
-        consent box before submitting.
+        <strong>A consent record</strong>, since both quote forms require you to
+        tick a consent box before submitting.
       </li>
       <li>
         <strong>A timestamp</strong> for when the submission was received.
@@ -85,14 +93,20 @@ const effective = 'July 30, 2026';
       <li>
         A short-lived, in-memory count of recent form submissions per IP address,
         used only to rate-limit the form. It is not stored persistently and is not
-        linked to your enquiry.
+        linked to your inquiry.
+      </li>
+      <li>
+        <strong>Usage analytics</strong> from Google Analytics and Microsoft
+        Clarity: pages viewed, clicks, scrolling, device and browser type and an
+        approximate location. These services set their own cookies. They help us
+        see which pages work and where visitors get stuck.
       </li>
     </ul>
     <p class="vx-note">
-      <strong>What we do not do:</strong> no advertising pixels, no analytics
-      scripts, no cookies set by this site for tracking, no social media embeds,
-      and no third-party fonts loaded from an external host. Fonts are served from
-      our own domain.
+      <strong>What we do not do:</strong> no advertising pixels, no social media
+      embeds, and no third-party fonts loaded from an external host. Fonts are
+      served from our own domain. You can block analytics cookies in your browser
+      settings without losing any part of the site.
     </p>
   </InfoSection>
 
@@ -101,15 +115,17 @@ const effective = 'July 30, 2026';
     intro="Each purpose is tied to something you asked us to do or to keeping the site working."
   >
     <ul class="vx-ul">
-      <li><strong>To reply to your enquiry</strong> and prepare a written quote.</li>
+      <li><strong>To reply to your inquiry</strong> and prepare a written quote.</li>
+      <li><strong>To process an order</strong> placed at checkout: send the proof and the invoice, and ship the boxes to your address.</li>
       <li><strong>To ask follow-up questions</strong> where a specification is incomplete.</li>
       <li><strong>To produce your order</strong> if you go ahead, including using your artwork for that purpose.</li>
       <li><strong>To keep records of what was agreed</strong>, including approved die lines and proofs.</li>
       <li><strong>To prevent abuse of the form</strong> through rate limiting and spam checks.</li>
+      <li><strong>To improve the site</strong> using the analytics described above.</li>
     </ul>
     <p>
       We do not use your details for marketing you did not ask for, and we do not
-      add enquiry contacts to a mailing list.
+      add inquiry contacts to a mailing list.
     </p>
   </InfoSection>
 
@@ -124,7 +140,7 @@ const effective = 'July 30, 2026';
         domain. Nothing is posted to a third-party form service.
       </li>
       <li>
-        Every field is validated and sanitised on the server before use, including
+        Every field is validated and sanitized on the server before use, including
         stripping control characters so nothing can be injected into email headers.
       </li>
       <li>
@@ -146,7 +162,7 @@ const effective = 'July 30, 2026';
   <InfoSection
     id="sharing"
     heading="Who else sees it"
-    intro="A short list, and only where a service is genuinely involved in delivering your enquiry."
+    intro="A short list, and only where a service is genuinely involved in delivering your inquiry."
   >
     <ul class="vx-ul">
       <li>
@@ -155,7 +171,19 @@ const effective = 'July 30, 2026';
       </li>
       <li>
         <strong>Our email provider</strong>, which transmits and stores the
-        enquiry email.
+        inquiry email.
+      </li>
+      <li>
+        <strong>Google Analytics and Microsoft Clarity</strong>, which receive the
+        usage data described above.
+      </li>
+      <li>
+        <strong>Our live chat provider</strong>, which carries and stores chat
+        conversations.
+      </li>
+      <li>
+        <strong>PayPal or our bank</strong>, when you pay an invoice, under their own
+        privacy terms.
       </li>
       <li>
         <strong>Manufacturing and freight partners</strong>, where progressing your
@@ -180,7 +208,7 @@ const effective = 'July 30, 2026';
   >
     <ul class="vx-ul">
       <li>
-        <strong>Enquiries that do not become orders</strong> are kept while the
+        <strong>Inquiries that do not become orders</strong> are kept while the
         conversation is live and for a reasonable follow-up period afterwards, then
         deleted.
       </li>
@@ -208,7 +236,7 @@ const effective = 'July 30, 2026';
     <ul class="vx-ul">
       <li><strong>Ask what we hold</strong> about you and receive a copy.</li>
       <li><strong>Ask us to correct</strong> anything that is wrong.</li>
-      <li><strong>Ask us to delete</strong> your enquiry and any attached files, subject to records we are required to keep.</li>
+      <li><strong>Ask us to delete</strong> your inquiry and any attached files, subject to records we are required to keep.</li>
       <li><strong>Withdraw consent</strong> for future contact at any time.</li>
       <li><strong>Object</strong> to a particular use and have us explain the basis for it.</li>
     </ul>
@@ -227,7 +255,7 @@ const effective = 'July 30, 2026';
     <p>
       The site is served over HTTPS with strict transport security, a content
       security policy, and headers that prevent framing and content-type sniffing.
-      Form input is validated and sanitised server-side, uploads are restricted by
+      Form input is validated and sanitized server-side, uploads are restricted by
       type and size, and credentials are held only in server environment
       variables.
     </p>

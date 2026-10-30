@@ -2,28 +2,82 @@
 import InfoLayout from '../layouts/InfoLayout.astro';
 import InfoSection from '../components/InfoSection.astro';
 import SpecTable from '../components/SpecTable.astro';
+import { site } from '../data/site';
+import {
+  SHIPPING,
+  PRODUCTION_TEXT,
+  RETURNS,
+  PRICE_LINE,
+} from '../data/order';
 ---
 
 <InfoLayout
   path="/shipping-information/"
   title="Shipping Information | Delivery and Freight"
-  description="How packaging orders are packed, cased and palletised for delivery across the United States, and what actually drives your freight cost."
+  description="Free shipping to the US, UK, Canada and Australia. Production takes 5–7 business days; delivery 5–7 days in the US, 7–10 abroad."
   h1="Shipping Information"
-  lead="Freight is quoted per order because it depends on volume, destination and how the consignment has to be received. This page explains what drives it and what we need from you."
-  ogTitle="How Packaging Orders Are Packed and Shipped"
-  ogDescription="Packing formats, case counts, pallet configurations and how freight cost is calculated on packaging orders."
-  points={['United States delivery', 'Quoted per consignment', 'Packed to your case count']}
+  lead="Shipping is free on every order to the United States, the United Kingdom, Canada and Australia. Production takes 5–7 business days after you approve the proof, and delivery takes 5–7 business days in the US or 7–10 to the UK, Canada and Australia."
+  ogTitle="How Lip Packaging Orders Are Packed and Shipped"
+  ogDescription="Free shipping to the US, UK, Canada and Australia, delivery times, packing formats, case counts and pallet configurations."
+  points={['Free shipping to the US, UK, Canada and Australia', `Production ${PRODUCTION_TEXT}`, 'Packed to your case count']}
   ctaHeading="Have specific receiving requirements?"
-  ctaBody="Send your delivery address, any dock or appointment requirements, and your preferred case count with the enquiry so freight is quoted correctly first time."
+  ctaBody="Send your delivery address, any dock or appointment requirements, and your preferred case count with the inquiry so the shipment is planned correctly the first time."
 >
+  <InfoSection
+    id="costs-and-times"
+    heading="Shipping costs and delivery times"
+    intro="One set of terms applies to the online 100-box pack and to every quoted run."
+  >
+    <div class="vx-table">
+      <table>
+        <caption>Shipping cost and delivery time by destination country.</caption>
+        <thead>
+          <tr><th scope="col">Ship to</th><th scope="col">Shipping cost</th><th scope="col">Production</th><th scope="col">Delivery after dispatch</th></tr>
+        </thead>
+        <tbody>
+          {
+            SHIPPING.destinations.map((d) => (
+              <tr>
+                <th scope="row">{d.name}</th>
+                <td>Free</td>
+                <td>{PRODUCTION_TEXT}</td>
+                <td>{d.transitMin}–{d.transitMax} business days</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+    <ul class="vx-ul">
+      <li>
+        <strong>Shipping is free</strong> to the United States, the United Kingdom,
+        Canada and Australia, whether you buy the online pack ({PRICE_LINE}) or a
+        quoted run. There is no separate freight charge to settle afterward.
+      </li>
+      <li>
+        <strong>Production</strong> takes {PRODUCTION_TEXT} and starts when you
+        approve your proof. Every order ships with tracking.
+      </li>
+      <li>
+        <strong>Other countries</strong> are quoted on request. Tell us the
+        destination in your inquiry and we will confirm the cost before you
+        commit.
+      </li>
+      <li>
+        <strong>Import duties or taxes</strong> charged by the destination country,
+        if any, are paid by the buyer.
+      </li>
+    </ul>
+  </InfoSection>
+
   <InfoSection
     id="how-packaging-arrives"
     heading="How each product arrives"
-    intro="Not everything ships flat, and that has a real effect on freight cost."
+    intro="Not everything ships flat, and that changes how many cases a delivery takes."
   >
     <SpecTable
       caption="How each product format is supplied and packed."
-      columns={['Product', 'Supplied as', 'Packed in', 'Freight driven by']}
+      columns={['Product', 'Supplied as', 'Packed in', 'Shipment size driven by']}
       rows={[
         ['Folding cartons', 'Flat, glued along one seam', 'Counted, banded stacks in cases', 'Weight, usually'],
         ['Hang tab cartons', 'Flat, glued', 'Cased upright so tabs are not crushed', 'Weight'],
@@ -35,29 +89,27 @@ import SpecTable from '../components/SpecTable.astro';
       ]}
     />
     <p class="vx-note">
-      For paper tubes and rigid boxes, consolidating into fewer larger shipments
-      usually costs materially less than several smaller ones, because carriers
-      charge on dimensional weight rather than actual weight.
+      Paper tubes and rigid boxes are bulky for their weight, so a delivery of
+      them arrives as more cases than the same number of flat cartons. Shipping is
+      still free; plan the storage space before the delivery date.
     </p>
   </InfoSection>
 
   <InfoSection
-    id="freight-cost"
-    heading="What determines your freight cost"
-    intro="We do not publish rates, because a rate that does not apply to your consignment is not useful. These are the variables."
+    id="delivery-details"
+    heading="What we need to deliver smoothly"
+    intro="Shipping costs you nothing to the four countries above. These details decide whether the delivery goes through the first time."
   >
     <ul class="vx-ul">
-      <li><strong>Volume and weight of the consignment</strong>, with whichever is greater usually setting the price.</li>
-      <li><strong>Destination</strong>, including whether it is a commercial address, a residential one or a distribution centre.</li>
-      <li><strong>Service level</strong>, from standard ground through to expedited.</li>
+      <li><strong>The full delivery address</strong>, including whether it is a commercial address, a residential one or a distribution center.</li>
       <li><strong>Receiving requirements</strong>, such as a liftgate, an appointment, inside delivery or a booking portal.</li>
-      <li><strong>Whether the order palletises efficiently</strong>, since part-pallet space is charged as a full pallet position.</li>
+      <li><strong>A contact name and phone number</strong> the carrier can call on the day.</li>
+      <li><strong>Any deadline</strong> the delivery has to meet, so we can tell you at quoting stage whether it is achievable.</li>
     </ul>
     <p class="vx-measure">
-      Freight is quoted alongside the goods so you see both figures before
-      committing. If you would rather arrange collection with your own carrier or
-      freight forwarder, that is straightforward — tell us at quoting stage and we
-      will prepare the consignment for collection instead.
+      If you would rather arrange collection with your own carrier or freight
+      forwarder, that is straightforward. Tell us at quoting stage and we will
+      prepare the shipment for collection instead.
     </p>
   </InfoSection>
 
@@ -73,12 +125,11 @@ import SpecTable from '../components/SpecTable.astro';
       pack to that specification.
     </p>
     <p class="vx-measure">
-      Send the requirement with the enquiry rather than after production. Building a
+      Send the requirement with the inquiry rather than after production. Building a
       case count into the production plan costs nothing; repacking finished stock
-      costs labour and risks damage. For retail programmes the same applies to
-      pallet height, overhang tolerance and labelling, which is covered alongside
-      the structural detail on the
-      <a href="/hang-tab-lip-balm-boxes/">peg-ready carton page</a>.
+      costs labor and risks damage. For retail programs the same applies to
+      pallet height, overhang tolerance and labeling, which is covered alongside
+      the structural detail on the <a href="/hang-tab-lip-balm-boxes/">peg-ready carton page</a>.
     </p>
   </InfoSection>
 
@@ -119,15 +170,15 @@ import SpecTable from '../components/SpecTable.astro';
         case and the pallet, not only the damaged goods.
       </li>
       <li>
-        <strong>Contact us within a reasonable period</strong> with the photographs
-        and the delivery reference, and we will work through it with the carrier.
+        <strong>Contact us within {RETURNS.claimDays} days of delivery</strong> at <a href={`mailto:${site.email}`}>{site.email}</a> or <a href={`tel:${site.phone}`}>{site.phoneDisplay}</a>,
+        with the photographs and your order number.
       </li>
     </ol>
     <p class="vx-measure">
-      Custom-manufactured packaging is made to your approved specification and
-      cannot be resold, so returns for change of mind are not available. That
-      position, and how manufacturing faults are handled, is set out in the
-      <a href="/terms-and-conditions/">terms and conditions</a>.
+      Damaged, defective or misprinted boxes reported within {RETURNS.claimDays} days
+      are reprinted free or refunded, and we pay the shipping. Custom printed
+      packaging is made to your approved proof and cannot be resold, so returns
+      for change of mind are not available. The full rules are in our <a href={RETURNS.policyPath}>refund and return policy</a>.
     </p>
   </InfoSection>
 
@@ -147,8 +198,7 @@ import SpecTable from '../components/SpecTable.astro';
     <p class="vx-measure">
       If you would rather not warehouse a full run at once, a scheduled call-off
       holds the volume price while releasing stock against a delivery schedule. That
-      arrangement is described on the
-      <a href="/custom-lip-care-packaging/">bulk programme page</a>.
+      arrangement is described on the <a href="/custom-lip-care-packaging/">bulk program page</a>.
     </p>
   </InfoSection>
 </InfoLayout>

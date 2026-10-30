@@ -11,7 +11,8 @@
     "schemaTypes": [
       "Organization",
       "WebSite",
-      "WebPage"
+      "WebPage",
+      "FAQPage"
     ]
   },
   {
@@ -38,15 +39,16 @@
       "Organization",
       "WebSite",
       "AboutPage",
-      "BreadcrumbList"
+      "BreadcrumbList",
+      "FAQPage"
     ]
   },
   {
     "url": "https://lipboxes.com/artwork-guidelines/",
     "title": "Artwork Guidelines | Print File Setup | Lip Boxes",
     "titleLength": 49,
-    "description": "File formats, bleed, safe areas, colour space and named finishing layers for print-ready lip packaging artwork, plus what we do not check.",
-    "descriptionLength": 138,
+    "description": "File formats, bleed, safe areas, color space and named finishing layers for print-ready lip packaging artwork, plus what we do not check.",
+    "descriptionLength": 137,
     "h1": "Artwork Guidelines",
     "canonical": "https://lipboxes.com/artwork-guidelines/",
     "indexable": true,
@@ -72,7 +74,8 @@
       "WebSite",
       "CollectionPage",
       "BreadcrumbList",
-      "Blog"
+      "Blog",
+      "FAQPage"
     ]
   },
   {
@@ -89,7 +92,8 @@
       "WebSite",
       "WebPage",
       "BreadcrumbList",
-      "BlogPosting"
+      "BlogPosting",
+      "FAQPage"
     ]
   },
   {
@@ -106,15 +110,16 @@
       "WebSite",
       "WebPage",
       "BreadcrumbList",
-      "BlogPosting"
+      "BlogPosting",
+      "FAQPage"
     ]
   },
   {
     "url": "https://lipboxes.com/blog/how-to-prepare-artwork-for-custom-lip-boxes/",
     "title": "How to Prepare Artwork for Custom Lip Boxes",
     "titleLength": 43,
-    "description": "A file checklist for lip packaging artwork: die lines, bleed, safe areas, colour builds and named finishing layers.",
-    "descriptionLength": 115,
+    "description": "A file checklist for lip packaging artwork: die lines, bleed, safe areas, color builds and named finishing layers.",
+    "descriptionLength": 114,
     "h1": "How to Prepare Artwork for Custom Lip Boxes",
     "canonical": "https://lipboxes.com/blog/how-to-prepare-artwork-for-custom-lip-boxes/",
     "indexable": true,
@@ -123,7 +128,8 @@
       "WebSite",
       "WebPage",
       "BreadcrumbList",
-      "BlogPosting"
+      "BlogPosting",
+      "FAQPage"
     ]
   },
   {
@@ -140,7 +146,8 @@
       "WebSite",
       "WebPage",
       "BreadcrumbList",
-      "BlogPosting"
+      "BlogPosting",
+      "FAQPage"
     ]
   },
   {
@@ -157,7 +164,8 @@
       "WebSite",
       "WebPage",
       "BreadcrumbList",
-      "BlogPosting"
+      "BlogPosting",
+      "FAQPage"
     ]
   },
   {
@@ -174,7 +182,8 @@
       "WebSite",
       "WebPage",
       "BreadcrumbList",
-      "BlogPosting"
+      "BlogPosting",
+      "FAQPage"
     ]
   },
   {
@@ -191,7 +200,8 @@
       "WebSite",
       "WebPage",
       "BreadcrumbList",
-      "BlogPosting"
+      "BlogPosting",
+      "FAQPage"
     ]
   },
   {
@@ -208,7 +218,8 @@
       "WebSite",
       "WebPage",
       "BreadcrumbList",
-      "BlogPosting"
+      "BlogPosting",
+      "FAQPage"
     ]
   },
   {
@@ -224,7 +235,8 @@
       "Organization",
       "WebSite",
       "WebPage",
-      "BreadcrumbList"
+      "BreadcrumbList",
+      "FAQPage"
     ]
   },
   {
@@ -246,8 +258,19 @@
     ]
   },
   {
+    "url": "https://lipboxes.com/checkout/",
+    "title": "Checkout | Order Lip Boxes Online | Lip Boxes",
+    "titleLength": 45,
+    "description": "Order custom lip boxes online: 100 boxes for $30.00 with free shipping to the US, UK, Canada and Australia.",
+    "descriptionLength": 107,
+    "h1": "Checkout",
+    "canonical": "https://lipboxes.com/checkout/",
+    "indexable": false,
+    "schemaTypes": []
+  },
+  {
     "url": "https://lipboxes.com/contact/",
-    "title": "Contact Lip Boxes | Custom Packaging Enquiries",
+    "title": "Contact Lip Boxes | Custom Packaging Inquiries",
     "titleLength": 46,
     "description": "How to reach Lip Boxes about a quote, an existing order, artwork files or samples, and exactly what to include in each kind of message.",
     "descriptionLength": 135,
@@ -258,7 +281,8 @@
       "Organization",
       "WebSite",
       "ContactPage",
-      "BreadcrumbList"
+      "BreadcrumbList",
+      "FAQPage"
     ]
   },
   {
@@ -364,7 +388,8 @@
       "Organization",
       "WebSite",
       "WebPage",
-      "BreadcrumbList"
+      "BreadcrumbList",
+      "FAQPage"
     ]
   },
   {
@@ -397,7 +422,8 @@
       "Organization",
       "WebSite",
       "WebPage",
-      "BreadcrumbList"
+      "BreadcrumbList",
+      "FAQPage"
     ]
   },
   {
@@ -440,8 +466,8 @@
     "url": "https://lipboxes.com/holographic-lip-gloss-boxes/",
     "title": "Holographic Lip Gloss Boxes | Iridescent Cartons",
     "titleLength": 48,
-    "description": "Holographic lip gloss boxes on rainbow metallised board or holo foil. Iridescent cartons that shift colour under light.",
-    "descriptionLength": 119,
+    "description": "Holographic lip gloss boxes on rainbow metallized board or holo foil. Iridescent cartons that shift color under light.",
+    "descriptionLength": 118,
     "h1": "Holographic Lip Gloss Boxes",
     "canonical": "https://lipboxes.com/holographic-lip-gloss-boxes/",
     "indexable": true,
@@ -458,7 +484,7 @@
     "url": "https://lipboxes.com/how-to-order/",
     "title": "How to Order | Custom Packaging Process",
     "titleLength": 39,
-    "description": "What to send with an enquiry, what happens at each of the five stages, and the two approvals required before anything goes to print.",
+    "description": "What to send with an inquiry, what happens at each of the five stages, and the two approvals required before anything goes to print.",
     "descriptionLength": 132,
     "h1": "How to Order",
     "canonical": "https://lipboxes.com/how-to-order/",
@@ -467,7 +493,8 @@
       "Organization",
       "WebSite",
       "WebPage",
-      "BreadcrumbList"
+      "BreadcrumbList",
+      "FAQPage"
     ]
   },
   {
@@ -510,8 +537,8 @@
     "url": "https://lipboxes.com/lip-gloss-boxes/",
     "title": "Lip Gloss Boxes | Custom Printed Gloss Cartons",
     "titleLength": 46,
-    "description": "Custom lip gloss boxes sized to your tube and wand. Tall slim cartons, full-colour print, matte or gloss finish.",
-    "descriptionLength": 112,
+    "description": "Custom lip gloss boxes sized to your tube and wand. Tall slim cartons, full-color print, matte or gloss finish.",
+    "descriptionLength": 111,
     "h1": "Lip Gloss Boxes",
     "canonical": "https://lipboxes.com/lip-gloss-boxes/",
     "indexable": true,
@@ -572,7 +599,8 @@
       "Organization",
       "WebSite",
       "CollectionPage",
-      "BreadcrumbList"
+      "BreadcrumbList",
+      "FAQPage"
     ]
   },
   {
@@ -613,8 +641,8 @@
     "url": "https://lipboxes.com/locations/cities/charlotte/",
     "title": "Custom Lip Boxes in Charlotte | Packaging Supply",
     "titleLength": 48,
-    "description": "Lip packaging for Charlotte brands and corporate gifting programmes, where presentation carries most of the perceived value.",
-    "descriptionLength": 124,
+    "description": "Lip packaging for Charlotte brands and corporate gifting programs, where presentation carries most of the perceived value.",
+    "descriptionLength": 122,
     "h1": "Custom Lip Boxes in Charlotte",
     "canonical": "https://lipboxes.com/locations/cities/charlotte/",
     "indexable": true,
@@ -928,7 +956,8 @@
       "Organization",
       "WebSite",
       "CollectionPage",
-      "BreadcrumbList"
+      "BreadcrumbList",
+      "FAQPage"
     ]
   },
   {
@@ -1054,8 +1083,8 @@
     "url": "https://lipboxes.com/locations/states/maryland/",
     "title": "Custom Lip Boxes in Maryland | Packaging Supply",
     "titleLength": 47,
-    "description": "Lip packaging for Maryland brands and corporate gifting programmes, including branded, promotional and event-driven runs.",
-    "descriptionLength": 121,
+    "description": "Lip packaging for Maryland brands and corporate gifting programs, including branded, promotional and event-driven runs.",
+    "descriptionLength": 119,
     "h1": "Custom Lip Boxes in Maryland",
     "canonical": "https://lipboxes.com/locations/states/maryland/",
     "indexable": true,
@@ -1105,8 +1134,8 @@
     "url": "https://lipboxes.com/locations/states/missouri/",
     "title": "Custom Lip Boxes in Missouri | Packaging Supply",
     "titleLength": 47,
-    "description": "Lip packaging for Missouri brands supplying regional chains, where colour consistency across long reorder runs matters most.",
-    "descriptionLength": 124,
+    "description": "Lip packaging for Missouri brands supplying regional chains, where color consistency across long reorder runs matters most.",
+    "descriptionLength": 123,
     "h1": "Custom Lip Boxes in Missouri",
     "canonical": "https://lipboxes.com/locations/states/missouri/",
     "indexable": true,
@@ -1207,8 +1236,8 @@
     "url": "https://lipboxes.com/locations/states/tennessee/",
     "title": "Custom Lip Boxes in Tennessee | Packaging Supply",
     "titleLength": 48,
-    "description": "Lip packaging for Tennessee brands, including merchandise, tour retail and gift programmes built to fixed release dates.",
-    "descriptionLength": 120,
+    "description": "Lip packaging for Tennessee brands, including merchandise, tour retail and gift programs built to fixed release dates.",
+    "descriptionLength": 118,
     "h1": "Custom Lip Boxes in Tennessee",
     "canonical": "https://lipboxes.com/locations/states/tennessee/",
     "indexable": true,
@@ -1224,8 +1253,8 @@
     "url": "https://lipboxes.com/locations/states/texas/",
     "title": "Custom Lip Boxes in Texas | Packaging Supply",
     "titleLength": 44,
-    "description": "Lip packaging for Texas brands across five major metros, from independent lines to multi-state wholesale programmes.",
-    "descriptionLength": 116,
+    "description": "Lip packaging for Texas brands across five major metros, from independent lines to multi-state wholesale programs.",
+    "descriptionLength": 114,
     "h1": "Custom Lip Boxes in Texas",
     "canonical": "https://lipboxes.com/locations/states/texas/",
     "indexable": true,
@@ -1241,8 +1270,8 @@
     "url": "https://lipboxes.com/locations/states/virginia/",
     "title": "Custom Lip Boxes in Virginia | Packaging Supply",
     "titleLength": 47,
-    "description": "Lip packaging for Virginia brands selling online, with the shipper, void fill and fulfilment requirements that this entails.",
-    "descriptionLength": 124,
+    "description": "Lip packaging for Virginia brands selling online, with the shipper, void fill and fulfillment requirements that this entails.",
+    "descriptionLength": 125,
     "h1": "Custom Lip Boxes in Virginia",
     "canonical": "https://lipboxes.com/locations/states/virginia/",
     "indexable": true,
@@ -1258,7 +1287,7 @@
     "url": "https://lipboxes.com/locations/states/washington/",
     "title": "Custom Lip Boxes in Washington | Packaging Supply",
     "titleLength": 49,
-    "description": "Lip packaging for Washington brands, with material choices suited to a market where disposal claims are scrutinised.",
+    "description": "Lip packaging for Washington brands, with material choices suited to a market where disposal claims are scrutinized.",
     "descriptionLength": 116,
     "h1": "Custom Lip Boxes in Washington",
     "canonical": "https://lipboxes.com/locations/states/washington/",
@@ -1275,7 +1304,7 @@
     "url": "https://lipboxes.com/materials/",
     "title": "Packaging Materials | Board Grades | Lip Boxes",
     "titleLength": 46,
-    "description": "Board grades and weights for lip packaging: SBS, kraft, recycled, black-through, metallised, corrugated and greyboard.",
+    "description": "Board grades and weights for lip packaging: SBS, kraft, recycled, black-through, metallized, corrugated and grayboard.",
     "descriptionLength": 118,
     "h1": "Packaging Materials",
     "canonical": "https://lipboxes.com/materials/",
@@ -1284,8 +1313,20 @@
       "Organization",
       "WebSite",
       "WebPage",
-      "BreadcrumbList"
+      "BreadcrumbList",
+      "FAQPage"
     ]
+  },
+  {
+    "url": "https://lipboxes.com/order-confirmed/",
+    "title": "Order Received | Thank You | Lip Boxes",
+    "titleLength": 38,
+    "description": "Your lip box order has been received. We email a proof of your artwork before anything is printed.",
+    "descriptionLength": 98,
+    "h1": "Order received",
+    "canonical": "https://lipboxes.com/order-confirmed/",
+    "indexable": false,
+    "schemaTypes": []
   },
   {
     "url": "https://lipboxes.com/paper-lip-balm-tubes/",
@@ -1318,15 +1359,16 @@
       "Organization",
       "WebSite",
       "WebPage",
-      "BreadcrumbList"
+      "BreadcrumbList",
+      "FAQPage"
     ]
   },
   {
     "url": "https://lipboxes.com/privacy-policy/",
     "title": "Privacy Policy | How We Handle Your Data | Lip Boxes",
     "titleLength": 52,
-    "description": "What information Lip Boxes collects through its quote forms, how it is used, how long it is kept and your choices.",
-    "descriptionLength": 114,
+    "description": "What information Lip Boxes collects through its quote forms, checkout and chat, how it is used, how long it is kept and your choices.",
+    "descriptionLength": 133,
     "h1": "Privacy Policy",
     "canonical": "https://lipboxes.com/privacy-policy/",
     "indexable": true,
@@ -1341,8 +1383,8 @@
     "url": "https://lipboxes.com/products/",
     "title": "All Products | Custom Lip Packaging | Lip Boxes",
     "titleLength": 47,
-    "description": "Every lip packaging format we make: cartons, paper tubes, labels, hanging packs, rigid boxes and bulk programmes.",
-    "descriptionLength": 113,
+    "description": "Every lip packaging format we make: cartons, paper tubes, labels, hanging packs, rigid boxes and bulk programs.",
+    "descriptionLength": 111,
     "h1": "Custom Lip Packaging Products",
     "canonical": "https://lipboxes.com/products/",
     "indexable": true,
@@ -1351,7 +1393,24 @@
       "WebSite",
       "CollectionPage",
       "BreadcrumbList",
-      "ItemList"
+      "ItemList",
+      "FAQPage"
+    ]
+  },
+  {
+    "url": "https://lipboxes.com/refund-and-return-policy/",
+    "title": "Refund and Return Policy | Lip Boxes",
+    "titleLength": 36,
+    "description": "Defective, damaged or misprinted orders reported within 14 days of delivery are reprinted free or refunded. No change-of-mind returns.",
+    "descriptionLength": 134,
+    "h1": "Refund and Return Policy",
+    "canonical": "https://lipboxes.com/refund-and-return-policy/",
+    "indexable": true,
+    "schemaTypes": [
+      "Organization",
+      "WebSite",
+      "WebPage",
+      "BreadcrumbList"
     ]
   },
   {
@@ -1367,7 +1426,8 @@
       "Organization",
       "WebSite",
       "WebPage",
-      "BreadcrumbList"
+      "BreadcrumbList",
+      "FAQPage"
     ]
   },
   {
@@ -1384,7 +1444,8 @@
       "WebSite",
       "CollectionPage",
       "BreadcrumbList",
-      "ItemList"
+      "ItemList",
+      "FAQPage"
     ]
   },
   {
@@ -1545,7 +1606,8 @@
       "WebSite",
       "WebPage",
       "BreadcrumbList",
-      "Article"
+      "Article",
+      "FAQPage"
     ]
   },
   {
@@ -1570,7 +1632,7 @@
     "url": "https://lipboxes.com/rigid-lipstick-boxes/",
     "title": "Rigid Lipstick Boxes | Magnetic and Drawer Gift Boxes",
     "titleLength": 53,
-    "description": "Rigid lipstick boxes with magnetic lids, drawer sleeves or lift-off tops. Wrapped greyboard, foil detail and fitted inserts.",
+    "description": "Rigid lipstick boxes with magnetic lids, drawer sleeves or lift-off tops. Wrapped grayboard, foil detail and fitted inserts.",
     "descriptionLength": 124,
     "h1": "Rigid Lipstick Boxes",
     "canonical": "https://lipboxes.com/rigid-lipstick-boxes/",
@@ -1597,15 +1659,16 @@
       "Organization",
       "WebSite",
       "WebPage",
-      "BreadcrumbList"
+      "BreadcrumbList",
+      "FAQPage"
     ]
   },
   {
     "url": "https://lipboxes.com/shipping-information/",
     "title": "Shipping Information | Delivery and Freight",
     "titleLength": 43,
-    "description": "How packaging orders are packed, cased and palletised for delivery across the United States, and what actually drives your freight cost.",
-    "descriptionLength": 136,
+    "description": "Free shipping to the US, UK, Canada and Australia. Production takes 5–7 business days; delivery 5–7 days in the US, 7–10 abroad.",
+    "descriptionLength": 128,
     "h1": "Shipping Information",
     "canonical": "https://lipboxes.com/shipping-information/",
     "indexable": true,
@@ -1620,8 +1683,8 @@
     "url": "https://lipboxes.com/terms-and-conditions/",
     "title": "Terms and Conditions | Lip Boxes",
     "titleLength": 32,
-    "description": "Terms covering quotes, die line and proof approvals, manufacturing tolerances, payment, delivery, returns on custom goods and liability.",
-    "descriptionLength": 136,
+    "description": "Terms for the online 100-box pack and quoted runs: proofs, tolerances, payment, free shipping, returns on custom goods and liability.",
+    "descriptionLength": 133,
     "h1": "Terms and Conditions",
     "canonical": "https://lipboxes.com/terms-and-conditions/",
     "indexable": true,
@@ -1634,11 +1697,11 @@
   },
   {
     "url": "https://lipboxes.com/thank-you/",
-    "title": "Thank You | Your Enquiry Has Been Sent | Lip Boxes",
+    "title": "Thank You | Your Inquiry Has Been Sent | Lip Boxes",
     "titleLength": 50,
-    "description": "Your packaging enquiry has reached Lip Boxes. Here is what happens next and what to have ready.",
+    "description": "Your packaging inquiry has reached Lip Boxes. Here is what happens next and what to have ready.",
     "descriptionLength": 95,
-    "h1": "Thank you — your enquiry has been sent",
+    "h1": "Thank you — your inquiry has been sent",
     "canonical": "https://lipboxes.com/thank-you/",
     "indexable": false,
     "schemaTypes": []
@@ -1647,8 +1710,8 @@
     "url": "https://lipboxes.com/turnaround-time/",
     "title": "Turnaround Time | Packaging Production Lead Times",
     "titleLength": 49,
-    "description": "What affects packaging lead times, which stages you control, and how we confirm a production window in writing.",
-    "descriptionLength": 111,
+    "description": "Production takes 5–7 business days after proof approval. What affects lead times, which stages you control and how to save time.",
+    "descriptionLength": 128,
     "h1": "Turnaround Time",
     "canonical": "https://lipboxes.com/turnaround-time/",
     "indexable": true,
@@ -1656,7 +1719,8 @@
       "Organization",
       "WebSite",
       "WebPage",
-      "BreadcrumbList"
+      "BreadcrumbList",
+      "FAQPage"
     ]
   }
 ]

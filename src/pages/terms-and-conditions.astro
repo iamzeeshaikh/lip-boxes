@@ -2,14 +2,23 @@
 import InfoLayout from '../layouts/InfoLayout.astro';
 import InfoSection from '../components/InfoSection.astro';
 import { site } from '../data/site';
+import {
+  PRICE_LINE,
+  PAYMENT_LINE,
+  PRODUCTION_TEXT,
+  TRANSIT_US_TEXT,
+  TRANSIT_INTL_TEXT,
+  RETURNS,
+} from '../data/order';
 
-const effective = 'July 30, 2026';
+const effective = 'October 30, 2026';
+const addr = site.address!;
 ---
 
 <InfoLayout
   path="/terms-and-conditions/"
   title="Terms and Conditions | Lip Boxes"
-  description="Terms covering quotes, die line and proof approvals, manufacturing tolerances, payment, delivery, returns on custom goods and liability."
+  description="Terms for the online 100-box pack and quoted runs: proofs, tolerances, payment, free shipping, returns on custom goods and liability."
   h1="Terms and Conditions"
   lead="These terms cover how quotes, approvals and production work on custom-manufactured packaging. The approval and returns sections are the ones worth reading closely."
   narrow
@@ -25,35 +34,37 @@ const effective = 'July 30, 2026';
       over anything on this page.
     </p>
     <p>
-      Registered company details will be published on this page once confirmed. Until
-      then, contact is by email at
-      <a href={`mailto:${site.email}`}>{site.email}</a>.
+      Lip Boxes, {addr.street}, {addr.city}, {addr.region} {addr.postalCode}, USA.
+      Phone <a href={`tel:${site.phone}`}>{site.phoneDisplay}</a>, email <a href={`mailto:${site.email}`}>{site.email}</a>.
     </p>
   </InfoSection>
 
   <InfoSection id="quotes" heading="2. Quotes and pricing">
     <ul class="vx-ul">
       <li>
-        Quotes are based on the specification you supply. If dimensions, quantity,
-        material, print colours or finishing change, the price changes with them.
+        <strong>Online pack price.</strong> Every lip box style is sold online in
+        packs of 100: {PRICE_LINE}, with free shipping to the United States, the
+        United Kingdom, Canada and Australia. That price is printed full color to
+        your artwork after you approve a proof.
       </li>
       <li>
-        Quotes are valid for the period stated on the quote. Where material or
-        freight costs move materially in the meantime, we may need to re-quote and
-        will say so rather than substituting a cheaper specification.
+        Larger runs, other sizes and specialty materials or finishes are quoted on
+        the specification you supply. If dimensions, quantity, material, print
+        colors or finishing change, the price changes with them.
       </li>
       <li>
-        Any price shown on this website, including the starting unit price of
-        ${site.startingPrice} per piece, is an indicative entry figure for a simple
-        specification at qualifying large-volume quantities. It is not an offer and
-        not a fixed price for every order.
+        Quotes are valid for the period stated on the quote. Where material costs
+        move materially in the meantime, we may need to re-quote and will say so
+        rather than substituting a cheaper specification.
       </li>
       <li>
-        Freight is quoted separately from goods unless a quote states otherwise,
-        because it depends on volume, destination and receiving requirements.
+        Shipping is free on every order to the United States, the United Kingdom,
+        Canada and Australia, including quoted runs. Shipping to other countries is
+        quoted on request.
       </li>
       <li>
-        Taxes and duties are additional unless expressly included in a quote.
+        Prices are in US dollars. Import duties or taxes charged by the destination
+        country, if any, are paid by the buyer.
       </li>
     </ul>
   </InfoSection>
@@ -82,12 +93,12 @@ const effective = 'July 30, 2026';
         a die is cut, a dimensional change requires a new die at your cost.
       </li>
       <li>
-        <strong>Proof approval</strong> fixes colour and content. The production run
+        <strong>Proof approval</strong> fixes color and content. The production run
         is manufactured to the approved proof, and we retain it as the reference.
       </li>
       <li>
         Both approvals must be given in writing by you or by a person you have
-        authorised. Verbal approval is not sufficient.
+        authorized. Verbal approval is not sufficient.
       </li>
       <li>
         We are not responsible for errors present in an approved proof, including
@@ -141,7 +152,7 @@ const effective = 'July 30, 2026';
   >
     <ul class="vx-ul">
       <li>
-        <strong>Colour.</strong> Process colour varies within normal commercial
+        <strong>Color.</strong> Process color varies within normal commercial
         tolerance between runs. Where exact consistency matters, specify a spot
         Pantone rather than a process build.
       </li>
@@ -167,23 +178,22 @@ const effective = 'July 30, 2026';
 
   <InfoSection id="payment" heading="7. Payment">
     <p>
-      Payment terms are stated on your quote or order confirmation. Custom
-      manufacturing normally requires payment or a deposit before production begins,
-      because the goods have no resale value to us.
+      {PAYMENT_LINE} We email the PayPal invoice or the bank transfer details
+      after you approve your proof, and production starts once that invoice is
+      paid. Cash on delivery orders are paid in full when the boxes are delivered.
     </p>
     <p>
-      Where credit terms are agreed in writing, invoices are payable within the
-      agreed period. We may suspend work on overdue accounts and will tell you before
-      doing so. Title in the goods passes to you on full payment.
+      Title in the goods passes to you on full payment.
     </p>
   </InfoSection>
 
   <InfoSection id="delivery" heading="8. Delivery and risk">
     <ul class="vx-ul">
       <li>
-        Delivery dates are estimates given in good faith and depend on your
-        approvals being returned promptly, as set out on the
-        <a href="/turnaround-time/">production turnaround times</a>.
+        Production takes {PRODUCTION_TEXT} after proof approval. Delivery then takes
+        {TRANSIT_US_TEXT} in the United States and {TRANSIT_INTL_TEXT} to the United
+        Kingdom, Canada and Australia. These dates depend on your approvals being
+        returned promptly, as set out on the <a href="/turnaround-time/">production turnaround times</a>.
       </li>
       <li>
         Risk in the goods passes on delivery to the address you nominate, or on
@@ -195,8 +205,9 @@ const effective = 'July 30, 2026';
         Re-delivery costs arising from incorrect information are chargeable.
       </li>
       <li>
-        Visible damage or shortage must be noted on the delivery paperwork at the
-        time and reported to us promptly with photographs.
+        Visible damage or shortage should be noted on the delivery paperwork at the
+        time and reported to us within {RETURNS.claimDays} days of delivery with
+        photographs.
       </li>
     </ul>
   </InfoSection>
@@ -212,19 +223,22 @@ const effective = 'July 30, 2026';
       ordering or over-ordering are not available</strong> once production has
       begun.
     </p>
-    <p>Where goods do not conform to the approved specification, we will:</p>
+    <p>
+      Where goods arrive defective, damaged or misprinted, report it within
+      {RETURNS.claimDays} days of delivery with photographs and we will:
+    </p>
     <ol class="vx-ol">
       <li>Review the reported issue against the approved die line and proof.</li>
-      <li>Ask for photographs and, where useful, samples of the affected units.</li>
+      <li>Ask for photographs and, where useful, samples of the affected units, with a prepaid label for anything we need back.</li>
       <li>
-        Reprint the affected quantity, or issue a credit or refund for it, at our
-        option and proportionate to the shortfall.
+        Reprint or replace the affected quantity free, or refund it, with
+        shipping paid by us.
       </li>
     </ol>
     <p>
-      Report a suspected fault promptly and before the packaging is filled or
-      distributed, since a fault found after filling is considerably harder to
-      assess and to remedy.
+      Report a suspected fault before the packaging is filled or distributed, since
+      a fault found after filling is considerably harder to assess and to remedy.
+      The full process is in our <a href={RETURNS.policyPath}>refund and return policy</a>.
     </p>
   </InfoSection>
 
@@ -275,10 +289,8 @@ const effective = 'July 30, 2026';
       </li>
     </ul>
     <p>
-      Questions about these terms go to
-      <a href={`mailto:${site.email}`}>{site.email}</a>. How we handle the
-      information you send is set out in the
-      <a href="/privacy-policy/">our privacy policy</a>.
+      Questions about these terms go to <a href={`mailto:${site.email}`}>{site.email}</a>.
+      How we handle the information you send is set out in <a href="/privacy-policy/">our privacy policy</a>.
     </p>
   </InfoSection>
 </InfoLayout>

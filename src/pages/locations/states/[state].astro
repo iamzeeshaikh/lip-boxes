@@ -184,9 +184,10 @@ const remainingBlocks = location.sections.slice(1);
       </section>
 
       <p class="loc-note">
-        {site.name} has no office, plant, warehouse or held stock in {location.name}.
-        Packaging is made to order and shipped to {location.name} addresses through a
-        nationwide carrier service. Delivery cost and lead time are quoted per order.
+        {site.name} has no plant, warehouse, held stock or collection point in{' '}
+        {location.name}; our only premises is the business address in Brooklyn, New
+        York. Packaging is made to order and shipped free to {location.name} addresses,
+        with production in 5–7 business days and delivery 5–7 business days after dispatch.
       </p>
     </article>
   </div>
@@ -196,10 +197,10 @@ const remainingBlocks = location.sections.slice(1);
     location={location.name}
     pageTitle={location.seoTitle}
     heading={quoteHeading}
-    sub={`Send your quantity and dimensions and you will get a written price, with delivery costed to your ${location.name} address.`}
+    sub={`Send your quantity and dimensions and you will get a written price, with free shipping to your ${location.name} address.`}
     points={[
       `Priced for ${location.marketAngle.toLowerCase()}, which is what this page covers`,
-      'Production time and transit time quoted separately, never merged into one number',
+      'Production time and transit time stated separately, never merged into one number',
       'Anything that cannot be priced without more detail comes back as a specific question',
     ]}
   />

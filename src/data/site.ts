@@ -25,23 +25,29 @@ export const site = {
   shortDescription:
     'Custom printed boxes, cartons, paper tubes and labels for lip balm, lipstick, lip gloss and lip care brands across the United States.',
 
-  /** Visible starting unit price used in copy and Offer schema. */
+  /** Unit price of the online 100-box pack ($30.00 / 100). */
   startingPrice: '0.30',
   /** Date through which the advertised starting price is honored. */
   priceValidUntil: '2027-08-04',
   startingPriceStatement:
-    'Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity.',
+    '100 boxes: $30.00 ($0.30 each), with free shipping to the US, UK, Canada and Australia. Larger or custom runs are quoted on size, material, printing and quantity.',
 
   /* ---------------------------------------------------------------------- *
-   * Contact details — supply real values before launch.                     *
+   * Contact details, confirmed by the owner on 2026-10-30.                   *
    * A `null` value removes the channel from the header, footer and schema.  *
    * ---------------------------------------------------------------------- */
   email: 'info@lipboxes.com',
-  phone: null as string | null,
-  phoneDisplay: null as string | null,
+  phone: '+15034614788' as string | null,
+  phoneDisplay: '(503) 461-4788' as string | null,
   whatsapp: '+1 503-461-4788' as string | null,
-  /** Postal address. Leave `null` until a real address is confirmed. */
-  address: null as null | {
+  /** Postal address, as published on /contact/ and in the footer. */
+  address: {
+    street: '1639 70th St',
+    city: 'Brooklyn',
+    region: 'NY',
+    postalCode: '11204',
+    country: 'US',
+  } as null | {
     street: string;
     city: string;
     region: string;
@@ -61,14 +67,14 @@ export const site = {
   supportHours: 'Monday to Friday, 9:00 AM to 6:00 PM Eastern Time',
 
   /**
-   * Online pack offer shown as the red "Order online" band. The band renders
-   * nothing while `price` is null, so no invented price can reach the page.
-   * Set a real price (e.g. '49.00') and a real ordering URL to switch it on.
+   * Online pack offer (owner, 2026-10-30): 100 boxes for $30.00. Drives the red
+   * "Order online" band, the product price note, the Offer JSON-LD, the
+   * Merchant feed and /checkout/ through src/data/order.ts.
    */
   orderPack: {
     qty: 100,
-    price: null as string | null,
-    href: '/request-a-quote/' as string,
+    price: '30.00' as string | null,
+    href: '/checkout/' as string,
   },
 
   /** Maximum accepted artwork upload size, in megabytes. */

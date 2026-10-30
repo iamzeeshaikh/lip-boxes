@@ -117,8 +117,8 @@ export const texas: Location = {
       a: 'Yes. Send the pattern, the maximum pallet height and any labeling requirements with the order. Where an account publishes a receiving specification, matching it at production costs nothing and prevents a refused delivery.',
     },
     {
-      q: 'How does freight work across Texas?',
-      a: 'Quoted per consignment based on volume, destination and receiving conditions. Given the distances between metros, consolidating into one delivery point and distributing yourself is sometimes cheaper than shipping separately to each — worth pricing both ways.',
+      q: 'How does shipping work across Texas?',
+      a: 'Shipping is free to any Texas address, with delivery 5–7 business days after production. Given the distances between metros, we can ship to one delivery point for you to distribute, or separately to each location; tell us which suits your operation.',
     },
     {
       q: 'Should I treat this as a local Texas supplier?',
@@ -278,7 +278,7 @@ export const georgia: Location = {
       body: [
         'Atlanta supports an unusually large number of independent lip gloss and color brands, many of them founded and run by a single person, selling primarily online and through pop-up and event retail.',
         'The packaging requirements that follow are specific. Quantities are modest, often a few hundred to a few thousand per shade. Launch cycles are short, sometimes tied to a content schedule rather than a retail calendar. And the pack has to photograph well, because most of the selling happens on a screen before anything reaches a customer.',
-        'That combination favours digital printing, one <a href="/resources/packaging-dieline-guide/">guide to packaging die lines</a> across a range, and finishes that read on camera rather than only in the hand.',
+        'That combination favors digital printing, one <a href="/resources/packaging-dieline-guide/">guide to packaging die lines</a> across a range, and finishes that read on camera rather than only in the hand.',
       ],
     },
     {
@@ -316,7 +316,7 @@ export const georgia: Location = {
       navLabel: 'Ordering',
       body: [
         'Packaging is made to order and shipped to Georgia addresses through a nationwide service. There is no Georgia facility, no local stock and no collection point.',
-        'For brands shipping from home or a small studio rather than a commercial address, say so at quoting stage. Residential delivery changes the service level and the cost, and a pallet arriving at a house without a liftgate arranged is a problem that is easier to prevent than to fix.',
+        'For brands shipping from home or a small studio rather than a commercial address, say so at quoting stage. Shipping is free either way, but residential delivery changes the carrier service, and a pallet arriving at a house without a liftgate arranged is a problem that is easier to prevent than to fix.',
         'Where a launch date is fixed by a campaign rather than by a retail reset, tell us the date early. The usual route to a tight schedule is choosing a print process and finishing that suit the timeline, not expediting an elaborate specification.',
       ],
     },
@@ -344,7 +344,7 @@ export const georgia: Location = {
     },
     {
       q: 'Can you ship to a residential address?',
-      a: 'Yes, but tell us at quoting stage. Residential delivery changes the service level and the cost, and a pallet arriving at a house without a liftgate arranged is a problem that is much easier to prevent than to resolve.',
+      a: 'Yes, and shipping is still free, but tell us at quoting stage. Residential delivery changes the carrier service, and a pallet arriving at a house without a liftgate arranged is a problem that is much easier to prevent than to resolve.',
     },
     {
       q: 'How fast can you turn a launch around?',
@@ -447,7 +447,7 @@ export const northCarolina: Location = {
     },
     {
       q: 'Can you supply cartons pre-erected?',
-      a: 'It depends on the construction and the volume. Flat is standard and ships far more economically. Tell us if your line needs erected cartons, since it changes both the packing and the freight cost substantially.',
+      a: 'It depends on the construction and the volume. Flat is standard and packs far more densely. Tell us if your line needs erected cartons, since it changes the packing and the number of cases substantially.',
     },
     {
       q: 'What happens if a delivery is refused at a manufacturing site?',
@@ -527,7 +527,7 @@ export const tennessee: Location = {
       navLabel: 'Merchandise',
       body: [
         'Merchandise lip products are usually sold at a table or a stand rather than a fixture, which changes the pack. It has to be visible in a stack rather than on a shelf, survive being handled by a queue, and travel in a road case between venues.',
-        'A hanging tab is rarely useful here. A pack that stacks and sits face-up on a table is more useful, which favours a flatter proportion or a multipack tray over a tall slim carton.',
+        'A hanging tab is rarely useful here. A pack that stacks and sits face-up on a table is more useful, which favors a flatter proportion or a multipack tray over a tall slim carton.',
         'Quantities are usually modest and reorders are unpredictable, which makes a plain container with a printed label a better structure than a printed container: you can produce more labels quickly against an existing tube stock if something sells faster than expected. That approach is covered on our <a href="/lip-balm-labels/">label formats page</a>.',
       ],
     },

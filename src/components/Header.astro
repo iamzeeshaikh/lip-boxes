@@ -47,8 +47,16 @@ const waHref = site.whatsapp
 ---
 
 <div class="vx-strap">
-  <span class="vx-strap__left">{site.tagline}, for brands across the United States.</span>
+  <span class="vx-strap__left">{site.tagline}. Free shipping to the US, UK, Canada and Australia.</span>
   <span class="vx-strap__right">
+    {
+      site.phone && (
+        <>
+          <a href={`tel:${site.phone}`}>{site.phoneDisplay ?? site.phone}</a>
+          <span aria-hidden="true">/</span>
+        </>
+      )
+    }
     <a href={`mailto:${site.email}`}>{site.email}</a>
     {
       waHref && (
@@ -437,6 +445,13 @@ const waHref = site.whatsapp
   .vx-head__tel {
     font-weight: 600;
     text-decoration: none;
+  }
+  /* The number is always in the top strap; beside the menu only where the full
+     desktop row has room for it without touching the last menu item. */
+  @media (max-width: 1439px) {
+    .vx-head__tel {
+      display: none;
+    }
   }
 
   /* ---------- Narrow desktop: tighten before the drawer takes over ---------- */

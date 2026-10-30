@@ -66,7 +66,7 @@ export const product: Product = {
       items: [
         {
           title: 'Magnetic closure book box',
-          text: 'A hinged lid with concealed magnets that closes with an audible click. The most recognisable premium cosmetic format.',
+          text: 'A hinged lid with concealed magnets that closes with an audible click. The most recognizable premium cosmetic format.',
         },
         {
           title: 'Drawer and sleeve',
@@ -143,7 +143,7 @@ export const product: Product = {
       body: [
         'Rigid boxes are quoted from internal dimensions, and the wall thickness is added outside them. A 2 mm grayboard wall plus wrap adds roughly 2.5 mm to each side, so an internal cavity of 40 mm becomes an external box of about 45 mm. That matters if the box has to fit an existing shipper or a retail fixture.',
         'These boxes are noticeably heavier than folding cartons of the same size, which affects both your outbound shipping cost and your carbon footprint per unit. For an e-commerce brand shipping single units, the difference over thousands of orders is real. It is a legitimate reason to reserve rigid construction for gift and limited-edition lines.',
-        'They also ship to you assembled, so inbound freight is charged on volume. Ordering in fewer, larger consignments makes a material difference to delivered cost. Freight handling is covered on the <a href="/shipping-information/">shipping and delivery page</a>.',
+        'They also ship to you assembled, so a delivery takes far more cases than flat cartons would. Shipping to you is still free, but plan the storage space; packing and delivery are covered on the <a href="/shipping-information/">shipping and delivery page</a>.',
       ],
     },
     {
@@ -164,7 +164,7 @@ export const product: Product = {
       navLabel: 'Quantity & pricing',
       body: [
         'Rigid boxes involve substantial hand work: wrapping, corner finishing, magnet setting and insert fitting are all partly manual. That changes the cost curve. Unlike folding cartons, where doubling the quantity cuts the unit price sharply, rigid box pricing flattens out sooner because labor scales with volume rather than being spread across it.',
-        'Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity. Rigid construction sits well above that entry figure in practice, because the grayboard, the wrap, the assembly labor and the insert are all additional to a printed sheet. Treat the starting price as the floor for the simplest products on this site, not as an indication for this one.',
+        'Online, 100 boxes cost $30.00 ($0.30 each) with free shipping to the US, UK, Canada and Australia. Larger runs and custom sizes are quoted, because the grayboard, the wrap, the assembly labor and the insert all scale with the box, and the written quote states the unit price at your quantity.',
         'Because setup is lower relative to unit cost, rigid boxes are viable at genuinely small quantities. A limited edition of 500 is a normal order here in a way it would not be for a foiled litho carton.',
       ],
     },
@@ -218,10 +218,10 @@ export const product: Product = {
     { label: 'Decoration', value: 'Offset print, hot foil stamping, emboss, deboss, screen print, spot UV, soft-touch lamination' },
     { label: 'Extras', value: 'Ribbon pulls, fitted mirrors, magnets, elastic retainers, printed inner cards' },
     { label: 'Sizing', value: 'Quoted from internal dimensions; wall and wrap add approximately 2.5 mm per side' },
-    { label: 'Supply', value: 'Shipped assembled, not flat; inbound freight charged on volume' },
+    { label: 'Supply', value: 'Shipped assembled, not flat; free shipping, but more cases per delivery' },
     { label: 'Small runs', value: 'Viable at low quantities because setup cost is low relative to unit cost' },
-    { label: 'Starting unit price', value: 'Sitewide entry price is $0.30 per piece on qualifying large-volume orders; rigid construction is quoted above it' },
-    { label: 'Ordering', value: 'Quote based; white sample recommended before artwork' },
+    { label: 'Online price', value: '100 boxes: $30.00 ($0.30 each), free shipping to the US, UK, Canada and Australia' },
+    { label: 'Ordering', value: 'Order 100 online, or get a quote for larger runs; white sample recommended before artwork' },
   ],
   faqs: [
     {
@@ -230,7 +230,7 @@ export const product: Product = {
     },
     {
       q: 'Do rigid boxes ship flat?',
-      a: 'No. They arrive assembled, which means inbound freight is charged on volume rather than weight and a pallet holds far fewer boxes than it would of flat cartons. Collapsible rigid constructions exist and reduce this, at some cost to the opening feel.',
+      a: 'No. They arrive assembled, which means a pallet holds far fewer boxes than it would of flat cartons, though shipping to you is free. Collapsible rigid constructions exist and reduce this, at some cost to the opening feel.',
     },
     {
       q: 'Which construction feels most premium?',

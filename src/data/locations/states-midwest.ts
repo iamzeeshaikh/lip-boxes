@@ -255,7 +255,7 @@ export const michigan: Location = {
       navLabel: 'Formats',
       body: [
         'Cold-weather lip care skews toward repair and protection formats rather than color: heavier balms, medicated formats, and multipacks bought as consumables rather than as a single considered purchase.',
-        'Multipacks matter more here than in most markets, because a customer buying for a household in November buys several. That favours tray formats and banded pairs over singles, and it changes the carton proportion.',
+        'Multipacks matter more here than in most markets, because a customer buying for a household in November buys several. That favors tray formats and banded pairs over singles, and it changes the carton proportion.',
         'Hanging packs also perform, because a lot of winter lip balm sells through pharmacy and convenience at the checkout rather than from a beauty fixture. The tab geometry has to be specified against the packed weight of a multipack rather than a single stick, as covered on our <a href="/hang-tab-lip-balm-boxes/">hanging cartons for checkout fixtures</a>.',
       ],
     },
@@ -267,7 +267,7 @@ export const michigan: Location = {
     },
     {
       q: 'Does a call-off cost more than a single delivery?',
-      a: 'The goods are priced on the full run, so the unit price is the volume price. There are storage terms to agree and additional deliveries to pay for, both of which are set per program and are usually less than the cost of ordering in small batches.',
+      a: 'The goods are priced on the full run, so the unit price is the volume price. Each release ships free like any other order; the only extra to agree is storage, which is set per program and is usually less than the cost of ordering in small batches.',
     },
     {
       q: 'How long can packaging be held before use?',
@@ -354,16 +354,16 @@ export const indiana: Location = {
       heading: 'What case efficiency is worth',
       navLabel: 'Freight effect',
       body: [
-        'Freight on packaging and on finished goods is charged on whichever is greater, weight or volume. For lip products, which are light, volume almost always governs.',
+        'Our shipping of the packaging to you is free. Freight on your finished goods, on the other hand, is charged on whichever is greater, weight or volume, and for lip products, which are light, volume almost always governs.',
         'That means the number of units per pallet is the number that determines your shipping cost per unit, not the weight of the product. A configuration that fits ten percent more units per pallet reduces freight per unit by roughly ten percent on every shipment, permanently.',
-        'It is worth an hour of arithmetic at specification stage. Send us your standard case dimensions and pallet constraints with the inquiry and the carton can be proportioned with them in mind, rather than the case being worked out around a carton already committed to. Delivery detail is on our <a href="/shipping-information/">pallet and freight information</a>.',
+        'It is worth an hour of arithmetic at specification stage. Send us your standard case dimensions and pallet constraints with the inquiry and the carton can be proportioned with them in mind, rather than the case being worked out around a carton already committed to. Delivery detail is on our <a href="/shipping-information/">packing and pallet information</a>.',
       ],
     },
   ],
   faqs: [
     {
-      q: 'Can carton dimensions affect my freight cost?',
-      a: 'Substantially. Lip products are light, so freight is charged on volume rather than weight. The number of units per pallet determines shipping cost per unit, and a small carton dimension change can add a whole column to a case.',
+      q: 'Can carton dimensions affect the freight cost on my finished goods?',
+      a: 'Substantially. Shipping the packaging to you is free, but when you ship filled product, lip items are light, so carriers charge on volume rather than weight. The number of units per pallet then sets your shipping cost per unit, and a small carton dimension change can add a whole column to a case.',
     },
     {
       q: 'Should I send you my case dimensions?',

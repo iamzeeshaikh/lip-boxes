@@ -177,7 +177,7 @@ export const product: Product = {
       navLabel: 'Quantity & pricing',
       body: [
         'A set is quoted on total program volume rather than per component, which is the point of buying it this way. Three components at 5,000 each is priced as a 15,000-unit program, not as three small orders, because the material buying, the make-ready and the proofing effort are shared.',
-        'Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity. That entry figure applies per component at qualifying volumes on a simple specification; a set is naturally quoted as a total with a per-component breakdown so you can see what each part contributes.',
+        'Each component sells online at 100 for $30.00 ($0.30 each) with free shipping to the US, UK, Canada and Australia. A full set at volume is quoted as a total with a per-component breakdown, so you can see what each part contributes.',
         'Scheduled call-offs are available on larger programs: the full quantity runs in one window to hold the volume price, then releases against an agreed delivery schedule so you are not warehousing a year of stock at once.',
       ],
     },
@@ -217,7 +217,7 @@ export const product: Product = {
       body: [
         'The check that matters on a set is cross-component consistency rather than each item passing on its own. A carton and a label can both sit within tolerance against their individual proofs and still look wrong beside each other. So finished components are compared side by side under daylight, not only against their own references.',
         'Each item also gets its standard checks: color against proof, dimensions on the first sheets, glue and fold on cartons, cut registration and liner release on labels, concentricity and cap retention on tubes.',
-        'Components ship together where the formats allow it. Cartons and labels travel flat and are charged on weight; assembled tubes are bulky and charged on volume, so a mixed consignment is usually cheaper as one shipment than as three, as set out on the <a href="/shipping-information/">shipping and delivery information</a>.',
+        'Components ship together where the formats allow it. Cartons and labels travel flat; assembled tubes are bulky, so a mixed order arrives as one shipment rather than three, shipped free, as set out on the <a href="/shipping-information/">shipping and delivery information</a>.',
       ],
     },
   ],
@@ -233,8 +233,8 @@ export const product: Product = {
     { label: 'Proofing', value: 'One color standard across components rather than separate references' },
     { label: 'Call-off', value: 'Produce in one run, release against an agreed delivery schedule' },
     { label: 'Delivery', value: 'Components consolidated into one consignment where formats allow' },
-    { label: 'Starting unit price', value: 'From $0.30 per piece on qualifying large-volume orders' },
-    { label: 'Ordering', value: 'Quote based; send the component list with quantities' },
+    { label: 'Online price', value: '100 boxes: $30.00 ($0.30 each), free shipping to the US, UK, Canada and Australia' },
+    { label: 'Ordering', value: 'Order 100 online, or get a quote for larger runs; send the component list with quantities' },
   ],
   faqs: [
     {

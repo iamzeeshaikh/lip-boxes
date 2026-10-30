@@ -158,7 +158,7 @@ export const product: Product = {
       navLabel: 'Quantity & pricing',
       body: [
         'Holographic board costs more per sheet than standard board and that cost does not fall away with volume the way a plate charge does. It is a material premium carried on every unit, which makes this the one product on the site where scaling up improves the unit price less than usual.',
-        'Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity. Holographic specifications sit above that entry figure because of the substrate, the opaque white pass and often a foil or spot UV pass on top.',
+        'Online, 100 boxes cost $30.00 ($0.30 each) with free shipping to the US, UK, Canada and Australia. Larger runs are quoted on size, material, printing and quantity, and holographic work is priced on the substrate, the opaque white pass and any foil or spot UV pass on top.',
         'If the budget is tight, holographic foil on a logo over a matte laminated standard board delivers most of the shelf impact at a much lower unit cost than a full holographic sheet. It is the option worth pricing alongside the full treatment.',
       ],
     },
@@ -214,8 +214,8 @@ export const product: Product = {
     { label: 'Artwork layers', value: 'Die line, CMYK artwork, opaque white, foil, spot UV and emboss as separate named layers' },
     { label: 'Proofing', value: 'Printed proof on the actual holographic stock; screen proofs are not representative' },
     { label: 'Recycling', value: 'Metallized layer is not compatible with standard paper recycling streams' },
-    { label: 'Starting unit price', value: 'Sitewide entry price is $0.30 per piece on qualifying large-volume orders; holographic stock is quoted above it' },
-    { label: 'Ordering', value: 'Quote based; material swatches available before commitment' },
+    { label: 'Online price', value: '100 boxes: $30.00 ($0.30 each), free shipping to the US, UK, Canada and Australia' },
+    { label: 'Ordering', value: 'Order 100 online, or get a quote for larger runs; material swatches available before commitment' },
   ],
   faqs: [
     {

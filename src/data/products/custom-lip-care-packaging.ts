@@ -23,7 +23,7 @@ export const product: Product = {
     'Bulk and private label programs covering a full lip care range, from balm and gloss through to treatment and gift sets.',
   highlights: [
     'One material and finishing specification across an entire range',
-    'Shared proofing, scheduled call-offs and consolidated freight',
+    'Shared proofing, scheduled call-offs and consolidated deliveries',
     'Suits private label, contract fillers and multi-SKU launches',
   ],
   images: [
@@ -164,7 +164,7 @@ export const product: Product = {
       navLabel: 'Quantity & pricing',
       body: [
         'Bulk programs are quoted on total program volume rather than per SKU, which is the point of running them this way. Twelve SKUs at 3,000 each is priced as a 36,000-unit program, not as twelve small orders, because the material, the make-ready and the finishing passes are shared.',
-        'Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity. Bulk lip care programs are where that entry figure is genuinely reachable, because the volume, the shared setup and a standardized specification all point the same way. A program with many exceptions and small per-SKU quantities will not reach it.',
+        'Any single format sells online at 100 boxes for $30.00 ($0.30 each) with free shipping to the US, UK, Canada and Australia. A bulk lip care program is quoted as a whole, and the volume, the shared setup and a standardized specification all push the unit price down; a program with many exceptions and small per-SKU quantities costs more per unit.',
         'Scheduled call-offs are available: the full quantity is produced in one run and released against a delivery schedule, which holds the volume price while managing your warehousing. Storage terms are agreed per program.',
       ],
     },
@@ -204,7 +204,7 @@ export const product: Product = {
       body: [
         'The critical check on a program is cross-SKU consistency rather than individual accuracy. Products are compared against each other as well as against their proofs, because a shopper sees the range side by side. Board shade, laminate sheen and the density of any shared brand color are all checked between SKUs, and that comparison is done on finished cartons rather than on press sheets.',
         'Each SKU also gets the standard dimensional, glue and fold checks. On a program with several die lines running through one production window, the die records are checked against the SKU list before the run rather than during it.',
-        'Lead time on a program is longer than for a single carton, because there is more artwork to approve and more tooling to make, but it is much shorter than running the same SKUs sequentially. We publish the bands we work to on the <a href="/turnaround-time/">lead time page</a> and confirm a program schedule in writing.',
+        'Lead time on a program is longer than for a single carton, because there is more artwork to approve and more tooling to make, but it is much shorter than running the same SKUs sequentially. Standard production times are on the <a href="/turnaround-time/">lead time page</a>, and we confirm a program schedule in writing.',
       ],
     },
   ],
@@ -220,8 +220,8 @@ export const product: Product = {
     { label: 'Call-off', value: 'Produce in one run, release against an agreed delivery schedule' },
     { label: 'Private label', value: 'One structural specification printed for multiple brands' },
     { label: 'Contract filling', value: 'Built to your line specification including case counts and pallet patterns' },
-    { label: 'Starting unit price', value: 'From $0.30 per piece on qualifying large-volume orders' },
-    { label: 'Ordering', value: 'Quote based; send a full SKU list with quantities and launch dates' },
+    { label: 'Online price', value: '100 boxes: $30.00 ($0.30 each), free shipping to the US, UK, Canada and Australia' },
+    { label: 'Ordering', value: 'Order 100 online, or get a quote for larger runs; send a full SKU list with quantities and launch dates' },
   ],
   faqs: [
     {

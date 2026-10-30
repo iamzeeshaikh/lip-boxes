@@ -174,7 +174,7 @@ export const product: Product = {
       navLabel: 'Quantity & pricing',
       body: [
         'A hanging carton costs marginally more than the equivalent plain carton, because the tab adds die complexity and sometimes a heavier board. That difference narrows quickly with quantity, since the die is a one-time charge.',
-        'Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity. On this product the added variables are tab reinforcement, window film and board weight, all of which move the figure.',
+        'Online, 100 boxes cost $30.00 ($0.30 each) with free shipping to the US, UK, Canada and Australia. Larger runs are quoted on size, material, printing and quantity, and on this product tab reinforcement, window film and board weight also move the price.',
         'If you are entering a retail program with a fixed launch date, tell us the ship-by date at quoting stage rather than at ordering stage. Retail programs usually involve a fixed pack count per case and a specific pallet configuration, and both are easier to build into the quote than to add afterwards.',
       ],
     },
@@ -230,8 +230,8 @@ export const product: Product = {
     { label: 'Finishes', value: 'Matte, gloss and soft-touch lamination, varnish, spot UV, foil stamp' },
     { label: 'Base styles', value: 'Straight tuck end, seal end, auto-bottom for heavier packs' },
     { label: 'Barcode area', value: 'Minimum 1.5 in clear width on a flat panel, away from creases' },
-    { label: 'Starting unit price', value: 'From $0.30 per piece on qualifying large-volume orders' },
-    { label: 'Ordering', value: 'Quote based; retail case counts and pallet patterns supported' },
+    { label: 'Online price', value: '100 boxes: $30.00 ($0.30 each), free shipping to the US, UK, Canada and Australia' },
+    { label: 'Ordering', value: 'Order 100 online, or get a quote for larger runs; retail case counts and pallet patterns supported' },
   ],
   faqs: [
     {
@@ -280,7 +280,7 @@ export const product: Product = {
     },
     {
       q: 'What lead time should I expect for a first hanging carton?',
-      a: 'Longer than a plain tuck end, because the tab die has to be made and, if you want one, a load test happens before printing. Once the die exists, reorders run on the standard schedule. We confirm the production window in writing with the quote.',
+      a: 'The online 100-box pack is produced in 5–7 business days after proof approval. A quoted run with a custom tab die or a load test before printing takes longer, and we confirm that production window in writing with the quote. Once the die exists, reorders run on the standard schedule.',
     },
   ],
   related: ['custom-lip-balm-boxes', 'hang-tab-lipstick-boxes', 'paper-lip-balm-tubes', 'lip-gloss-boxes'],

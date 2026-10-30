@@ -193,7 +193,7 @@ export const product: Product = {
       navLabel: 'Quantity & pricing',
       body: [
         'Lipstick ranges create an awkward quantity problem: you may want 20,000 cartons in total but only 1,600 of each shade. Which process suits that depends entirely on the split, which is why the shade count matters as much as the total.',
-        'Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity. A plain single-color carton at high volume approaches that figure; a soft-touch carton with foil, an insert and twelve shade variants sits well above it.',
+        'Online, 100 boxes cost $30.00 ($0.30 each) with free shipping to the US, UK, Canada and Australia. Larger runs are quoted on size, material, printing and quantity: a plain single-color carton at high volume is the most economical, and a soft-touch carton with foil, an insert and twelve shade variants costs more.',
         'Send both numbers with any inquiry: the total, and the quantity per shade. It changes which press we quote and can move the price materially.',
       ],
     },
@@ -238,8 +238,8 @@ export const product: Product = {
     { label: 'Inserts', value: 'Base collar, die-cut platform, partition for duos and trios, fitted tray for rigid' },
     { label: 'Range support', value: 'One die line across all shades; ganged printing where the specification is standardized' },
     { label: 'Barcode area', value: 'Minimum 1.5 in clear flat width, not crossing a crease' },
-    { label: 'Starting unit price', value: 'From $0.30 per piece on qualifying large-volume orders' },
-    { label: 'Ordering', value: 'Quote based; send total quantity and quantity per shade' },
+    { label: 'Online price', value: '100 boxes: $30.00 ($0.30 each), free shipping to the US, UK, Canada and Australia' },
+    { label: 'Ordering', value: 'Order 100 online, or get a quote for larger runs; send total quantity and quantity per shade' },
   ],
   faqs: [
     {

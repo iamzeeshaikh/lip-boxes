@@ -3,12 +3,13 @@
  *
  * Every value emitted here must also be visible on the rendered page.
  * Nothing is invented: contact points, addresses, ratings, review counts,
- * shipping rates, return windows, SKUs, GTINs and price expiry dates are all
- * omitted unless real data exists in `site.ts` or the product data file.
+ * SKUs and GTINs are omitted unless real data exists in `site.ts` or the
+ * product data file. Price, shipping and returns come from src/data/order.ts.
  */
 import { site, sameAs, abs } from '../data/site';
 import type { Product } from '../data/types';
 import { hasReviews } from '../data/products';
+import { productOffer, SHIPPING } from '../data/order';
 
 export interface Crumb {
   name: string;
@@ -30,7 +31,7 @@ export function organizationSchema() {
       width: 512,
       height: 512,
     },
-    areaServed: { '@type': 'Country', name: 'United States' },
+    areaServed: SHIPPING.destinations.map((d) => ({ '@type': 'Country', name: d.name })),
   };
 
   const contactPoint: Record<string, unknown> = {
@@ -38,10 +39,12 @@ export function organizationSchema() {
     contactType: 'sales',
     email: site.email,
     availableLanguage: 'English',
-    areaServed: 'US',
+    areaServed: SHIPPING.destinations.map((d) => d.code),
   };
   if (site.phone) contactPoint.telephone = site.phone;
   org.contactPoint = contactPoint;
+  org.email = site.email;
+  if (site.phone) org.telephone = site.phone;
 
   if (site.address) {
     org.address = {
@@ -105,52 +108,14 @@ export function webPageSchema(opts: {
 }
 
 /**
- * Product + Offer, plus the merchant listing properties that can be stated
- * truthfully. `shippingDetails` describes the shipping destination and the
- * fact that rates are quoted per order; no rate or transit time is asserted.
- * `hasMerchantReturnPolicy` reflects the published returns position for
- * made-to-order goods rather than inventing a return window.
+ * Product + Offer. The Offer comes from src/data/order.ts, the same constants
+ * as the order band, /checkout/ and the Merchant feed: 100 boxes for $30.00,
+ * free shipping with handling and transit times for the US, UK, Canada and
+ * Australia, and the defective-only return policy.
  */
 export function productSchema(product: Product, images: string[]) {
   const url = abs(`/${product.slug}/`);
-  const price = product.startingPrice ?? site.startingPrice;
-
-  const offer: Record<string, unknown> = {
-    '@type': 'Offer',
-    url,
-    price,
-    priceCurrency: site.currency,
-    priceValidUntil: site.priceValidUntil,
-    itemCondition: 'https://schema.org/NewCondition',
-    // Always orderable: production starts as soon as the order is confirmed.
-    availability: 'https://schema.org/InStock',
-    priceSpecification: {
-      '@type': 'UnitPriceSpecification',
-      price,
-      priceCurrency: site.currency,
-      valueAddedTaxIncluded: false,
-      referenceQuantity: { '@type': 'QuantitativeValue', value: 1, unitCode: 'C62' },
-      description:
-        'Starting unit price for qualifying large-volume custom orders. Final pricing depends on size, material, printing, and quantity.',
-    },
-    seller: { '@id': `${site.url}/#organization` },
-    shippingDetails: {
-      '@type': 'OfferShippingDetails',
-      shippingDestination: {
-        '@type': 'DefinedRegion',
-        addressCountry: 'US',
-      },
-      // Freight is quoted per order because it depends on volume and destination.
-      shippingSettingsLink: abs('/shipping-information/'),
-    },
-    hasMerchantReturnPolicy: {
-      '@type': 'MerchantReturnPolicy',
-      applicableCountry: 'US',
-      returnPolicyCategory:
-        'https://schema.org/MerchantReturnNotPermitted',
-      merchantReturnLink: abs('/terms-and-conditions/'),
-    },
-  };
+  const offer = productOffer(url, { '@id': `${site.url}/#organization` }, site.priceValidUntil);
 
   const schema: Record<string, unknown> = {
     '@type': 'Product',

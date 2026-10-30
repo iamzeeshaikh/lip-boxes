@@ -142,7 +142,7 @@ export const product: Product = {
       body: [
         'Plain kraft tubes are the one product on this site that works comfortably at genuinely small quantities, because an unprinted tube carries no plate cost, no artwork approval and no proofing cycle. The only setup is the diameter tooling, and that is a one-time cost you carry across every future order in that size.',
         'The practical consequence is that a maker filling 300 tubes a month can order sensibly, then move to printed tubes later without changing the diameter or re-tooling. Keeping a single diameter across a growing range is the single most useful decision at this scale.',
-        'Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity. Plain kraft tubes at volume sit closest to that figure of anything we make; small first batches sit above it while the tooling is absorbed.',
+        'Online, 100 tubes cost $30.00 ($0.30 each) with free shipping to the US, UK, Canada and Australia. Larger runs are quoted on size, material, printing and quantity, and plain kraft tubes at volume are the most economical thing we make.',
       ],
     },
     {
@@ -192,7 +192,7 @@ export const product: Product = {
       body: [
         'Assembled tubes are checked for concentricity, cap retention and base disc travel. A tube out of round will not take a cap consistently, and a disc that binds ruins the customer\'s first use, so both are sampled through the run rather than only at the start.',
         'Store tubes and filled stock cool and dry. Kraft absorbs moisture, and paperboard is more heat-sensitive than plastic, so a pallet left against a warm wall will show it before a plastic one would.',
-        'Tubes arrive assembled and capped, nested in counted cases. They are light but bulky, so freight is charged on volume rather than weight and consolidating into fewer larger shipments costs materially less, as set out on the <a href="/shipping-information/">shipping and delivery information</a>.',
+        'Tubes arrive assembled and capped, nested in counted cases. They are light but bulky, so a delivery takes more cases than flat cartons would; shipping is free, as set out on the <a href="/shipping-information/">shipping and delivery information</a>.',
       ],
     },
   ],
@@ -208,8 +208,8 @@ export const product: Product = {
     { label: 'Small batches', value: 'Plain tubes carry no plate, artwork or proofing cost' },
     { label: 'Tooling', value: 'Charged once per diameter and reused on every reorder in that size' },
     { label: 'Claims', value: 'Cap material and liner grade confirmed in writing on the quote' },
-    { label: 'Starting unit price', value: 'From $0.30 per piece on qualifying large-volume orders' },
-    { label: 'Ordering', value: 'Quote based; sample tube recommended before a first run' },
+    { label: 'Online price', value: '100 boxes: $30.00 ($0.30 each), free shipping to the US, UK, Canada and Australia' },
+    { label: 'Ordering', value: 'Order 100 online, or get a quote for larger runs; sample tube recommended before a first run' },
   ],
   faqs: [
     {

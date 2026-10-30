@@ -336,7 +336,9 @@ for (const page of pages) {
 
 // The 404 and thank-you pages are reached by a redirect or an error, never by
 // a link, so the orphan rule does not apply to them.
-const UNLINKED_BY_DESIGN = new Set(['/', '/404/', '/thank-you/']);
+// /checkout/ is reached through the order band's GET form, /order-confirmed/
+// after a placed order; neither is a link target.
+const UNLINKED_BY_DESIGN = new Set(['/', '/404/', '/thank-you/', '/checkout/', '/order-confirmed/']);
 for (const [route, sources] of inbound) {
   if (UNLINKED_BY_DESIGN.has(route)) continue;
   if (sources.size === 0) fail(`Orphan page (no internal links in): ${route}`);
@@ -472,7 +474,9 @@ for (const page of pages) {
     const offer = product.offers;
     if (!offer) fail(`${page.route} — Product without an Offer`);
     else {
-      if (offer.price !== '0.30') fail(`${page.route} — Offer price is ${offer.price}, expected "0.30"`);
+      // Owner 2026-10-30: the online pack is 100 boxes for $30.00 (src/data/order.ts).
+      if (offer.price !== '30.00') fail(`${page.route} — Offer price is ${offer.price}, expected "30.00"`);
+      if (offer.eligibleQuantity?.value !== 100) fail(`${page.route} — Offer eligibleQuantity is not 100`);
       if (offer.priceCurrency !== 'USD') fail(`${page.route} — Offer currency is not USD`);
       if (offer.itemCondition !== 'https://schema.org/NewCondition') {
         fail(`${page.route} — Offer itemCondition is not NewCondition`);
@@ -493,8 +497,8 @@ for (const page of pages) {
       fail(`${page.route} — Product name "${product.name}" does not match the H1 "${h1s(page.html)[0]}"`);
     }
     // The visible page must carry the pricing statement backing the Offer.
-    if (!visible.includes('Price starts from $0.30 per piece for large-volume orders')) {
-      fail(`${page.route} — Product page is missing the visible starting-price statement`);
+    if (!visible.includes('100 boxes: $30.00 ($0.30 each)')) {
+      fail(`${page.route} — Product page is missing the visible pack price "100 boxes: $30.00 ($0.30 each)"`);
     }
     // Ratings must never be asserted without visible review content.
     if (product.aggregateRating || product.review) {

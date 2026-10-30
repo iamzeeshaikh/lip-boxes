@@ -169,7 +169,7 @@ export const product: Product = {
       navLabel: 'Quantity & pricing',
       body: [
         'This carton carries more production steps than a plain box: a more complex die, a window patch application, sometimes a tab reinforcement and a heavier board. Each adds to the unit price, and each is spread more thinly as quantity rises.',
-        'Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity. A window patch and a reinforced tab both sit above that entry figure, so expect your quote to reflect the specification rather than the floor price.',
+        'Online, 100 boxes cost $30.00 ($0.30 each) with free shipping to the US, UK, Canada and Australia. Larger runs are quoted on size, material, printing and quantity, and a window patch or a reinforced tab is priced into that quote.',
         'Retail programs usually specify a case count and a pallet configuration. Send those with the inquiry so packing is quoted correctly, and tell us the ship-by date if a planogram reset is driving the schedule.',
       ],
     },
@@ -225,8 +225,8 @@ export const product: Product = {
     { label: 'Finishes', value: 'Gloss, matte and soft-touch lamination, spot UV, foil stamp, emboss' },
     { label: 'Hook compatibility', value: 'Standard retail peg hooks, typically 3–6 mm diameter' },
     { label: 'Barcode area', value: 'Minimum 1.5 in clear width on a flat panel, clear of creases and the tab' },
-    { label: 'Starting unit price', value: 'From $0.30 per piece on qualifying large-volume orders' },
-    { label: 'Ordering', value: 'Quote based; retail case counts and pallet patterns supported' },
+    { label: 'Online price', value: '100 boxes: $30.00 ($0.30 each), free shipping to the US, UK, Canada and Australia' },
+    { label: 'Ordering', value: 'Order 100 online, or get a quote for larger runs; retail case counts and pallet patterns supported' },
   ],
   faqs: [
     {
@@ -275,7 +275,7 @@ export const product: Product = {
     },
     {
       q: 'What lead time should I allow?',
-      a: 'Longer than a plain carton, because the window patch is an extra production pass and the tab die has to be cut. If a hang test is included, add time for that too. We confirm the production window in writing with the quote once the specification is settled.',
+      a: 'Allow 5–7 business days of production after proof approval for the online 100-box pack. A quoted run with a custom window patch, a new tab die or a hang test takes longer, and we confirm that production window in writing with the quote once the specification is settled.',
     },
   ],
   related: ['custom-lipstick-boxes', 'hang-tab-lip-balm-boxes', 'rigid-lipstick-boxes', 'lip-gloss-boxes'],

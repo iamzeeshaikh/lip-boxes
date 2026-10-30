@@ -1,0 +1,488 @@
+---
+/**
+ * Checkout for the online 100-box pack. No card is taken on the site: the order
+ * is emailed to the team (same SMTP transport and recipients as the quote
+ * forms) and paid by PayPal invoice or bank transfer after proof approval, or
+ * cash on delivery for US and Canadian addresses. Lines live in localStorage;
+ * /api/order re-prices every line from src/data/order.ts. noindex, and kept out
+ * of the sitemap.
+ */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { site } from '../data/site';
+import {
+  PACK_QTY,
+  PACK_PRICE,
+  MAX_PACKS,
+  PRICE_LINE,
+  SHIP_COUNTRIES,
+  SHIP_LINE,
+  PAYMENT_METHODS,
+  COD_COUNTRIES,
+  ORDER_CATALOG,
+  PRODUCTION_TEXT,
+  TRANSIT_US_TEXT,
+  TRANSIT_INTL_TEXT,
+  RETURNS,
+} from '../data/order';
+import '../styles/forms.css';
+
+const cfg = JSON.stringify({
+  catalog: ORDER_CATALOG,
+  pack: PACK_PRICE,
+  qty: PACK_QTY,
+  max: MAX_PACKS,
+  cod: COD_COUNTRIES,
+});
+---
+
+<BaseLayout
+  title="Checkout | Order Lip Boxes Online | Lip Boxes"
+  description={`Order custom lip boxes online: ${PACK_QTY} boxes for $${PACK_PRICE.toFixed(2)} with free shipping to the US, UK, Canada and Australia.`}
+  path="/checkout/"
+  noindex
+>
+  <section class="co-head">
+    <div class="vx-frame">
+      <h1>Checkout</h1>
+      <p>
+        {PRICE_LINE}. {SHIP_LINE}. Nothing is printed or charged until you approve
+        a proof of your artwork.
+      </p>
+    </div>
+  </section>
+
+  <section class="vx-frame co-wrap">
+    <form id="co-form" class="co-grid" novalidate data-cfg={cfg}>
+      <div class="co-main">
+        <fieldset class="co-set">
+          <legend>Your details</legend>
+          <div class="co-two">
+            <label class="co-f co-wide" for="co-name"><span>Full name *</span><input id="co-name" name="name" autocomplete="name" required maxlength="120" /></label>
+            <label class="co-f" for="co-email"><span>Email *</span><input id="co-email" name="email" type="email" autocomplete="email" required maxlength="180" /></label>
+            <label class="co-f" for="co-phone"><span>Phone *</span><input id="co-phone" name="phone" type="tel" autocomplete="tel" required maxlength="40" /></label>
+            <label class="co-f co-wide" for="co-company"><span>Company (optional)</span><input id="co-company" name="company" autocomplete="organization" maxlength="140" /></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="co-set">
+          <legend>Shipping address</legend>
+          <div class="co-two">
+            <label class="co-f co-wide" for="co-country"><span>Country *</span>
+              <select id="co-country" name="country" autocomplete="country" required>
+                {SHIP_COUNTRIES.map((c) => <option value={c.code}>{c.name}</option>)}
+              </select>
+            </label>
+            <label class="co-f co-wide" for="co-address1"><span>Address *</span><input id="co-address1" name="address1" autocomplete="address-line1" required maxlength="200" /></label>
+            <label class="co-f co-wide" for="co-address2"><span>Apartment, suite, unit (optional)</span><input id="co-address2" name="address2" autocomplete="address-line2" maxlength="200" /></label>
+            <label class="co-f" for="co-city"><span>City *</span><input id="co-city" name="city" autocomplete="address-level2" required maxlength="100" /></label>
+            <label class="co-f" for="co-region"><span>State, province or county</span><input id="co-region" name="region" autocomplete="address-level1" maxlength="60" /></label>
+            <label class="co-f" for="co-postal"><span>ZIP or postcode *</span><input id="co-postal" name="postal" autocomplete="postal-code" required maxlength="20" /></label>
+          </div>
+          <p class="co-small">Shipping somewhere else? <a href="/request-a-quote/">Request a quote</a> and tell us your country.</p>
+        </fieldset>
+
+        <fieldset class="co-set">
+          <legend>Payment</legend>
+          {
+            PAYMENT_METHODS.map((m, i) => (
+              <label class="co-pay" data-pm={m.id}>
+                <input type="radio" name="payment" value={m.id} checked={i === 0} aria-label={m.name} />
+                <span>
+                  <strong>{m.name}</strong>
+                  <br />
+                  <small>{m.detail}</small>
+                </span>
+              </label>
+            ))
+          }
+        </fieldset>
+
+        <fieldset class="co-set">
+          <legend>Artwork and notes</legend>
+          <label class="co-f" for="co-artwork"><span>Logo or artwork file (optional, up to 3 MB)</span><input id="co-artwork" name="artwork" type="file" accept=".pdf,.ai,.eps,.svg,.png,.jpg,.jpeg,.zip" /></label>
+          <label class="co-f" for="co-notes"><span>Notes: product size, colors, deadline (optional)</span><textarea id="co-notes" name="notes" rows="4" maxlength="3000"></textarea></label>
+        </fieldset>
+        <div class="co-hp" aria-hidden="true">
+          <label for="co-website">Leave this empty</label> <input type="text" id="co-website" name="website" tabindex="-1" autocomplete="off" />
+        </div>
+      </div>
+
+      <aside class="co-side">
+        <h2>Your order</h2>
+        <table class="co-lines"><tbody data-lines><tr><td>Your order is empty. <a href="/products/">Choose a lip box style</a></td></tr></tbody></table>
+        <table class="co-sum">
+          <tr><th scope="row">Shipping</th><td class="r co-free">Free</td></tr>
+          <tr><th scope="row">Total</th><th class="r" data-grand>$0.00</th></tr>
+        </table>
+        <p class="co-small">
+          Production takes {PRODUCTION_TEXT} after you approve the proof. Delivery
+          takes {TRANSIT_US_TEXT} in the US and {TRANSIT_INTL_TEXT} to the UK,
+          Canada and Australia. Prices are in US dollars.
+        </p>
+        <p class="co-small">
+          Defective, damaged or misprinted orders reported within {RETURNS.claimDays} days
+          of delivery are reprinted free or refunded. Read the <a href={RETURNS.policyPath}>refund and return policy</a>.
+        </p>
+        <p class="co-err" data-err role="alert"></p>
+        <button type="submit" class="vx-btn vx-btn--red vx-btn--block" data-place disabled>Place order</button>
+        <p class="co-small">
+          Questions? Call <a href={`tel:${site.phone}`}>{site.phoneDisplay}</a> or email <a href={`mailto:${site.email}`}>{site.email}</a>.
+        </p>
+      </aside>
+    </form>
+  </section>
+</BaseLayout>
+
+<script>
+  type Cfg = { catalog: Record<string, string>; pack: number; qty: number; max: number; cod: string[] };
+  const KEY = 'lb-cart';
+  const LOADED = Date.now();
+  const form = document.getElementById('co-form') as HTMLFormElement | null;
+  if (form) {
+    const C = JSON.parse(form.dataset.cfg || '{}') as Cfg;
+    const linesEl = form.querySelector('[data-lines]') as HTMLElement;
+    const grandEl = form.querySelector('[data-grand]') as HTMLElement;
+    const errEl = form.querySelector('[data-err]') as HTMLElement;
+    const btn = form.querySelector('[data-place]') as HTMLButtonElement;
+    const money = (n: number) => `$${n.toFixed(2)}`;
+    const esc = (s: string) =>
+      String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c] as string);
+
+    let cart: { slug: string; packs: number }[] = [];
+    try {
+      cart = JSON.parse(localStorage.getItem(KEY) || '[]');
+    } catch {}
+    if (!Array.isArray(cart)) cart = [];
+    const q = new URLSearchParams(location.search);
+    const add = q.get('add');
+    if (add && C.catalog[add]) {
+      const packs = Math.min(C.max, Math.max(1, parseInt(q.get('packs') || '1', 10) || 1));
+      const hit = cart.find((l) => l.slug === add);
+      if (hit) hit.packs = packs;
+      else cart.push({ slug: add, packs });
+      history.replaceState(null, '', '/checkout/');
+    }
+    cart = cart.filter((l) => C.catalog[l.slug] && l.packs >= 1 && l.packs <= C.max);
+    const save = () => {
+      try {
+        localStorage.setItem(KEY, JSON.stringify(cart));
+      } catch {}
+    };
+    save();
+
+    const render = () => {
+      if (!cart.length) {
+        linesEl.innerHTML = '<tr><td>Your order is empty. <a href="/products/">Choose a lip box style</a></td></tr>';
+        grandEl.textContent = money(0);
+        btn.disabled = true;
+        return;
+      }
+      let total = 0;
+      linesEl.innerHTML = cart
+        .map((l, i) => {
+          const name = C.catalog[l.slug];
+          const sum = l.packs * C.pack;
+          total += sum;
+          let opts = '';
+          for (let n = 1; n <= C.max; n++)
+            opts += `<option value="${n}"${n === l.packs ? ' selected' : ''}>${(n * C.qty).toLocaleString('en-US')} boxes</option>`;
+          return `<tr><td><a data-slug="${esc(l.slug)}">${esc(name)}</a><br><select data-i="${i}" aria-label="Quantity for ${esc(name)}">${opts}</select> <button type="button" data-rm="${i}" class="co-rm">Remove</button></td><td class="r">${money(sum)}</td></tr>`;
+        })
+        .join('');
+      linesEl.querySelectorAll<HTMLAnchorElement>('a[data-slug]').forEach((el) => {
+        el.href = `/${el.dataset.slug}/`;
+      });
+      grandEl.textContent = money(total);
+      btn.disabled = false;
+    };
+    linesEl.addEventListener('change', (e) => {
+      const t = e.target as HTMLSelectElement;
+      const i = t.getAttribute('data-i');
+      if (i !== null) {
+        cart[+i].packs = +t.value;
+        save();
+        render();
+      }
+    });
+    linesEl.addEventListener('click', (e) => {
+      const i = (e.target as HTMLElement).getAttribute('data-rm');
+      if (i !== null) {
+        cart.splice(+i, 1);
+        save();
+        render();
+      }
+    });
+    form.addEventListener('input', (e) => (e.target as HTMLElement).removeAttribute('aria-invalid'));
+    render();
+
+    // Cash on delivery only for US and Canadian addresses: hidden elsewhere.
+    const countryEl = form.querySelector('#co-country') as HTMLSelectElement;
+    const codBox = form.querySelector('[data-pm="cod"]') as HTMLElement;
+    const codRule = () => {
+      const ok = C.cod.includes(countryEl.value);
+      const r = codBox.querySelector('input') as HTMLInputElement;
+      r.disabled = !ok;
+      codBox.hidden = !ok;
+      if (!ok && r.checked) (form.querySelector('input[name=payment][value=paypal]') as HTMLInputElement).checked = true;
+    };
+    countryEl.addEventListener('change', codRule);
+    codRule();
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      errEl.textContent = '';
+      const bad = [...form.querySelectorAll<HTMLInputElement>('[required]')].filter((el) => {
+        const v = el.value.trim();
+        const ok = v && (el.type !== 'email' || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v));
+        if (!ok) el.setAttribute('aria-invalid', 'true');
+        return !ok;
+      });
+      if (bad.length) {
+        errEl.textContent = 'Please fill in the highlighted fields.';
+        bad[0].focus();
+        return;
+      }
+      const file = (form.elements.namedItem('artwork') as HTMLInputElement).files?.[0];
+      // 3 MB keeps the base64 body under the ~4.5 MB serverless request limit.
+      if (file && file.size > 3 * 1024 * 1024) {
+        errEl.textContent = 'The artwork file is over 3 MB. Place the order without it and email the file to us.';
+        return;
+      }
+      const data: Record<string, string> = {};
+      new FormData(form).forEach((val, key) => {
+        if (typeof val === 'string') data[key] = val;
+      });
+      data.items = JSON.stringify(cart);
+      data.ts = String(LOADED);
+      btn.disabled = true;
+      btn.textContent = 'Placing order…';
+      const w = window as unknown as { gtag?: (...a: unknown[]) => void };
+      w.gtag?.('event', 'begin_checkout', { currency: 'USD', value: cart.reduce((s, l) => s + l.packs * C.pack, 0) });
+      const readFile = (f: File | undefined) =>
+        new Promise<string>((resolve, reject) => {
+          if (!f) return resolve('');
+          const reader = new FileReader();
+          reader.onload = () => resolve(String(reader.result).split(',')[1] ?? '');
+          reader.onerror = () => reject(new Error('Could not read the artwork file'));
+          reader.readAsDataURL(f);
+        });
+      readFile(file)
+        .then((b64) => {
+          if (b64 && file) {
+            data.artwork = b64;
+            data.artworkName = file.name;
+          }
+          return fetch('/api/order/', {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          });
+        })
+        .then((r) => r.json().catch(() => ({ ok: false, error: 'Server error' })))
+        .then((res) => {
+          if (!res.ok) throw new Error(res.error || 'Could not place the order');
+          w.gtag?.('event', 'purchase', { transaction_id: res.ref, currency: 'USD', value: res.total });
+          try {
+            localStorage.removeItem(KEY);
+          } catch {}
+          location.href = `/order-confirmed/?ref=${encodeURIComponent(res.ref)}&pay=${encodeURIComponent(res.payment)}`;
+        })
+        .catch((err: Error) => {
+          errEl.textContent = `${err.message}. Please try again, or call (503) 461-4788.`;
+          btn.disabled = false;
+          btn.textContent = 'Place order';
+        });
+    });
+  }
+</script>
+
+<style is:global>
+  .co-head {
+    padding: clamp(40px, 5vw, 72px) 0;
+    background: var(--vx-ink);
+  }
+  .co-head h1 {
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .co-head p {
+    margin-block-start: 12px;
+    max-width: 70ch;
+    color: #d6d6d6;
+    font-size: 17px;
+  }
+  .co-wrap {
+    padding-block: 40px 72px;
+  }
+  .co-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+    gap: 28px;
+    align-items: start;
+  }
+  .co-set {
+    margin: 0 0 20px;
+    padding: 18px 20px;
+    background: #fff;
+    border: 1px solid var(--vx-rule-lt);
+    min-width: 0;
+  }
+  .co-set legend {
+    padding: 0 6px;
+    font: 500 1.2rem/1.2 var(--vx-head);
+    text-transform: uppercase;
+    color: var(--vx-ink);
+  }
+  .co-two {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 14px 16px;
+  }
+  .co-wide {
+    grid-column: 1 / -1;
+  }
+  .co-f {
+    display: grid;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--vx-ink-2);
+    margin-bottom: 4px;
+  }
+  .co-f input,
+  .co-f select,
+  .co-f textarea {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid var(--vx-rule);
+    border-radius: 0;
+    font: inherit;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--vx-ink);
+    background: #fff;
+    box-sizing: border-box;
+  }
+  .co-f [aria-invalid='true'] {
+    border-color: var(--vx-accent);
+    outline: 2px solid var(--vx-accent);
+  }
+  .co-pay {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 10px 0;
+    border-top: 1px solid var(--vx-rule-lt);
+    cursor: pointer;
+    color: var(--vx-ink);
+  }
+  .co-pay[hidden] {
+    display: none;
+  }
+  .co-pay small {
+    color: var(--vx-mute-c);
+    line-height: 1.5;
+    font-size: 14px;
+  }
+  .co-pay input {
+    margin-top: 4px;
+    accent-color: var(--vx-accent);
+  }
+  .co-main,
+  .co-side {
+    min-width: 0;
+  }
+  .co-side {
+    position: sticky;
+    top: 104px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid var(--vx-rule);
+  }
+  .co-side h2 {
+    margin: 0 0 12px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+  .co-lines,
+  .co-sum {
+    width: 100%;
+    min-width: 0;
+    table-layout: auto;
+    border-collapse: collapse;
+    font-size: 15px;
+    color: var(--vx-ink);
+  }
+  .co-lines td {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--vx-rule-lt);
+    vertical-align: top;
+  }
+  .co-lines a {
+    color: var(--vx-ink);
+    font-weight: 600;
+  }
+  .co-lines select {
+    margin-top: 6px;
+    padding: 7px 9px;
+    border: 1px solid var(--vx-rule);
+    border-radius: 0;
+    font: inherit;
+  }
+  .co-rm {
+    background: none;
+    border: 0;
+    color: var(--vx-accent);
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .co-sum td,
+  .co-sum th {
+    padding: 8px 0;
+    text-align: left;
+  }
+  .co-grid .r {
+    text-align: right;
+    white-space: nowrap;
+  }
+  .co-free {
+    color: #0a6b3b;
+    font-weight: 700;
+  }
+  .co-small {
+    margin-block: 10px;
+    color: var(--vx-mute-c);
+    font-size: 14px;
+    line-height: 1.55;
+  }
+  .co-small a {
+    color: var(--vx-accent);
+  }
+  .co-err {
+    min-height: 1em;
+    color: var(--vx-accent);
+    font-size: 14px;
+  }
+  .co-side .vx-btn:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+  }
+  .co-hp {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  @media (max-width: 900px) {
+    .co-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    .co-side {
+      position: static;
+    }
+    .co-two {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+</style>

@@ -142,4 +142,5 @@ export const footerNav: { heading: string; links: NavLink[] }[] = [
 export const legalNav: NavLink[] = [
   { href: '/privacy-policy/', label: 'Privacy Policy' },
   { href: '/terms-and-conditions/', label: 'Terms and Conditions' },
+  { href: '/refund-and-return-policy/', label: 'Refund and Return Policy' },
 ];

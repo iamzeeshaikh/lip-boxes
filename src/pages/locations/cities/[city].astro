@@ -151,10 +151,10 @@ const nextHeading = pick([
       </section>
 
       <p class="city-note">
-        {site.name} has no address, warehouse, collection point or staff in{' '}
-        {location.name}. Packaging is manufactured to order and shipped to{' '}
-        {location.name} addresses through a nationwide carrier service, with delivery
-        cost and lead time confirmed in writing on each quote.
+        {site.name} has no plant, warehouse, showroom or collection point in{' '}
+        {location.name}; our only premises is the business address in Brooklyn, New
+        York. Packaging is manufactured to order and shipped free to {location.name}{' '}
+        addresses, arriving 5–7 business days after dispatch.
       </p>
     </article>
   </div>
@@ -164,11 +164,11 @@ const nextHeading = pick([
     location={location.name}
     pageTitle={location.seoTitle}
     heading={quoteHeading}
-    sub={`Send your quantity and dimensions and you will get a written price with delivery to your ${location.name} address costed in.`}
+    sub={`Send your quantity and dimensions and you will get a written price, with free shipping to your ${location.name} address.`}
     points={[
       `Specified around ${location.marketAngle.toLowerCase()}, the pattern this page covers`,
       'A written unit price at your quantity and at the next volume break',
-      'Delivery costed to the address you give us, not estimated',
+      'Free shipping to the address you give us, 5–7 business days in the US',
     ]}
   />
 

@@ -184,7 +184,7 @@ export const product: Product = {
       navLabel: 'Quantity & pricing',
       body: [
         'Lipstick ranges create an awkward quantity problem: you may want 20,000 cartons in total but only 1,600 of each shade. Digital printing solves it at moderate volumes. At higher volumes, ganging several shades onto one litho sheet keeps the plate cost shared while retaining offset quality.',
-        'Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity. A plain single-color carton at high volume approaches that figure; a soft-touch laminated carton with foil, an insert and twelve shade variants sits well above it.',
+        'Online, 100 boxes cost $30.00 ($0.30 each) with free shipping to the US, UK, Canada and Australia. Larger runs are quoted on size, material, printing and quantity: a plain single-color carton at high volume is the most economical, and a soft-touch laminated carton with foil, an insert and twelve shade variants costs more.',
         'Tell us the shade count and the per-shade quantity in the inquiry, not just the total. It changes which process we quote and can materially change the price.',
       ],
     },
@@ -224,7 +224,7 @@ export const product: Product = {
       body: [
         'Color consistency across a shade range is the check that matters most here. Each variant is measured against its approved proof, and where shades are close to each other they are compared side by side rather than individually, because a shopper will see them next to one another on the shelf.',
         'Paperboard cartons are widely accepted in US paper recycling. Soft-touch and gloss laminates are plastic films and complicate that, so where end-of-life matters, a varnish finish on an uncoated or lightly coated board keeps the pack in one stream. Metallized board is not paper-recyclable and should not be described as though it were.',
-        'Production time varies with the finishing. Foil, emboss and soft-touch each add a pass. We confirm a schedule in writing with the quote, and current bands are published on the <a href="/turnaround-time/">lead time page</a>.',
+        'The online 100-box pack is produced in 5–7 business days after proof approval. On a quoted run, foil, emboss and soft-touch each add a pass, so we confirm that schedule in writing with the quote; the standard times are on the <a href="/turnaround-time/">lead time page</a>.',
       ],
     },
   ],
@@ -240,8 +240,8 @@ export const product: Product = {
     { label: 'Windows', value: 'Die-cut with optional clear film patch' },
     { label: 'Range support', value: 'One die line across multiple shades; per-shade artwork variants' },
     { label: 'Artwork format', value: 'PDF, AI, EPS at 300 dpi, 3 mm bleed, separate vector layers for foil and emboss' },
-    { label: 'Starting unit price', value: 'From $0.30 per piece on qualifying large-volume orders' },
-    { label: 'Ordering', value: 'Quote based; per-shade quantities affect the print process selected' },
+    { label: 'Online price', value: '100 boxes: $30.00 ($0.30 each), free shipping to the US, UK, Canada and Australia' },
+    { label: 'Ordering', value: 'Order 100 online, or get a quote for larger runs; per-shade quantities affect the print process selected' },
   ],
   faqs: [
     {

@@ -3,6 +3,14 @@ import InfoLayout from '../layouts/InfoLayout.astro';
 import InfoSection from '../components/InfoSection.astro';
 import FaqList from '../components/FaqList.astro';
 import { site } from '../data/site';
+import {
+  PRICE_LINE,
+  PACK_QTY,
+  PRODUCTION_TEXT,
+  TRANSIT_US_TEXT,
+  TRANSIT_INTL_TEXT,
+  RETURNS,
+} from '../data/order';
 import type { Faq } from '../data/types';
 
 /*
@@ -16,19 +24,19 @@ const groups: { id: string; heading: string; intro: string; faqs: Faq[] }[] = [
     id: 'ordering',
     heading: 'Ordering and pricing',
     intro:
-      'How quoting works, what the starting price means, and what we need before we can price a job.',
+      'What the online pack costs, how quoting works for larger runs, and what we need before we can price a job.',
     faqs: [
       {
-        q: 'Why is there no price list on the site?',
-        a: 'Because every product is made to order. A 500-unit digital run and a 100,000-unit litho run with foil are different pieces of work, and a single listed price would either overcharge the simple job or under-quote the complex one. Send dimensions and a quantity and you get a real figure.',
+        q: 'What does the site publish as a price, and what is quoted?',
+        a: 'Every style sells online in packs of 100 for $30.00 ($0.30 each), printed full color to your artwork, with free shipping to the US, UK, Canada and Australia. Larger runs are quoted, because a 500-unit digital run and a 100,000-unit litho run with foil are different pieces of work. Send dimensions and a quantity and you get a real figure.',
       },
       {
-        q: 'What does the $0.30 starting price actually mean?',
-        a: `${site.startingPriceStatement} It is the entry figure for a simple specification at high volume — plain board, a straightforward print, no foil or insert. A short run with premium finishing sits well above it, and your written quote always states the actual unit price for your job.`,
+        q: 'What does the $30.00 online price include?',
+        a: `${PRICE_LINE}: a pack of ${PACK_QTY} in the style you choose, printed full color to your artwork after you approve a proof, with free shipping to the US, UK, Canada and Australia. Pay by PayPal invoice or bank transfer after proof approval, or cash on delivery in the US and Canada. Foil, inserts, special sizes and larger runs are quoted, and your written quote states the actual unit price for that job.`,
       },
       {
         q: 'Is there a minimum order quantity?',
-        a: 'It depends on the print process and finishing rather than being a fixed number. Digital printing supports genuinely short runs. Offset litho, foil and embossing carry setup costs that need volume to make sense. Tell us the quantity you actually want and we will quote it.',
+        a: 'Online orders start at one pack of 100 boxes. For quoted work it depends on the print process and finishing: offset litho, foil and embossing carry setup costs that need volume to make sense. Tell us the quantity you actually want and we will quote it.',
       },
       {
         q: 'Can I get a price without sending dimensions?',
@@ -88,11 +96,11 @@ const groups: { id: string; heading: string; intro: string; faqs: Faq[] }[] = [
     faqs: [
       {
         q: 'How long will my order take?',
-        a: 'We confirm a production window in writing with every quote rather than publishing a fixed figure, because it depends on your specification and on how quickly approvals come back. A digitally printed carton with a varnish moves much faster than a foiled litho job with an insert.',
+        a: `Production takes ${PRODUCTION_TEXT} after you approve the proof. Shipping is free, and delivery takes ${TRANSIT_US_TEXT} in the US and ${TRANSIT_INTL_TEXT} to the UK, Canada and Australia. A quoted run with extra finishing, such as foil with an insert, gets its own production window in writing.`,
       },
       {
         q: 'Do you ship outside the United States?',
-        a: 'Our focus is the US market and freight is quoted for US destinations. If you have a requirement elsewhere, ask and we will tell you honestly whether we can serve it properly rather than quoting something we cannot support.',
+        a: 'Yes. Shipping is free to the United States, the United Kingdom, Canada and Australia. Other countries are quoted on request, so tell us the destination and we will confirm the cost before you commit. Import duties or taxes, if any, are paid by the buyer.',
       },
       {
         q: 'How is my order quality checked?',
@@ -100,7 +108,7 @@ const groups: { id: string; heading: string; intro: string; faqs: Faq[] }[] = [
       },
       {
         q: 'What happens if there is a manufacturing fault?',
-        a: 'Tell us as soon as you find it, with photographs and the order reference, and we will work through it. Because these goods are made to your approved specification and cannot be resold, returns for change of mind are not available — the terms and conditions set out the detail.',
+        a: `Report it within ${RETURNS.claimDays} days of delivery, with photographs and the order number, and we will reprint the affected boxes free or refund them, with shipping paid by us. Because these goods are made to your approved specification and cannot be resold, returns for change of mind are not available. The refund and return policy sets out the detail.`,
       },
       {
         q: 'Can you deliver directly to my contract filler?',
@@ -119,7 +127,7 @@ const groups: { id: string; heading: string; intro: string; faqs: Faq[] }[] = [
     faqs: [
       {
         q: 'Do you hold stock of standard boxes?',
-        a: 'No. There is no catalog and no off-the-shelf size list. Every item is manufactured to a die line drawn for a specific container, which is the reason the guidance on this site is as specific as it is.',
+        a: 'No. Every item is manufactured to order, printed to your artwork, which is the reason the guidance on this site is as specific as it is. The online 100-box pack goes into production when you approve the proof and is made in 5–7 business days.',
       },
       {
         q: 'Do you fill or assemble product?',
@@ -127,7 +135,7 @@ const groups: { id: string; heading: string; intro: string; faqs: Faq[] }[] = [
       },
       {
         q: 'How do I contact you?',
-        a: `Email ${site.email}, or use the quote request form, which routes straight to the team that prices work. If your inquiry is about an existing order, include the order reference so it reaches the right person first time.`,
+        a: `Call ${site.phoneDisplay}, email ${site.email}, or use the quote request form, which routes straight to the team that prices work. If your inquiry is about an existing order, include the order reference so it reaches the right person the first time.`,
       },
       {
         q: 'How quickly do you reply to inquiries?',

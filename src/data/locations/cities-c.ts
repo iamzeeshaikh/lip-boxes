@@ -29,8 +29,8 @@ export const jacksonville: Location = {
       navLabel: 'The market',
       body: [
         'Jacksonville sits on a significant freight corridor with substantial warehousing capacity, which gives brands based there an option many do not have: consolidating multiple packaging components into one inbound shipment.',
-        'That matters more than it sounds for lip products, because they are light and bulky. Freight is charged on volume rather than weight, so several small consignments cost disproportionately more than one larger one.',
-        'A brand ordering cartons, labels and tubes separately across three months pays volume-based freight three times. Ordering them together, even if some sits for a few weeks, is frequently cheaper overall.',
+        'That matters more than it sounds for lip products, because they are light and bulky. Our shipping to you is free, so the saving is not on the freight line but in your operation: several small deliveries mean several intakes, several put-aways and several rounds of checking.',
+        'A brand ordering cartons, labels and tubes separately across three months receives, checks and stores three deliveries. Ordering them together, even if some sits for a few weeks, is frequently simpler overall, and the larger quantity lowers the unit price too.',
       ],
     },
     {
@@ -40,12 +40,12 @@ export const jacksonville: Location = {
       navLabel: 'Consolidation',
       intro: 'Six considerations before combining orders into one shipment.',
       items: [
-        'Cartons and labels ship flat and travel economically; combining them is almost always worthwhile',
-        'Assembled tubes and rigid boxes are charged on volume, so they benefit most from consolidation',
+        'Cartons and labels ship flat and pack densely; combining them is almost always worthwhile',
+        'Assembled tubes and rigid boxes are bulky, so they take the most receiving space and need the most planning',
         '<a href="/lip-balm-labels/">Lip balm label stock</a> has a practical shelf life, so do not consolidate more than you will use',
         'Board absorbs humidity, so consolidating only helps if storage is dry and off the floor',
         'Different components may have different lead times, so the slowest sets the shipment date',
-        'A <a href="/how-to-order/">scheduled call-off order</a> achieves the same freight saving without holding everything at once',
+        'A <a href="/how-to-order/">scheduled call-off order</a> achieves the same volume price without holding everything at once',
       ],
       outro:
         'The call-off option is worth pricing against straight consolidation. It holds the volume price without requiring you to store the whole quantity.',
@@ -57,23 +57,23 @@ export const jacksonville: Location = {
       navLabel: 'Coastal storage',
       body: [
         'Jacksonville shares the humidity considerations of the wider Florida market, and consolidation makes them more relevant rather than less, because consolidated stock sits longer.',
-        'Paperboard absorbs moisture, loses stiffness and creases less cleanly. A pallet held for three months in an uncontrolled warehouse arrives at the filling line in worse condition than one used within a fortnight.',
-        'The mitigation is storage rather than specification: pallets off concrete, away from exterior walls and roller doors, cartons banded in their cases until use. If the storage environment is poor, more frequent smaller orders beat a consolidated one despite the freight arithmetic.',
+        'Paperboard absorbs moisture, loses stiffness and creases less cleanly. A pallet held for three months in an uncontrolled warehouse arrives at the filling line in worse condition than one used within two weeks.',
+        'The mitigation is storage rather than specification: pallets off concrete, away from exterior walls and roller doors, cartons banded in their cases until use. If the storage environment is poor, more frequent smaller orders beat a consolidated one despite the price arithmetic.',
       ],
     },
   ],
   faqs: [
     {
       q: 'Is it cheaper to consolidate packaging orders?',
-      a: 'Usually, for lip products. They are light and bulky, so freight is charged on volume rather than weight, and several small consignments cost disproportionately more than one larger one. The saving is real but depends on your storage.',
+      a: 'Usually, for lip products, though not because of shipping, which is free. A larger single order lowers the unit price and means one delivery to receive instead of several. The saving is real but depends on your storage.',
     },
     {
       q: 'What should I not consolidate?',
-      a: 'More label stock than you will use within a reasonable period, since adhesive performance changes with age and heat. And anything at all if your storage is uncontrolled, because board held in humidity degrades faster than the freight saving justifies.',
+      a: 'More label stock than you will use within a reasonable period, since adhesive performance changes with age and heat. And anything at all if your storage is uncontrolled, because board held in humidity degrades faster than the consolidation saving justifies.',
     },
     {
       q: 'What is the alternative to consolidating?',
-      a: 'A scheduled call-off: the full quantity is produced in one run to hold the volume price, then released against a delivery schedule. It achieves the freight and price benefit without requiring you to store everything at once.',
+      a: 'A scheduled call-off: the full quantity is produced in one run to hold the volume price, then released against a delivery schedule. It achieves the price benefit without requiring you to store everything at once.',
     },
     {
       q: 'How should consolidated stock be stored?',
@@ -94,7 +94,7 @@ export const jacksonville: Location = {
     {
       q: 'Are you based in Jacksonville?',
       a:
-        'No. The business has no premises in Jacksonville and no local team. What it does have is a nationwide delivery service that reaches every Jacksonville address.',
+        'No. The business has no premises in Jacksonville and no local team. What it does have is free shipping that reaches every Jacksonville address.',
     },
   ],
 };
@@ -456,7 +456,7 @@ export const indianapolis: Location = {
       body: [
         'A refused delivery at a 3PL is more expensive than the redelivery charge suggests, because the stock is not in the system and every order depending on it waits.',
         'The usual causes are mundane: no appointment booked, a missing reference number, case labels in the wrong format, or a pallet over the height limit. All are avoidable with information that takes minutes to gather.',
-        'Send the requirements with your order rather than after the pallet is on the road. Building them into the production plan costs nothing; repacking finished goods to meet a requirement discovered late costs labor and risks damage. <a href="/shipping-information/">How freight and delivery are quoted</a> is set out separately.',
+        'Send the requirements with your order rather than after the pallet is on the road. Building them into the production plan costs nothing; repacking finished goods to meet a requirement discovered late costs labor and risks damage. <a href="/shipping-information/">How shipping and delivery work</a> is set out separately.',
       ],
     },
   ],
@@ -467,7 +467,7 @@ export const indianapolis: Location = {
     },
     {
       q: 'Why does the mixed-SKU question matter?',
-      a: 'Because a 3PL that only accepts single-SKU pallets changes how a multi-product order has to be packed and palletized. It affects the number of pallets and therefore the freight cost, so it needs knowing before production.',
+      a: 'Because a 3PL that only accepts single-SKU pallets changes how a multi-product order has to be packed and palletized. It affects the number of pallets and how the 3PL receives them, so it needs knowing before production.',
     },
     {
       q: 'What happens if a 3PL refuses a delivery?',
@@ -487,7 +487,7 @@ export const indianapolis: Location = {
     },
     {
       q: 'How does this differ from your Indiana page?',
-      a: 'The Indiana page covers case pack efficiency and pallet configuration as a freight cost question. This page is about third-party logistics intake requirements, which govern whether a delivery is accepted at all rather than what it costs.',
+      a: 'The Indiana page covers case pack efficiency and pallet configuration as a shipping efficiency question. This page is about third-party logistics intake requirements, which govern whether a delivery is accepted at all rather than what it costs.',
     },
     {
       q: 'Do you have staff on the ground in Indianapolis?',

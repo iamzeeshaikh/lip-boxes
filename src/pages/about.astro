@@ -88,9 +88,11 @@ import { site } from '../data/site';
       buyer who asks.
     </p>
     <p class="vx-measure">
-      The same applies to product pages. Where a dimension, a minimum quantity, a
-      lead time or a certification depends on your specification, we describe what
-      can be specified and confirm the actual figure in writing with your quote.
+      The same applies to product pages. They publish what is fixed: 100 boxes for
+      $30.00 ($0.30 each), production in 5–7 business days after proof approval,
+      and free shipping to the US, UK, Canada and Australia. Where a dimension, a
+      larger quantity or a certification depends on your specification, we describe
+      what can be specified and confirm the actual figure in writing with your quote.
       There are no star ratings on this site either, because we do not have a
       verified review dataset to display — and a rating you cannot trace is worth
       nothing to you.
@@ -125,11 +127,12 @@ import { site } from '../data/site';
   <InfoSection
     id="contact"
     heading="Getting in touch"
-    intro="One email address, one form, and no call-center routing."
+    intro="One phone number, one email address, one form, and no call-center routing."
   >
     <p class="vx-measure">
-      Email <a href={`mailto:${site.email}`}>{site.email}</a>, or use the quote
-      request form linked from every page. Including dimensions and quantity in
+      Call <a href={`tel:${site.phone}`}>{site.phoneDisplay}</a>, email <a href={`mailto:${site.email}`}>{site.email}</a>,
+      or use the quote request form linked from every page. Our business address is
+      {site.address!.street}, {site.address!.city}, {site.address!.region} {site.address!.postalCode}. Including dimensions and quantity in
       the first message is the fastest route to a real number rather than a list of
       questions.
     </p>

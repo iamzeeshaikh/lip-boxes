@@ -40,7 +40,7 @@
    },
    {
     "q": "How are finished lip packaging orders packed and delivered?",
-    "a": "Orders are packed to your case count, palletized where appropriate and released with tracking through a nationwide carrier service. Freight is quoted alongside the goods, so you see both figures before you commit to the order."
+    "a": "Orders are packed to your case count, palletized where appropriate and shipped with tracking. Shipping is free to the US, UK, Canada and Australia, so there is no freight charge on top of the price you approve."
    }
   ]
  },
@@ -68,8 +68,8 @@
     "a": "No. Compliance stays with the brand. Lip Boxes prints the file you approve, so ingredient declarations, net contents, SPF drug facts panels and product claims should be checked by a qualified regulatory reviewer before you sign off the proof."
    },
    {
-    "q": "Does Lip Boxes supply lip packaging across the whole United States?",
-    "a": "Yes. Custom printed lip packaging is supplied to brands across the United States. Every order is manufactured to a die line drawn for a specific container and delivered through a nationwide carrier service, with freight quoted alongside the goods."
+    "q": "Where does Lip Boxes ship custom lip packaging?",
+    "a": "To the United States, the United Kingdom, Canada and Australia, free. Every order is manufactured to a die line drawn for a specific container and shipped with tracking from our base at 1639 70th St, Brooklyn, NY 11204. Other countries are quoted on request."
    },
    {
     "q": "Why can Lip Boxes not ship custom lip packaging tomorrow?",
@@ -81,11 +81,11 @@
    },
    {
     "q": "How do I reach the Lip Boxes team with a packaging question?",
-    "a": "Use email or the quote request form linked from every page; there is no call-center routing. Putting dimensions and quantity in your first message is the fastest route to a real number, and you can contact the Lip Boxes packaging team directly."
+    "a": "Call (503) 461-4788, email info@lipboxes.com or use the quote request form linked from every page; there is no call-center routing. Putting dimensions and quantity in your first message is the fastest route to a real number."
    },
    {
-    "q": "Does Lip Boxes publish fixed lead times or minimums for lip packaging?",
-    "a": "No fixed figures are published, because they depend on your specification. Where a dimension, minimum quantity, lead time or certification depends on the job, the options are described and the actual figure is confirmed in writing with your quote."
+    "q": "Does Lip Boxes publish lead times and prices for lip packaging?",
+    "a": "Yes. Every style sells online at 100 boxes for $30.00 ($0.30 each), production takes 5–7 business days after proof approval, and shipping is free to the US, UK, Canada and Australia. Larger or custom runs get their price and window confirmed in writing with your quote."
    }
   ]
  },
@@ -174,8 +174,8 @@
     "a": "No. Once a die is cut and a proof approved, a repeat order carries no die or proofing charge. Mention a planned reorder cycle at quoting stage, as explained in how reorders and approvals work."
    },
    {
-    "q": "How should I read a headline starting price on packaging?",
-    "a": "Treat it as the figure for the simplest specification at the highest volume. It is a useful floor for comparison rather than a quote, so ask for pricing at your own quantity and at the next volume break."
+    "q": "How should I read a published pack price on packaging?",
+    "a": "As the price for that exact pack and specification. Ours is 100 boxes for $30.00 ($0.30 each) with free shipping; at larger quantities or a different specification, ask for pricing at your own quantity and at the next volume break."
    }
   ]
  },
@@ -555,8 +555,8 @@
     "a": "Yes. Quick questions and photographs of samples go through the general contact route, while quotes, artwork files and existing order queries go through the quote and order route."
    },
    {
-    "q": "Why are no phone number or address listed in the Lip Boxes contact details?",
-    "a": "They will be published once confirmed. Rather than show an address or number that has not been verified, those fields stay empty, and email and the quote form remain the routes that reach the team reliably."
+    "q": "What is the Lip Boxes phone number and address?",
+    "a": "Call (503) 461-4788 during response hours, or write to Lip Boxes, 1639 70th St, Brooklyn, NY 11204. Email info@lipboxes.com and the quote form reach the same team. The address is not a collection point, because every order is made to order and shipped."
    },
    {
     "q": "Where can I read how Lip Boxes handles information I send?",
@@ -735,8 +735,8 @@
     "a": "The Florida guide. It covers resort and tourism retail with a fixed season, and humidity in storage, which together shape the lip packaging specification there more than the artwork does."
    },
    {
-    "q": "Are production and transit time quoted separately in Lip Boxes market quotes?",
-    "a": "Yes. Send your dimensions, quantity and delivery destination, and the written price states production time and transit time separately, since a production window ends when goods leave rather than when they arrive."
+    "q": "Are production and transit time stated separately in Lip Boxes market quotes?",
+    "a": "Yes. Production takes 5–7 business days after proof approval, and free delivery then takes 5–7 business days in the US. A quoted run with extra finishing gets its own production window in writing, since a production window ends when goods leave rather than when they arrive."
    }
   ]
  },
@@ -789,8 +789,8 @@
   "h2": "Further questions on lip packaging in Austin",
   "faqs": [
    {
-    "q": "How is delivery to an Austin address costed in a Lip Boxes quote?",
-    "a": "Delivery is costed to the Austin address you give rather than estimated, and stated in writing alongside the unit price. Packaging is made to order and shipped through a nationwide carrier service, with lead time confirmed on the quote."
+    "q": "How is delivery to an Austin address handled in a Lip Boxes quote?",
+    "a": "Shipping to the Austin address you give is free, and the quote states the production window alongside the unit price. Packaging is made to order and shipped with tracking, arriving 5–7 business days after dispatch."
    },
    {
     "q": "Do Austin direct-to-consumer lip brands need a mailer for every order?",
@@ -832,8 +832,8 @@
     "a": "Earlier than a production-only schedule suggests. Because Chicago buyer meetings and trade events turn on what you can hand across a table, treat physical samples as a commercial cost and build them in before the meeting date."
    },
    {
-    "q": "How are Lip Boxes deliveries to Chicago addresses quoted?",
-    "a": "Delivery is costed to the exact Chicago address you give rather than estimated, and stated in writing with the lead time. Packaging is manufactured to order and shipped through a nationwide carrier service."
+    "q": "How are Lip Boxes deliveries to Chicago addresses handled?",
+    "a": "Shipping to any Chicago address is free, and delivery takes 5–7 business days after dispatch. Packaging is manufactured to order and shipped with tracking, with the production window stated in writing."
    }
   ]
  },
@@ -884,8 +884,8 @@
     "a": "Around rodeo and stock show periods, festivals and visitor-driven retail districts. Volume concentrates into short defined windows, and stock that misses one waits months for the next, so plan Fort Worth orders around those dates."
    },
    {
-    "q": "How is lip packaging delivery to Fort Worth addresses quoted?",
-    "a": "Delivery is costed to the Fort Worth address you give, whether a store or a venue, and stated in writing with the lead time. Packaging is made to order and shipped through a nationwide carrier service."
+    "q": "How is lip packaging delivered to Fort Worth addresses?",
+    "a": "Free, to the Fort Worth address you give, whether a store or a venue, in 5–7 business days after dispatch. Packaging is made to order and shipped with tracking, with the production window stated in writing."
    }
   ]
  },
@@ -919,12 +919,12 @@
   "h2": "Further questions on lip packaging in Jacksonville",
   "faqs": [
    {
-    "q": "Why is lip packaging freight to Jacksonville charged on volume?",
-    "a": "Lip packaging is light and bulky, so carriers charge on dimensional weight rather than actual weight. That makes several small Jacksonville consignments cost disproportionately more than one consolidated shipment."
+    "q": "Why does consolidating lip packaging deliveries to Jacksonville help?",
+    "a": "Lip packaging is light and bulky, so a range ordered piecemeal arrives as several deliveries, each needing receiving, checking and storage space. Shipping is free either way; one consolidated delivery simply means one intake and one set of paperwork."
    },
    {
     "q": "When should Jacksonville brands order smaller, more frequent packaging runs?",
-    "a": "When storage is poor. Paperboard absorbs moisture and loses stiffness, so if Jacksonville stock would sit in uncontrolled storage, more frequent smaller orders beat a consolidated one despite the freight arithmetic."
+    "a": "When storage is poor. Paperboard absorbs moisture and loses stiffness, so if Jacksonville stock would sit in uncontrolled storage, more frequent smaller orders beat a consolidated one."
    }
   ]
  },
@@ -988,8 +988,8 @@
     "a": "Convenience stores, pharmacies and fuel retail move a large share of the lip balm sold in the Phoenix metro, and almost all of it hangs from a peg rather than sitting on a shelf, which makes tab engineering central."
    },
    {
-    "q": "How are lip packaging deliveries to Phoenix addresses quoted?",
-    "a": "Delivery is costed to the Phoenix address you give rather than estimated, and stated in writing with the lead time. Packaging is manufactured to order and shipped through a nationwide carrier service."
+    "q": "How are lip packaging deliveries to Phoenix addresses handled?",
+    "a": "Shipping to any Phoenix address is free, and delivery takes 5–7 business days after dispatch. Packaging is manufactured to order and shipped with tracking, with the production window stated in writing."
    }
   ]
  },
@@ -1040,8 +1040,8 @@
     "a": "Visitors to museum shops sometimes ask about what they buy, so the store wants a material story it can explain. In Washington, D.C. institutional retail, that sits alongside design restraint as a buying requirement."
    },
    {
-    "q": "How are lip packaging deliveries to Washington, D.C. addresses quoted?",
-    "a": "Delivery is costed to the Washington, D.C. address you give rather than estimated, and stated in writing with the lead time. Packaging is manufactured to order and shipped through a nationwide carrier service."
+    "q": "How are lip packaging deliveries to Washington, D.C. addresses handled?",
+    "a": "Shipping to any Washington, D.C. address is free, and delivery takes 5–7 business days after dispatch. Packaging is manufactured to order and shipped with tracking, with the production window stated in writing."
    }
   ]
  },
@@ -1054,11 +1054,11 @@
    },
    {
     "q": "Does Lip Boxes keep premises or stock in any of these twenty states?",
-    "a": "No. Lip Boxes has no premises, held stock or staff in any of the states covered. Every order is made to a die line drawn for your container and shipped nationwide, with delivery costed separately for each order."
+    "a": "No. Apart from our business address in Brooklyn, New York, Lip Boxes has no premises, held stock or staff in any of the states covered. Every order is made to a die line drawn for your container and shipped free, arriving 5–7 business days after dispatch."
    },
    {
     "q": "What should I send when requesting a quote for delivery to my state?",
-    "a": "Send the container dimensions, quantity, artwork status and the delivery state. The written quote then states production time and transit time separately, so you can see how long manufacturing takes and how long the consignment spends in transit."
+    "a": "Send the container dimensions, quantity, artwork status and the delivery state. Production takes 5–7 business days after proof approval and free delivery takes 5–7 business days, and the written quote states both, so you can see how long manufacturing takes and how long the shipment spends in transit."
    },
    {
     "q": "Which state guide covers lip packaging for mass retail planogram resets?",
@@ -1108,7 +1108,7 @@
   "faqs": [
    {
     "q": "Is a folding carton enough for California direct-to-consumer lip product orders?",
-    "a": "No. A folding carton posted loose arrives crushed, so California brands selling direct to consumers usually pair the carton with a printed mailer. Flat cartons and labels travel economically by weight, while assembled rigid boxes and paper tubes are charged on volume."
+    "a": "No. A folding carton posted loose arrives crushed, so California brands selling direct to consumers usually pair the carton with a printed mailer. Flat cartons and labels pack densely, while assembled rigid boxes and paper tubes take far more space per unit."
    }
   ]
  },
@@ -1147,7 +1147,7 @@
    },
    {
     "q": "What should a Georgia brand shipping from home tell us when quoting?",
-    "a": "Say at quoting stage that delivery is to a residence or small studio rather than a commercial address. Residential delivery changes the service level and the cost, and a pallet arriving at a Georgia house without a liftgate arranged is easier to prevent than fix."
+    "a": "Say at quoting stage that delivery is to a residence or small studio rather than a commercial address. Residential delivery changes the carrier service, and a pallet arriving at a Georgia house without a liftgate arranged is easier to prevent than fix."
    }
   ]
  },
@@ -1168,8 +1168,8 @@
   "h2": "Indiana lip packaging questions",
   "faqs": [
    {
-    "q": "Why does volume rather than weight drive freight for Indiana lip shipments?",
-    "a": "Freight is charged on whichever is greater, weight or volume, and lip products are light, so volume almost always governs. For Indiana distribution that makes units per pallet the figure that sets shipping cost per unit across every shipment for the life of the product."
+    "q": "Why does volume rather than weight decide how Indiana lip shipments pack?",
+    "a": "Lip products are light, so a case fills up by volume long before it gets heavy. For Indiana distribution that makes units per case and per pallet the figures that decide how many cases each delivery and each onward shipment takes."
    },
    {
     "q": "Should Indiana pallets be stretch wrapped, strapped or slip sheeted?",
@@ -1441,7 +1441,7 @@
   "faqs": [
    {
     "q": "How many lip packaging formats does Lip Boxes make to order?",
-    "a": "Eleven made-to-order formats, grouped by the product they hold: lip balm, lipstick, lip gloss and lip care. Each is cut to your dimensions, printed to your artwork and quoted to your specification rather than sold from a price list."
+    "a": "Eleven made-to-order formats, grouped by the product they hold: lip balm, lipstick, lip gloss and lip care. Each is printed to your artwork and sold online at 100 boxes for $30.00 ($0.30 each), and larger or custom runs are quoted to your specification."
    },
    {
     "q": "Which lip balm packaging formats can I choose between?",
@@ -1494,7 +1494,7 @@
    },
    {
     "q": "What does a written lip packaging quote show?",
-    "a": "It gives a written price at your quantity and at the next volume break, so you can see where the saving sits. Freight is quoted alongside the goods and the production window is confirmed in writing."
+    "a": "It gives a written price at your quantity and at the next volume break, so you can see where the saving sits. Shipping is free to the US, UK, Canada and Australia, and the production window is confirmed in writing."
    },
    {
     "q": "What happens after I accept a lip packaging quote?",
@@ -1509,8 +1509,8 @@
     "a": "Either works, but a physical sample is better. For a tube, give the outside diameter and height with the cap on, and for a lipstick, the width at the widest point with the cap fitted. A posted sample removes most fit risk."
    },
    {
-    "q": "Does the starting price on the quote form apply to my lip boxes?",
-    "a": "The starting figure is an entry point for a simple specification at high volume. Your quote states the actual unit price for your job, which depends on size, material, printing, finish and quantity."
+    "q": "Does the online pack price apply to my lip boxes?",
+    "a": "The online price is 100 boxes for $30.00 ($0.30 each), printed full color to your artwork, with free shipping. For a larger run or a different size, material or finish, your quote states the actual unit price for your job."
    },
    {
     "q": "How quickly are lip packaging quote requests answered?",
@@ -1737,12 +1737,12 @@
   "h2": "Questions about lip packaging turnaround",
   "faqs": [
    {
-    "q": "Why is there no fixed lead time for custom lip packaging?",
-    "a": "The honest answer depends on your specification and on how quickly approvals come back. A digitally printed carton with varnish moves quickly, while litho with foil, spot UV and an insert needs several more passes, so a written window comes with every quote."
+    "q": "What is the standard lead time for custom lip packaging?",
+    "a": "Production takes 5–7 business days after you approve the proof, for the online pack and most quoted runs. A run with extra passes, such as litho with foil, spot UV and an insert, gets its own window in writing on the quote."
    },
    {
     "q": "Which stages of a lip packaging lead time depend on the customer?",
-    "a": "Die line approval, artwork supply and proof sign-off sit with you. A job where proofs return the same day finishes noticeably sooner than an identical job where they take two weeks, and no supplier can quote around that."
+    "a": "Die line approval, artwork supply and proof sign-off sit with you. Production starts at proof approval, so a job where proofs return the same day finishes noticeably sooner than an identical job where they take two weeks."
    },
    {
     "q": "Which finishes add the most time to lip packaging production?",
@@ -1770,7 +1770,7 @@
    },
    {
     "q": "Is transit time included in the lip packaging production window?",
-    "a": "No. A production window ends when the goods leave, not when they arrive. Transit depends on destination, freight method and volume, and is quoted separately, as set out in the shipping and delivery information."
+    "a": "No. A production window ends when the goods leave, not when they arrive. Shipping is free, and delivery takes 5–7 business days in the US and 7–10 to the UK, Canada and Australia, as set out in the shipping and delivery information."
    },
    {
     "q": "Do multiple lip SKUs take longer than a single carton?",

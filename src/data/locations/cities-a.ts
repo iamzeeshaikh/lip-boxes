@@ -56,9 +56,9 @@ export const newYorkCity: Location = {
       heading: 'Getting a delivery into the city',
       navLabel: 'Delivery',
       body: [
-        'City delivery has constraints that suburban delivery does not, and they change the freight quote rather than being absorbed by it.',
-        'Buildings without loading docks need a liftgate. Walk-up addresses and shared studio spaces may need inside delivery. Some blocks have delivery windows. All of these are quotable if we know about them and expensive to find out about on the day.',
-        'Say at quoting stage whether the delivery point is a commercial address with a dock, a ground-floor unit, or an upper-floor studio. Detail on how freight is arranged is on our <a href="/shipping-information/">delivery access requirements</a>.',
+        'City delivery has constraints that suburban delivery does not. Shipping is still free, but the carrier has to be booked for them in advance.',
+        'Buildings without loading docks need a liftgate. Walk-up addresses and shared studio spaces may need inside delivery. Some blocks have delivery windows. All of these are easy to plan if we know about them and expensive to find out about on the day.',
+        'Say at quoting stage whether the delivery point is a commercial address with a dock, a ground-floor unit, or an upper-floor studio. Detail on how deliveries are arranged is on our <a href="/shipping-information/">delivery access requirements</a>.',
       ],
     },
   ],
@@ -77,11 +77,11 @@ export const newYorkCity: Location = {
     },
     {
       q: 'What do I need to tell you about a city delivery address?',
-      a: 'Whether there is a loading dock, whether it is ground floor or upper floor, and whether the building has a delivery window. Liftgate and inside delivery are both quotable in advance and expensive to arrange on the day.',
+      a: 'Whether there is a loading dock, whether it is ground floor or upper floor, and whether the building has a delivery window. Liftgate and inside delivery are both simple to book in advance and hard to arrange on the day.',
     },
     {
       q: 'Can you ship to a Manhattan studio address?',
-      a: 'Yes. Flag it as a non-dock address at quoting stage so the service level is priced correctly. A pallet arriving at a building without a liftgate arranged is the most common avoidable delivery problem in dense city centers.',
+      a: 'Yes. Flag it as a non-dock address at quoting stage so the right carrier service is booked. A pallet arriving at a building without a liftgate arranged is the most common avoidable delivery problem in dense city centers.',
     },
     {
       q: 'Is rigid packaging worth it for city boutiques?',
@@ -94,7 +94,7 @@ export const newYorkCity: Location = {
     {
       q: 'Do you have a New York City facility?',
       a:
-        'No. There is no office, plant or warehouse in New York City. Every order is manufactured after you approve it and sent to your New York City address by carrier.',
+        'Our business address is 1639 70th St in Brooklyn, but it is not a plant, warehouse or collection point. Every order is manufactured after you approve it and shipped free to your New York City address by carrier.',
     },
   ],
 };

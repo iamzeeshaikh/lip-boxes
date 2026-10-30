@@ -28,7 +28,7 @@ const crumbs: Crumb[] = [{ name: 'Home', path: '/' }, { name: 'Locations' }];
 const faqs = [
   {
     q: 'Do you have offices or plants in these locations?',
-    a: `No. ${site.name} has no branch, plant, warehouse or held stock in any of the states or cities listed here. Every order is manufactured to order and shipped through a nationwide carrier service.`,
+    a: `No. Apart from our business address in Brooklyn, New York, ${site.name} has no branch, plant, warehouse or held stock in any of the states or cities listed here. Every order is manufactured to order and shipped free with tracking.`,
   },
   {
     q: 'Then what are these pages for?',
@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     q: 'Does the price change depending on where I am?',
-    a: 'The packaging price does not. Delivery is quoted per order and does vary with destination, weight and how quickly you need it, so the total on your quote reflects where it is going.',
+    a: 'No. The online price is 100 boxes for $30.00 ($0.30 each) wherever you are, and shipping is free to every US address, as well as to the UK, Canada and Australia. Delivery takes 5–7 business days in the US after production.',
   },
   {
     q: 'You do not list my state or city. Can you still supply me?',
@@ -97,10 +97,11 @@ const schema = graph(
         applies.
       </p>
       <p class="loc-disclosure">
-        <strong>To be plain about it:</strong> {site.name} has no office, plant,
-        warehouse, held stock, local staff or collection point in any location listed
-        below. Packaging is manufactured to order and delivered through a nationwide
-        carrier service. These pages describe markets we supply, not places we occupy.
+        <strong>To be plain about it:</strong> apart from our business address in
+        Brooklyn, New York, {site.name} has no office, plant, warehouse, held stock,
+        local staff or collection point in any location listed below. Packaging is
+        manufactured to order and shipped free with tracking. These pages describe
+        markets we supply, not places we occupy.
       </p>
       <p>
         If your state or city is not listed, nothing changes about what you can order.

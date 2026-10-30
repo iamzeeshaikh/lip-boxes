@@ -164,7 +164,7 @@ export const product: Product = {
       navLabel: 'Quantity & pricing',
       body: [
         'Gloss ranges tend to be wide: eight or twelve shades is common, with modest quantities of each. Digital printing suits that pattern well, since there is no plate charge per design and all the shades share one die line, one board and one finish.',
-        'Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity. A plain slim carton at high volume approaches that figure. Adding a window patch, an insert, spot UV or foil moves it upward, as does splitting the run across many shades at low quantities each.',
+        'Online, 100 boxes cost $30.00 ($0.30 each) with free shipping to the US, UK, Canada and Australia. Larger runs are quoted on size, material, printing and quantity: a plain slim carton at high volume is the most economical, and a window patch, an insert, spot UV or foil adds to it, as does splitting the run across many shades at low quantities each.',
         'Send the shade count and per-shade quantity, not just the total, since that combination decides which print process is quoted.',
       ],
     },
@@ -204,7 +204,7 @@ export const product: Product = {
       body: [
         'Because these cartons are tall and narrow, the checks that matter most are squareness and crease accuracy. A crease that is out by half a millimeter on a three-inch panel produces a carton that leans, and a leaning carton on a shelf reads as a manufacturing fault to a shopper. Sample cartons are stood up and checked visually as well as measured.',
         'Paperboard is widely recycled in United States municipal streams. A film window patch and a plastic lamination are separate materials that a consumer has to deal with, and metallized board is not paper-recyclable. Where end-of-life matters, an uncoated or varnish-finished board with a printed swatch instead of a window keeps the pack in one stream.',
-        'Production time depends on whether the job includes window patching, foil or spot UV, each of which is an additional pass. We confirm the schedule in writing with the quote, and the bands we work to are set out on the <a href="/turnaround-time/">production turnaround times</a>.',
+        'The online 100-box pack is produced in 5–7 business days after proof approval. On a quoted run, window patching, foil or spot UV are each an additional pass, so we confirm that schedule in writing with the quote; the standard times are set out on the <a href="/turnaround-time/">production turnaround times</a>.',
       ],
     },
   ],
@@ -220,8 +220,8 @@ export const product: Product = {
     { label: 'Finishes', value: 'Matte, gloss and soft-touch lamination, spot UV, foil stamp, emboss' },
     { label: 'Range support', value: 'One die line across all shades; per-shade artwork variants' },
     { label: 'Artwork format', value: 'PDF, AI, EPS at 300 dpi with 3 mm bleed and outlined fonts' },
-    { label: 'Starting unit price', value: 'From $0.30 per piece on qualifying large-volume orders' },
-    { label: 'Ordering', value: 'Quote based; per-shade quantities affect the print process selected' },
+    { label: 'Online price', value: '100 boxes: $30.00 ($0.30 each), free shipping to the US, UK, Canada and Australia' },
+    { label: 'Ordering', value: 'Order 100 online, or get a quote for larger runs; per-shade quantities affect the print process selected' },
   ],
   faqs: [
     {
@@ -270,7 +270,7 @@ export const product: Product = {
     },
     {
       q: 'How long does production take?',
-      a: 'It depends on the finishing. A plain laminated carton is faster than one with a window patch, foil and spot UV, since each of those is an additional pass. We confirm a production window in writing with the quote and update it if the specification changes.',
+      a: '5–7 business days after proof approval for the online 100-box pack, then free delivery. On a quoted run with a window patch, foil and spot UV, each is an additional pass, so we confirm that production window in writing with the quote and update it if the specification changes.',
     },
   ],
   related: ['holographic-lip-gloss-boxes', 'custom-lipstick-boxes', 'custom-lip-care-packaging', 'hang-tab-lipstick-boxes'],

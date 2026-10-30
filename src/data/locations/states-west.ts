@@ -112,20 +112,20 @@ export const california: Location = {
       heading: 'Ordering from California',
       navLabel: 'Ordering',
       body: [
-        'Lip Boxes manufactures to order and ships to addresses across California through a nationwide custom-order service. There is no California office, warehouse or local pickup point, and no claim to a same-day or local service.',
-        'What that means in practice is that a California order runs on the same process as anywhere else: dimensions or a physical sample, a written quote, a die line and structural sample to approve, a color proof, then production and freight to your address or your filler.',
+        'Lip Boxes manufactures to order and ships free to addresses across California. There is no California office, warehouse or local pickup point, and no claim to a same-day or local service.',
+        'What that means in practice is that a California order runs on the same process as anywhere else: dimensions or a physical sample, a written quote, a die line and structural sample to approve, a color proof, then production and free shipping to your address or your filler.',
         'If you are shipping to a contract filler rather than to yourself, send their receiving hours, appointment requirements and case labeling rules with the order. Refused deliveries at Southern California co-packers are avoidable and expensive.',
       ],
     },
     {
       type: 'prose',
       id: 'shipping',
-      heading: 'Freight to California addresses',
-      navLabel: 'Freight',
+      heading: 'Shipping to California addresses',
+      navLabel: 'Shipping',
       body: [
-        'Freight is quoted per consignment rather than published, because it depends on volume, destination and how the goods have to be received. We do not quote transit times as guarantees.',
-        'Two things affect California shipments specifically. Flat-packed cartons and labels are charged on weight and travel economically. Assembled rigid boxes and paperboard tubes are bulky and charged on volume, so consolidating a launch into one consignment usually costs materially less than several smaller ones.',
-        'If the delivery point is a residential address, a shared studio or a building without a dock, say so at quoting stage. Those conditions change the service level and the cost, and it is cheaper to quote correctly than to re-deliver. <a href="/shipping-information/">What changes a delivery quote</a> is set out in full.',
+        'Shipping to any California address is free. Production takes 5–7 business days after proof approval, and delivery then takes 5–7 business days.',
+        'Two things affect California shipments specifically. Flat-packed cartons and labels pack densely and arrive as a few compact cases. Assembled rigid boxes and paperboard tubes are bulky, so a launch consolidated into one delivery means one intake at your end rather than several.',
+        'If the delivery point is a residential address, a shared studio or a building without a dock, say so at quoting stage. Those conditions change the carrier service, and it is easier to plan correctly than to re-deliver. <a href="/shipping-information/">What a smooth delivery needs</a> is set out in full.',
       ],
     },
   ],
@@ -156,8 +156,8 @@ export const california: Location = {
       a: 'Uncoated or kraft board with a varnish rather than a plastic laminate keeps the carton in a single material stream, and paperboard push-up tubes remove plastic from the container entirely. We will confirm exactly what a given specification contains so any claim you make is accurate.',
     },
     {
-      q: 'How is freight to California quoted?',
-      a: 'Per consignment, based on volume, destination and receiving conditions. Flat cartons are charged on weight; assembled rigid boxes and paperboard tubes are charged on volume. Consolidating a launch into one shipment usually costs materially less than several.',
+      q: 'What does shipping to California cost?',
+      a: 'Nothing. Shipping is free to every California address, and delivery takes 5–7 business days after production. Flat cartons pack densely, while assembled rigid boxes and paperboard tubes take far more space, so consolidating a launch into one shipment keeps receiving simple.',
     },
     {
       q: 'Can you match packaging to a launch campaign date?',
@@ -289,9 +289,9 @@ export const washington: Location = {
       heading: 'Ordering and delivery in Washington',
       navLabel: 'Ordering',
       body: [
-        'We make to order and ship to Washington addresses as part of a nationwide service. There is no Washington facility, no local stock and no local pickup, and we do not claim a regional presence we do not have.',
-        'Freight is quoted per consignment. Paperboard tubes are bulky relative to their weight and are charged on volume, which matters more here than in most markets because tubes make up a larger share of what Washington brands order.',
-        'Where a product is going to a small studio or a residential address rather than a commercial dock, say so when requesting a quote. It changes the service level and the cost.',
+        'We make to order and ship free to Washington addresses as part of a nationwide service. There is no Washington facility, no local stock and no local pickup, and we do not claim a regional presence we do not have.',
+        'Shipping is free, with delivery 5–7 business days after production. Paperboard tubes are bulky relative to their weight, which matters more here than in most markets because tubes make up a larger share of what Washington brands order: plan storage for more cases than the same count of flat cartons.',
+        'Where a product is going to a small studio or a residential address rather than a commercial dock, say so when requesting a quote. It changes the carrier service.',
       ],
     },
   ],
@@ -326,8 +326,8 @@ export const washington: Location = {
         'Not in person. There is no showroom or office in Washington, so samples are posted to you instead, and the sample options are set out on the sample kit page.',
     },
     {
-      q: 'Why are paperboard tubes more expensive to ship than cartons?',
-      a: 'Because they arrive assembled rather than flat, so they are bulky relative to their weight and freight is charged on volume. Consolidating into fewer, larger consignments makes a material difference to delivered cost on this format.',
+      q: 'Why do paperboard tubes take more space to ship than cartons?',
+      a: 'Because they arrive assembled rather than flat, so they are bulky relative to their weight. Shipping is still free, but a delivery of tubes arrives as more cases than the same count of flat cartons, so plan storage before the delivery date.',
     },
   ],
 };

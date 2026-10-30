@@ -4,6 +4,8 @@ import InfoSection from '../components/InfoSection.astro';
 import Icon from '../components/Icon.astro';
 import { site } from '../data/site';
 
+const addr = site.address!;
+
 const channels = [
   {
     icon: 'mail' as const,
@@ -41,14 +43,14 @@ const channels = [
   ogTitle="Contact Lip Boxes"
   ogDescription="Reach us about a quote, an existing order, artwork or samples for custom lip product packaging."
   pageType="ContactPage"
-  points={[site.supportHours, 'United States market', 'Quote requests answered in order']}
+  points={[site.supportHours, `Call ${site.phoneDisplay}`, 'Quote requests answered in order']}
   ctaHeading="Sending a specification?"
   ctaBody="The quote form asks for everything we need in order, so nothing has to come back to you as a follow-up question."
 >
   <InfoSection
     id="channels"
     heading="How to reach us"
-    intro="Contact details are listed only where they are confirmed. Anything not shown here has not been published yet rather than being withheld."
+    intro="Email, phone, WhatsApp or the quote form all reach the same team."
   >
     <ul class="channels">
       {
@@ -171,13 +173,20 @@ const channels = [
   <InfoSection
     id="business-details"
     heading="Business details"
-    intro="Company registration details, a postal address and a phone number will be published here once they are confirmed for this site."
+    intro="Where to write, call or email us."
   >
+    <address class="vx-measure biz">
+      <strong>{site.name}</strong><br />
+      {addr.street}<br />
+      {addr.city}, {addr.region} {addr.postalCode}<br />
+      United States<br />
+      Phone: <a href={`tel:${site.phone}`}>{site.phoneDisplay}</a><br />
+      Email: <a href={`mailto:${site.email}`}>{site.email}</a>
+    </address>
     <p class="vx-measure">
-      We would rather leave those fields empty than show an address or a phone
-      number that has not been verified. Until they are confirmed, email and the
-      quote form are the routes that reach us reliably, and both are monitored
-      during the response hours above.
+      This is our business address, not a collection point or showroom. Every
+      order is made to order and shipped to you, free to the United States, the
+      United Kingdom, Canada and Australia.
     </p>
     <p class="vx-measure">
       How we handle the information you send, and how long it is kept, is set out
@@ -187,6 +196,11 @@ const channels = [
 </InfoLayout>
 
 <style>
+  .biz {
+    font-style: normal;
+    line-height: 1.7;
+    margin-bottom: var(--sp-4);
+  }
   .channels {
     list-style: none;
     margin: 0;

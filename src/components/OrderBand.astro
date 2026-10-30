@@ -1,45 +1,154 @@
 ---
 /**
- * Red "Order online" band. Driven by `site.orderPack`; while the price is null
- * the component renders nothing at all.
+ * Red "Order online" band: 100 boxes for $30.00, on the home page and every
+ * product page. Price, shipping and payment wording come from
+ * src/data/order.ts, the same constants as the Product Offer JSON-LD, the
+ * Merchant feed and /checkout/, so the band, the listing and the order cannot
+ * disagree.
+ *
+ * With `product` set (product pages) the band sells that style and shows its
+ * own photo. Without it the visitor picks a style. The button opens /checkout/
+ * with the style and pack count; nothing is charged on the site.
  */
 import { Image } from 'astro:assets';
-import { site } from '../data/site';
+import { products } from '../data/products';
 import { productImage } from '../lib/images';
+import type { Product } from '../data/types';
+import {
+  PACK_QTY,
+  PACK_PRICE,
+  MAX_PACKS,
+  PRICE_LINE,
+  SHIP_LINE,
+  PRODUCTION_TEXT,
+  TRANSIT_US_TEXT,
+  TRANSIT_INTL_TEXT,
+  PAYMENT_LINE,
+  money,
+} from '../data/order';
 
-const pack = site.orderPack;
-const qty = pack.qty.toLocaleString('en-US');
-const photo = productImage('lipstick-boxes', 'lipstick-box-single-shade-carton.png');
+interface Props {
+  product?: Product;
+  defaultSlug?: string;
+  id?: string;
+}
+
+const { product, defaultSlug = 'lipstick-boxes', id = 'order' } = Astro.props;
+const qty = PACK_QTY.toLocaleString('en-US');
+const photo = product
+  ? productImage(product.slug, product.images[0].file)
+  : productImage('lipstick-boxes', 'lipstick-box-single-shade-carton.png');
+const alt = product
+  ? `${product.name}, printed to the buyer's artwork`
+  : 'Printed lipstick carton beside a pink lipstick';
+const headingId = `${id}-heading`;
 ---
 
-{
-  pack.price && (
-    <section class="vx-order" aria-labelledby="order-heading">
-      <div class="vx-order__photo">
-        <Image
-          src={photo}
-          alt="Printed lipstick carton beside a pink lipstick"
-          widths={[400, 700]}
-          sizes="(min-width: 62rem) 30vw, 90vw"
-          width={700}
-          height={700}
-          loading="lazy"
-        />
+<section class="vx-order" id={id} aria-labelledby={headingId}>
+  <div class="vx-order__photo">
+    <Image
+      src={photo}
+      alt={alt}
+      widths={[400, 700]}
+      sizes="(min-width: 62rem) 30vw, 90vw"
+      width={700}
+      height={700}
+      loading="lazy"
+    />
+  </div>
+  <div class="vx-order__copy">
+    <h2 id={headingId}>Order {qty} boxes online</h2>
+    <p class="vx-order__lede">
+      {product ? product.name : 'Any style'} in a pack of {qty}, printed full color
+      to your artwork after you approve a proof. Larger runs, other sizes and
+      specialty finishes are quoted, so <a href="/request-a-quote/">request a quote</a> for those.
+    </p>
+  </div>
+  <form
+    class="vx-order__box"
+    action="/checkout/"
+    method="get"
+    data-ob
+    data-pack={PACK_PRICE}
+    data-qty={PACK_QTY}
+  >
+    <p class="vx-order__line">
+      {qty} boxes <span class="vx-order__price">{money(PACK_PRICE)}</span>
+    </p>
+    <p class="vx-order__each">{PRICE_LINE}</p>
+    <ul class="vx-order__spec">
+      {
+        product ? (
+          <li>
+            <span>Style</span> {product.name}
+          </li>
+        ) : (
+          <li>
+            <label for={`${id}-style`}>Style</label>
+            <select id={`${id}-style`} name="add" class="vx-order__select">
+              {products.map((p) => (
+                <option value={p.slug} selected={p.slug === defaultSlug}>
+                  {p.name}
+                </option>
+              ))}
+            </select>
+          </li>
+        )
+      }
+      <li><span>Production</span> {PRODUCTION_TEXT} after proof approval</li>
+      <li>
+        <span>Delivery</span> {TRANSIT_US_TEXT} in the US, {TRANSIT_INTL_TEXT} to
+        the UK, Canada and Australia
+      </li>
+    </ul>
+    {product && <input type="hidden" name="add" value={product.slug} />}
+    <input type="hidden" name="packs" value="1" data-ob-packs />
+    <div class="vx-order__buy">
+      <div class="vx-order__stepper" data-ob-max={MAX_PACKS}>
+        <button type="button" aria-label="One pack fewer" data-ob-minus>−</button>
+        <output aria-live="polite" data-ob-count>1</output>
+        <button type="button" aria-label="One pack more" data-ob-plus>+</button>
       </div>
-      <div class="vx-order__copy">
-        <h2 id="order-heading">Order {qty} boxes online</h2>
-      </div>
-      <div class="vx-order__box">
-        <p class="vx-order__line">
-          {qty} boxes <span class="vx-order__price">${pack.price}</span>
-        </p>
-        <a class="vx-btn vx-btn--red vx-btn--block" href={pack.href}>
-          Order Now
-        </a>
-      </div>
-    </section>
-  )
-}
+      <p class="vx-order__units">
+        <span data-ob-units>{qty}</span> boxes · <span data-ob-total>{money(PACK_PRICE)}</span>
+      </p>
+    </div>
+    <button type="submit" class="vx-btn vx-btn--red vx-btn--block">Order Now</button>
+    <p class="vx-order__ship">{SHIP_LINE}. {PAYMENT_LINE}</p>
+  </form>
+</section>
+
+<script>
+  document.querySelectorAll<HTMLFormElement>('[data-ob]').forEach((form) => {
+    const per = Number(form.dataset.qty) || 100;
+    const pack = Number(form.dataset.pack) || 0;
+    const box = form.querySelector<HTMLElement>('[data-ob-max]');
+    const max = Number(box?.dataset.obMax) || 50;
+    const count = form.querySelector<HTMLElement>('[data-ob-count]');
+    const units = form.querySelector<HTMLElement>('[data-ob-units]');
+    const total = form.querySelector<HTMLElement>('[data-ob-total]');
+    const packs = form.querySelector<HTMLInputElement>('[data-ob-packs]');
+    let n = 1;
+    const set = (v: number) => {
+      n = Math.max(1, Math.min(max, v));
+      if (count) count.textContent = String(n);
+      if (units) units.textContent = (n * per).toLocaleString('en-US');
+      if (total) total.textContent = `$${(n * pack).toFixed(2)}`;
+      if (packs) packs.value = String(n);
+    };
+    form.querySelector('[data-ob-minus]')?.addEventListener('click', () => set(n - 1));
+    form.querySelector('[data-ob-plus]')?.addEventListener('click', () => set(n + 1));
+    form.addEventListener('submit', () => {
+      const slug = (form.elements.namedItem('add') as HTMLInputElement | HTMLSelectElement | null)?.value;
+      const w = window as unknown as { gtag?: (...a: unknown[]) => void };
+      w.gtag?.('event', 'add_to_cart', {
+        currency: 'USD',
+        value: n * pack,
+        items: [{ item_id: slug, quantity: n }],
+      });
+    });
+  });
+</script>
 
 <style>
   .vx-order {
@@ -51,6 +160,10 @@ const photo = productImage('lipstick-boxes', 'lipstick-box-single-shade-carton.p
     padding: 44px;
     background: var(--vx-accent);
     color: #fff;
+    scroll-margin-top: 6rem;
+  }
+  .vx-order > * {
+    min-width: 0;
   }
   .vx-order__photo {
     grid-column: 1 / 5;
@@ -68,6 +181,17 @@ const photo = productImage('lipstick-boxes', 'lipstick-box-single-shade-carton.p
     text-transform: uppercase;
     line-height: 0.95;
     color: #fff;
+    margin-bottom: 16px;
+  }
+  .vx-order__lede {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.55;
+    margin: 0;
+  }
+  .vx-order__lede a {
+    color: #fff;
+    text-decoration: underline;
   }
   .vx-order__box {
     grid-column: 9 / 13;
@@ -80,24 +204,100 @@ const photo = productImage('lipstick-boxes', 'lipstick-box-single-shade-carton.p
     justify-content: space-between;
     gap: 12px;
     font-size: 17px;
-    margin-bottom: 18px;
-    padding-bottom: 14px;
-    border-bottom: 1px solid var(--vx-rule);
+    margin: 0 0 6px;
   }
   .vx-order__price {
     font: 600 26px/1 var(--vx-head);
     color: var(--vx-accent);
     white-space: nowrap;
   }
+  .vx-order__each {
+    font-size: 14px;
+    color: var(--vx-mute-c);
+    margin: 0 0 14px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid var(--vx-rule);
+  }
+  .vx-order__spec {
+    list-style: none;
+    margin: 0 0 16px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.45;
+  }
+  .vx-order__spec li {
+    padding: 6px 0;
+    border-bottom: 1px solid var(--vx-rule-lt);
+  }
+  .vx-order__spec span,
+  .vx-order__spec label {
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--vx-mute-c);
+  }
+  .vx-order__select {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 4px;
+    padding: 9px 10px;
+    border: 1px solid var(--vx-rule);
+    border-radius: 0;
+    font: inherit;
+    font-size: 16px;
+    background: #fff;
+    color: var(--vx-ink);
+  }
+  .vx-order__buy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+  }
+  .vx-order__stepper {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid var(--vx-rule);
+  }
+  .vx-order__stepper button {
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--vx-ink);
+  }
+  .vx-order__stepper output {
+    min-width: 36px;
+    text-align: center;
+    font-weight: 600;
+  }
+  .vx-order__units {
+    margin: 0;
+    font-weight: 600;
+  }
+  .vx-order__ship {
+    margin: 12px 0 0;
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--vx-mute-c);
+  }
   @media (max-width: 860px) {
     .vx-order {
-      grid-template-columns: 1fr;
+      grid-template-columns: minmax(0, 1fr);
       padding: 22px 16px;
     }
     .vx-order__photo,
     .vx-order__copy,
     .vx-order__box {
       grid-column: 1 / -1;
+    }
+    .vx-order__box {
+      padding: 20px 16px;
     }
     .vx-order__photo :global(img) {
       aspect-ratio: 4 / 3;

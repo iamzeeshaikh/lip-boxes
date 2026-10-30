@@ -122,7 +122,7 @@ export const product: Product = {
         'Rigid grayboard wrapped in printed paper for premium gift sets',
       ],
       outro:
-        'Lighter board keeps freight cost down on large runs, heavier board holds a crisper edge on a retail shelf. If you are weighing the trade-off, the <a href="/materials/">comparison of packaging board weights and finishes</a> sets out where each one performs.',
+        'Lighter board keeps cost and weight down on large runs, heavier board holds a crisper edge on a retail shelf. If you are weighing the trade-off, the <a href="/materials/">comparison of packaging board weights and finishes</a> sets out where each one performs.',
     },
     {
       type: 'compare',
@@ -224,7 +224,7 @@ export const product: Product = {
       heading: 'Quantity, wholesale ordering and unit price',
       navLabel: 'Quantity & pricing',
       body: [
-        'Lip balm cartons are quoted per project rather than from a price list, because a 500-unit digital run and a 100,000-unit litho run are different pieces of work. Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity. That figure is a starting unit price for qualifying high-volume custom orders, not a fixed rate for every quantity.',
+        'Lip balm cartons sell online at 100 boxes for $30.00 ($0.30 each), printed full color to your artwork with free shipping to the US, UK, Canada and Australia. Larger runs are quoted per project, because a 500-unit digital run and a 100,000-unit litho run are different pieces of work, and the written quote states the unit price at your quantity.',
         'The largest single lever on unit price is quantity, because setup, plates and die charges are spread across the run. Moving from 1,000 to 10,000 units typically cuts the per-box cost substantially even before any specification changes. After quantity, the biggest factors are board weight, the number of print colors, and whether the job carries foil, spot UV or an insert.',
         'Wholesale and private label orders are welcome, including repeat scheduled releases against a single approved die line. Once a die is cut and a proof is signed off, reorders skip most of the setup work. Tell us in the quote request if you expect to reorder on a cycle so the tooling is quoted with that in mind.',
       ],
@@ -274,8 +274,8 @@ export const product: Product = {
       heading: 'Turnaround and delivery',
       navLabel: 'Turnaround',
       body: [
-        'Production time depends on the print process, the finishing and how quickly proofs come back approved. A straightforward digitally printed carton moves faster than a litho run with foil and a custom insert. We confirm a production window in writing with your quote and update it if the specification changes.',
-        'Orders ship to addresses across the United States, and rush schedules can often be arranged when a launch date is fixed. Current lead-time bands and the information we need in order to commit to a date are set out on the <a href="/turnaround-time/">production and lead time page</a>.',
+        'The online 100-box pack is produced in 5–7 business days after you approve the proof. A quoted litho run with foil and a custom insert takes longer than a straightforward digitally printed carton, so we confirm that production window in writing with your quote and update it if the specification changes.',
+        'Shipping is free to the United States, the United Kingdom, Canada and Australia, with delivery in 5–7 business days in the US and 7–10 abroad, and rush schedules can often be arranged when a launch date is fixed. Current lead-time bands and the information we need in order to commit to a date are set out on the <a href="/turnaround-time/">production and lead time page</a>.',
       ],
     },
   ],
@@ -291,8 +291,8 @@ export const product: Product = {
     { label: 'Inserts', value: 'Paperboard partitions, die-cut platforms, molded pulp trays' },
     { label: 'Windows', value: 'Die-cut window with optional clear film patch' },
     { label: 'Artwork formats', value: 'PDF, AI, EPS, PSD at 300 dpi with 3 mm bleed' },
-    { label: 'Starting unit price', value: 'From $0.30 per piece on qualifying large-volume orders' },
-    { label: 'Ordering', value: 'Quote based; no fixed catalog pricing' },
+    { label: 'Online price', value: '100 boxes: $30.00 ($0.30 each), free shipping to the US, UK, Canada and Australia' },
+    { label: 'Ordering', value: 'Order 100 online, or get a quote for larger runs' },
   ],
   faqs: [
     {
@@ -308,8 +308,8 @@ export const product: Product = {
       a: 'Minimums depend on the print process and the finishing you choose. Digital printing supports genuinely short runs, while offset litho and foil work carry setup costs that need a larger quantity to make sense. Tell us the quantity you actually want and we will quote it rather than pushing you to a fixed minimum.',
     },
     {
-      q: 'How does the $0.30 starting price relate to my order?',
-      a: 'Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity. It applies to simple, high-volume specifications. A short run with foil stamping and a die-cut insert sits well above it, and your written quote will always state the actual figure for your job.',
+      q: 'How does the $30.00 online pack price relate to my order?',
+      a: 'Online, 100 lip balm boxes cost $30.00 ($0.30 each), printed full color to your artwork, with free shipping to the US, UK, Canada and Australia. A larger run, a different size, or extras such as foil stamping and a die-cut insert are quoted, and your written quote states the actual figure for your job.',
     },
     {
       q: 'Which board weight suits a single lip balm stick?',

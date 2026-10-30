@@ -35,6 +35,8 @@ function escapeXml(value: string): string {
 // Every page was rebuilt on 2026-10-29 (new layout, plus the photo picker on the
 // homepage, category and product pages), so no page reports an earlier date.
 const SITE_REBUILT = '2026-10-29';
+// Price, shipping and returns brought into line with Merchant Center.
+const PRODUCTS_UPDATED = '2026-10-30';
 const lastmodOf = (entry: { lastmod?: string }) =>
   !entry.lastmod || entry.lastmod < SITE_REBUILT ? SITE_REBUILT : entry.lastmod;
 
@@ -42,12 +44,15 @@ export const GET: APIRoute = async () => {
   const entries: Entry[] = [];
 
   for (const page of indexableStaticPages) {
-    entries.push({ loc: abs(page.path) });
+    entries.push({ loc: abs(page.path), lastmod: page.lastmod });
   }
 
   for (const product of indexableProducts) {
     entries.push({
       loc: abs(`/${product.slug}/`),
+      // Every product page gained the online pack price, order band and
+      // shipping terms on this date.
+      lastmod: PRODUCTS_UPDATED,
       images: product.images.map((image) => ({
         loc: abs(publicImageUrl(product.slug, image.file)),
         caption: image.caption ?? image.alt,

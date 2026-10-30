@@ -2,6 +2,7 @@
 import { footerNav, legalNav } from '../data/nav';
 import { site, sameAs } from '../data/site';
 import LogoMark from './LogoMark.astro';
+import { PRICE_LINE } from '../data/order';
 
 const year = new Date().getFullYear();
 ---
@@ -14,10 +15,18 @@ const year = new Date().getFullYear();
     </a>
     <p class="vx-foot__blurb">
       Custom printed packaging for lip balm, lipstick, lip gloss and lip care
-      brands in the United States. Every order is quoted to your dimensions,
-      material and quantity.
+      brands. {PRICE_LINE}, with free shipping to the US, UK, Canada and
+      Australia. Larger runs are quoted.
     </p>
     <ul class="vx-foot__contact">
+      {
+        site.address && (
+          <li>
+            {site.address.street}, {site.address.city}, {site.address.region}{' '}
+            {site.address.postalCode}, USA
+          </li>
+        )
+      }
       <li>
         <a href={`mailto:${site.email}`}>{site.email}</a>
       </li>
@@ -62,8 +71,9 @@ const year = new Date().getFullYear();
 
   <div class="vx-foot__legal">
     <p>
-      &copy; {year} {site.name}. Pricing shown is a starting unit price for
-      qualifying large-volume custom orders.
+      &copy; {year} {site.name}. Prices in US dollars. Online orders are paid by
+      PayPal invoice or bank transfer after proof approval, or cash on delivery in
+      the US and Canada.
     </p>
     <ul>
       {legalNav.map((link) => <li><a href={link.href}>{link.label}</a></li>)}

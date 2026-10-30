@@ -1,0 +1,158 @@
+---
+import InfoLayout from '../layouts/InfoLayout.astro';
+import InfoSection from '../components/InfoSection.astro';
+import { site } from '../data/site';
+import { RETURNS, SHIP_LINE, PAYMENT_LINE, PRICE_LINE } from '../data/order';
+
+/*
+ * The return policy Google Merchant Center links to. Owner's decision,
+ * 2026-10-30: defective, damaged or misprinted orders only, reported within
+ * 14 days of delivery with photos, are reprinted or refunded at our cost. No
+ * change-of-mind returns on custom printed packaging. The same rule appears in
+ * the terms (section 9), on /shipping-information/, at checkout and in every
+ * Product Offer as MerchantReturnNotPermitted with this URL.
+ */
+const effective = 'October 30, 2026';
+const days = RETURNS.claimDays;
+---
+
+<InfoLayout
+  path={RETURNS.policyPath}
+  title="Refund and Return Policy | Lip Boxes"
+  description={`Defective, damaged or misprinted orders reported within ${days} days of delivery are reprinted free or refunded. No change-of-mind returns.`}
+  h1="Refund and Return Policy"
+  lead={`Every order is printed to your approved artwork, so we do not take returns for change of mind. If anything arrives defective, damaged or misprinted, tell us within ${days} days of delivery and we will reprint it or refund it at our cost.`}
+  narrow
+  points={[`Effective ${effective}`, `${days} days to report a fault`, 'Reprint or refund, shipping paid by us']}
+  ctaHeading="Something wrong with an order?"
+  ctaBody={`Email ${site.email} with your order number and photos, or call ${site.phoneDisplay}.`}
+>
+  <InfoSection id="summary" heading="The short version">
+    <ul class="vx-ul">
+      <li>
+        Defective, damaged or misprinted orders reported within {days} days of
+        delivery, with photos, are reprinted or replaced free, or refunded in full.
+      </li>
+      <li>We pay the shipping on every reprint or replacement, and on anything we ask you to send back.</li>
+      <li>
+        Returns for change of mind, ordering the wrong size or ordering too many are
+        not accepted, because each order is made to your approved specification and
+        artwork.
+      </li>
+      <li>This policy applies to orders shipped to the United States, the United Kingdom, Canada and Australia.</li>
+    </ul>
+  </InfoSection>
+
+  <InfoSection
+    id="what-is-covered"
+    heading="What we reprint or refund"
+    intro="An order qualifies when what arrived does not match what you approved."
+  >
+    <ul class="vx-ul">
+      <li>
+        <strong>Defective</strong>: boxes that do not fold, close or glue as the
+        approved die line says they should, or labels that do not stick.
+      </li>
+      <li>
+        <strong>Damaged</strong>: boxes crushed, torn or wet on arrival.
+      </li>
+      <li>
+        <strong>Misprinted</strong>: print that differs from the approved proof,
+        such as wrong colors beyond normal tolerance, missing elements or misaligned
+        artwork.
+      </li>
+      <li>
+        <strong>Short or wrong</strong>: fewer boxes than ordered, or a different
+        style or size from the one on your order.
+      </li>
+    </ul>
+    <p>
+      Errors that were already in the proof you approved, such as a spelling
+      mistake or a wrong barcode, are not a misprint. That is why we ask you to
+      check the proof carefully before production starts.
+    </p>
+  </InfoSection>
+
+  <InfoSection
+    id="how-to-claim"
+    heading="How to report a problem"
+    intro={`Report it within ${days} days of the delivery date shown by the carrier.`}
+  >
+    <ol class="vx-ol">
+      <li>
+        Email <a href={`mailto:${site.email}`}>{site.email}</a> with your order
+        number in the subject line, or call <a href={`tel:${site.phone}`}>{site.phoneDisplay}</a>.
+      </li>
+      <li>
+        Attach clear photos of the affected boxes and of the outer carton as it
+        arrived, plus a short note of what is wrong and how many units are
+        affected.
+      </li>
+      <li>
+        Keep the boxes until we confirm the outcome. If we need any back, we send a
+        prepaid label, so returning them costs you nothing.
+      </li>
+    </ol>
+    <p>
+      Please report a fault before the packaging is filled or distributed. A fault
+      found after filling is much harder to assess and to put right.
+    </p>
+  </InfoSection>
+
+  <InfoSection id="outcome" heading="What happens next">
+    <ul class="vx-ul">
+      <li>We review your photos against the approved proof and reply by email with the outcome.</li>
+      <li>
+        If the claim is accepted, you choose: a free reprint or replacement of the
+        affected boxes, shipped free, or a refund for them.
+      </li>
+      <li>
+        Refunds go back to the original payment method (PayPal or bank transfer)
+        within 10 business days of approval. For cash on delivery orders we refund
+        by PayPal or bank transfer.
+      </li>
+      <li>
+        Where only part of an order is affected, the reprint or refund covers that
+        part.
+      </li>
+    </ul>
+  </InfoSection>
+
+  <InfoSection id="not-covered" heading="What this policy does not cover">
+    <ul class="vx-ul">
+      <li>Change of mind, or no longer needing the boxes.</li>
+      <li>Ordering the wrong size, style or quantity.</li>
+      <li>Errors in artwork or copy that were present in the approved proof.</li>
+      <li>
+        Normal manufacturing tolerances described in the <a href="/terms-and-conditions/">terms and conditions</a>, such as slight
+        color variation between runs.
+      </li>
+      <li>Problems reported more than {days} days after delivery.</li>
+    </ul>
+  </InfoSection>
+
+  <InfoSection id="cancellations" heading="Cancelling an order">
+    <p>
+      You can cancel free of charge at any time before you approve the proof,
+      because nothing is charged on this site and no invoice is sent before then.
+      {PAYMENT_LINE} Once the proof is approved and production has started, the
+      order can no longer be canceled.
+    </p>
+  </InfoSection>
+
+  <InfoSection id="related" heading="Price and shipping">
+    <p>
+      Online orders are sold in packs: {PRICE_LINE}. {SHIP_LINE}, with delivery
+      times set out on the <a href="/shipping-information/">shipping information page</a>.
+      Questions about this policy go to <a href={`mailto:${site.email}`}>{site.email}</a>.
+      The effective date of this version is {effective}.
+    </p>
+  </InfoSection>
+</InfoLayout>
+
+<style>
+  p {
+    max-width: var(--measure);
+    color: var(--vx-ink-2);
+  }
+</style>

@@ -28,7 +28,7 @@ export const resource: Resource = {
     'A worked cost curve you can apply to your own quote',
     'Six ways to reduce price without ordering more',
   ],
-  updated: '2026-07-30',
+  updated: '2026-10-30',
   readingMinutes: 10,
   hero: {
     slug: 'lipstick-boxes',
@@ -131,20 +131,20 @@ export const resource: Resource = {
           text: 'Produce the full quantity in one run to hold the volume price, then take delivery against a schedule so you are not warehousing everything at once.',
         },
         {
-          title: 'Consolidate freight',
-          text: 'Bulky items are charged on volume, not weight. Fewer, larger consignments frequently cost materially less than several small ones.',
+          title: 'Consolidate orders',
+          text: 'One larger order spreads the setup over more units and arrives as one delivery. Shipping is free either way, so the saving is in the unit price and in receiving.',
         },
       ],
     },
     {
       type: 'prose',
       id: 'what-a-starting-price-means',
-      heading: 'What a headline starting price actually tells you',
-      navLabel: 'Starting prices',
+      heading: 'What a published pack price actually tells you',
+      navLabel: 'Pack prices',
       body: [
-        'Every packaging supplier publishes an entry figure, and it is worth understanding what one is. Ours is stated on every product page: price starts from $0.30 per piece for large-volume orders, with final pricing depending on size, material, printing, and quantity.',
-        'A figure like that describes the simplest possible specification at the highest volume: plain board, a straightforward print, no foil, no insert, no window. It is a floor for comparison between suppliers, not a quote.',
-        'When comparing two suppliers, compare specifications rather than headline numbers. Ask which board weight, how many colors, whether tooling is included, whether an insert is in the price, and whether freight is separate. A quote that looks 20% cheaper very often has one of those answers different.',
+        'Many packaging suppliers publish an entry figure, and it is worth understanding what one covers. Ours is stated on every product page: 100 boxes for $30.00 ($0.30 each), printed full color to your artwork, with free shipping to the US, UK, Canada and Australia. Larger or custom runs are quoted on size, material, printing and quantity.',
+        'A published pack price describes one specific specification at one quantity. It is a real price you can order at, and a useful benchmark, but a different size, board, finish or quantity is priced on its own terms.',
+        'When comparing two suppliers, compare specifications rather than headline numbers. Ask which board weight, how many colors, whether tooling is included, whether an insert is in the price, and whether freight is charged on top. A quote that looks 20% cheaper very often has one of those answers different.',
       ],
     },
     {
@@ -192,8 +192,8 @@ export const resource: Resource = {
       a: 'Almost always because the specifications differ. Board weight, color count, laminate versus varnish, whether tooling and inserts are included, and whether freight is separate all move the number. Compare specifications, not headline figures.',
     },
     {
-      q: 'What does a starting price like $0.30 per piece actually mean?',
-      a: 'It describes the simplest specification at the highest volume: plain board, a straightforward print, no foil, no insert, no window. It is a floor for comparison between suppliers rather than a quote for any particular job.',
+      q: 'What does the $30.00 pack price on this site cover?',
+      a: 'A pack of 100 boxes ($0.30 each) in the style you choose, printed full color to your artwork after you approve a proof, with free shipping to the US, UK, Canada and Australia. A different size, board, finish or a larger quantity is quoted for that job.',
     },
     {
       q: 'Can I reduce cost without changing quantity?',

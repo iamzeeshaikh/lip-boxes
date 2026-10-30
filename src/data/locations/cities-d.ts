@@ -481,7 +481,7 @@ export const boston: Location = {
     },
     {
       q: 'Does shelf position change between terms here?',
-      a: 'It can, since category space is often reallocated around the academic cycle. That makes packaging that depends on a specific fixture position more exposed, and favours a pack that works both on a shelf and in a basket display.',
+      a: 'It can, since category space is often reallocated around the academic cycle. That makes packaging that depends on a specific fixture position more exposed, and favors a pack that works both on a shelf and in a basket display.',
     },
     {
       q: 'How does this differ from your Massachusetts page?',

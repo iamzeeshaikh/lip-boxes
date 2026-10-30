@@ -7,7 +7,6 @@ import DesignYourLipBox from '../../components/DesignYourLipBox.astro';
 import QuoteCta from '../../components/QuoteCta.astro';
 import { indexableProducts, productGroups, productsInGroup } from '../../data/products';
 import { publicSocialUrl } from '../../lib/images';
-import { site } from '../../data/site';
 import {
   graph,
   organizationSchema,
@@ -68,12 +67,12 @@ let cardIndex = 0;
 >
   <PageHero
     h1="Custom Lip Packaging Products"
-    lead="Eleven made-to-order formats, grouped by the product they hold. Every one is cut to your dimensions, printed to your artwork and quoted rather than sold from a price list."
+    lead="Eleven made-to-order formats, grouped by the product they hold. Every one is cut to your dimensions, printed to your artwork and sold online at 100 boxes for $30.00, with larger runs quoted."
     crumbs={crumbs}
     points={[
       `${indexableProducts.length} products`,
       'All made to order',
-      `From $${site.startingPrice} per piece at volume`,
+      '100 boxes: $30.00 ($0.30 each)',
     ]}
   />
 

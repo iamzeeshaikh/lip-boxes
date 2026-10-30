@@ -187,7 +187,7 @@ export const product: Product = {
       navLabel: 'Quantity & pricing',
       body: [
         'Paper tubes are tooled to a diameter, so the first order in a new diameter carries a setup that repeat orders in that same diameter do not. Sticking to one diameter across a range of shades keeps your costs down considerably, with the artwork doing the differentiating.',
-        'Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity. On this format the specific drivers are tube diameter and height, the liner grade, the number of print colors and whether the cap is printed as well as the body. A short first run in a new diameter will sit above the starting figure.',
+        'Online, 100 tubes cost $30.00 ($0.30 each) with free shipping to the US, UK, Canada and Australia. Larger runs are quoted, and on this format the price drivers are tube diameter and height, the liner grade, the number of print colors and whether the cap is printed as well as the body.',
         'Wholesale and repeat scheduled orders are quoted against a held specification, so a brand running four scents on one tube size can reorder any of them without repeating setup work.',
       ],
     },
@@ -235,8 +235,8 @@ export const product: Product = {
       heading: 'Lead time and delivery',
       navLabel: 'Turnaround',
       body: [
-        'Rolled tubes take longer to produce than flat cartons because rolling, curing and assembly are separate stages. A first order in a new diameter also carries tooling time. We confirm the production window in writing once the specification is fixed.',
-        'Shipping is to addresses across the United States. Tubes are light but bulky, so freight cost is driven by volume rather than weight, and consolidating a larger order into one shipment usually costs less than several smaller ones. Delivery methods and how packing is handled are covered on the <a href="/shipping-information/">delivery and freight page</a>.',
+        'Rolled tubes take longer to produce than flat cartons because rolling, curing and assembly are separate stages. The online 100-tube pack is produced in 5–7 business days after proof approval; a larger run or a first order in a new diameter carries tooling time, and we confirm that window in writing once the specification is fixed.',
+        'Shipping is free to the United States, the United Kingdom, Canada and Australia, with delivery in 5–7 business days in the US and 7–10 abroad. Tubes are light but bulky, so a larger order arrives as more cases than the same count of cartons. Delivery methods and how packing is handled are covered on the <a href="/shipping-information/">shipping and delivery page</a>.',
       ],
     },
   ],
@@ -252,8 +252,8 @@ export const product: Product = {
     { label: 'Decoration', value: 'Matte or satin varnish, foil stamp, deboss' },
     { label: 'Tamper evidence', value: 'Printed paper seal or shrink band around the cap join' },
     { label: 'Artwork format', value: 'Flat wrap template supplied; PDF, AI or EPS at 300 dpi' },
-    { label: 'Starting unit price', value: 'From $0.30 per piece on qualifying large-volume orders' },
-    { label: 'Ordering', value: 'Quote based, tooled per diameter' },
+    { label: 'Online price', value: '100 boxes: $30.00 ($0.30 each), free shipping to the US, UK, Canada and Australia' },
+    { label: 'Ordering', value: 'Order 100 online, or get a quote for larger runs; tooled per diameter' },
   ],
   faqs: [
     {
@@ -298,7 +298,7 @@ export const product: Product = {
     },
     {
       q: 'How are the tubes packed for shipping?',
-      a: 'Capped, nested and counted into cases with a case count noted on each carton. Because tubes are bulky relative to their weight, freight is charged on volume, so ordering in fewer larger consignments generally reduces your delivered cost.',
+      a: 'Capped, nested and counted into cases with a case count noted on each carton. Because tubes are bulky relative to their weight, a delivery takes more cases than flat cartons would; shipping is free to the US, UK, Canada and Australia either way.',
     },
     {
       q: 'Can I get a sample tube to test my formula in?',

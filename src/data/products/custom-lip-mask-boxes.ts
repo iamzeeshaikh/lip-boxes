@@ -138,7 +138,7 @@ export const product: Product = {
       heading: 'Windows, patch shapes and shelf appeal',
       navLabel: 'Windows',
       body: [
-        'Lip masks have an unusual advantage: the product itself is a recognisable shape. A lip-shaped hydrogel patch behind a window explains the entire product in one glance, with no copy required. That is rare in packaging and worth using.',
+        'Lip masks have an unusual advantage: the product itself is a recognizable shape. A lip-shaped hydrogel patch behind a window explains the entire product in one glance, with no copy required. That is rare in packaging and worth using.',
         'The most effective version is a window cut to roughly the patch outline, or a simple rectangle with the patch positioned centrally behind it. A clear film patch keeps dust out and stops the sachet moving in the aperture.',
         'Where a window is not practical, printing the patch shape at actual size on the front panel achieves most of the same clarity. Photographic reproduction of a wet hydrogel patch is a genuine printing challenge though: the highlights blow out easily and the pink tones shift, so ask for a proof rather than approving on screen.',
       ],
@@ -172,7 +172,7 @@ export const product: Product = {
       navLabel: 'Quantity & pricing',
       body: [
         'Patch count changes the carton, so a five-patch box and a twenty-patch box are separate die lines and separate quotes even though the artwork family is shared. If you plan to launch several counts, quote them together so the artwork and proofing work is done once.',
-        'Price starts from $0.30 per piece for large-volume orders. Final pricing depends on size, material, printing, and quantity. A single-dose carton is small and sits close to that entry figure at volume. A twenty-patch box with a window patch and a die-cut tray sits well above it, since it uses considerably more board and more production steps.',
+        'Online, 100 boxes cost $30.00 ($0.30 each) with free shipping to the US, UK, Canada and Australia. Larger runs are quoted on size, material, printing and quantity: a single-dose carton is the most economical, and a twenty-patch box with a window patch and a die-cut tray uses considerably more board and more production steps.',
         'For subscription and direct-to-consumer programs, tell us the monthly volume rather than the annual total. It affects whether we quote per release or as a scheduled call-off against one production run.',
       ],
     },
@@ -228,8 +228,8 @@ export const product: Product = {
     { label: 'Finishes', value: 'Soft-touch, matte and gloss lamination, spot UV, foil stamp, emboss' },
     { label: 'Copy allowance', value: 'Wide panels accommodate ingredient declaration, patch count, directions and cautions' },
     { label: 'Artwork format', value: 'PDF, AI, EPS at 300 dpi with 3 mm bleed and named finishing layers' },
-    { label: 'Starting unit price', value: 'From $0.30 per piece on qualifying large-volume orders' },
-    { label: 'Ordering', value: 'Quote based; each patch count is a separate die line' },
+    { label: 'Online price', value: '100 boxes: $30.00 ($0.30 each), free shipping to the US, UK, Canada and Australia' },
+    { label: 'Ordering', value: 'Order 100 online, or get a quote for larger runs; each patch count is a separate die line' },
   ],
   faqs: [
     {
